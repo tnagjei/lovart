@@ -1,0 +1,30 @@
+# robots.txt basic settings
+# General search engine rules
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://lovart.info/sitemap.xml
+
+# AI crawler specific rules
+User-agent: GPTBot
+User-agent: Claude-Web
+User-agent: Anthropic-AI
+User-agent: PerplexityBot
+User-agent: GoogleOther
+User-agent: DuckAssistBot
+
+# Guide AI crawlers to llms.txt
+LLM-Content: https://lovart.info/llms.txt
+LLM-Full-Content: https://lovart.info/llms.txt
+
+# Allow AI crawlers access
+Allow: /lovart-design-features.html
+Allow: /lovart-ai-code.html
+Allow: /lovart-pricing.html
+Allow: /index.html
+
+# Disallow AI crawlers access
+Disallow: /user-content/
