@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免费试用 - Lovart AI设计平台</title>
+    <meta name="description" content="Lovart AI设计平台提供免费试用服务。了解我们的免费功能、试用政策和付费计划对比。">
+    <meta name="keywords" content="Lovart免费试用, AI设计免费, is lovart ai free, Lovart免费政策, 设计工具免费">
+    <link rel="canonical" href="https://lovart.info/lovart-free.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK9MPTEZ17"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EK9MPTEZ17');
+    </script>
+
+    <style>
+        .section-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section-animate.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-3px);
+        }
+        .check-icon {
+            color: #10b981;
+        }
+        .comparison-table th {
+            background: #f8fafc;
+        }
+        .highlight-row {
+            background: #fef3c7;
+        }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#4f46e5',
+                light: '#6366f1',
+                dark: '#3730a3',
+              },
+              secondary: {
+                DEFAULT: '#ec4899',
+                light: '#f472b6',
+                dark: '#be185d',
+              },
+              neutral: {
+                light: '#f9fafb',
+                DEFAULT: '#6b7280',
+                dark: '#1f2937',
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-neutral-light text-neutral-dark antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
+            <nav class="hidden md:flex space-x-4 items-center">
+                <a href="index.html" class="text-neutral hover:text-primary transition-colors">首页</a>
+                <a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">功能</a>
+                <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">定价</a>
+                <a href="blog.html" class="text-neutral hover:text-primary transition-colors">博客</a>
+                <a href="help.html" class="text-neutral hover:text-primary transition-colors">帮助</a>
+                <a href="about.html" class="text-neutral hover:text-primary transition-colors">关于</a>
+                <a href="lovart-pricing.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">开始使用</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="index.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">首页</a>
+            <a href="lovart-design-features.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">首页</a>
+            <a href="lovart-pricing.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">定价</a>
+            <a href="blog.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">博客</a>
+            <a href="help.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">帮助</a>
+            <a href="about.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">关于</a>
+            <a href="lovart-pricing.html" class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">开始使用</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-primary to-secondary text-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Lovart免费试用</h1>
+                    <p class="text-lg md:text-xl mb-8 opacity-90">
+                        是的，Lovart提供免费试用！体验我们强大的AI设计功能，无需信用卡即可开始。
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 mb-8">
+                        <div class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                            💳 无需信用卡
+                        </div>
+                        <div class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                            ⏰ 14天免费试用
+                        </div>
+                        <div class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                            🎨 全功能体验
+                        </div>
+                        <div class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                            🚀 立即开始
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="lovart-pricing.html" class="bg-white text-primary px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors">
+                            开始免费试用
+                        </a>
+                        <a href="#features" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-primary transition-colors">
+                            了解免费功能
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free Features Section -->
+        <section id="features" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl font-bold text-neutral-dark mb-12 text-center">免费试用包含的功能</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <!-- AI Design Generation -->
+                        <div class="feature-card bg-neutral-light p-6 rounded-lg">
+                            <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">AI设计生成</h3>
+                            <p class="text-neutral mb-4">使用AI生成专业设计，包括logo、海报、社交媒体图片等</p>
+                            <ul class="text-sm text-neutral space-y-1">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    每月10次免费生成
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    基础设计模板
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Template Library -->
+                        <div class="feature-card bg-neutral-light p-6 rounded-lg">
+                            <div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">模板库</h3>
+                            <p class="text-neutral mb-4">访问丰富的设计模板库，快速开始您的设计项目</p>
+                            <ul class="text-sm text-neutral space-y-1">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    100+免费模板
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    多种设计类别
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Basic Export -->
+                        <div class="feature-card bg-neutral-light p-6 rounded-lg">
+                            <div class="w-16 h-16 bg-green-500 bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">基础导出</h3>
+                            <p class="text-neutral mb-4">导出您的设计作品，支持常用格式</p>
+                            <ul class="text-sm text-neutral space-y-1">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    PNG/JPG格式
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    标准分辨率
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Cloud Storage -->
+                        <div class="feature-card bg-neutral-light p-6 rounded-lg">
+                            <div class="w-16 h-16 bg-blue-500 bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">云存储</h3>
+                            <p class="text-neutral mb-4">安全存储您的设计作品，随时随地访问</p>
+                            <ul class="text-sm text-neutral space-y-1">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    1GB免费存储
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    项目管理
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Customer Support -->
+                        <div class="feature-card bg-neutral-light p-6 rounded-lg">
+                            <div class="w-16 h-16 bg-purple-500 bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">客户支持</h3>
+                            <p class="text-neutral mb-4">获得必要的帮助和支持，快速上手</p>
+                            <ul class="text-sm text-neutral space-y-1">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    帮助文档
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    社区论坛
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Mobile App -->
+                        <div class="feature-card bg-neutral-light p-6 rounded-lg">
+                            <div class="w-16 h-16 bg-orange-500 bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">移动应用</h3>
+                            <p class="text-neutral mb-4">在移动设备上使用Lovart，随时进行设计</p>
+                            <ul class="text-sm text-neutral space-y-1">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    iOS和Android
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    基础功能
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free vs Paid Comparison -->
+        <section class="py-16 bg-neutral-light">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl font-bold text-neutral-dark mb-8 text-center">免费版 vs 付费版对比</h2>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th class="px-6 py-4 text-left">功能</th>
+                                        <th class="px-6 py-4 text-center">免费版</th>
+                                        <th class="px-6 py-4 text-center highlight-row">Pro版</th>
+                                        <th class="px-6 py-4 text-center">企业版</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t">
+                                        <td class="px-6 py-4 font-medium">AI设计生成</td>
+                                        <td class="px-6 py-4 text-center">10次/月</td>
+                                        <td class="px-6 py-4 text-center highlight-row">无限次</td>
+                                        <td class="px-6 py-4 text-center">无限次</td>
+                                    </tr>
+                                    <tr class="border-t bg-gray-50">
+                                        <td class="px-6 py-4 font-medium">模板库</td>
+                                        <td class="px-6 py-4 text-center">100+个</td>
+                                        <td class="px-6 py-4 text-center highlight-row">1000+个</td>
+                                        <td class="px-6 py-4 text-center">自定义模板</td>
+                                    </tr>
+                                    <tr class="border-t">
+                                        <td class="px-6 py-4 font-medium">导出质量</td>
+                                        <td class="px-6 py-4 text-center">标准</td>
+                                        <td class="px-6 py-4 text-center highlight-row">高清</td>
+                                        <td class="px-6 py-4 text-center">4K超清</td>
+                                    </tr>
+                                    <tr class="border-t bg-gray-50">
+                                        <td class="px-6 py-4 font-medium">导出格式</td>
+                                        <td class="px-6 py-4 text-center">PNG, JPG</td>
+                                        <td class="px-6 py-4 text-center highlight-row">PNG, JPG, SVG, PDF</td>
+                                        <td class="px-6 py-4 text-center">所有格式</td>
+                                    </tr>
+                                    <tr class="border-t">
+                                        <td class="px-6 py-4 font-medium">云存储</td>
+                                        <td class="px-6 py-4 text-center">1GB</td>
+                                        <td class="px-6 py-4 text-center highlight-row">100GB</td>
+                                        <td class="px-6 py-4 text-center">无限存储</td>
+                                    </tr>
+                                    <tr class="border-t bg-gray-50">
+                                        <td class="px-6 py-4 font-medium">品牌套件</td>
+                                        <td class="px-6 py-4 text-center">❌</td>
+                                        <td class="px-6 py-4 text-center highlight-row">✅</td>
+                                        <td class="px-6 py-4 text-center">✅</td>
+                                    </tr>
+                                    <tr class="border-t">
+                                        <td class="px-6 py-4 font-medium">团队协作</td>
+                                        <td class="px-6 py-4 text-center">❌</td>
+                                        <td class="px-6 py-4 text-center highlight-row">最多5人</td>
+                                        <td class="px-6 py-4 text-center">无限用户</td>
+                                    </tr>
+                                    <tr class="border-t bg-gray-50">
+                                        <td class="px-6 py-4 font-medium">API访问</td>
+                                        <td class="px-6 py-4 text-center">❌</td>
+                                        <td class="px-6 py-4 text-center highlight-row">1000次/月</td>
+                                        <td class="px-6 py-4 text-center">无限API</td>
+                                    </tr>
+                                    <tr class="border-t">
+                                        <td class="px-6 py-4 font-medium">优先支持</td>
+                                        <td class="px-6 py-4 text-center">❌</td>
+                                        <td class="px-6 py-4 text-center highlight-row">✅</td>
+                                        <td class="px-6 py-4 text-center">24/7专属</td>
+                                    </tr>
+                                    <tr class="border-t bg-gray-50">
+                                        <td class="px-6 py-4 font-medium">价格</td>
+                                        <td class="px-6 py-4 text-center font-bold text-green-600">免费</td>
+                                        <td class="px-6 py-4 text-center highlight-row font-bold">$29/月</td>
+                                        <td class="px-6 py-4 text-center font-bold">联系销售</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Start Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-neutral-dark mb-8 text-center">如何开始免费试用</h2>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        
+                        <!-- Step 1 -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">1</div>
+                            <h3 class="text-lg font-semibold mb-3">注册账户</h3>
+                            <p class="text-neutral text-sm">使用邮箱或社交媒体账户注册，无需信用卡信息</p>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">2</div>
+                            <h3 class="text-lg font-semibold mb-3">选择免费计划</h3>
+                            <p class="text-neutral text-sm">选择免费试用计划，立即获得14天全功能访问权限</p>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">3</div>
+                            <h3 class="text-lg font-semibold mb-3">开始设计</h3>
+                            <p class="text-neutral text-sm">使用AI设计工具创建您的第一个作品，体验强大功能</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 bg-neutral-light">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-neutral-dark mb-8 text-center">免费试用常见问题</h2>
+                    
+                    <div class="space-y-4">
+                        
+                        <!-- FAQ 1 -->
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-lg font-semibold mb-3">Lovart真的免费吗？</h3>
+                            <p class="text-neutral">是的，Lovart提供永久免费版本，包含基础设计功能。同时我们也提供14天的全功能免费试用，无需信用卡。</p>
+                        </div>
+                        
+                        <!-- FAQ 2 -->
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-lg font-semibold mb-3">免费试用结束后会发生什么？</h3>
+                            <p class="text-neutral">试用结束后，您可以选择升级到付费计划继续使用所有功能，或者继续使用免费版本的基础功能。</p>
+                        </div>
+                        
+                        <!-- FAQ 3 -->
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-lg font-semibold mb-3">我可以随时取消吗？</h3>
+                            <p class="text-neutral">是的，您可以随时取消订阅。即使升级到付费计划，也可以随时在账户设置中取消。</p>
+                        </div>
+                        
+                        <!-- FAQ 4 -->
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-lg font-semibold mb-3">免费版本有功能限制吗？</h3>
+                            <p class="text-neutral">免费版本有一些限制，比如每月AI设计生成次数、存储空间和导出质量。但足够满足个人基础设计需求。</p>
+                        </div>
+                        
+                        <!-- FAQ 5 -->
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-lg font-semibold mb-3">企业用户有免费试用吗？</h3>
+                            <p class="text-neutral">是的，企业用户可以申请30天的 extended 免费试用，包含团队协作和高级功能。请联系我们的销售团队。</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-primary text-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-4">准备好开始免费试用了吗？</h2>
+                    <p class="text-lg mb-8 opacity-90">
+                        加入超过50万用户，体验AI设计的强大功能
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="lovart-pricing.html" class="bg-white text-primary px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors">
+                            立即开始免费试用
+                        </a>
+                        <a href="help.html" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-primary transition-colors">
+                            了解更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-dark text-neutral-light py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Lovart</h3>
+                    <p class="text-neutral mb-4">AI-powered design platform for creative professionals.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neutral-light hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutral-light hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">产品</h3>
+                    <ul class="space-y-2">
+                        <li><a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">功能</a></li>
+                        <li><a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">定价</a></li>
+                        <li><a href="lovart-free.html" class="text-neutral hover:text-primary transition-colors">免费试用</a></li>
+                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">博客</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">开发者</h3>
+                    <ul class="space-y-2">
+                        <li><a href="lovart-api.html" class="text-neutral hover:text-primary transition-colors">API文档</a></li>
+                        <li><a href="lovart-ai-code.html" class="text-neutral hover:text-primary transition-colors">代码集成</a></li>
+                        <li><a href="terms-of-service.html" class="text-neutral hover:text-primary transition-colors">用户协议</a></li>
+                        <li><a href="privacy-policy.html" class="text-neutral hover:text-primary transition-colors">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">联系方式</h3>
+                    <p class="text-neutral">Email: support@lovart.info</p>
+                    <p class="text-neutral">帮助: help@lovart.info</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-neutral">
+                <p>&copy; <span id="currentYear"></span> Lovart.info. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            // Close mobile menu when a link is clicked
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Set current year in footer
+        const currentYearSpan = document.getElementById('currentYear');
+        if (currentYearSpan) {
+            currentYearSpan.textContent = new Date().getFullYear();
+        }
+
+        // Section scroll animations
+        const sections = document.querySelectorAll('.section-animate');
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

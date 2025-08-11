@@ -29,6 +29,9 @@ Allow: /terms-of-service.html
 Allow: /privacy-policy.html
 Allow: /lovart-pricing.html
 Allow: /index.html
+Allow: /lovart-api.html
+Allow: /lovart-free.html
+Allow: /lovart-ai-code.html
 
 # Disallow AI crawlers access
 Disallow: /user-content/
