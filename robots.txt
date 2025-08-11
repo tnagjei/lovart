@@ -22,7 +22,11 @@ LLM-Full-Content: https://lovart.info/llms.txt
 
 # Allow AI crawlers access
 Allow: /lovart-design-features.html
-Allow: /lovart-ai-code.html
+Allow: /about.html
+Allow: /blog.html
+Allow: /help.html
+Allow: /terms-of-service.html
+Allow: /privacy-policy.html
 Allow: /lovart-pricing.html
 Allow: /index.html
 
