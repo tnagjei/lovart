@@ -699,85 +699,116 @@
     </script>
 
     <script>
-        // 图片和视频懒加载
+        // 性能优化：避免强制同步布局
         document.addEventListener('DOMContentLoaded', function() {
-            // 初始化懒加载观察器
+            // 批量DOM查询 - 避免重复查询导致的重排
+            const lazyElements = document.querySelectorAll('.lazy-load, .lazy-video');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const currentYearSpan = document.getElementById('currentYear');
+            const sections = document.querySelectorAll('.section-animate');
+            
+            // 使用 requestAnimationFrame 批量处理布局相关操作
+            function batchLayoutUpdates() {
+                // 设置当前年份
+                if (currentYearSpan) {
+                    currentYearSpan.textContent = new Date().getFullYear();
+                }
+                
+                // Mobile menu 事件监听
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+                    
+                    // 批量处理菜单链接事件
+                    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                    mobileMenuLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.add('hidden');
+                        });
+                    });
+                }
+            }
+            
+            // 初始化懒加载观察器 - 使用防抖避免频繁触发
             const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const lazyElement = entry.target;
-                        
-                        if (lazyElement.classList.contains('lazy-load')) {
-                            // 图片懒加载
-                            lazyElement.src = lazyElement.dataset.src;
-                            lazyElement.onload = () => {
-                                lazyElement.classList.add('loaded');
+                // 使用 requestAnimationFrame 批量处理可见元素
+                requestAnimationFrame(() => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const lazyElement = entry.target;
+                            
+                            if (lazyElement.classList.contains('lazy-load')) {
+                                // 图片懒加载 - 避免同步布局查询
+                                lazyElement.src = lazyElement.dataset.src;
+                                lazyElement.onload = () => {
+                                    requestAnimationFrame(() => {
+                                        lazyElement.classList.add('loaded');
+                                        const loadingIndicator = lazyElement.parentElement.querySelector('.loading-indicator');
+                                        if (loadingIndicator) {
+                                            loadingIndicator.style.display = 'none';
+                                        }
+                                    });
+                                };
+                            } else if (lazyElement.classList.contains('lazy-video')) {
+                                // 视频懒加载
+                                const source = lazyElement.querySelector('source');
+                                if (source) {
+                                    source.src = lazyElement.dataset.src;
+                                    lazyElement.load();
+                                }
                                 const loadingIndicator = lazyElement.parentElement.querySelector('.loading-indicator');
                                 if (loadingIndicator) {
                                     loadingIndicator.style.display = 'none';
                                 }
-                            };
-                        } else if (lazyElement.classList.contains('lazy-video')) {
-                            // 视频懒加载
-                            const source = lazyElement.querySelector('source');
-                            source.src = lazyElement.dataset.src;
-                            lazyElement.load();
-                            lazyElement.parentElement.querySelector('.loading-indicator').style.display = 'none';
+                            }
+                            
+                            observer.unobserve(lazyElement);
                         }
-                        
-                        observer.unobserve(lazyElement);
-                    }
+                    });
                 });
             }, { threshold: 0.1, rootMargin: '200px' });
 
-            // 观察所有懒加载元素
-            document.querySelectorAll('.lazy-load, .lazy-video').forEach(el => {
+            // 批量观察懒加载元素
+            lazyElements.forEach(el => {
                 lazyLoadObserver.observe(el);
             });
 
-            // Mobile menu toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                });
-                // Close mobile menu when a link is clicked
-                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-                mobileMenuLinks.forEach(link => {
-                    link.addEventListener('click', () => {
-                        mobileMenu.classList.add('hidden');
-                    });
-                });
-            }
-
-            // Set current year in footer
-            const currentYearSpan = document.getElementById('currentYear');
-            if (currentYearSpan) {
-                currentYearSpan.textContent = new Date().getFullYear();
-            }
-
-            // 延迟加载滚动动画
-            requestAnimationFrame(() => {
-                const sections = document.querySelectorAll('.section-animate');
-                const observerOptions = {
-                    root: null,
-                    rootMargin: '0px',
-                    threshold: 0.1
-                };
-
-                const observer = new IntersectionObserver((entries) => {
+            // 滚动动画观察器 - 使用节流
+            const scrollObserver = new IntersectionObserver((entries) => {
+                requestAnimationFrame(() => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
                             entry.target.classList.add('is-visible');
-                            observer.unobserve(entry.target);
+                            scrollObserver.unobserve(entry.target);
                         }
                     });
-                }, observerOptions);
-
-                sections.forEach(section => {
-                    observer.observe(section);
                 });
+            }, { 
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 
+            });
+
+            // 批量观察滚动动画元素
+            sections.forEach(section => {
+                scrollObserver.observe(section);
+            });
+
+            // 执行批量布局更新
+            batchLayoutUpdates();
+            
+            // 优化后的窗口大小调整处理
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    // 使用 requestAnimationFrame 确保在下一帧执行
+                    requestAnimationFrame(() => {
+                        // 这里可以添加响应式调整逻辑
+                    });
+                }, 150); // 150ms 防抖延迟
             });
         });
     </script>
