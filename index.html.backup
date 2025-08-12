@@ -457,8 +457,8 @@
                     <div class="lazy-load-container w-full max-w-3xl mx-auto rounded-lg shadow-xl" style="height: 400px;">
                         <picture>
                             <source media="(max-width: 640px)" srcset="images/01_thumb.jpg">
-                            <source media="(max-width: 1024px)" srcset="images/small_01.jpg">
-                            <img data-src="images/small_01.jpg" src="images/placeholder.jpg" alt="Lovart AI Design Platform in action" class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
+                            <source media="(max-width: 1024px)" srcset="images/01.jpg">
+                            <img data-src="images/01.jpg" src="images/placeholder.jpg" alt="Lovart AI Design Platform in action" class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
                         </picture>
                         <div class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
                             <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
@@ -483,14 +483,14 @@
                     <!-- Feature 1 -->
                     <div class="bg-neutral-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
                         <div class="text-primary text-4xl mb-4 mx-auto md:mx-0">✨</div> <!-- 恢复 Emoji 图标 -->
-                        <!-- <img src="images/small_05.jpg" alt="AI Enhanced Creativity Icon" class="w-10 h-10 text-primary mb-4 mx-auto md:mx-0"> -->
+                        <!-- <img src="images/05.jpg" alt="AI Enhanced Creativity Icon" class="w-10 h-10 text-primary mb-4 mx-auto md:mx-0"> -->
                         <h3 class="text-xl font-semibold text-neutral-dark mb-2">AI-Enhanced Creativity with Lovart</h3>
                         <p class="text-neutral">Lovart's sophisticated artificial intelligence acts as your personal design assistant. It intelligently suggests compelling design elements, harmonious color palettes, and optimal layout options, effectively supercharging your creative process with Lovart and helping you overcome creative blocks. With Lovart, innovation is always at your fingertips.</p>
                     </div>
                     <!-- Feature 2 -->
                     <div class="bg-neutral-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
                         <div class="text-primary text-4xl mb-4 mx-auto md:mx-0">🖱️</div> <!-- 恢复 Emoji 图标 -->
-                        <!-- <img src="images/small_06.jpg" alt="Intuitive Drag & Drop Icon" class="w-10 h-10 text-primary mb-4 mx-auto md:mx-0"> -->
+                        <!-- <img src="images/06.jpg" alt="Intuitive Drag & Drop Icon" class="w-10 h-10 text-primary mb-4 mx-auto md:mx-0"> -->
                         <h3 class="text-xl font-semibold text-neutral-dark mb-2">Intuitive Drag & Drop Interface by Lovart</h3>
                         <p class="text-neutral">This Lovart platform boasts a beautifully designed, seamless, and remarkably user-friendly drag-and-drop interface. This allows you to focus your energy entirely on the art of design, rather than wrestling with complex tools. Lovart makes professional design accessible to everyone.</p>
                     </div>
@@ -539,13 +539,13 @@
                     </div>
                     <!-- Step 2 -->
                     <div class="p-6 animate-fade-in-up" style="animation-delay: 0.3s;">
-                        <img src="images/small_03.jpg" alt="Step 2: Design with Lovart's AI and Intuitive Tools" class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        <img src="images/03.jpg" alt="Step 2: Design with Lovart's AI and Intuitive Tools" class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
                         <h3 class="text-xl font-semibold mb-2">Design with Lovart's AI & Intuitive Tools</h3>
                         <p class="opacity-90">Leverage Lovart's powerful AI suggestions and user-friendly drag-and-drop interface. Access a vast library of assets within Lovart to bring your ideas to life quickly and efficiently. Lovart makes complex design simple and fun.</p>
                     </div>
                     <!-- Step 3 -->
                     <div class="p-6 animate-fade-in-up" style="animation-delay: 0.5s;">
-                        <img src="images/small_04.jpg" alt="Step 3: Collaborate, Refine & Export with Lovart" class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        <img src="images/04.jpg" alt="Step 3: Collaborate, Refine & Export with Lovart" class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
                         <h3 class="text-xl font-semibold mb-2">Collaborate, Refine & Export with Lovart</h3>
                         <p class="opacity-90">Share your Lovart designs for feedback, iterate with ease, and when you're ready, export your masterpiece in various formats using Lovart. From initial concept to final product, Lovart supports your entire creative process.</p>
                     </div>
@@ -573,7 +573,7 @@
                     <div class="bg-neutral-light p-8 rounded-lg shadow-lg animate-fade-in-up" style="animation-delay: 0.3s;">
                         <p class="text-neutral-dark italic mb-4">"As a UI/UX designer, Lovart's intuitive interface and vast asset library are game-changers. I can prototype and iterate so much faster. Lovart is now an indispensable part of my toolkit. Highly recommend Lovart for any designer!"</p>
                         <div class="flex items-center">
-                            <img src="images/small_03.jpg" alt="Avatar of Sarah M." class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- 替换为真实头像 -->
+                            <img src="images/03.jpg" alt="Avatar of Sarah M." class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- 替换为真实头像 -->
                             <div>
                                 <p class="font-semibold text-neutral-dark">Sarah M., UI/UX Lead</p>
                                 <p class="text-sm text-secondary">Lovart Team User</p>
@@ -584,7 +584,7 @@
                     <div class="bg-neutral-light p-8 rounded-lg shadow-lg animate-fade-in-up" style="animation-delay: 0.5s;">
                         <p class="text-neutral-dark italic mb-4">"I was looking for a design tool that was both powerful and easy to learn. Lovart exceeded my expectations. The AI features help spark creativity, and I love how responsive the designs are. Lovart is fantastic!"</p>
                         <div class="flex items-center">
-                            <img src="images/small_04.jpg" alt="Avatar of James P." class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- 替换为真实头像 -->
+                            <img src="images/04.jpg" alt="Avatar of James P." class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- 替换为真实头像 -->
                             <div>
                                 <p class="font-semibold text-neutral-dark">James P., Marketing Specialist</p>
                                 <p class="text-sm text-primary-light">Lovart Enthusiast</p>
@@ -605,7 +605,7 @@
                         <div class="lazy-load-container h-72 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
                             <picture>
                                 <source media="(max-width: 640px)" srcset="images/06_thumb.jpg">
-                                <img data-src="images/small_06.jpg" src="images/placeholder.jpg" alt="Lovart creative showcase image 1" class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
+                                <img data-src="images/06.jpg" src="images/placeholder.jpg" alt="Lovart creative showcase image 1" class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
                             </picture>
                             <div class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
                                 <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
@@ -617,7 +617,7 @@
                         <div class="lazy-load-container h-72 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
                             <picture>
                                 <source media="(max-width: 640px)" srcset="images/07_thumb.jpg">
-                                <img data-src="images/small_07.jpg" src="images/placeholder.jpg" alt="Lovart creative showcase image 2" class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
+                                <img data-src="images/07.jpg" src="images/placeholder.jpg" alt="Lovart creative showcase image 2" class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
                             </picture>
                             <div class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
                                 <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
@@ -628,28 +628,28 @@
                     <div class="animate-fade-in-up" style="animation-delay: 0.3s;">
                         <picture>
                             <source media="(max-width: 640px)" srcset="images/08_thumb.jpg">
-                            <img src="images/small_08.jpg" alt="Lovart creative showcase image 3" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105" loading="lazy" decoding="async">
+                            <img src="images/08.jpg" alt="Lovart creative showcase image 3" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <!-- Image 09.jpg -->
                     <div class="animate-fade-in-up" style="animation-delay: 0.4s;">
                         <picture>
                             <source media="(max-width: 640px)" srcset="images/09_thumb.jpg">
-                            <img src="images/small_09.jpg" alt="Lovart creative showcase image 4" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105" loading="lazy" decoding="async">
+                            <img src="images/09.jpg" alt="Lovart creative showcase image 4" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <!-- Image 10.jpg -->
                     <div class="animate-fade-in-up" style="animation-delay: 0.5s;">
                         <picture>
                             <source media="(max-width: 640px)" srcset="images/10_thumb.jpg">
-                            <img src="images/small_10.jpg" alt="Lovart creative showcase image 5" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105" loading="lazy" decoding="async">
+                            <img src="images/10.jpg" alt="Lovart creative showcase image 5" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <!-- Image 11.jpg -->
                     <div class="animate-fade-in-up" style="animation-delay: 0.6s;">
                         <picture>
                             <source media="(max-width: 640px)" srcset="images/11_thumb.jpg">
-                            <img src="images/small_11.jpg" alt="Lovart creative showcase image 6" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105" loading="lazy" decoding="async">
+                            <img src="images/11.jpg" alt="Lovart creative showcase image 6" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <!-- Image 12.jpg -->
@@ -676,7 +676,7 @@
 
                     <!-- Video 01.mp4 -->
                     <div class="animate-fade-in-up" style="animation-delay: 1.0s;">
-                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/small_01.jpg">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/01.jpg">
                             <source src="images/01_mobile.mp4" type="video/mp4" media="(max-width: 640px)">
                             <source src="images/01_hd.mp4" type="video/mp4" media="(max-width: 1024px)">
                             <source src="images/01.mp4" type="video/mp4">
@@ -695,7 +695,7 @@
                     </div>
                     <!-- Video 03.mp4 -->
                     <div class="animate-fade-in-up relative" style="animation-delay: 1.2s;">
-                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark lazy-video" playsinline preload="none" poster="images/small_03.jpg" data-src="images/03.mp4">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark lazy-video" playsinline preload="none" poster="images/03.jpg" data-src="images/03.mp4">
                             <source src="" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -705,42 +705,42 @@
                     </div>
                     <!-- Video 04.mp4 -->
                     <div class="animate-fade-in-up" style="animation-delay: 1.3s;">
-                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/small_04.jpg">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/04.jpg">
                             <source src="images/04.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <!-- Video 05.mp4 -->
                     <div class="animate-fade-in-up" style="animation-delay: 1.4s;">
-                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/small_05.jpg">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/05.jpg">
                             <source src="images/05.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <!-- Video 06.mp4 -->
                     <div class="animate-fade-in-up" style="animation-delay: 1.5s;">
-                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/small_06.jpg">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/06.jpg">
                             <source src="images/06.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <!-- Video 07.mp4 -->
                     <div class="animate-fade-in-up" style="animation-delay: 1.6s;">
-                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/small_07.jpg">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/07.jpg">
                             <source src="images/07.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <!-- Video 08.mp4 -->
                     <div class="animate-fade-in-up" style="animation-delay: 1.7s;">
-                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/small_08.jpg">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/08.jpg">
                             <source src="images/08.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <!-- Video 09.mp4 -->
                     <div class="animate-fade-in-up" style="animation-delay: 1.8s;">
-                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/small_09.jpg">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/09.jpg">
                             <source src="images/09.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -919,7 +919,7 @@
                     </div>
                 </div>
                 <div class="md:w-1/2 lg:w-3/5 flex justify-center md:justify-end animate-fade-in-up" style="animation-delay: 0.3s;">
-                    <img src="images/small_05.jpg" alt="Lovart platform empowering creative designs" class="rounded-lg shadow-xl max-w-lg w-full object-cover" style="max-height: 350px;">
+                    <img src="images/05.jpg" alt="Lovart platform empowering creative designs" class="rounded-lg shadow-xl max-w-lg w-full object-cover" style="max-height: 350px;">
                 </div>
             </div>
         </div>
