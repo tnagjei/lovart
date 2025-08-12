@@ -92,13 +92,13 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
             <nav class="hidden md:flex space-x-4 items-center">
-                <a href="index.html" class="text-neutral hover:text-primary transition-colors">Home</a>
-                <a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">Features</a>
-                <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a>
-                <a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a>
-                <a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a>
-                <a href="about.html" class="text-neutral hover:text-primary transition-colors">About</a>
-                <a href="lovart-pricing.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Get Started</a>
+                <a href="index.html" class="text-neutral hover:text-primary transition-colors">首页</a>
+                <a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">功能</a>
+                <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">定价</a>
+                <a href="blog.html" class="text-neutral hover:text-primary transition-colors">博客</a>
+                <a href="help.html" class="text-neutral hover:text-primary transition-colors">帮助</a>
+                <a href="about.html" class="text-neutral hover:text-primary transition-colors">关于</a>
+                <a href="lovart-pricing.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">开始使用</a>
             </nav>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none" aria-label="Toggle mobile menu">
@@ -108,13 +108,13 @@
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <a href="index.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Home</a>
-            <a href="lovart-design-features.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Features</a>
-            <a href="lovart-pricing.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Pricing</a>
-            <a href="blog.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Blog</a>
-            <a href="help.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Help</a>
-            <a href="about.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">About</a>
-            <a href="lovart-pricing.html" class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">Get Started</a>
+            <a href="index.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">首页</a>
+            <a href="lovart-design-features.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">功能</a>
+            <a href="lovart-pricing.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">定价</a>
+            <a href="blog.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">博客</a>
+            <a href="help.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">帮助</a>
+            <a href="about.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">关于</a>
+            <a href="lovart-pricing.html" class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">开始使用</a>
         </div>
     </header>
 
@@ -601,12 +601,12 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Products</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">产品</h3>
                     <ul class="space-y-2">
-                        <li><a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">Features</a></li>
-                        <li><a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a></li>
-                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a></li>
-                        <li><a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a></li>
+                        <li><a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">功能</a></li>
+                        <li><a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">定价</a></li>
+                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">博客</a></li>
+                        <li><a href="help.html" class="text-neutral hover:text-primary transition-colors">帮助</a></li>
                     </ul>
                 </div>
                 <div>
@@ -614,12 +614,12 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
                     <ul class="space-y-2">
                         <li><a href="lovart-api.html" class="text-neutral hover:text-primary transition-colors">API文档</a></li>
                         <li><a href="lovart-ai-code.html" class="text-neutral hover:text-primary transition-colors">代码集成</a></li>
-                        <li><a href="terms-of-service.html" class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
-                        <li><a href="privacy-policy.html" class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="text-neutral hover:text-primary transition-colors">用户协议</a></li>
+                        <li><a href="privacy-policy.html" class="text-neutral hover:text-primary transition-colors">隐私政策</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Contact方式</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">联系方式</h3>
                     <p class="text-neutral">Email: support@lovart.info</p>
                     <p class="text-neutral">Developer: dev-support@lovart.info</p>
                 </div>

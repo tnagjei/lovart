@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help中心 - Lovart AI设计平台</title>
-    <meta name="description" content="LovartHelp中心，提供使用指南、常见问题解答和技术支持">
-    <meta name="keywords" content="Help中心,使用指南,FAQ,技术支持,LovartHelp">
+    <title>帮助中心 - Lovart AI设计平台</title>
+    <meta name="description" content="Lovart帮助中心，提供使用指南、常见问题解答和技术支持">
+    <meta name="keywords" content="帮助中心,使用指南,FAQ,技术支持,Lovart帮助">
     <link rel="canonical" href="https://lovart.info/help.html">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -79,13 +79,13 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
             <nav class="hidden md:flex space-x-4 items-center">
-                <a href="index.html" class="text-neutral hover:text-primary transition-colors">Home</a>
-                <a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">Features</a>
-                <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a>
-                <a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a>
-                <a href="help.html" class="text-neutral hover:text-primary transition-colors font-semibold">Help</a>
-                <a href="about.html" class="text-neutral hover:text-primary transition-colors">About</a>
-                <a href="lovart-pricing.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Get Started</a>
+                <a href="index.html" class="text-neutral hover:text-primary transition-colors">首页</a>
+                <a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">功能</a>
+                <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">定价</a>
+                <a href="blog.html" class="text-neutral hover:text-primary transition-colors">博客</a>
+                <a href="help.html" class="text-neutral hover:text-primary transition-colors font-semibold">帮助</a>
+                <a href="about.html" class="text-neutral hover:text-primary transition-colors">关于</a>
+                <a href="lovart-pricing.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">开始使用</a>
             </nav>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none" aria-label="Toggle mobile menu">
@@ -95,13 +95,13 @@
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <a href="index.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Home</a>
-            <a href="lovart-design-features.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Features</a>
-            <a href="lovart-pricing.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Pricing</a>
-            <a href="blog.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Blog</a>
-            <a href="help.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Help</a>
-            <a href="about.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">About</a>
-            <a href="lovart-pricing.html" class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">Get Started</a>
+            <a href="index.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">首页</a>
+            <a href="lovart-design-features.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">功能</a>
+            <a href="lovart-pricing.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">定价</a>
+            <a href="blog.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">博客</a>
+            <a href="help.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">帮助</a>
+            <a href="about.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">关于</a>
+            <a href="lovart-pricing.html" class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">开始使用</a>
         </div>
     </header>
 
@@ -109,15 +109,15 @@
         <!-- Hero Section -->
         <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Help中心</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">帮助中心</h1>
                 <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
-                    我们在这里Help您充分利用Lovart的强大Features。浏览常见问题、使用指南或Contact我们的支持团队。
+                    我们在这里帮助您充分利用Lovart的强大功能。浏览常见问题、使用指南或联系我们的支持团队。
                 </p>
                 
                 <!-- Search Box -->
                 <div class="max-w-2xl mx-auto search-box">
                     <div class="relative">
-                        <input type="text" placeholder="搜索Help文档..." class="w-full px-6 py-4 pr-12 rounded-lg text-neutral-dark focus:outline-none focus:ring-2 focus:ring-white">
+                        <input type="text" placeholder="搜索帮助文档..." class="w-full px-6 py-4 pr-12 rounded-lg text-neutral-dark focus:outline-none focus:ring-2 focus:ring-white">
                         <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-neutral-dark hover:text-primary transition-colors">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -132,7 +132,7 @@
         <section class="py-12 bg-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-2xl font-bold text-neutral-dark mb-8 text-center">快速Help</h2>
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-8 text-center">快速帮助</h2>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         
                         <div class="help-card bg-primary text-white p-6 rounded-lg text-center cursor-pointer">
@@ -144,7 +144,7 @@
                         <div class="help-card bg-secondary text-white p-6 rounded-lg text-center cursor-pointer">
                             <div class="text-4xl mb-3">🎨</div>
                             <h3 class="font-semibold mb-2">设计教程</h3>
-                            <p class="text-sm opacity-90">掌握AI设计Features</p>
+                            <p class="text-sm opacity-90">掌握AI设计功能</p>
                         </div>
                         
                         <div class="help-card bg-green-500 text-white p-6 rounded-lg text-center cursor-pointer">
@@ -176,7 +176,7 @@
                             <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">1</div>
                             <h3 class="text-xl font-semibold text-neutral-dark mb-3">创建账户</h3>
                             <p class="text-neutral mb-4">
-                                注册您的Lovart账户，选择适合您需求的订阅计划。我们提供免费试用，让您体验所有Features。
+                                注册您的Lovart账户，选择适合您需求的订阅计划。我们提供免费试用，让您体验所有功能。
                             </p>
                             <ul class="text-sm text-neutral space-y-1 mb-4">
                                 <li>• 邮箱注册</li>
@@ -232,15 +232,15 @@
                         <!-- FAQ Item 1 -->
                         <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
                             <button @click="open = !open" class="w-full flex justify-between items-center text-left">
-                                <h3 class="text-lg font-semibold text-neutral-dark">如何Get StartedLovart？</h3>
+                                <h3 class="text-lg font-semibold text-neutral-dark">如何开始使用Lovart？</h3>
                                 <svg :class="{'transform rotate-180': open}" class="w-5 h-5 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
                             <div x-show="open" x-transition class="mt-4 text-neutral">
-                                <p>Get StartedLovart非常简单：</p>
+                                <p>开始使用Lovart非常简单：</p>
                                 <ol class="list-decimal list-inside mt-2 space-y-1">
-                                    <li>访问我们的网站并点击"Get Started"</li>
+                                    <li>访问我们的网站并点击"开始使用"</li>
                                     <li>选择适合您的订阅计划（我们提供免费试用）</li>
                                     <li>完成注册流程</li>
                                     <li>观看快速入门教程</li>
@@ -291,13 +291,13 @@
                         <!-- FAQ Item 4 -->
                         <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
                             <button @click="open = !open" class="w-full flex justify-between items-center text-left">
-                                <h3 class="text-lg font-semibold text-neutral-dark">AI设计Features是如何工作的？</h3>
+                                <h3 class="text-lg font-semibold text-neutral-dark">AI设计功能是如何工作的？</h3>
                                 <svg :class="{'transform rotate-180': open}" class="w-5 h-5 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
                             <div x-show="open" x-transition class="mt-4 text-neutral">
-                                <p>Lovart的AI设计Features基于先进的机器学习算法：</p>
+                                <p>Lovart的AI设计功能基于先进的机器学习算法：</p>
                                 <ul class="list-disc list-inside mt-2 space-y-1">
                                     <li>分析您的设计需求和偏好</li>
                                     <li>从海量设计数据中学习最佳实践</li>
@@ -311,7 +311,7 @@
                         <!-- FAQ Item 5 -->
                         <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
                             <button @click="open = !open" class="w-full flex justify-between items-center text-left">
-                                <h3 class="text-lg font-semibold text-neutral-dark">如何Contact客服支持？</h3>
+                                <h3 class="text-lg font-semibold text-neutral-dark">如何联系客服支持？</h3>
                                 <svg :class="{'transform rotate-180': open}" class="w-5 h-5 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
@@ -321,7 +321,7 @@
                                 <ul class="list-disc list-inside mt-2 space-y-1">
                                     <li><strong>在线聊天：</strong> 工作日9AM-6PM</li>
                                     <li><strong>邮件支持：</strong> support@lovart.info</li>
-                                    <li><strong>Help文档：</strong> 详细的在线教程</li>
+                                    <li><strong>帮助文档：</strong> 详细的在线教程</li>
                                     <li><strong>社区论坛：</strong> 与其他用户交流</li>
                                     <li><strong>视频教程：</strong> YouTube频道</li>
                                 </ul>
@@ -354,7 +354,7 @@
                             </div>
                             <div class="p-6">
                                 <h3 class="text-lg font-semibold text-neutral-dark mb-2">Lovart快速入门</h3>
-                                <p class="text-neutral text-sm mb-3">5分钟了解Lovart的核心Features</p>
+                                <p class="text-neutral text-sm mb-3">5分钟了解Lovart的核心功能</p>
                                 <div class="flex items-center text-sm text-neutral">
                                     <span>5:32</span>
                                     <span class="mx-2">•</span>
@@ -366,7 +366,7 @@
                         <!-- Video 2 -->
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                             <div class="relative">
-                                <img src="images/02.jpg" alt="AI设计Features" class="w-full h-48 object-cover">
+                                <img src="images/02.jpg" alt="AI设计功能" class="w-full h-48 object-cover">
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                                     <div class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center">
                                         <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
@@ -376,7 +376,7 @@
                                 </div>
                             </div>
                             <div class="p-6">
-                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">AI设计Features详解</h3>
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">AI设计功能详解</h3>
                                 <p class="text-neutral text-sm mb-3">深入了解AI如何提升设计效率</p>
                                 <div class="flex items-center text-sm text-neutral">
                                     <span>12:45</span>
@@ -418,9 +418,9 @@
         <section class="py-16 bg-primary text-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold mb-4">还需要Help？</h2>
+                    <h2 class="text-3xl font-bold mb-4">还需要帮助？</h2>
                     <p class="text-lg mb-8 opacity-90">
-                        我们的客服团队随时准备为您提供Help。选择最适合您的Contact方式。
+                        我们的客服团队随时准备为您提供帮助。选择最适合您的联系方式。
                     </p>
                     
                     <div class="grid md:grid-cols-3 gap-6 mb-8">
@@ -452,7 +452,7 @@
                             <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">忘记密码</span>
                             <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">账单问题</span>
                             <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">技术故障</span>
-                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">Features使用</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">功能使用</span>
                             <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">账户管理</span>
                         </div>
                     </div>
@@ -482,24 +482,24 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Products</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">产品</h3>
                     <ul class="space-y-2">
-                        <li><a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">Features</a></li>
-                        <li><a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a></li>
-                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a></li>
-                        <li><a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a></li>
+                        <li><a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">功能</a></li>
+                        <li><a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">定价</a></li>
+                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">博客</a></li>
+                        <li><a href="help.html" class="text-neutral hover:text-primary transition-colors">帮助</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Company</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">公司</h3>
                     <ul class="space-y-2">
-                        <li><a href="about.html" class="text-neutral hover:text-primary transition-colors">About Us</a></li>
-                        <li><a href="terms-of-service.html" class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
-                        <li><a href="privacy-policy.html" class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="about.html" class="text-neutral hover:text-primary transition-colors">关于我们</a></li>
+                        <li><a href="terms-of-service.html" class="text-neutral hover:text-primary transition-colors">用户协议</a></li>
+                        <li><a href="privacy-policy.html" class="text-neutral hover:text-primary transition-colors">隐私政策</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Contact方式</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">联系方式</h3>
                     <p class="text-neutral">Email: support@lovart.info</p>
                     <p class="text-neutral">Phone: +1 (555) LOV-ART0</p>
                 </div>
@@ -557,14 +557,14 @@
         });
 
         // Search functionality
-        const searchInput = document.querySelector('input[placeholder="搜索Help文档..."]');
+        const searchInput = document.querySelector('input[placeholder="搜索帮助文档..."]');
         if (searchInput) {
             searchInput.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') {
                     const searchTerm = e.target.value.trim();
                     if (searchTerm) {
                         // In a real implementation, this would search through help articles
-                        alert(`搜索Features正在开发中。您搜索的是: "${searchTerm}"`);
+                        alert(`搜索功能正在开发中。您搜索的是: "${searchTerm}"`);
                     }
                 }
             });

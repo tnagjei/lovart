@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>免费试用 - Lovart AI设计平台</title>
-    <meta name="description" content="Lovart AI设计平台提供免费试用服务。了解我们的免费Features、试用政策和付费计划对比。">
+    <meta name="description" content="Lovart AI设计平台提供免费试用服务。了解我们的免费功能、试用政策和付费计划对比。">
     <meta name="keywords" content="Lovart免费试用, AI设计免费, is lovart ai free, Lovart免费政策, 设计工具免费">
     <link rel="canonical" href="https://lovart.info/lovart-free.html">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -85,13 +85,13 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
             <nav class="hidden md:flex space-x-4 items-center">
-                <a href="index.html" class="text-neutral hover:text-primary transition-colors">Home</a>
-                <a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">Features</a>
-                <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a>
-                <a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a>
-                <a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a>
-                <a href="about.html" class="text-neutral hover:text-primary transition-colors">About</a>
-                <a href="lovart-pricing.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Get Started</a>
+                <a href="index.html" class="text-neutral hover:text-primary transition-colors">首页</a>
+                <a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">功能</a>
+                <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">定价</a>
+                <a href="blog.html" class="text-neutral hover:text-primary transition-colors">博客</a>
+                <a href="help.html" class="text-neutral hover:text-primary transition-colors">帮助</a>
+                <a href="about.html" class="text-neutral hover:text-primary transition-colors">关于</a>
+                <a href="lovart-pricing.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">开始使用</a>
             </nav>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none" aria-label="Toggle mobile menu">
@@ -101,13 +101,13 @@
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <a href="index.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Home</a>
-            <a href="lovart-design-features.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Home</a>
-            <a href="lovart-pricing.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Pricing</a>
-            <a href="blog.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Blog</a>
-            <a href="help.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Help</a>
-            <a href="about.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">About</a>
-            <a href="lovart-pricing.html" class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">Get Started</a>
+            <a href="index.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">首页</a>
+            <a href="lovart-design-features.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">首页</a>
+            <a href="lovart-pricing.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">定价</a>
+            <a href="blog.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">博客</a>
+            <a href="help.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">帮助</a>
+            <a href="about.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">关于</a>
+            <a href="lovart-pricing.html" class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">开始使用</a>
         </div>
     </header>
 
@@ -118,7 +118,7 @@
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl font-bold mb-6">Lovart免费试用</h1>
                     <p class="text-lg md:text-xl mb-8 opacity-90">
-                        是的，Lovart提供免费试用！体验我们强大的AI设计Features，无需信用卡即可开始。
+                        是的，Lovart提供免费试用！体验我们强大的AI设计功能，无需信用卡即可开始。
                     </p>
                     <div class="flex flex-wrap justify-center gap-4 mb-8">
                         <div class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
@@ -128,7 +128,7 @@
                             ⏰ 14天免费试用
                         </div>
                         <div class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
-                            🎨 全Features体验
+                            🎨 全功能体验
                         </div>
                         <div class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
                             🚀 立即开始
@@ -139,7 +139,7 @@
                             开始免费试用
                         </a>
                         <a href="#features" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-primary transition-colors">
-                            了解免费Features
+                            了解免费功能
                         </a>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
         <section id="features" class="py-16 bg-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-3xl font-bold text-neutral-dark mb-12 text-center">免费试用包含的Features</h2>
+                    <h2 class="text-3xl font-bold text-neutral-dark mb-12 text-center">免费试用包含的功能</h2>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         
                         <!-- AI Design Generation -->
@@ -261,13 +261,13 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-semibold text-neutral-dark mb-3">客户支持</h3>
-                            <p class="text-neutral mb-4">获得必要的Help和支持，快速上手</p>
+                            <p class="text-neutral mb-4">获得必要的帮助和支持，快速上手</p>
                             <ul class="text-sm text-neutral space-y-1">
                                 <li class="flex items-center">
                                     <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                     </svg>
-                                    Help文档
+                                    帮助文档
                                 </li>
                                 <li class="flex items-center">
                                     <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -298,7 +298,7 @@
                                     <svg class="w-4 h-4 check-icon mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                     </svg>
-                                    基础Features
+                                    基础功能
                                 </li>
                             </ul>
                         </div>
@@ -317,7 +317,7 @@
                             <table class="w-full comparison-table">
                                 <thead>
                                     <tr>
-                                        <th class="px-6 py-4 text-left">Features</th>
+                                        <th class="px-6 py-4 text-left">功能</th>
                                         <th class="px-6 py-4 text-center">免费版</th>
                                         <th class="px-6 py-4 text-center highlight-row">Pro版</th>
                                         <th class="px-6 py-4 text-center">企业版</th>
@@ -382,7 +382,7 @@
                                         <td class="px-6 py-4 font-medium">价格</td>
                                         <td class="px-6 py-4 text-center font-bold text-green-600">免费</td>
                                         <td class="px-6 py-4 text-center highlight-row font-bold">$29/月</td>
-                                        <td class="px-6 py-4 text-center font-bold">Contact销售</td>
+                                        <td class="px-6 py-4 text-center font-bold">联系销售</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -410,14 +410,14 @@
                         <div class="text-center">
                             <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">2</div>
                             <h3 class="text-lg font-semibold mb-3">选择免费计划</h3>
-                            <p class="text-neutral text-sm">选择免费试用计划，立即获得14天全Features访问权限</p>
+                            <p class="text-neutral text-sm">选择免费试用计划，立即获得14天全功能访问权限</p>
                         </div>
                         
                         <!-- Step 3 -->
                         <div class="text-center">
                             <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">3</div>
                             <h3 class="text-lg font-semibold mb-3">开始设计</h3>
-                            <p class="text-neutral text-sm">使用AI设计工具创建您的第一个作品，体验强大Features</p>
+                            <p class="text-neutral text-sm">使用AI设计工具创建您的第一个作品，体验强大功能</p>
                         </div>
                         
                     </div>
@@ -436,13 +436,13 @@
                         <!-- FAQ 1 -->
                         <div class="bg-white p-6 rounded-lg shadow">
                             <h3 class="text-lg font-semibold mb-3">Lovart真的免费吗？</h3>
-                            <p class="text-neutral">是的，Lovart提供永久免费版本，包含基础设计Features。同时我们也提供14天的全Features免费试用，无需信用卡。</p>
+                            <p class="text-neutral">是的，Lovart提供永久免费版本，包含基础设计功能。同时我们也提供14天的全功能免费试用，无需信用卡。</p>
                         </div>
                         
                         <!-- FAQ 2 -->
                         <div class="bg-white p-6 rounded-lg shadow">
                             <h3 class="text-lg font-semibold mb-3">免费试用结束后会发生什么？</h3>
-                            <p class="text-neutral">试用结束后，您可以选择升级到付费计划继续使用所有Features，或者继续使用免费版本的基础Features。</p>
+                            <p class="text-neutral">试用结束后，您可以选择升级到付费计划继续使用所有功能，或者继续使用免费版本的基础功能。</p>
                         </div>
                         
                         <!-- FAQ 3 -->
@@ -453,14 +453,14 @@
                         
                         <!-- FAQ 4 -->
                         <div class="bg-white p-6 rounded-lg shadow">
-                            <h3 class="text-lg font-semibold mb-3">免费版本有Features限制吗？</h3>
+                            <h3 class="text-lg font-semibold mb-3">免费版本有功能限制吗？</h3>
                             <p class="text-neutral">免费版本有一些限制，比如每月AI设计生成次数、存储空间和导出质量。但足够满足个人基础设计需求。</p>
                         </div>
                         
                         <!-- FAQ 5 -->
                         <div class="bg-white p-6 rounded-lg shadow">
                             <h3 class="text-lg font-semibold mb-3">企业用户有免费试用吗？</h3>
-                            <p class="text-neutral">是的，企业用户可以申请30天的 extended 免费试用，包含团队协作和高级Features。请Contact我们的销售团队。</p>
+                            <p class="text-neutral">是的，企业用户可以申请30天的 extended 免费试用，包含团队协作和高级功能。请联系我们的销售团队。</p>
                         </div>
                         
                     </div>
@@ -474,7 +474,7 @@
                 <div class="max-w-4xl mx-auto text-center">
                     <h2 class="text-3xl font-bold mb-4">准备好开始免费试用了吗？</h2>
                     <p class="text-lg mb-8 opacity-90">
-                        加入超过50万用户，体验AI设计的强大Features
+                        加入超过50万用户，体验AI设计的强大功能
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="lovart-pricing.html" class="bg-white text-primary px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors">
@@ -510,12 +510,12 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Products</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">产品</h3>
                     <ul class="space-y-2">
-                        <li><a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">Features</a></li>
-                        <li><a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a></li>
+                        <li><a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">功能</a></li>
+                        <li><a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">定价</a></li>
                         <li><a href="lovart-free.html" class="text-neutral hover:text-primary transition-colors">免费试用</a></li>
-                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a></li>
+                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">博客</a></li>
                     </ul>
                 </div>
                 <div>
@@ -523,14 +523,14 @@
                     <ul class="space-y-2">
                         <li><a href="lovart-api.html" class="text-neutral hover:text-primary transition-colors">API文档</a></li>
                         <li><a href="lovart-ai-code.html" class="text-neutral hover:text-primary transition-colors">代码集成</a></li>
-                        <li><a href="terms-of-service.html" class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
-                        <li><a href="privacy-policy.html" class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="text-neutral hover:text-primary transition-colors">用户协议</a></li>
+                        <li><a href="privacy-policy.html" class="text-neutral hover:text-primary transition-colors">隐私政策</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Contact方式</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">联系方式</h3>
                     <p class="text-neutral">Email: support@lovart.info</p>
-                    <p class="text-neutral">Help: help@lovart.info</p>
+                    <p class="text-neutral">帮助: help@lovart.info</p>
                 </div>
             </div>
             <div class="border-t border-gray-700 pt-8 text-center text-neutral">

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovart Design Features | AI-Powered Creative Tools & Platform</title>
+    <meta name="description" content="Explore the powerful design features of Lovart. From AI-driven suggestions and intuitive interfaces to real-time collaboration and vast asset libraries, Lovart empowers your creativity. Discover 'Lovart AI design tool' capabilities.">
+    <meta name="keywords" content="lovart features, ai design tools, creative platform, lovart ai, graphic design features, lovart design capabilities, lovart platform">
+    <link rel="canonical" href="https://lovart.info/lovart-design-features.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK9MPTEZ17"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-EK9MPTEZ17');
+    </script>
+
+    <style>
+        /* 自定义动画或无法通过 Tailwind 实现的样式可放于此处 */
+        .hero-bg-animation {
+            /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite; */
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .fade-in {
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .section-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section-animate.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#4f46e5', // indigo-600
+                light: '#6366f1', // indigo-500
+                dark: '#3730a3', // indigo-800
+              },
+              secondary: {
+                DEFAULT: '#ec4899', // pink-500
+                light: '#f472b6', // pink-400
+                dark: '#be185d', // pink-700
+              },
+              neutral: {
+                light: '#f9fafb', // gray-50
+                DEFAULT: '#6b7280', // gray-500
+                dark: '#1f2937', // gray-800
+              }
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-neutral-light text-neutral-dark antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
+            <nav class="hidden md:flex space-x-4 items-center">
+                <a href="lovart-design-features.html" class="text-primary font-semibold transition-colors">Features</a>
+                <a href="index.html#how-it-works" class="text-neutral hover:text-primary transition-colors">How It Works</a>
+                <a href="lovart-ai-code.html" class="text-neutral hover:text-primary transition-colors">For Developers</a>
+                <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a>
+                <a href="index.html#faq" class="text-neutral hover:text-primary transition-colors">FAQ</a>
+                <a href="lovart-pricing.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Get Started</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="lovart-design-features.html" class="block px-6 py-3 text-primary font-semibold hover:bg-primary-light hover:text-white transition-colors">Features</a>
+            <a href="index.html#how-it-works" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">How It Works</a>
+            <a href="lovart-ai-code.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">For Developers</a>
+            <a href="lovart-pricing.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Pricing</a>
+            <a href="index.html#faq" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">FAQ</a>
+            <a href="lovart-pricing.html" class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up" style="animation-delay: 0.2s;">Discover the Power of Lovart's Design Features</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.4s;">Lovart is engineered to elevate your creative process. Explore our suite of innovative features designed for designers, marketers, and creators of all levels. The "Lovart AI design tool" is at the core of our platform.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Features Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="space-y-16">
+
+                    <!-- Feature 1: AI-Powered Suggestions -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
+                        <div class="md:w-1/2">
+                            <img src="images/features/feature-ai-suggestions.jpg" alt="Lovart AI providing design suggestions" class="rounded-lg shadow-xl w-full">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">AI-Powered Suggestions & Smart Assistance by Lovart</h2>
+                            <p class="text-neutral mb-3">Let Lovart's intelligent AI be your creative partner. It analyzes your content and design goals to offer smart suggestions for layouts, color palettes, typography, and imagery. Overcome creative blocks and discover new possibilities with the "Lovart AI design tool".</p>
+                            <ul class="list-disc list-inside text-neutral space-y-1">
+                                <li>Context-aware layout recommendations</li>
+                                <li>Harmonious color scheme generation</li>
+                                <li>Intelligent font pairing suggestions</li>
+                                <li>Automated image enhancement and cropping</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2: Intuitive Drag-and-Drop Interface -->
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
+                        <div class="md:w-1/2">
+                            <img src="images/features/feature-drag-drop.jpg" alt="Lovart's intuitive drag and drop interface" class="rounded-lg shadow-xl w-full">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">Intuitive Drag-and-Drop Interface with Lovart</h2>
+                            <p class="text-neutral mb-3">Lovart features a beautifully designed and easy-to-use drag-and-drop editor. Effortlessly arrange elements, resize objects, and build complex layouts without writing a single line of code. Focus on your creativity, not on learning complicated software. This is a key aspect of the "Lovart platform".</p>
+                            <ul class="list-disc list-inside text-neutral space-y-1">
+                                <li>Pixel-perfect control and alignment guides</li>
+                                <li>Easy-to-use tools for shapes, text, and media</li>
+                                <li>Layer management for complex designs</li>
+                                <li>Responsive design previews</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3: Vast Asset Library -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
+                        <div class="md:w-1/2">
+                            <img src="images/features/feature-asset-library.jpg" alt="Accessing Lovart's vast asset library" class="rounded-lg shadow-xl w-full">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">Vast Integrated Asset Library in Lovart</h2>
+                            <p class="text-neutral mb-3">Access millions of high-quality stock photos, illustrations, icons, videos, and fonts directly within the Lovart editor. Our curated library, a core part of "Lovart AI", ensures you have the perfect assets to bring your vision to life without ever leaving the platform.</p>
+                            <ul class="list-disc list-inside text-neutral space-y-1">
+                                <li>Millions of royalty-free images and videos</li>
+                                <li>Extensive collection of icons and illustrations</li>
+                                <li>Wide range of professional fonts</li>
+                                <li>Easy search and filtering capabilities</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4: Real-Time Collaboration (Coming Soon) -->
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
+                        <div class="md:w-1/2">
+                            <img src="images/features/feature-collaboration.jpg" alt="Team collaborating in real-time with Lovart" class="rounded-lg shadow-xl w-full">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">Real-Time Collaboration with Lovart (Coming Soon)</h2>
+                            <p class="text-neutral mb-3">Work seamlessly with your team or clients in real-time. Share designs, leave comments directly on the canvas, and see changes as they happen. Lovart's collaborative features (soon on the "Lovart platform") will streamline your review process and boost productivity.</p>
+                            <ul class="list-disc list-inside text-neutral space-y-1">
+                                <li>Shareable design links with permission controls</li>
+                                <li>On-canvas commenting and annotations</li>
+                                <li>Version history and rollback</li>
+                                <li>Team libraries for shared assets (planned)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                     <!-- Feature 5: One-Click Export & Sharing -->
+                     <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
+                        <div class="md:w-1/2">
+                            <img src="images/features/feature-export.jpg" alt="Lovart's one-click export options" class="rounded-lg shadow-xl w-full">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">Versatile One-Click Export & Sharing by Lovart</h2>
+                            <p class="text-neutral mb-3">Once your design is perfect, Lovart makes it easy to share it with the world. Export your creations in various formats optimized for web, print, or social media with a single click. Lovart ensures your designs look great everywhere.</p>
+                            <ul class="list-disc list-inside text-neutral space-y-1">
+                                <li>Multiple export formats (JPG, PNG, PDF, SVG - planned)</li>
+                                <li>Customizable export settings for quality and size</li>
+                                <li>Direct sharing to social media platforms (planned)</li>
+                                <li>Embeddable design options for websites</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-16 md:py-24 bg-neutral-light section-animate">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark mb-6">Ready to Experience the Future of Design with Lovart?</h2>
+                <p class="text-lg text-neutral mb-8 max-w-xl mx-auto">Unlock your creative potential with Lovart's powerful and intuitive features. Start creating stunning visuals today with the "Lovart AI design tool".</p>
+                <a href="lovart-pricing.html" class="bg-primary text-white px-10 py-4 rounded-md hover:bg-primary-dark transition-colors text-lg font-medium">Explore Lovart Plans & Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-dark text-neutral-light py-12">
+        <div class="container mx-auto px-6 text-center">
+            <a href="index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors mb-4 inline-block">Lovart</a>
+            <nav class="flex flex-wrap justify-center space-x-4 sm:space-x-6 mb-6">
+                <a href="lovart-design-features.html" class="text-primary-light font-semibold transition-colors">Features</a>
+                <a href="index.html#how-it-works" class="hover:text-primary-light transition-colors">How It Works</a>
+                <a href="lovart-ai-code.html" class="hover:text-primary-light transition-colors">For Developers</a>
+                <a href="lovart-pricing.html" class="hover:text-primary-light transition-colors">Pricing</a>
+                <a href="index.html#faq" class="hover:text-primary-light transition-colors">FAQ</a>
+                <a href="mailto:sales@lovart.info?subject=General%20Inquiry" class="hover:text-primary-light transition-colors">Contact</a>
+            </nav>
+            <div class="text-sm text-neutral mb-4">
+                <p>&copy; <span id="currentYear"></span> Lovart. All rights reserved. Discover "Lovart AI design tool" power.</p>
+                <p class="text-xs opacity-75 mt-1">The "Lovart platform" - Redefining Digital Creation.</p>
+            </div>
+            <!-- Social media icons can be added here if desired, similar to index.html -->
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Intersection Observer for section animations
+        const sections = document.querySelectorAll('.section-animate');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
