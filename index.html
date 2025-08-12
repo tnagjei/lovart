@@ -39,6 +39,16 @@
     </script>
 
     <style>
+        /* 懒加载相关样式 */
+        .loading-indicator {
+            transition: opacity 0.3s ease;
+        }
+        .lazy-load.loaded + .loading-indicator,
+        .lazy-video.loaded + .loading-indicator {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
         /* 自定义动画或无法通过 Tailwind 实现的样式可放于此处 */
         .hero-bg-animation { /* 示例：可添加炫酷背景动画的类 */
             /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -153,7 +163,10 @@
                     <picture>
                         <source media="(max-width: 640px)" srcset="images/01_thumb.jpg">
                         <source media="(max-width: 1024px)" srcset="images/01.jpg">
-                        <img src="images/01.jpg" alt="Lovart AI Design Platform in action" class="w-full max-w-3xl mx-auto rounded-lg shadow-xl" loading="lazy" decoding="async">
+                        <img data-src="images/01.jpg" src="images/placeholder.jpg" alt="Lovart AI Design Platform in action" class="w-full max-w-3xl mx-auto rounded-lg shadow-xl lazy-load" loading="lazy" decoding="async">
+                        <div class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
+                            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                        </div>
                     </picture>
                 </div>
                 <!-- 如果您想使用视频，例如 images/X2Twitter.com_Ad4eIltxuecbcJV9_720p.mp4 -->
@@ -292,17 +305,23 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-12">Lovart in Action: Creative Showcase</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     <!-- Image 06.jpg -->
-                    <div class="animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="animate-fade-in-up relative" style="animation-delay: 0.1s;">
                         <picture>
                             <source media="(max-width: 640px)" srcset="images/06_thumb.jpg">
-                            <img src="images/06.jpg" alt="Lovart creative showcase image 1" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105" loading="lazy" decoding="async">
+                            <img data-src="images/06.jpg" src="images/placeholder.jpg" alt="Lovart creative showcase image 1" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 lazy-load" loading="lazy" decoding="async">
+                            <div class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
+                                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                            </div>
                         </picture>
                     </div>
                     <!-- Image 07.jpg -->
-                    <div class="animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="animate-fade-in-up relative" style="animation-delay: 0.2s;">
                         <picture>
                             <source media="(max-width: 640px)" srcset="images/07_thumb.jpg">
-                            <img src="images/07.jpg" alt="Lovart creative showcase image 2" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105" loading="lazy" decoding="async">
+                            <img data-src="images/07.jpg" src="images/placeholder.jpg" alt="Lovart creative showcase image 2" class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 lazy-load" loading="lazy" decoding="async">
+                            <div class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
+                                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                            </div>
                         </picture>
                     </div>
                     <!-- Image 08.jpg -->
@@ -365,18 +384,24 @@
                         </video>
                     </div>
                     <!-- Video 02.mp4 -->
-                    <div class="animate-fade-in-up" style="animation-delay: 1.1s;">
-                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/02.jpg">
-                            <source src="images/02.mp4" type="video/mp4">
+                    <div class="animate-fade-in-up relative" style="animation-delay: 1.1s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark lazy-video" playsinline preload="none" poster="images/02.jpg" data-src="images/02.mp4">
+                            <source src="" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        <div class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
+                            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                        </div>
                     </div>
                     <!-- Video 03.mp4 -->
-                    <div class="animate-fade-in-up" style="animation-delay: 1.2s;">
-                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark" playsinline preload="metadata" poster="images/03.jpg">
-                            <source src="images/03.mp4" type="video/mp4">
+                    <div class="animate-fade-in-up relative" style="animation-delay: 1.2s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark lazy-video" playsinline preload="none" poster="images/03.jpg" data-src="images/03.mp4">
+                            <source src="" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        <div class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
+                            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                        </div>
                     </div>
                     <!-- Video 04.mp4 -->
                     <div class="animate-fade-in-up" style="animation-delay: 1.3s;">
@@ -628,8 +653,39 @@
     </script>
 
     <script>
-        // 延迟执行非关键JavaScript
+        // 图片和视频懒加载
         document.addEventListener('DOMContentLoaded', function() {
+            // 初始化懒加载观察器
+            const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const lazyElement = entry.target;
+                        
+                        if (lazyElement.classList.contains('lazy-load')) {
+                            // 图片懒加载
+                            lazyElement.src = lazyElement.dataset.src;
+                            lazyElement.onload = () => {
+                                lazyElement.classList.add('loaded');
+                                lazyElement.parentElement.querySelector('.loading-indicator').style.display = 'none';
+                            };
+                        } else if (lazyElement.classList.contains('lazy-video')) {
+                            // 视频懒加载
+                            const source = lazyElement.querySelector('source');
+                            source.src = lazyElement.dataset.src;
+                            lazyElement.load();
+                            lazyElement.parentElement.querySelector('.loading-indicator').style.display = 'none';
+                        }
+                        
+                        observer.unobserve(lazyElement);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '200px' });
+
+            // 观察所有懒加载元素
+            document.querySelectorAll('.lazy-load, .lazy-video').forEach(el => {
+                lazyLoadObserver.observe(el);
+            });
+
             // Mobile menu toggle
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
