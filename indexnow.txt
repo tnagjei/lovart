@@ -1,0 +1,4 @@
+# IndexNow API Key
+# Replace with your actual key from Bing Webmaster Tools
+# This file should be placed in the root directory of lovart.info
+# Example key: e4926c62-F7a1-4xxx-b201-xxxxxxxxxxxx

@@ -8,6 +8,9 @@ Disallow: /private/
 # Sitemap
 Sitemap: https://lovart.info/sitemap.xml
 
+# IndexNow Protocol
+IndexNow-Key: e4926c62-F7a1-4xxx-b201-xxxxxxxxxxxx  # Replace with your IndexNow API key
+
 # AI crawler specific rules
 User-agent: GPTBot
 User-agent: Claude-Web
