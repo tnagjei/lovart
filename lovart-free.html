@@ -716,6 +716,54 @@
             observer.observe(section);
         });
     </script>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent"
+        class="fixed bottom-0 left-0 right-0 bg-neutral-dark text-white p-4 shadow-lg transform translate-y-full transition-transform duration-300 z-50"
+        style="display: none;">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-sm">
+                <p>We use cookies to enhance your experience and analyze our traffic. By continuing to visit this site
+                    you agree to our use of cookies. <a href="privacy-policy.html"
+                        class="underline hover:text-primary">Learn more</a></p>
+            </div>
+            <div class="flex gap-3">
+                <button id="cookie-decline"
+                    class="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-neutral-dark transition-colors">Decline</button>
+                <button id="cookie-accept"
+                    class="px-4 py-2 text-sm bg-primary text-white rounded hover:bg-primary-dark transition-colors">Accept</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cookieConsent = document.getElementById('cookie-consent');
+            const acceptBtn = document.getElementById('cookie-accept');
+            const declineBtn = document.getElementById('cookie-decline');
+
+            if (!localStorage.getItem('cookieConsent')) {
+                cookieConsent.style.display = 'block';
+                setTimeout(() => {
+                    cookieConsent.classList.remove('translate-y-full');
+                }, 100);
+            }
+
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'accepted');
+                cookieConsent.classList.add('translate-y-full');
+                setTimeout(() => {
+                    cookieConsent.style.display = 'none';
+                }, 300);
+            });
+
+            declineBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'declined');
+                cookieConsent.classList.add('translate-y-full');
+                setTimeout(() => {
+                    cookieConsent.style.display = 'none';
+                }, 300);
+            });
+        });
+    </script>
 </body>
 
 </html>
