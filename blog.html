@@ -50,6 +50,35 @@
         .category-pill:hover {
             transform: scale(1.05);
         }
+
+        /* AdSense 占位符样式 */
+        .ad-slot-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3f4f6;
+            min-height: 280px;
+            margin: 2rem 0;
+            position: relative;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .ad-slot-container::before {
+            content: 'Advertisement';
+            position: absolute;
+            color: #9ca3af;
+            font-size: 0.875rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .ad-slot-container ins {
+            z-index: 1;
+            background: white;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -201,140 +230,229 @@
             </div>
         </section>
 
-        <!-- Blog Posts Grid -->
+        <!-- Blog Content with Sidebar -->
         <section class="py-16 bg-white">
             <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto">
-                    <h2 class="text-2xl font-bold text-neutral-dark mb-8">最新文章</h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex flex-col lg:flex-row gap-12">
 
-                        <!-- Blog Post 1 -->
-                        <article class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="images/03.jpg" alt="设计教程" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <div class="flex items-center gap-3 mb-3">
-                                    <span
-                                        class="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">教程指南</span>
-                                    <span class="text-neutral text-sm">2024年1月12日</span>
-                                </div>
-                                <h3 class="text-xl font-bold text-neutral-dark mb-3">5分钟掌握Lovart的AI设计Features</h3>
-                                <p class="text-neutral mb-4">
-                                    快速学习如何使用Lovart的AIFeatures创建令人印象深刻的设计作品。本教程将带您了解核心Features和实用技巧。
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-neutral">李老师</span>
-                                    <a href="#"
-                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
-                                </div>
-                            </div>
-                        </article>
+                    <!-- Main Content (Left) -->
+                    <div class="lg:w-2/3">
+                        <h2 class="text-2xl font-bold text-neutral-dark mb-8">Latest Articles</h2>
+                        <div class="grid md:grid-cols-2 gap-8">
 
-                        <!-- Blog Post 2 -->
-                        <article class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="images/04.jpg" alt="设计趋势" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <div class="flex items-center gap-3 mb-3">
-                                    <span
-                                        class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">行业洞察</span>
-                                    <span class="text-neutral text-sm">2024年1月10日</span>
+                            <!-- Blog Post 1 -->
+                            <article
+                                class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+                                <img src="images/03.jpg" alt="Design Tutorial" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">Tutorial</span>
+                                        <span class="text-neutral text-sm">Jan 12, 2024</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Master Lovart's AI Design
+                                        Features in 5 Minutes</h3>
+                                    <p class="text-neutral mb-4 line-clamp-3">
+                                        Quickly learn how to use Lovart's AI features to create impressive designs. This
+                                        tutorial covers core features and practical tips.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-neutral">Teacher Li</span>
+                                        <a href="#"
+                                            class="text-primary hover:text-primary-dark font-medium text-sm">Read
+                                            More</a>
+                                    </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-neutral-dark mb-3">2024年UI/UX设计趋势预测</h3>
-                                <p class="text-neutral mb-4">
-                                    深入分析2024年最值得关注的UI/UX设计趋势，从极简主义到沉浸式体验，了解如何在您的项目中应用这些趋势。
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-neutral">王分析师</span>
-                                    <a href="#"
-                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
-                                </div>
-                            </div>
-                        </article>
+                            </article>
 
-                        <!-- Blog Post 3 -->
-                        <article class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="images/05.jpg" alt="用户案例" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <div class="flex items-center gap-3 mb-3">
-                                    <span
-                                        class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">用户故事</span>
-                                    <span class="text-neutral text-sm">2024年1月8日</span>
+                            <!-- Blog Post 2 -->
+                            <article
+                                class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+                                <img src="images/04.jpg" alt="Design Trends" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">Industry
+                                            Insights</span>
+                                        <span class="text-neutral text-sm">Jan 10, 2024</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">2024 UI/UX Design Trend
+                                        Predictions</h3>
+                                    <p class="text-neutral mb-4 line-clamp-3">
+                                        Deep dive into the most notable UI/UX design trends of 2024, from minimalism to
+                                        immersive experiences, and how to apply them in your projects.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-neutral">Analyst Wang</span>
+                                        <a href="#"
+                                            class="text-primary hover:text-primary-dark font-medium text-sm">Read
+                                            More</a>
+                                    </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-neutral-dark mb-3">设计师如何用Lovart提升效率300%</h3>
-                                <p class="text-neutral mb-4">
-                                    真实用户案例：独立设计师小陈分享她如何通过Lovart的AIFeatures将设计时间缩短了70%，同时提高了作品质量。
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-neutral">陈设计师</span>
-                                    <a href="#"
-                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
-                                </div>
-                            </div>
-                        </article>
+                            </article>
 
-                        <!-- Blog Post 4 -->
-                        <article class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="images/06.jpg" alt="Products设计" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <div class="flex items-center gap-3 mb-3">
-                                    <span
-                                        class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">Products设计</span>
-                                    <span class="text-neutral text-sm">2024年1月5日</span>
+                            <!-- Blog Post 3 -->
+                            <article
+                                class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+                                <img src="images/05.jpg" alt="User Case Study" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">User
+                                            Stories</span>
+                                        <span class="text-neutral text-sm">Jan 8, 2024</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">How Designers Boost Efficiency
+                                        by 300% with Lovart</h3>
+                                    <p class="text-neutral mb-4 line-clamp-3">
+                                        Real user case: Independent designer Chen shares how she reduced design time by
+                                        70% using Lovart's AI features while improving quality.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-neutral">Designer Chen</span>
+                                        <a href="#"
+                                            class="text-primary hover:text-primary-dark font-medium text-sm">Read
+                                            More</a>
+                                    </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-neutral-dark mb-3">AI辅助Products设计的最佳实践</h3>
-                                <p class="text-neutral mb-4">
-                                    探讨如何在Products设计中有效整合AI工具，从概念验证到用户测试，AI如何HelpProducts团队做出更好的设计决策。
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-neutral">赵Products经理</span>
-                                    <a href="#"
-                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
-                                </div>
-                            </div>
-                        </article>
+                            </article>
 
-                        <!-- Blog Post 5 -->
-                        <article class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="images/07.jpg" alt="创意灵感" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <div class="flex items-center gap-3 mb-3">
-                                    <span
-                                        class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium">创意灵感</span>
-                                    <span class="text-neutral text-sm">2024年1月3日</span>
+                            <!-- Blog Post 4 -->
+                            <article
+                                class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+                                <img src="images/06.jpg" alt="Product Design" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">Product
+                                            Design</span>
+                                        <span class="text-neutral text-sm">Jan 5, 2024</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Best Practices for AI-Assisted
+                                        Product Design</h3>
+                                    <p class="text-neutral mb-4 line-clamp-3">
+                                        Explore how to effectively integrate AI tools into product design, from proof of
+                                        concept to user testing, and how AI helps product teams make better decisions.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-neutral">Product Manager Zhao</span>
+                                        <a href="#"
+                                            class="text-primary hover:text-primary-dark font-medium text-sm">Read
+                                            More</a>
+                                    </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-neutral-dark mb-3">突破创意瓶颈：AI激发设计灵感</h3>
-                                <p class="text-neutral mb-4">
-                                    当创意枯竭时，AI可以成为您的灵感源泉。了解如何使用Lovart的AIFeatures快速生成创意概念和设计方向。
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-neutral">刘创意总监</span>
-                                    <a href="#"
-                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
-                                </div>
-                            </div>
-                        </article>
+                            </article>
 
-                        <!-- Blog Post 6 -->
-                        <article class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="images/08.jpg" alt="Products更新" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <div class="flex items-center gap-3 mb-3">
-                                    <span
-                                        class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">Products更新</span>
-                                    <span class="text-neutral text-sm">2024年1月1日</span>
+                            <!-- Blog Post 5 -->
+                            <article
+                                class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+                                <img src="images/07.jpg" alt="Creative Inspiration" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium">Inspiration</span>
+                                        <span class="text-neutral text-sm">Jan 3, 2024</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Breaking Creative Blocks: AI
+                                        Sparks Design Inspiration</h3>
+                                    <p class="text-neutral mb-4 line-clamp-3">
+                                        When creativity runs dry, AI can be your source of inspiration. Learn how to use
+                                        Lovart's AI features to quickly generate creative concepts and directions.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-neutral">Creative Director Liu</span>
+                                        <a href="#"
+                                            class="text-primary hover:text-primary-dark font-medium text-sm">Read
+                                            More</a>
+                                    </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-neutral-dark mb-3">Lovart 2024年首月更新：新Features介绍</h3>
-                                <p class="text-neutral mb-4">
-                                    新的一年，新的Features！了解Lovart最新的Products更新，包括增强的AI算法、新的模板库和改进的协作Features。
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-neutral">Products团队</span>
-                                    <a href="#"
-                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
-                                </div>
-                            </div>
-                        </article>
+                            </article>
 
+                            <!-- Blog Post 6 -->
+                            <article
+                                class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+                                <img src="images/08.jpg" alt="Product Updates" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">Product
+                                            Updates</span>
+                                        <span class="text-neutral text-sm">Jan 1, 2024</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Lovart 2024 First Month Update:
+                                        New Features</h3>
+                                    <p class="text-neutral mb-4 line-clamp-3">
+                                        New year, new features! Discover Lovart's latest product updates, including
+                                        enhanced AI algorithms, new template libraries, and improved collaboration
+                                        features.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-neutral">Product Team</span>
+                                        <a href="#"
+                                            class="text-primary hover:text-primary-dark font-medium text-sm">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
                     </div>
+
+                    <!-- Sidebar (Right) -->
+                    <aside class="lg:w-1/3 space-y-8">
+
+                        <!-- Ad Slot: Vertical Banner -->
+                        <div class="ad-slot-container" style="min-height: 600px;">
+                            <!-- 
+                                Tip: Replace with your AdSense ad unit code here 
+                                Suggested size: 300x600 (Large Skyscraper)
+                            -->
+                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3083296102953963"
+                                data-ad-slot="YOUR_AD_SLOT_ID" data-ad-format="auto"
+                                data-full-width-responsive="true"></ins>
+                            <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+
+                        <!-- Popular Topics (Moved from bottom) -->
+                        <div class="bg-neutral-light p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-neutral-dark mb-4">Popular Topics</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-neutral hover:text-primary cursor-pointer">AI Design Tools</span>
+                                    <span class="bg-white px-2 py-1 rounded text-xs text-neutral-500">25</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-neutral hover:text-primary cursor-pointer">Efficiency Boost</span>
+                                    <span class="bg-white px-2 py-1 rounded text-xs text-neutral-500">18</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-neutral hover:text-primary cursor-pointer">Creative
+                                        Inspiration</span>
+                                    <span class="bg-white px-2 py-1 rounded text-xs text-neutral-500">32</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-neutral hover:text-primary cursor-pointer">UI/UX Design</span>
+                                    <span class="bg-white px-2 py-1 rounded text-xs text-neutral-500">21</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter (Mini version) -->
+                        <div class="bg-primary p-6 rounded-lg shadow-md text-white">
+                            <h3 class="text-xl font-bold mb-2">Subscribe for Updates</h3>
+                            <p class="text-sm opacity-90 mb-4">Get the latest design trends and tutorials weekly.</p>
+                            <form class="space-y-3">
+                                <input type="email" placeholder="Your Email"
+                                    class="w-full px-4 py-2 rounded text-neutral-dark focus:outline-none">
+                                <button type="submit"
+                                    class="w-full bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded font-medium transition-colors">Subscribe</button>
+                            </form>
+                        </div>
+
+                    </aside>
+
                 </div>
             </div>
         </section>
@@ -362,36 +480,7 @@
             </div>
         </section>
 
-        <!-- Popular Topics -->
-        <section class="py-16 bg-neutral-light">
-            <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto">
-                    <h2 class="text-2xl font-bold text-neutral-dark mb-8 text-center">热门话题</h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                            <div class="text-4xl mb-3">🎨</div>
-                            <h3 class="font-semibold text-neutral-dark mb-2">AI设计工具</h3>
-                            <p class="text-sm text-neutral">25篇文章</p>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                            <div class="text-4xl mb-3">🚀</div>
-                            <h3 class="font-semibold text-neutral-dark mb-2">效率提升</h3>
-                            <p class="text-sm text-neutral">18篇文章</p>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                            <div class="text-4xl mb-3">💡</div>
-                            <h3 class="font-semibold text-neutral-dark mb-2">创意灵感</h3>
-                            <p class="text-sm text-neutral">32篇文章</p>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                            <div class="text-4xl mb-3">📱</div>
-                            <h3 class="font-semibold text-neutral-dark mb-2">UI/UX设计</h3>
-                            <p class="text-sm text-neutral">21篇文章</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
     </main>
 
     <!-- Footer -->
