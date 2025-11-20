@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Lovart AI设计平台</title>
-    <meta name="description" content="关注Lovart官方Blog，获取最新的AI设计趋势分析、实用设计教程、成功案例分享以及创意灵感源泉。了解如何运用AI提升设计效率，掌握现代设计技巧，获取专业创作指导和行业洞察。">
+    <meta name="description"
+        content="关注Lovart官方Blog，获取最新的AI设计趋势分析、实用设计教程、成功案例分享以及创意灵感源泉。了解如何运用AI提升设计效率，掌握现代设计技巧，获取专业创作指导和行业洞察。">
     <meta name="keywords" content="AI设计,设计Blog,创意灵感,设计教程,LovartBlog">
     <link rel="canonical" href="https://lovart.info/blog.html">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+        crossorigin="anonymous"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK9MPTEZ17"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-EK9MPTEZ17');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-EK9MPTEZ17');
     </script>
 
     <style>
@@ -25,79 +29,101 @@
             transform: translateY(30px);
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
+
         .section-animate.is-visible {
             opacity: 1;
             transform: translateY(0);
         }
+
         .blog-card {
             transition: all 0.3s ease;
         }
+
         .blog-card:hover {
             transform: translateY(-5px);
         }
+
         .category-pill {
             transition: all 0.2s ease;
         }
+
         .category-pill:hover {
             transform: scale(1.05);
         }
     </style>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: {
-                DEFAULT: '#4f46e5',
-                light: '#6366f1',
-                dark: '#3730a3',
-              },
-              secondary: {
-                DEFAULT: '#ec4899',
-                light: '#f472b6',
-                dark: '#be185d',
-              },
-              neutral: {
-                light: '#f9fafb',
-                DEFAULT: '#6b7280',
-                dark: '#1f2937',
-              }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4f46e5',
+                            light: '#6366f1',
+                            dark: '#3730a3',
+                        },
+                        secondary: {
+                            DEFAULT: '#ec4899',
+                            light: '#f472b6',
+                            dark: '#be185d',
+                        },
+                        neutral: {
+                            light: '#f9fafb',
+                            DEFAULT: '#6b7280',
+                            dark: '#1f2937',
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     </script>
 </head>
+
 <body class="bg-neutral-light text-neutral-dark antialiased">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
+            <a href="index.html"
+                class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
             <nav class="hidden md:flex space-x-4 items-center">
                 <a href="index.html" class="text-neutral hover:text-primary transition-colors">Home</a>
-                <a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">Features</a>
+                <a href="lovart-design-features.html"
+                    class="text-neutral hover:text-primary transition-colors">Features</a>
                 <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a>
                 <a href="blog.html" class="text-neutral hover:text-primary transition-colors font-semibold">Blog</a>
                 <a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a>
                 <a href="about.html" class="text-neutral hover:text-primary transition-colors">About</a>
-                <a href="lovart-pricing.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Get Started</a>
+                <a href="lovart-pricing.html"
+                    class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Get
+                    Started</a>
             </nav>
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none" aria-label="Toggle mobile menu">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none"
+                    aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <a href="index.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Home</a>
-            <a href="lovart-design-features.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Features</a>
-            <a href="lovart-pricing.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Pricing</a>
-            <a href="blog.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Blog</a>
-            <a href="help.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Help</a>
-            <a href="about.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">About</a>
-            <a href="lovart-pricing.html" class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">Get Started</a>
+            <a href="index.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Home</a>
+            <a href="lovart-design-features.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Features</a>
+            <a href="lovart-pricing.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Pricing</a>
+            <a href="blog.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Blog</a>
+            <a href="help.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Help</a>
+            <a href="about.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">About</a>
+            <a href="lovart-pricing.html"
+                class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">Get
+                Started</a>
         </div>
     </header>
 
@@ -122,12 +148,18 @@
         <section class="py-8 bg-white">
             <div class="container mx-auto px-6">
                 <div class="flex flex-wrap justify-center gap-3">
-                    <button class="category-pill bg-primary text-white px-6 py-2 rounded-full text-sm font-medium">全部</button>
-                    <button class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">AI设计</button>
-                    <button class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">教程指南</button>
-                    <button class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">行业洞察</button>
-                    <button class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">Products更新</button>
-                    <button class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">用户故事</button>
+                    <button
+                        class="category-pill bg-primary text-white px-6 py-2 rounded-full text-sm font-medium">全部</button>
+                    <button
+                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">AI设计</button>
+                    <button
+                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">教程指南</button>
+                    <button
+                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">行业洞察</button>
+                    <button
+                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">Products更新</button>
+                    <button
+                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">用户故事</button>
                 </div>
             </div>
         </section>
@@ -144,7 +176,8 @@
                             </div>
                             <div class="md:w-1/2 p-8">
                                 <div class="flex items-center gap-3 mb-4">
-                                    <span class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">AI设计</span>
+                                    <span
+                                        class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">AI设计</span>
                                     <span class="text-neutral text-sm">2024年1月15日</span>
                                 </div>
                                 <h3 class="text-2xl font-bold text-neutral-dark mb-4">AI如何彻底改变现代设计流程</h3>
@@ -174,13 +207,14 @@
                 <div class="max-w-6xl mx-auto">
                     <h2 class="text-2xl font-bold text-neutral-dark mb-8">最新文章</h2>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        
+
                         <!-- Blog Post 1 -->
                         <article class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
                             <img src="images/03.jpg" alt="设计教程" class="w-full h-48 object-cover">
                             <div class="p-6">
                                 <div class="flex items-center gap-3 mb-3">
-                                    <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">教程指南</span>
+                                    <span
+                                        class="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">教程指南</span>
                                     <span class="text-neutral text-sm">2024年1月12日</span>
                                 </div>
                                 <h3 class="text-xl font-bold text-neutral-dark mb-3">5分钟掌握Lovart的AI设计Features</h3>
@@ -189,7 +223,8 @@
                                 </p>
                                 <div class="flex items-center justify-between">
                                     <span class="text-sm text-neutral">李老师</span>
-                                    <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
+                                    <a href="#"
+                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
                                 </div>
                             </div>
                         </article>
@@ -199,7 +234,8 @@
                             <img src="images/04.jpg" alt="设计趋势" class="w-full h-48 object-cover">
                             <div class="p-6">
                                 <div class="flex items-center gap-3 mb-3">
-                                    <span class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">行业洞察</span>
+                                    <span
+                                        class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">行业洞察</span>
                                     <span class="text-neutral text-sm">2024年1月10日</span>
                                 </div>
                                 <h3 class="text-xl font-bold text-neutral-dark mb-3">2024年UI/UX设计趋势预测</h3>
@@ -208,7 +244,8 @@
                                 </p>
                                 <div class="flex items-center justify-between">
                                     <span class="text-sm text-neutral">王分析师</span>
-                                    <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
+                                    <a href="#"
+                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
                                 </div>
                             </div>
                         </article>
@@ -218,7 +255,8 @@
                             <img src="images/05.jpg" alt="用户案例" class="w-full h-48 object-cover">
                             <div class="p-6">
                                 <div class="flex items-center gap-3 mb-3">
-                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">用户故事</span>
+                                    <span
+                                        class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">用户故事</span>
                                     <span class="text-neutral text-sm">2024年1月8日</span>
                                 </div>
                                 <h3 class="text-xl font-bold text-neutral-dark mb-3">设计师如何用Lovart提升效率300%</h3>
@@ -227,7 +265,8 @@
                                 </p>
                                 <div class="flex items-center justify-between">
                                     <span class="text-sm text-neutral">陈设计师</span>
-                                    <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
+                                    <a href="#"
+                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
                                 </div>
                             </div>
                         </article>
@@ -237,7 +276,8 @@
                             <img src="images/06.jpg" alt="Products设计" class="w-full h-48 object-cover">
                             <div class="p-6">
                                 <div class="flex items-center gap-3 mb-3">
-                                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">Products设计</span>
+                                    <span
+                                        class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">Products设计</span>
                                     <span class="text-neutral text-sm">2024年1月5日</span>
                                 </div>
                                 <h3 class="text-xl font-bold text-neutral-dark mb-3">AI辅助Products设计的最佳实践</h3>
@@ -246,7 +286,8 @@
                                 </p>
                                 <div class="flex items-center justify-between">
                                     <span class="text-sm text-neutral">赵Products经理</span>
-                                    <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
+                                    <a href="#"
+                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
                                 </div>
                             </div>
                         </article>
@@ -256,7 +297,8 @@
                             <img src="images/07.jpg" alt="创意灵感" class="w-full h-48 object-cover">
                             <div class="p-6">
                                 <div class="flex items-center gap-3 mb-3">
-                                    <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium">创意灵感</span>
+                                    <span
+                                        class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium">创意灵感</span>
                                     <span class="text-neutral text-sm">2024年1月3日</span>
                                 </div>
                                 <h3 class="text-xl font-bold text-neutral-dark mb-3">突破创意瓶颈：AI激发设计灵感</h3>
@@ -265,7 +307,8 @@
                                 </p>
                                 <div class="flex items-center justify-between">
                                     <span class="text-sm text-neutral">刘创意总监</span>
-                                    <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
+                                    <a href="#"
+                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
                                 </div>
                             </div>
                         </article>
@@ -275,7 +318,8 @@
                             <img src="images/08.jpg" alt="Products更新" class="w-full h-48 object-cover">
                             <div class="p-6">
                                 <div class="flex items-center gap-3 mb-3">
-                                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">Products更新</span>
+                                    <span
+                                        class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">Products更新</span>
                                     <span class="text-neutral text-sm">2024年1月1日</span>
                                 </div>
                                 <h3 class="text-xl font-bold text-neutral-dark mb-3">Lovart 2024年首月更新：新Features介绍</h3>
@@ -284,7 +328,8 @@
                                 </p>
                                 <div class="flex items-center justify-between">
                                     <span class="text-sm text-neutral">Products团队</span>
-                                    <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
+                                    <a href="#"
+                                        class="text-primary hover:text-primary-dark font-medium text-sm">阅读更多</a>
                                 </div>
                             </div>
                         </article>
@@ -303,8 +348,10 @@
                         获取最新的设计趋势、教程和LovartProducts更新，每周直接发送到您的邮箱
                     </p>
                     <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                        <input type="email" placeholder="输入您的邮箱地址" class="flex-1 px-4 py-3 rounded-lg text-neutral-dark focus:outline-none focus:ring-2 focus:ring-white">
-                        <button type="submit" class="bg-secondary text-white px-6 py-3 rounded-lg hover:bg-secondary-dark transition-colors font-medium">
+                        <input type="email" placeholder="输入您的邮箱地址"
+                            class="flex-1 px-4 py-3 rounded-lg text-neutral-dark focus:outline-none focus:ring-2 focus:ring-white">
+                        <button type="submit"
+                            class="bg-secondary text-white px-6 py-3 rounded-lg hover:bg-secondary-dark transition-colors font-medium">
                             订阅
                         </button>
                     </form>
@@ -357,12 +404,15 @@
                     <div class="flex space-x-4">
                         <a href="#" class="text-neutral-light hover:text-primary transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
                             </svg>
                         </a>
                         <a href="#" class="text-neutral-light hover:text-primary transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                             </svg>
                         </a>
                     </div>
@@ -370,8 +420,10 @@
                 <div>
                     <h3 class="text-xl font-semibold text-white mb-3">Products</h3>
                     <ul class="space-y-2">
-                        <li><a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">Features</a></li>
-                        <li><a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a></li>
+                        <li><a href="lovart-design-features.html"
+                                class="text-neutral hover:text-primary transition-colors">Features</a></li>
+                        <li><a href="lovart-pricing.html"
+                                class="text-neutral hover:text-primary transition-colors">Pricing</a></li>
                         <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a></li>
                         <li><a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a></li>
                     </ul>
@@ -379,9 +431,12 @@
                 <div>
                     <h3 class="text-xl font-semibold text-white mb-3">Company</h3>
                     <ul class="space-y-2">
-                        <li><a href="about.html" class="text-neutral hover:text-primary transition-colors">About Us</a></li>
-                        <li><a href="terms-of-service.html" class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
-                        <li><a href="privacy-policy.html" class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="about.html" class="text-neutral hover:text-primary transition-colors">About Us</a>
+                        </li>
+                        <li><a href="terms-of-service.html"
+                                class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html"
+                                class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div>
@@ -393,7 +448,8 @@
             <div class="border-t border-gray-700 pt-8 text-center text-neutral">
                 <div class="flex flex-col items-center gap-2 mb-6">
                     <span class="text-sm uppercase tracking-wide text-gray-300">Partner Site</span>
-                    <a href="https://vibevoice.online/" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-4 py-2 border border-white/40 rounded-md text-sm font-semibold text-white transition hover:bg-white/10">
+                    <a href="https://vibevoice.online/" target="_blank" rel="noopener"
+                        class="inline-flex items-center justify-center px-4 py-2 border border-white/40 rounded-md text-sm font-semibold text-white transition hover:bg-white/10">
                         VibeVoice Online
                     </a>
                 </div>
@@ -461,4 +517,5 @@
         });
     </script>
 </body>
+
 </html>

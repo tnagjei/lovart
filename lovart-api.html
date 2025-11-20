@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lovart API Documentation - AI Design API & SDK Integration</title>
-    <meta name="description" content="Lovart AI Design API documentation. Integrate powerful AI design capabilities into your applications with our RESTful API and SDKs.">
-    <meta name="keywords" content="Lovart API, AI design API, design SDK, API documentation, Lovart ai api, integration guide">
+    <meta name="description"
+        content="Lovart AI Design API documentation. Integrate powerful AI design capabilities into your applications with our RESTful API and SDKs.">
+    <meta name="keywords"
+        content="Lovart API, AI design API, design SDK, API documentation, Lovart ai api, integration guide">
     <link rel="canonical" href="https://lovart.info/lovart-api.html">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+        crossorigin="anonymous"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK9MPTEZ17"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-EK9MPTEZ17');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-EK9MPTEZ17');
     </script>
 
     <style>
@@ -25,96 +30,136 @@
             transform: translateY(30px);
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
+
         .section-animate.is-visible {
             opacity: 1;
             transform: translateY(0);
         }
+
         .code-block {
             background: #1e293b;
             color: #e2e8f0;
             border-radius: 8px;
             overflow-x: auto;
         }
+
         .endpoint-card {
             transition: all 0.3s ease;
         }
+
         .endpoint-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
+
         .tab-content {
             display: none;
         }
+
         .tab-content.active {
             display: block;
         }
+
         .method-badge {
             font-weight: bold;
             padding: 2px 8px;
             border-radius: 4px;
             font-size: 0.875rem;
         }
-        .method-get { background: #10b981; color: white; }
-        .method-post { background: #3b82f6; color: white; }
-        .method-put { background: #f59e0b; color: white; }
-        .method-delete { background: #ef4444; color: white; }
+
+        .method-get {
+            background: #10b981;
+            color: white;
+        }
+
+        .method-post {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .method-put {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .method-delete {
+            background: #ef4444;
+            color: white;
+        }
     </style>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: {
-                DEFAULT: '#4f46e5',
-                light: '#6366f1',
-                dark: '#3730a3',
-              },
-              secondary: {
-                DEFAULT: '#ec4899',
-                light: '#f472b6',
-                dark: '#be185d',
-              },
-              neutral: {
-                light: '#f9fafb',
-                DEFAULT: '#6b7280',
-                dark: '#1f2937',
-              }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4f46e5',
+                            light: '#6366f1',
+                            dark: '#3730a3',
+                        },
+                        secondary: {
+                            DEFAULT: '#ec4899',
+                            light: '#f472b6',
+                            dark: '#be185d',
+                        },
+                        neutral: {
+                            light: '#f9fafb',
+                            DEFAULT: '#6b7280',
+                            dark: '#1f2937',
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     </script>
 </head>
+
 <body class="bg-neutral-light text-neutral-dark antialiased">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
+            <a href="index.html"
+                class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
             <nav class="hidden md:flex space-x-4 items-center">
                 <a href="index.html" class="text-neutral hover:text-primary transition-colors">Home</a>
-                <a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">Features</a>
+                <a href="lovart-design-features.html"
+                    class="text-neutral hover:text-primary transition-colors">Features</a>
                 <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a>
                 <a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a>
                 <a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a>
                 <a href="about.html" class="text-neutral hover:text-primary transition-colors">About</a>
-                <a href="lovart-pricing.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Get Started</a>
+                <a href="lovart-pricing.html"
+                    class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Get
+                    Started</a>
             </nav>
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none" aria-label="Toggle mobile menu">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none"
+                    aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <a href="index.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Home</a>
-            <a href="lovart-design-features.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Features</a>
-            <a href="lovart-pricing.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Pricing</a>
-            <a href="blog.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Blog</a>
-            <a href="help.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Help</a>
-            <a href="about.html" class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">About</a>
-            <a href="lovart-pricing.html" class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">Get Started</a>
+            <a href="index.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Home</a>
+            <a href="lovart-design-features.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Features</a>
+            <a href="lovart-pricing.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Pricing</a>
+            <a href="blog.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Blog</a>
+            <a href="help.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Help</a>
+            <a href="about.html"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">About</a>
+            <a href="lovart-pricing.html"
+                class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">Get
+                Started</a>
         </div>
     </header>
 
@@ -125,7 +170,8 @@
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl font-bold mb-6">Lovart API Documentation</h1>
                     <p class="text-lg md:text-xl mb-8 opacity-90">
-                        Integrate powerful AI design capabilities into your applications with our comprehensive RESTful API and SDKs.
+                        Integrate powerful AI design capabilities into your applications with our comprehensive RESTful
+                        API and SDKs.
                     </p>
                     <div class="flex flex-wrap justify-center gap-4">
                         <div class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
@@ -154,17 +200,23 @@
                         <h3 class="text-xl font-semibold mb-4">Get Started in 5 Minutes</h3>
                         <div class="grid md:grid-cols-3 gap-6">
                             <div class="text-center">
-                                <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">1</div>
+                                <div
+                                    class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                                    1</div>
                                 <h4 class="font-semibold mb-2">Get API Key</h4>
                                 <p class="text-sm text-neutral">Sign up and get your API key from the dashboard</p>
                             </div>
                             <div class="text-center">
-                                <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">2</div>
+                                <div
+                                    class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                                    2</div>
                                 <h4 class="font-semibold mb-2">Install SDK</h4>
                                 <p class="text-sm text-neutral">Choose your preferred programming language SDK</p>
                             </div>
                             <div class="text-center">
-                                <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">3</div>
+                                <div
+                                    class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                                    3</div>
                                 <h4 class="font-semibold mb-2">Make API Calls</h4>
                                 <p class="text-sm text-neutral">Start integrating AI design capabilities</p>
                             </div>
@@ -182,14 +234,16 @@
                     <div class="bg-white p-6 rounded-lg shadow-lg">
                         <h3 class="text-xl font-semibold mb-4">API Key Authentication</h3>
                         <p class="text-neutral mb-4">
-                            All API requests require authentication using your API key. Include your API key in the Authorization header:
+                            All API requests require authentication using your API key. Include your API key in the
+                            Authorization header:
                         </p>
                         <div class="code-block p-4 mb-4">
                             <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
                         </div>
                         <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
                             <p class="text-yellow-800 text-sm">
-                                <strong>Security Note:</strong> Keep your API key secure and never expose it in client-side code.
+                                <strong>Security Note:</strong> Keep your API key secure and never expose it in
+                                client-side code.
                             </p>
                         </div>
                     </div>
@@ -202,13 +256,20 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-6xl mx-auto">
                     <h2 class="text-3xl font-bold text-neutral-dark mb-8 text-center">API Endpoints</h2>
-                    
+
                     <!-- Tabs -->
                     <div class="flex flex-wrap gap-2 mb-8">
-                        <button class="tab-button bg-primary text-white px-4 py-2 rounded-md" data-tab="design-generation">Design Generation</button>
-                        <button class="tab-button bg-neutral text-neutral-dark px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors" data-tab="image-processing">Image Processing</button>
-                        <button class="tab-button bg-neutral text-neutral-dark px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors" data-tab="templates">Templates</button>
-                        <button class="tab-button bg-neutral text-neutral-dark px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors" data-tab="user-management">User Management</button>
+                        <button class="tab-button bg-primary text-white px-4 py-2 rounded-md"
+                            data-tab="design-generation">Design Generation</button>
+                        <button
+                            class="tab-button bg-neutral text-neutral-dark px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors"
+                            data-tab="image-processing">Image Processing</button>
+                        <button
+                            class="tab-button bg-neutral text-neutral-dark px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors"
+                            data-tab="templates">Templates</button>
+                        <button
+                            class="tab-button bg-neutral text-neutral-dark px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors"
+                            data-tab="user-management">User Management</button>
                     </div>
 
                     <!-- Design Generation Tab -->
@@ -223,8 +284,9 @@
                                         <code class="bg-white px-2 py-1 rounded text-sm">/v1/design/generate</code>
                                     </div>
                                 </div>
-                                <p class="text-neutral mb-4">Generate AI-powered designs based on text prompts and parameters.</p>
-                                
+                                <p class="text-neutral mb-4">Generate AI-powered designs based on text prompts and
+                                    parameters.</p>
+
                                 <div class="mb-4">
                                     <h4 class="font-semibold mb-2">Request Body</h4>
                                     <div class="code-block p-4">
@@ -240,7 +302,7 @@
 }</code></pre>
                                     </div>
                                 </div>
-                                
+
                                 <div class="mb-4">
                                     <h4 class="font-semibold mb-2">Response</h4>
                                     <div class="code-block p-4">
@@ -261,7 +323,8 @@
                                     <h3 class="text-xl font-semibold">Get Design Status</h3>
                                     <div class="flex items-center gap-2">
                                         <span class="method-badge method-get">GET</span>
-                                        <code class="bg-white px-2 py-1 rounded text-sm">/v1/design/{design_id}/status</code>
+                                        <code
+                                            class="bg-white px-2 py-1 rounded text-sm">/v1/design/{design_id}/status</code>
                                     </div>
                                 </div>
                                 <p class="text-neutral mb-4">Check the status of a design generation request.</p>
@@ -293,7 +356,8 @@
                                         <code class="bg-white px-2 py-1 rounded text-sm">/v1/images/enhance</code>
                                     </div>
                                 </div>
-                                <p class="text-neutral mb-4">Enhance image quality using AI-powered upscaling and optimization.</p>
+                                <p class="text-neutral mb-4">Enhance image quality using AI-powered upscaling and
+                                    optimization.</p>
                             </div>
                         </div>
                     </div>
@@ -319,7 +383,8 @@
                                     <h3 class="text-xl font-semibold">Get Template Details</h3>
                                     <div class="flex items-center gap-2">
                                         <span class="method-badge method-get">GET</span>
-                                        <code class="bg-white px-2 py-1 rounded text-sm">/v1/templates/{template_id}</code>
+                                        <code
+                                            class="bg-white px-2 py-1 rounded text-sm">/v1/templates/{template_id}</code>
                                     </div>
                                 </div>
                                 <p class="text-neutral mb-4">Get detailed information about a specific template.</p>
@@ -365,7 +430,7 @@
                 <div class="max-w-6xl mx-auto">
                     <h2 class="text-3xl font-bold text-neutral-dark mb-8 text-center">SDKs & Libraries</h2>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        
+
                         <!-- Python SDK -->
                         <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                             <div class="text-4xl mb-3">🐍</div>
@@ -376,7 +441,7 @@
                             </div>
                             <a href="#" class="text-primary hover:text-primary-dark text-sm">View Documentation →</a>
                         </div>
-                        
+
                         <!-- JavaScript SDK -->
                         <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                             <div class="text-4xl mb-3">📜</div>
@@ -387,7 +452,7 @@
                             </div>
                             <a href="#" class="text-primary hover:text-primary-dark text-sm">View Documentation →</a>
                         </div>
-                        
+
                         <!-- Node.js SDK -->
                         <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                             <div class="text-4xl mb-3">🟢</div>
@@ -398,7 +463,7 @@
                             </div>
                             <a href="#" class="text-primary hover:text-primary-dark text-sm">View Documentation →</a>
                         </div>
-                        
+
                         <!-- REST API -->
                         <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                             <div class="text-4xl mb-3">🌐</div>
@@ -409,7 +474,7 @@
                             </div>
                             <a href="#" class="text-primary hover:text-primary-dark text-sm">View Documentation →</a>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -420,12 +485,17 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-6xl mx-auto">
                     <h2 class="text-3xl font-bold text-neutral-dark mb-8 text-center">Code Examples</h2>
-                    
+
                     <!-- Example Tabs -->
                     <div class="flex flex-wrap gap-2 mb-8">
-                        <button class="example-tab-button bg-primary text-white px-4 py-2 rounded-md" data-example-tab="python">Python</button>
-                        <button class="example-tab-button bg-neutral text-neutral-dark px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors" data-example-tab="javascript">JavaScript</button>
-                        <button class="example-tab-button bg-neutral text-neutral-dark px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors" data-example-tab="curl">cURL</button>
+                        <button class="example-tab-button bg-primary text-white px-4 py-2 rounded-md"
+                            data-example-tab="python">Python</button>
+                        <button
+                            class="example-tab-button bg-neutral text-neutral-dark px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors"
+                            data-example-tab="javascript">JavaScript</button>
+                        <button
+                            class="example-tab-button bg-neutral text-neutral-dark px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors"
+                            data-example-tab="curl">cURL</button>
                     </div>
 
                     <!-- Python Example -->
@@ -508,28 +578,30 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
                     <p class="text-lg text-neutral mb-8">
                         Flexible pricing plans for developers and businesses of all sizes
                     </p>
-                    
+
                     <div class="grid md:grid-cols-3 gap-6">
                         <div class="bg-white p-6 rounded-lg shadow-lg">
                             <h3 class="text-xl font-semibold mb-2">Free Tier</h3>
-                            <p class="text-3xl font-bold text-primary mb-4">$0<span class="text-sm font-normal">/month</span></p>
+                            <p class="text-3xl font-bold text-primary mb-4">$0<span
+                                    class="text-sm font-normal">/month</span></p>
                             <ul class="text-sm text-neutral space-y-2 mb-4">
                                 <li>• 100 API calls/month</li>
                                 <li>• Basic design generation</li>
                                 <li>• Community support</li>
                             </ul>
                         </div>
-                        
+
                         <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-primary">
                             <h3 class="text-xl font-semibold mb-2">Pro</h3>
-                            <p class="text-3xl font-bold text-primary mb-4">$49<span class="text-sm font-normal">/month</span></p>
+                            <p class="text-3xl font-bold text-primary mb-4">$49<span
+                                    class="text-sm font-normal">/month</span></p>
                             <ul class="text-sm text-neutral space-y-2 mb-4">
                                 <li>• 10,000 API calls/month</li>
                                 <li>• Advanced features</li>
                                 <li>• Priority support</li>
                             </ul>
                         </div>
-                        
+
                         <div class="bg-white p-6 rounded-lg shadow-lg">
                             <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
                             <p class="text-3xl font-bold text-primary mb-4">Custom</p>
@@ -552,7 +624,7 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
                     <p class="text-lg mb-8 opacity-90">
                         Our developer support team is here to help you integrate Lovart API successfully.
                     </p>
-                    
+
                     <div class="grid md:grid-cols-3 gap-6">
                         <div class="bg-white bg-opacity-10 p-6 rounded-lg">
                             <div class="text-3xl mb-3">📚</div>
@@ -560,19 +632,20 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
                             <p class="text-sm opacity-80 mb-4">Comprehensive guides and references</p>
                             <a href="#" class="text-white hover:text-gray-200">Read Docs →</a>
                         </div>
-                        
+
                         <div class="bg-white bg-opacity-10 p-6 rounded-lg">
                             <div class="text-3xl mb-3">💬</div>
                             <h3 class="text-xl font-semibold mb-2">Developer Community</h3>
                             <p class="text-sm opacity-80 mb-4">Join our developer community</p>
                             <a href="#" class="text-white hover:text-gray-200">Join Community →</a>
                         </div>
-                        
+
                         <div class="bg-white bg-opacity-10 p-6 rounded-lg">
                             <div class="text-3xl mb-3">📧</div>
                             <h3 class="text-xl font-semibold mb-2">Email Support</h3>
                             <p class="text-sm opacity-80 mb-4">Get help from our support team</p>
-                            <a href="mailto:dev-support@lovart.info" class="text-white hover:text-gray-200">Contact Support →</a>
+                            <a href="mailto:dev-support@lovart.info" class="text-white hover:text-gray-200">Contact
+                                Support →</a>
                         </div>
                     </div>
                 </div>
@@ -590,12 +663,15 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
                     <div class="flex space-x-4">
                         <a href="#" class="text-neutral-light hover:text-primary transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
                             </svg>
                         </a>
                         <a href="#" class="text-neutral-light hover:text-primary transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                             </svg>
                         </a>
                     </div>
@@ -603,8 +679,10 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
                 <div>
                     <h3 class="text-xl font-semibold text-white mb-3">Products</h3>
                     <ul class="space-y-2">
-                        <li><a href="lovart-design-features.html" class="text-neutral hover:text-primary transition-colors">Features</a></li>
-                        <li><a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a></li>
+                        <li><a href="lovart-design-features.html"
+                                class="text-neutral hover:text-primary transition-colors">Features</a></li>
+                        <li><a href="lovart-pricing.html"
+                                class="text-neutral hover:text-primary transition-colors">Pricing</a></li>
                         <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a></li>
                         <li><a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a></li>
                     </ul>
@@ -612,10 +690,14 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
                 <div>
                     <h3 class="text-xl font-semibold text-white mb-3">开发者</h3>
                     <ul class="space-y-2">
-                        <li><a href="lovart-api.html" class="text-neutral hover:text-primary transition-colors">API文档</a></li>
-                        <li><a href="lovart-ai-code.html" class="text-neutral hover:text-primary transition-colors">代码集成</a></li>
-                        <li><a href="terms-of-service.html" class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
-                        <li><a href="privacy-policy.html" class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="lovart-api.html"
+                                class="text-neutral hover:text-primary transition-colors">API文档</a></li>
+                        <li><a href="lovart-ai-code.html"
+                                class="text-neutral hover:text-primary transition-colors">代码集成</a></li>
+                        <li><a href="terms-of-service.html"
+                                class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html"
+                                class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div>
@@ -627,7 +709,8 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
             <div class="border-t border-gray-700 pt-8 text-center text-neutral">
                 <div class="flex flex-col items-center gap-2 mb-6">
                     <span class="text-sm uppercase tracking-wide text-gray-300">Partner Site</span>
-                    <a href="https://vibevoice.online/" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-4 py-2 border border-white/40 rounded-md text-sm font-semibold text-white transition hover:bg-white/10">
+                    <a href="https://vibevoice.online/" target="_blank" rel="noopener"
+                        class="inline-flex items-center justify-center px-4 py-2 border border-white/40 rounded-md text-sm font-semibold text-white transition hover:bg-white/10">
                         VibeVoice Online
                     </a>
                 </div>
@@ -662,11 +745,11 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
         // Tab functionality for API endpoints
         const tabButtons = document.querySelectorAll('.tab-button');
         const tabContents = document.querySelectorAll('.tab-content');
-        
+
         tabButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const targetTab = button.getAttribute('data-tab');
-                
+
                 // Remove active class from all buttons and contents
                 tabButtons.forEach(btn => {
                     btn.classList.remove('bg-primary', 'text-white');
@@ -675,7 +758,7 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
                 tabContents.forEach(content => {
                     content.classList.remove('active');
                 });
-                
+
                 // Add active class to clicked button and corresponding content
                 button.classList.remove('bg-neutral', 'text-neutral-dark');
                 button.classList.add('bg-primary', 'text-white');
@@ -686,11 +769,11 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
         // Tab functionality for code examples
         const exampleTabButtons = document.querySelectorAll('.example-tab-button');
         const exampleTabContents = document.querySelectorAll('.example-tab-content');
-        
+
         exampleTabButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const targetExample = button.getAttribute('data-example-tab');
-                
+
                 // Remove active class from all buttons and contents
                 exampleTabButtons.forEach(btn => {
                     btn.classList.remove('bg-primary', 'text-white');
@@ -699,7 +782,7 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
                 exampleTabContents.forEach(content => {
                     content.classList.remove('active');
                 });
-                
+
                 // Add active class to clicked button and corresponding content
                 button.classList.remove('bg-neutral', 'text-neutral-dark');
                 button.classList.add('bg-primary', 'text-white');
@@ -728,4 +811,5 @@ console.log(`Image URL: ${design.imageUrl}`);</code></pre>
         });
     </script>
 </body>
+
 </html>
