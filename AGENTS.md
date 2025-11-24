@@ -156,3 +156,66 @@ SEO 的原则
 2. Title标签里包含关键词，而且越靠前越好。
 3. H1标签里包含关键词。
 4. 正文内容里自然地出现几次关键词，尤其是在文章开头部分
+
+---
+
+## 多语言国际化 (i18n) 实施计划 (最小执行单元)
+
+### 阶段一：基础设施搭建 (Infrastructure)
+1.  **环境初始化**：
+    *   [ ] 确认本地安装 Node.js。
+    *   [ ] 在项目根目录运行 `npm init -y` 初始化 `package.json`。
+    *   [ ] 安装依赖：`npm install ejs fs-extra` (选用 EJS 作为轻量模板引擎，fs-extra 处理文件操作)。
+
+2.  **目录重构**：
+    *   [ ] 创建 `src/` 目录：存放源代码。
+    *   [ ] 创建 `src/templates/`：存放 `.ejs` 模板文件 (原 `.html` 文件迁移至此)。
+    *   [ ] 创建 `src/locales/`：存放语言包 `.json` 文件。
+    *   [ ] 创建 `src/assets/`：存放 CSS/JS/Images (原静态资源)。
+    *   [ ] 确保 `dist/` 目录作为输出目录 (Git 忽略)。
+
+3.  **构建脚本编写 (`build.js`)**：
+    *   [ ] 编写脚本读取 `src/locales/*.json`。
+    *   [ ] 遍历每种语言，结合 `src/templates/` 渲染出对应的 HTML。
+    *   [ ] 输出规则：
+        *   `en.json` -> `dist/index.html` (默认语言)
+        *   `zh.json` -> `dist/zh/index.html`
+        *   `fr.json` -> `dist/fr/index.html`
+        *   `ja.json` -> `dist/ja/index.html`
+    *   [ ] 复制 `src/assets` 到 `dist/assets`。
+
+### 阶段二：内容抽离与翻译 (Content & Translation)
+4.  **模板化改造 (以 `index.html` 为例)**：
+    *   [ ] 将 `index.html` 移动到 `src/templates/index.ejs`。
+    *   [ ] 识别所有硬编码文本，替换为变量，例如 `<%= t.nav.home %>`。
+
+5.  **语言包创建**：
+    *   [ ] 创建 `src/locales/zh.json`：提取所有中文文本。
+    *   [ ] 创建 `src/locales/en.json`：翻译为英文。
+    *   [ ] 创建 `src/locales/fr.json`：翻译为法文 (注意长度适配)。
+    *   [ ] 创建 `src/locales/ja.json`：翻译为日文 (注意敬语)。
+
+### 阶段三：UI 适配与交互 (UI/UX)
+6.  **语言切换器**：
+    *   [ ] 在 `src/templates/partials/header.ejs` (提取头部组件) 中添加语言切换下拉菜单。
+    *   [ ] 逻辑：点击切换时，跳转到对应语言子目录的同名页面。
+
+7.  **字体与样式适配**：
+    *   [ ] 在 `index.css` 中定义字体栈，为 `lang="ja"` 添加 `Noto Sans JP`。
+    *   [ ] 检查法文长文本导致的布局溢出，使用 `min-height` 替代固定高度。
+
+### 阶段四：SEO 与构建 (SEO & Build)
+8.  **Hreflang 注入**：
+    *   [ ] 在 `<head>` 模板中动态生成 `<link rel="alternate" hreflang="..." ...>` 标签，覆盖所有语言版本。
+
+9.  **Sitemap 生成**：
+    *   [ ] 更新构建脚本，自动生成包含所有语言 URL 的 `sitemap.xml`。
+
+### 阶段五：验证与部署 (Verification)
+10. **本地测试**：
+    *   [ ] 运行 `node build.js`。
+    *   [ ] 使用 `serve dist` 启动本地服务器，检查各语言页面跳转、样式、文字显示。
+
+11. **部署上线**：
+    *   [ ] 将 `dist/` 目录内容部署到服务器/Vercel/Netlify。
+    *   [ ] 在 Google Search Console 提交新的 Sitemap。
