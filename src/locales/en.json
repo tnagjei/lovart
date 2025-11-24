@@ -1,0 +1,22 @@
+{
+    "seo": {
+        "title": "Lovart: AI Design Platform for Creative Professionals",
+        "description": "Unlock your creative potential with Lovart, the AI-powered design platform. Create stunning visuals, collaborate effectively, and streamline your workflow. Try Lovart now!",
+        "keywords": ""
+    },
+    "nav": {
+        "home": "Home",
+        "features": "Features",
+        "pricing": "Pricing",
+        "blog": "Blog",
+        "help": "Help",
+        "about": "About",
+        "get_started": "Get Started"
+    },
+    "hero": {
+        "title": "Lovart: Unleash Your Creative Genius with AI-Powered Design",
+        "subtitle": "Lovart is the revolutionary design platform meticulously crafted for visionary creators like you. We empower you with a suite of intuitive tools, supercharged by cutting-edge AI-driven insights from Lovart, enabling you to effortlessly transform your most ambitious concepts into breathtaking realities. Say goodbye to cumbersome software and hello to a seamless, inspiring design journey with Lovart. Join our Lovart community today and redefine what's possible in digital creation.",
+        "cta_explore": "Explore Lovart Features",
+        "cta_pricing": "View Pricing"
+    }
+}

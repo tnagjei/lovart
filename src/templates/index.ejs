@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= t.seo.title %></title>
+    <meta name="description" content="<%= t.seo.description %>">
+    <meta name="keywords" content="<%= t.seo.keywords %>">
+    <link rel="canonical" href="https://lovart.info/">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Replace with your designed Lovart icon -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+        crossorigin="anonymous"></script>
+
+    <!-- Lazy Load Google Analytics -->
+    <script>
+        // Lazy load Google Analytics until page interaction
+        function loadGoogleAnalytics() {
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-EK9MPTEZ17';
+            document.head.appendChild(script);
+
+            script.onload = function () {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-EK9MPTEZ17');
+            };
+        }
+
+        // Load when page is idle or after user interaction
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadGoogleAnalytics);
+        } else {
+            // Fallback: Load after 3 seconds
+            setTimeout(loadGoogleAnalytics, 3000);
+        }
+    </script>
+
+    <style>
+        /* Critical Styles - Ensure page displays correctly before Tailwind loads */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .bg-white {
+            background-color: #ffffff;
+        }
+
+        .shadow-md {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .sticky {
+            position: sticky;
+        }
+
+        .top-0 {
+            top: 0;
+        }
+
+        .z-50 {
+            z-index: 50;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .space-x-4>*+* {
+            margin-left: 1rem;
+        }
+
+        .text-neutral {
+            color: #6b7280;
+        }
+
+        .hover\:text-primary:hover {
+            color: #4f46e5;
+        }
+
+        .transition-colors {
+            transition-property: color, background-color, border-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .bg-primary {
+            background-color: #4f46e5;
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .rounded-md {
+            border-radius: 0.375rem;
+        }
+
+        .hover\:bg-primary-dark:hover {
+            background-color: #3730a3;
+        }
+
+        @media (min-width: 768px) {
+            .md\:flex {
+                display: flex;
+            }
+
+            .md\:hidden {
+                display: none;
+            }
+        }
+
+        /* Main Content Critical Styles */
+        .py-20 {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .md\:py-32 {
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        .md\:text-6xl {
+            font-size: 3.75rem;
+            line-height: 1;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+
+        .md\:text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .max-w-3xl {
+            max-width: 48rem;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bg-gradient-to-br {
+            background-image: linear-gradient(to bottom right, #4f46e5, #ec4899);
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .mr-2 {
+            margin-right: 0.5rem;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .bg-white {
+            background-color: #ffffff;
+        }
+
+        .text-primary {
+            color: #4f46e5;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .py-3 {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+
+        .hover\:bg-opacity-90:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .bg-transparent {
+            background-color: transparent;
+        }
+
+        .border-2 {
+            border-width: 2px;
+        }
+
+        .border-white {
+            border-color: #ffffff;
+        }
+
+        .hover\:bg-white:hover {
+            background-color: #ffffff;
+        }
+
+        .hover\:text-secondary:hover {
+            color: #ec4899;
+        }
+
+        .transform {
+            transform: translateX(var(--tw-translate-x), 0) translateY(var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .hover\:scale-105:hover {
+            --tw-scale-x: 1.05;
+            --tw-scale-y: 1.05;
+        }
+
+        /* Lazy Load Related Styles */
+        .loading-indicator {
+            transition: opacity 0.3s ease;
+        }
+
+        .lazy-load.loaded+.loading-indicator,
+        .lazy-video.loaded+.loading-indicator {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Reserve image space to avoid CLS */
+        .lazy-load-container {
+            position: relative;
+            background: #f3f4f6;
+            overflow: hidden;
+        }
+
+        .lazy-load {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .lazy-load.loaded {
+            opacity: 1;
+            position: relative;
+        }
+
+        /* Animation Optimization - Avoid initial offset */
+        .animate-fade-in-up {
+            opacity: 0;
+            transform: translateY(0);
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+
+        /* Custom animations or styles not achievable via Tailwind can be placed here */
+        /* .hero-bg-animation {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        } */
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .fade-in {
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Add a generic section entry animation */
+        .section-animate {
+            opacity: 0;
+            transform: translateY(0);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .section-animate.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Font Optimization - Avoid CLS caused by font loading */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-synthesis: none;
+            text-rendering: optimizeLegibility;
+        }
+
+        /* Preload Critical CSS */
+        .bg-neutral-light {
+            background-color: #f9fafb;
+        }
+
+        /* AdSense Placeholder Styles */
+        .ad-slot-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3f4f6;
+            min-height: 280px;
+            /* Adapt to rectangle ads */
+            margin: 2rem 0;
+            position: relative;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .ad-slot-container::before {
+            content: 'Advertisement';
+            position: absolute;
+            color: #9ca3af;
+            font-size: 0.875rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .ad-slot-container ins {
+            z-index: 1;
+            background: white;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4f46e5', // indigo-600
+                            light: '#6366f1', // indigo-500
+                            dark: '#3730a3', // indigo-800
+                        },
+                        secondary: {
+                            DEFAULT: '#ec4899', // pink-500
+                            light: '#f472b6', // pink-400
+                            dark: '#be185d', // pink-700
+                        },
+                        neutral: {
+                            light: '#f9fafb', // gray-50
+                            DEFAULT: '#6b7280', // gray-500
+                            dark: '#1f2937', // gray-800
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        'fade-in-up': {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-neutral-light text-neutral-dark antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="<%= link('index.html') %>"
+                class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
+            <nav class="hidden md:flex space-x-4 items-center">
+                <a href="<%= link('index.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.home %>
+                </a>
+                <a href="<%= link('lovart-design-features.html') %>"
+                    class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.features %>
+                </a>
+                <a href="<%= link('lovart-pricing.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.pricing %>
+                </a>
+                <a href="<%= link('blog.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.blog %>
+                </a>
+                <a href="<%= link('help.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.help %>
+                </a>
+                <a href="<%= link('about.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.about %>
+                </a>
+                <a href="<%= link('lovart-pricing.html') %>"
+                    class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">
+                    <%= t.nav.get_started %>
+                </a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none"
+                    aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="<%= link('index.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.home %>
+            </a>
+            <a href="<%= link('lovart-design-features.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.features %>
+            </a>
+            <a href="<%= link('lovart-pricing.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.pricing %>
+            </a>
+            <a href="<%= link('blog.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.blog %>
+            </a>
+            <a href="<%= link('help.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.help %>
+            </a>
+            <a href="<%= link('about.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.about %>
+            </a>
+            <a href="<%= link('lovart-pricing.html') %>"
+                class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">
+                <%= t.nav.get_started %>
+            </a>
+        </div>
+    </header>
+
+    <!-- Ad Slot: Top Banner (Above the Fold) -->
+    <div class="container mx-auto px-6 mt-24 mb-4">
+        <div class="ad-slot-container" style="min-height: 90px;">
+            <!-- 
+                Tip: Use "Display ads" style in AdSense, set to "Fixed" or "Responsive"
+                Suggested size: 728x90 or Responsive
+            -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3083296102953963"
+                data-ad-slot="2395486240" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg-animation bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <%= t.hero.title %>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <%= t.hero.subtitle %>
+                </p>
+                <div class="animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <a href="#features"
+                        class="bg-white text-primary font-semibold px-8 py-3 rounded-md hover:bg-opacity-90 transition-all transform hover:scale-105 mr-2 mb-2 md:mr-4 inline-block">
+                        <%= t.hero.cta_explore %>
+                    </a>
+                    <a href="#pricing"
+                        class="bg-transparent border-2 border-white text-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-secondary transition-all transform hover:scale-105 inline-block">
+                        <%= t.hero.cta_pricing %>
+                    </a>
+                </div>
+                <!-- Place an eye-catching image here -->
+                <div class="mt-12 animate-fade-in-up" style="animation-delay: 0.8s;">
+                    <div class="lazy-load-container w-full max-w-3xl mx-auto rounded-lg shadow-xl"
+                        style="height: 400px;">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/01_thumb.jpg">
+                            <source media="(max-width: 1024px)" srcset="images/small_01.jpg">
+                            <img data-src="images/small_01.jpg" src="images/placeholder.jpg"
+                                alt="Lovart AI Design Platform in action"
+                                class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
+                        </picture>
+                        <div
+                            class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
+                            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If you want to use video, e.g. images/X2Twitter.com_Ad4eIltxuecbcJV9_720p.mp4 -->
+                <!-- 
+                <video autoplay loop muted playsinline class="w-full max-w-2xl mx-auto mt-12 rounded-lg shadow-xl">
+                    <source src="images/X2Twitter.com_Ad4eIltxuecbcJV9_720p.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                -->
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-16 md:py-24 bg-white section-animate">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-12">Explore Core Lovart
+                    Features for Unprecedented Creativity</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div
+                        class="bg-neutral-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                        <div class="text-primary text-4xl mb-4 mx-auto md:mx-0">✨</div> <!-- Restore Emoji Icon -->
+                        <!-- <img src="images/small_05.jpg" alt="AI Enhanced Creativity Icon" class="w-10 h-10 text-primary mb-4 mx-auto md:mx-0"> -->
+                        <h3 class="text-xl font-semibold text-neutral-dark mb-2">AI-Enhanced Creativity with Lovart</h3>
+                        <p class="text-neutral">Lovart's sophisticated artificial intelligence acts as your personal
+                            design assistant. It intelligently suggests compelling design elements, harmonious color
+                            palettes, and optimal layout options, effectively supercharging your creative process with
+                            Lovart and helping you overcome creative blocks. With Lovart, innovation is always at your
+                            fingertips.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div
+                        class="bg-neutral-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                        <div class="text-primary text-4xl mb-4 mx-auto md:mx-0">🖱️</div> <!-- Restore Emoji Icon -->
+                        <!-- <img src="images/small_06.jpg" alt="Intuitive Drag & Drop Icon" class="w-10 h-10 text-primary mb-4 mx-auto md:mx-0"> -->
+                        <h3 class="text-xl font-semibold text-neutral-dark mb-2">Intuitive Drag & Drop Interface by
+                            Lovart</h3>
+                        <p class="text-neutral">This Lovart platform boasts a beautifully designed, seamless, and
+                            remarkably user-friendly drag-and-drop interface. This allows you to focus your energy
+                            entirely on the art of design, rather than wrestling with complex tools. Lovart makes
+                            professional design accessible to everyone.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div
+                        class="bg-neutral-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                        <!-- <div class="text-primary text-4xl mb-4">🤝</div> -->
+                        <img src="images/icon-collaboration.svg" alt="Real-Time Collaboration Icon"
+                            class="w-10 h-10 text-primary mb-4 mx-auto md:mx-0">
+                        <h3 class="text-xl font-semibold text-neutral-dark mb-2">Real-Time Collaboration, Powered by
+                            Lovart</h3>
+                        <p class="text-neutral">Elevate your teamwork with Lovart's robust collaborative features.
+                            Instantly share your Lovart projects, gather precise feedback with on-canvas annotations,
+                            and work together seamlessly with clients or team members, no matter where they are located.
+                            Lovart fosters creative synergy.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div
+                        class="bg-neutral-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                        <!-- <div class="text-primary text-4xl mb-4">📚</div> -->
+                        <img src="images/icon-library.svg" alt="Vast Asset Library Icon"
+                            class="w-10 h-10 text-primary mb-4 mx-auto md:mx-0">
+                        <h3 class="text-xl font-semibold text-neutral-dark mb-2">Vast Integrated Asset Library in Lovart
+                        </h3>
+                        <p class="text-neutral">Dive into Lovart's extensive, curated library, offering millions of
+                            high-quality stock images, versatile icons, stylish illustrations, and professional fonts
+                            directly within the Lovart platform. Find the perfect asset to complement your vision
+                            without ever leaving Lovart.</p>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div
+                        class="bg-neutral-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                        <!-- <div class="text-primary text-4xl mb-4">🚀</div> -->
+                        <img src="images/icon-export.svg" alt="One-Click Export Icon"
+                            class="w-10 h-10 text-primary mb-4 mx-auto md:mx-0">
+                        <h3 class="text-xl font-semibold text-neutral-dark mb-2">Lovart's Versatile One-Click Export
+                            Options</h3>
+                        <p class="text-neutral">Your masterpiece is ready, and Lovart ensures it reaches its audience
+                            flawlessly. Export your designs in a multitude of formats suitable for web, print, social
+                            media, and more, all with Lovart's streamlined, intelligent one-click export process. Lovart
+                            respects your time.</p>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div
+                        class="bg-neutral-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                        <!-- <div class="text-primary text-4xl mb-4">📱</div> -->
+                        <img src="images/icon-responsive.svg" alt="Responsive Design Preview Icon"
+                            class="w-10 h-10 text-primary mb-4 mx-auto md:mx-0">
+                        <h3 class="text-xl font-semibold text-neutral-dark mb-2">Flawless Responsive Design Previews by
+                            Lovart</h3>
+                        <p class="text-neutral">In today's multi-device world, Lovart ensures your creations look
+                            impeccable everywhere. Instantly preview how your Lovart designs adapt to various screen
+                            sizes, from desktops to tablets and smartphones, using Lovart's built-in, accurate preview
+                            tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Slot: Horizontal Banner -->
+        <section class="container mx-auto px-6">
+            <div class="ad-slot-container">
+                <!-- 
+                    Tip: Replace with your AdSense ad unit code here
+                    Suggested size: 728x90 (Leaderboard) or Responsive
+                -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3083296102953963"
+                    data-ad-slot="7744440876" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-16 md:py-24 bg-primary-light text-white section-animate">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">From Idea to Impact: How Lovart Streamlines
+                    Your Design Workflow</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Step 1 -->
+                    <div class="p-6 animate-fade-in-up" style="animation-delay: 0.1s;">
+                        <img src="images/02.jpg" alt="Step 1: Ignite Your Project with Lovart"
+                            class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        <h3 class="text-xl font-semibold mb-2">Ignite Your Project: Sign Up & Choose Your Lovart Canvas
+                        </h3>
+                        <p class="opacity-90">Embark on your creative journey by quickly signing up for Lovart. Get a
+                            head start with Lovart’s diverse range of professionally designed templates tailored for
+                            various needs, or unleash your unique vision on a completely blank canvas. Lovart adapts to
+                            your style.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="p-6 animate-fade-in-up" style="animation-delay: 0.3s;">
+                        <img src="images/small_03.jpg" alt="Step 2: Design with Lovart's AI and Intuitive Tools"
+                            class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        <h3 class="text-xl font-semibold mb-2">Design with Lovart's AI & Intuitive Tools</h3>
+                        <p class="opacity-90">Leverage Lovart's powerful AI suggestions and user-friendly drag-and-drop
+                            interface. Access a vast library of assets within Lovart to bring your ideas to life quickly
+                            and efficiently. Lovart makes complex design simple and fun.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="p-6 animate-fade-in-up" style="animation-delay: 0.5s;">
+                        <img src="images/small_04.jpg" alt="Step 3: Collaborate, Refine & Export with Lovart"
+                            class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        <h3 class="text-xl font-semibold mb-2">Collaborate, Refine & Export with Lovart</h3>
+                        <p class="opacity-90">Share your Lovart designs for feedback, iterate with ease, and when you're
+                            ready, export your masterpiece in various formats using Lovart. From initial concept to
+                            final product, Lovart supports your entire creative process.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 md:py-24 bg-white section-animate">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-12">Hear What Designers Say
+                    About Lovart</h2>
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-neutral-light p-8 rounded-lg shadow-lg animate-fade-in-up"
+                        style="animation-delay: 0.1s;">
+                        <p class="text-neutral-dark italic mb-4">"Lovart has completely transformed my workflow. The AI
+                            suggestions are incredibly insightful, and the collaboration tools make working with clients
+                            a breeze. I'm producing higher quality work faster than ever thanks to Lovart!"</p>
+                        <div class="flex items-center">
+                            <img src="images/02.png" alt="Avatar of Alex V."
+                                class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- Replace with real avatar -->
+                            <div>
+                                <p class="font-semibold text-neutral-dark">Alex V., Freelance Graphic Designer</p>
+                                <p class="text-sm text-primary">Lovart Pro User</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-neutral-light p-8 rounded-lg shadow-lg animate-fade-in-up"
+                        style="animation-delay: 0.3s;">
+                        <p class="text-neutral-dark italic mb-4">"As a UI/UX designer, Lovart's intuitive interface and
+                            vast asset library are game-changers. I can prototype and iterate so much faster. Lovart is
+                            now an indispensable part of my toolkit. Highly recommend Lovart for any designer!"</p>
+                        <div class="flex items-center">
+                            <img src="images/small_03.jpg" alt="Avatar of Sarah M."
+                                class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- Replace with real avatar -->
+                            <div>
+                                <p class="font-semibold text-neutral-dark">Sarah M., UI/UX Lead</p>
+                                <p class="text-sm text-secondary">Lovart Team User</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-neutral-light p-8 rounded-lg shadow-lg animate-fade-in-up"
+                        style="animation-delay: 0.5s;">
+                        <p class="text-neutral-dark italic mb-4">"I was looking for a design tool that was both powerful
+                            and easy to learn. Lovart exceeded my expectations. The AI features help spark creativity,
+                            and I love how responsive the designs are. Lovart is fantastic!"</p>
+                        <div class="flex items-center">
+                            <img src="images/small_04.jpg" alt="Avatar of James P."
+                                class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- 替换为真实头像 -->
+                            <div>
+                                <p class="font-semibold text-neutral-dark">James P., Marketing Specialist</p>
+                                <p class="text-sm text-primary-light">Lovart Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16 md:py-24 bg-white section-animate">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-12">Lovart in Action:
+                    Creative Showcase</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Image 06.jpg -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.1s;">
+                        <div
+                            class="lazy-load-container h-72 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                            <picture>
+                                <source media="(max-width: 640px)" srcset="images/06_thumb.jpg">
+                                <img data-src="images/small_06.jpg" src="images/placeholder.jpg"
+                                    alt="Lovart creative showcase image 1"
+                                    class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy"
+                                    decoding="async">
+                            </picture>
+                            <div
+                                class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
+                                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image 07.jpg -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.2s;">
+                        <div
+                            class="lazy-load-container h-72 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                            <picture>
+                                <source media="(max-width: 640px)" srcset="images/07_thumb.jpg">
+                                <img data-src="images/small_07.jpg" src="images/placeholder.jpg"
+                                    alt="Lovart creative showcase image 2"
+                                    class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy"
+                                    decoding="async">
+                            </picture>
+                            <div
+                                class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
+                                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image 08.jpg -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.3s;">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/08_thumb.jpg">
+                            <img src="images/small_08.jpg" alt="Lovart creative showcase image 3"
+                                class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <!-- Image 09.jpg -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.4s;">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/09_thumb.jpg">
+                            <img src="images/small_09.jpg" alt="Lovart creative showcase image 4"
+                                class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <!-- Image 10.jpg -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.5s;">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/10_thumb.jpg">
+                            <img src="images/small_10.jpg" alt="Lovart creative showcase image 5"
+                                class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <!-- Image 11.jpg -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.6s;">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/11_thumb.jpg">
+                            <img src="images/small_11.jpg" alt="Lovart creative showcase image 6"
+                                class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+
+                    <!-- Ad Slot: Native In-Grid -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.65s;">
+                        <div class="ad-slot-container h-72 rounded-lg shadow-lg overflow-hidden"
+                            style="margin: 0; background: #f9fafb;">
+                            <!-- 
+                                Tip: Use "In-article" or "Multiplex" style in AdSense for grid fit
+                                Suggested size: Responsive / Fluid
+                            -->
+                            <ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
+                                data-ad-layout-key="-6t+ed+2i-1n-4w" data-ad-client="ca-pub-3083296102953963"
+                                data-ad-slot="YOUR_NATIVE_AD_ID"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                    </div>
+                    <!-- Image 12.jpg -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.7s;">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/12_thumb.jpg">
+                            <img src="images/12.jpg" alt="Lovart creative showcase image 7"
+                                class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <!-- Image 13.jpg -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.8s;">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/13_thumb.jpg">
+                            <img src="images/13.jpg" alt="Lovart creative showcase image 8"
+                                class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <!-- Image 14.jpg -->
+                    <div class="animate-fade-in-up" style="animation-delay: 0.9s;">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/14_thumb.jpg">
+                            <img src="images/14.jpg" alt="Lovart creative showcase image 9"
+                                class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+
+                    <!-- Video 01.mp4 -->
+                    <div class="animate-fade-in-up" style="animation-delay: 1.0s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark"
+                            playsinline preload="metadata" poster="images/small_01.jpg">
+                            <source src="images/01_mobile.mp4" type="video/mp4" media="(max-width: 640px)">
+                            <source src="images/01_hd.mp4" type="video/mp4" media="(max-width: 1024px)">
+                            <source src="images/01.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- Video 02.mp4 -->
+                    <div class="animate-fade-in-up relative" style="animation-delay: 1.1s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark lazy-video"
+                            playsinline preload="none" poster="images/02.jpg" data-src="images/02.mp4">
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div
+                            class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
+                            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                        </div>
+                    </div>
+                    <!-- Video 03.mp4 -->
+                    <div class="animate-fade-in-up relative" style="animation-delay: 1.2s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark lazy-video"
+                            playsinline preload="none" poster="images/small_03.jpg" data-src="images/03.mp4">
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div
+                            class="loading-indicator absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-50">
+                            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                        </div>
+                    </div>
+                    <!-- Video 04.mp4 -->
+                    <div class="animate-fade-in-up" style="animation-delay: 1.3s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark"
+                            playsinline preload="metadata" poster="images/small_04.jpg">
+                            <source src="images/04.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- Video 05.mp4 -->
+                    <div class="animate-fade-in-up" style="animation-delay: 1.4s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark"
+                            playsinline preload="metadata" poster="images/small_05.jpg">
+                            <source src="images/05.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- Video 06.mp4 -->
+                    <div class="animate-fade-in-up" style="animation-delay: 1.5s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark"
+                            playsinline preload="metadata" poster="images/small_06.jpg">
+                            <source src="images/06.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- Video 07.mp4 -->
+                    <div class="animate-fade-in-up" style="animation-delay: 1.6s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark"
+                            playsinline preload="metadata" poster="images/small_07.jpg">
+                            <source src="images/07.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- Video 08.mp4 -->
+                    <div class="animate-fade-in-up" style="animation-delay: 1.7s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark"
+                            playsinline preload="metadata" poster="images/small_08.jpg">
+                            <source src="images/08.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- Video 09.mp4 -->
+                    <div class="animate-fade-in-up" style="animation-delay: 1.8s;">
+                        <video controls class="w-full h-72 object-cover rounded-lg shadow-lg bg-neutral-dark"
+                            playsinline preload="metadata" poster="images/small_09.jpg">
+                            <source src="images/09.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Slot: Horizontal Banner -->
+        <section class="container mx-auto px-6">
+            <div class="ad-slot-container">
+                <!-- 
+                    Tip: Replace with your AdSense ad unit code here
+                    Suggested size: 728x90 (Leaderboard) or Responsive
+                -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3083296102953963"
+                    data-ad-slot="7744440876" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-16 md:py-24 bg-neutral-light section-animate">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-4">Find the Perfect Lovart
+                    Plan for You</h2>
+                <p class="text-center text-neutral max-w-2xl mx-auto mb-12">Whether you're just starting out or leading
+                    a design team, Lovart offers flexible pricing plans packed with features to elevate your creative
+                    output. Choose Lovart and start designing today!</p>
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                    <!-- Pricing Plan 1: Starter -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col animate-fade-in-up"
+                        style="animation-delay: 0.1s;">
+                        <h3 class="text-2xl font-semibold text-neutral-dark mb-2">Starter Lovart</h3>
+                        <p class="text-neutral mb-4">Perfect for individuals and hobbyists exploring Lovart.</p>
+                        <p class="text-4xl font-bold text-primary mb-6">$19<span
+                                class="text-lg font-normal text-neutral">/month</span></p>
+                        <ul class="space-y-2 text-neutral mb-8 flex-grow">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Basic AI Design Tools by Lovart</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Limited Asset Library Access</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Standard Export Options</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Community Support via Lovart</li>
+                        </ul>
+                        <a href="#"
+                            class="mt-auto w-full text-center bg-primary-light text-white font-semibold py-3 px-6 rounded-md hover:bg-primary transition-colors">Choose
+                            Starter</a>
+                    </div>
+                    <!-- Pricing Plan 2: Pro (Most Popular) -->
+                    <div class="bg-white p-8 rounded-lg shadow-2xl flex flex-col border-4 border-secondary relative animate-fade-in-up"
+                        style="animation-delay: 0.3s;">
+                        <span
+                            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary text-white text-xs font-semibold px-3 py-1 rounded-full">MOST
+                            POPULAR</span>
+                        <h3 class="text-2xl font-semibold text-neutral-dark mb-2">Pro Lovart</h3>
+                        <p class="text-neutral mb-4">Ideal for professional designers and freelancers using Lovart.</p>
+                        <p class="text-4xl font-bold text-secondary mb-6">$49<span
+                                class="text-lg font-normal text-neutral">/month</span></p>
+                        <ul class="space-y-2 text-neutral mb-8 flex-grow">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Advanced AI Design Suite by Lovart</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Full Asset Library Access</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Real-time Collaboration (Lovart Teams)</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Priority Support from Lovart</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> All Export Options</li>
+                        </ul>
+                        <a href="#"
+                            class="mt-auto w-full text-center bg-secondary text-white font-semibold py-3 px-6 rounded-md hover:bg-secondary-dark transition-colors">Choose
+                            Pro</a>
+                    </div>
+                    <!-- Pricing Plan 3: Team -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col animate-fade-in-up"
+                        style="animation-delay: 0.5s;">
+                        <h3 class="text-2xl font-semibold text-neutral-dark mb-2">Lovart for Teams</h3>
+                        <p class="text-neutral mb-4">For agencies and design teams needing advanced Lovart
+                            collaboration.</p>
+                        <p class="text-4xl font-bold text-primary mb-6">Contact Us</p>
+                        <ul class="space-y-2 text-neutral mb-8 flex-grow">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> All Pro Lovart Features</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Multi-user Accounts & Management</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Dedicated Lovart Account Manager</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Custom Integrations & API Access</li>
+                        </ul>
+                        <a href="mailto:sales@lovart.info"
+                            class="mt-auto w-full text-center bg-primary-light text-white font-semibold py-3 px-6 rounded-md hover:bg-primary transition-colors">Contact
+                            Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Slot: Horizontal Banner (Pricing Exit) -->
+        <section class="container mx-auto px-6">
+            <div class="ad-slot-container">
+                <!-- 
+                    Tip: Replace with your AdSense ad unit code here
+                    Suggested size: 728x90 (Leaderboard) or Responsive
+                -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3083296102953963"
+                    data-ad-slot="7744440876" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 md:py-24 bg-white section-animate">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-12">Frequently Asked
+                    Questions About Lovart</h2>
+                <div class="max-w-3xl mx-auto">
+                    <!-- FAQ Item 1 -->
+                    <div class="mb-6" x-data="{ open: false }">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center text-left text-lg font-semibold text-neutral-dark p-4 bg-neutral-light rounded-md hover:bg-gray-200 focus:outline-none">
+                            What is Lovart and who is it for?
+                            <svg :class="{'transform rotate-180': open, 'transform rotate-0': !open}"
+                                class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-2"
+                            x-transition:enter-end="opacity-100 transform translate-y-0"
+                            x-transition:leave="transition ease-in duration-200"
+                            x-transition:leave-start="opacity-100 transform translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-2"
+                            class="p-4 bg-neutral-light rounded-b-md text-neutral">
+                            <p>Lovart is an innovative, AI-powered design platform built for creative professionals,
+                                including graphic designers, UI/UX designers, marketers, and content creators. Lovart
+                                aims to streamline the design process, enhance creativity with AI assistance, and
+                                facilitate seamless collaboration. Whether you're a freelancer or part of a large team,
+                                Lovart provides the tools you need to produce stunning visuals efficiently.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="mb-6" x-data="{ open: false }">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center text-left text-lg font-semibold text-neutral-dark p-4 bg-neutral-light rounded-md hover:bg-gray-200 focus:outline-none">
+                            How does the AI in Lovart help my design process?
+                            <svg :class="{'transform rotate-180': open, 'transform rotate-0': !open}"
+                                class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="p-4 bg-neutral-light rounded-b-md text-neutral">
+                            <p>Lovart's AI acts as your intelligent design partner. It can suggest color palettes,
+                                layout options, font pairings, and even generate design elements based on your input.
+                                This helps overcome creative blocks, speeds up ideation, and ensures your designs are
+                                aesthetically pleasing and effective. Lovart's AI is designed to augment your skills,
+                                not replace them.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="mb-6" x-data="{ open: false }">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center text-left text-lg font-semibold text-neutral-dark p-4 bg-neutral-light rounded-md hover:bg-gray-200 focus:outline-none">
+                            Can I collaborate with my team or clients using Lovart?
+                            <svg :class="{'transform rotate-180': open, 'transform rotate-0': !open}"
+                                class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="p-4 bg-neutral-light rounded-b-md text-neutral">
+                            <p>Absolutely! Lovart offers robust real-time collaboration features. You can share your
+                                Lovart projects with team members or clients, allow them to comment directly on the
+                                canvas, and work together seamlessly. This makes the feedback process smoother and keeps
+                                everyone aligned, regardless of their location. Lovart is built for teamwork.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="mb-6" x-data="{ open: false }">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center text-left text-lg font-semibold text-neutral-dark p-4 bg-neutral-light rounded-md hover:bg-gray-200 focus:outline-none">
+                            What kind of assets are available in the Lovart library?
+                            <svg :class="{'transform rotate-180': open, 'transform rotate-0': !open}"
+                                class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="p-4 bg-neutral-light rounded-b-md text-neutral">
+                            <p>Lovart provides an extensive integrated library featuring millions of high-quality stock
+                                photos, icons, illustrations, and fonts. This allows you to find the perfect assets for
+                                your Lovart projects without needing to switch between different platforms or pay for
+                                individual assets. The Lovart library is constantly updated to provide fresh and
+                                relevant content.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="mb-6" x-data="{ open: false }">
+                        <button @click="open = !open"
+                            class="w-full flex justify-between items-center text-left text-lg font-semibold text-neutral-dark p-4 bg-neutral-light rounded-md hover:bg-gray-200 focus:outline-none">
+                            Is Lovart suitable for responsive web design?
+                            <svg :class="{'transform rotate-180': open, 'transform rotate-0': !open}"
+                                class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="p-4 bg-neutral-light rounded-b-md text-neutral">
+                            <p>Yes, Lovart is designed with responsiveness in mind. You can easily preview how your
+                                Lovart designs will look on different screen sizes (desktop, tablet, mobile) directly
+                                within the platform. Lovart's tools help you create fluid layouts and ensure your
+                                visuals are optimized for every device, providing a seamless user experience for your
+                                audience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Slot: Multiplex Ads (Related Content) -->
+        <section class="container mx-auto px-6 mb-16">
+            <div class="ad-slot-container">
+                <!-- 
+                    Tip: Use "Multiplex ads" style in AdSense
+                    Suggested size: Responsive
+                -->
+                <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
+                    data-ad-client="ca-pub-3083296102953963" data-ad-slot="6414622305"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-dark text-neutral-light py-12 section-animate">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Lovart</h3>
+                    <p class="text-neutral mb-4">Lovart is your AI-powered partner for exceptional design. We empower
+                        creators with intuitive tools and intelligent features to bring visions to life. Discover the
+                        future of design with Lovart.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neutral-light hover:text-primary transition-colors"><svg class="w-6 h-6"
+                                fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg></a>
+                        <a href="#" class="text-neutral-light hover:text-primary transition-colors"><svg class="w-6 h-6"
+                                fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg></a>
+                        <a href="#" class="text-neutral-light hover:text-primary transition-colors"><svg class="w-6 h-6"
+                                fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.707 8.707a1 1 0 00-1.414-1.414L11 12.586l-1.293-1.293a1 1 0 00-1.414 1.414L9.586 14l-1.293 1.293a1 1 0 101.414 1.414L11 15.414l1.293 1.293a1 1 0 001.414-1.414L12.414 14l2.293-2.293z"
+                                    clip-rule="evenodd" />
+                            </svg></a> <!-- Placeholder for Instagram/LinkedIn -->
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="lovart-design-features.html"
+                                class="text-neutral hover:text-primary transition-colors">Features</a></li>
+                        <li><a href="lovart-pricing.html"
+                                class="text-neutral hover:text-primary transition-colors">Pricing</a></li>
+                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a></li>
+                        <li><a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-neutral hover:text-primary transition-colors">About Us</a>
+                        </li>
+                        <li><a href="terms-of-service.html"
+                                class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html"
+                                class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Contact Lovart</h3>
+                    <p class="text-neutral">Email: support@lovart.info</p>
+                    <p class="text-neutral">Phone: +1 (555) LOV-ART0 (568-2780)</p>
+                    <p class="text-neutral mt-2">123 Design Street, Creativity City, USA</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-neutral">
+                <div class="flex flex-col items-center gap-2 mb-6">
+                    <span class="text-sm uppercase tracking-wide text-gray-300">Partner Site</span>
+                    <a href="https://vibevoice.online/" target="_blank" rel="noopener"
+                        class="inline-flex items-center justify-center px-4 py-2 border border-white/40 rounded-md text-sm font-semibold text-white transition hover:bg-white/10">
+                        VibeVoice Online
+                    </a>
+                </div>
+                <p>&copy; <span id="currentYear"></span> Lovart.info. All rights reserved. Copyright by tangjei414.</p>
+                <p class="text-sm mt-1">Contact: tangjei414@gmail.com | Telegram: @tangjei</p>
+                <p class="text-sm mt-1">Lovart - The AI Design Platform for Creative Professionals.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="py-16 md:py-24 bg-secondary text-white section-animate">
+        <div class="container mx-auto px-6">
+            <div class="md:flex md:items-center md:justify-around md:gap-12">
+                <div class="md:w-1/2 lg:w-2/5 text-center md:text-left mb-8 md:mb-0 animate-fade-in-up"
+                    style="animation-delay: 0.1s;">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Revolutionize Your Design Process with
+                        Lovart?</h2>
+                    <p class="text-lg md:text-xl mb-8 max-w-xl mx-auto md:mx-0">Join thousands of creators who are
+                        already building their best work with Lovart. Experience the future of design, today.</p>
+                    <div>
+                        <a href="#pricing"
+                            class="bg-white text-secondary font-semibold px-8 py-4 rounded-md hover:bg-opacity-90 transition-all transform hover:scale-105 text-lg mr-2 mb-2 md:mr-4 inline-block">Start
+                            Your Free Lovart Trial</a>
+                        <a href="#features"
+                            class="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-md hover:bg-white hover:text-secondary transition-all transform hover:scale-105 text-lg inline-block">Explore
+                            Lovart Features</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 lg:w-3/5 flex justify-center md:justify-end animate-fade-in-up"
+                    style="animation-delay: 0.3s;">
+                    <img src="images/small_05.jpg" alt="Lovart platform empowering creative designs"
+                        class="rounded-lg shadow-xl max-w-lg w-full object-cover" style="max-height: 350px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lazy load Alpine.js for FAQ dropdowns -->
+    <script>
+        // Load Alpine.js only when needed
+        function loadAlpineJS() {
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        }
+
+        // Load when user scrolls to FAQ section
+        const faqObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    loadAlpineJS();
+                    faqObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Observe FAQ section
+        const faqSection = document.getElementById('faq');
+        if (faqSection) {
+            faqObserver.observe(faqSection);
+        }
+    </script>
+
+    <script>
+        // Performance optimization: Avoid forced synchronous layouts
+        document.addEventListener('DOMContentLoaded', function () {
+            // Batch DOM queries - Avoid reflows caused by repeated queries
+            const lazyElements = document.querySelectorAll('.lazy-load, .lazy-video');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const currentYearSpan = document.getElementById('currentYear');
+            const sections = document.querySelectorAll('.section-animate');
+
+            // Use requestAnimationFrame to batch layout-related operations
+            function batchLayoutUpdates() {
+                // Set current year
+                if (currentYearSpan) {
+                    currentYearSpan.textContent = new Date().getFullYear();
+                }
+
+                // Mobile menu event listener
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+
+                    // Batch process menu link events
+                    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                    mobileMenuLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.add('hidden');
+                        });
+                    });
+                }
+            }
+
+            // Initialize lazy load observer - Use debounce to avoid frequent triggering
+            const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
+                // Use requestAnimationFrame to batch process visible elements
+                requestAnimationFrame(() => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const lazyElement = entry.target;
+
+                            if (lazyElement.classList.contains('lazy-load')) {
+                                // Image lazy loading - Avoid synchronous layout queries
+                                lazyElement.src = lazyElement.dataset.src;
+                                lazyElement.onload = () => {
+                                    requestAnimationFrame(() => {
+                                        lazyElement.classList.add('loaded');
+                                        const loadingIndicator = lazyElement.parentElement.querySelector('.loading-indicator');
+                                        if (loadingIndicator) {
+                                            loadingIndicator.style.display = 'none';
+                                        }
+                                    });
+                                };
+                            } else if (lazyElement.classList.contains('lazy-video')) {
+                                // Video lazy loading
+                                const source = lazyElement.querySelector('source');
+                                if (source) {
+                                    source.src = lazyElement.dataset.src;
+                                    lazyElement.load();
+                                }
+                                const loadingIndicator = lazyElement.parentElement.querySelector('.loading-indicator');
+                                if (loadingIndicator) {
+                                    loadingIndicator.style.display = 'none';
+                                }
+                            }
+
+                            observer.unobserve(lazyElement);
+                        }
+                    });
+                });
+            }, { threshold: 0.1, rootMargin: '200px' });
+
+            // Batch observe lazy load elements
+            lazyElements.forEach(el => {
+                lazyLoadObserver.observe(el);
+            });
+
+            // Scroll animation observer - Use throttle
+            const scrollObserver = new IntersectionObserver((entries) => {
+                requestAnimationFrame(() => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            scrollObserver.unobserve(entry.target);
+                        }
+                    });
+                });
+            }, {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            });
+
+            // Batch observe scroll animation elements
+            sections.forEach(section => {
+                scrollObserver.observe(section);
+            });
+
+            // Execute batch layout updates
+            batchLayoutUpdates();
+
+            // Optimized window resize handling
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    // Use requestAnimationFrame to ensure execution in the next frame
+                    requestAnimationFrame(() => {
+                        // Responsive adjustment logic can be added here
+                    });
+                }, 150); // 150ms debounce delay
+            });
+        });
+    </script>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent"
+        class="fixed bottom-0 left-0 right-0 bg-neutral-dark text-white p-4 shadow-lg transform translate-y-full transition-transform duration-300 z-50"
+        style="display: none;">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-sm">
+                <p>We use cookies to enhance your experience and analyze our traffic. By continuing to visit this site
+                    you agree to our use of cookies. <a href="privacy-policy.html"
+                        class="underline hover:text-primary">Learn more</a></p>
+            </div>
+            <div class="flex gap-3">
+                <button id="cookie-decline"
+                    class="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-neutral-dark transition-colors">Decline</button>
+                <button id="cookie-accept"
+                    class="px-4 py-2 text-sm bg-primary text-white rounded hover:bg-primary-dark transition-colors">Accept</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cookieConsent = document.getElementById('cookie-consent');
+            const acceptBtn = document.getElementById('cookie-accept');
+            const declineBtn = document.getElementById('cookie-decline');
+
+            if (!localStorage.getItem('cookieConsent')) {
+                cookieConsent.style.display = 'block';
+                setTimeout(() => {
+                    cookieConsent.classList.remove('translate-y-full');
+                }, 100);
+            }
+
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'accepted');
+                cookieConsent.classList.add('translate-y-full');
+                setTimeout(() => {
+                    cookieConsent.style.display = 'none';
+                }, 300);
+            });
+
+            declineBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'declined');
+                cookieConsent.classList.add('translate-y-full');
+                setTimeout(() => {
+                    cookieConsent.style.display = 'none';
+                }, 300);
+            });
+        });
+    </script>
+</body>
+
+</html>
