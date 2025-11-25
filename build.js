@@ -22,16 +22,62 @@ async function build() {
             console.log('Copied assets');
         }
 
+        // 3. 复制静态目录到所有语言输出，避免多语言页面引用图片 404（产品/前端视角）
+        const staticDirs = ['images'];
+        for (const dir of staticDirs) {
+            const sourceDir = path.join(__dirname, dir);
+            if (!(await fs.pathExists(sourceDir))) continue;
+
+            // 默认语言放在 dist 根目录，其他语言放在各自子目录
+            await fs.copy(sourceDir, path.join(config.distDir, dir));
+            for (const lang of config.supportedLangs) {
+                if (lang === config.defaultLang) continue;
+                await fs.copy(sourceDir, path.join(config.distDir, lang, dir));
+            }
+            console.log(`Copied ${dir} for all locales`);
+        }
+
+        // 3. Load locales
         // 3. Load locales
         const locales = {};
-        for (const lang of config.supportedLangs) {
-            const localePath = path.join(config.srcDir, 'locales', `${lang}.json`);
-            if (await fs.pathExists(localePath)) {
-                locales[lang] = await fs.readJson(localePath);
-            } else {
-                console.warn(`Warning: Locale file for ${lang} not found, using empty object.`);
-                locales[lang] = {};
+        const defaultLocalePath = path.join(config.srcDir, 'locales', `${config.defaultLang}.json`);
+        let defaultLocale = {};
+
+        if (await fs.pathExists(defaultLocalePath)) {
+            defaultLocale = await fs.readJson(defaultLocalePath);
+        } else {
+            console.error('Error: Default locale file not found.');
+            return;
+        }
+
+        // Helper function for deep merge
+        const deepMerge = (target, source) => {
+            for (const key in source) {
+                if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key])) {
+                    if (!target[key]) target[key] = {};
+                    deepMerge(target[key], source[key]);
+                } else {
+                    target[key] = source[key];
+                }
             }
+            return target;
+        };
+
+        for (const lang of config.supportedLangs) {
+            // Start with a deep copy of the default locale
+            let localeData = JSON.parse(JSON.stringify(defaultLocale));
+
+            if (lang !== config.defaultLang) {
+                const localePath = path.join(config.srcDir, 'locales', `${lang}.json`);
+                if (await fs.pathExists(localePath)) {
+                    const langData = await fs.readJson(localePath);
+                    // Merge language specific data on top of default
+                    deepMerge(localeData, langData);
+                } else {
+                    console.warn(`Warning: Locale file for ${lang} not found, using default (${config.defaultLang}).`);
+                }
+            }
+            locales[lang] = localeData;
         }
 
         // 4. Build pages
@@ -62,11 +108,17 @@ async function build() {
                         outputPath = path.join(config.distDir, lang, `${pageName}.html`);
                     }
 
+                    // Calculate canonical URL
+                    const baseUrl = 'https://lovart.info';
+                    const urlPath = isDefault ? `${pageName}.html` : `${lang}/${pageName}.html`;
+                    const canonicalUrl = `${baseUrl}/${urlPath}`;
+
                     // Prepare data for template
                     const data = {
                         lang: lang,
                         t: locales[lang], // Translation object
                         isDefault: isDefault,
+                        canonicalUrl: canonicalUrl,
                         // Helper to generate localized links
                         link: (path) => {
                             if (isDefault) return path;

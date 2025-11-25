@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help中心 - Lovart AI设计平台</title>
-    <meta name="description" content="访问LovartHelp中心，获取详细的使用指南、常见问题解答、视频教程和技术支持。了解如何注册账户、使用AI设计工具、解决常见问题以及联系我们的客户服务团队。">
-    <meta name="keywords" content="Help中心,使用指南,FAQ,技术支持,LovartHelp">
-    <link rel="canonical" href="https://lovart.info/help.html">
+    <title>
+        <%= t.help_page.seo.title %>
+    </title>
+    <meta name="description" content="<%= t.help_page.seo.description %>">
+    <meta name="keywords" content="<%= t.help_page.seo.keywords %>">
+    <link rel="canonical" href="<%= canonicalUrl %>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
@@ -87,19 +89,33 @@
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"
+            <a href="<%= link('index.html') %>"
                 class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
             <nav class="hidden md:flex space-x-4 items-center">
-                <a href="index.html" class="text-neutral hover:text-primary transition-colors">Home</a>
-                <a href="lovart-design-features.html"
-                    class="text-neutral hover:text-primary transition-colors">Features</a>
-                <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a>
-                <a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a>
-                <a href="help.html" class="text-neutral hover:text-primary transition-colors font-semibold">Help</a>
-                <a href="about.html" class="text-neutral hover:text-primary transition-colors">About</a>
-                <a href="lovart-pricing.html"
-                    class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Get
-                    Started</a>
+                <a href="<%= link('index.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.home %>
+                </a>
+                <a href="<%= link('lovart-design-features.html') %>"
+                    class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.features %>
+                </a>
+                <a href="<%= link('lovart-pricing.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.pricing %>
+                </a>
+                <a href="<%= link('blog.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.blog %>
+                </a>
+                <a href="<%= link('help.html') %>"
+                    class="text-neutral hover:text-primary transition-colors font-semibold">
+                    <%= t.nav.help %>
+                </a>
+                <a href="<%= link('about.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.about %>
+                </a>
+                <a href="<%= link('lovart-pricing.html') %>"
+                    class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">
+                    <%= t.nav.get_started %>
+                </a>
             </nav>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none"
@@ -113,21 +129,34 @@
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <a href="index.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Home</a>
-            <a href="lovart-design-features.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Features</a>
-            <a href="lovart-pricing.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Pricing</a>
-            <a href="blog.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Blog</a>
-            <a href="help.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Help</a>
-            <a href="about.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">About</a>
-            <a href="lovart-pricing.html"
-                class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">Get
-                Started</a>
+            <a href="<%= link('index.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.home %>
+            </a>
+            <a href="<%= link('lovart-design-features.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.features %>
+            </a>
+            <a href="<%= link('lovart-pricing.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.pricing %>
+            </a>
+            <a href="<%= link('blog.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.blog %>
+            </a>
+            <a href="<%= link('help.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.help %>
+            </a>
+            <a href="<%= link('about.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.about %>
+            </a>
+            <a href="<%= link('lovart-pricing.html') %>"
+                class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">
+                <%= t.nav.get_started %>
+            </a>
         </div>
     </header>
 
@@ -135,16 +164,17 @@
         <!-- Hero Section -->
         <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Help Center</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    <%= t.help_page.hero.title %>
+                </h1>
                 <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
-                    We are here to help you make the most of Lovart's powerful features. Browse FAQs, user guides, or
-                    contact our support team.
+                    <%= t.help_page.hero.desc %>
                 </p>
 
                 <!-- Search Box -->
                 <div class="max-w-2xl mx-auto search-box">
                     <div class="relative">
-                        <input type="text" placeholder="Search Help Documentation..."
+                        <input type="text" placeholder="<%= t.help_page.hero.search_placeholder %>"
                             class="w-full px-6 py-4 pr-12 rounded-lg text-neutral-dark focus:outline-none focus:ring-2 focus:ring-white">
                         <button
                             class="absolute right-3 top-1/2 transform -translate-y-1/2 text-neutral-dark hover:text-primary transition-colors">
@@ -162,31 +192,49 @@
         <section class="py-12 bg-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-2xl font-bold text-neutral-dark mb-8 text-center">Quick Help</h2>
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-8 text-center">
+                        <%= t.help_page.quick_help.title %>
+                    </h2>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
                         <div class="help-card bg-primary text-white p-6 rounded-lg text-center cursor-pointer">
                             <div class="text-4xl mb-3">🚀</div>
-                            <h3 class="font-semibold mb-2">Quick Start</h3>
-                            <p class="text-sm opacity-90">Learn how to get started with Lovart quickly</p>
+                            <h3 class="font-semibold mb-2">
+                                <%= t.help_page.quick_help.items[0].title %>
+                            </h3>
+                            <p class="text-sm opacity-90">
+                                <%= t.help_page.quick_help.items[0].desc %>
+                            </p>
                         </div>
 
                         <div class="help-card bg-secondary text-white p-6 rounded-lg text-center cursor-pointer">
                             <div class="text-4xl mb-3">🎨</div>
-                            <h3 class="font-semibold mb-2">Design Tutorials</h3>
-                            <p class="text-sm opacity-90">Master AI design features</p>
+                            <h3 class="font-semibold mb-2">
+                                <%= t.help_page.quick_help.items[1].title %>
+                            </h3>
+                            <p class="text-sm opacity-90">
+                                <%= t.help_page.quick_help.items[1].desc %>
+                            </p>
                         </div>
 
                         <div class="help-card bg-green-500 text-white p-6 rounded-lg text-center cursor-pointer">
                             <div class="text-4xl mb-3">💳</div>
-                            <h3 class="font-semibold mb-2">Billing Issues</h3>
-                            <p class="text-sm opacity-90">Subscription and payment related</p>
+                            <h3 class="font-semibold mb-2">
+                                <%= t.help_page.quick_help.items[2].title %>
+                            </h3>
+                            <p class="text-sm opacity-90">
+                                <%= t.help_page.quick_help.items[2].desc %>
+                            </p>
                         </div>
 
                         <div class="help-card bg-orange-500 text-white p-6 rounded-lg text-center cursor-pointer">
                             <div class="text-4xl mb-3">🔧</div>
-                            <h3 class="font-semibold mb-2">Technical Support</h3>
-                            <p class="text-sm opacity-90">Troubleshooting and technical issues</p>
+                            <h3 class="font-semibold mb-2">
+                                <%= t.help_page.quick_help.items[3].title %>
+                            </h3>
+                            <p class="text-sm opacity-90">
+                                <%= t.help_page.quick_help.items[3].desc %>
+                            </p>
                         </div>
 
                     </div>
@@ -198,7 +246,9 @@
         <section class="py-16 bg-neutral-light">
             <div class="container mx-auto px-6">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-2xl font-bold text-neutral-dark mb-8">Getting Started Guide</h2>
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-8">
+                        <%= t.help_page.getting_started.title %>
+                    </h2>
                     <div class="grid md:grid-cols-3 gap-8">
 
                         <!-- Step 1 -->
@@ -206,18 +256,21 @@
                             <div
                                 class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">
                                 1</div>
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">Create Account</h3>
+                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">
+                                <%= t.help_page.getting_started.steps[0].title %>
+                            </h3>
                             <p class="text-neutral mb-4">
-                                Sign up for your Lovart account and choose a subscription plan that suits your needs. We
-                                offer a free trial so you can experience all features.
+                                <%= t.help_page.getting_started.steps[0].desc %>
                             </p>
                             <ul class="text-sm text-neutral space-y-1 mb-4">
-                                <li>• Email Registration</li>
-                                <li>• Social Media Login</li>
-                                <li>• Enterprise Account Setup</li>
+                                <% t.help_page.getting_started.steps[0].list.forEach(function(item) { %>
+                                    <li>• <%= item %>
+                                    </li>
+                                    <% }); %>
                             </ul>
-                            <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">View Detailed
-                                Tutorial →</a>
+                            <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">
+                                <%= t.help_page.getting_started.steps[0].link %> →
+                            </a>
                         </div>
 
                         <!-- Step 2 -->
@@ -225,18 +278,21 @@
                             <div
                                 class="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">
                                 2</div>
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">Choose Template</h3>
+                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">
+                                <%= t.help_page.getting_started.steps[1].title %>
+                            </h3>
                             <p class="text-neutral mb-4">
-                                Choose a suitable design template from our rich library, or start your design project
-                                from a blank canvas.
+                                <%= t.help_page.getting_started.steps[1].desc %>
                             </p>
                             <ul class="text-sm text-neutral space-y-1 mb-4">
-                                <li>• Browse Template Library</li>
-                                <li>• Customize Template</li>
-                                <li>• Save Personal Template</li>
+                                <% t.help_page.getting_started.steps[1].list.forEach(function(item) { %>
+                                    <li>• <%= item %>
+                                    </li>
+                                    <% }); %>
                             </ul>
-                            <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">View Detailed
-                                Tutorial →</a>
+                            <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">
+                                <%= t.help_page.getting_started.steps[1].link %> →
+                            </a>
                         </div>
 
                         <!-- Step 3 -->
@@ -244,18 +300,21 @@
                             <div
                                 class="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">
                                 3</div>
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">Start Designing</h3>
+                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">
+                                <%= t.help_page.getting_started.steps[2].title %>
+                            </h3>
                             <p class="text-neutral mb-4">
-                                Use our AI design tools and drag-and-drop interface to quickly create professional
-                                design works.
+                                <%= t.help_page.getting_started.steps[2].desc %>
                             </p>
                             <ul class="text-sm text-neutral space-y-1 mb-4">
-                                <li>• AI Assisted Design</li>
-                                <li>• Drag-and-Drop Editor</li>
-                                <li>• Real-time Preview</li>
+                                <% t.help_page.getting_started.steps[2].list.forEach(function(item) { %>
+                                    <li>• <%= item %>
+                                    </li>
+                                    <% }); %>
                             </ul>
-                            <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">View Detailed
-                                Tutorial →</a>
+                            <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">
+                                <%= t.help_page.getting_started.steps[2].link %> →
+                            </a>
                         </div>
 
                     </div>
@@ -284,109 +343,17 @@
         <section class="py-16 bg-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-2xl font-bold text-neutral-dark mb-8 text-center">Frequently Asked Questions</h2>
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-8 text-center">
+                        <%= t.help_page.faq.title %>
+                    </h2>
 
                     <div class="space-y-4">
 
                         <!-- FAQ Item 1 -->
                         <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
                             <button @click="open = !open" class="w-full flex justify-between items-center text-left">
-                                <h3 class="text-lg font-semibold text-neutral-dark">How to get started with Lovart?</h3>
-                                <svg :class="{'transform rotate-180': open}"
-                                    class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <div x-show="open" x-transition class="mt-4 text-neutral">
-                                <p>Getting started with Lovart is very simple:</p>
-                                <ol class="list-decimal list-inside mt-2 space-y-1">
-                                    <li>Visit our website and click "Get Started"</li>
-                                    <li>Choose a subscription plan that suits you (we offer a free trial)</li>
-                                    <li>Complete the registration process</li>
-                                    <li>Watch the quick start tutorial</li>
-                                    <li>Start your first design project</li>
-                                </ol>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 2 -->
-                        <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
-                            <button @click="open = !open" class="w-full flex justify-between items-center text-left">
-                                <h3 class="text-lg font-semibold text-neutral-dark">What file formats does Lovart
-                                    support?</h3>
-                                <svg :class="{'transform rotate-180': open}"
-                                    class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <div x-show="open" x-transition class="mt-4 text-neutral">
-                                <p>Lovart supports multiple file formats to ensure seamless integration with your
-                                    workflow:</p>
-                                <ul class="list-disc list-inside mt-2 space-y-1">
-                                    <li><strong>Import formats:</strong> JPG, PNG, SVG, PDF, PSD</li>
-                                    <li><strong>Export formats:</strong> JPG, PNG, SVG, PDF, GIF, MP4</li>
-                                    <li><strong>High quality output:</strong> Supports up to 4K resolution</li>
-                                    <li><strong>Transparent background:</strong> PNG format supports transparent
-                                        background</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 3 -->
-                        <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
-                            <button @click="open = !open" class="w-full flex justify-between items-center text-left">
-                                <h3 class="text-lg font-semibold text-neutral-dark">How to cancel subscription?</h3>
-                                <svg :class="{'transform rotate-180': open}"
-                                    class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <div x-show="open" x-transition class="mt-4 text-neutral">
-                                <p>You can cancel your Lovart subscription at any time:</p>
-                                <ol class="list-decimal list-inside mt-2 space-y-1">
-                                    <li>Log in to your Lovart account</li>
-                                    <li>Go to "Account Settings" > "Subscription Management"</li>
-                                    <li>Click the "Cancel Subscription" button</li>
-                                    <li>Confirm the cancellation</li>
-                                </ol>
-                                <p class="mt-2 text-sm">Note: After cancellation, you can still use it until the end of
-                                    the current billing cycle. We offer a 30-day money-back guarantee.</p>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 4 -->
-                        <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
-                            <button @click="open = !open" class="w-full flex justify-between items-center text-left">
-                                <h3 class="text-lg font-semibold text-neutral-dark">How do AI design features work?</h3>
-                                <svg :class="{'transform rotate-180': open}"
-                                    class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <div x-show="open" x-transition class="mt-4 text-neutral">
-                                <p>Lovart's AI design features are based on advanced machine learning algorithms:</p>
-                                <ul class="list-disc list-inside mt-2 space-y-1">
-                                    <li>Analyze your design needs and preferences</li>
-                                    <li>Learn best practices from massive design data</li>
-                                    <li>Provide personalized design suggestions</li>
-                                    <li>Automatically generate design elements and layouts</li>
-                                    <li>Continuously learn to improve suggestion quality</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 5 -->
-                        <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
-                            <button @click="open = !open" class="w-full flex justify-between items-center text-left">
-                                <h3 class="text-lg font-semibold text-neutral-dark">How to contact customer support?
+                                <h3 class="text-lg font-semibold text-neutral-dark">
+                                    <%= t.help_page.faq.items[0].question %>
                                 </h3>
                                 <svg :class="{'transform rotate-180': open}"
                                     class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
@@ -396,14 +363,79 @@
                                 </svg>
                             </button>
                             <div x-show="open" x-transition class="mt-4 text-neutral">
-                                <p>We offer multiple support channels:</p>
-                                <ul class="list-disc list-inside mt-2 space-y-1">
-                                    <li><strong>Live Chat:</strong> Weekdays 9AM-6PM</li>
-                                    <li><strong>Email Support:</strong> support@lovart.info</li>
-                                    <li><strong>Help Documentation:</strong> Detailed online tutorials</li>
-                                    <li><strong>Community Forum:</strong> Communicate with other users</li>
-                                    <li><strong>Video Tutorials:</strong> YouTube Channel</li>
-                                </ul>
+                                <%- t.help_page.faq.items[0].answer %>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
+                            <button @click="open = !open" class="w-full flex justify-between items-center text-left">
+                                <h3 class="text-lg font-semibold text-neutral-dark">
+                                    <%= t.help_page.faq.items[1].question %>
+                                </h3>
+                                <svg :class="{'transform rotate-180': open}"
+                                    class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="open" x-transition class="mt-4 text-neutral">
+                                <%- t.help_page.faq.items[1].answer %>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
+                            <button @click="open = !open" class="w-full flex justify-between items-center text-left">
+                                <h3 class="text-lg font-semibold text-neutral-dark">
+                                    <%= t.help_page.faq.items[2].question %>
+                                </h3>
+                                <svg :class="{'transform rotate-180': open}"
+                                    class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="open" x-transition class="mt-4 text-neutral">
+                                <%- t.help_page.faq.items[2].answer %>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
+                            <button @click="open = !open" class="w-full flex justify-between items-center text-left">
+                                <h3 class="text-lg font-semibold text-neutral-dark">
+                                    <%= t.help_page.faq.items[3].question %>
+                                </h3>
+                                <svg :class="{'transform rotate-180': open}"
+                                    class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="open" x-transition class="mt-4 text-neutral">
+                                <%- t.help_page.faq.items[3].answer %>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="faq-item bg-neutral-light p-6 rounded-lg" x-data="{ open: false }">
+                            <button @click="open = !open" class="w-full flex justify-between items-center text-left">
+                                <h3 class="text-lg font-semibold text-neutral-dark">
+                                    <%= t.help_page.faq.items[4].question %>
+                                </h3>
+                                <svg :class="{'transform rotate-180': open}"
+                                    class="w-5 h-5 text-primary transition-transform duration-300" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="open" x-transition class="mt-4 text-neutral">
+                                <%- t.help_page.faq.items[4].answer %>
                             </div>
                         </div>
 
@@ -416,7 +448,9 @@
         <section class="py-16 bg-neutral-light">
             <div class="container mx-auto px-6">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-2xl font-bold text-neutral-dark mb-8 text-center">Video Tutorials</h2>
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-8 text-center">
+                        <%= t.help_page.videos.title %>
+                    </h2>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                         <!-- Video 1 -->
@@ -435,12 +469,20 @@
                                 </div>
                             </div>
                             <div class="p-6">
-                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">Lovart Quick Start</h3>
-                                <p class="text-neutral text-sm mb-3">Understand Lovart's core features in 5 minutes</p>
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">
+                                    <%= t.help_page.videos.items[0].title %>
+                                </h3>
+                                <p class="text-neutral text-sm mb-3">
+                                    <%= t.help_page.videos.items[0].desc %>
+                                </p>
                                 <div class="flex items-center text-sm text-neutral">
-                                    <span>5:32</span>
+                                    <span>
+                                        <%= t.help_page.videos.items[0].duration %>
+                                    </span>
                                     <span class="mx-2">•</span>
-                                    <span>Beginner</span>
+                                    <span>
+                                        <%= t.help_page.videos.items[0].level %>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -461,14 +503,20 @@
                                 </div>
                             </div>
                             <div class="p-6">
-                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">AI Design Features Explained
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">
+                                    <%= t.help_page.videos.items[1].title %>
                                 </h3>
-                                <p class="text-neutral text-sm mb-3">Deep dive into how AI improves design efficiency
+                                <p class="text-neutral text-sm mb-3">
+                                    <%= t.help_page.videos.items[1].desc %>
                                 </p>
                                 <div class="flex items-center text-sm text-neutral">
-                                    <span>12:45</span>
+                                    <span>
+                                        <%= t.help_page.videos.items[1].duration %>
+                                    </span>
                                     <span class="mx-2">•</span>
-                                    <span>Intermediate</span>
+                                    <span>
+                                        <%= t.help_page.videos.items[1].level %>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -489,12 +537,20 @@
                                 </div>
                             </div>
                             <div class="p-6">
-                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">Advanced Design Tips</h3>
-                                <p class="text-neutral text-sm mb-3">Advanced tips shared by professional designers</p>
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">
+                                    <%= t.help_page.videos.items[2].title %>
+                                </h3>
+                                <p class="text-neutral text-sm mb-3">
+                                    <%= t.help_page.videos.items[2].desc %>
+                                </p>
                                 <div class="flex items-center text-sm text-neutral">
-                                    <span>18:20</span>
+                                    <span>
+                                        <%= t.help_page.videos.items[2].duration %>
+                                    </span>
                                     <span class="mx-2">•</span>
-                                    <span>Advanced</span>
+                                    <span>
+                                        <%= t.help_page.videos.items[2].level %>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -508,58 +564,68 @@
         <section class="py-16 bg-primary text-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold mb-4">Need More Help?</h2>
+                    <h2 class="text-3xl font-bold mb-4">
+                        <%= t.help_page.contact.title %>
+                    </h2>
                     <p class="text-lg mb-8 opacity-90">
-                        Our support team is ready to help you. Choose the contact method that suits you best.
+                        <%= t.help_page.contact.desc %>
                     </p>
 
                     <div class="grid md:grid-cols-3 gap-6 mb-8">
                         <div class="bg-white bg-opacity-10 p-6 rounded-lg">
                             <div class="text-3xl mb-3">💬</div>
-                            <h3 class="text-xl font-semibold mb-2">Live Chat</h3>
-                            <p class="text-sm opacity-80 mb-4">Weekdays 9AM-6PM</p>
+                            <h3 class="text-xl font-semibold mb-2">
+                                <%= t.help_page.contact.chat.title %>
+                            </h3>
+                            <p class="text-sm opacity-80 mb-4">
+                                <%= t.help_page.contact.chat.desc %>
+                            </p>
                             <button
-                                class="bg-white text-primary px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors">Start
-                                Chat</button>
+                                class="bg-white text-primary px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors">
+                                <%= t.help_page.contact.chat.button %>
+                            </button>
                         </div>
 
                         <div class="bg-white bg-opacity-10 p-6 rounded-lg">
                             <div class="text-3xl mb-3">📧</div>
-                            <h3 class="text-xl font-semibold mb-2">Email Support</h3>
-                            <p class="text-sm opacity-80 mb-4">Reply within 24 hours</p>
+                            <h3 class="text-xl font-semibold mb-2">
+                                <%= t.help_page.contact.email.title %>
+                            </h3>
+                            <p class="text-sm opacity-80 mb-4">
+                                <%= t.help_page.contact.email.desc %>
+                            </p>
                             <a href="mailto:support@lovart.info"
-                                class="bg-white text-primary px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors inline-block">Send
-                                Email</a>
+                                class="bg-white text-primary px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors inline-block">
+                                <%= t.help_page.contact.email.button %>
+                            </a>
                         </div>
 
                         <div class="bg-white bg-opacity-10 p-6 rounded-lg">
                             <div class="text-3xl mb-3">📞</div>
-                            <h3 class="text-xl font-semibold mb-2">Phone Support</h3>
-                            <p class="text-sm opacity-80 mb-4">Priority for urgent issues</p>
+                            <h3 class="text-xl font-semibold mb-2">
+                                <%= t.help_page.contact.phone.title %>
+                            </h3>
+                            <p class="text-sm opacity-80 mb-4">
+                                <%= t.help_page.contact.phone.desc %>
+                            </p>
                             <a href="tel:+15555682780"
-                                class="bg-white text-primary px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors inline-block">Call
-                                Us</a>
+                                class="bg-white text-primary px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors inline-block">
+                                <%= t.help_page.contact.phone.button %>
+                            </a>
                         </div>
                     </div>
 
                     <div class="bg-white bg-opacity-10 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-4">Quick FAQ Search</h3>
+                        <h3 class="text-xl font-semibold mb-4">
+                            <%= t.help_page.contact.quick_search.title %>
+                        </h3>
                         <div class="flex flex-wrap gap-2 justify-center">
-                            <span
-                                class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">Forgot
-                                Password</span>
-                            <span
-                                class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">Billing
-                                Issues</span>
-                            <span
-                                class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">Technical
-                                Faults</span>
-                            <span
-                                class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">Feature
-                                Usage</span>
-                            <span
-                                class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">Account
-                                Management</span>
+                            <% t.help_page.contact.quick_search.tags.forEach(function(tag) { %>
+                                <span
+                                    class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-opacity-30">
+                                    <%= tag %>
+                                </span>
+                                <% }); %>
                         </div>
                     </div>
                 </div>
@@ -572,8 +638,12 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Lovart</h3>
-                    <p class="text-neutral mb-4">AI-powered design platform for creative professionals.</p>
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        <%= t.help_page.footer.titles.lovart %>
+                    </h3>
+                    <p class="text-neutral mb-4">
+                        <%= t.help_page.footer.desc %>
+                    </p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-neutral-light hover:text-primary transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -591,29 +661,48 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Products</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        <%= t.help_page.footer.titles.products %>
+                    </h3>
                     <ul class="space-y-2">
-                        <li><a href="lovart-design-features.html"
-                                class="text-neutral hover:text-primary transition-colors">Features</a></li>
-                        <li><a href="lovart-pricing.html"
-                                class="text-neutral hover:text-primary transition-colors">Pricing</a></li>
-                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a></li>
-                        <li><a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a></li>
+                        <li><a href="<%= link('lovart-design-features.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.nav.features %>
+                            </a></li>
+                        <li><a href="<%= link('lovart-pricing.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.nav.pricing %>
+                            </a></li>
+                        <li><a href="<%= link('blog.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.nav.blog %>
+                            </a></li>
+                        <li><a href="<%= link('help.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.nav.help %>
+                            </a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Company</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        <%= t.help_page.footer.titles.company %>
+                    </h3>
                     <ul class="space-y-2">
-                        <li><a href="about.html" class="text-neutral hover:text-primary transition-colors">About Us</a>
+                        <li><a href="<%= link('about.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.nav.about %>
+                            </a>
                         </li>
-                        <li><a href="terms-of-service.html"
+                        <li><a href="<%= link('terms-of-service.html') %>"
                                 class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
-                        <li><a href="privacy-policy.html"
+                        <li><a href="<%= link('privacy-policy.html') %>"
                                 class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Contact Info</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        <%= t.help_page.footer.titles.contact %>
+                    </h3>
                     <p class="text-neutral">Email: support@lovart.info</p>
                     <p class="text-neutral">Phone: +1 (555) LOV-ART0</p>
                 </div>
@@ -626,7 +715,9 @@
                         VibeVoice Online
                     </a>
                 </div>
-                <p>&copy; <span id="currentYear"></span> Lovart.info. All rights reserved.</p>
+                <p>&copy; <span id="currentYear"></span>
+                    <%= t.help_page.footer.rights %>
+                </p>
             </div>
         </div>
     </footer>

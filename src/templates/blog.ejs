@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Lovart AI设计平台</title>
-    <meta name="description"
-        content="关注Lovart官方Blog，获取最新的AI设计趋势分析、实用设计教程、成功案例分享以及创意灵感源泉。了解如何运用AI提升设计效率，掌握现代设计技巧，获取专业创作指导和行业洞察。">
-    <meta name="keywords" content="AI设计,设计Blog,创意灵感,设计教程,LovartBlog">
-    <link rel="canonical" href="https://lovart.info/blog.html">
+    <title>
+        <%= t.blog_page.seo.title %>
+    </title>
+    <meta name="description" content="<%= t.blog_page.seo.description %>">
+    <meta name="keywords" content="<%= t.blog_page.seo.keywords %>">
+    <link rel="canonical" href="<%= canonicalUrl %>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
@@ -112,19 +113,33 @@
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"
+            <a href="<%= link('index.html') %>"
                 class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
             <nav class="hidden md:flex space-x-4 items-center">
-                <a href="index.html" class="text-neutral hover:text-primary transition-colors">Home</a>
-                <a href="lovart-design-features.html"
-                    class="text-neutral hover:text-primary transition-colors">Features</a>
-                <a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">Pricing</a>
-                <a href="blog.html" class="text-neutral hover:text-primary transition-colors font-semibold">Blog</a>
-                <a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a>
-                <a href="about.html" class="text-neutral hover:text-primary transition-colors">About</a>
-                <a href="lovart-pricing.html"
-                    class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">Get
-                    Started</a>
+                <a href="<%= link('index.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.home %>
+                </a>
+                <a href="<%= link('lovart-design-features.html') %>"
+                    class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.features %>
+                </a>
+                <a href="<%= link('lovart-pricing.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.pricing %>
+                </a>
+                <a href="<%= link('blog.html') %>"
+                    class="text-neutral hover:text-primary transition-colors font-semibold">
+                    <%= t.nav.blog %>
+                </a>
+                <a href="<%= link('help.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.help %>
+                </a>
+                <a href="<%= link('about.html') %>" class="text-neutral hover:text-primary transition-colors">
+                    <%= t.nav.about %>
+                </a>
+                <a href="<%= link('lovart-pricing.html') %>"
+                    class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">
+                    <%= t.nav.get_started %>
+                </a>
             </nav>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none"
@@ -138,21 +153,34 @@
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <a href="index.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Home</a>
-            <a href="lovart-design-features.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Features</a>
-            <a href="lovart-pricing.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Pricing</a>
-            <a href="blog.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Blog</a>
-            <a href="help.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">Help</a>
-            <a href="about.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">About</a>
-            <a href="lovart-pricing.html"
-                class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">Get
-                Started</a>
+            <a href="<%= link('index.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.home %>
+            </a>
+            <a href="<%= link('lovart-design-features.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.features %>
+            </a>
+            <a href="<%= link('lovart-pricing.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.pricing %>
+            </a>
+            <a href="<%= link('blog.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.blog %>
+            </a>
+            <a href="<%= link('help.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.help %>
+            </a>
+            <a href="<%= link('about.html') %>"
+                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                <%= t.nav.about %>
+            </a>
+            <a href="<%= link('lovart-pricing.html') %>"
+                class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">
+                <%= t.nav.get_started %>
+            </a>
         </div>
     </header>
 
@@ -160,15 +188,18 @@
         <!-- Hero Section -->
         <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Lovart Blog</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    <%= t.blog_page.hero.title %>
+                </h1>
                 <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
-                    探索AI设计的无限可能，获取最新的设计趋势、实用教程和创意灵感
+                    <%= t.blog_page.hero.desc %>
                 </p>
                 <div class="flex flex-wrap justify-center gap-3">
-                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">AI设计趋势</span>
-                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">设计教程</span>
-                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">创意灵感</span>
-                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">案例分析</span>
+                    <% t.blog_page.hero.tags.forEach(function(tag) { %>
+                        <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
+                            <%= tag %>
+                        </span>
+                        <% }); %>
                 </div>
             </div>
         </section>
@@ -177,18 +208,29 @@
         <section class="py-8 bg-white">
             <div class="container mx-auto px-6">
                 <div class="flex flex-wrap justify-center gap-3">
+                    <button class="category-pill bg-primary text-white px-6 py-2 rounded-full text-sm font-medium">
+                        <%= t.blog_page.categories.all %>
+                    </button>
                     <button
-                        class="category-pill bg-primary text-white px-6 py-2 rounded-full text-sm font-medium">全部</button>
+                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">
+                        <%= t.blog_page.categories.ai_design %>
+                    </button>
                     <button
-                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">AI设计</button>
+                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">
+                        <%= t.blog_page.categories.tutorials %>
+                    </button>
                     <button
-                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">教程指南</button>
+                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">
+                        <%= t.blog_page.categories.industry %>
+                    </button>
                     <button
-                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">行业洞察</button>
+                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">
+                        <%= t.blog_page.categories.updates %>
+                    </button>
                     <button
-                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">Products更新</button>
-                    <button
-                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">用户故事</button>
+                        class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">
+                        <%= t.blog_page.categories.stories %>
+                    </button>
                 </div>
             </div>
         </section>
@@ -197,25 +239,29 @@
         <section class="py-12 bg-neutral-light">
             <div class="container mx-auto px-6">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-2xl font-bold text-neutral-dark mb-8">Featured Article</h2>
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-8">
+                        <%= t.blog_page.featured.title %>
+                    </h2>
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <div class="md:flex">
                             <div class="md:w-1/2">
-                                <img src="images/01.jpg" alt="AI Design Revolution"
+                                <img src="images/01.jpg" alt="<%= t.blog_page.featured.article_title %>"
                                     class="w-full h-64 md:h-full object-cover">
                             </div>
                             <div class="md:w-1/2 p-8">
                                 <div class="flex items-center gap-3 mb-4">
-                                    <span class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">AI
-                                        Design</span>
-                                    <span class="text-neutral text-sm">Jan 15, 2024</span>
+                                    <span class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">
+                                        <%= t.blog_page.featured.tag %>
+                                    </span>
+                                    <span class="text-neutral text-sm">
+                                        <%= t.blog_page.featured.date %>
+                                    </span>
                                 </div>
-                                <h3 class="text-2xl font-bold text-neutral-dark mb-4">How AI is Revolutionizing Modern
-                                    Design Workflows</h3>
+                                <h3 class="text-2xl font-bold text-neutral-dark mb-4">
+                                    <%= t.blog_page.featured.article_title %>
+                                </h3>
                                 <p class="text-neutral mb-6">
-                                    Explore how artificial intelligence is reshaping the way designers work, from
-                                    ideation to final presentation. AI is becoming the designer's most powerful partner.
-                                    Learn how to leverage Lovart's AI Features to boost your design efficiency.
+                                    <%= t.blog_page.featured.desc %>
                                 </p>
                                 <div class="flex flex-col gap-4">
                                     <div class="flex items-center justify-between">
@@ -223,16 +269,24 @@
                                             <img src="images/02.png" alt="Author Avatar"
                                                 class="w-10 h-10 rounded-full object-cover">
                                             <div>
-                                                <p class="font-medium text-neutral-dark">Designer Zhang</p>
-                                                <p class="text-sm text-neutral">Lovart Team</p>
+                                                <p class="font-medium text-neutral-dark">
+                                                    <%= t.blog_page.featured.author %>
+                                                </p>
+                                                <p class="text-sm text-neutral">
+                                                    <%= t.blog_page.featured.role %>
+                                                </p>
                                             </div>
                                         </div>
-                                        <a href="#" class="text-primary hover:text-primary-dark font-medium">Read More
-                                            →</a>
+                                        <a href="#" class="text-primary hover:text-primary-dark font-medium">
+                                            <%= t.blog_page.featured.read_more %>
+                                                →
+                                        </a>
                                     </div>
                                     <!-- Social Share -->
                                     <div class="flex items-center gap-3 border-t border-gray-100 pt-4">
-                                        <span class="text-sm text-neutral-500">Share:</span>
+                                        <span class="text-sm text-neutral-500">
+                                            <%= t.blog_page.latest.share %>
+                                        </span>
                                         <div class="flex gap-2">
                                             <a href="#"
                                                 class="text-neutral-400 hover:text-blue-600 transition-colors"><svg
@@ -271,18 +325,30 @@
 
                         <!-- Categories -->
                         <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                            <h3 class="text-lg font-bold text-neutral-dark mb-4">Categories</h3>
+                            <h3 class="text-lg font-bold text-neutral-dark mb-4">
+                                <%= t.blog_page.sidebar.categories %>
+                            </h3>
                             <ul class="space-y-2">
-                                <li><a href="#" class="text-neutral hover:text-primary transition-colors">AI Design
-                                        (5)</a></li>
-                                <li><a href="#" class="text-neutral hover:text-primary transition-colors">Tutorials
-                                        (8)</a></li>
-                                <li><a href="#" class="text-neutral hover:text-primary transition-colors">Industry
-                                        Insights (3)</a></li>
-                                <li><a href="#" class="text-neutral hover:text-primary transition-colors">Product
-                                        Updates (6)</a></li>
-                                <li><a href="#" class="text-neutral hover:text-primary transition-colors">User Stories
-                                        (4)</a></li>
+                                <li><a href="#" class="text-neutral hover:text-primary transition-colors">
+                                        <%= t.blog_page.categories.ai_design %>
+                                            (5)
+                                    </a></li>
+                                <li><a href="#" class="text-neutral hover:text-primary transition-colors">
+                                        <%= t.blog_page.categories.tutorials %>
+                                            (8)
+                                    </a></li>
+                                <li><a href="#" class="text-neutral hover:text-primary transition-colors">
+                                        <%= t.blog_page.categories.industry %>
+                                            (3)
+                                    </a></li>
+                                <li><a href="#" class="text-neutral hover:text-primary transition-colors">
+                                        <%= t.blog_page.categories.updates %>
+                                            (6)
+                                    </a></li>
+                                <li><a href="#" class="text-neutral hover:text-primary transition-colors">
+                                        <%= t.blog_page.categories.stories %>
+                                            (4)
+                                    </a></li>
                                 <li><a href="#" class="text-neutral hover:text-primary transition-colors">Inspiration
                                         (7)</a></li>
                             </ul>
@@ -290,35 +356,44 @@
 
                         <!-- Recent Posts -->
                         <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                            <h3 class="text-lg font-bold text-neutral-dark mb-4">Recent Posts</h3>
+                            <h3 class="text-lg font-bold text-neutral-dark mb-4">
+                                <%= t.blog_page.sidebar.recent_posts %>
+                            </h3>
                             <ul class="space-y-4">
                                 <li class="flex items-center gap-3">
                                     <img src="images/thumb-01.jpg" alt="Recent Post Thumbnail"
                                         class="w-16 h-16 object-cover rounded-md">
                                     <div>
-                                        <a href="#" class="text-neutral-dark hover:text-primary font-medium text-sm">How
-                                            AI is Revolutionizing Modern Design Workflows</a>
-                                        <p class="text-neutral text-xs">Jan 15, 2024</p>
+                                        <a href="#" class="text-neutral-dark hover:text-primary font-medium text-sm">
+                                            <%= t.blog_page.featured.article_title %>
+                                        </a>
+                                        <p class="text-neutral text-xs">
+                                            <%= t.blog_page.featured.date %>
+                                        </p>
                                     </div>
                                 </li>
                                 <li class="flex items-center gap-3">
                                     <img src="images/thumb-02.jpg" alt="Recent Post Thumbnail"
                                         class="w-16 h-16 object-cover rounded-md">
                                     <div>
-                                        <a href="#"
-                                            class="text-neutral-dark hover:text-primary font-medium text-sm">Master
-                                            Lovart's AI Design Features in 5 Minutes</a>
-                                        <p class="text-neutral text-xs">Jan 12, 2024</p>
+                                        <a href="#" class="text-neutral-dark hover:text-primary font-medium text-sm">
+                                            <%= t.blog_page.latest.posts[0].title %>
+                                        </a>
+                                        <p class="text-neutral text-xs">
+                                            <%= t.blog_page.latest.posts[0].date %>
+                                        </p>
                                     </div>
                                 </li>
                                 <li class="flex items-center gap-3">
                                     <img src="images/thumb-03.jpg" alt="Recent Post Thumbnail"
                                         class="w-16 h-16 object-cover rounded-md">
                                     <div>
-                                        <a href="#"
-                                            class="text-neutral-dark hover:text-primary font-medium text-sm">2024 UI/UX
-                                            Design Trend Predictions</a>
-                                        <p class="text-neutral text-xs">Jan 10, 2024</p>
+                                        <a href="#" class="text-neutral-dark hover:text-primary font-medium text-sm">
+                                            <%= t.blog_page.latest.posts[1].title %>
+                                        </a>
+                                        <p class="text-neutral text-xs">
+                                            <%= t.blog_page.latest.posts[1].date %>
+                                        </p>
                                     </div>
                                 </li>
                             </ul>
@@ -326,7 +401,9 @@
 
                         <!-- Tags -->
                         <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                            <h3 class="text-lg font-bold text-neutral-dark mb-4">Tags</h3>
+                            <h3 class="text-lg font-bold text-neutral-dark mb-4">
+                                <%= t.blog_page.sidebar.tags %>
+                            </h3>
                             <div class="flex flex-wrap gap-2">
                                 <a href="#"
                                     class="bg-neutral-light text-neutral hover:bg-primary hover:text-white px-3 py-1 rounded-full text-xs">AI
@@ -364,7 +441,9 @@
 
                     <!-- Main Content (Left) -->
                     <div class="lg:w-2/3">
-                        <h2 class="text-2xl font-bold text-neutral-dark mb-8">Latest Articles</h2>
+                        <h2 class="text-2xl font-bold text-neutral-dark mb-8">
+                            <%= t.blog_page.latest.title %>
+                        </h2>
                         <div class="grid md:grid-cols-2 gap-8">
 
                             <!-- Blog Post 1 -->
@@ -373,25 +452,33 @@
                                 <img src="images/03.jpg" alt="Design Tutorial" class="w-full h-48 object-cover">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
-                                        <span
-                                            class="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">Tutorial</span>
-                                        <span class="text-neutral text-sm">Jan 12, 2024</span>
+                                        <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                                            <%= t.blog_page.latest.posts[0].tag %>
+                                        </span>
+                                        <span class="text-neutral text-sm">
+                                            <%= t.blog_page.latest.posts[0].date %>
+                                        </span>
                                     </div>
-                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Master Lovart's AI Design
-                                        Features in 5 Minutes</h3>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">
+                                        <%= t.blog_page.latest.posts[0].title %>
+                                    </h3>
                                     <p class="text-neutral mb-4 line-clamp-3">
-                                        Quickly learn how to use Lovart's AI features to create impressive designs. This
-                                        tutorial covers core features and practical tips.
+                                        <%= t.blog_page.latest.posts[0].desc %>
                                     </p>
                                     <div class="flex flex-col gap-3">
                                         <div class="flex items-center justify-between">
-                                            <span class="text-sm text-neutral">Teacher Li</span>
+                                            <span class="text-sm text-neutral">
+                                                <%= t.blog_page.latest.posts[0].author %>
+                                            </span>
                                             <a href="#"
-                                                class="text-primary hover:text-primary-dark font-medium text-sm">Read
-                                                More</a>
+                                                class="text-primary hover:text-primary-dark font-medium text-sm">
+                                                <%= t.blog_page.latest.read_more %>
+                                            </a>
                                         </div>
                                         <div class="flex items-center gap-2 border-t border-gray-100 pt-3">
-                                            <span class="text-xs text-neutral-500">Share:</span>
+                                            <span class="text-xs text-neutral-500">
+                                                <%= t.blog_page.latest.share %>
+                                            </span>
                                             <a href="#" class="text-neutral-400 hover:text-blue-600"><svg
                                                     class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                                                     <path
@@ -419,25 +506,33 @@
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
                                         <span
-                                            class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">Industry
-                                            Insights</span>
-                                        <span class="text-neutral text-sm">Jan 10, 2024</span>
+                                            class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">
+                                            <%= t.blog_page.latest.posts[1].tag %>
+                                        </span>
+                                        <span class="text-neutral text-sm">
+                                            <%= t.blog_page.latest.posts[1].date %>
+                                        </span>
                                     </div>
-                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">2024 UI/UX Design Trend
-                                        Predictions</h3>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">
+                                        <%= t.blog_page.latest.posts[1].title %>
+                                    </h3>
                                     <p class="text-neutral mb-4 line-clamp-3">
-                                        Deep dive into the most notable UI/UX design trends of 2024, from minimalism to
-                                        immersive experiences, and how to apply them in your projects.
+                                        <%= t.blog_page.latest.posts[1].desc %>
                                     </p>
                                     <div class="flex flex-col gap-3">
                                         <div class="flex items-center justify-between">
-                                            <span class="text-sm text-neutral">Analyst Wang</span>
+                                            <span class="text-sm text-neutral">
+                                                <%= t.blog_page.latest.posts[1].author %>
+                                            </span>
                                             <a href="#"
-                                                class="text-primary hover:text-primary-dark font-medium text-sm">Read
-                                                More</a>
+                                                class="text-primary hover:text-primary-dark font-medium text-sm">
+                                                <%= t.blog_page.latest.read_more %>
+                                            </a>
                                         </div>
                                         <div class="flex items-center gap-2 border-t border-gray-100 pt-3">
-                                            <span class="text-xs text-neutral-500">Share:</span>
+                                            <span class="text-xs text-neutral-500">
+                                                <%= t.blog_page.latest.share %>
+                                            </span>
                                             <a href="#" class="text-neutral-400 hover:text-blue-600"><svg
                                                     class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                                                     <path
@@ -481,21 +576,26 @@
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
                                         <span
-                                            class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">User
-                                            Stories</span>
-                                        <span class="text-neutral text-sm">Jan 8, 2024</span>
+                                            class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                                            <%= t.blog_page.latest.posts[2].tag %>
+                                        </span>
+                                        <span class="text-neutral text-sm">
+                                            <%= t.blog_page.latest.posts[2].date %>
+                                        </span>
                                     </div>
-                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">How Designers Boost Efficiency
-                                        by 300% with Lovart</h3>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">
+                                        <%= t.blog_page.latest.posts[2].title %>
+                                    </h3>
                                     <p class="text-neutral mb-4 line-clamp-3">
-                                        Real user case: Independent designer Chen shares how she reduced design time by
-                                        70% using Lovart's AI features while improving quality.
+                                        <%= t.blog_page.latest.posts[2].desc %>
                                     </p>
                                     <div class="flex items-center justify-between">
-                                        <span class="text-sm text-neutral">Designer Chen</span>
-                                        <a href="#"
-                                            class="text-primary hover:text-primary-dark font-medium text-sm">Read
-                                            More</a>
+                                        <span class="text-sm text-neutral">
+                                            <%= t.blog_page.latest.posts[2].author %>
+                                        </span>
+                                        <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">
+                                            <%= t.blog_page.latest.read_more %>
+                                        </a>
                                     </div>
                                 </div>
                             </article>
@@ -507,21 +607,26 @@
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
                                         <span
-                                            class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">Product
-                                            Design</span>
-                                        <span class="text-neutral text-sm">Jan 5, 2024</span>
+                                            class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                                            <%= t.blog_page.latest.posts[3].tag %>
+                                        </span>
+                                        <span class="text-neutral text-sm">
+                                            <%= t.blog_page.latest.posts[3].date %>
+                                        </span>
                                     </div>
-                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Best Practices for AI-Assisted
-                                        Product Design</h3>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">
+                                        <%= t.blog_page.latest.posts[3].title %>
+                                    </h3>
                                     <p class="text-neutral mb-4 line-clamp-3">
-                                        Explore how to effectively integrate AI tools into product design, from proof of
-                                        concept to user testing, and how AI helps product teams make better decisions.
+                                        <%= t.blog_page.latest.posts[3].desc %>
                                     </p>
                                     <div class="flex items-center justify-between">
-                                        <span class="text-sm text-neutral">Product Manager Zhao</span>
-                                        <a href="#"
-                                            class="text-primary hover:text-primary-dark font-medium text-sm">Read
-                                            More</a>
+                                        <span class="text-sm text-neutral">
+                                            <%= t.blog_page.latest.posts[3].author %>
+                                        </span>
+                                        <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">
+                                            <%= t.blog_page.latest.read_more %>
+                                        </a>
                                     </div>
                                 </div>
                             </article>
@@ -533,20 +638,26 @@
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
                                         <span
-                                            class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium">Inspiration</span>
-                                        <span class="text-neutral text-sm">Jan 3, 2024</span>
+                                            class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                                            <%= t.blog_page.latest.posts[4].tag %>
+                                        </span>
+                                        <span class="text-neutral text-sm">
+                                            <%= t.blog_page.latest.posts[4].date %>
+                                        </span>
                                     </div>
-                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Breaking Creative Blocks: AI
-                                        Sparks Design Inspiration</h3>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">
+                                        <%= t.blog_page.latest.posts[4].title %>
+                                    </h3>
                                     <p class="text-neutral mb-4 line-clamp-3">
-                                        When creativity runs dry, AI can be your source of inspiration. Learn how to use
-                                        Lovart's AI features to quickly generate creative concepts and directions.
+                                        <%= t.blog_page.latest.posts[4].desc %>
                                     </p>
                                     <div class="flex items-center justify-between">
-                                        <span class="text-sm text-neutral">Creative Director Liu</span>
-                                        <a href="#"
-                                            class="text-primary hover:text-primary-dark font-medium text-sm">Read
-                                            More</a>
+                                        <span class="text-sm text-neutral">
+                                            <%= t.blog_page.latest.posts[4].author %>
+                                        </span>
+                                        <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">
+                                            <%= t.blog_page.latest.read_more %>
+                                        </a>
                                     </div>
                                 </div>
                             </article>
@@ -557,23 +668,26 @@
                                 <img src="images/08.jpg" alt="Product Updates" class="w-full h-48 object-cover">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
-                                        <span
-                                            class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">Product
-                                            Updates</span>
-                                        <span class="text-neutral text-sm">Jan 1, 2024</span>
+                                        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                                            <%= t.blog_page.latest.posts[5].tag %>
+                                        </span>
+                                        <span class="text-neutral text-sm">
+                                            <%= t.blog_page.latest.posts[5].date %>
+                                        </span>
                                     </div>
-                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Lovart 2024 First Month Update:
-                                        New Features</h3>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">
+                                        <%= t.blog_page.latest.posts[5].title %>
+                                    </h3>
                                     <p class="text-neutral mb-4 line-clamp-3">
-                                        New year, new features! Discover Lovart's latest product updates, including
-                                        enhanced AI algorithms, new template libraries, and improved collaboration
-                                        features.
+                                        <%= t.blog_page.latest.posts[5].desc %>
                                     </p>
                                     <div class="flex items-center justify-between">
-                                        <span class="text-sm text-neutral">Product Team</span>
-                                        <a href="#"
-                                            class="text-primary hover:text-primary-dark font-medium text-sm">Read
-                                            More</a>
+                                        <span class="text-sm text-neutral">
+                                            <%= t.blog_page.latest.posts[5].author %>
+                                        </span>
+                                        <a href="#" class="text-primary hover:text-primary-dark font-medium text-sm">
+                                            <%= t.blog_page.latest.read_more %>
+                                        </a>
                                     </div>
                                 </div>
                             </article>
@@ -601,13 +715,19 @@
 
             <!-- Newsletter (Mini version) -->
             <div class="bg-primary p-6 rounded-lg shadow-md text-white">
-                <h3 class="text-xl font-bold mb-2">Subscribe for Updates</h3>
-                <p class="text-sm opacity-90 mb-4">Get the latest design trends and tutorials weekly.</p>
+                <h3 class="text-xl font-bold mb-2">
+                    <%= t.blog_page.newsletter.title %>
+                </h3>
+                <p class="text-sm opacity-90 mb-4">
+                    <%= t.blog_page.newsletter.desc %>
+                </p>
                 <form class="space-y-3">
-                    <input type="email" placeholder="Your Email"
+                    <input type="email" placeholder="<%= t.blog_page.newsletter.placeholder %>"
                         class="w-full px-4 py-2 rounded text-neutral-dark focus:outline-none">
                     <button type="submit"
-                        class="w-full bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded font-medium transition-colors">Subscribe</button>
+                        class="w-full bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded font-medium transition-colors">
+                        <%= t.blog_page.newsletter.button %>
+                    </button>
                 </form>
             </div>
 
@@ -621,20 +741,22 @@
         <section class="py-16 bg-primary text-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold mb-4">订阅我们的新闻通讯</h2>
+                    <h2 class="text-3xl font-bold mb-4">
+                        <%= t.blog_page.bottom_newsletter.title %>
+                    </h2>
                     <p class="text-lg mb-8 opacity-90">
-                        获取最新的设计趋势、教程和LovartProducts更新，每周直接发送到您的邮箱
+                        <%= t.blog_page.bottom_newsletter.desc %>
                     </p>
                     <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                        <input type="email" placeholder="输入您的邮箱地址"
+                        <input type="email" placeholder="<%= t.blog_page.bottom_newsletter.placeholder %>"
                             class="flex-1 px-4 py-3 rounded-lg text-neutral-dark focus:outline-none focus:ring-2 focus:ring-white">
                         <button type="submit"
                             class="bg-secondary text-white px-6 py-3 rounded-lg hover:bg-secondary-dark transition-colors font-medium">
-                            订阅
+                            <%= t.blog_page.bottom_newsletter.button %>
                         </button>
                     </form>
                     <p class="text-sm mt-4 opacity-75">
-                        我们尊重您的隐私，不会向第三方分享您的信息。可以随时取消订阅。
+                        <%= t.blog_page.bottom_newsletter.privacy %>
                     </p>
                 </div>
             </div>
@@ -662,8 +784,12 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Lovart</h3>
-                    <p class="text-neutral mb-4">AI-powered design platform for creative professionals.</p>
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        <%= t.blog_page.footer.titles.lovart %>
+                    </h3>
+                    <p class="text-neutral mb-4">
+                        <%= t.blog_page.footer.desc %>
+                    </p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-neutral-light hover:text-primary transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -681,29 +807,48 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Products</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        <%= t.blog_page.footer.titles.products %>
+                    </h3>
                     <ul class="space-y-2">
-                        <li><a href="lovart-design-features.html"
-                                class="text-neutral hover:text-primary transition-colors">Features</a></li>
-                        <li><a href="lovart-pricing.html"
-                                class="text-neutral hover:text-primary transition-colors">Pricing</a></li>
-                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">Blog</a></li>
-                        <li><a href="help.html" class="text-neutral hover:text-primary transition-colors">Help</a></li>
+                        <li><a href="<%= link('lovart-design-features.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.nav.features %>
+                            </a></li>
+                        <li><a href="<%= link('lovart-pricing.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.nav.pricing %>
+                            </a></li>
+                        <li><a href="<%= link('blog.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.nav.blog %>
+                            </a></li>
+                        <li><a href="<%= link('help.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.nav.help %>
+                            </a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Company</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        <%= t.blog_page.footer.titles.company %>
+                    </h3>
                     <ul class="space-y-2">
-                        <li><a href="about.html" class="text-neutral hover:text-primary transition-colors">About Us</a>
+                        <li><a href="<%= link('about.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.nav.about %>
+                            </a>
                         </li>
-                        <li><a href="terms-of-service.html"
+                        <li><a href="<%= link('terms-of-service.html') %>"
                                 class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
-                        <li><a href="privacy-policy.html"
+                        <li><a href="<%= link('privacy-policy.html') %>"
                                 class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Contact Us</h3>
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        <%= t.blog_page.footer.titles.contact %>
+                    </h3>
                     <p class="text-neutral">Email: support@lovart.info</p>
                     <p class="text-neutral">Phone: +1 (555) LOV-ART0</p>
                 </div>
@@ -716,7 +861,9 @@
                         VibeVoice Online
                     </a>
                 </div>
-                <p>&copy; <span id="currentYear"></span> Lovart.info. All rights reserved.</p>
+                <p>&copy; <span id="currentYear"></span>
+                    <%= t.blog_page.footer.rights %>
+                </p>
             </div>
         </div>
     </footer>

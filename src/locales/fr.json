@@ -200,5 +200,180 @@
         "learn_more": "Learn more",
         "decline": "Decline",
         "accept": "Accept"
+    },
+    "features_page": {
+        "seo": {
+            "title": "Lovart Design Features | AI-Powered Creative Tools & Platform",
+            "description": "Explore the powerful design features of Lovart. From AI-driven suggestions and intuitive interfaces to real-time collaboration and vast asset libraries, Lovart empowers your creativity. Discover 'Lovart AI design tool' capabilities.",
+            "keywords": "lovart features, ai design tools, creative platform, lovart ai, graphic design features, lovart design capabilities, lovart platform"
+        },
+        "hero": {
+            "title": "Discover the Power of Lovart's Design Features",
+            "desc": "Lovart is engineered to elevate your creative process. Explore our suite of innovative features designed for designers, marketers, and creators of all levels. The \"Lovart AI design tool\" is at the core of our platform."
+        },
+        "features": [
+            {
+                "title": "AI-Powered Suggestions & Smart Assistance by Lovart",
+                "desc": "Let Lovart's intelligent AI be your creative partner. It analyzes your content and design goals to offer smart suggestions for layouts, color palettes, typography, and imagery. Overcome creative blocks and discover new possibilities with the \"Lovart AI design tool\".",
+                "alt": "Lovart AI providing design suggestions",
+                "list": [
+                    "Context-aware layout recommendations",
+                    "Harmonious color scheme generation",
+                    "Intelligent font pairing suggestions",
+                    "Automated image enhancement and cropping"
+                ]
+            },
+            {
+                "title": "Intuitive Drag-and-Drop Interface with Lovart",
+                "desc": "Lovart features a beautifully designed and easy-to-use drag-and-drop editor. Effortlessly arrange elements, resize objects, and build complex layouts without writing a single line of code. Focus on your creativity, not on learning complicated software. This is a key aspect of the \"Lovart platform\".",
+                "alt": "Lovart's intuitive drag and drop interface",
+                "list": [
+                    "Pixel-perfect control and alignment guides",
+                    "Easy-to-use tools for shapes, text, and media",
+                    "Layer management for complex designs",
+                    "Responsive design previews"
+                ]
+            },
+            {
+                "title": "Vast Integrated Asset Library in Lovart",
+                "desc": "Access millions of high-quality stock photos, illustrations, icons, videos, and fonts directly within the Lovart editor. Our curated library, a core part of \"Lovart AI\", ensures you have the perfect assets to bring your vision to life without ever leaving the platform.",
+                "alt": "Accessing Lovart's vast asset library",
+                "list": [
+                    "Millions of royalty-free images and videos",
+                    "Extensive collection of icons and illustrations",
+                    "Wide range of professional fonts",
+                    "Easy search and filtering capabilities"
+                ]
+            },
+            {
+                "title": "Real-Time Collaboration with Lovart (Coming Soon)",
+                "desc": "Work seamlessly with your team or clients in real-time. Share designs, leave comments directly on the canvas, and see changes as they happen. Lovart's collaborative features (soon on the \"Lovart platform\") will streamline your review process and boost productivity.",
+                "alt": "Team collaborating in real-time with Lovart",
+                "list": [
+                    "Shareable design links with permission controls",
+                    "On-canvas commenting and annotations",
+                    "Version history and rollback",
+                    "Team libraries for shared assets (planned)"
+                ]
+            },
+            {
+                "title": "Versatile One-Click Export & Sharing by Lovart",
+                "desc": "Once your design is perfect, Lovart makes it easy to share it with the world. Export your creations in various formats optimized for web, print, or social media with a single click. Lovart ensures your designs look great everywhere.",
+                "alt": "Lovart's one-click export options",
+                "list": [
+                    "Multiple export formats (JPG, PNG, PDF, SVG - planned)",
+                    "Customizable export settings for quality and size",
+                    "Direct sharing to social media platforms (planned)",
+                    "Embeddable design options for websites"
+                ]
+            }
+        ],
+        "cta": {
+            "title": "Ready to Experience the Future of Design with Lovart?",
+            "desc": "Unlock your creative potential with Lovart's powerful and intuitive features. Start creating stunning visuals today with the \"Lovart AI design tool\".",
+            "button": "Explore Lovart Plans & Get Started"
+        },
+        "footer": {
+            "contact": "Contact",
+            "rights": "Lovart. All rights reserved. Discover \"Lovart AI design tool\" power.",
+            "tagline": "The \"Lovart platform\" - Redefining Digital Creation."
+        }
+    },
+    "pricing_page": {
+        "seo": {
+            "title": "Lovart AI Pricing Plans | Affordable Design Solutions",
+            "description": "Find the perfect Lovart AI pricing plan for your needs. Explore our flexible and affordable options for individuals, teams, and businesses.",
+            "keywords": "lovart ai pricing, lovart pricing, lovart plans, ai design platform cost"
+        },
+        "hero": {
+            "title": "Lovart AI Pricing Plans",
+            "desc": "Welcome to the Lovart AI pricing page. We believe in transparent and flexible \"Lovart plans\" designed to fit your creative needs and budget. Explore our \"Lovart AI pricing\" options below and find the perfect solution to unlock the full power of AI in your design workflow. Our goal is to provide clear \"Lovart AI pricing\" tiers for every type of user."
+        },
+        "plans": [
+            {
+                "name": "Starter Spark",
+                "price": "Free",
+                "desc": "Perfect for individuals getting started with AI design and exploring basic \"Lovart AI pricing\" features.",
+                "features": [
+                    "Access to core AI design tools",
+                    "Limited monthly AI generations",
+                    "Basic template library",
+                    "Community support",
+                    "A great introduction to \"Lovart plans\""
+                ],
+                "cta": "Get Started Free"
+            },
+            {
+                "name": "Creative Pro",
+                "tag": "Most Popular",
+                "price": "$29",
+                "period": "/month",
+                "desc": "Ideal for professional designers, freelancers, and small teams needing advanced features and higher usage limits. This \"Lovart AI pricing\" tier offers excellent value.",
+                "features": [
+                    "All Starter Spark features, plus:",
+                    "Increased AI generations",
+                    "Premium template library",
+                    "Advanced AI editing tools",
+                    "Priority email support",
+                    "Commercial usage rights",
+                    "Flexible \"Lovart AI pricing\""
+                ],
+                "cta": "Choose Pro Plan"
+            },
+            {
+                "name": "Business Scale",
+                "price": "Custom",
+                "desc": "Tailored \"Lovart AI pricing\" solutions for larger organizations and enterprises with specific needs for collaboration, security, and support.",
+                "features": [
+                    "All Creative Pro features, plus:",
+                    "Unlimited AI generations (subject to fair use)",
+                    "Custom integrations & API access (planned)",
+                    "Team management & collaboration tools",
+                    "Dedicated account manager",
+                    "Enterprise-grade security & SLAs",
+                    "Bespoke \"Lovart plans\""
+                ],
+                "cta": "Contact Sales"
+            }
+        ],
+        "why_choose": {
+            "title": "Why Our \"Lovart AI Pricing\" Works For You",
+            "p1": "At Lovart, we've structured our \"Lovart AI pricing\" to be both competitive and value-driven. We understand that different users have different needs, which is why our \"Lovart plans\" offer a range of options. Whether you're just starting or scaling your business, there's a \"Lovart AI pricing\" tier designed to support your growth.",
+            "p2": "Our commitment is to provide powerful AI design tools without a complex \"Lovart AI pricing\" model. We focus on delivering continuous improvements and new features across all our \"Lovart plans\", ensuring you always get the best return on your investment. The flexibility in \"Lovart AI pricing\" allows you to scale as your needs evolve."
+        },
+        "faq": {
+            "title": "Frequently Asked Questions about \"Lovart AI Pricing\"",
+            "items": [
+                {
+                    "q": "Is there a free trial for paid \"Lovart plans\"?",
+                    "a": "While our \"Starter Spark\" plan is completely free and offers a great way to experience Lovart, we may offer limited-time trials for our \"Creative Pro\" plan periodically. Keep an eye on our promotions or sign up for our newsletter for updates on \"Lovart AI pricing\" offers."
+                },
+                {
+                    "q": "Can I change my \"Lovart AI pricing\" plan later?",
+                    "a": "Absolutely! You can upgrade or downgrade your \"Lovart plan\" at any time. If you upgrade, the changes are usually pro-rated. If you downgrade, the changes will take effect at the end of your current billing cycle. Our \"Lovart AI pricing\" is designed for flexibility."
+                },
+                {
+                    "q": "What payment methods are accepted for \"Lovart AI pricing\"?",
+                    "a": "We accept all major credit cards (Visa, MasterCard, American Express) for our \"Lovart AI pricing\" plans. For \"Business Scale\" plans, we may also offer invoicing options. Please contact sales for more details on payment for your chosen \"Lovart plan\"."
+                },
+                {
+                    "q": "Are there discounts for annual \"Lovart plans\"?",
+                    "a": "Yes, we typically offer a discount if you choose to pay annually for our \"Creative Pro\" plan. This can be a great way to save on your \"Lovart AI pricing\". Check the payment section during checkout or contact us for current annual \"Lovart AI pricing\" rates."
+                },
+                {
+                    "q": "What counts as an \"AI generation\" in the \"Lovart AI pricing\" plans?",
+                    "a": "An AI generation typically refers to a single instance where you utilize one of Lovart's core AI features to produce an output, such as generating a design element, suggesting a layout, or performing an AI-assisted edit. Specifics may vary per feature, and details are provided within the platform. Our \"Lovart AI pricing\" aims to be clear about these limits."
+                }
+            ]
+        },
+        "contact": {
+            "title": "Need a Custom \"Lovart AI Pricing\" Solution?",
+            "desc": "If your team has unique requirements or you're interested in our \"Business Scale\" \"Lovart plan\", please get in touch. We're happy to discuss custom \"Lovart AI pricing\" and tailor a solution that fits your organization perfectly.",
+            "cta": "Contact Our Sales Team"
+        },
+        "footer": {
+            "rights": "Lovart. All rights reserved.",
+            "tagline": "Innovate with AI, Design with Lovart."
+        }
     }
 }

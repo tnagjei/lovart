@@ -200,5 +200,939 @@
         "learn_more": "Learn more",
         "decline": "Decline",
         "accept": "Accept"
+    },
+    "features_page": {
+        "seo": {
+            "title": "Lovart Design Features | AI-Powered Creative Tools & Platform",
+            "description": "Explore the powerful design features of Lovart. From AI-driven suggestions and intuitive interfaces to real-time collaboration and vast asset libraries, Lovart empowers your creativity. Discover 'Lovart AI design tool' capabilities.",
+            "keywords": "lovart features, ai design tools, creative platform, lovart ai, graphic design features, lovart design capabilities, lovart platform"
+        },
+        "hero": {
+            "title": "Discover the Power of Lovart's Design Features",
+            "desc": "Lovart is engineered to elevate your creative process. Explore our suite of innovative features designed for designers, marketers, and creators of all levels. The \"Lovart AI design tool\" is at the core of our platform."
+        },
+        "features": [
+            {
+                "title": "AI-Powered Suggestions & Smart Assistance by Lovart",
+                "desc": "Let Lovart's intelligent AI be your creative partner. It analyzes your content and design goals to offer smart suggestions for layouts, color palettes, typography, and imagery. Overcome creative blocks and discover new possibilities with the \"Lovart AI design tool\".",
+                "alt": "Lovart AI providing design suggestions",
+                "list": [
+                    "Context-aware layout recommendations",
+                    "Harmonious color scheme generation",
+                    "Intelligent font pairing suggestions",
+                    "Automated image enhancement and cropping"
+                ]
+            },
+            {
+                "title": "Intuitive Drag-and-Drop Interface with Lovart",
+                "desc": "Lovart features a beautifully designed and easy-to-use drag-and-drop editor. Effortlessly arrange elements, resize objects, and build complex layouts without writing a single line of code. Focus on your creativity, not on learning complicated software. This is a key aspect of the \"Lovart platform\".",
+                "alt": "Lovart's intuitive drag and drop interface",
+                "list": [
+                    "Pixel-perfect control and alignment guides",
+                    "Easy-to-use tools for shapes, text, and media",
+                    "Layer management for complex designs",
+                    "Responsive design previews"
+                ]
+            },
+            {
+                "title": "Vast Integrated Asset Library in Lovart",
+                "desc": "Access millions of high-quality stock photos, illustrations, icons, videos, and fonts directly within the Lovart editor. Our curated library, a core part of \"Lovart AI\", ensures you have the perfect assets to bring your vision to life without ever leaving the platform.",
+                "alt": "Accessing Lovart's vast asset library",
+                "list": [
+                    "Millions of royalty-free images and videos",
+                    "Extensive collection of icons and illustrations",
+                    "Wide range of professional fonts",
+                    "Easy search and filtering capabilities"
+                ]
+            },
+            {
+                "title": "Real-Time Collaboration with Lovart (Coming Soon)",
+                "desc": "Work seamlessly with your team or clients in real-time. Share designs, leave comments directly on the canvas, and see changes as they happen. Lovart's collaborative features (soon on the \"Lovart platform\") will streamline your review process and boost productivity.",
+                "alt": "Team collaborating in real-time with Lovart",
+                "list": [
+                    "Shareable design links with permission controls",
+                    "On-canvas commenting and annotations",
+                    "Version history and rollback",
+                    "Team libraries for shared assets (planned)"
+                ]
+            },
+            {
+                "title": "Versatile One-Click Export & Sharing by Lovart",
+                "desc": "Once your design is perfect, Lovart makes it easy to share it with the world. Export your creations in various formats optimized for web, print, or social media with a single click. Lovart ensures your designs look great everywhere.",
+                "alt": "Lovart's one-click export options",
+                "list": [
+                    "Multiple export formats (JPG, PNG, PDF, SVG - planned)",
+                    "Customizable export settings for quality and size",
+                    "Direct sharing to social media platforms (planned)",
+                    "Embeddable design options for websites"
+                ]
+            }
+        ],
+        "cta": {
+            "title": "Ready to Experience the Future of Design with Lovart?",
+            "desc": "Unlock your creative potential with Lovart's powerful and intuitive features. Start creating stunning visuals today with the \"Lovart AI design tool\".",
+            "button": "Explore Lovart Plans & Get Started"
+        },
+        "footer": {
+            "contact": "Contact",
+            "rights": "Lovart. All rights reserved. Discover \"Lovart AI design tool\" power.",
+            "tagline": "The \"Lovart platform\" - Redefining Digital Creation."
+        }
+    },
+    "pricing_page": {
+        "seo": {
+            "title": "Lovart AI Pricing Plans | Affordable Design Solutions",
+            "description": "Find the perfect Lovart AI pricing plan for your needs. Explore our flexible and affordable options for individuals, teams, and businesses.",
+            "keywords": "lovart ai pricing, lovart pricing, lovart plans, ai design platform cost"
+        },
+        "hero": {
+            "title": "Lovart AI Pricing Plans",
+            "desc": "Welcome to the Lovart AI pricing page. We believe in transparent and flexible \"Lovart plans\" designed to fit your creative needs and budget. Explore our \"Lovart AI pricing\" options below and find the perfect solution to unlock the full power of AI in your design workflow. Our goal is to provide clear \"Lovart AI pricing\" tiers for every type of user."
+        },
+        "plans": [
+            {
+                "name": "Starter Spark",
+                "price": "Free",
+                "desc": "Perfect for individuals getting started with AI design and exploring basic \"Lovart AI pricing\" features.",
+                "features": [
+                    "Access to core AI design tools",
+                    "Limited monthly AI generations",
+                    "Basic template library",
+                    "Community support",
+                    "A great introduction to \"Lovart plans\""
+                ],
+                "cta": "Get Started Free"
+            },
+            {
+                "name": "Creative Pro",
+                "tag": "Most Popular",
+                "price": "$29",
+                "period": "/month",
+                "desc": "Ideal for professional designers, freelancers, and small teams needing advanced features and higher usage limits. This \"Lovart AI pricing\" tier offers excellent value.",
+                "features": [
+                    "All Starter Spark features, plus:",
+                    "Increased AI generations",
+                    "Premium template library",
+                    "Advanced AI editing tools",
+                    "Priority email support",
+                    "Commercial usage rights",
+                    "Flexible \"Lovart AI pricing\""
+                ],
+                "cta": "Choose Pro Plan"
+            },
+            {
+                "name": "Business Scale",
+                "price": "Custom",
+                "desc": "Tailored \"Lovart AI pricing\" solutions for larger organizations and enterprises with specific needs for collaboration, security, and support.",
+                "features": [
+                    "All Creative Pro features, plus:",
+                    "Unlimited AI generations (subject to fair use)",
+                    "Custom integrations & API access (planned)",
+                    "Team management & collaboration tools",
+                    "Dedicated account manager",
+                    "Enterprise-grade security & SLAs",
+                    "Bespoke \"Lovart plans\""
+                ],
+                "cta": "Contact Sales"
+            }
+        ],
+        "why_choose": {
+            "title": "Why Our \"Lovart AI Pricing\" Works For You",
+            "p1": "At Lovart, we've structured our \"Lovart AI pricing\" to be both competitive and value-driven. We understand that different users have different needs, which is why our \"Lovart plans\" offer a range of options. Whether you're just starting or scaling your business, there's a \"Lovart AI pricing\" tier designed to support your growth.",
+            "p2": "Our commitment is to provide powerful AI design tools without a complex \"Lovart AI pricing\" model. We focus on delivering continuous improvements and new features across all our \"Lovart plans\", ensuring you always get the best return on your investment. The flexibility in \"Lovart AI pricing\" allows you to scale as your needs evolve."
+        },
+        "faq": {
+            "title": "Frequently Asked Questions about \"Lovart AI Pricing\"",
+            "items": [
+                {
+                    "q": "Is there a free trial for paid \"Lovart plans\"?",
+                    "a": "While our \"Starter Spark\" plan is completely free and offers a great way to experience Lovart, we may offer limited-time trials for our \"Creative Pro\" plan periodically. Keep an eye on our promotions or sign up for our newsletter for updates on \"Lovart AI pricing\" offers."
+                },
+                {
+                    "q": "Can I change my \"Lovart AI pricing\" plan later?",
+                    "a": "Absolutely! You can upgrade or downgrade your \"Lovart plan\" at any time. If you upgrade, the changes are usually pro-rated. If you downgrade, the changes will take effect at the end of your current billing cycle. Our \"Lovart AI pricing\" is designed for flexibility."
+                },
+                {
+                    "q": "What payment methods are accepted for \"Lovart AI pricing\"?",
+                    "a": "We accept all major credit cards (Visa, MasterCard, American Express) for our \"Lovart AI pricing\" plans. For \"Business Scale\" plans, we may also offer invoicing options. Please contact sales for more details on payment for your chosen \"Lovart plan\"."
+                },
+                {
+                    "q": "Are there discounts for annual \"Lovart plans\"?",
+                    "a": "Yes, we typically offer a discount if you choose to pay annually for our \"Creative Pro\" plan. This can be a great way to save on your \"Lovart AI pricing\". Check the payment section during checkout or contact us for current annual \"Lovart AI pricing\" rates."
+                },
+                {
+                    "q": "What counts as an \"AI generation\" in the \"Lovart AI pricing\" plans?",
+                    "a": "An AI generation typically refers to a single instance where you utilize one of Lovart's core AI features to produce an output, such as generating a design element, suggesting a layout, or performing an AI-assisted edit. Specifics may vary per feature, and details are provided within the platform. Our \"Lovart AI pricing\" aims to be clear about these limits."
+                }
+            ]
+        },
+        "contact": {
+            "title": "Need a Custom \"Lovart AI Pricing\" Solution?",
+            "desc": "If your team has unique requirements or you're interested in our \"Business Scale\" \"Lovart plan\", please get in touch. We're happy to discuss custom \"Lovart AI pricing\" and tailor a solution that fits your organization perfectly.",
+            "cta": "Contact Our Sales Team"
+        },
+        "footer": {
+            "rights": "Lovart. All rights reserved.",
+            "tagline": "Innovate with AI, Design with Lovart."
+        }
+    },
+    "about_page": {
+        "seo": {
+            "title": "About Us - Lovart AI Design Platform",
+            "description": "Explore Lovart's story, mission, values, and innovative team. Since 2020, Lovart has been dedicated to combining AI technology with design creativity to help designers improve efficiency and discover infinite creative possibilities. Learn about our history, core team members, and corporate culture.",
+            "keywords": "About Lovart, Company Introduction, Design Team, AI Design Mission"
+        },
+        "hero": {
+            "title": "About Lovart",
+            "desc": "We believe everyone has infinite creative potential. Lovart is dedicated to making design smarter, more efficient, and more fun through artificial intelligence technology.",
+            "stats": [
+                "Serving 100+ Countries",
+                "500k+ Users",
+                "10M+ Designs Created"
+            ]
+        },
+        "mission": {
+            "title": "Our Mission",
+            "desc": "Lovart was born from a simple idea: design should be creative, not technical. We are committed to eliminating technical barriers in the design process, allowing everyone to transform their ideas into stunning visual works.",
+            "values": [
+                {
+                    "title": "Empowering Creativity",
+                    "desc": "Unleashing everyone's creative potential through AI technology"
+                },
+                {
+                    "title": "Boosting Efficiency",
+                    "desc": "Making the design process more efficient and intelligent"
+                },
+                {
+                    "title": "Fostering Collaboration",
+                    "desc": "Connecting the global creative community"
+                }
+            ]
+        },
+        "story": {
+            "title": "Our Story",
+            "timeline": [
+                {
+                    "year": "2020",
+                    "desc": "The Lovart concept was born; a group of designers and developers decided to change the design industry."
+                },
+                {
+                    "year": "2021",
+                    "desc": "Secured seed funding, assembled the core team, and began product development."
+                },
+                {
+                    "year": "2022",
+                    "desc": "Beta version released, gaining the first 1,000 beta users."
+                },
+                {
+                    "year": "2023",
+                    "desc": "Official version released, users exceeded 100,000, and secured Series A funding."
+                },
+                {
+                    "year": "2024",
+                    "desc": "Serving over 100 countries globally, becoming a leading AI design platform."
+                }
+            ]
+        },
+        "team": {
+            "title": "Core Team",
+            "desc": "We are a passionate team dedicated to changing the design world with technology.",
+            "members": [
+                {
+                    "name": "Ming Zhang",
+                    "role": "Founder & CEO",
+                    "bio": "Former Google Design Lead, 10 years of design industry experience."
+                },
+                {
+                    "name": "Na Li",
+                    "role": "Co-founder & CTO",
+                    "bio": "AI Expert, former Facebook Researcher, PhD in Machine Learning."
+                },
+                {
+                    "name": "Qiang Wang",
+                    "role": "Design Director",
+                    "bio": "Former Apple Designer, focusing on UX and UI design."
+                },
+                {
+                    "name": "Min Chen",
+                    "role": "Product Manager",
+                    "bio": "Former Microsoft Product Manager, focusing on SaaS product design."
+                }
+            ]
+        },
+        "values": {
+            "title": "Our Values",
+            "items": [
+                {
+                    "title": "Innovation Driven",
+                    "desc": "We constantly explore new technologies and methods to push the boundaries of the design industry. Innovation is our DNA, driving our continuous progress."
+                },
+                {
+                    "title": "User First",
+                    "desc": "Every decision we make is user-centric. We listen to user needs and continuously improve the product experience."
+                },
+                {
+                    "title": "Transparency & Integrity",
+                    "desc": "We adhere to business ethics and build transparent and honest relationships with users, partners, and employees."
+                },
+                {
+                    "title": "Pursuing Excellence",
+                    "desc": "We pursue product and technical excellence, constantly challenging ourselves to provide users with the best design experience."
+                },
+                {
+                    "title": "Inclusive & Diverse",
+                    "desc": "We believe in the power of diversity and welcome talents with different backgrounds and perspectives to join our team."
+                },
+                {
+                    "title": "Continuous Learning",
+                    "desc": "We maintain curiosity, continuously learn new knowledge and skills, and constantly adapt to changing market demands."
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contact Us",
+            "desc": "Have any questions or collaboration ideas? We'd love to hear from you.",
+            "items": [
+                {
+                    "title": "Email Contact",
+                    "desc": "General inquiries and collaboration"
+                },
+                {
+                    "title": "Business Cooperation",
+                    "desc": "Enterprise solutions"
+                },
+                {
+                    "title": "Media Contact",
+                    "desc": "Press and media inquiries"
+                }
+            ],
+            "follow": "Follow Us"
+        },
+        "footer": {
+            "titles": {
+                "lovart": "Lovart",
+                "products": "Products",
+                "company": "Company",
+                "contact": "Contact Info"
+            },
+            "desc": "AI-powered design platform for creative professionals.",
+            "rights": "Lovart.info. All rights reserved."
+        }
+    },
+    "blog_page": {
+        "seo": {
+            "title": "Blog - Lovart AI Design Platform",
+            "description": "Follow the official Lovart Blog for the latest AI design trend analysis, practical design tutorials, success story sharing, and creative inspiration sources. Learn how to use AI to improve design efficiency, master modern design techniques, and get professional creative guidance and industry insights.",
+            "keywords": "AI Design, Design Blog, Creative Inspiration, Design Tutorials, Lovart Blog"
+        },
+        "hero": {
+            "title": "Lovart Blog",
+            "desc": "Explore the infinite possibilities of AI design, get the latest design trends, practical tutorials, and creative inspiration",
+            "tags": [
+                "AI Design Trends",
+                "Design Tutorials",
+                "Creative Inspiration",
+                "Case Studies"
+            ]
+        },
+        "categories": {
+            "all": "All",
+            "ai_design": "AI Design",
+            "tutorials": "Tutorials",
+            "industry": "Industry Insights",
+            "updates": "Product Updates",
+            "stories": "User Stories"
+        },
+        "featured": {
+            "title": "Featured Article",
+            "tag": "AI Design",
+            "date": "Jan 15, 2024",
+            "article_title": "How AI is Revolutionizing Modern Design Workflows",
+            "desc": "Explore how artificial intelligence is reshaping the way designers work, from ideation to final presentation. AI is becoming the designer's most powerful partner. Learn how to leverage Lovart's AI Features to boost your design efficiency.",
+            "author": "Designer Zhang",
+            "role": "Lovart Team",
+            "read_more": "Read More"
+        },
+        "latest": {
+            "title": "Latest Articles",
+            "read_more": "Read More",
+            "share": "Share:",
+            "posts": [
+                {
+                    "tag": "Tutorial",
+                    "date": "Jan 12, 2024",
+                    "title": "Master Lovart's AI Design Features in 5 Minutes",
+                    "desc": "Quickly learn how to use Lovart's AI features to create impressive designs. This tutorial covers core features and practical tips.",
+                    "author": "Teacher Li"
+                },
+                {
+                    "tag": "Industry Insights",
+                    "date": "Jan 10, 2024",
+                    "title": "2024 UI/UX Design Trend Predictions",
+                    "desc": "Deep dive into the most notable UI/UX design trends of 2024, from minimalism to immersive experiences, and how to apply them in your projects.",
+                    "author": "Analyst Wang"
+                },
+                {
+                    "tag": "User Stories",
+                    "date": "Jan 8, 2024",
+                    "title": "How Designers Boost Efficiency by 300% with Lovart",
+                    "desc": "Real user case: Independent designer Chen shares how she reduced design time by 70% using Lovart's AI features while improving quality.",
+                    "author": "Designer Chen"
+                },
+                {
+                    "tag": "Product Design",
+                    "date": "Jan 5, 2024",
+                    "title": "Best Practices for AI-Assisted Product Design",
+                    "desc": "Explore how to effectively integrate AI tools into product design, from proof of concept to user testing, and how AI helps product teams make better decisions.",
+                    "author": "Product Manager Zhao"
+                },
+                {
+                    "tag": "Inspiration",
+                    "date": "Jan 3, 2024",
+                    "title": "Breaking Creative Blocks: AI Sparks Design Inspiration",
+                    "desc": "When creativity runs dry, AI can be your source of inspiration. Learn how to use Lovart's AI features to quickly generate creative concepts and directions.",
+                    "author": "Creative Director Liu"
+                },
+                {
+                    "tag": "Product Updates",
+                    "date": "Jan 1, 2024",
+                    "title": "Lovart 2024 First Month Update: New Features",
+                    "desc": "New year, new features! Discover Lovart's latest product updates, including enhanced AI algorithms, new template libraries, and improved collaboration features.",
+                    "author": "Product Team"
+                }
+            ]
+        },
+        "sidebar": {
+            "categories": "Categories",
+            "recent_posts": "Recent Posts",
+            "tags": "Tags"
+        },
+        "newsletter": {
+            "title": "Subscribe for Updates",
+            "desc": "Get the latest design trends and tutorials weekly.",
+            "placeholder": "Your Email",
+            "button": "Subscribe"
+        },
+        "bottom_newsletter": {
+            "title": "Subscribe to Our Newsletter",
+            "desc": "Get the latest design trends, tutorials, and Lovart product updates sent directly to your inbox weekly",
+            "placeholder": "Enter your email address",
+            "button": "Subscribe",
+            "privacy": "We respect your privacy and will not share your information with third parties. Unsubscribe at any time."
+        },
+        "footer": {
+            "titles": {
+                "lovart": "Lovart",
+                "products": "Products",
+                "company": "Company",
+                "contact": "Contact Info"
+            },
+            "desc": "AI-powered design platform for creative professionals.",
+            "rights": "Lovart.info. All rights reserved."
+        }
+    },
+    "help_page": {
+        "seo": {
+            "title": "Help Center - Lovart AI Design Platform",
+            "description": "Visit Lovart Help Center for detailed user guides, FAQs, video tutorials, and technical support. Learn how to register, use AI design tools, solve common problems, and contact our customer service team.",
+            "keywords": "Help Center, User Guide, FAQ, Technical Support, Lovart Help"
+        },
+        "hero": {
+            "title": "Help Center",
+            "desc": "We are here to help you make the most of Lovart's powerful features. Browse FAQs, user guides, or contact our support team.",
+            "search_placeholder": "Search Help Documentation..."
+        },
+        "quick_help": {
+            "title": "Quick Help",
+            "items": [
+                {
+                    "title": "Quick Start",
+                    "desc": "Learn how to get started with Lovart quickly"
+                },
+                {
+                    "title": "Design Tutorials",
+                    "desc": "Master AI design features"
+                },
+                {
+                    "title": "Billing Issues",
+                    "desc": "Subscription and payment related"
+                },
+                {
+                    "title": "Technical Support",
+                    "desc": "Troubleshooting and technical issues"
+                }
+            ]
+        },
+        "getting_started": {
+            "title": "Getting Started Guide",
+            "steps": [
+                {
+                    "title": "Create Account",
+                    "desc": "Sign up for your Lovart account and choose a subscription plan that suits your needs. We offer a free trial so you can experience all features.",
+                    "list": [
+                        "Email Registration",
+                        "Social Media Login",
+                        "Enterprise Account Setup"
+                    ],
+                    "link": "View Detailed Tutorial"
+                },
+                {
+                    "title": "Choose Template",
+                    "desc": "Choose a suitable design template from our rich library, or start your design project from a blank canvas.",
+                    "list": [
+                        "Browse Template Library",
+                        "Customize Template",
+                        "Save Personal Template"
+                    ],
+                    "link": "View Detailed Tutorial"
+                },
+                {
+                    "title": "Start Designing",
+                    "desc": "Use our AI design tools and drag-and-drop interface to quickly create professional design works.",
+                    "list": [
+                        "AI Assisted Design",
+                        "Drag-and-Drop Editor",
+                        "Real-time Preview"
+                    ],
+                    "link": "View Detailed Tutorial"
+                }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": [
+                {
+                    "question": "How to get started with Lovart?",
+                    "answer": "<p>Getting started with Lovart is very simple:</p><ol class=\"list-decimal list-inside mt-2 space-y-1\"><li>Visit our website and click \"Get Started\"</li><li>Choose a subscription plan that suits you (we offer a free trial)</li><li>Complete the registration process</li><li>Watch the quick start tutorial</li><li>Start your first design project</li></ol>"
+                },
+                {
+                    "question": "What file formats does Lovart support?",
+                    "answer": "<p>Lovart supports multiple file formats to ensure seamless integration with your workflow:</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li><strong>Import formats:</strong> JPG, PNG, SVG, PDF, PSD</li><li><strong>Export formats:</strong> JPG, PNG, SVG, PDF, GIF, MP4</li><li><strong>High quality output:</strong> Supports up to 4K resolution</li><li><strong>Transparent background:</strong> PNG format supports transparent background</li></ul>"
+                },
+                {
+                    "question": "How to cancel subscription?",
+                    "answer": "<p>You can cancel your Lovart subscription at any time:</p><ol class=\"list-decimal list-inside mt-2 space-y-1\"><li>Log in to your Lovart account</li><li>Go to \"Account Settings\" > \"Subscription Management\"</li><li>Click the \"Cancel Subscription\" button</li><li>Confirm the cancellation</li></ol><p class=\"mt-2 text-sm\">Note: After cancellation, you can still use it until the end of the current billing cycle. We offer a 30-day money-back guarantee.</p>"
+                },
+                {
+                    "question": "How do AI design features work?",
+                    "answer": "<p>Lovart's AI design features are based on advanced machine learning algorithms:</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li>Analyze your design needs and preferences</li><li>Learn best practices from massive design data</li><li>Provide personalized design suggestions</li><li>Automatically generate design elements and layouts</li><li>Continuously learn to improve suggestion quality</li></ul>"
+                },
+                {
+                    "question": "How to contact customer support?",
+                    "answer": "<p>We offer multiple support channels:</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li><strong>Live Chat:</strong> Weekdays 9AM-6PM</li><li><strong>Email Support:</strong> support@lovart.info</li><li><strong>Help Documentation:</strong> Detailed online tutorials</li><li><strong>Community Forum:</strong> Communicate with other users</li><li><strong>Video Tutorials:</strong> YouTube Channel</li></ul>"
+                }
+            ]
+        },
+        "videos": {
+            "title": "Video Tutorials",
+            "items": [
+                {
+                    "title": "Lovart Quick Start",
+                    "desc": "Understand Lovart's core features in 5 minutes",
+                    "duration": "5:32",
+                    "level": "Beginner"
+                },
+                {
+                    "title": "AI Design Features Explained",
+                    "desc": "Deep dive into how AI improves design efficiency",
+                    "duration": "12:45",
+                    "level": "Intermediate"
+                },
+                {
+                    "title": "Advanced Design Tips",
+                    "desc": "Advanced tips shared by professional designers",
+                    "duration": "18:20",
+                    "level": "Advanced"
+                }
+            ]
+        },
+        "contact": {
+            "title": "Need More Help?",
+            "desc": "Our support team is ready to help you. Choose the contact method that suits you best.",
+            "chat": {
+                "title": "Live Chat",
+                "desc": "Weekdays 9AM-6PM",
+                "button": "Start Chat"
+            },
+            "email": {
+                "title": "Email Support",
+                "desc": "Reply within 24 hours",
+                "button": "Send Email"
+            },
+            "phone": {
+                "title": "Phone Support",
+                "desc": "Priority for urgent issues",
+                "button": "Call Us"
+            },
+            "quick_search": {
+                "title": "Quick FAQ Search",
+                "tags": [
+                    "Forgot Password",
+                    "Billing Issues",
+                    "Technical Faults",
+                    "Feature Usage",
+                    "Account Management"
+                ]
+            }
+        },
+        "footer": {
+            "titles": {
+                "lovart": "Lovart",
+                "products": "Products",
+                "company": "Company",
+                "contact": "Contact Info"
+            },
+            "desc": "AI-powered design platform for creative professionals.",
+            "rights": "Lovart.info. All rights reserved."
+        }
+    },
+    "terms_page": {
+        "seo": {
+            "title": "Terms of Service - Lovart AI Design Platform",
+            "description": "View Lovart Terms of Service and User Agreement to understand your rights, obligations, service scope, payment policies, and usage restrictions when using Lovart AI Design Platform. Familiarize yourself with our content policies, data processing terms, and account management rules.",
+            "keywords": "Terms of Service, User Agreement, Lovart Terms, AI Design Platform Agreement"
+        },
+        "hero": {
+            "title": "Terms of Service",
+            "desc": "Welcome to Lovart AI Design Platform. Please read the following terms of service carefully, which govern your rights and obligations when using our services.",
+            "last_updated": "Last Updated: January 15, 2024"
+        },
+        "toc": {
+            "title": "Table of Contents",
+            "basic_terms": {
+                "title": "Basic Terms",
+                "items": [
+                    "1. Acceptance of Agreement",
+                    "2. Service Description",
+                    "3. User Registration",
+                    "4. Payment Terms"
+                ]
+            },
+            "usage_rules": {
+                "title": "Usage Rules",
+                "items": [
+                    "5. Acceptable Use Policy",
+                    "6. Intellectual Property",
+                    "7. Disclaimer",
+                    "8. Limitation of Liability"
+                ]
+            }
+        },
+        "sections": [
+            {
+                "id": "acceptance",
+                "title": "1. Acceptance of Agreement",
+                "content": [
+                    "Welcome to Lovart AI Design Platform (hereinafter referred to as \"Lovart\"). By accessing or using our services, you agree to be bound by this User Agreement (hereinafter referred to as \"Agreement\").",
+                    "If you do not agree to any part of this Agreement, please do not use our services. We reserve the right to modify, update, or change this Agreement at any time, and recommend that you check the latest version regularly.",
+                    "Continued use of Lovart services constitutes your acceptance of any revised terms. If you have any questions about this Agreement, please contact our customer service team."
+                ]
+            },
+            {
+                "id": "description",
+                "title": "2. Service Description",
+                "content": [
+                    "Lovart is an AI-based design platform providing users with the following core services:",
+                    "<ul><li>AI-assisted design tools and features</li><li>Design templates and resource library</li><li>Real-time collaboration features</li><li>Design file export and sharing</li><li>User account management</li></ul>",
+                    "We are committed to continuously improving and optimizing the service experience, but reserve the right to modify, suspend, or terminate any service features at any time without prior notice."
+                ]
+            },
+            {
+                "id": "registration",
+                "title": "3. User Registration",
+                "subsections": [
+                    {
+                        "title": "3.1 Account Creation",
+                        "content": "Using Lovart services requires creating a user account. You agree to provide true, accurate, complete, and up-to-date personal information and promise to update your information in a timely manner."
+                    },
+                    {
+                        "title": "3.2 Account Security",
+                        "content": "You are responsible for maintaining the confidentiality of your account password and are fully responsible for all activities that occur under your account. If you discover any unauthorized use, please notify us immediately."
+                    },
+                    {
+                        "title": "3.3 Age Restrictions",
+                        "content": "To use Lovart services, you must be at least 18 years old, or at least 13 years old with the consent of a parent or legal guardian. We reserve the right to request proof of age."
+                    }
+                ]
+            },
+            {
+                "id": "payment",
+                "title": "4. Payment Terms",
+                "subsections": [
+                    {
+                        "title": "4.1 Subscription Fees",
+                        "content": "Lovart offers different levels of subscription plans, each with corresponding fees and features. All fees are calculated in US dollars and paid through our accepted payment methods."
+                    },
+                    {
+                        "title": "4.2 Automatic Renewal",
+                        "content": "Subscriptions will automatically renew unless you cancel at least 24 hours before the end of the current billing cycle. You can manage your subscription status in your account settings."
+                    },
+                    {
+                        "title": "4.3 Refund Policy",
+                        "content": "We offer a 30-day money-back guarantee. If you are not satisfied with the service within 30 days of purchase, you can request a full refund. No refunds will be given after 30 days."
+                    }
+                ]
+            },
+            {
+                "id": "acceptable-use",
+                "title": "5. Acceptable Use Policy",
+                "subsections": [
+                    {
+                        "title": "5.1 Permitted Use",
+                        "content": "You agree to use Lovart only for lawful purposes, including but not limited to: <ul class=\"list-disc list-inside text-neutral mb-4 space-y-2\"><li>Creating personal and commercial design projects</li><li>Collaborating on designs with team members</li><li>Learning and improving design skills</li><li>Creating materials for marketing and promotion</li></ul>"
+                    },
+                    {
+                        "title": "5.2 Prohibited Use",
+                        "content": "You may not use Lovart for the following purposes: <ul class=\"list-disc list-inside text-neutral mb-4 space-y-2\"><li>Creating illegal, fraudulent, or false content</li><li>Infringing on others' intellectual property or privacy rights</li><li>Distributing malware or viruses</li><li>Sending spam or conducting unauthorized marketing</li><li>Interfering with other users' experience</li></ul>"
+                    },
+                    {
+                        "title": "5.3 Content Responsibility",
+                        "content": "You are fully responsible for all content created and shared through Lovart. We reserve the right to remove content that violates this Agreement and may suspend or terminate relevant accounts."
+                    }
+                ]
+            },
+            {
+                "id": "intellectual-property",
+                "title": "6. Intellectual Property",
+                "subsections": [
+                    {
+                        "title": "6.1 Lovart Intellectual Property",
+                        "content": "The Lovart platform and all its components, including but not limited to software, designs, text, graphics, logos, and trademarks, are owned by Lovart or its licensors and are protected by intellectual property laws."
+                    },
+                    {
+                        "title": "6.2 User Content Rights",
+                        "content": "You retain ownership of content created through Lovart. By uploading or creating content, you grant Lovart a limited, worldwide, royalty-free license to provide and improve the service."
+                    },
+                    {
+                        "title": "6.3 Third-Party Content",
+                        "content": "Lovart may contain content, templates, or resources provided by third parties. The use of such content is subject to the corresponding third-party terms or license agreements."
+                    }
+                ]
+            },
+            {
+                "id": "disclaimer",
+                "title": "7. Disclaimer",
+                "content": [
+                    "Lovart services are provided on an \"as is\" basis, without any express or implied warranties, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.",
+                    "We do not guarantee that the service will be uninterrupted, timely, secure, or error-free. We make no warranties regarding the accuracy, reliability, or completeness of any content or information obtained through the service.",
+                    "You understand and agree that your use of the service is at your own risk. Lovart is not liable for any direct or indirect losses arising from the use of the service."
+                ]
+            },
+            {
+                "id": "limitation",
+                "title": "8. Limitation of Liability",
+                "content": [
+                    "To the maximum extent permitted by law, Lovart and its affiliates, employees, and agents shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from the use or inability to use the service.",
+                    "Our total liability shall not exceed the amount you paid for the service in the past 12 months. If you have a free account, our maximum liability is $100.",
+                    "Some jurisdictions do not allow the exclusion or limitation of liability for incidental or consequential damages, so these limitations may not apply to you."
+                ]
+            }
+        ],
+        "contact": {
+            "title": "Have Questions?",
+            "desc": "If you have any questions about this User Agreement, please feel free to contact our customer service team.",
+            "help_btn": "Visit Help Center",
+            "contact_btn": "Contact Support"
+        },
+        "footer": {
+            "titles": {
+                "lovart": "Lovart",
+                "products": "Products",
+                "company": "Company",
+                "contact": "Contact Info"
+            },
+            "desc": "AI-powered design platform for creative professionals.",
+            "rights": "Lovart.info. All rights reserved."
+        }
+    },
+    "privacy_page": {
+        "seo": {
+            "title": "Privacy Policy - Lovart AI Design Platform",
+            "description": "Learn about Lovart's Privacy Policy, including how we collect, use, store, and protect your personal information, data processing guidelines, third-party sharing principles, your privacy rights, and how to manage your account data privacy settings.",
+            "keywords": "Privacy Policy, Data Protection, Personal Information, Lovart Privacy, AI Design Platform Privacy"
+        },
+        "hero": {
+            "title": "Privacy Policy",
+            "desc": "At Lovart, we value your privacy. This Privacy Policy explains how we collect, use, and protect your personal information.",
+            "last_updated": "Last Updated: January 15, 2024"
+        },
+        "toc": {
+            "title": "Table of Contents",
+            "info_collection": {
+                "title": "Information Collection",
+                "items": [
+                    "1. Information Collection",
+                    "2. Information Usage",
+                    "3. Information Sharing",
+                    "4. Data Security"
+                ]
+            },
+            "user_rights": {
+                "title": "User Rights",
+                "items": [
+                    "5. User Rights",
+                    "6. Cookie Policy",
+                    "7. Children's Privacy",
+                    "8. Policy Changes"
+                ]
+            }
+        },
+        "sections": [
+            {
+                "id": "information",
+                "title": "1. Information Collection",
+                "subsections": [
+                    {
+                        "title": "1.1 Information You Provide",
+                        "content": "When you use Lovart services, we may collect the following information you actively provide:<ul class=\"list-disc list-inside text-neutral mb-6 space-y-2\"><li>Registration Information: Name, email address, password</li><li>Payment Information: Credit card information, billing address (processed via secure payment processors)</li><li>Profile Information: Avatar, bio, professional information</li><li>Communication Content: Customer support inquiries, feedback</li></ul>"
+                    },
+                    {
+                        "title": "1.2 Automatically Collected Information",
+                        "content": "When you use our services, we automatically collect the following information:<ul class=\"list-disc list-inside text-neutral mb-6 space-y-2\"><li>Device Information: Device type, operating system, browser information</li><li>Usage Data: Access times, page views, clickstream data</li><li>Location Information: Approximate location based on IP address</li><li>Performance Data: Page load times, error reports</li></ul>"
+                    },
+                    {
+                        "title": "1.3 Design Files and Project Data",
+                        "content": "To provide design services, we collect and process design files, project settings, and collaboration data you create on the platform. This data is stored on secure servers and used solely to provide you with design services."
+                    }
+                ]
+            },
+            {
+                "id": "usage",
+                "title": "2. Information Usage",
+                "content": [
+                    "We use the collected information to:",
+                    "<ul class=\"list-disc list-inside text-neutral mb-6 space-y-2\"><li><strong>Provide Services:</strong> Provide you with AI design tools and collaboration features</li><li><strong>Improve Services:</strong> Analyze usage data to improve user experience and features</li><li><strong>Customer Support:</strong> Respond to your inquiries and provide technical support</li><li><strong>Security Protection:</strong> Detect and prevent fraud and abusive activities</li><li><strong>Marketing Communication:</strong> Send relevant marketing information with your consent</li><li><strong>Legal Compliance:</strong> Comply with applicable laws and regulations</li></ul>"
+                ],
+                "subsections": [
+                    {
+                        "title": "AI Model Training",
+                        "content": "We may use anonymized design data to improve our AI models. We ensure this data is strictly processed to be non-identifiable to specific individuals, and you can opt-out of data collection for AI training."
+                    }
+                ]
+            },
+            {
+                "id": "sharing",
+                "title": "3. Information Sharing",
+                "content": [
+                    "We do not sell your personal information. We only share information in the following circumstances:"
+                ],
+                "subsections": [
+                    {
+                        "title": "3.1 Service Providers",
+                        "content": "We share information with the following types of service providers:<ul class=\"list-disc list-inside text-neutral mb-6 space-y-2\"><li>Cloud Service Providers: For data storage and processing</li><li>Payment Processors: For processing payment transactions</li><li>Email Service Providers: For sending notifications and marketing emails</li><li>Analytics Service Providers: For analyzing usage data</li></ul>"
+                    },
+                    {
+                        "title": "3.2 Legal Requirements",
+                        "content": "We may disclose your information as required by law in the following circumstances:<ul class=\"list-disc list-inside text-neutral mb-6 space-y-2\"><li>Responding to legal processes, government requests, or court orders</li><li>Protecting our rights, property, or safety</li><li>Investigating and preventing fraud or illegal activities</li><li>Protecting the personal safety of users</li></ul>"
+                    },
+                    {
+                        "title": "3.3 Business Transfers",
+                        "content": "If we are involved in a merger, acquisition, or asset sale, your information may be transferred as part of the transaction. We will notify you in advance of any such change."
+                    }
+                ]
+            },
+            {
+                "id": "security",
+                "title": "4. Data Security",
+                "content": [
+                    "We take the following measures to protect your personal information:",
+                    "<ul class=\"list-disc list-inside text-neutral mb-6 space-y-2\"><li><strong>Encryption Technology:</strong> Use SSL/TLS for data transmission encryption, sensitive information stored with AES-256 encryption</li><li><strong>Access Control:</strong> Strictly limit employee access to personal information</li><li><strong>Security Audits:</strong> Regularly conduct security audits and vulnerability scans</li><li><strong>Backup Systems:</strong> Regularly backup important data to prevent data loss</li><li><strong>Employee Training:</strong> Train employees on data security and privacy protection</li></ul>"
+                ],
+                "subsections": [
+                    {
+                        "title": "Data Retention",
+                        "content": "We retain your information based on business needs and legal requirements. When you delete your account or no longer need our services, we will delete or anonymize your personal information in accordance with applicable laws."
+                    }
+                ]
+            },
+            {
+                "id": "rights",
+                "title": "5. User Rights",
+                "content": [
+                    "Under applicable data protection laws, you have the following rights:"
+                ],
+                "subsections": [
+                    {
+                        "title": "5.1 Right to Access",
+                        "content": "You have the right to request a copy of your personal information we hold, including the types of information collected, purposes of use, and sharing recipients."
+                    },
+                    {
+                        "title": "5.2 Right to Rectification",
+                        "content": "If you find that the personal information we hold is inaccurate or incomplete, you have the right to request us to correct or supplement such information."
+                    },
+                    {
+                        "title": "5.3 Right to Erasure",
+                        "content": "In certain circumstances, you have the right to request us to delete your personal information, such as when the information is no longer needed for the collection purposes."
+                    },
+                    {
+                        "title": "5.4 Right to Data Portability",
+                        "content": "You have the right to receive your personal information in a structured, commonly used, and machine-readable format, and have the right to transmit those data to another service provider."
+                    },
+                    {
+                        "title": "5.5 Right to Object",
+                        "content": "You have the right to object to our processing of your personal information based on legitimate interests, and to object to our processing of your personal information for direct marketing purposes."
+                    }
+                ]
+            },
+            {
+                "id": "cookies",
+                "title": "6. Cookie Policy",
+                "content": [
+                    "We use Cookies and similar technologies to improve your user experience:"
+                ],
+                "subsections": [
+                    {
+                        "title": "6.1 Essential Cookies",
+                        "content": "These Cookies are essential for the basic functioning of the website, including user authentication, security protection, and website features. Without these Cookies, the website cannot function properly."
+                    },
+                    {
+                        "title": "6.2 Performance Cookies",
+                        "content": "These Cookies help us understand how visitors interact with the website by collecting and reporting information anonymously."
+                    },
+                    {
+                        "title": "6.3 Functional Cookies",
+                        "content": "These Cookies enable the website to provide enhanced functionality and personalization, such as remembering your preferences."
+                    },
+                    {
+                        "title": "6.4 Cookie Management",
+                        "content": "You can manage Cookie preferences through your browser settings. Please note that disabling certain Cookies may affect the functionality of the website."
+                    }
+                ]
+            },
+            {
+                "id": "children",
+                "title": "7. Children's Privacy",
+                "content": [
+                    "Lovart is not intended for children under 13. We do not knowingly collect personal information from children under 13.",
+                    "If we become aware that we have collected personal information from a child under 13, we will take reasonable steps to delete such information immediately. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.",
+                    "For users aged 13 to 18, we recommend using our services under the guidance of a parent or guardian."
+                ]
+            },
+            {
+                "id": "changes",
+                "title": "8. Policy Changes",
+                "content": [
+                    "We may update this Privacy Policy from time to time. When the policy changes, we will:",
+                    "<ul class=\"list-disc list-inside text-neutral mb-6 space-y-2\"><li>Post the updated policy on the website</li><li>Update the \"Last Updated\" date at the top of the policy</li><li>Notify of significant changes via email or other means</li><li>Obtain your consent where required by applicable law</li></ul>",
+                    "We encourage you to review this Privacy Policy periodically to understand how we protect your personal information."
+                ]
+            }
+        ],
+        "contact": {
+            "title": "Privacy Inquiries",
+            "desc": "If you have any questions about this Privacy Policy or need to exercise your data rights, please feel free to contact us.",
+            "email_btn": "Privacy Officer Email",
+            "help_btn": "Help Center"
+        },
+        "footer": {
+            "titles": {
+                "lovart": "Lovart",
+                "products": "Products",
+                "company": "Company",
+                "contact": "Contact Info"
+            },
+            "desc": "AI-powered design platform for creative professionals.",
+            "rights": "Lovart.info. All rights reserved."
+        }
     }
 }

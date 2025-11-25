@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     </title>
     <meta name="description" content="<%= t.seo.description %>">
     <meta name="keywords" content="<%= t.seo.keywords %>">
-    <link rel="canonical" href="https://lovart.info/">
+    <link rel="canonical" href="<%= canonicalUrl %>">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Replace with your designed Lovart icon -->
@@ -1400,17 +1400,20 @@
                         <%= t.footer.products_title %>
                     </h3>
                     <ul class="space-y-2">
-                        <li><a href="lovart-design-features.html"
+                        <li><a href="<%= link('lovart-design-features.html') %>"
                                 class="text-neutral hover:text-primary transition-colors">
                                 <%= t.nav.features %>
                             </a></li>
-                        <li><a href="lovart-pricing.html" class="text-neutral hover:text-primary transition-colors">
+                        <li><a href="<%= link('lovart-pricing.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
                                 <%= t.nav.pricing %>
                             </a></li>
-                        <li><a href="blog.html" class="text-neutral hover:text-primary transition-colors">
+                        <li><a href="<%= link('blog.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
                                 <%= t.nav.blog %>
                             </a></li>
-                        <li><a href="help.html" class="text-neutral hover:text-primary transition-colors">
+                        <li><a href="<%= link('help.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
                                 <%= t.nav.help %>
                             </a></li>
                     </ul>
@@ -1420,12 +1423,19 @@
                         <%= t.footer.company_title %>
                     </h3>
                     <ul class="space-y-2">
-                        <li><a href="about.html" class="text-neutral hover:text-primary transition-colors">
+                        <li><a href="<%= link('about.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
                                 <%= t.nav.about %>
                             </a>
                         </li>
-                        class="text-neutral hover:text-primary transition-colors"><%= t.footer.terms %></a></li>
-                            class="text-neutral hover:text-primary transition-colors"><%= t.footer.privacy %></a></li>
+                        <li><a href="<%= link('terms-of-service.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.footer.terms %>
+                            </a></li>
+                        <li><a href="<%= link('privacy-policy.html') %>"
+                                class="text-neutral hover:text-primary transition-colors">
+                                <%= t.footer.privacy %>
+                            </a></li>
                     </ul>
                 </div>
                 <div>
@@ -1646,7 +1656,8 @@
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="text-sm">
                 <p>
-                    <%= t.cookie_consent.text %> <a href="privacy-policy.html" class="underline hover:text-primary">
+                    <%= t.cookie_consent.text %> <a href="<%= link('privacy-policy.html') %>"
+                            class="underline hover:text-primary">
                             <%= t.cookie_consent.learn_more %>
                         </a>
                 </p>
