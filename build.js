@@ -1,6 +1,7 @@
 const fs = require('fs-extra');
 const ejs = require('ejs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 // Configuration
 const config = {
@@ -16,25 +17,22 @@ async function build() {
         await fs.emptyDir(config.distDir);
         console.log('Cleaned dist directory');
 
+        // 1.5 Build CSS
+        console.log('Building CSS...');
+        execSync('npm run build:css', { stdio: 'inherit' });
+        console.log('CSS built successfully');
+
         // 2. Copy assets
         if (await fs.pathExists(path.join(config.srcDir, 'assets'))) {
             await fs.copy(path.join(config.srcDir, 'assets'), path.join(config.distDir, 'assets'));
             console.log('Copied assets');
         }
 
-        // 3. 复制静态目录到所有语言输出，避免多语言页面引用图片 404（产品/前端视角）
-        const staticDirs = ['images'];
-        for (const dir of staticDirs) {
-            const sourceDir = path.join(__dirname, dir);
-            if (!(await fs.pathExists(sourceDir))) continue;
-
-            // 默认语言放在 dist 根目录，其他语言放在各自子目录
-            await fs.copy(sourceDir, path.join(config.distDir, dir));
-            for (const lang of config.supportedLangs) {
-                if (lang === config.defaultLang) continue;
-                await fs.copy(sourceDir, path.join(config.distDir, lang, dir));
-            }
-            console.log(`Copied ${dir} for all locales`);
+        // 3. Copy public directory to dist root (images, robots.txt, etc.)
+        // We now use absolute paths (e.g., /images/foo.jpg) so no need to copy to language subdirs
+        if (await fs.pathExists(path.join(__dirname, 'public'))) {
+            await fs.copy(path.join(__dirname, 'public'), config.distDir);
+            console.log('Copied public directory to dist');
         }
 
         // 3. Load locales

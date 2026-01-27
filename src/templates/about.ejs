@@ -10,8 +10,8 @@
     <meta name="description" content="<%= t.about_page.seo.description %>">
     <meta name="keywords" content="<%= t.about_page.seo.keywords %>">
     <link rel="canonical" href="<%= canonicalUrl %>">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
         crossorigin="anonymous"></script>
 
@@ -76,31 +76,7 @@
             background: #e5e7eb;
         }
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            DEFAULT: '#4f46e5',
-                            light: '#6366f1',
-                            dark: '#3730a3',
-                        },
-                        secondary: {
-                            DEFAULT: '#ec4899',
-                            light: '#f472b6',
-                            dark: '#be185d',
-                        },
-                        neutral: {
-                            light: '#f9fafb',
-                            DEFAULT: '#6b7280',
-                            dark: '#1f2937',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+
 </head>
 
 <body class="bg-neutral-light text-neutral-dark antialiased">
@@ -308,7 +284,7 @@
                         </div>
 
                         <div class="relative">
-                            <img src="images/01.jpg" alt="Lovart Team" class="rounded-lg shadow-xl">
+                            <img src="/images/01.jpg" alt="Lovart Team" class="rounded-lg shadow-xl">
                             <div class="absolute -bottom-4 -right-4 bg-primary text-white p-4 rounded-lg shadow-lg">
                                 <p class="text-sm font-medium">From Idea to Reality</p>
                                 <p class="text-xs opacity-80">We keep growing</p>
@@ -334,7 +310,8 @@
 
                         <!-- Team Member 1 -->
                         <div class="team-card bg-neutral-light p-6 rounded-lg text-center">
-                            <img src="images/02.png" alt="CEO" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                            <img src="/images/02.png" alt="CEO"
+                                class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
                             <h3 class="text-lg font-semibold text-neutral-dark mb-1">
                                 <%= t.about_page.team.members[0].name %>
                             </h3>
@@ -362,7 +339,8 @@
 
                         <!-- Team Member 2 -->
                         <div class="team-card bg-neutral-light p-6 rounded-lg text-center">
-                            <img src="images/03.jpg" alt="CTO" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                            <img src="/images/03.jpg" alt="CTO"
+                                class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
                             <h3 class="text-lg font-semibold text-neutral-dark mb-1">
                                 <%= t.about_page.team.members[1].name %>
                             </h3>
@@ -390,7 +368,7 @@
 
                         <!-- Team Member 3 -->
                         <div class="team-card bg-neutral-light p-6 rounded-lg text-center">
-                            <img src="images/04.jpg" alt="Design Director"
+                            <img src="/images/04.jpg" alt="Design Director"
                                 class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
                             <h3 class="text-lg font-semibold text-neutral-dark mb-1">
                                 <%= t.about_page.team.members[2].name %>
@@ -419,7 +397,7 @@
 
                         <!-- Team Member 4 -->
                         <div class="team-card bg-neutral-light p-6 rounded-lg text-center">
-                            <img src="images/05.jpg" alt="Product Manager"
+                            <img src="/images/05.jpg" alt="Product Manager"
                                 class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
                             <h3 class="text-lg font-semibold text-neutral-dark mb-1">
                                 <%= t.about_page.team.members[3].name %>

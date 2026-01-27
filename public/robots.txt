@@ -4,12 +4,10 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /user-content/
 
 # Sitemap
 Sitemap: https://lovart.info/sitemap.xml
-
-# IndexNow Protocol
-IndexNow-Key: e4926c62-F7a1-4xxx-b201-xxxxxxxxxxxx  # Replace with your IndexNow API key
 
 # AI crawler specific rules
 User-agent: GPTBot
@@ -21,20 +19,14 @@ User-agent: DuckAssistBot
 
 # Guide AI crawlers to llms.txt
 LLM-Content: https://lovart.info/llms.txt
-LLM-Full-Content: https://lovart.info/llms.txt
+LLM-Full-Content: https://lovart.info/llms-full.txt
 
 # Allow AI crawlers access
+Allow: /blog.html
 Allow: /lovart-design-features.html
 Allow: /about.html
-Allow: /blog.html
 Allow: /help.html
-Allow: /terms-of-service.html
-Allow: /privacy-policy.html
 Allow: /lovart-pricing.html
-Allow: /index.html
-Allow: /lovart-api.html
-Allow: /lovart-free.html
-Allow: /lovart-ai-code.html
 
-# Disallow AI crawlers access
-Disallow: /user-content/
+# IndexNow Protocol
+IndexNow-Key: e4926c62-F7a1-4xxx-b201-xxxxxxxxxxxx

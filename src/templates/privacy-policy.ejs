@@ -10,8 +10,8 @@
     <meta name="description" content="<%= t.privacy_page.seo.description %>">
     <meta name="keywords" content="<%= t.privacy_page.seo.keywords %>">
     <link rel="canonical" href="<%= canonicalUrl %>">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
         crossorigin="anonymous"></script>
 
@@ -40,31 +40,7 @@
             scroll-margin-top: 100px;
         }
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            DEFAULT: '#4f46e5',
-                            light: '#6366f1',
-                            dark: '#3730a3',
-                        },
-                        secondary: {
-                            DEFAULT: '#ec4899',
-                            light: '#f472b6',
-                            dark: '#be185d',
-                        },
-                        neutral: {
-                            light: '#f9fafb',
-                            DEFAULT: '#6b7280',
-                            dark: '#1f2937',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+
 </head>
 
 <body class="bg-neutral-light text-neutral-dark antialiased">
@@ -458,28 +434,21 @@
                     </div>
 
                     <!-- Contact Section -->
-                    <section class="py-16 bg-neutral-light">
-                        <div class="container mx-auto px-6 text-center">
-                            <h2 class="text-3xl font-bold text-neutral-dark mb-6">
-                                <%= t.privacy_page.contact.title %>
-                            </h2>
-                            <p class="text-lg text-neutral mb-8 max-w-2xl mx-auto">
-                                <%= t.privacy_page.contact.desc %>
-                            </p>
-                            <div class="flex flex-col md:flex-row justify-center gap-4">
-                                <a href="mailto:privacy@lovart.info"
-                                    class="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary-dark transition-colors font-semibold">
-                                    <%= t.privacy_page.contact.email_btn %>
-                                </a>
-                                <a href="help.html"
-                                    class="bg-white text-neutral-dark border border-neutral-dark px-8 py-3 rounded-md hover:bg-gray-50 transition-colors font-semibold">
-                                    <%= t.privacy_page.contact.help_btn %>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
+                    <p class="text-lg text-neutral mb-8 max-w-2xl mx-auto">
+                        <%= t.privacy_page.contact.desc %>
+                    </p>
+                    <img src="/images/small_04.jpg" alt="Data Security" class="w-16 h-16 rounded-full mx-auto mb-4">
+                    <div class="flex flex-col md:flex-row justify-center gap-4">
+                        <a href="mailto:privacy@lovart.info"
+                            class="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary-dark transition-colors font-semibold">
+                            <%= t.privacy_page.contact.email_btn %>
+                        </a>
+                        <a href="help.html"
+                            class="bg-white text-neutral-dark border border-neutral-dark px-8 py-3 rounded-md hover:bg-gray-50 transition-colors font-semibold">
+                            <%= t.privacy_page.contact.help_btn %>
+                        </a>
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
     </main>

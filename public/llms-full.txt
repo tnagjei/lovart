@@ -1,0 +1,17 @@
+# Lovart
+> Lovart is an AI-powered design platform for creative professionals, helping users create stunning visuals, collaborate effectively, and streamline their workflows.
+Lovart leverages cutting-edge AI technology to provide intelligent design suggestions and intuitive tools, making the design process more efficient and inspiring.
+
+## Core Content
+- [Products](https://lovart.info/lovart-design-features.html): The Lovart AI design tool and platform for creating visual content, offering AI-enhanced creativity and an intuitive interface.
+- [Services & Features](https://lovart.info/lovart-design-features.html): AI-driven design suggestions, drag-and-drop interface, real-time collaboration tools, and access to a vast library of assets.
+- [Developer Resources](https://lovart.info/lovart-ai-code.html): Information for developers on Lovart AI Code, API, and SDK integration.
+
+## Common Resources
+- [FAQ](https://lovart.info/index.html#faq): Answers to common questions about Lovart's features, AI capabilities, collaboration, and usage.
+- [Pricing Plans](https://lovart.info/lovart-pricing.html): Explore Lovart's flexible and affordable pricing options for individuals, teams, and businesses.
+- [Contact Information](https://lovart.info/index.html#footer): Channels to get support and inquiries from the Lovart team (typically the footer contains contact info or links).
+
+## Optional
+- [About Us](https://lovart.info/index.html): Lovart empowers creators to bring their visions to life with intuitive tools and intelligent features.
+- [Showcase/Gallery](https://lovart.info/index.html#gallery): Showcasing designs and projects created using the Lovart platform.

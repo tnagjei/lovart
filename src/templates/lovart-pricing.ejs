@@ -10,8 +10,8 @@
     <meta name="description" content="<%= t.pricing_page.seo.description %>">
     <meta name="keywords" content="<%= t.pricing_page.seo.keywords %>">
     <link rel="canonical" href="<%= canonicalUrl %>">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
         crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
@@ -75,40 +75,7 @@
             transform: translateY(0);
         }
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            DEFAULT: '#4f46e5', // indigo-600
-                            light: '#6366f1', // indigo-500
-                            dark: '#3730a3', // indigo-800
-                        },
-                        secondary: {
-                            DEFAULT: '#ec4899', // pink-500
-                            light: '#f472b6', // pink-400
-                            dark: '#be185d', // pink-700
-                        },
-                        neutral: {
-                            light: '#f9fafb', // gray-50
-                            DEFAULT: '#6b7280', // gray-500
-                            dark: '#1f2937', // gray-800
-                        }
-                    },
-                    animation: {
-                        'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
-                    },
-                    keyframes: {
-                        'fade-in-up': {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+
 </head>
 
 <body class="bg-neutral-light text-neutral-dark antialiased">
@@ -336,8 +303,8 @@
                         </div>
                         <div>
                             <!-- You can add an illustrative image or graphic here -->
-                            <img src="images/pricing-illustration.svg" alt="Lovart AI Pricing Value Illustration"
-                                class="rounded-lg w-full max-w-md mx-auto">
+                            <img src="/images/02.jpg" alt="Standard Plan"
+                                class="w-full h-40 object-cover rounded-md mb-4">
                             <!-- Replace with an actual illustration if available, or remove -->
                         </div>
                     </div>

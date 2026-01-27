@@ -10,8 +10,8 @@
     <meta name="description" content="<%= t.blog_page.seo.description %>">
     <meta name="keywords" content="<%= t.blog_page.seo.keywords %>">
     <link rel="canonical" href="<%= canonicalUrl %>">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
         crossorigin="anonymous"></script>
 
@@ -81,31 +81,7 @@
             background: white;
         }
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            DEFAULT: '#4f46e5',
-                            light: '#6366f1',
-                            dark: '#3730a3',
-                        },
-                        secondary: {
-                            DEFAULT: '#ec4899',
-                            light: '#f472b6',
-                            dark: '#be185d',
-                        },
-                        neutral: {
-                            light: '#f9fafb',
-                            DEFAULT: '#6b7280',
-                            dark: '#1f2937',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+
 </head>
 
 <body class="bg-neutral-light text-neutral-dark antialiased">
@@ -245,7 +221,7 @@
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <div class="md:flex">
                             <div class="md:w-1/2">
-                                <img src="images/01.jpg" alt="<%= t.blog_page.featured.article_title %>"
+                                <img src="/images/01.jpg" alt="<%= t.blog_page.featured.article_title %>"
                                     class="w-full h-64 md:h-full object-cover">
                             </div>
                             <div class="md:w-1/2 p-8">
@@ -266,7 +242,7 @@
                                 <div class="flex flex-col gap-4">
                                     <div class="flex items-center justify-between">
                                         <div class="flex items-center gap-3">
-                                            <img src="images/02.png" alt="Author Avatar"
+                                            <img src="/images/02.png" alt="Author Avatar"
                                                 class="w-10 h-10 rounded-full object-cover">
                                             <div>
                                                 <p class="font-medium text-neutral-dark">
@@ -361,7 +337,7 @@
                             </h3>
                             <ul class="space-y-4">
                                 <li class="flex items-center gap-3">
-                                    <img src="images/thumb-01.jpg" alt="Recent Post Thumbnail"
+                                    <img src="/images/thumb-01.jpg" alt="Recent Post Thumbnail"
                                         class="w-16 h-16 object-cover rounded-md">
                                     <div>
                                         <a href="#" class="text-neutral-dark hover:text-primary font-medium text-sm">
@@ -373,7 +349,7 @@
                                     </div>
                                 </li>
                                 <li class="flex items-center gap-3">
-                                    <img src="images/thumb-02.jpg" alt="Recent Post Thumbnail"
+                                    <img src="/images/thumb-02.jpg" alt="Recent Post Thumbnail"
                                         class="w-16 h-16 object-cover rounded-md">
                                     <div>
                                         <a href="#" class="text-neutral-dark hover:text-primary font-medium text-sm">
@@ -385,7 +361,7 @@
                                     </div>
                                 </li>
                                 <li class="flex items-center gap-3">
-                                    <img src="images/thumb-03.jpg" alt="Recent Post Thumbnail"
+                                    <img src="/images/thumb-03.jpg" alt="Recent Post Thumbnail"
                                         class="w-16 h-16 object-cover rounded-md">
                                     <div>
                                         <a href="#" class="text-neutral-dark hover:text-primary font-medium text-sm">
@@ -433,7 +409,7 @@
                             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3083296102953963"
                                 data-ad-slot="8855551987" data-ad-format="auto" data-full-width-responsive="true"></ins>
                             <script>
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
                         </div>
 
@@ -449,7 +425,7 @@
                             <!-- Blog Post 1 -->
                             <article
                                 class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                <img src="images/03.jpg" alt="Design Tutorial" class="w-full h-48 object-cover">
+                                <img src="/images/small_03.jpg" alt="Blog Post 2" class="w-full h-48 object-cover">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
                                         <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
@@ -502,7 +478,7 @@
                             <!-- Blog Post 2 -->
                             <article
                                 class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                <img src="images/04.jpg" alt="Design Trends" class="w-full h-48 object-cover">
+                                <img src="/images/02.jpg" alt="Blog Post 1" class="w-full h-48 object-cover">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
                                         <span
@@ -572,7 +548,7 @@
                             <!-- Blog Post 3 -->
                             <article
                                 class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                <img src="images/05.jpg" alt="User Case Study" class="w-full h-48 object-cover">
+                                <img src="/images/05.jpg" alt="User Case Study" class="w-full h-48 object-cover">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
                                         <span
@@ -603,7 +579,7 @@
                             <!-- Blog Post 4 -->
                             <article
                                 class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                <img src="images/06.jpg" alt="Product Design" class="w-full h-48 object-cover">
+                                <img src="/images/06.jpg" alt="Product Design" class="w-full h-48 object-cover">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
                                         <span
@@ -634,7 +610,7 @@
                             <!-- Blog Post 5 -->
                             <article
                                 class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                <img src="images/07.jpg" alt="Creative Inspiration" class="w-full h-48 object-cover">
+                                <img src="/images/07.jpg" alt="Creative Inspiration" class="w-full h-48 object-cover">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
                                         <span
@@ -665,7 +641,7 @@
                             <!-- Blog Post 6 -->
                             <article
                                 class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                <img src="images/08.jpg" alt="Product Updates" class="w-full h-48 object-cover">
+                                <img src="/images/08.jpg" alt="Product Updates" class="w-full h-48 object-cover">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-3">
                                         <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">

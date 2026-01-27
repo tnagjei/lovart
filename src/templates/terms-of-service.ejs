@@ -10,8 +10,8 @@
     <meta name="description" content="<%= t.terms_page.seo.description %>">
     <meta name="keywords" content="<%= t.terms_page.seo.keywords %>">
     <link rel="canonical" href="<%= canonicalUrl %>">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
         crossorigin="anonymous"></script>
 
@@ -40,31 +40,7 @@
             scroll-margin-top: 100px;
         }
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            DEFAULT: '#4f46e5',
-                            light: '#6366f1',
-                            dark: '#3730a3',
-                        },
-                        secondary: {
-                            DEFAULT: '#ec4899',
-                            light: '#f472b6',
-                            dark: '#be185d',
-                        },
-                        neutral: {
-                            light: '#f9fafb',
-                            DEFAULT: '#6b7280',
-                            dark: '#1f2937',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+
 </head>
 
 <body class="bg-neutral-light text-neutral-dark antialiased">
@@ -428,6 +404,8 @@
                         <div class="space-x-4">
                             <a href="help.html"
                                 class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors">
+                                <img src="/images/small_03.jpg" alt="Terms of Service"
+                                    class="w-16 h-16 rounded-full mx-auto mb-4">
                                 <%= t.terms_page.contact.help_btn %>
                             </a>
                             <a href="mailto:support@lovart.info"
