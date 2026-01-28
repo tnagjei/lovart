@@ -404,8 +404,11 @@
                         <div class="space-x-4">
                             <a href="help.html"
                                 class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors">
-                                <img src="/images/small_03.jpg" alt="Terms of Service"
-                                    class="w-16 h-16 rounded-full mx-auto mb-4">
+                                <picture>
+                                    <source type="image/webp" srcset="/images/small_03.webp">
+                                    <img src="/images/small_03.jpg" alt="Terms of Service"
+                                        class="w-16 h-16 rounded-full mx-auto mb-4">
+                                </picture>
                                 <%= t.terms_page.contact.help_btn %>
                             </a>
                             <a href="mailto:support@lovart.info"

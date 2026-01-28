@@ -550,8 +550,9 @@
                     <div class="lazy-load-container w-full max-w-3xl mx-auto rounded-lg shadow-xl"
                         style="height: 400px;">
                         <picture>
-                            <source media="(max-width: 640px)" srcset="/images/small_01.jpg">
-                            <source media="(max-width: 1024px)" srcset="/images/small_01.jpg">
+                            <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_01.webp">
+                            <source type="image/webp" media="(max-width: 1024px)" srcset="/images/small_01.webp">
+                            <source type="image/webp" srcset="/images/small_01.webp">
                             <img data-src="/images/small_01.jpg" src="/images/placeholder.jpg"
                                 alt="Lovart AI Design Platform in action"
                                 class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
@@ -679,8 +680,11 @@
                 <div class="grid md:grid-cols-3 gap-8 text-center">
                     <!-- Step 1 -->
                     <div class="p-6 animate-fade-in-up" style="animation-delay: 0.1s;">
-                        <img src="/images/small_01.jpg" alt="Step 1: Ignite Your Project with Lovart"
-                            class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        <picture>
+                            <source type="image/webp" srcset="/images/small_01.webp">
+                            <img src="/images/small_01.jpg" alt="Step 1: Ignite Your Project with Lovart"
+                                class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        </picture>
                         <h3 class="text-xl font-semibold mb-2">
                             <%= t.how_it_works.steps[0].title %>
                         </h3>
@@ -690,8 +694,11 @@
                     </div>
                     <!-- Step 2 -->
                     <div class="p-6 animate-fade-in-up" style="animation-delay: 0.3s;">
-                        <img src="/images/small_03.jpg" alt="Step 2: Design with Lovart's AI and Intuitive Tools"
-                            class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        <picture>
+                            <source type="image/webp" srcset="/images/small_03.webp">
+                            <img src="/images/small_03.jpg" alt="Step 2: Design with Lovart's AI and Intuitive Tools"
+                                class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        </picture>
                         <h3 class="text-xl font-semibold mb-2">
                             <%= t.how_it_works.steps[1].title %>
                         </h3>
@@ -701,8 +708,11 @@
                     </div>
                     <!-- Step 3 -->
                     <div class="p-6 animate-fade-in-up" style="animation-delay: 0.5s;">
-                        <img src="/images/small_04.jpg" alt="Step 3: Collaborate, Refine & Export with Lovart"
-                            class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        <picture>
+                            <source type="image/webp" srcset="/images/small_04.webp">
+                            <img src="/images/small_04.jpg" alt="Step 3: Collaborate, Refine & Export with Lovart"
+                                class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
+                        </picture>
                         <h3 class="text-xl font-semibold mb-2">
                             <%= t.how_it_works.steps[2].title %>
                         </h3>
@@ -728,8 +738,11 @@
                             <%= t.testimonials.items[0].quote %>
                         </p>
                         <div class="flex items-center">
-                            <img src="/images/02.png" alt="Avatar of Alex V."
-                                class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- Replace with real avatar -->
+                            <picture>
+                                <source type="image/webp" srcset="/images/02.webp">
+                                <img src="/images/02.png" alt="Avatar of Alex V."
+                                    class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- Replace with real avatar -->
+                            </picture>
                             <div>
                                 <p class="font-semibold text-neutral-dark">
                                     <%= t.testimonials.items[0].author %>
@@ -747,8 +760,11 @@
                             <%= t.testimonials.items[1].quote %>
                         </p>
                         <div class="flex items-center">
-                            <img src="/images/small_03.jpg" alt="Avatar of Sarah M."
-                                class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- Replace with real avatar -->
+                            <picture>
+                                <source type="image/webp" srcset="/images/small_03.webp">
+                                <img src="/images/small_03.jpg" alt="Avatar of Sarah M."
+                                    class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- Replace with real avatar -->
+                            </picture>
                             <div>
                                 <p class="font-semibold text-neutral-dark">
                                     <%= t.testimonials.items[1].author %>
@@ -766,8 +782,11 @@
                             <%= t.testimonials.items[2].quote %>
                         </p>
                         <div class="flex items-center">
-                            <img src="/images/small_04.jpg" alt="Avatar of James P."
-                                class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- 替换为真实头像 -->
+                            <picture>
+                                <source type="image/webp" srcset="/images/small_04.webp">
+                                <img src="/images/small_04.jpg" alt="Avatar of James P."
+                                    class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- 替换为真实头像 -->
+                            </picture>
                             <div>
                                 <p class="font-semibold text-neutral-dark">
                                     <%= t.testimonials.items[2].author %>
@@ -794,7 +813,9 @@
                         <div
                             class="lazy-load-container h-72 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
                             <picture>
-                                <source media="(max-width: 640px)" srcset="/images/06_thumb.jpg">
+                                <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_06.webp">
+                                <source type="image/webp" srcset="/images/small_06.webp">
+                                <source media="(max-width: 640px)" srcset="/images/small_06.jpg">
                                 <img data-src="/images/small_06.jpg" src="/images/placeholder.jpg"
                                     alt="<%= t.gallery.images[0] %>"
                                     class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy"
@@ -811,7 +832,9 @@
                         <div
                             class="lazy-load-container h-72 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
                             <picture>
-                                <source media="(max-width: 640px)" srcset="/images/07_thumb.jpg">
+                                <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_07.webp">
+                                <source type="image/webp" srcset="/images/small_07.webp">
+                                <source media="(max-width: 640px)" srcset="/images/small_07.jpg">
                                 <img data-src="/images/small_07.jpg" src="/images/placeholder.jpg"
                                     alt="<%= t.gallery.images[1] %>"
                                     class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy"
@@ -826,7 +849,9 @@
                     <!-- Image 08.jpg -->
                     <div class="animate-fade-in-up" style="animation-delay: 0.3s;">
                         <picture>
-                            <source media="(max-width: 640px)" srcset="/images/08_thumb.jpg">
+                            <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_08.webp">
+                            <source type="image/webp" srcset="/images/small_08.webp">
+                            <source media="(max-width: 640px)" srcset="/images/small_08.jpg">
                             <img src="/images/small_08.jpg" alt="<%= t.gallery.images[2] %>"
                                 class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                 loading="lazy" decoding="async">
@@ -835,7 +860,9 @@
                     <!-- Image 09.jpg -->
                     <div class="animate-fade-in-up" style="animation-delay: 0.4s;">
                         <picture>
-                            <source media="(max-width: 640px)" srcset="/images/09_thumb.jpg">
+                            <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_09.webp">
+                            <source type="image/webp" srcset="/images/small_09.webp">
+                            <source media="(max-width: 640px)" srcset="/images/small_09.jpg">
                             <img src="/images/small_09.jpg" alt="<%= t.gallery.images[3] %>"
                                 class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                 loading="lazy" decoding="async">
@@ -844,7 +871,9 @@
                     <!-- Image 10.jpg -->
                     <div class="animate-fade-in-up" style="animation-delay: 0.5s;">
                         <picture>
-                            <source media="(max-width: 640px)" srcset="/images/10_thumb.jpg">
+                            <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_10.webp">
+                            <source type="image/webp" srcset="/images/small_10.webp">
+                            <source media="(max-width: 640px)" srcset="/images/small_10.jpg">
                             <img src="/images/small_10.jpg" alt="<%= t.gallery.images[4] %>"
                                 class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                 loading="lazy" decoding="async">
@@ -853,7 +882,9 @@
                     <!-- Image 11.jpg -->
                     <div class="animate-fade-in-up" style="animation-delay: 0.6s;">
                         <picture>
-                            <source media="(max-width: 640px)" srcset="/images/11_thumb.jpg">
+                            <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_11.webp">
+                            <source type="image/webp" srcset="/images/small_11.webp">
+                            <source media="(max-width: 640px)" srcset="/images/small_11.jpg">
                             <img src="/images/small_11.jpg" alt="<%= t.gallery.images[5] %>"
                                 class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                 loading="lazy" decoding="async">
@@ -879,7 +910,9 @@
                     <!-- Image 12.jpg -->
                     <div class="animate-fade-in-up" style="animation-delay: 0.7s;">
                         <picture>
-                            <source media="(max-width: 640px)" srcset="/images/12_thumb.jpg">
+                            <source type="image/webp" media="(max-width: 640px)" srcset="/images/12.webp">
+                            <source type="image/webp" srcset="/images/12.webp">
+                            <source media="(max-width: 640px)" srcset="/images/12.jpg">
                             <img src="/images/12.jpg" alt="<%= t.gallery.images[6] %>"
                                 class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                 loading="lazy" decoding="async">
@@ -888,7 +921,9 @@
                     <!-- Image 13.jpg -->
                     <div class="animate-fade-in-up" style="animation-delay: 0.8s;">
                         <picture>
-                            <source media="(max-width: 640px)" srcset="/images/13_thumb.jpg">
+                            <source type="image/webp" media="(max-width: 640px)" srcset="/images/13.webp">
+                            <source type="image/webp" srcset="/images/13.webp">
+                            <source media="(max-width: 640px)" srcset="/images/13.jpg">
                             <img src="/images/13.jpg" alt="<%= t.gallery.images[7] %>"
                                 class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                 loading="lazy" decoding="async">
@@ -897,7 +932,9 @@
                     <!-- Image 14.jpg -->
                     <div class="animate-fade-in-up" style="animation-delay: 0.9s;">
                         <picture>
-                            <source media="(max-width: 640px)" srcset="/images/14_thumb.jpg">
+                            <source type="image/webp" media="(max-width: 640px)" srcset="/images/14.webp">
+                            <source type="image/webp" srcset="/images/14.webp">
+                            <source media="(max-width: 640px)" srcset="/images/14.jpg">
                             <img src="/images/14.jpg" alt="<%= t.gallery.images[8] %>"
                                 class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                 loading="lazy" decoding="async">
