@@ -14,14 +14,30 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
         crossorigin="anonymous"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK9MPTEZ17"></script>
+    <!-- Lazy Load Google Analytics -->
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        // Lazy load Google Analytics until page interaction
+        function loadGoogleAnalytics() {
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-EK9MPTEZ17';
+            document.head.appendChild(script);
 
-        gtag('config', 'G-EK9MPTEZ17');
+            script.onload = function () {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-EK9MPTEZ17');
+            };
+        }
+
+        // Load when page is idle or after user interaction
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadGoogleAnalytics);
+        } else {
+            // Fallback: Load after 3 seconds
+            setTimeout(loadGoogleAnalytics, 3000);
+        }
     </script>
 
     <style>
