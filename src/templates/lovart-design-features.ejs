@@ -105,326 +105,226 @@
 <body class="bg-neutral-light text-neutral-dark antialiased">
 
     <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"
-                class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
-            <nav class="hidden md:flex space-x-4 items-center">
-                <a href="<%= link('lovart-design-features.html') %>"
-                    class="text-primary font-semibold transition-colors">
-                    <%= t.nav.features %>
-                </a>
-                <a href="<%= link('index.html#how-it-works') %>"
-                    class="text-neutral hover:text-primary transition-colors">How It
-                    Works</a>
-                <a href="/lovart-ai-code.html" class="text-neutral hover:text-primary transition-colors">For
-                    Developers</a>
-                <a href="<%= link('lovart-pricing.html') %>" class="text-neutral hover:text-primary transition-colors">
-                    <%= t.nav.pricing %>
-                </a>
-                <a href="<%= link('index.html#faq') %>"
-                    class="text-neutral hover:text-primary transition-colors">FAQ</a>
-                <a href="<%= link('lovart-pricing.html') %>"
-                    class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">
-                    <%= t.nav.get_started %>
-                </a>
-            </nav>
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none"
-                    aria-label="Toggle mobile menu">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <a href="<%= link('lovart-design-features.html') %>"
-                class="block px-6 py-3 text-primary font-semibold hover:bg-primary-light hover:text-white transition-colors">
-                <%= t.nav.features %>
-            </a>
-            <a href="<%= link('index.html#how-it-works') %>"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">How It
-                Works</a>
-            <a href="/lovart-ai-code.html"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">For
-                Developers</a>
-            <a href="<%= link('lovart-pricing.html') %>"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
-                <%= t.nav.pricing %>
-            </a>
-            <a href="<%= link('index.html#faq') %>"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">FAQ</a>
-            <a href="<%= link('lovart-pricing.html') %>"
-                class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">
-                <%= t.nav.get_started %>
-            </a>
-        </div>
-    </header>
+    <%- include('partials/header') %>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up" style="animation-delay: 0.2s;">
-                    <%= t.features_page.hero.title %>
-                </h1>
-                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.4s;">
-                    <%= t.features_page.hero.desc %>
-                </p>
-            </div>
-        </section>
+        <main>
+            <!-- Hero Section -->
+            <section class="bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up" style="animation-delay: 0.2s;">
+                        <%= t.features_page.hero.title %>
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up"
+                        style="animation-delay: 0.4s;">
+                        <%= t.features_page.hero.desc %>
+                    </p>
+                </div>
+            </section>
 
-        <!-- Detailed Features Section -->
-        <section class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="space-y-16">
+            <!-- Detailed Features Section -->
+            <section class="py-16 md:py-24 bg-white">
+                <div class="container mx-auto px-6">
+                    <div class="space-y-16">
 
-                    <!-- Feature 1: AI-Powered Suggestions -->
-                    <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
-                        <div class="md:w-1/2">
-                            <img src="/images/features/feature-ai-suggestions.jpg"
-                                alt="<%= t.features_page.features[0].alt %>" class="rounded-lg shadow-xl w-full">
+                        <!-- Feature 1: AI-Powered Suggestions -->
+                        <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
+                            <div class="md:w-1/2">
+                                <img src="/images/features/feature-ai-suggestions.jpg"
+                                    alt="<%= t.features_page.features[0].alt %>" class="rounded-lg shadow-xl w-full">
+                            </div>
+                            <div class="md:w-1/2">
+                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.features_page.features[0].title %>
+                                </h2>
+                                <p class="text-neutral mb-3">
+                                    <%= t.features_page.features[0].desc %>
+                                </p>
+                                <ul class="list-disc list-inside text-neutral space-y-1">
+                                    <li>
+                                        <%= t.features_page.features[0].list[0] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[0].list[1] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[0].list[2] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[0].list[3] %>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="md:w-1/2">
-                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
-                                <%= t.features_page.features[0].title %>
-                            </h2>
-                            <p class="text-neutral mb-3">
-                                <%= t.features_page.features[0].desc %>
-                            </p>
-                            <ul class="list-disc list-inside text-neutral space-y-1">
-                                <li>
-                                    <%= t.features_page.features[0].list[0] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[0].list[1] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[0].list[2] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[0].list[3] %>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <!-- Feature 2: Intuitive Drag-and-Drop Interface -->
-                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
-                        <div class="md:w-1/2">
-                            <img src="/images/features/feature-drag-drop.jpg"
-                                alt="<%= t.features_page.features[1].alt %>" class="rounded-lg shadow-xl w-full">
+                        <!-- Feature 2: Intuitive Drag-and-Drop Interface -->
+                        <div class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
+                            <div class="md:w-1/2">
+                                <img src="/images/features/feature-drag-drop.jpg"
+                                    alt="<%= t.features_page.features[1].alt %>" class="rounded-lg shadow-xl w-full">
+                            </div>
+                            <div class="md:w-1/2">
+                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.features_page.features[1].title %>
+                                </h2>
+                                <p class="text-neutral mb-3">
+                                    <%= t.features_page.features[1].desc %>
+                                </p>
+                                <ul class="list-disc list-inside text-neutral space-y-1">
+                                    <li>
+                                        <%= t.features_page.features[1].list[0] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[1].list[1] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[1].list[2] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[1].list[3] %>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="md:w-1/2">
-                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
-                                <%= t.features_page.features[1].title %>
-                            </h2>
-                            <p class="text-neutral mb-3">
-                                <%= t.features_page.features[1].desc %>
-                            </p>
-                            <ul class="list-disc list-inside text-neutral space-y-1">
-                                <li>
-                                    <%= t.features_page.features[1].list[0] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[1].list[1] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[1].list[2] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[1].list[3] %>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <!-- Feature 3: Vast Asset Library -->
-                    <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
-                        <div class="md:w-1/2">
-                            <img src="/images/features/feature-assets.jpg" alt="<%= t.features_page.features[2].alt %>"
-                                class="rounded-lg shadow-xl w-full">
+                        <!-- Feature 3: Vast Asset Library -->
+                        <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
+                            <div class="md:w-1/2">
+                                <img src="/images/features/feature-assets.jpg"
+                                    alt="<%= t.features_page.features[2].alt %>" class="rounded-lg shadow-xl w-full">
+                            </div>
+                            <div class="md:w-1/2">
+                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.features_page.features[2].title %>
+                                </h2>
+                                <p class="text-neutral mb-3">
+                                    <%= t.features_page.features[2].desc %>
+                                </p>
+                                <ul class="list-disc list-inside text-neutral space-y-1">
+                                    <li>
+                                        <%= t.features_page.features[2].list[0] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[2].list[1] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[2].list[2] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[2].list[3] %>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="md:w-1/2">
-                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
-                                <%= t.features_page.features[2].title %>
-                            </h2>
-                            <p class="text-neutral mb-3">
-                                <%= t.features_page.features[2].desc %>
-                            </p>
-                            <ul class="list-disc list-inside text-neutral space-y-1">
-                                <li>
-                                    <%= t.features_page.features[2].list[0] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[2].list[1] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[2].list[2] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[2].list[3] %>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <!-- Feature 4: Real-Time Collaboration (Coming Soon) -->
-                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
-                        <div class="md:w-1/2">
-                            <img src="/images/features/feature-collaboration.jpg"
-                                alt="<%= t.features_page.features[3].alt %>" class="rounded-lg shadow-xl w-full">
+                        <!-- Feature 4: Real-Time Collaboration (Coming Soon) -->
+                        <div class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
+                            <div class="md:w-1/2">
+                                <img src="/images/features/feature-collaboration.jpg"
+                                    alt="<%= t.features_page.features[3].alt %>" class="rounded-lg shadow-xl w-full">
+                            </div>
+                            <div class="md:w-1/2">
+                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.features_page.features[3].title %>
+                                </h2>
+                                <p class="text-neutral mb-3">
+                                    <%= t.features_page.features[3].desc %>
+                                </p>
+                                <ul class="list-disc list-inside text-neutral space-y-1">
+                                    <li>
+                                        <%= t.features_page.features[3].list[0] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[3].list[1] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[3].list[2] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[3].list[3] %>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="md:w-1/2">
-                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
-                                <%= t.features_page.features[3].title %>
-                            </h2>
-                            <p class="text-neutral mb-3">
-                                <%= t.features_page.features[3].desc %>
-                            </p>
-                            <ul class="list-disc list-inside text-neutral space-y-1">
-                                <li>
-                                    <%= t.features_page.features[3].list[0] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[3].list[1] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[3].list[2] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[3].list[3] %>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <!-- Feature 5: One-Click Export & Sharing -->
-                    <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
-                        <div class="md:w-1/2">
-                            <img src="/images/features/feature-export.jpg" alt="<%= t.features_page.features[4].alt %>"
-                                class="rounded-lg shadow-xl w-full">
-                        </div>
-                        <div class="md:w-1/2">
-                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
-                                <%= t.features_page.features[4].title %>
-                            </h2>
-                            <p class="text-neutral mb-3">
-                                <%= t.features_page.features[4].desc %>
-                            </p>
-                            <ul class="list-disc list-inside text-neutral space-y-1">
-                                <li>
-                                    <%= t.features_page.features[4].list[0] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[4].list[1] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[4].list[2] %>
-                                </li>
-                                <li>
-                                    <%= t.features_page.features[4].list[3] %>
-                                </li>
-                            </ul>
+                        <!-- Feature 5: One-Click Export & Sharing -->
+                        <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
+                            <div class="md:w-1/2">
+                                <img src="/images/features/feature-export.jpg"
+                                    alt="<%= t.features_page.features[4].alt %>" class="rounded-lg shadow-xl w-full">
+                            </div>
+                            <div class="md:w-1/2">
+                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.features_page.features[4].title %>
+                                </h2>
+                                <p class="text-neutral mb-3">
+                                    <%= t.features_page.features[4].desc %>
+                                </p>
+                                <ul class="list-disc list-inside text-neutral space-y-1">
+                                    <li>
+                                        <%= t.features_page.features[4].list[0] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[4].list[1] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[4].list[2] %>
+                                    </li>
+                                    <li>
+                                        <%= t.features_page.features[4].list[3] %>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Call to Action Section -->
-        <section class="py-16 md:py-24 bg-neutral-light section-animate">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark mb-6">
-                    <%= t.features_page.cta.title %>
-                </h2>
-                <p class="text-lg text-neutral mb-8 max-w-xl mx-auto">
-                    <%= t.features_page.cta.desc %>
-                </p>
-                <a href="<%= link('lovart-pricing.html') %>"
-                    class="bg-primary text-white px-10 py-4 rounded-md hover:bg-primary-dark transition-colors text-lg font-medium">
-                    <%= t.features_page.cta.button %>
-                </a>
-            </div>
-        </section>
-    </main>
+            <!-- Call to Action Section -->
+            <section class="py-16 md:py-24 bg-neutral-light section-animate">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark mb-6">
+                        <%= t.features_page.cta.title %>
+                    </h2>
+                    <p class="text-lg text-neutral mb-8 max-w-xl mx-auto">
+                        <%= t.features_page.cta.desc %>
+                    </p>
+                    <a href="<%= link('lovart-pricing.html') %>"
+                        class="bg-primary text-white px-10 py-4 rounded-md hover:bg-primary-dark transition-colors text-lg font-medium">
+                        <%= t.features_page.cta.button %>
+                    </a>
+                </div>
+            </section>
+        </main>
 
-    <!-- Footer -->
-    <footer class="bg-neutral-dark text-neutral-light py-12">
-        <div class="container mx-auto px-6 text-center">
-            <a href="<%= link('index.html') %>"
-                class="text-2xl font-bold text-white hover:text-primary-light transition-colors mb-4 inline-block">Lovart</a>
-            <nav class="flex flex-wrap justify-center space-x-4 sm:space-x-6 mb-6">
-                <a href="<%= link('lovart-design-features.html') %>"
-                    class="text-primary-light font-semibold transition-colors">
-                    <%= t.nav.features %>
-                </a>
-                <a href="<%= link('index.html#how-it-works') %>" class="hover:text-primary-light transition-colors">How
-                    It Works</a>
-                <a href="/lovart-ai-code.html" class="hover:text-primary-light transition-colors">For Developers</a>
-                <a href="<%= link('lovart-pricing.html') %>" class="hover:text-primary-light transition-colors">
-                    <%= t.nav.pricing %>
-                </a>
-                <a href="<%= link('index.html#faq') %>" class="hover:text-primary-light transition-colors">FAQ</a>
-                <a href="mailto:sales@lovart.info?subject=General%20Inquiry"
-                    class="hover:text-primary-light transition-colors">
-                    <%= t.features_page.footer.contact %>
-                </a>
-            </nav>
-            <div class="flex flex-col items-center gap-2 mb-6">
-                <span class="text-sm uppercase tracking-wide text-gray-300">
-                    <%= t.footer.partner_site %>
-                </span>
-                <a href="https://vibevoice.online/" target="_blank" rel="noopener"
-                    class="inline-flex items-center justify-center px-4 py-2 border border-white/40 rounded-md text-sm font-semibold text-white transition hover:bg-white/10">
-                    VibeVoice Online
-                </a>
-                <a href="https://mywintercar.info/" target="_blank" rel="noopener"
-                    class="inline-flex items-center justify-center px-4 py-2 border border-white/40 rounded-md text-sm font-semibold text-white transition hover:bg-white/10">
-                    My Winter Car Wiki
-                </a>
-            </div>
-            <div class="text-sm text-neutral mb-4">
-                <p>&copy; <span id="currentYear"></span>
-                    <%= t.features_page.footer.rights %>
-                </p>
-                <p class="text-xs opacity-75 mt-1">
-                    <%= t.features_page.footer.tagline %>
-                </p>
-            </div>
-            <!-- Social media icons can be added here if desired, similar to index.html -->
-        </div>
-    </footer>
+        <!-- Footer -->
+        <%- include('partials/footer') %>
 
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
+            <script>
+                document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
-
-        // Intersection Observer for section animations
-        const sections = document.querySelectorAll('.section-animate');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
+                // Mobile menu toggle
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                    });
                 }
-            });
-        }, { threshold: 0.1 });
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+
+                // Intersection Observer for section animations
+                const sections = document.querySelectorAll('.section-animate');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                sections.forEach(section => {
+                    observer.observe(section);
+                });
+            </script>
 </body>
 
 </html>

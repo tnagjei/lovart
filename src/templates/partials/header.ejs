@@ -1,0 +1,71 @@
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="<%= link('index.html') %>"
+            class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
+        <nav class="hidden md:flex space-x-4 items-center">
+            <a href="<%= link('index.html') %>" class="text-neutral hover:text-primary transition-colors">
+                <%= t.nav.home %>
+            </a>
+            <a href="<%= link('lovart-design-features.html') %>"
+                class="text-neutral hover:text-primary transition-colors">
+                <%= t.nav.features %>
+            </a>
+            <a href="<%= link('lovart-pricing.html') %>" class="text-neutral hover:text-primary transition-colors">
+                <%= t.nav.pricing %>
+            </a>
+            <a href="<%= link('blog.html') %>" class="text-neutral hover:text-primary transition-colors">
+                <%= t.nav.blog %>
+            </a>
+            <a href="<%= link('help.html') %>" class="text-neutral hover:text-primary transition-colors">
+                <%= t.nav.help %>
+            </a>
+            <a href="<%= link('about.html') %>" class="text-neutral hover:text-primary transition-colors">
+                <%= t.nav.about %>
+            </a>
+            <a href="<%= link('lovart-pricing.html') %>"
+                class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">
+                <%= t.nav.get_started %>
+            </a>
+        </nav>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none"
+                aria-label="Toggle mobile menu">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+        <a href="<%= link('index.html') %>"
+            class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+            <%= t.nav.home %>
+        </a>
+        <a href="<%= link('lovart-design-features.html') %>"
+            class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+            <%= t.nav.features %>
+        </a>
+        <a href="<%= link('lovart-pricing.html') %>"
+            class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+            <%= t.nav.pricing %>
+        </a>
+        <a href="<%= link('blog.html') %>"
+            class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+            <%= t.nav.blog %>
+        </a>
+        <a href="<%= link('help.html') %>"
+            class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+            <%= t.nav.help %>
+        </a>
+        <a href="<%= link('about.html') %>"
+            class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
+            <%= t.nav.about %>
+        </a>
+        <a href="<%= link('lovart-pricing.html') %>"
+            class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">
+            <%= t.nav.get_started %>
+        </a>
+    </div>
+</header>

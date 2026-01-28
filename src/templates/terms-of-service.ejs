@@ -71,518 +71,358 @@
 <body class="bg-neutral-light text-neutral-dark antialiased">
 
     <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="<%= link('index.html') %>"
-                class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
-            <nav class="hidden md:flex space-x-4 items-center">
-                <a href="<%= link('index.html') %>" class="text-neutral hover:text-primary transition-colors">
-                    <%= t.nav.home %>
-                </a>
-                <a href="<%= link('lovart-design-features.html') %>"
-                    class="text-neutral hover:text-primary transition-colors">
-                    <%= t.nav.features %>
-                </a>
-                <a href="<%= link('lovart-pricing.html') %>" class="text-neutral hover:text-primary transition-colors">
-                    <%= t.nav.pricing %>
-                </a>
-                <a href="<%= link('blog.html') %>" class="text-neutral hover:text-primary transition-colors">
-                    <%= t.nav.blog %>
-                </a>
-                <a href="<%= link('help.html') %>" class="text-neutral hover:text-primary transition-colors">
-                    <%= t.nav.help %>
-                </a>
-                <a href="<%= link('about.html') %>" class="text-neutral hover:text-primary transition-colors">
-                    <%= t.nav.about %>
-                </a>
-                <a href="<%= link('lovart-pricing.html') %>"
-                    class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">
-                    <%= t.nav.get_started %>
-                </a>
-            </nav>
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none"
-                    aria-label="Toggle mobile menu">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <a href="<%= link('index.html') %>"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
-                <%= t.nav.home %>
-            </a>
-            <a href="<%= link('lovart-design-features.html') %>"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
-                <%= t.nav.features %>
-            </a>
-            <a href="<%= link('lovart-pricing.html') %>"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
-                <%= t.nav.pricing %>
-            </a>
-            <a href="<%= link('blog.html') %>"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
-                <%= t.nav.blog %>
-            </a>
-            <a href="<%= link('help.html') %>"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
-                <%= t.nav.help %>
-            </a>
-            <a href="<%= link('about.html') %>"
-                class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
-                <%= t.nav.about %>
-            </a>
-            <a href="<%= link('lovart-pricing.html') %>"
-                class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">
-                <%= t.nav.get_started %>
-            </a>
-        </div>
-    </header>
+    <%- include('partials/header') %>
 
-    <main class="min-h-screen">
-        <!-- Hero Section -->
-        <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">
-                    <%= t.terms_page.hero.title %>
-                </h1>
-                <p class="text-lg md:text-xl max-w-3xl mx-auto">
-                    <%= t.terms_page.hero.desc %>
-                </p>
-                <div class="mt-8 text-sm opacity-80">
-                    <%= t.terms_page.hero.last_updated %>
-                </div>
-            </div>
-        </section>
-
-        <!-- Table of Contents -->
-        <section class="py-12 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-2xl font-bold text-neutral-dark mb-6">
-                        <%= t.terms_page.toc.title %>
-                    </h2>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div>
-                            <h3 class="font-semibold text-primary mb-3">
-                                <%= t.terms_page.toc.basic_terms.title %>
-                            </h3>
-                            <ul class="space-y-2 text-sm">
-                                <li><a href="#acceptance"
-                                        class="text-neutral hover:text-primary transition-colors toc-link">
-                                        <%= t.terms_page.toc.basic_terms.items[0] %>
-                                    </a>
-                                </li>
-                                <li><a href="#description"
-                                        class="text-neutral hover:text-primary transition-colors toc-link">
-                                        <%= t.terms_page.toc.basic_terms.items[1] %>
-                                    </a>
-                                </li>
-                                <li><a href="#registration"
-                                        class="text-neutral hover:text-primary transition-colors toc-link">
-                                        <%= t.terms_page.toc.basic_terms.items[2] %>
-                                    </a>
-                                </li>
-                                <li><a href="#payment"
-                                        class="text-neutral hover:text-primary transition-colors toc-link">
-                                        <%= t.terms_page.toc.basic_terms.items[3] %>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-primary mb-3">
-                                <%= t.terms_page.toc.usage_rules.title %>
-                            </h3>
-                            <ul class="space-y-2 text-sm">
-                                <li><a href="#acceptable-use"
-                                        class="text-neutral hover:text-primary transition-colors toc-link">
-                                        <%= t.terms_page.toc.usage_rules.items[0] %>
-                                    </a></li>
-                                <li><a href="#intellectual-property"
-                                        class="text-neutral hover:text-primary transition-colors toc-link">
-                                        <%= t.terms_page.toc.usage_rules.items[1] %>
-                                    </a>
-                                </li>
-                                <li><a href="#disclaimer"
-                                        class="text-neutral hover:text-primary transition-colors toc-link">
-                                        <%= t.terms_page.toc.usage_rules.items[2] %>
-                                    </a>
-                                </li>
-                                <li><a href="#limitation"
-                                        class="text-neutral hover:text-primary transition-colors toc-link">
-                                        <%= t.terms_page.toc.usage_rules.items[3] %>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Terms Content -->
-        <section class="py-16 bg-neutral-light">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto space-y-12">
-
-                    <!-- Section 1 -->
-                    <div id="acceptance" class="section-animate">
-                        <h2 class="text-3xl font-bold text-neutral-dark mb-6">
-                            <%= t.terms_page.sections[0].title %>
-                        </h2>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[0].content[0] %>
-                            </p>
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[0].content[1] %>
-                            </p>
-                            <p class="text-neutral">
-                                <%= t.terms_page.sections[0].content[2] %>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Section 2 -->
-                    <div id="description" class="section-animate">
-                        <h2 class="text-3xl font-bold text-neutral-dark mb-6">
-                            <%= t.terms_page.sections[1].title %>
-                        </h2>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[1].content[0] %>
-                            </p>
-                            <div class="list-disc list-inside text-neutral mb-4 space-y-2">
-                                <%- t.terms_page.sections[1].content[1] %>
-                            </div>
-                            <p class="text-neutral">
-                                <%= t.terms_page.sections[1].content[2] %>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Section 3 -->
-                    <div id="registration" class="section-animate">
-                        <h2 class="text-3xl font-bold text-neutral-dark mb-6">
-                            <%= t.terms_page.sections[2].title %>
-                        </h2>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[2].subsections[0].title %>
-                            </h3>
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[2].subsections[0].content %>
-                            </p>
-
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[2].subsections[1].title %>
-                            </h3>
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[2].subsections[1].content %>
-                            </p>
-
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[2].subsections[2].title %>
-                            </h3>
-                            <p class="text-neutral">
-                                <%= t.terms_page.sections[2].subsections[2].content %>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Section 4 -->
-                    <div id="payment" class="section-animate">
-                        <h2 class="text-3xl font-bold text-neutral-dark mb-6">
-                            <%= t.terms_page.sections[3].title %>
-                        </h2>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[3].subsections[0].title %>
-                            </h3>
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[3].subsections[0].content %>
-                            </p>
-
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[3].subsections[1].title %>
-                            </h3>
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[3].subsections[1].content %>
-                            </p>
-
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[3].subsections[2].title %>
-                            </h3>
-                            <p class="text-neutral">
-                                <%= t.terms_page.sections[3].subsections[2].content %>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Section 5 -->
-                    <div id="acceptable-use" class="section-animate">
-                        <h2 class="text-3xl font-bold text-neutral-dark mb-6">
-                            <%= t.terms_page.sections[4].title %>
-                        </h2>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[4].subsections[0].title %>
-                            </h3>
-                            <div class="text-neutral mb-4">
-                                <%- t.terms_page.sections[4].subsections[0].content %>
-                            </div>
-
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[4].subsections[1].title %>
-                            </h3>
-                            <div class="text-neutral mb-4">
-                                <%- t.terms_page.sections[4].subsections[1].content %>
-                            </div>
-
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[4].subsections[2].title %>
-                            </h3>
-                            <p class="text-neutral">
-                                <%= t.terms_page.sections[4].subsections[2].content %>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Section 6 -->
-                    <div id="intellectual-property" class="section-animate">
-                        <h2 class="text-3xl font-bold text-neutral-dark mb-6">
-                            <%= t.terms_page.sections[5].title %>
-                        </h2>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[5].subsections[0].title %>
-                            </h3>
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[5].subsections[0].content %>
-                            </p>
-
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[5].subsections[1].title %>
-                            </h3>
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[5].subsections[1].content %>
-                            </p>
-
-                            <h3 class="text-xl font-semibold text-neutral-dark mb-4">
-                                <%= t.terms_page.sections[5].subsections[2].title %>
-                            </h3>
-                            <p class="text-neutral">
-                                <%= t.terms_page.sections[5].subsections[2].content %>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Section 7 -->
-                    <div id="disclaimer" class="section-animate">
-                        <h2 class="text-3xl font-bold text-neutral-dark mb-6">
-                            <%= t.terms_page.sections[6].title %>
-                        </h2>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[6].content[0] %>
-                            </p>
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[6].content[1] %>
-                            </p>
-                            <p class="text-neutral">
-                                <%= t.terms_page.sections[6].content[2] %>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Section 8 -->
-                    <div id="limitation" class="section-animate">
-                        <h2 class="text-3xl font-bold text-neutral-dark mb-6">
-                            <%= t.terms_page.sections[7].title %>
-                        </h2>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[7].content[0] %>
-                            </p>
-                            <p class="text-neutral mb-4">
-                                <%= t.terms_page.sections[7].content[1] %>
-                            </p>
-                            <p class="text-neutral">
-                                <%= t.terms_page.sections[7].content[2] %>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Contact Section -->
-                    <div class="text-center py-12">
-                        <h2 class="text-2xl font-bold text-neutral-dark mb-4">
-                            <%= t.terms_page.contact.title %>
-                        </h2>
-                        <p class="text-neutral mb-6">
-                            <%= t.terms_page.contact.desc %>
-                        </p>
-                        <div class="space-x-4">
-                            <a href="help.html"
-                                class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors">
-                                <picture>
-                                    <source type="image/webp" srcset="/images/small_03.webp">
-                                    <img src="/images/small_03.jpg" alt="Terms of Service"
-                                        class="w-16 h-16 rounded-full mx-auto mb-4">
-                                </picture>
-                                <%= t.terms_page.contact.help_btn %>
-                            </a>
-                            <a href="mailto:support@lovart.info"
-                                class="bg-secondary text-white px-6 py-3 rounded-md hover:bg-secondary-dark transition-colors">
-                                <%= t.terms_page.contact.contact_btn %>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-neutral-dark text-neutral-light py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">
-                        <%= t.terms_page.footer.titles.lovart %>
-                    </h3>
-                    <p class="text-neutral mb-4">
-                        <%= t.terms_page.footer.desc %>
+        <main class="min-h-screen">
+            <!-- Hero Section -->
+            <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        <%= t.terms_page.hero.title %>
+                    </h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto">
+                        <%= t.terms_page.hero.desc %>
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-neutral-light hover:text-primary transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                        <a href="#" class="text-neutral-light hover:text-primary transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                            </svg>
-                        </a>
+                    <div class="mt-8 text-sm opacity-80">
+                        <%= t.terms_page.hero.last_updated %>
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">
-                        <%= t.terms_page.footer.titles.products %>
-                    </h3>
-                    <ul class="space-y-2">
-                        <li><a href="<%= link('lovart-design-features.html') %>"
-                                class="text-neutral hover:text-primary transition-colors">
-                                <%= t.nav.features %>
-                            </a></li>
-                        <li><a href="<%= link('lovart-pricing.html') %>"
-                                class="text-neutral hover:text-primary transition-colors">
-                                <%= t.nav.pricing %>
-                            </a></li>
-                        <li><a href="<%= link('blog.html') %>"
-                                class="text-neutral hover:text-primary transition-colors">
-                                <%= t.nav.blog %>
-                            </a></li>
-                        <li><a href="<%= link('help.html') %>"
-                                class="text-neutral hover:text-primary transition-colors">
-                                <%= t.nav.help %>
-                            </a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">
-                        <%= t.terms_page.footer.titles.company %>
-                    </h3>
-                    <ul class="space-y-2">
-                        <li><a href="<%= link('about.html') %>"
-                                class="text-neutral hover:text-primary transition-colors">
-                                <%= t.nav.about %>
-                            </a>
-                        </li>
-                        <li><a href="<%= link('terms-of-service.html') %>"
-                                class="text-neutral hover:text-primary transition-colors">Terms of Service</a></li>
-                        <li><a href="<%= link('privacy-policy.html') %>"
-                                class="text-neutral hover:text-primary transition-colors">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">
-                        <%= t.terms_page.footer.titles.contact %>
-                    </h3>
-                    <p class="text-neutral">Email: support@lovart.info</p>
-                    <p class="text-neutral">Phone: +1 (555) LOV-ART0</p>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 pt-8 text-center text-neutral">
-                <div class="flex flex-col items-center gap-2 mb-6">
-                    <span class="text-sm uppercase tracking-wide text-gray-300">Partner Site</span>
-                    <a href="https://vibevoice.online/" target="_blank" rel="noopener"
-                        class="inline-flex items-center justify-center px-4 py-2 border border-white/40 rounded-md text-sm font-semibold text-white transition hover:bg-white/10">
-                        VibeVoice Online
-                    </a>
-                    <a href="https://mywintercar.info/" target="_blank" rel="noopener"
-                        class="inline-flex items-center justify-center px-4 py-2 border border-white/40 rounded-md text-sm font-semibold text-white transition hover:bg-white/10">
-                        My Winter Car Wiki
-                    </a>
-                </div>
-                <p>&copy; <span id="currentYear"></span>
-                    <%= t.terms_page.footer.rights %>
-                </p>
-            </div>
-        </div>
-    </footer>
+            </section>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-            // Close mobile menu when a link is clicked
-            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-            mobileMenuLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-        }
+            <!-- Table of Contents -->
+            <section class="py-12 bg-white">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="text-2xl font-bold text-neutral-dark mb-6">
+                            <%= t.terms_page.toc.title %>
+                        </h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <h3 class="font-semibold text-primary mb-3">
+                                    <%= t.terms_page.toc.basic_terms.title %>
+                                </h3>
+                                <ul class="space-y-2 text-sm">
+                                    <li><a href="#acceptance"
+                                            class="text-neutral hover:text-primary transition-colors toc-link">
+                                            <%= t.terms_page.toc.basic_terms.items[0] %>
+                                        </a>
+                                    </li>
+                                    <li><a href="#description"
+                                            class="text-neutral hover:text-primary transition-colors toc-link">
+                                            <%= t.terms_page.toc.basic_terms.items[1] %>
+                                        </a>
+                                    </li>
+                                    <li><a href="#registration"
+                                            class="text-neutral hover:text-primary transition-colors toc-link">
+                                            <%= t.terms_page.toc.basic_terms.items[2] %>
+                                        </a>
+                                    </li>
+                                    <li><a href="#payment"
+                                            class="text-neutral hover:text-primary transition-colors toc-link">
+                                            <%= t.terms_page.toc.basic_terms.items[3] %>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-primary mb-3">
+                                    <%= t.terms_page.toc.usage_rules.title %>
+                                </h3>
+                                <ul class="space-y-2 text-sm">
+                                    <li><a href="#acceptable-use"
+                                            class="text-neutral hover:text-primary transition-colors toc-link">
+                                            <%= t.terms_page.toc.usage_rules.items[0] %>
+                                        </a></li>
+                                    <li><a href="#intellectual-property"
+                                            class="text-neutral hover:text-primary transition-colors toc-link">
+                                            <%= t.terms_page.toc.usage_rules.items[1] %>
+                                        </a>
+                                    </li>
+                                    <li><a href="#disclaimer"
+                                            class="text-neutral hover:text-primary transition-colors toc-link">
+                                            <%= t.terms_page.toc.usage_rules.items[2] %>
+                                        </a>
+                                    </li>
+                                    <li><a href="#limitation"
+                                            class="text-neutral hover:text-primary transition-colors toc-link">
+                                            <%= t.terms_page.toc.usage_rules.items[3] %>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        // Set current year in footer
-        const currentYearSpan = document.getElementById('currentYear');
-        if (currentYearSpan) {
-            currentYearSpan.textContent = new Date().getFullYear();
-        }
+            <!-- Terms Content -->
+            <section class="py-16 bg-neutral-light">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-4xl mx-auto space-y-12">
 
-        // Section scroll animations
-        const sections = document.querySelectorAll('.section-animate');
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
+                        <!-- Section 1 -->
+                        <div id="acceptance" class="section-animate">
+                            <h2 class="text-3xl font-bold text-neutral-dark mb-6">
+                                <%= t.terms_page.sections[0].title %>
+                            </h2>
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[0].content[0] %>
+                                </p>
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[0].content[1] %>
+                                </p>
+                                <p class="text-neutral">
+                                    <%= t.terms_page.sections[0].content[2] %>
+                                </p>
+                            </div>
+                        </div>
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
+                        <!-- Section 2 -->
+                        <div id="description" class="section-animate">
+                            <h2 class="text-3xl font-bold text-neutral-dark mb-6">
+                                <%= t.terms_page.sections[1].title %>
+                            </h2>
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[1].content[0] %>
+                                </p>
+                                <div class="list-disc list-inside text-neutral mb-4 space-y-2">
+                                    <%- t.terms_page.sections[1].content[1] %>
+                                </div>
+                                <p class="text-neutral">
+                                    <%= t.terms_page.sections[1].content[2] %>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Section 3 -->
+                        <div id="registration" class="section-animate">
+                            <h2 class="text-3xl font-bold text-neutral-dark mb-6">
+                                <%= t.terms_page.sections[2].title %>
+                            </h2>
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[2].subsections[0].title %>
+                                </h3>
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[2].subsections[0].content %>
+                                </p>
+
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[2].subsections[1].title %>
+                                </h3>
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[2].subsections[1].content %>
+                                </p>
+
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[2].subsections[2].title %>
+                                </h3>
+                                <p class="text-neutral">
+                                    <%= t.terms_page.sections[2].subsections[2].content %>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Section 4 -->
+                        <div id="payment" class="section-animate">
+                            <h2 class="text-3xl font-bold text-neutral-dark mb-6">
+                                <%= t.terms_page.sections[3].title %>
+                            </h2>
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[3].subsections[0].title %>
+                                </h3>
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[3].subsections[0].content %>
+                                </p>
+
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[3].subsections[1].title %>
+                                </h3>
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[3].subsections[1].content %>
+                                </p>
+
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[3].subsections[2].title %>
+                                </h3>
+                                <p class="text-neutral">
+                                    <%= t.terms_page.sections[3].subsections[2].content %>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Section 5 -->
+                        <div id="acceptable-use" class="section-animate">
+                            <h2 class="text-3xl font-bold text-neutral-dark mb-6">
+                                <%= t.terms_page.sections[4].title %>
+                            </h2>
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[4].subsections[0].title %>
+                                </h3>
+                                <div class="text-neutral mb-4">
+                                    <%- t.terms_page.sections[4].subsections[0].content %>
+                                </div>
+
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[4].subsections[1].title %>
+                                </h3>
+                                <div class="text-neutral mb-4">
+                                    <%- t.terms_page.sections[4].subsections[1].content %>
+                                </div>
+
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[4].subsections[2].title %>
+                                </h3>
+                                <p class="text-neutral">
+                                    <%= t.terms_page.sections[4].subsections[2].content %>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Section 6 -->
+                        <div id="intellectual-property" class="section-animate">
+                            <h2 class="text-3xl font-bold text-neutral-dark mb-6">
+                                <%= t.terms_page.sections[5].title %>
+                            </h2>
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[5].subsections[0].title %>
+                                </h3>
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[5].subsections[0].content %>
+                                </p>
+
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[5].subsections[1].title %>
+                                </h3>
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[5].subsections[1].content %>
+                                </p>
+
+                                <h3 class="text-xl font-semibold text-neutral-dark mb-4">
+                                    <%= t.terms_page.sections[5].subsections[2].title %>
+                                </h3>
+                                <p class="text-neutral">
+                                    <%= t.terms_page.sections[5].subsections[2].content %>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Section 7 -->
+                        <div id="disclaimer" class="section-animate">
+                            <h2 class="text-3xl font-bold text-neutral-dark mb-6">
+                                <%= t.terms_page.sections[6].title %>
+                            </h2>
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[6].content[0] %>
+                                </p>
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[6].content[1] %>
+                                </p>
+                                <p class="text-neutral">
+                                    <%= t.terms_page.sections[6].content[2] %>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Section 8 -->
+                        <div id="limitation" class="section-animate">
+                            <h2 class="text-3xl font-bold text-neutral-dark mb-6">
+                                <%= t.terms_page.sections[7].title %>
+                            </h2>
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[7].content[0] %>
+                                </p>
+                                <p class="text-neutral mb-4">
+                                    <%= t.terms_page.sections[7].content[1] %>
+                                </p>
+                                <p class="text-neutral">
+                                    <%= t.terms_page.sections[7].content[2] %>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="text-center py-12">
+                            <h2 class="text-2xl font-bold text-neutral-dark mb-4">
+                                <%= t.terms_page.contact.title %>
+                            </h2>
+                            <p class="text-neutral mb-6">
+                                <%= t.terms_page.contact.desc %>
+                            </p>
+                            <div class="space-x-4">
+                                <a href="help.html"
+                                    class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors">
+                                    <picture>
+                                        <source type="image/webp" srcset="/images/small_03.webp">
+                                        <img src="/images/small_03.jpg" alt="Terms of Service"
+                                            class="w-16 h-16 rounded-full mx-auto mb-4">
+                                    </picture>
+                                    <%= t.terms_page.contact.help_btn %>
+                                </a>
+                                <a href="mailto:support@lovart.info"
+                                    class="bg-secondary text-white px-6 py-3 rounded-md hover:bg-secondary-dark transition-colors">
+                                    <%= t.terms_page.contact.contact_btn %>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <%- include('partials/footer') %>
+
+            <script>
+                // Mobile menu toggle
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+                    // Close mobile menu when a link is clicked
+                    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                    mobileMenuLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.add('hidden');
+                        });
+                    });
                 }
-            });
-        }, observerOptions);
 
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+                // Set current year in footer
+                const currentYearSpan = document.getElementById('currentYear');
+                if (currentYearSpan) {
+                    currentYearSpan.textContent = new Date().getFullYear();
+                }
+
+                // Section scroll animations
+                const sections = document.querySelectorAll('.section-animate');
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1
+                };
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                        }
+                    });
+                }, observerOptions);
+
+                sections.forEach(section => {
+                    observer.observe(section);
+                });
+            </script>
 </body>
 
 </html>
