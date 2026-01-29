@@ -15,73 +15,41 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
         crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "v8ftb2opkl");
-    </script>
+    <%- include('partials/analytics') %>
 
-    <!-- Lazy Load Google Analytics -->
-    <script>
-        // Lazy load Google Analytics until page interaction
-        function loadGoogleAnalytics() {
-            const script = document.createElement('script');
-            script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-EK9MPTEZ17';
-            document.head.appendChild(script);
+        <style>
+            .section-animate {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
 
-            script.onload = function () {
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-EK9MPTEZ17');
-            };
-        }
+            .section-animate.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
 
-        // Load when page is idle or after user interaction
-        if ('requestIdleCallback' in window) {
-            requestIdleCallback(loadGoogleAnalytics);
-        } else {
-            // Fallback: Load after 3 seconds
-            setTimeout(loadGoogleAnalytics, 3000);
-        }
-    </script>
+            .help-card {
+                transition: all 0.3s ease;
+            }
 
-    <style>
-        .section-animate {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
+            .help-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            }
 
-        .section-animate.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+            .faq-item {
+                transition: all 0.3s ease;
+            }
 
-        .help-card {
-            transition: all 0.3s ease;
-        }
+            .search-box {
+                transition: all 0.3s ease;
+            }
 
-        .help-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .faq-item {
-            transition: all 0.3s ease;
-        }
-
-        .search-box {
-            transition: all 0.3s ease;
-        }
-
-        .search-box:focus-within {
-            transform: scale(1.02);
-        }
-    </style>
+            .search-box:focus-within {
+                transform: scale(1.02);
+            }
+        </style>
 
 </head>
 

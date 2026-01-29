@@ -14,91 +14,59 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
         crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "v8ftb2opkl");
-    </script>
+    <%- include('partials/analytics') %>
 
-    <!-- Lazy Load Google Analytics -->
-    <script>
-        // Lazy load Google Analytics until page interaction
-        function loadGoogleAnalytics() {
-            const script = document.createElement('script');
-            script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-EK9MPTEZ17';
-            document.head.appendChild(script);
-
-            script.onload = function () {
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-EK9MPTEZ17');
-            };
-        }
-
-        // Load when page is idle or after user interaction
-        if ('requestIdleCallback' in window) {
-            requestIdleCallback(loadGoogleAnalytics);
-        } else {
-            // Fallback: Load after 3 seconds
-            setTimeout(loadGoogleAnalytics, 3000);
-        }
-    </script>
-
-    <style>
-        /* Custom animations or styles not achievable via Tailwind can be placed here */
-        /* .hero-bg-animation {
+        <style>
+            /* Custom animations or styles not achievable via Tailwind can be placed here */
+            /* .hero-bg-animation {
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
         } */
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
             }
 
-            50% {
-                background-position: 100% 50%;
+            .fade-in {
+                animation: fadeInAnimation ease 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
             }
 
-            100% {
-                background-position: 0% 50%;
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
-        }
 
-        .fade-in {
-            animation: fadeInAnimation ease 2s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes fadeInAnimation {
-            0% {
+            .section-animate {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(30px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
             }
 
-            100% {
+            .section-animate.is-visible {
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
-
-        .section-animate {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-
-        .section-animate.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+        </style>
 
 </head>
 

@@ -1,0 +1,10 @@
+<%# AdSense Slot Partial Usage: include('partials/adsense', { slot: '2395486240' , format: 'auto' , minHeight: '90px' })
+    %>
+    <div class="ad-slot-container" style="min-height: <%= locals.minHeight || '280px' %>;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3083296102953963"
+            data-ad-slot="<%= locals.slot || '2395486240' %>" data-ad-format="<%= locals.format || 'auto' %>"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
