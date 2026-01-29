@@ -375,5 +375,720 @@
             "rights": "Lovart. All rights reserved.",
             "tagline": "Innovate with AI, Design with Lovart."
         }
+    },
+    "about_page": {
+        "seo": {
+            "title": "À Propos de Nous - Plateforme de Design IA Lovart",
+            "description": "Découvrez l'histoire, la mission, les valeurs et l'équipe innovante de Lovart. Depuis 2020, Lovart s'engage à combiner la technologie IA avec la créativité du design pour aider les designers à améliorer leur efficacité et découvrir des possibilités créatives infinies.",
+            "keywords": "À propos de Lovart, Introduction de l'entreprise, Équipe de design, Mission design IA"
+        },
+        "hero": {
+            "title": "À Propos de Lovart",
+            "desc": "Nous croyons que chacun possède un potentiel créatif infini. Lovart s'engage à rendre le design plus intelligent, plus efficace et plus amusant grâce à l'intelligence artificielle.",
+            "stats": [
+                "Servant 100+ Pays",
+                "500k+ Utilisateurs",
+                "10M+ Designs Créés"
+            ]
+        },
+        "mission": {
+            "title": "Notre Mission",
+            "desc": "Lovart est née d'une idée simple : le design doit être créatif, pas technique. Nous nous engageons à éliminer les barrières techniques dans le processus de design, permettant à chacun de transformer ses idées en œuvres visuelles époustouflantes.",
+            "values": [
+                {
+                    "title": "Libérer la Créativité",
+                    "desc": "Libérer le potentiel créatif de chacun grâce à l'IA"
+                },
+                {
+                    "title": "Booster l'Efficacité",
+                    "desc": "Rendre le processus de design plus efficace et intelligent"
+                },
+                {
+                    "title": "Favoriser la Collaboration",
+                    "desc": "Connecter la communauté créative mondiale"
+                }
+            ]
+        },
+        "story": {
+            "title": "Notre Histoire",
+            "timeline": [
+                {
+                    "year": "2020",
+                    "desc": "Naissance du concept Lovart ; un groupe de designers et développeurs décide de changer l'industrie du design."
+                },
+                {
+                    "year": "2021",
+                    "desc": "Obtention du financement d'amorçage, formation de l'équipe principale et début du développement produit."
+                },
+                {
+                    "year": "2022",
+                    "desc": "Sortie de la version Bêta, acquisition des 1 000 premiers utilisateurs bêta."
+                },
+                {
+                    "year": "2023",
+                    "desc": "Lancement officiel, plus de 100 000 utilisateurs et obtention du financement de série A."
+                },
+                {
+                    "year": "2024",
+                    "desc": "Service dans plus de 100 pays, devenant une plateforme de design IA de premier plan."
+                }
+            ]
+        },
+        "team": {
+            "title": "Équipe Principale",
+            "desc": "Nous sommes une équipe passionnée dédiée à changer le monde du design par la technologie.",
+            "members": [
+                {
+                    "name": "Ming Zhang",
+                    "role": "Fondateur & PDG",
+                    "bio": "Ancien responsable design chez Google, 10 ans d'expérience dans l'industrie."
+                },
+                {
+                    "name": "Na Li",
+                    "role": "Cofondatrice & CTO",
+                    "bio": "Experte en IA, ancienne chercheuse chez Facebook, doctorat en apprentissage automatique."
+                },
+                {
+                    "name": "Qiang Wang",
+                    "role": "Directeur Design",
+                    "bio": "Ancien designer Apple, spécialisé en design UX et UI."
+                },
+                {
+                    "name": "Min Chen",
+                    "role": "Chef de Produit",
+                    "bio": "Ancien chef de produit Microsoft, spécialisé en design de produits SaaS."
+                }
+            ]
+        },
+        "values": {
+            "title": "Nos Valeurs",
+            "items": [
+                {
+                    "title": "Innovation",
+                    "desc": "Nous explorons constamment de nouvelles technologies pour repousser les limites de l'industrie du design."
+                },
+                {
+                    "title": "Utilisateur d'Abord",
+                    "desc": "Chaque décision est centrée sur l'utilisateur. Nous écoutons et améliorons continuellement l'expérience produit."
+                },
+                {
+                    "title": "Transparence & Intégrité",
+                    "desc": "Nous établissons des relations transparentes et honnêtes avec les utilisateurs, partenaires et employés."
+                },
+                {
+                    "title": "Excellence",
+                    "desc": "Nous poursuivons l'excellence produit et technique pour offrir la meilleure expérience de design."
+                },
+                {
+                    "title": "Diversité",
+                    "desc": "Nous croyons en la force de la diversité et accueillons des talents de tous horizons."
+                },
+                {
+                    "title": "Apprentissage Continu",
+                    "desc": "Nous restons curieux, apprenons constamment et nous adaptons aux demandes changeantes du marché."
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contactez-Nous",
+            "desc": "Des questions ou des idées de collaboration ? Nous aimerions vous entendre.",
+            "items": [
+                {
+                    "title": "Contact Email",
+                    "desc": "Renseignements généraux"
+                },
+                {
+                    "title": "Coopération Commerciale",
+                    "desc": "Solutions d'entreprise"
+                },
+                {
+                    "title": "Contact Média",
+                    "desc": "Presse et médias"
+                }
+            ],
+            "follow": "Suivez-Nous"
+        },
+        "footer": {
+            "titles": {
+                "lovart": "Lovart",
+                "products": "Produits",
+                "company": "Société",
+                "contact": "Contact"
+            },
+            "desc": "Plateforme de design IA pour les professionnels créatifs.",
+            "rights": "Lovart.info. Tous droits réservés."
+        }
+    },
+    "blog_page": {
+        "seo": {
+            "title": "Blog - Plateforme de Design IA Lovart",
+            "description": "Suivez le blog officiel de Lovart pour les dernières tendances en design IA, tutoriels pratiques, études de cas et inspiration créative. Apprenez à utiliser l'IA pour améliorer l'efficacité du design.",
+            "keywords": "Design IA, Blog Design, Inspiration Créative, Tutoriels Design, Blog Lovart"
+        },
+        "hero": {
+            "title": "Blog Lovart",
+            "desc": "Explorez les possibilités infinies du design IA, obtenez les dernières tendances et tutoriels",
+            "tags": [
+                "Tendances Design IA",
+                "Tutoriels Design",
+                "Inspiration",
+                "Études de Cas"
+            ]
+        },
+        "categories": {
+            "all": "Tout",
+            "ai_design": "Design IA",
+            "tutorials": "Tutoriels",
+            "industry": "Industrie",
+            "updates": "Mises à Jour",
+            "stories": "Histoires"
+        },
+        "featured": {
+            "title": "Article en Vedette",
+            "tag": "Design IA",
+            "date": "15 Jan 2024",
+            "article_title": "Comment l'IA Révolutionne les Flux de Travail de Design",
+            "desc": "Découvrez comment l'intelligence artificielle remodèle la façon dont les designers travaillent. L'IA devient le partenaire le plus puissant du designer.",
+            "author": "Designer Zhang",
+            "role": "Équipe Lovart",
+            "read_more": "Lire la suite"
+        },
+        "latest": {
+            "title": "Derniers Articles",
+            "read_more": "Lire la suite",
+            "share": "Partager :",
+            "posts": [
+                {
+                    "tag": "Tutoriel",
+                    "date": "12 Jan 2024",
+                    "title": "Maîtrisez les Fonctions IA de Lovart en 5 Minutes",
+                    "desc": "Apprenez rapidement à utiliser les fonctionnalités IA de Lovart pour créer des designs impressionnants.",
+                    "author": "Professeur Li"
+                },
+                {
+                    "tag": "Industrie",
+                    "date": "10 Jan 2024",
+                    "title": "Prédictions Tendances Design UI/UX 2024",
+                    "desc": "Plongée dans les tendances UI/UX les plus notables de 2024, du minimalisme aux expériences immersives.",
+                    "author": "Analyste Wang"
+                },
+                {
+                    "tag": "Histoires Utilisateurs",
+                    "date": "8 Jan 2024",
+                    "title": "Comment les Designers Boosten leur Efficacité de 300% avec Lovart",
+                    "desc": "Cas réel : La designer indépendante Chen partage comment elle a réduit son temps de conception de 70%.",
+                    "author": "Designer Chen"
+                },
+                {
+                    "tag": "Design Produit",
+                    "date": "5 Jan 2024",
+                    "title": "Meilleures Pratiques pour le Design Produit Assisté par IA",
+                    "desc": "Explorez comment intégrer efficacement les outils IA dans la conception de produits.",
+                    "author": "Chef de Produit Zhao"
+                },
+                {
+                    "tag": "Inspiration",
+                    "date": "3 Jan 2024",
+                    "title": "Briser les Blocages Créatifs : L'IA Éveille l'Inspiration",
+                    "desc": "Quand la créativité s'épuise, l'IA peut être votre source d'inspiration. Apprenez à générer rapidement des concepts.",
+                    "author": "Directeur Créatif Liu"
+                },
+                {
+                    "tag": "Mises à Jour",
+                    "date": "1 Jan 2024",
+                    "title": "Mise à Jour Lovart 2024 : Nouvelles Fonctionnalités",
+                    "desc": "Nouvelle année, nouvelles fonctionnalités ! Découvrez les dernières mises à jour de Lovart.",
+                    "author": "Équipe Produit"
+                }
+            ]
+        },
+        "sidebar": {
+            "categories": "Catégories",
+            "recent_posts": "Articles Récents",
+            "tags": "Étiquettes"
+        },
+        "newsletter": {
+            "title": "S'abonner aux Mises à Jour",
+            "desc": "Recevez les tendances design et tutoriels chaque semaine.",
+            "placeholder": "Votre Email",
+            "button": "S'abonner"
+        },
+        "bottom_newsletter": {
+            "title": "Abonnez-vous à notre Newsletter",
+            "desc": "Recevez les dernières tendances design, tutoriels et mises à jour Lovart directement dans votre boîte de réception",
+            "placeholder": "Entrez votre adresse email",
+            "button": "S'abonner",
+            "privacy": "Nous respectons votre vie privée et ne partagerons pas vos informations."
+        },
+        "footer": {
+            "titles": {
+                "lovart": "Lovart",
+                "products": "Produits",
+                "company": "Société",
+                "contact": "Contact"
+            },
+            "desc": "Plateforme de design IA pour les professionnels créatifs.",
+            "rights": "Lovart.info. Tous droits réservés."
+        }
+    },
+    "help_page": {
+        "seo": {
+            "title": "Centre d'Aide - Plateforme de Design IA Lovart",
+            "description": "Visitez le Centre d'Aide Lovart pour des guides utilisateurs, FAQ, tutoriels vidéo et support technique. Apprenez à utiliser les outils de design IA.",
+            "keywords": "Centre d'Aide, Guide Utilisateur, FAQ, Support Technique"
+        },
+        "hero": {
+            "title": "Centre d'Aide",
+            "desc": "Nous sommes là pour vous aider à tirer le meilleur parti de Lovart. Parcourez les FAQ ou contactez le support.",
+            "search_placeholder": "Rechercher dans l'aide..."
+        },
+        "quick_help": {
+            "title": "Aide Rapide",
+            "items": [
+                {
+                    "title": "Démarrage Rapide",
+                    "desc": "Apprenez à démarrer"
+                },
+                {
+                    "title": "Tutoriels Design",
+                    "desc": "Maîtriser l'IA"
+                },
+                {
+                    "title": "Facturation",
+                    "desc": "Abonnement et paiement"
+                },
+                {
+                    "title": "Support Technique",
+                    "desc": "Dépannage"
+                }
+            ]
+        },
+        "getting_started": {
+            "title": "Guide de Démarrage",
+            "steps": [
+                {
+                    "title": "Créer un Compte",
+                    "desc": "Inscrivez-vous à Lovart et choisissez un plan. Essai gratuit disponible.",
+                    "list": [
+                        "Inscription Email",
+                        "Connexion Social",
+                        "Compte Entreprise"
+                    ],
+                    "link": "Voir Tutoriel"
+                },
+                {
+                    "title": "Choisir un Modèle",
+                    "desc": "Choisissez un modèle ou commencez à zéro.",
+                    "list": [
+                        "Parcourir la Bibliothèque",
+                        "Personnaliser",
+                        "Enregistrer Modèle"
+                    ],
+                    "link": "Voir Tutoriel"
+                },
+                {
+                    "title": "Commencer le Design",
+                    "desc": "Utilisez nos outils IA et l'interface glisser-déposer.",
+                    "list": [
+                        "Design Assisté IA",
+                        "Éditeur Glisser-Déposer",
+                        "Aperçu Temps Réel"
+                    ],
+                    "link": "Voir Tutoriel"
+                }
+            ]
+        },
+        "faq": {
+            "title": "Foire Aux Questions",
+            "items": [
+                {
+                    "question": "Comment commencer avec Lovart ?",
+                    "answer": "<p>C'est très simple :</p><ol class=\"list-decimal list-inside mt-2 space-y-1\"><li>Visitez le site</li><li>Choisissez un plan</li><li>Inscrivez-vous</li><li>Regardez le tutoriel</li></ol>"
+                },
+                {
+                    "question": "Quels formats de fichiers Lovart supporte-t-il ?",
+                    "answer": "<p>Lovart supporte de nombreux formats :</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li><strong>Import :</strong> JPG, PNG, SVG, PDF, PSD</li><li><strong>Export :</strong> JPG, PNG, SVG, PDF, GIF, MP4</li></ul>"
+                },
+                {
+                    "question": "Comment annuler l'abonnement ?",
+                    "answer": "<p>Vous pouvez annuler à tout moment dans les paramètres de compte.</p>"
+                },
+                {
+                    "question": "Comment fonctionne le design IA ?",
+                    "answer": "<p>Basé sur des algorithmes avancés pour analyser vos besoins et générer des suggestions.</p>"
+                },
+                {
+                    "question": "Comment contacter le support ?",
+                    "answer": "<p>Chat en direct, Email, Documentation et Forum.</p>"
+                }
+            ]
+        },
+        "videos": {
+            "title": "Tutoriels Vidéo",
+            "items": [
+                {
+                    "title": "Démarrage Rapide Lovart",
+                    "desc": "Comprendre les fonctions clés en 5 min",
+                    "duration": "5:32",
+                    "level": "Débutant"
+                },
+                {
+                    "title": "Fonctions Design IA",
+                    "desc": "Comment l'IA améliore l'efficacité",
+                    "duration": "12:45",
+                    "level": "Intermédiaire"
+                },
+                {
+                    "title": "Astuces Avancées",
+                    "desc": "Conseils de pros",
+                    "duration": "18:20",
+                    "level": "Avancé"
+                }
+            ]
+        },
+        "contact": {
+            "title": "Besoin de plus d'aide ?",
+            "desc": "Notre équipe est là pour vous aider.",
+            "chat": {
+                "title": "Chat en Direct",
+                "desc": "Lun-Ven 9h-18h",
+                "button": "Lancer Chat"
+            },
+            "email": {
+                "title": "Support Email",
+                "desc": "Réponse sous 24h",
+                "button": "Envoyer Email"
+            },
+            "phone": {
+                "title": "Support Téléphone",
+                "desc": "Pour urgences",
+                "button": "Appeler"
+            },
+            "quick_search": {
+                "title": "Recherche FAQ Rapide",
+                "tags": [
+                    "Mot de passe oublié",
+                    "Facturation",
+                    "Technique",
+                    "Compte"
+                ]
+            }
+        },
+        "footer": {
+            "titles": {
+                "lovart": "Lovart",
+                "products": "Produits",
+                "company": "Société",
+                "contact": "Contact"
+            },
+            "desc": "Plateforme de design IA pour les professionnels créatifs.",
+            "rights": "Lovart.info. Tous droits réservés."
+        }
+    },
+    "terms_page": {
+        "seo": {
+            "title": "Conditions d'Utilisation - Lovart",
+            "description": "Lisez les conditions d'utilisation de Lovart.",
+            "keywords": "Conditions d'utilisation, Accord Utilisateur"
+        },
+        "hero": {
+            "title": "Conditions d'Utilisation",
+            "desc": "Bienvenue sur Lovart. Veuillez lire attentivement les conditions suivantes.",
+            "last_updated": "Dernière mise à jour : 15 Jan 2024"
+        },
+        "toc": {
+            "title": "Table des Matières",
+            "basic_terms": {
+                "title": "Termes de Base",
+                "items": [
+                    "1. Acceptation",
+                    "2. Description",
+                    "3. Inscription",
+                    "4. Paiement"
+                ]
+            },
+            "usage_rules": {
+                "title": "Règles d'Utilisation",
+                "items": [
+                    "5. Usage Acceptable",
+                    "6. Propriété Intellectuelle",
+                    "7. Avis de Non-responsabilité",
+                    "8. Limitation"
+                ]
+            }
+        },
+        "sections": [
+            {
+                "id": "acceptance",
+                "title": "1. Acceptation de l'Accord",
+                "content": [
+                    "En accédant à Lovart, vous acceptez d'être lié par cet accord.",
+                    "Si vous n'êtes pas d'accord, n'utilisez pas nos services."
+                ]
+            },
+            {
+                "id": "description",
+                "title": "2. Description du Service",
+                "content": [
+                    "Lovart est une plateforme de design basée sur l'IA fournissant des outils, modèles et collaboration.",
+                    "Nous nous réservons le droit de modifier les services."
+                ]
+            },
+            {
+                "id": "registration",
+                "title": "3. Inscription Utilisateur",
+                "subsections": [
+                    {
+                        "title": "3.1 Création de Compte",
+                        "content": "Vous acceptez de fournir des informations exactes."
+                    },
+                    {
+                        "title": "3.2 Sécurité",
+                        "content": "Vous êtes responsable de maintenir la confidentialité de votre mot de passe."
+                    },
+                    {
+                        "title": "3.3 Âge",
+                        "content": "Vous devez avoir au moins 13 ans."
+                    }
+                ]
+            },
+            {
+                "id": "payment",
+                "title": "4. Conditions de Paiement",
+                "subsections": [
+                    {
+                        "title": "4.1 Frais",
+                        "content": "Frais selon le plan choisi."
+                    },
+                    {
+                        "title": "4.2 Renouvellement Auto",
+                        "content": "Renouvellement automatique sauf annulation."
+                    },
+                    {
+                        "title": "4.3 Remboursement",
+                        "content": "Garantie de remboursement de 30 jours."
+                    }
+                ]
+            },
+            {
+                "id": "acceptable-use",
+                "title": "5. Politique d'Usage Acceptable",
+                "subsections": [
+                    {
+                        "title": "5.1 Usage Autorisé",
+                        "content": "Usage légal pour design."
+                    },
+                    {
+                        "title": "5.2 Usage Interdit",
+                        "content": "Illégal, frauduleux, malveillant."
+                    },
+                    {
+                        "title": "5.3 Responsabilité",
+                        "content": "Vous êtes responsable de votre contenu."
+                    }
+                ]
+            },
+            {
+                "id": "intellectual-property",
+                "title": "6. Propriété Intellectuelle",
+                "subsections": [
+                    {
+                        "title": "6.1 IP Lovart",
+                        "content": "Tout le contenu de la plateforme appartient à Lovart."
+                    },
+                    {
+                        "title": "6.2 Droits Utilisateur",
+                        "content": "Vous conservez vos droits sur le contenu créé."
+                    }
+                ]
+            },
+            {
+                "id": "disclaimer",
+                "title": "7. Avis de Non-responsabilité",
+                "content": [
+                    "Service fourni 'tel quel' sans garantie."
+                ]
+            },
+            {
+                "id": "limitation",
+                "title": "8. Limitation de Responsabilité",
+                "content": [
+                    "Responsabilité limitée au montant payé."
+                ]
+            }
+        ],
+        "contact": {
+            "title": "Des questions ?",
+            "desc": "Contactez notre support.",
+            "help_btn": "Centre d'Aide",
+            "contact_btn": "Contacter Support"
+        },
+        "footer": {
+            "titles": {
+                "lovart": "Lovart",
+                "products": "Produits",
+                "company": "Société",
+                "contact": "Contact"
+            },
+            "desc": "Plateforme de design IA.",
+            "rights": "Lovart.info. Tous droits réservés."
+        }
+    },
+    "privacy_page": {
+        "seo": {
+            "title": "Politique de Confidentialité - Lovart",
+            "description": "Politique de confidentialité de Lovart.",
+            "keywords": "Confidentialité, Protection des Données"
+        },
+        "hero": {
+            "title": "Politique de Confidentialité",
+            "desc": "Nous protégeons votre vie privée.",
+            "last_updated": "15 Jan 2024"
+        },
+        "toc": {
+            "title": "Table des Matières",
+            "info_collection": {
+                "title": "Collecte",
+                "items": [
+                    "1. Collecte",
+                    "2. Usage",
+                    "3. Partage",
+                    "4. Sécurité"
+                ]
+            },
+            "user_rights": {
+                "title": "Droits",
+                "items": [
+                    "5. Droits",
+                    "6. Cookies",
+                    "7. Enfants",
+                    "8. Changements"
+                ]
+            }
+        },
+        "sections": [
+            {
+                "id": "information",
+                "title": "1. Collecte d'Information",
+                "subsections": [
+                    {
+                        "title": "1.1 Fournies par vous",
+                        "content": "Nom, email, paiement."
+                    },
+                    {
+                        "title": "1.2 Automatique",
+                        "content": "Appareil, usage, localisation."
+                    },
+                    {
+                        "title": "1.3 Fichiers Design",
+                        "content": "Pour fournir le service."
+                    }
+                ]
+            },
+            {
+                "id": "usage",
+                "title": "2. Usage de l'Information",
+                "content": [
+                    "Fournir le service, améliorer, supporter, sécuriser."
+                ],
+                "subsections": [
+                    {
+                        "title": "Entraînement IA",
+                        "content": "Données anonymisées pour améliorer l'IA."
+                    }
+                ]
+            },
+            {
+                "id": "sharing",
+                "title": "3. Partage d'Information",
+                "content": [
+                    "Nous ne vendons pas vos données."
+                ],
+                "subsections": [
+                    {
+                        "title": "3.1 Fournisseurs",
+                        "content": "Cloud, paiement, email."
+                    },
+                    {
+                        "title": "3.2 Légal",
+                        "content": "Si requis par la loi."
+                    }
+                ]
+            },
+            {
+                "id": "security",
+                "title": "4. Sécurité des Données",
+                "content": [
+                    "Chiffrement, contrôle d'accès, audits."
+                ],
+                "subsections": [
+                    {
+                        "title": "Rétention",
+                        "content": "Selon besoin et loi."
+                    }
+                ]
+            },
+            {
+                "id": "rights",
+                "title": "5. Droits des Utilisateurs",
+                "subsections": [
+                    {
+                        "title": "5.1 Accès",
+                        "content": "Droit de demande copie."
+                    },
+                    {
+                        "title": "5.2 Rectification",
+                        "content": "Droit de correction."
+                    },
+                    {
+                        "title": "5.3 Suppression",
+                        "content": "Droit d'oubli."
+                    }
+                ]
+            },
+            {
+                "id": "cookies",
+                "title": "6. Politique de Cookies",
+                "content": [
+                    "Nous utilisons des cookies pour améliorer l'expérience."
+                ],
+                "subsections": [
+                    {
+                        "title": "6.1 Essentiels",
+                        "content": "Nécessaires au fonctionnement."
+                    }
+                ]
+            },
+            {
+                "id": "children",
+                "title": "7. Confidentialité des Enfants",
+                "content": [
+                    "Pas pour les moins de 13 ans."
+                ]
+            },
+            {
+                "id": "changes",
+                "title": "8. Changements de Politique",
+                "content": [
+                    "Mises à jour publiées sur le site."
+                ]
+            }
+        ],
+        "contact": {
+            "title": "Questions ?",
+            "desc": "Contactez-nous.",
+            "email_btn": "Email Officiel",
+            "help_btn": "Centre d'Aide"
+        },
+        "footer": {
+            "titles": {
+                "lovart": "Lovart",
+                "products": "Produits",
+                "company": "Société",
+                "contact": "Contact"
+            },
+            "desc": "Plateforme de design IA.",
+            "rights": "Lovart.info. Tous droits réservés."
+        }
     }
 }
