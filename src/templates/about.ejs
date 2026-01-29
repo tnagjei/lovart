@@ -2,73 +2,75 @@
 <html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <%= t.about_page.seo.title %>
-    </title>
-    <meta name="description" content="<%= t.about_page.seo.description %>">
-    <meta name="keywords" content="<%= t.about_page.seo.keywords %>">
-    <link rel="canonical" href="<%= canonicalUrl %>">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
-        crossorigin="anonymous"></script>
+    <%- include('partials/head') %>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            <%= t.about_page.seo.title %>
+        </title>
+        <meta name="description" content="<%= t.about_page.seo.description %>">
+        <meta name="keywords" content="<%= t.about_page.seo.keywords %>">
+        <link rel="canonical" href="<%= canonicalUrl %>">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+            crossorigin="anonymous"></script>
 
-    <%- include('partials/analytics') %>
+        <%- include('partials/analytics') %>
 
-        <style>
-            .section-animate {
-                opacity: 0;
-                transform: translateY(30px);
-                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-            }
+            <style>
+                .section-animate {
+                    opacity: 0;
+                    transform: translateY(30px);
+                    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+                }
 
-            .section-animate.is-visible {
-                opacity: 1;
-                transform: translateY(0);
-            }
+                .section-animate.is-visible {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
 
-            .team-card {
-                transition: all 0.3s ease;
-            }
+                .team-card {
+                    transition: all 0.3s ease;
+                }
 
-            .team-card:hover {
-                transform: translateY(-5px);
-            }
+                .team-card:hover {
+                    transform: translateY(-5px);
+                }
 
-            .value-card {
-                transition: all 0.3s ease;
-            }
+                .value-card {
+                    transition: all 0.3s ease;
+                }
 
-            .value-card:hover {
-                transform: scale(1.05);
-            }
+                .value-card:hover {
+                    transform: scale(1.05);
+                }
 
-            .timeline-item {
-                position: relative;
-            }
+                .timeline-item {
+                    position: relative;
+                }
 
-            .timeline-item::before {
-                content: '';
-                position: absolute;
-                left: -8px;
-                top: 8px;
-                width: 16px;
-                height: 16px;
-                background: #4f46e5;
-                border-radius: 50%;
-            }
+                .timeline-item::before {
+                    content: '';
+                    position: absolute;
+                    left: -8px;
+                    top: 8px;
+                    width: 16px;
+                    height: 16px;
+                    background: #4f46e5;
+                    border-radius: 50%;
+                }
 
-            .timeline-line {
-                position: absolute;
-                left: 0;
-                top: 24px;
-                bottom: 0;
-                width: 2px;
-                background: #e5e7eb;
-            }
-        </style>
+                .timeline-line {
+                    position: absolute;
+                    left: 0;
+                    top: 24px;
+                    bottom: 0;
+                    width: 2px;
+                    background: #e5e7eb;
+                }
+            </style>
 
 </head>
 
