@@ -1,0 +1,7 @@
+<!-- hreflang tags for multilingual SEO -->
+<% const baseUrl='https://lovart.info' ; %>
+    <% supportedLangs.forEach(function(hrefLang) { %>
+        <% const hrefPath=hrefLang==='en' ? `${pageName}.html` : `${hrefLang}/${pageName}.html`; %>
+            <link rel="alternate" hreflang="<%= hrefLang %>" href="<%= baseUrl %>/<%= hrefPath %>">
+            <% }); %>
+                <link rel="alternate" hreflang="x-default" href="<%= baseUrl %>/<%= pageName %>.html">

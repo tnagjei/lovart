@@ -11,71 +11,72 @@
         <meta name="description" content="<%= t.blog_page.seo.description %>">
         <meta name="keywords" content="<%= t.blog_page.seo.keywords %>">
         <link rel="canonical" href="<%= canonicalUrl %>">
-        <link rel="stylesheet" href="/styles.css">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <script async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
-            crossorigin="anonymous"></script>
+        <%- include('partials/hreflang') %>
+            <link rel="stylesheet" href="/styles.css">
+            <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                crossorigin="anonymous"></script>
 
-        <%- include('partials/analytics') %>
+            <%- include('partials/analytics') %>
 
-            <style>
-                .section-animate {
-                    opacity: 0;
-                    transform: translateY(30px);
-                    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-                }
+                <style>
+                    .section-animate {
+                        opacity: 0;
+                        transform: translateY(30px);
+                        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+                    }
 
-                .section-animate.is-visible {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
+                    .section-animate.is-visible {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
 
-                .blog-card {
-                    transition: all 0.3s ease;
-                }
+                    .blog-card {
+                        transition: all 0.3s ease;
+                    }
 
-                .blog-card:hover {
-                    transform: translateY(-5px);
-                }
+                    .blog-card:hover {
+                        transform: translateY(-5px);
+                    }
 
-                .category-pill {
-                    transition: all 0.2s ease;
-                }
+                    .category-pill {
+                        transition: all 0.2s ease;
+                    }
 
-                .category-pill:hover {
-                    transform: scale(1.05);
-                }
+                    .category-pill:hover {
+                        transform: scale(1.05);
+                    }
 
-                /* AdSense 占位符样式 */
-                .ad-slot-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #f3f4f6;
-                    min-height: 280px;
-                    margin: 2rem 0;
-                    position: relative;
-                    border-radius: 0.5rem;
-                    overflow: hidden;
-                }
+                    /* AdSense 占位符样式 */
+                    .ad-slot-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #f3f4f6;
+                        min-height: 280px;
+                        margin: 2rem 0;
+                        position: relative;
+                        border-radius: 0.5rem;
+                        overflow: hidden;
+                    }
 
-                .ad-slot-container::before {
-                    content: 'Advertisement';
-                    position: absolute;
-                    color: #9ca3af;
-                    font-size: 0.875rem;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    z-index: 0;
-                }
+                    .ad-slot-container::before {
+                        content: 'Advertisement';
+                        position: absolute;
+                        color: #9ca3af;
+                        font-size: 0.875rem;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 0;
+                    }
 
-                .ad-slot-container ins {
-                    z-index: 1;
-                    background: white;
-                }
-            </style>
+                    .ad-slot-container ins {
+                        z-index: 1;
+                        background: white;
+                    }
+                </style>
 
 </head>
 

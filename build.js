@@ -117,6 +117,8 @@ async function build() {
                         t: locales[lang], // Translation object
                         isDefault: isDefault,
                         canonicalUrl: canonicalUrl,
+                        pageName: pageName, // For hreflang
+                        supportedLangs: config.supportedLangs, // For hreflang
                         // Helper to generate localized links
                         link: (path) => {
                             if (isDefault) return path;

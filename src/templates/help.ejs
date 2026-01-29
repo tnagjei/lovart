@@ -11,47 +11,48 @@
         <meta name="description" content="<%= t.help_page.seo.description %>">
         <meta name="keywords" content="<%= t.help_page.seo.keywords %>">
         <link rel="canonical" href="<%= canonicalUrl %>">
-        <link rel="stylesheet" href="/styles.css">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <script async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
-            crossorigin="anonymous"></script>
+        <%- include('partials/hreflang') %>
+            <link rel="stylesheet" href="/styles.css">
+            <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                crossorigin="anonymous"></script>
 
-        <%- include('partials/analytics') %>
+            <%- include('partials/analytics') %>
 
-            <style>
-                .section-animate {
-                    opacity: 0;
-                    transform: translateY(30px);
-                    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-                }
+                <style>
+                    .section-animate {
+                        opacity: 0;
+                        transform: translateY(30px);
+                        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+                    }
 
-                .section-animate.is-visible {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
+                    .section-animate.is-visible {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
 
-                .help-card {
-                    transition: all 0.3s ease;
-                }
+                    .help-card {
+                        transition: all 0.3s ease;
+                    }
 
-                .help-card:hover {
-                    transform: translateY(-3px);
-                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-                }
+                    .help-card:hover {
+                        transform: translateY(-3px);
+                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                    }
 
-                .faq-item {
-                    transition: all 0.3s ease;
-                }
+                    .faq-item {
+                        transition: all 0.3s ease;
+                    }
 
-                .search-box {
-                    transition: all 0.3s ease;
-                }
+                    .search-box {
+                        transition: all 0.3s ease;
+                    }
 
-                .search-box:focus-within {
-                    transform: scale(1.02);
-                }
-            </style>
+                    .search-box:focus-within {
+                        transform: scale(1.02);
+                    }
+                </style>
 
 </head>
 

@@ -11,13 +11,14 @@
         <meta name="description" content="<%= t.lovart_ai_code_page.seo.description %>">
         <meta name="keywords" content="<%= t.lovart_ai_code_page.seo.keywords %>">
         <link rel="canonical" href="<%= canonicalUrl %>">
-        <!-- Local CSS -->
-        <link rel="stylesheet" href="/styles.css">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <script async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
-            crossorigin="anonymous"></script>
-        <%- include('partials/analytics') %>
+        <%- include('partials/hreflang') %>
+            <!-- Local CSS -->
+            <link rel="stylesheet" href="/styles.css">
+            <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                crossorigin="anonymous"></script>
+            <%- include('partials/analytics') %>
 </head>
 
 <body class="bg-neutral-light text-neutral-dark antialiased">
