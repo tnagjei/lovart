@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>" class="scroll-smooth">
+
+<head>
+    <%- include('partials/head') %>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            <%= t.lovart_ai_code_page.seo.title %>
+        </title>
+        <meta name="description" content="<%= t.lovart_ai_code_page.seo.description %>">
+        <meta name="keywords" content="<%= t.lovart_ai_code_page.seo.keywords %>">
+        <link rel="canonical" href="<%= canonicalUrl %>">
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+            crossorigin="anonymous"></script>
+        <%- include('partials/analytics') %>
+</head>
+
+<body class="bg-neutral-light text-neutral-dark antialiased">
+
+    <%- include('partials/header') %>
+
+        <main>
+            <section class="py-16 md:py-24 section-animate">
+                <div class="container mx-auto px-6">
+                    <h1 class="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-6 animate-fade-in-up">
+                        <%= t.lovart_ai_code_page.hero.title %>
+                    </h1>
+                    <p class="text-center text-neutral text-lg max-w-3xl mx-auto mb-12 animate-fade-in-up"
+                        style="animation-delay: 0.2s;">
+                        <%= t.lovart_ai_code_page.hero.description %>
+                    </p>
+
+                    <div class="space-y-12">
+                        <!-- Section: Understanding Lovart's AI Core -->
+                        <div class="animate-fade-in-up" style="animation-delay: 0.4s;">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                <%= t.lovart_ai_code_page.ai_core.title %>
+                            </h2>
+                            <p class="text-neutral mb-3">
+                                <%= t.lovart_ai_code_page.ai_core.p1 %>
+                            </p>
+                            <p class="text-neutral mb-3">
+                                <%= t.lovart_ai_code_page.ai_core.p2 %>
+                            </p>
+                            <p class="text-neutral">
+                                <%= t.lovart_ai_code_page.ai_core.p3 %>
+                            </p>
+                        </div>
+
+                        <!-- Section: API & Integration -->
+                        <div class="animate-fade-in-up" style="animation-delay: 0.6s;">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                <%= t.lovart_ai_code_page.api_integration.title %>
+                            </h2>
+                            <p class="text-neutral mb-3">
+                                <%= t.lovart_ai_code_page.api_integration.p1 %>
+                            </p>
+                            <p class="text-neutral mb-3">
+                                <%= t.lovart_ai_code_page.api_integration.p_endpoints %>
+                            </p>
+                            <ul class="list-disc list-inside text-neutral space-y-2 mb-3">
+                                <% t.lovart_ai_code_page.api_integration.list.forEach(function(item) { %>
+                                    <li><strong>
+                                            <%= item.title %>
+                                        </strong>
+                                        <%= item.desc %>
+                                    </li>
+                                    <% }); %>
+                            </ul>
+                            <p class="text-neutral">
+                                <%= t.lovart_ai_code_page.api_integration.p_stay_tuned %>
+                            </p>
+                        </div>
+
+                        <!-- Section: Use Cases for Lovart AI Code -->
+                        <div class="animate-fade-in-up" style="animation-delay: 0.7s;">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                <%= t.lovart_ai_code_page.use_cases.title %>
+                            </h2>
+                            <p class="text-neutral mb-3">
+                                <%= t.lovart_ai_code_page.use_cases.desc %>
+                            </p>
+                            <ul class="list-disc list-inside text-neutral space-y-3 mb-3">
+                                <% t.lovart_ai_code_page.use_cases.list.forEach(function(item) { %>
+                                    <li><strong>
+                                            <%= item.title %>
+                                        </strong>
+                                        <%= item.desc %>
+                                    </li>
+                                    <% }); %>
+                            </ul>
+                            <p class="text-neutral">
+                                <%= t.lovart_ai_code_page.use_cases.conclusion %>
+                            </p>
+                        </div>
+
+                        <!-- Section: Resources for Developers -->
+                        <div class="animate-fade-in-up" style="animation-delay: 0.8s;">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                <%= t.lovart_ai_code_page.resources.title %>
+                            </h2>
+                            <p class="text-neutral mb-3">
+                                <%= t.lovart_ai_code_page.resources.desc %>
+                            </p>
+                            <ul class="list-disc list-inside text-neutral space-y-2 mb-3">
+                                <% t.lovart_ai_code_page.resources.list.forEach(function(item) { %>
+                                    <li><strong>
+                                            <%= item.title %>
+                                        </strong>
+                                        <%= item.desc %>
+                                    </li>
+                                    <% }); %>
+                            </ul>
+                            <p class="text-neutral">
+                                <%= t.lovart_ai_code_page.resources.objective %>
+                            </p>
+                        </div>
+
+                        <!-- Section: Stay Updated -->
+                        <div class="text-center pt-8 animate-fade-in-up" style="animation-delay: 1s;">
+                            <h3 class="text-xl font-semibold text-neutral-dark mb-3">
+                                <%= t.lovart_ai_code_page.cta.title %>
+                            </h3>
+                            <p class="text-neutral mb-6 max-w-xl mx-auto">
+                                <%= t.lovart_ai_code_page.cta.desc %>
+                            </p>
+                            <a href="<%= link('index.html#contact') %>"
+                                class="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary-dark transition-colors text-lg font-medium">
+                                <%= t.lovart_ai_code_page.cta.button %>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('partials/footer') %>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    // Header/Footer Initialization
+                    const currentYearSpan = document.getElementById('currentYear');
+                    if (currentYearSpan) currentYearSpan.textContent = new Date().getFullYear();
+
+                    const mobileMenuButton = document.getElementById('mobile-menu-button');
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (mobileMenuButton && mobileMenu) {
+                        mobileMenuButton.addEventListener('click', () => {
+                            mobileMenu.classList.toggle('hidden');
+                        });
+                    }
+
+                    // Intersection Observer for section animations
+                    const sections = document.querySelectorAll('.section-animate');
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('is-visible');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.1 });
+                    sections.forEach(section => {
+                        observer.observe(section);
+                    });
+                });
+            </script>
+</body>
+
+</html>

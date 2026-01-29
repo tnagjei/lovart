@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>" class="scroll-smooth">
+
+<head>
+    <%- include('partials/head') %>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            <%= t.lovart_api_page.seo.title %>
+        </title>
+        <meta name="description" content="<%= t.lovart_api_page.seo.description %>">
+        <meta name="keywords" content="<%= t.lovart_api_page.seo.keywords %>">
+        <link rel="canonical" href="<%= canonicalUrl %>">
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+            crossorigin="anonymous"></script>
+        <%- include('partials/analytics') %>
+</head>
+
+<body class="bg-neutral-light text-neutral-dark antialiased">
+
+    <%- include('partials/header') %>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="bg-primary-dark/5 py-16 md:py-24">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up">
+                        <%= t.lovart_api_page.hero.title %>
+                    </h1>
+                    <p class="text-xl text-neutral mb-8 max-w-2xl mx-auto animate-fade-in-up"
+                        style="animation-delay: 0.2s;">
+                        <%= t.lovart_api_page.hero.description %>
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+                        <% t.lovart_api_page.hero.badges.forEach(badge=> { %>
+                            <span class="px-4 py-2 bg-white rounded-full text-sm font-semibold shadow-sm text-primary">
+                                <%= badge %>
+                            </span>
+                            <% }) %>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Authentication Section -->
+            <section class="py-16 border-b border-neutral-light/20">
+                <div class="container mx-auto px-6 max-w-4xl">
+                    <h2 class="text-3xl font-bold mb-8">
+                        <%= t.lovart_api_page.auth.title %>
+                    </h2>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-neutral-light/30">
+                        <h3 class="text-xl font-semibold mb-4">
+                            <%= t.lovart_api_page.auth.key_auth_title %>
+                        </h3>
+                        <p class="text-neutral mb-4">
+                            <%= t.lovart_api_page.auth.desc %>
+                        </p>
+                        <div class="bg-neutral-dark text-white p-4 rounded-lg font-mono text-sm overflow-x-auto mb-6">
+                            Authorization: Bearer YOUR_API_KEY
+                        </div>
+                        <div class="flex items-start gap-3 bg-yellow-50 p-4 rounded-lg border border-yellow-100">
+                            <svg class="w-6 h-6 text-yellow-600 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            <div>
+                                <strong class="text-yellow-800 block mb-1">
+                                    <%= t.lovart_api_page.auth.security_note_title %>
+                                </strong>
+                                <p class="text-yellow-700 text-sm">
+                                    <%= t.lovart_api_page.auth.security_note %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Endpoints Section with Tabs -->
+            <section class="py-16 bg-white">
+                <div class="container mx-auto px-6 max-w-6xl">
+                    <h2 class="text-3xl font-bold mb-10 text-center">
+                        <%= t.lovart_api_page.endpoints.title %>
+                    </h2>
+
+                    <!-- Tabs Navigation -->
+                    <div class="flex flex-wrap justify-center border-b border-neutral-light/50 mb-12">
+                        <button
+                            class="tab-btn px-6 py-3 font-medium text-neutral hover:text-primary border-b-2 border-transparent hover:border-primary transition-all active"
+                            data-tab="design">
+                            <%= t.lovart_api_page.endpoints.tabs.design %>
+                        </button>
+                        <button
+                            class="tab-btn px-6 py-3 font-medium text-neutral hover:text-primary border-b-2 border-transparent hover:border-primary transition-all"
+                            data-tab="image">
+                            <%= t.lovart_api_page.endpoints.tabs.image %>
+                        </button>
+                        <button
+                            class="tab-btn px-6 py-3 font-medium text-neutral hover:text-primary border-b-2 border-transparent hover:border-primary transition-all"
+                            data-tab="templates">
+                            <%= t.lovart_api_page.endpoints.tabs.templates %>
+                        </button>
+                        <button
+                            class="tab-btn px-6 py-3 font-medium text-neutral hover:text-primary border-b-2 border-transparent hover:border-primary transition-all"
+                            data-tab="user">
+                            <%= t.lovart_api_page.endpoints.tabs.user %>
+                        </button>
+                    </div>
+
+                    <!-- Tabs Content -->
+                    <div class="tab-content relative min-h-[300px]">
+                        <!-- Design Tab -->
+                        <div class="tab-pane active fade-in" id="design">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div
+                                    class="p-6 border border-neutral-light/30 rounded-lg hover:shadow-md transition-shadow">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="px-2 py-1 bg-green-100 text-green-700 text-xs font-bold rounded">POST</span>
+                                        <code class="text-sm font-mono text-neutral-dark">/v1/design/generate</code>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2">
+                                        <%= t.lovart_api_page.endpoints.design.generate.title %>
+                                    </h4>
+                                    <p class="text-neutral text-sm">
+                                        <%= t.lovart_api_page.endpoints.design.generate.desc %>
+                                    </p>
+                                </div>
+                                <div
+                                    class="p-6 border border-neutral-light/30 rounded-lg hover:shadow-md transition-shadow">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded">GET</span>
+                                        <code class="text-sm font-mono text-neutral-dark">/v1/design/{id}</code>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2">
+                                        <%= t.lovart_api_page.endpoints.design.status.title %>
+                                    </h4>
+                                    <p class="text-neutral text-sm">
+                                        <%= t.lovart_api_page.endpoints.design.status.desc %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Image Tab -->
+                        <div class="tab-pane hidden fade-in" id="image">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div
+                                    class="p-6 border border-neutral-light/30 rounded-lg hover:shadow-md transition-shadow">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="px-2 py-1 bg-green-100 text-green-700 text-xs font-bold rounded">POST</span>
+                                        <code class="text-sm font-mono text-neutral-dark">/v1/image/upload</code>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2">
+                                        <%= t.lovart_api_page.endpoints.image.upload.title %>
+                                    </h4>
+                                    <p class="text-neutral text-sm">
+                                        <%= t.lovart_api_page.endpoints.image.upload.desc %>
+                                    </p>
+                                </div>
+                                <div
+                                    class="p-6 border border-neutral-light/30 rounded-lg hover:shadow-md transition-shadow">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="px-2 py-1 bg-green-100 text-green-700 text-xs font-bold rounded">POST</span>
+                                        <code class="text-sm font-mono text-neutral-dark">/v1/image/enhance</code>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2">
+                                        <%= t.lovart_api_page.endpoints.image.enhance.title %>
+                                    </h4>
+                                    <p class="text-neutral text-sm">
+                                        <%= t.lovart_api_page.endpoints.image.enhance.desc %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Templates Tab -->
+                        <div class="tab-pane hidden fade-in" id="templates">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div
+                                    class="p-6 border border-neutral-light/30 rounded-lg hover:shadow-md transition-shadow">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded">GET</span>
+                                        <code class="text-sm font-mono text-neutral-dark">/v1/templates</code>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2">
+                                        <%= t.lovart_api_page.endpoints.templates.list.title %>
+                                    </h4>
+                                    <p class="text-neutral text-sm">
+                                        <%= t.lovart_api_page.endpoints.templates.list.desc %>
+                                    </p>
+                                </div>
+                                <div
+                                    class="p-6 border border-neutral-light/30 rounded-lg hover:shadow-md transition-shadow">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded">GET</span>
+                                        <code class="text-sm font-mono text-neutral-dark">/v1/templates/{id}</code>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2">
+                                        <%= t.lovart_api_page.endpoints.templates.details.title %>
+                                    </h4>
+                                    <p class="text-neutral text-sm">
+                                        <%= t.lovart_api_page.endpoints.templates.details.desc %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Tab -->
+                        <div class="tab-pane hidden fade-in" id="user">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div
+                                    class="p-6 border border-neutral-light/30 rounded-lg hover:shadow-md transition-shadow">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded">GET</span>
+                                        <code class="text-sm font-mono text-neutral-dark">/v1/user/me</code>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2">
+                                        <%= t.lovart_api_page.endpoints.user.info.title %>
+                                    </h4>
+                                    <p class="text-neutral text-sm">
+                                        <%= t.lovart_api_page.endpoints.user.info.desc %>
+                                    </p>
+                                </div>
+                                <div
+                                    class="p-6 border border-neutral-light/30 rounded-lg hover:shadow-md transition-shadow">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span
+                                            class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded">GET</span>
+                                        <code class="text-sm font-mono text-neutral-dark">/v1/user/usage</code>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2">
+                                        <%= t.lovart_api_page.endpoints.user.usage.title %>
+                                    </h4>
+                                    <p class="text-neutral text-sm">
+                                        <%= t.lovart_api_page.endpoints.user.usage.desc %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Support Section -->
+            <section class="py-16 bg-neutral-light/30">
+                <div class="container mx-auto px-6 max-w-4xl text-center">
+                    <h2 class="text-3xl font-bold mb-4">
+                        <%= t.lovart_api_page.support.title %>
+                    </h2>
+                    <p class="text-neutral mb-12">
+                        <%= t.lovart_api_page.support.subtitle %>
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+                            <span class="text-3xl mb-4 block">📚</span>
+                            <h3 class="text-lg font-semibold mb-2">
+                                <%= t.lovart_api_page.support.docs.title %>
+                            </h3>
+                            <p class="text-sm text-neutral mb-4">
+                                <%= t.lovart_api_page.support.docs.desc %>
+                            </p>
+                            <a href="<%= link('help.html') %>" class="text-primary font-medium hover:underline text-sm">
+                                <%= t.lovart_api_page.support.docs.link %>
+                            </a>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+                            <span class="text-3xl mb-4 block">💬</span>
+                            <h3 class="text-lg font-semibold mb-2">
+                                <%= t.lovart_api_page.support.community.title %>
+                            </h3>
+                            <p class="text-sm text-neutral mb-4">
+                                <%= t.lovart_api_page.support.community.desc %>
+                            </p>
+                            <a href="https://discord.gg/lovart"
+                                class="text-primary font-medium hover:underline text-sm">
+                                <%= t.lovart_api_page.support.community.link %>
+                            </a>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+                            <span class="text-3xl mb-4 block">✉️</span>
+                            <h3 class="text-lg font-semibold mb-2">
+                                <%= t.lovart_api_page.support.email.title %>
+                            </h3>
+                            <p class="text-sm text-neutral mb-4">
+                                <%= t.lovart_api_page.support.email.desc %>
+                            </p>
+                            <a href="mailto:dev-support@lovart.info"
+                                class="text-primary font-medium hover:underline text-sm">
+                                <%= t.lovart_api_page.support.email.link %>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('partials/footer') %>
+
+            <style>
+                .tab-btn.active {
+                    border-color: rgb(var(--color-primary));
+                    color: rgb(var(--color-primary));
+                }
+
+                .tab-pane {
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    pointer-events: none;
+                }
+
+                .tab-pane.active {
+                    opacity: 1;
+                    position: relative;
+                    pointer-events: auto;
+                }
+            </style>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    // Header/Footer Initialization
+                    const currentYearSpan = document.getElementById('currentYear');
+                    if (currentYearSpan) currentYearSpan.textContent = new Date().getFullYear();
+
+                    const mobileMenuButton = document.getElementById('mobile-menu-button');
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (mobileMenuButton && mobileMenu) {
+                        mobileMenuButton.addEventListener('click', () => {
+                            mobileMenu.classList.toggle('hidden');
+                        });
+                    }
+
+                    const tabs = document.querySelectorAll('.tab-btn');
+                    const contents = document.querySelectorAll('.tab-pane');
+
+                    tabs.forEach(tab => {
+                        tab.addEventListener('click', () => {
+                            tabs.forEach(t => t.classList.remove('active'));
+                            contents.forEach(c => {
+                                c.classList.remove('active');
+                                c.classList.add('hidden');
+                            });
+
+                            tab.classList.add('active');
+                            const target = document.getElementById(tab.dataset.tab);
+                            if (target) {
+                                target.classList.remove('hidden');
+                                // Small timeout to allow display:block to apply before opacity transition
+                                setTimeout(() => target.classList.add('active'), 10);
+                            }
+                        });
+                    });
+                });
+            </script>
+
+</body>
+
+</html>

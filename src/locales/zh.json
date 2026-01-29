@@ -901,7 +901,7 @@
                     },
                     {
                         "title": "6.2 用户内容权利",
-                        "content": "您保留通过 Lovart 创建的内容的所有权。通过上传或创建内容，您授予 Lovart 有限的、全球性的、免版税的许可，以便提供和改进服务。"
+                        "content": "您保留通过 Lovart 创建的内容的所有权。通过上传或创建内容，您授予 Lovart 有限的许可。"
                     },
                     {
                         "title": "6.3 第三方内容",
@@ -1062,15 +1062,15 @@
                     },
                     {
                         "title": "5.3 删除权",
-                        "content": "在某些情况下，您有权要求我们删除您的个人信息，例如当信息不再需要用于收集目的时。"
+                        "content": "在特定情况下，您有权要求我们删除您的个人信息。"
                     },
                     {
                         "title": "5.4 数据可携带权",
-                        "content": "您有权以结构化、常用和机器可读的格式接收您的个人信息，并有权将这些数据传输给其他服务提供商。"
+                        "content": "您有权以结构化格式接收您的个人信息。"
                     },
                     {
                         "title": "5.5 反对权",
-                        "content": "您有权基于合法利益反对我们处理您的个人信息，并反对我们将您的个人信息用于直接营销目的。"
+                        "content": "您有权基于合法利益反对我们处理您的个人信息。"
                     }
                 ]
             },
@@ -1082,12 +1082,12 @@
                 ],
                 "subsections": [
                     {
-                        "title": "6.1 必要 Cookie",
-                        "content": "这些 Cookie 对于网站的基本运行至关重要，包括用户认证、安全保护和网站功能。如果没有这些 Cookie，网站无法正常运行。"
+                        "title": "6.1 必要的 Cookie",
+                        "content": "这些 Cookie 对于网站的基本功能至关重要，包括用户身份验证、安全保护等。"
                     },
                     {
                         "title": "6.2 性能 Cookie",
-                        "content": "这些 Cookie 帮助我们了解访问者如何与网站互动，通过匿名收集和报告信息。"
+                        "content": "这些 Cookie 帮助我们了解访问者如何与网站互动，通过收集和报告信息。"
                     },
                     {
                         "title": "6.3 功能 Cookie",
@@ -1133,6 +1133,465 @@
             },
             "desc": "为创意专业人士打造的 AI 设计平台。",
             "rights": "Lovart.info. 版权所有."
+        }
+    },
+    "lovart_ai_code_page": {
+        "seo": {
+            "title": "Lovart for Developers | AI Design API & SDK Integration",
+            "description": "Integrate Lovart's powerful AI design capabilities into your applications, build custom solutions using Lovart API and SDKs. Explore infinite AI design possibilities, documentation tips, programming examples, authentication process detailed guidance, helping developers get started quickly.",
+            "keywords": "lovart for developers, lovart api, lovart sdk, ai design api, integrate lovart, lovart developer platform, lovart ai code"
+        },
+        "hero": {
+            "title": "Lovart AI Code & Developer Information",
+            "description": "Welcome to the hub for developers interested in Lovart's AI capabilities. This section is dedicated to providing insights into our AI technology, potential \"Lovart API\" access, \"Lovart AI code\" integration possibilities, and other technical resources to help \"Lovart for developers\" leverage the power of our platform. We are committed to supporting the \"Lovart for developers\" community with robust tools and information regarding \"Lovart AI code\"."
+        },
+        "ai_core": {
+            "title": "Delving into Lovart's AI Engine for \"Lovart AI Code\"",
+            "p1": "Lovart's intelligent features are powered by a sophisticated AI engine designed to understand creative contexts and assist in the design process. Our AI models are trained on vast datasets of visual information to analyze elements, suggest design improvements, automate repetitive tasks, and even generate creative ideas. This forms the backbone of any \"Lovart AI code\" implementation. For \"Lovart for developers\", understanding this core is key to unlocking its potential.",
+            "p2": "The AI engine utilizes advanced machine learning algorithms, including deep learning networks, to interpret user inputs and design assets. While the specific architecture of our core \"Lovart AI code\" is proprietary, we focus on exposing its powerful functionalities through well-defined interfaces, primarily the upcoming \"Lovart API\". This approach allows \"Lovart for developers\" to build innovative applications without needing to delve into the complexities of the underlying AI models themselves. We believe this abstraction is beneficial for the \"Lovart for developers\" ecosystem.",
+            "p3": "Our research and development team is continuously working on enhancing these capabilities, pushing the boundaries of what \"Lovart AI code\" can achieve in creative fields. Future iterations will likely see improvements in contextual understanding, generation quality, and processing speed, all accessible via the \"Lovart API\"."
+        },
+        "api_integration": {
+            "title": "\"Lovart API\" Access & \"Lovart AI Code\" Integration (Coming Soon)",
+            "p1": "We understand the immense value of interoperability and extending Lovart's capabilities. That's why we are actively developing a comprehensive \"Lovart API\" that will empower \"Lovart for developers\" to integrate Lovart's AI features into their own applications, workflows, and services. This \"Lovart API\" will be the primary way to interact with \"Lovart AI code\" programmatically.",
+            "p_endpoints": "Potential \"Lovart API\" endpoints might include:",
+            "list": [
+                {
+                    "title": "AI-Powered Image Analysis:",
+                    "desc": "Submit images to the \"Lovart API\" for automated tagging, object recognition, color palette extraction, and quality assessment. This \"Lovart AI code\" functionality can be used for content management systems or automated design feedback tools."
+                },
+                {
+                    "title": "Parametric Design Generation:",
+                    "desc": "Utilize the \"Lovart API\" to generate design variations based on input parameters (e.g., text, color schemes, layout constraints). This aspect of \"Lovart AI code\" is perfect for creating personalized marketing materials at scale."
+                },
+                {
+                    "title": "Access to Specific Lovart Functionalities:",
+                    "desc": "Programmatic access via the \"Lovart API\" to features like smart resizing, background removal, or style transfer, allowing \"Lovart for developers\" to build custom editing tools."
+                },
+                {
+                    "title": "Content Suggestion Engine:",
+                    "desc": "An endpoint in the \"Lovart API\" that provides AI-driven suggestions for typography, imagery, or layout improvements based on a given design context. This leverages the core \"Lovart AI code\" intelligence."
+                }
+            ],
+            "p_stay_tuned": "Stay tuned for updates on our \"Lovart API\" roadmap, documentation, and availability. If you have specific use cases or requirements for \"Lovart AI code\" integration or the \"Lovart API\", we encourage \"Lovart for developers\" to reach out to us. Your feedback is invaluable as we shape these tools for the \"Lovart for developers\" community."
+        },
+        "use_cases": {
+            "title": "Practical Use Cases for \"Lovart AI Code\" and the \"Lovart API\"",
+            "desc": "The true power of \"Lovart AI code\" and the \"Lovart API\" lies in its diverse applications. Here are a few examples of how \"Lovart for developers\" can leverage our technology:",
+            "list": [
+                {
+                    "title": "Automated Social Media Content Creation:",
+                    "desc": "Develop tools that use the \"Lovart API\" to automatically generate engaging social media posts from blog articles or product descriptions, leveraging \"Lovart AI code\" for visual appeal."
+                },
+                {
+                    "title": "E-commerce Product Image Enhancement:",
+                    "desc": "Integrate \"Lovart AI code\" via the \"Lovart API\" into e-commerce platforms to automatically enhance product images, remove backgrounds, or create consistent visual styles."
+                },
+                {
+                    "title": "Personalized Marketing Campaigns:",
+                    "desc": "Build systems that utilize the \"Lovart API\" to create thousands of unique ad creatives tailored to different audience segments, all powered by \"Lovart AI code\"."
+                },
+                {
+                    "title": "Plugin Development for Existing Design Tools:",
+                    "desc": "\"Lovart for developers\" could create plugins for popular design software that tap into specific \"Lovart AI code\" functionalities through the \"Lovart API\", extending the capabilities of those tools."
+                },
+                {
+                    "title": "Content Management System (CMS) Integration:",
+                    "desc": "Enhance CMS platforms by integrating \"Lovart AI code\" to provide users with AI-powered image suggestions, automated cropping, or design quality checks directly within their content creation workflow using the \"Lovart API\"."
+                }
+            ],
+            "conclusion": "These are just a few ideas, and we are excited to see what innovative solutions the \"Lovart for developers\" community will build using \"Lovart AI code\" and the \"Lovart API\"."
+        },
+        "resources": {
+            "title": "Resources for \"Lovart for Developers\"",
+            "desc": "As Lovart evolves, we are committed to building a rich and supportive ecosystem specifically for \"Lovart for developers\". Our goal is to provide you with all the necessary tools and information to successfully utilize \"Lovart AI code\" and the \"Lovart API\". Planned resources include:",
+            "list": [
+                {
+                    "title": "Detailed \"Lovart API\" Documentation:",
+                    "desc": "Comprehensive reference guides, endpoint descriptions, authentication details, and rate limit information for the \"Lovart API\"."
+                },
+                {
+                    "title": "Software Development Kits (SDKs):",
+                    "desc": "Easy-to-use SDKs for popular programming languages (e.g., Python, JavaScript, Java) to simplify \"Lovart AI code\" integration and \"Lovart API\" calls."
+                },
+                {
+                    "title": "Tutorials and Code Samples:",
+                    "desc": "Practical, step-by-step tutorials and ready-to-use \"Lovart AI code\" samples to help \"Lovart for developers\" get started quickly with the \"Lovart API\"."
+                },
+                {
+                    "title": "Developer Portal & Forum:",
+                    "desc": "A dedicated portal for \"Lovart for developers\" with access to API keys, usage dashboards, and a community forum for support, collaboration, and sharing \"Lovart AI code\" projects."
+                },
+                {
+                    "title": "Changelogs and Versioning Information:",
+                    "desc": "Clear communication about updates, new features, and versioning for the \"Lovart API\" to ensure smooth transitions for \"Lovart for developers\"."
+                }
+            ],
+            "objective": "Our objective is to empower \"Lovart for developers\" to build innovative solutions on top of the Lovart platform, leveraging the full potential of \"Lovart AI code\" and the \"Lovart API\"."
+        },
+        "cta": {
+            "title": "Interested in \"Lovart for Developers\" and \"Lovart AI Code\"?",
+            "desc": "Sign up for our developer-specific newsletter or follow our technical blog to receive the latest updates on Lovart's developer tools, \"Lovart API\" releases, \"Lovart AI code\" initiatives, and opportunities for \"Lovart for developers\".",
+            "button": "Contact Us & Stay Informed"
+        }
+    },
+    "lovart_api_page": {
+        "seo": {
+            "title": "Lovart API Documentation - AI Design API & SDK Integration",
+            "description": "Lovart AI Design API documentation. Integrate powerful AI design capabilities into your applications with our RESTful API and SDKs.",
+            "keywords": "Lovart API, AI design API, design SDK, API documentation, Lovart ai api, integration guide"
+        },
+        "hero": {
+            "title": "Lovart API Documentation",
+            "description": "Integrate powerful AI design capabilities into your applications with our comprehensive RESTful API and SDKs.",
+            "badges": [
+                "🚀 RESTful API",
+                "📚 Multiple SDKs",
+                "🔒 Secure Authentication",
+                "📊 Real-time Processing"
+            ]
+        },
+        "quick_start": {
+            "title": "Quick Start",
+            "subtitle": "Get Started in 5 Minutes",
+            "step1": {
+                "title": "Get API Key",
+                "desc": "Sign up and get your API key from the dashboard"
+            },
+            "step2": {
+                "title": "Install SDK",
+                "desc": "Choose your preferred programming language SDK"
+            },
+            "step3": {
+                "title": "Make API Calls",
+                "desc": "Start integrating AI design capabilities"
+            }
+        },
+        "auth": {
+            "title": "Authentication",
+            "key_auth_title": "API Key Authentication",
+            "desc": "All API requests require authentication using your API key. Include your API key in the Authorization header:",
+            "security_note_title": "Security Note:",
+            "security_note": "Keep your API key secure and never expose it in client-side code."
+        },
+        "endpoints": {
+            "title": "API Endpoints",
+            "tabs": {
+                "design": "Design Generation",
+                "image": "Image Processing",
+                "templates": "Templates",
+                "user": "User Management"
+            },
+            "design": {
+                "generate": {
+                    "title": "Generate Design",
+                    "desc": "Generate AI-powered designs based on text prompts and parameters."
+                },
+                "status": {
+                    "title": "Get Design Status",
+                    "desc": "Check the status of a design generation request."
+                }
+            },
+            "image": {
+                "upload": {
+                    "title": "Upload Image",
+                    "desc": "Upload images for processing and enhancement."
+                },
+                "enhance": {
+                    "title": "Enhance Image",
+                    "desc": "Enhance image quality using AI-powered upscaling and optimization."
+                }
+            },
+            "templates": {
+                "list": {
+                    "title": "List Templates",
+                    "desc": "Get a list of available design templates."
+                },
+                "details": {
+                    "title": "Get Template Details",
+                    "desc": "Get detailed information about a specific template."
+                }
+            },
+            "user": {
+                "info": {
+                    "title": "Get User Info",
+                    "desc": "Get current user account information and usage stats."
+                },
+                "usage": {
+                    "title": "Get Usage Statistics",
+                    "desc": "Get detailed usage statistics and billing information."
+                }
+            }
+        },
+        "sdks": {
+            "title": "SDKs & Libraries",
+            "python": {
+                "title": "Python SDK",
+                "desc": "Full-featured Python SDK for AI design integration"
+            },
+            "js": {
+                "title": "JavaScript SDK",
+                "desc": "Modern JavaScript SDK for web applications"
+            },
+            "node": {
+                "title": "Node.js SDK",
+                "desc": "Server-side Node.js integration"
+            },
+            "rest": {
+                "title": "REST API",
+                "desc": "Direct REST API access for any language"
+            },
+            "view_docs": "View Documentation →"
+        },
+        "examples": {
+            "title": "Code Examples",
+            "tabs": {
+                "python": "Python",
+                "js": "JavaScript",
+                "curl": "cURL"
+            },
+            "python_title": "Python Example",
+            "js_title": "JavaScript Example",
+            "curl_title": "cURL Example"
+        },
+        "pricing": {
+            "title": "API Pricing",
+            "subtitle": "Flexible pricing plans for developers and businesses of all sizes",
+            "free": {
+                "title": "Free Tier",
+                "price": "$0",
+                "period": "/month",
+                "features": [
+                    "• 100 API calls/month",
+                    "• Basic design generation",
+                    "• Community support"
+                ]
+            },
+            "pro": {
+                "title": "Pro",
+                "price": "$49",
+                "period": "/month",
+                "features": [
+                    "• 10,000 API calls/month",
+                    "• Advanced features",
+                    "• Priority support"
+                ]
+            },
+            "enterprise": {
+                "title": "Enterprise",
+                "price": "Custom",
+                "features": [
+                    "• Unlimited API calls",
+                    "• Custom integrations",
+                    "• Dedicated support"
+                ]
+            }
+        },
+        "support": {
+            "title": "Need Help?",
+            "subtitle": "Our developer support team is here to help you integrate Lovart API successfully.",
+            "docs": {
+                "title": "Documentation",
+                "desc": "Comprehensive guides and references",
+                "link": "Read Docs →"
+            },
+            "community": {
+                "title": "Developer Community",
+                "desc": "Join our developer community",
+                "link": "Join Community →"
+            },
+            "email": {
+                "title": "Email Support",
+                "desc": "Get help from our support team",
+                "link": "Contact Support →"
+            }
+        }
+    },
+    "lovart_free_page": {
+        "seo": {
+            "title": "Free Trial - Lovart AI Design Platform",
+            "description": "Experience Lovart AI design platform's core features for free. Explore free version limits, feature introductions, trial period details, and feature comparison with paid versions. Learn how to start using Lovart for AI-assisted creative design.",
+            "keywords": "Lovart free trial, AI design free, is lovart ai free, Lovart free policy, free design tool"
+        },
+        "hero": {
+            "title": "Lovart Free Trial",
+            "description": "Yes, Lovart offers a free trial! Experience our powerful AI design features and get started without a credit card.",
+            "badges": [
+                "💳 No Credit Card Required",
+                "⏰ 14-Day Free Trial",
+                "🎨 Full Feature Experience",
+                "🚀 Start Immediately"
+            ],
+            "cta_primary": "Start Free Trial",
+            "cta_secondary": "Learn About Free Features"
+        },
+        "features": {
+            "title": "Features Included in Free Trial",
+            "ai_gen": {
+                "title": "AI Design Generation",
+                "desc": "Generate professional designs with AI, including logos, posters, social media images, etc.",
+                "list": [
+                    "10 Free Generations/Month",
+                    "Basic Design Templates"
+                ]
+            },
+            "templates": {
+                "title": "Template Library",
+                "desc": "Access a rich library of design templates to quickly start your design project",
+                "list": [
+                    "100+ Free Templates",
+                    "Multiple Design Categories"
+                ]
+            },
+            "export": {
+                "title": "Basic Export",
+                "desc": "Export your design works, supporting common formats",
+                "list": [
+                    "PNG/JPG Formats",
+                    "Standard Resolution"
+                ]
+            },
+            "storage": {
+                "title": "Cloud Storage",
+                "desc": "Securely store your design works, access anytime, anywhere",
+                "list": [
+                    "1GB Free Storage",
+                    "Project Management"
+                ]
+            },
+            "support": {
+                "title": "Customer Support",
+                "desc": "Get necessary help and support to get started quickly",
+                "list": [
+                    "Help Documentation",
+                    "Community Forum"
+                ]
+            },
+            "mobile": {
+                "title": "Mobile App",
+                "desc": "Use Lovart on mobile devices and design anytime",
+                "list": [
+                    "iOS and Android",
+                    "Basic Features"
+                ]
+            }
+        },
+        "comparison": {
+            "title": "Free vs Paid Comparison",
+            "headers": [
+                "Features",
+                "Free",
+                "Pro",
+                "Enterprise"
+            ],
+            "rows": [
+                {
+                    "name": "AI Design Generation",
+                    "free": "10/Month",
+                    "pro": "Unlimited",
+                    "enterprise": "Unlimited"
+                },
+                {
+                    "name": "Template Library",
+                    "free": "100+",
+                    "pro": "1000+",
+                    "enterprise": "Custom Templates"
+                },
+                {
+                    "name": "Export Quality",
+                    "free": "Standard",
+                    "pro": "HD",
+                    "enterprise": "4K Ultra HD"
+                },
+                {
+                    "name": "Export Formats",
+                    "free": "PNG, JPG",
+                    "pro": "PNG, JPG, SVG, PDF",
+                    "enterprise": "All Formats"
+                },
+                {
+                    "name": "Cloud Storage",
+                    "free": "1GB",
+                    "pro": "100GB",
+                    "enterprise": "Unlimited"
+                },
+                {
+                    "name": "Brand Kit",
+                    "free": "❌",
+                    "pro": "✅",
+                    "enterprise": "✅"
+                },
+                {
+                    "name": "Team Collaboration",
+                    "free": "❌",
+                    "pro": "Up to 5 Users",
+                    "enterprise": "Unlimited Users"
+                },
+                {
+                    "name": "API Access",
+                    "free": "❌",
+                    "pro": "1000 Calls/Month",
+                    "enterprise": "Unlimited API"
+                },
+                {
+                    "name": "Priority Support",
+                    "free": "❌",
+                    "pro": "✅",
+                    "enterprise": "24/7 Dedicated"
+                },
+                {
+                    "name": "Price",
+                    "free": "Free",
+                    "pro": "$29/Month",
+                    "enterprise": "Contact Sales"
+                }
+            ]
+        },
+        "how_to": {
+            "title": "How to Start Free Trial",
+            "step1": {
+                "title": "Sign Up",
+                "desc": "Sign up with email or social media account, no credit card required"
+            },
+            "step2": {
+                "title": "Choose Free Plan",
+                "desc": "Select the free trial plan and get instant access to all features for 14 days"
+            },
+            "step3": {
+                "title": "Start Designing",
+                "desc": "Create your first design with AI tools and experience powerful features"
+            }
+        },
+        "faq": {
+            "title": "Free Trial FAQ",
+            "items": [
+                {
+                    "q": "Is Lovart really free?",
+                    "a": "Yes, Lovart offers a forever free version with basic design features. We also offer a 14-day free trial of all features, no credit card required."
+                },
+                {
+                    "q": "What happens after the free trial ends?",
+                    "a": "After the trial ends, you can choose to upgrade to a paid plan to continue using all features, or continue using the basic features of the free version."
+                },
+                {
+                    "q": "Can I cancel anytime?",
+                    "a": "Yes, you can cancel your subscription at any time. Even if you upgrade to a paid plan, you can cancel anytime in your account settings."
+                },
+                {
+                    "q": "Are there feature limitations in the free version?",
+                    "a": "The free version has some limitations, such as monthly AI design generations, storage space, and export quality. But it is enough for personal basic design needs."
+                },
+                {
+                    "q": "Is there a free trial for enterprise users?",
+                    "a": "Yes, enterprise users can apply for an extended 30-day free trial, including team collaboration and advanced features. Please contact our sales team."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Ready to start your free trial?",
+            "desc": "Join over 500,000 users and experience the powerful features of AI design",
+            "btn_primary": "Start Free Trial Now",
+            "btn_secondary": "Learn More"
         }
     }
 }
