@@ -1,0 +1,21 @@
+<!-- FAQ Schema for help page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    <% if (t.help_page && t.help_page.faq && t.help_page.faq.items) { %>
+    <% t.help_page.faq.items.forEach(function(item, index) { %>
+    {
+      "@type": "Question",
+      "name": "<%= item.question.replace(/"/g, '\\"') %>",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<%= item.answer.replace(/<[^>]*>/g, '').replace(/"/g, '\\"').replace(/\n/g, ' ').trim() %>"
+      }
+    }<%= index < t.help_page.faq.items.length - 1 ? ',' : '' %>
+    <% }); %>
+    <% } %>
+  ]
+}
+</script>
