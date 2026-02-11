@@ -46,6 +46,25 @@
                 </div>
             </section>
 
+            <!-- What is Lovart API Section -->
+            <section class="py-16 border-b border-neutral-light/20">
+                <div class="container mx-auto px-6 max-w-4xl">
+                    <h2 class="text-3xl font-bold mb-6">
+                        <%= t.lovart_api_page.what.title %>
+                    </h2>
+                    <p class="text-neutral mb-8 leading-relaxed">
+                        <%= t.lovart_api_page.what.desc %>
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <% t.lovart_api_page.what.tags.forEach(tag=> { %>
+                            <span class="px-4 py-2 bg-primary/10 rounded-full text-sm font-semibold text-primary">
+                                <%= tag %>
+                            </span>
+                            <% }) %>
+                    </div>
+                </div>
+            </section>
+
             <!-- Authentication Section -->
             <section class="py-16 border-b border-neutral-light/20">
                 <div class="container mx-auto px-6 max-w-4xl">
@@ -253,6 +272,85 @@
                 </div>
             </section>
 
+            <!-- Lovart API Core Capabilities Section -->
+            <section class="py-16 border-b border-neutral-light/20">
+                <div class="container mx-auto px-6 max-w-6xl">
+                    <h2 class="text-3xl font-bold mb-10 text-center">
+                        <%= t.lovart_api_page.capabilities.title %>
+                    </h2>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <% t.lovart_api_page.capabilities.items.forEach(item=> { %>
+                            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all text-center">
+                                <span class="text-3xl mb-4 block">
+                                    <%= item.icon %>
+                                </span>
+                                <h3 class="text-lg font-semibold mb-2">
+                                    <%= item.title %>
+                                </h3>
+                                <p class="text-sm text-neutral">
+                                    <%= item.desc %>
+                                </p>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Lovart API Section -->
+            <section class="py-16 bg-white">
+                <div class="container mx-auto px-6 max-w-6xl">
+                    <h2 class="text-3xl font-bold mb-10 text-center">
+                        <%= t.lovart_api_page.why.title %>
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <% t.lovart_api_page.why.items.forEach(item=> { %>
+                            <div
+                                class="flex items-start gap-4 p-6 rounded-xl border border-neutral-light/30 hover:shadow-md transition-all">
+                                <span class="text-2xl flex-shrink-0">
+                                    <%= item.icon %>
+                                </span>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-2">
+                                        <%= item.title %>
+                                    </h3>
+                                    <p class="text-sm text-neutral">
+                                        <%= item.desc %>
+                                    </p>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="py-16 border-b border-neutral-light/20">
+                <div class="container mx-auto px-6 max-w-4xl">
+                    <h2 class="text-3xl font-bold mb-10 text-center">
+                        <%= t.lovart_api_page.faq.title %>
+                    </h2>
+                    <div class="space-y-4">
+                        <% t.lovart_api_page.faq.items.forEach(item=> { %>
+                            <details
+                                class="group bg-white rounded-xl shadow-sm border border-neutral-light/30 overflow-hidden">
+                                <summary
+                                    class="flex items-center justify-between cursor-pointer p-6 font-semibold text-neutral-dark hover:text-primary transition-colors">
+                                    <%= item.q %>
+                                        <svg class="w-5 h-5 text-neutral transition-transform group-open:rotate-180 flex-shrink-0 ml-4"
+                                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                </summary>
+                                <div class="px-6 pb-6 text-neutral text-sm leading-relaxed">
+                                    <%= item.a %>
+                                </div>
+                            </details>
+                            <% }) %>
+                    </div>
+                </div>
+            </section>
+
             <!-- Support Section -->
             <section class="py-16 bg-neutral-light/30">
                 <div class="container mx-auto px-6 max-w-4xl text-center">
@@ -301,6 +399,65 @@
                                 <%= t.lovart_api_page.support.email.link %>
                             </a>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Resources Section -->
+            <section class="py-12 bg-white">
+                <div class="container mx-auto px-6 max-w-6xl">
+                    <h2 class="text-2xl font-bold mb-8 text-center">
+                        <%= t.lovart_api_page.related.title %>
+                    </h2>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <a href="<%= link('lovart-pricing.html') %>"
+                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                            <h3 class="font-semibold mb-1">
+                                <%= t.lovart_api_page.related.items[0].title %>
+                            </h3>
+                            <p class="text-xs text-neutral mb-2">
+                                <%= t.lovart_api_page.related.items[0].desc %>
+                            </p>
+                            <span class="text-primary text-sm font-medium">
+                                <%= t.lovart_api_page.related.items[0].link_text %>
+                            </span>
+                        </a>
+                        <a href="<%= link('lovart-free.html') %>"
+                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                            <h3 class="font-semibold mb-1">
+                                <%= t.lovart_api_page.related.items[1].title %>
+                            </h3>
+                            <p class="text-xs text-neutral mb-2">
+                                <%= t.lovart_api_page.related.items[1].desc %>
+                            </p>
+                            <span class="text-primary text-sm font-medium">
+                                <%= t.lovart_api_page.related.items[1].link_text %>
+                            </span>
+                        </a>
+                        <a href="<%= link('lovart-design-features.html') %>"
+                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                            <h3 class="font-semibold mb-1">
+                                <%= t.lovart_api_page.related.items[2].title %>
+                            </h3>
+                            <p class="text-xs text-neutral mb-2">
+                                <%= t.lovart_api_page.related.items[2].desc %>
+                            </p>
+                            <span class="text-primary text-sm font-medium">
+                                <%= t.lovart_api_page.related.items[2].link_text %>
+                            </span>
+                        </a>
+                        <a href="<%= link('lovart-ai-code.html') %>"
+                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                            <h3 class="font-semibold mb-1">
+                                <%= t.lovart_api_page.related.items[3].title %>
+                            </h3>
+                            <p class="text-xs text-neutral mb-2">
+                                <%= t.lovart_api_page.related.items[3].desc %>
+                            </p>
+                            <span class="text-primary text-sm font-medium">
+                                <%= t.lovart_api_page.related.items[3].link_text %>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -364,6 +521,20 @@
                                 setTimeout(() => target.classList.add('active'), 10);
                             }
                         });
+                    });
+
+                    // Scroll animation observer
+                    const scrollObserver = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('is-visible');
+                                scrollObserver.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.1 });
+
+                    document.querySelectorAll('.section-animate').forEach(section => {
+                        scrollObserver.observe(section);
                     });
                 });
             </script>

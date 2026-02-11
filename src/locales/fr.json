@@ -1392,6 +1392,124 @@
                 "desc": "Get help from our support team",
                 "link": "Contact Support →"
             }
+        },
+        "what": {
+            "title": "Qu'est-ce que Lovart API ?",
+            "desc": "Lovart API offre un accès programmatique à l'une des plateformes de design IA les plus puissantes. Lovart AI combine des modèles génératifs avancés — dont Flux, Stable Diffusion et des moteurs propriétaires — en une plateforme unifiée. Que vous construisiez des flux de travail de design automatisés ou exploriez la créativité alimentée par l'IA, Lovart API fournit les outils pour transformer des descriptions textuelles en images époustouflantes, améliorer des visuels existants et générer de courtes vidéos. La plateforme est accessible via une interface web et un Bot Discord, ce qui rend Lovart API flexible pour les utilisateurs occasionnels comme pour les équipes professionnelles.",
+            "tags": [
+                "🎨 Plateforme de design IA",
+                "📹 Génération vidéo",
+                "🖼️ Retouche d'image"
+            ]
+        },
+        "capabilities": {
+            "title": "Capacités clés de Lovart API",
+            "items": [
+                {
+                    "icon": "🎨",
+                    "title": "Génération d'images IA",
+                    "desc": "Générez des visuels de haute qualité à partir de descriptions textuelles grâce aux modèles avancés de Lovart API."
+                },
+                {
+                    "icon": "🖼️",
+                    "title": "Amélioration d'images",
+                    "desc": "Agrandissez et optimisez vos images grâce à l'amélioration alimentée par l'IA de la plateforme."
+                },
+                {
+                    "icon": "📹",
+                    "title": "Génération vidéo",
+                    "desc": "Créez de courtes vidéos à partir d'images ou de descriptions textuelles — une capacité phare de la plateforme."
+                },
+                {
+                    "icon": "📐",
+                    "title": "Bibliothèque de modèles",
+                    "desc": "Accédez à une bibliothèque de modèles de design soigneusement sélectionnés sur la plateforme."
+                },
+                {
+                    "icon": "🤖",
+                    "title": "Support multi-modèles",
+                    "desc": "Lovart API prend en charge plusieurs modèles IA, dont Flux et Stable Diffusion."
+                }
+            ]
+        },
+        "why": {
+            "title": "Pourquoi choisir Lovart API ?",
+            "items": [
+                {
+                    "icon": "🤖",
+                    "title": "Plusieurs modèles IA",
+                    "desc": "Accédez à Flux, Stable Diffusion et bien d'autres — le tout via Lovart API unifié."
+                },
+                {
+                    "icon": "💰",
+                    "title": "Tarifs abordables",
+                    "desc": "Les forfaits commencent à 9 $/mois avec des options de crédits flexibles pour tous les budgets."
+                },
+                {
+                    "icon": "✅",
+                    "title": "Licence commerciale",
+                    "desc": "Tous les forfaits payants incluent les droits d'utilisation commerciale complets pour le contenu généré."
+                },
+                {
+                    "icon": "💬",
+                    "title": "Communauté active",
+                    "desc": "Rejoignez une communauté Discord active de créateurs pour l'inspiration et le support."
+                }
+            ]
+        },
+        "faq": {
+            "title": "Questions fréquentes sur Lovart API",
+            "items": [
+                {
+                    "q": "À quoi sert Lovart API ?",
+                    "a": "Lovart API permet un accès programmatique aux fonctionnalités de design alimentées par l'IA, notamment la génération d'images, la retouche d'images, la création vidéo et les flux de travail basés sur des modèles. Il est conçu pour les développeurs et les entreprises souhaitant intégrer des capacités de design IA."
+                },
+                {
+                    "q": "Combien coûte Lovart API ?",
+                    "a": "Lovart API est disponible via plusieurs forfaits d'abonnement. Les tarifs commencent à 9 $/mois pour le forfait Starter, qui comprend 1 200 crédits rapides. Les niveaux supérieurs — Basic (29 $), Pro (49 $) et Ultimate (99 $) — offrent plus de crédits et un traitement prioritaire."
+                },
+                {
+                    "q": "Lovart API propose-t-il un forfait gratuit ?",
+                    "a": "Oui, Lovart propose un niveau gratuit qui permet aux utilisateurs d'explorer les fonctionnalités principales de la plateforme avec un nombre limité de crédits. Vous pouvez passer à un forfait payant à tout moment pour un accès supplémentaire."
+                },
+                {
+                    "q": "Quels modèles IA Lovart API prend-il en charge ?",
+                    "a": "Lovart API prend en charge plusieurs modèles IA de pointe, dont Flux, Stable Diffusion et des modèles propriétaires, offrant aux utilisateurs un large éventail de styles visuels et de niveaux de qualité."
+                },
+                {
+                    "q": "Puis-je utiliser les images générées par Lovart API à des fins commerciales ?",
+                    "a": "Oui, tous les forfaits payants incluent les droits d'utilisation commerciale. Vous pouvez utiliser les images et vidéos générées pour des projets commerciaux, du matériel marketing et des livrables clients."
+                },
+                {
+                    "q": "Comment accéder à Lovart API ?",
+                    "a": "Lovart API est accessible via la plateforme web sur lovart.ai et via le Bot Discord officiel. Visitez la plateforme pour créer un compte et explorer les fonctionnalités disponibles."
+                }
+            ]
+        },
+        "related": {
+            "title": "Découvrez plus de ressources Lovart API",
+            "items": [
+                {
+                    "title": "Tarifs",
+                    "desc": "Comparez les forfaits d'abonnement Lovart API",
+                    "link_text": "Voir les tarifs →"
+                },
+                {
+                    "title": "Forfait gratuit",
+                    "desc": "Essayez Lovart API gratuitement",
+                    "link_text": "Commencer gratuitement →"
+                },
+                {
+                    "title": "Fonctionnalités de design",
+                    "desc": "Explorez tous les outils de design Lovart AI",
+                    "link_text": "Voir les fonctionnalités →"
+                },
+                {
+                    "title": "Technologie IA",
+                    "desc": "Découvrez la technologie IA de Lovart",
+                    "link_text": "En savoir plus →"
+                }
+            ]
         }
     },
     "lovart_free_page": {

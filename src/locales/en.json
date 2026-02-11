@@ -1405,6 +1405,124 @@
                 "desc": "Get help from our support team",
                 "link": "Contact Support →"
             }
+        },
+        "what": {
+            "title": "What is the Lovart API?",
+            "desc": "The Lovart API provides programmatic access to one of the most powerful AI design platforms available. Lovart AI combines advanced generative models — including Flux, Stable Diffusion, and proprietary engines — into a single, unified platform. Whether you are building automated design workflows or exploring AI-powered creativity, the Lovart API offers the tools to transform text prompts into stunning images, enhance existing visuals, and generate short videos. The platform is accessible via a web interface and a Discord Bot, making it flexible for both casual users and professional teams.",
+            "tags": [
+                "🎨 AI Design Platform",
+                "📹 Video Generation",
+                "🖼️ Image Editing"
+            ]
+        },
+        "capabilities": {
+            "title": "Lovart API Core Capabilities",
+            "items": [
+                {
+                    "icon": "🎨",
+                    "title": "AI Image Generation",
+                    "desc": "Generate high-quality visuals from text descriptions using the Lovart API's advanced models."
+                },
+                {
+                    "icon": "🖼️",
+                    "title": "Image Enhancement",
+                    "desc": "Upscale and optimize images with AI-powered enhancement through the platform."
+                },
+                {
+                    "icon": "📹",
+                    "title": "Video Generation",
+                    "desc": "Create short videos from images or text prompts — a standout platform capability."
+                },
+                {
+                    "icon": "📐",
+                    "title": "Template Library",
+                    "desc": "Access a curated library of design templates available on the platform."
+                },
+                {
+                    "icon": "🤖",
+                    "title": "Multi-Model Support",
+                    "desc": "The Lovart API supports multiple AI models including Flux and Stable Diffusion."
+                }
+            ]
+        },
+        "why": {
+            "title": "Why Choose the Lovart API?",
+            "items": [
+                {
+                    "icon": "🤖",
+                    "title": "Multiple AI Models",
+                    "desc": "Access Flux, Stable Diffusion, and more — all through the unified Lovart API."
+                },
+                {
+                    "icon": "💰",
+                    "title": "Affordable Plans",
+                    "desc": "Plans start at $9/month with flexible credit options for every budget."
+                },
+                {
+                    "icon": "✅",
+                    "title": "Commercial License",
+                    "desc": "All paid plans include full commercial usage rights for generated content."
+                },
+                {
+                    "icon": "💬",
+                    "title": "Active Community",
+                    "desc": "Join an active Discord community of creators for inspiration and support."
+                }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions About Lovart API",
+            "items": [
+                {
+                    "q": "What is the Lovart API used for?",
+                    "a": "The Lovart API enables programmatic access to AI-powered design features including image generation, image editing, video creation, and template-based workflows. It is designed for developers and businesses looking to integrate AI design capabilities."
+                },
+                {
+                    "q": "How much does the Lovart API cost?",
+                    "a": "It is available through several subscription plans. Pricing starts at $9/month for the Starter plan, which includes 1,200 fast credits. Higher tiers — Basic ($29), Pro ($49), and Ultimate ($99) — offer more credits and priority processing."
+                },
+                {
+                    "q": "Does the Lovart API offer a free plan?",
+                    "a": "Yes, Lovart provides a free tier that allows users to explore the platform's core AI design capabilities with a limited number of credits. You can upgrade to a paid plan at any time for additional access."
+                },
+                {
+                    "q": "What AI models does the Lovart API support?",
+                    "a": "The Lovart API supports multiple state-of-the-art AI models including Flux, Stable Diffusion, and proprietary models, giving users access to a wide range of visual styles and quality levels."
+                },
+                {
+                    "q": "Can I use Lovart API generated images for commercial purposes?",
+                    "a": "Yes, all paid plans include commercial usage rights. You can use generated images and videos for business projects, marketing materials, and client deliverables."
+                },
+                {
+                    "q": "How do I access the Lovart API?",
+                    "a": "The Lovart API is accessible through the web platform at lovart.ai and via the official Discord Bot. Visit the platform to create an account and explore the available features."
+                }
+            ]
+        },
+        "related": {
+            "title": "Explore More Lovart API Resources",
+            "items": [
+                {
+                    "title": "Pricing Plans",
+                    "desc": "Compare Lovart API subscription tiers",
+                    "link_text": "View Pricing →"
+                },
+                {
+                    "title": "Free Plan",
+                    "desc": "Try the Lovart API for free",
+                    "link_text": "Start Free →"
+                },
+                {
+                    "title": "Design Features",
+                    "desc": "Explore all Lovart AI design tools",
+                    "link_text": "View Features →"
+                },
+                {
+                    "title": "AI Technology",
+                    "desc": "Learn about Lovart's AI technology",
+                    "link_text": "Learn More →"
+                }
+            ]
         }
     },
     "lovart_free_page": {

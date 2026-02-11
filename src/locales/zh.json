@@ -1405,6 +1405,124 @@
                 "desc": "Get help from our support team",
                 "link": "Contact Support →"
             }
+        },
+        "what": {
+            "title": "什么是 Lovart API？",
+            "desc": "Lovart API 为您提供对最强大的 AI 设计平台之一的编程访问能力。Lovart AI 将 Flux、Stable Diffusion 等先进生成模型与专有引擎整合到一个统一平台中。无论您是构建自动化设计工作流，还是探索 AI 驱动的创意，Lovart API 都能帮助您将文字描述转化为精美图像、优化现有视觉素材并生成短视频。该平台可通过 Web 界面和 Discord Bot 访问，灵活满足个人用户和专业团队的需求。",
+            "tags": [
+                "🎨 AI 设计平台",
+                "📹 视频生成",
+                "🖼️ 图像编辑"
+            ]
+        },
+        "capabilities": {
+            "title": "Lovart API 核心能力",
+            "items": [
+                {
+                    "icon": "🎨",
+                    "title": "AI 图像生成",
+                    "desc": "使用 Lovart API 的先进模型，根据文字描述生成高品质视觉作品。"
+                },
+                {
+                    "icon": "🖼️",
+                    "title": "图像增强",
+                    "desc": "通过平台的 AI 增强功能对图像进行放大和优化。"
+                },
+                {
+                    "icon": "📹",
+                    "title": "视频生成",
+                    "desc": "从图像或文字提示创建短视频——平台的一项突出能力。"
+                },
+                {
+                    "icon": "📐",
+                    "title": "模板库",
+                    "desc": "访问平台上精心策划的设计模板库。"
+                },
+                {
+                    "icon": "🤖",
+                    "title": "多模型支持",
+                    "desc": "Lovart API 支持包括 Flux 和 Stable Diffusion 在内的多种 AI 模型。"
+                }
+            ]
+        },
+        "why": {
+            "title": "为什么选择 Lovart API？",
+            "items": [
+                {
+                    "icon": "🤖",
+                    "title": "多种 AI 模型",
+                    "desc": "通过统一的 Lovart API 访问 Flux、Stable Diffusion 等多种模型。"
+                },
+                {
+                    "icon": "💰",
+                    "title": "实惠的套餐",
+                    "desc": "套餐低至 $9/月起，提供灵活的积分选项，适合各种预算。"
+                },
+                {
+                    "icon": "✅",
+                    "title": "商业授权",
+                    "desc": "所有付费套餐均包含生成内容的完整商业使用权。"
+                },
+                {
+                    "icon": "💬",
+                    "title": "活跃社区",
+                    "desc": "加入活跃的 Discord 创作者社区获取灵感和技术支持。"
+                }
+            ]
+        },
+        "faq": {
+            "title": "Lovart API 常见问题",
+            "items": [
+                {
+                    "q": "Lovart API 有什么用途？",
+                    "a": "Lovart API 提供对 AI 设计功能的编程访问，包括图像生成、图像编辑、视频创建和基于模板的工作流。它专为希望集成 AI 设计能力的开发者和企业设计。"
+                },
+                {
+                    "q": "Lovart API 的价格是多少？",
+                    "a": "Lovart API 提供多种订阅套餐。入门套餐起价 $9/月，包含 1,200 个快速积分。更高级别——基础版 ($29)、专业版 ($49) 和旗舰版 ($99)——提供更多积分和优先处理。"
+                },
+                {
+                    "q": "Lovart API 有免费套餐吗？",
+                    "a": "有，Lovart 提供免费版本，用户可以使用有限积分探索平台的核心 AI 设计功能。您可以随时升级到付费套餐获得更多访问权限。"
+                },
+                {
+                    "q": "Lovart API 支持哪些 AI 模型？",
+                    "a": "Lovart API 支持多种前沿 AI 模型，包括 Flux、Stable Diffusion 和专有模型，为用户提供多样的视觉风格和质量选择。"
+                },
+                {
+                    "q": "Lovart API 生成的图像可以商用吗？",
+                    "a": "可以，所有付费套餐均包含商业使用权。您可以将生成的图像和视频用于商业项目、营销材料和客户交付物。"
+                },
+                {
+                    "q": "如何访问 Lovart API？",
+                    "a": "Lovart API 可通过 lovart.ai 网页平台和官方 Discord Bot 访问。请访问平台创建账户并探索可用功能。"
+                }
+            ]
+        },
+        "related": {
+            "title": "探索更多 Lovart API 资源",
+            "items": [
+                {
+                    "title": "价格方案",
+                    "desc": "比较 Lovart API 订阅套餐",
+                    "link_text": "查看价格 →"
+                },
+                {
+                    "title": "免费版",
+                    "desc": "免费体验 Lovart API",
+                    "link_text": "免费开始 →"
+                },
+                {
+                    "title": "设计功能",
+                    "desc": "探索所有 Lovart AI 设计工具",
+                    "link_text": "查看功能 →"
+                },
+                {
+                    "title": "AI 技术",
+                    "desc": "了解 Lovart 的 AI 技术",
+                    "link_text": "了解更多 →"
+                }
+            ]
         }
     },
     "lovart_free_page": {
