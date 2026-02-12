@@ -11,7 +11,9 @@
         "blog": "Blog",
         "help": "Help",
         "about": "About",
-        "get_started": "Get Started"
+        "get_started": "Get Started",
+        "free": "無料トライアル",
+        "api": "API"
     },
     "hero": {
         "title": "Lovart: Unleash Your Creative Genius with AI-Powered Design",
