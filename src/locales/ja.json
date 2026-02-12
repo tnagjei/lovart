@@ -277,6 +277,26 @@
             "contact": "Contact",
             "rights": "Lovart. All rights reserved. Discover \"Lovart AI design tool\" power.",
             "tagline": "The \"Lovart platform\" - Redefining Digital Creation."
+        },
+        "related": {
+            "title": "Lovart のその他のリソース",
+            "items": [
+                {
+                    "title": "Lovart AI 料金プラン",
+                    "desc": "サブスクリプションプランを比較して最適なプランを見つけましょう",
+                    "link_text": "料金を見る →"
+                },
+                {
+                    "title": "Lovart API アクセス",
+                    "desc": "API を通じて Lovart AI をワークフローに統合",
+                    "link_text": "API ドキュメント →"
+                },
+                {
+                    "title": "Lovart を無料で試す",
+                    "desc": "無料で Lovart AI デザインを始めましょう",
+                    "link_text": "無料で始める →"
+                }
+            ]
         }
     },
     "pricing_page": {
@@ -374,6 +394,26 @@
         "footer": {
             "rights": "Lovart. All rights reserved.",
             "tagline": "Innovate with AI, Design with Lovart."
+        },
+        "related": {
+            "title": "Lovart のその他のリソース",
+            "items": [
+                {
+                    "title": "Lovart デザイン機能",
+                    "desc": "AI デザインツールの全機能を探索",
+                    "link_text": "機能を見る →"
+                },
+                {
+                    "title": "Lovart を無料で試す",
+                    "desc": "無料で Lovart AI を始めましょう",
+                    "link_text": "無料で始める →"
+                },
+                {
+                    "title": "Lovart API ドキュメント",
+                    "desc": "Lovart AI をアプリケーションに統合",
+                    "link_text": "API ドキュメント →"
+                }
+            ]
         }
     },
     "about_page": {
@@ -1220,6 +1260,26 @@
             "title": "Interested in \"Lovart for Developers\" and \"Lovart AI Code\"?",
             "desc": "Sign up for our developer-specific newsletter or follow our technical blog to receive the latest updates on Lovart's developer tools, \"Lovart API\" releases, \"Lovart AI code\" initiatives, and opportunities for \"Lovart for developers\".",
             "button": "Contact Us & Stay Informed"
+        },
+        "related": {
+            "title": "Lovart のその他のリソース",
+            "items": [
+                {
+                    "title": "Lovart API ドキュメント",
+                    "desc": "API を通じて Lovart AI の機能にアクセス",
+                    "link_text": "API ドキュメント →"
+                },
+                {
+                    "title": "Lovart AI 料金プラン",
+                    "desc": "ニーズに合ったプランを見つけましょう",
+                    "link_text": "料金を見る →"
+                },
+                {
+                    "title": "Lovart を無料で試す",
+                    "desc": "今すぐ Lovart AI で制作を始めましょう",
+                    "link_text": "無料で始める →"
+                }
+            ]
         }
     },
     "lovart_api_page": {
@@ -1697,6 +1757,26 @@
             "desc": "Join over 500,000 users and experience the powerful features of AI design",
             "btn_primary": "Start Free Trial Now",
             "btn_secondary": "Learn More"
+        },
+        "related": {
+            "title": "Lovart のその他のリソース",
+            "items": [
+                {
+                    "title": "Lovart AI 料金プラン",
+                    "desc": "アップグレードでより多くのクレジットとプレミアム機能を取得",
+                    "link_text": "料金を見る →"
+                },
+                {
+                    "title": "Lovart デザイン機能",
+                    "desc": "AI 搭載のデザインツールをすべて発見",
+                    "link_text": "機能を見る →"
+                },
+                {
+                    "title": "Lovart API ドキュメント",
+                    "desc": "Lovart AI をアプリケーションに統合",
+                    "link_text": "API ドキュメント →"
+                }
+            ]
         }
     }
 }

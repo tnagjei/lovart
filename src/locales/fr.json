@@ -277,6 +277,26 @@
             "contact": "Contact",
             "rights": "Lovart. All rights reserved. Discover \"Lovart AI design tool\" power.",
             "tagline": "The \"Lovart platform\" - Redefining Digital Creation."
+        },
+        "related": {
+            "title": "Découvrez plus de ressources Lovart",
+            "items": [
+                {
+                    "title": "Tarifs Lovart AI",
+                    "desc": "Comparez les forfaits et trouvez celui qui vous convient",
+                    "link_text": "Voir les tarifs →"
+                },
+                {
+                    "title": "Accès Lovart API",
+                    "desc": "Intégrez Lovart AI dans votre flux de travail via l'API",
+                    "link_text": "Documentation API →"
+                },
+                {
+                    "title": "Essayer Lovart gratuitement",
+                    "desc": "Commencez à créer avec Lovart AI sans frais",
+                    "link_text": "Commencer gratuitement →"
+                }
+            ]
         }
     },
     "pricing_page": {
@@ -374,6 +394,26 @@
         "footer": {
             "rights": "Lovart. All rights reserved.",
             "tagline": "Innovate with AI, Design with Lovart."
+        },
+        "related": {
+            "title": "Découvrez plus de ressources Lovart",
+            "items": [
+                {
+                    "title": "Fonctionnalités Lovart",
+                    "desc": "Explorez l'ensemble des outils de design IA",
+                    "link_text": "Voir les fonctionnalités →"
+                },
+                {
+                    "title": "Essayer Lovart gratuitement",
+                    "desc": "Commencez avec Lovart AI sans frais",
+                    "link_text": "Commencer gratuitement →"
+                },
+                {
+                    "title": "Documentation Lovart API",
+                    "desc": "Intégrez Lovart AI dans vos applications",
+                    "link_text": "Documentation API →"
+                }
+            ]
         }
     },
     "about_page": {
@@ -1220,6 +1260,26 @@
             "title": "Interested in \"Lovart for Developers\" and \"Lovart AI Code\"?",
             "desc": "Sign up for our developer-specific newsletter or follow our technical blog to receive the latest updates on Lovart's developer tools, \"Lovart API\" releases, \"Lovart AI code\" initiatives, and opportunities for \"Lovart for developers\".",
             "button": "Contact Us & Stay Informed"
+        },
+        "related": {
+            "title": "Découvrez plus de ressources Lovart",
+            "items": [
+                {
+                    "title": "Documentation Lovart API",
+                    "desc": "Accédez aux capacités de Lovart AI via l'API",
+                    "link_text": "Documentation API →"
+                },
+                {
+                    "title": "Tarifs Lovart AI",
+                    "desc": "Trouvez le forfait adapté à vos besoins",
+                    "link_text": "Voir les tarifs →"
+                },
+                {
+                    "title": "Essayer Lovart gratuitement",
+                    "desc": "Commencez à créer avec Lovart AI dès aujourd'hui",
+                    "link_text": "Commencer gratuitement →"
+                }
+            ]
         }
     },
     "lovart_api_page": {
@@ -1697,6 +1757,26 @@
             "desc": "Join over 500,000 users and experience the powerful features of AI design",
             "btn_primary": "Start Free Trial Now",
             "btn_secondary": "Learn More"
+        },
+        "related": {
+            "title": "Découvrez plus de ressources Lovart",
+            "items": [
+                {
+                    "title": "Tarifs Lovart AI",
+                    "desc": "Passez à un niveau supérieur pour plus de crédits et de fonctionnalités",
+                    "link_text": "Voir les tarifs →"
+                },
+                {
+                    "title": "Fonctionnalités Lovart",
+                    "desc": "Découvrez tous les outils de design alimentés par l'IA",
+                    "link_text": "Voir les fonctionnalités →"
+                },
+                {
+                    "title": "Documentation Lovart API",
+                    "desc": "Intégrez Lovart AI dans vos applications",
+                    "link_text": "Documentation API →"
+                }
+            ]
         }
     }
 }

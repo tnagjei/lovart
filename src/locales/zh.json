@@ -277,6 +277,26 @@
             "contact": "Contact",
             "rights": "Lovart. All rights reserved. Discover \"Lovart AI design tool\" power.",
             "tagline": "The \"Lovart platform\" - Redefining Digital Creation."
+        },
+        "related": {
+            "title": "探索更多 Lovart 资源",
+            "items": [
+                {
+                    "title": "Lovart AI 定价方案",
+                    "desc": "对比订阅计划，找到最适合您的方案",
+                    "link_text": "查看定价 →"
+                },
+                {
+                    "title": "Lovart API 接入",
+                    "desc": "通过 API 将 Lovart AI 集成到您的工作流程",
+                    "link_text": "API 文档 →"
+                },
+                {
+                    "title": "免费试用 Lovart",
+                    "desc": "零成本开始使用 Lovart AI 设计",
+                    "link_text": "免费开始 →"
+                }
+            ]
         }
     },
     "pricing_page": {
@@ -374,6 +394,26 @@
         "footer": {
             "rights": "Lovart. All rights reserved.",
             "tagline": "Innovate with AI, Design with Lovart."
+        },
+        "related": {
+            "title": "探索更多 Lovart 资源",
+            "items": [
+                {
+                    "title": "Lovart 设计功能",
+                    "desc": "探索全套 AI 设计工具",
+                    "link_text": "查看功能 →"
+                },
+                {
+                    "title": "免费试用 Lovart",
+                    "desc": "零成本开始使用 Lovart AI",
+                    "link_text": "免费开始 →"
+                },
+                {
+                    "title": "Lovart API 文档",
+                    "desc": "将 Lovart AI 集成到您的应用中",
+                    "link_text": "API 文档 →"
+                }
+            ]
         }
     },
     "about_page": {
@@ -1233,6 +1273,26 @@
             "title": "Interested in \"Lovart for Developers\" and \"Lovart AI Code\"?",
             "desc": "Sign up for our developer-specific newsletter or follow our technical blog to receive the latest updates on Lovart's developer tools, \"Lovart API\" releases, \"Lovart AI code\" initiatives, and opportunities for \"Lovart for developers\".",
             "button": "Contact Us & Stay Informed"
+        },
+        "related": {
+            "title": "探索更多 Lovart 资源",
+            "items": [
+                {
+                    "title": "Lovart API 文档",
+                    "desc": "通过 API 访问 Lovart AI 能力",
+                    "link_text": "API 文档 →"
+                },
+                {
+                    "title": "Lovart AI 定价方案",
+                    "desc": "找到适合您需求的计划",
+                    "link_text": "查看定价 →"
+                },
+                {
+                    "title": "免费试用 Lovart",
+                    "desc": "立即开始使用 Lovart AI 创作",
+                    "link_text": "免费开始 →"
+                }
+            ]
         }
     },
     "lovart_api_page": {
@@ -1710,6 +1770,26 @@
             "desc": "Join over 500,000 users and experience the powerful features of AI design",
             "btn_primary": "Start Free Trial Now",
             "btn_secondary": "Learn More"
+        },
+        "related": {
+            "title": "探索更多 Lovart 资源",
+            "items": [
+                {
+                    "title": "Lovart AI 定价方案",
+                    "desc": "升级获取更多积分和高级功能",
+                    "link_text": "查看定价 →"
+                },
+                {
+                    "title": "Lovart 设计功能",
+                    "desc": "发现所有 AI 驱动的设计工具",
+                    "link_text": "查看功能 →"
+                },
+                {
+                    "title": "Lovart API 文档",
+                    "desc": "将 Lovart AI 集成到您的应用中",
+                    "link_text": "API 文档 →"
+                }
+            ]
         }
     }
 }
