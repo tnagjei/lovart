@@ -1728,42 +1728,67 @@
             ]
         },
         "how_to": {
-            "title": "How to Start Free Trial",
+            "title": "三步玩转 Lovart AI 免费设计",
             "step1": {
-                "title": "Sign Up",
-                "desc": "Sign up with email or social media account, no credit card required"
+                "title": "注册您的 Lovart 账号",
+                "desc": "通过电子邮件或社交媒体账号加入 Lovart 社区。无需信用卡即可开启创意之旅。注册后，Lovart 平台的全套工具触手可及，随时准备将您的灵感转化为惊艳的视觉作品。"
             },
             "step2": {
-                "title": "Choose Free Plan",
-                "desc": "Select the free trial plan and get instant access to all features for 14 days"
+                "title": "激活 Lovart 免费试用",
+                "desc": "登录 Lovart 控制面板的一刻，您的 14 天高级版试用将自动激活。这意味着您可以立即无限制地访问所有高端 Lovart AI 设计工具、高级模板和进阶导出选项，从第一天起感受 Lovart 的真实力量。"
             },
             "step3": {
-                "title": "Start Designing",
-                "desc": "Create your first design with AI tools and experience powerful features"
+                "title": "创作您的首件 Lovart 作品",
+                "desc": "深入 Lovart 工作区，利用我们的智能 AI 生成器打造专业徽标、社交媒体营销素材或复杂的数字插画。凭借 Lovart 直观的界面，无论您是否具备设计经验，都能在数秒内输出专业级设计。"
             }
         },
-        "faq": {
-            "title": "Free Trial FAQ",
+        "use_cases": {
+            "title": "免费版 Lovart AI 能为您做什么？",
             "items": [
                 {
-                    "q": "Is Lovart really free?",
-                    "a": "Yes, Lovart offers a forever free version with basic design features. We also offer a 14-day free trial of all features, no credit card required."
+                    "title": "初创企业品牌打造",
+                    "desc": "在没有初始设计预算的情况下，利用 Lovart 勾勒专业的 Logo 方案和品牌标识。Lovart 平台支持快速迭代您的视觉策略，助力初创起步。"
                 },
                 {
-                    "q": "What happens after the free trial ends?",
-                    "a": "After the trial ends, you can choose to upgrade to a paid plan to continue using all features, or continue using the basic features of the free version."
+                    "title": "动态社交媒体素材",
+                    "desc": "为 Instagram、Facebook 和 Twitter 生成高参与度的 Lovart 设计。我们的 AI 深度理解流行布局趋势，助您的帖子在纷繁的社交动态中脱颖而出。"
                 },
                 {
-                    "q": "Can I cancel anytime?",
-                    "a": "Yes, you can cancel your subscription at any time. Even if you upgrade to a paid plan, you can cancel anytime in your account settings."
+                    "title": "创意个人表达",
+                    "desc": "在 Lovart 中尝试深度学习 AI 艺术风格，制作个性化的数字壁纸、贺卡或独特的社交头像，展现您的个人线上魅力。"
                 },
                 {
-                    "q": "Are there feature limitations in the free version?",
-                    "a": "The free version has some limitations, such as monthly AI design generations, storage space, and export quality. But it is enough for personal basic design needs."
+                    "title": "极具冲击力的专业演示",
+                    "desc": "使用 Lovart 的智能布局和图像建议增强您的幻灯片和报告。Lovart 助您打造视觉资产，更高效地向客户和同事传达您的创意点子。"
+                }
+            ]
+        },
+        "faq": {
+            "title": "Lovart 免费版常见问题详析",
+            "items": [
+                {
+                    "q": "Lovart 设计工具真的是免费使用的吗？",
+                    "a": "是的，Lovart 提供包含核心 AI 设计功能的永久免费版本。此外，新用户还可获得 Lovart Pro 的 14 天免费试用，让您无成本探索我们平台的极致创意潜力。"
                 },
                 {
-                    "q": "Is there a free trial for enterprise users?",
-                    "a": "Yes, enterprise users can apply for an extended 30-day free trial, including team collaboration and advanced features. Please contact our sales team."
+                    "q": "Lovart 平台会在免费作品上加水印吗？",
+                    "a": "在 Lovart 免费试用期间，导出的作品通常是干净且高清的，非常适合专业场景。Lovart 标准免费计划提供标准质量导出，足以满足社交分享和个人项目需求。"
+                },
+                {
+                    "q": "我可以使用 Lovart 的设计进行商业用途吗？",
+                    "a": "当然可以。任何通过 Lovart 试用或 Lovart 账号创作的作品均归您所有。我们鼓励社区将 Lovart 应用于个人及小规模商业项目需求。"
+                },
+                {
+                    "q": "试用期结束，我在 Lovart 上的项目会怎样？",
+                    "a": "您的所有创意项目都安全地存储在 Lovart 平台上。试用结束后，您可以根据需要选择 Lovart 订阅方案，或保留在免费版。您现有的 Lovart 作品仍可在账户中访问。"
+                },
+                {
+                    "q": "我在 Lovart 平台上的数据隐私受保护吗？",
+                    "a": "隐私是 Lovart 的核心价值观。我们使用企业级安全协议保护 Lovart 平台上的所有数据。您的提示词和生成的设计均受到安全存储，确保您的创意机密仅属于您自己。"
+                },
+                {
+                    "q": "如何在 Lovart 中获得更多额外积分？",
+                    "a": "除了标准方案，Lovart 社区还奖励活跃用户。您可以通过推荐朋友加入 Lovart 或参与社区反馈会议来赚取奖励积分，帮助我们将 Lovart 打造为最卓越的 AI 设计平台。"
                 }
             ]
         },

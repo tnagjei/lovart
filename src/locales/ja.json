@@ -1715,42 +1715,67 @@
             ]
         },
         "how_to": {
-            "title": "How to Start Free Trial",
+            "title": "Lovart AIを無料で使いこなすための3つのステップ",
             "step1": {
-                "title": "Sign Up",
-                "desc": "Sign up with email or social media account, no credit card required"
+                "title": "Lovartアカウントに登録する",
+                "desc": "メールアドレスまたはソーシャルメディアアカウントで、成長を続けるLovartコミュニティに参加しましょう。クリエイティブな旅を始めるのにクレジットカードは必要ありません。登録すると、Lovartプラットフォームの全ツールがすぐに利用可能になり、あなたのアイデアを素晴らしいビジュアルに変える準備が整います。"
             },
             "step2": {
-                "title": "Choose Free Plan",
-                "desc": "Select the free trial plan and get instant access to all features for 14 days"
+                "title": "Lovart無料トライアルを有効化する",
+                "desc": "Lovartダッシュボードにログインした瞬間に、14日間のプレミアムトライアルが自動的に有効になります。これにより、すべてのハイエンドなLovart AIデザインツール、プレミアムテンプレート、高度な書き出しオプションに即座に無制限にアクセスでき、初日からLovartの真の力を体験できます。"
             },
             "step3": {
-                "title": "Start Designing",
-                "desc": "Create your first design with AI tools and experience powerful features"
+                "title": "最初のLovartマスターピースを作成する",
+                "desc": "Lovartワークスペースに飛び込み、インテリジェントなAIジェネレーターを使用して、プロフェッショナルなロゴ、ソーシャルメディアマーケティング素材、または複雑なデジタルイラストを作成しましょう。Lovartの直感的なインターフェースにより、デザイン経験の有無にかかわらず、誰でも数秒でプロ級のデザインを制作できます。"
             }
         },
-        "faq": {
-            "title": "Free Trial FAQ",
+        "use_cases": {
+            "title": "Lovart AIの無料版で何ができるようになりますか？",
             "items": [
                 {
-                    "q": "Is Lovart really free?",
-                    "a": "Yes, Lovart offers a forever free version with basic design features. We also offer a 14-day free trial of all features, no credit card required."
+                    "title": "スタートアップのブランディング",
+                    "desc": "初期のデザイン予算がない場合でも、Lovartを使用してプロフェッショナルなロゴコンセプトやブランドアイデンティティをドラフトできます。Lovartプラットフォームでは、ビジュアル戦略を迅速に反復できるため、スタートアップの立ち上げに役立ちます。"
                 },
                 {
-                    "q": "What happens after the free trial ends?",
-                    "a": "After the trial ends, you can choose to upgrade to a paid plan to continue using all features, or continue using the basic features of the free version."
+                    "title": "ダイナミックなソーシャルメディアコンテンツ",
+                    "desc": "Instagram、Facebook、Twitter向けにエンゲージメントの高いLovartデザインを生成します。当社のAIはトレンドのレイアウトスタイルを理解しており、混雑したソーシャルフィードの中で目立つ投稿の作成を支援します。"
                 },
                 {
-                    "q": "Can I cancel anytime?",
-                    "a": "Yes, you can cancel your subscription at any time. Even if you upgrade to a paid plan, you can cancel anytime in your account settings."
+                    "title": "クリエイティブな自己表現",
+                    "desc": "LovartでディープラーニングAIのアートスタイルを試して、パーソナライズされたデジタル壁紙、グリーティングカード、またはオンラインプレゼンスのためのユニークなアバターを作成しましょう。"
                 },
                 {
-                    "q": "Are there feature limitations in the free version?",
-                    "a": "The free version has some limitations, such as monthly AI design generations, storage space, and export quality. But it is enough for personal basic design needs."
+                    "title": "インパクトのあるプロフェッショナルなプレゼンテーション",
+                    "desc": "Lovartのインテリジェントなレイアウトと画像の提案により、スライドデッキやレポートを強化します。Lovartは、クライアントや同僚にアイデアをより効果的に伝えるための視覚資産の作成を支援します。"
+                }
+            ]
+        },
+        "faq": {
+            "title": "Lovart無料トライアルに関する詳細なFAQ",
+            "items": [
+                {
+                    "q": "Lovartのデザインツールは本当に無料で使用できますか？",
+                    "a": "はい、Lovartは不可欠なAIデザイン機能を備えた永久無料版を提供しています。さらに、新規ユーザーはLovart Proの全機能を14日間無料で試用でき、初期費用なしでプラットフォームの最大限のクリエイティブな可能性を探索できます。"
                 },
                 {
-                    "q": "Is there a free trial for enterprise users?",
-                    "a": "Yes, enterprise users can apply for an extended 30-day free trial, including team collaboration and advanced features. Please contact our sales team."
+                    "q": "Lovartプラットフォームは無料のデザインに透かし（ウォーターマーク）を入れますか？",
+                    "a": "Lovartの無料トライアル中、書き出しは通常クリーンで高解像度で利用可能なため、プロフェッショナルな用途に最適です。標準のLovart無料プランでは、ソーシャル共有や個人プロジェクトに理想的な標準品質の書き出しを提供します。"
+                },
+                {
+                    "q": "Lovartのデザインを商用目的で使用できますか？",
+                    "a": "もちろんです。Lovartのトライアル期間中、またはLovartアカウントを使用して作成されたすべての作品はあなたのものです。コミュニティの皆様には、個人および小規模な商用プロジェクトの両方でLovartを活用することをお勧めします。"
+                },
+                {
+                    "q": "Lovartのトライアルが終了すると、プロジェクトはどうなりますか？",
+                    "a": "すべてのクリエイティブプロジェクトはLovartプラットフォームに安全に保存されます。トライアル終了後、ニーズに合ったLovartサブスクリプションを選択するか、無料版のまま継続するかを選択できます。既存のLovart作品は引き続きアカウントからアクセス可能です。"
+                },
+                {
+                    "q": "Lovartプラットフォームで私のデータプライバシーは保護されていますか？",
+                    "a": "プライバシーはLovartの核となる価値観です。Lovartプラットフォーム上のすべてのデータを保護するために、エンタープライズ級のセキュリティプロトコルを使用しています。プロンプトと生成されたデザインは安全に保存され、あなたのクリエイティブな秘密が守られます。"
+                },
+                {
+                    "q": "Lovart内でさらなる追加クレジットを獲得するにはどうすればよいですか？",
+                    "a": "標準プラン以外にも、Lovartコミュニティはアクティブなユーザーに報酬を提供しています。友人をLovartに紹介したり、コミュニティフィードバックセッションに貢献したりすることで、ボーナスクレジットを獲得できます。これにより、Lovartを最高のAIデザインプラットフォームにするための支援をお願いしています。"
                 }
             ]
         },

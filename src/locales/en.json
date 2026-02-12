@@ -1728,42 +1728,67 @@
             ]
         },
         "how_to": {
-            "title": "How to Start Free Trial",
+            "title": "Three Simple Steps to Master Lovart AI for Free",
             "step1": {
-                "title": "Sign Up",
-                "desc": "Sign up with email or social media account, no credit card required"
+                "title": "Register Your Lovart Account",
+                "desc": "Join the growing Lovart community by signing up with your email or social media account. No credit card is required to start your creative journey. Once registered, the full Lovart platform suite is at your fingertips, ready to transform your ideas into stunning visuals."
             },
             "step2": {
-                "title": "Choose Free Plan",
-                "desc": "Select the free trial plan and get instant access to all features for 14 days"
+                "title": "Activate Your Lovart Free Trial",
+                "desc": "The moment you log into the Lovart dashboard, your 14-day premium trial is automatically activated. This grants you instant, unrestricted access to all high-end Lovart AI design tools, premium templates, and advanced export options, ensuring you experience the true power of Lovart from day one."
             },
             "step3": {
-                "title": "Start Designing",
-                "desc": "Create your first design with AI tools and experience powerful features"
+                "title": "Generate Your First Lovart Masterpiece",
+                "desc": "Dive into the Lovart workspace and use our intelligent AI generator to craft professional logos, social media marketing materials, or complex digital illustrations. With Lovart's intuitive interface, anyone can produce professional-grade designs in seconds, regardless of their prior design experience."
             }
         },
-        "faq": {
-            "title": "Free Trial FAQ",
+        "use_cases": {
+            "title": "What Can You Accomplish with Lovart AI for Free?",
             "items": [
                 {
-                    "q": "Is Lovart really free?",
-                    "a": "Yes, Lovart offers a forever free version with basic design features. We also offer a 14-day free trial of all features, no credit card required."
+                    "title": "Lean Startup Branding",
+                    "desc": "Bootstrap your business by using Lovart to draft professional logo concepts and brand identities. The Lovart platform allows you to iterate quickly on your visual strategy without an initial design budget."
                 },
                 {
-                    "q": "What happens after the free trial ends?",
-                    "a": "After the trial ends, you can choose to upgrade to a paid plan to continue using all features, or continue using the basic features of the free version."
+                    "title": "Dynamic Social Media Content",
+                    "desc": "Generate high-engagement Lovart designs for Instagram, Facebook, and Twitter. Our AI understands trending layout styles, helping you create posts that stand out in crowded social feeds."
                 },
                 {
-                    "q": "Can I cancel anytime?",
-                    "a": "Yes, you can cancel your subscription at any time. Even if you upgrade to a paid plan, you can cancel anytime in your account settings."
+                    "title": "Creative Personal Expression",
+                    "desc": "Experiment with deep learning AI art styles in Lovart to create personalized digital wallpapers, greeting cards, or unique avatars for your personal online presence."
                 },
                 {
-                    "q": "Are there feature limitations in the free version?",
-                    "a": "The free version has some limitations, such as monthly AI design generations, storage space, and export quality. But it is enough for personal basic design needs."
+                    "title": "Impactful Professional Presentations",
+                    "desc": "Enhance your slide decks and reports with Lovart's intelligent layout and image suggestions. Lovart helps you create visual assets that communicate your ideas more effectively to clients and colleagues."
+                }
+            ]
+        },
+        "faq": {
+            "title": "Detailed Lovart Free Trial FAQ",
+            "items": [
+                {
+                    "q": "Is the Lovart design tool really free to use?",
+                    "a": "Yes, Lovart offers a forever-free version with essential AI design features. Additionally, new users receive a 14-day free trial of the full Lovart Pro features, allowing you to explore the maximum creative potential of our platform without any upfront cost."
                 },
                 {
-                    "q": "Is there a free trial for enterprise users?",
-                    "a": "Yes, enterprise users can apply for an extended 30-day free trial, including team collaboration and advanced features. Please contact our sales team."
+                    "q": "Does the Lovart platform apply watermarks to free designs?",
+                    "a": "During your Lovart free trial, exports are generally clean and available in high-resolution, making them perfect for professional use. The standard Lovart free plan provides standard-quality exports that are ideal for social sharing and personal projects."
+                },
+                {
+                    "q": "Can I use Lovart designs for commercial purposes?",
+                    "a": "Absolutely. Any artwork created during your Lovart free trial or with your Lovart account is yours to use. We encourage our community to use Lovart for both personal and small-scale commercial project needs."
+                },
+                {
+                    "q": "What happens to my projects when the Lovart trial ends?",
+                    "a": "All your creative projects are safely stored on the Lovart platform. After the trial, you can choose a Lovart subscription that fits your needs, or stay on the free version. Your existing Lovart work will remain accessible in your account."
+                },
+                {
+                    "q": "Is my data privacy protected on the Lovart platform?",
+                    "a": "Privacy is a core value at Lovart. We use enterprise-grade security protocols to protect all data on the Lovart platform. Your prompts and generated designs are stored securely, ensuring your creative secrets remain yours."
+                },
+                {
+                    "q": "How can I earn more extra credits within Lovart?",
+                    "a": "Beyond our standard plans, the Lovart community rewards active users. You can earn bonus credits by referring friends to Lovart or contributing to our community feedback sessions, helping us make Lovart the best AI design platform."
                 }
             ]
         },
