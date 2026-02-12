@@ -13,23 +13,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/"/>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- 核心页面 -->
-  <url>
-    <loc>https://lovart.info/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/index.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/index.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/index.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/index.html"/>
-    <lastmod>2026-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
   
   <!-- 功能页面 -->
   <url>

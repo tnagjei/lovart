@@ -108,7 +108,12 @@ async function build() {
 
                     // Calculate canonical URL
                     const baseUrl = 'https://lovart.info';
-                    const urlPath = isDefault ? `${pageName}.html` : `${lang}/${pageName}.html`;
+                    let urlPath;
+                    if (pageName === 'index') {
+                        urlPath = isDefault ? '' : `${lang}/`;
+                    } else {
+                        urlPath = isDefault ? `${pageName}.html` : `${lang}/${pageName}.html`;
+                    }
                     const canonicalUrl = `${baseUrl}/${urlPath}`;
 
                     // Prepare data for template
