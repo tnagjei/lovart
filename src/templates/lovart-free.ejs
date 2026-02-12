@@ -303,6 +303,20 @@
                             mobileMenu.classList.toggle('hidden');
                         });
                     }
+
+                    // Intersection Observer for section animations
+                    const sections = document.querySelectorAll('.section-animate');
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('is-visible');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.1 });
+                    sections.forEach(section => {
+                        observer.observe(section);
+                    });
                 });
 
                 function toggleFaq(element) {
