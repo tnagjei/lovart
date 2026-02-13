@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<% const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.api, href: canonicalUrl }]; %>
 <html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
@@ -19,12 +20,15 @@
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
                 crossorigin="anonymous"></script>
             <%- include('partials/analytics') %>
+                <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+
 </head>
 
 <body class="bg-neutral-light text-neutral-dark antialiased">
 
     <%- include('partials/header') %>
 
+    <%- include('partials/breadcrumb', { breadcrumbItems }) %>
         <main>
             <!-- Hero Section -->
             <section class="bg-primary-dark/5 py-16 md:py-24">

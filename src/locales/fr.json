@@ -1805,5 +1805,13 @@
                 }
             ]
         }
+    },
+    "breadcrumb": {
+        "aria_label": "Fil d'Ariane",
+        "pages": {
+            "lovart_ai_code": "Lovart AI Code",
+            "privacy_policy": "Politique de Confidentialité",
+            "terms_of_service": "Conditions d'Utilisation"
+        }
     }
 }

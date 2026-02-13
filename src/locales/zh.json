@@ -1818,5 +1818,13 @@
                 }
             ]
         }
+    },
+    "breadcrumb": {
+        "aria_label": "面包屑导航",
+        "pages": {
+            "lovart_ai_code": "Lovart AI Code",
+            "privacy_policy": "隐私政策",
+            "terms_of_service": "服务条款"
+        }
     }
 }

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<% const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.help, href: canonicalUrl }]; %>
 <html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
@@ -54,7 +55,7 @@
                     }
                 </style>
                 <%- include('partials/schema-organization') %>
-                    <%- include('partials/schema-breadcrumb', { breadcrumbName: 'Help Center' }) %>
+                    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
                         <%- include('partials/schema-faq') %>
 
 </head>
@@ -64,6 +65,7 @@
     <!-- Header -->
     <%- include('partials/header') %>
 
+    <%- include('partials/breadcrumb', { breadcrumbItems }) %>
         <main>
             <!-- Hero Section -->
             <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">

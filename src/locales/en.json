@@ -1818,5 +1818,13 @@
                 }
             ]
         }
+    },
+    "breadcrumb": {
+        "aria_label": "Breadcrumb",
+        "pages": {
+            "lovart_ai_code": "Lovart AI Code",
+            "privacy_policy": "Privacy Policy",
+            "terms_of_service": "Terms of Service"
+        }
     }
 }

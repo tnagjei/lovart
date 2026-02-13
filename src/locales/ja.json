@@ -1805,5 +1805,13 @@
                 }
             ]
         }
+    },
+    "breadcrumb": {
+        "aria_label": "パンくずリスト",
+        "pages": {
+            "lovart_ai_code": "Lovart AI Code",
+            "privacy_policy": "プライバシーポリシー",
+            "terms_of_service": "利用規約"
+        }
     }
 }

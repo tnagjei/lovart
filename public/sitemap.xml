@@ -21,109 +21,109 @@
   
   <!-- 功能页面 -->
   <url>
-    <loc>https://lovart.info/lovart-design-features.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/lovart-design-features.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/lovart-design-features.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/lovart-design-features.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/lovart-design-features.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/lovart-design-features.html"/>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://lovart.info/lovart-design-features</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/lovart-design-features"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/lovart-design-features"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/lovart-design-features"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/lovart-design-features"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/lovart-design-features"/>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://lovart.info/lovart-ai-code.html</loc>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://lovart.info/lovart-ai-code</loc>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://lovart.info/lovart-pricing.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/lovart-pricing.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/lovart-pricing.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/lovart-pricing.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/lovart-pricing.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/lovart-pricing.html"/>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://lovart.info/lovart-pricing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/lovart-pricing"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/lovart-pricing"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/lovart-pricing"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/lovart-pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/lovart-pricing"/>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- 新增页面 -->
   <url>
-    <loc>https://lovart.info/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/about.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/about.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/about.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/about.html"/>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://lovart.info/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/about"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/about"/>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://lovart.info/blog.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/blog.html"/>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://lovart.info/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/blog"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/blog"/>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://lovart.info/help.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/help.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/help.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/help.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/help.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/help.html"/>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://lovart.info/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/help"/>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- 法律页面 -->
   <url>
-    <loc>https://lovart.info/terms-of-service.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/terms-of-service.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/terms-of-service.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/terms-of-service.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/terms-of-service.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/terms-of-service.html"/>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://lovart.info/terms-of-service</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/terms-of-service"/>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://lovart.info/privacy-policy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/privacy-policy.html"/>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://lovart.info/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lovart.info/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lovart.info/zh/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lovart.info/fr/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lovart.info/ja/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lovart.info/privacy-policy"/>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- 新增SEO优化页面 -->
   <url>
-    <loc>https://lovart.info/lovart-api.html</loc>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://lovart.info/lovart-api</loc>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://lovart.info/lovart-free.html</loc>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://lovart.info/lovart-free</loc>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

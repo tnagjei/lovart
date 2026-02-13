@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<% const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.blog, href: canonicalUrl }]; %>
 <html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
@@ -78,6 +79,8 @@
                     }
                 </style>
 
+                <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+
 </head>
 
 <body class="bg-neutral-light text-neutral-dark antialiased">
@@ -85,6 +88,7 @@
     <!-- Header -->
     <%- include('partials/header') %>
 
+    <%- include('partials/breadcrumb', { breadcrumbItems }) %>
         <main>
             <!-- Hero Section -->
             <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">

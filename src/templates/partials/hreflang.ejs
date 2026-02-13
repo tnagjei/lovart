@@ -2,8 +2,8 @@
 <% const baseUrl='https://lovart.info' ; %>
     <% supportedLangs.forEach(function(hrefLang) { %>
         <% let hrefPath; if (pageName==='index' ) { hrefPath=hrefLang==='en' ? '' : `${hrefLang}/`; } else {
-            hrefPath=hrefLang==='en' ? `${pageName}.html` : `${hrefLang}/${pageName}.html`; } %>
+            hrefPath=hrefLang==='en' ? `${pageName}` : `${hrefLang}/${pageName}`; } %>
             <link rel="alternate" hreflang="<%= hrefLang %>" href="<%= baseUrl %>/<%= hrefPath %>">
             <% }); %>
-                <% const defaultHrefPath=pageName==='index' ? '' : `${pageName}.html`; %>
+                <% const defaultHrefPath=pageName==='index' ? '' : `${pageName}`; %>
                     <link rel="alternate" hreflang="x-default" href="<%= baseUrl %>/<%= defaultHrefPath %>">

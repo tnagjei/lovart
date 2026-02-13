@@ -106,13 +106,14 @@ async function build() {
                         outputPath = path.join(config.distDir, lang, `${pageName}.html`);
                     }
 
-                    // Calculate canonical URL
+                    // Calculate canonical URL (Option A: No .html extension for clean URLs)
                     const baseUrl = 'https://lovart.info';
                     let urlPath;
                     if (pageName === 'index') {
                         urlPath = isDefault ? '' : `${lang}/`;
                     } else {
-                        urlPath = isDefault ? `${pageName}.html` : `${lang}/${pageName}.html`;
+                        // Strip .html for all other pages as well
+                        urlPath = isDefault ? `${pageName}` : `${lang}/${pageName}`;
                     }
                     const canonicalUrl = `${baseUrl}/${urlPath}`;
 

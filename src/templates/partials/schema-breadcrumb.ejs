@@ -1,21 +1,16 @@
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://lovart.info/<%= isDefault ? '' : lang + '/' %>"
-    }<% if (pageName !== 'index') { %>,
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "<%= breadcrumbName || pageName %>",
-      "item": "<%= canonicalUrl %>"
-    }<% } %>
-  ]
-}
+<% /* 获取面包屑项目，逻辑加固：使用 locals 避免变量未定义报错 */ var items=(typeof breadcrumbItems !=='undefined' &&
+  Array.isArray(breadcrumbItems) && breadcrumbItems.length) ? breadcrumbItems : [{ name: (t && t.nav && t.nav.home)
+  || 'Home' , href: link('/') }]; /** * 将相对路径转换为绝对 URL * @param {string} href 路径 * @returns {string} 绝对 URL */ function
+  toAbsoluteUrl(href) { /* 【加固】强制转换为字符串并修剪空格，防止传入非预期类型导致报错 */ var path=String(href || "" ).trim(); if (!path) { return
+  canonicalUrl; } /* 检查是否已经是绝对路径 */ if (path.indexOf('http')===0) { return path; } /* 【修正】使用处理后的 path 进行路径规范化（Option A）
+  */ var normalizedPath=(path.indexOf('/')===0) ? path : '/' + path; return 'https://lovart.info' + normalizedPath; }
+  var itemListElement=items.map(function(item, index) { return { '@type' : 'ListItem' , 'position' : index + 1, 'name' :
+  item.name, 'item' : toAbsoluteUrl(item.href) }; }); %>
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+<%- JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': itemListElement
+}, null, 2) %>
 </script>
