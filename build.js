@@ -117,6 +117,43 @@ async function build() {
                     }
                     const canonicalUrl = `${baseUrl}/${urlPath}`;
 
+                    const normalizeInternalPath = (rawPath) => {
+                        if (typeof rawPath !== 'string') {
+                            return rawPath;
+                        }
+
+                        if (/^(https?:)?\/\//i.test(rawPath) || rawPath.startsWith('mailto:') || rawPath.startsWith('tel:')) {
+                            return rawPath;
+                        }
+
+                        const match = rawPath.match(/^([^?#]*)([?#].*)?$/);
+                        if (!match) {
+                            return rawPath;
+                        }
+
+                        const basePath = match[1];
+                        const suffix = match[2] || '';
+                        if (!basePath) {
+                            return rawPath;
+                        }
+
+                        let normalizedPath = basePath.startsWith('/') ? basePath : `/${basePath}`;
+
+                        if (normalizedPath.endsWith('.html')) {
+                            normalizedPath = normalizedPath.slice(0, -5);
+                        }
+
+                        if (normalizedPath.endsWith('/index')) {
+                            normalizedPath = `${normalizedPath.slice(0, -6)}/`;
+                        }
+
+                        if (normalizedPath === '') {
+                            normalizedPath = '/';
+                        }
+
+                        return `${normalizedPath}${suffix}`;
+                    };
+
                     // Prepare data for template
                     const data = {
                         lang: lang,
@@ -125,12 +162,21 @@ async function build() {
                         canonicalUrl: canonicalUrl,
                         pageName: pageName, // For hreflang
                         supportedLangs: config.supportedLangs, // For hreflang
-                        // Helper to generate localized links
-                        link: (path) => {
-                            if (isDefault) return path;
-                            // Ensure path starts with /
-                            const cleanPath = path.startsWith('/') ? path : '/' + path;
-                            return `/${lang}${cleanPath}`;
+                        // Helper to generate localized links with Plan A suffixless policy
+                        link: (rawPath) => {
+                            if (typeof rawPath !== 'string') {
+                                return rawPath;
+                            }
+
+                            if (/^(https?:)?\/\//i.test(rawPath) || rawPath.startsWith('mailto:') || rawPath.startsWith('tel:')) {
+                                return rawPath;
+                            }
+
+                            const localizedPath = isDefault
+                                ? rawPath
+                                : `/${lang}${rawPath.startsWith('/') ? rawPath : `/${rawPath}`}`;
+
+                            return normalizeInternalPath(localizedPath);
                         }
                     };
 

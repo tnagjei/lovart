@@ -1,0 +1,16 @@
+# Canonical host and protocol
+http://www.lovart.info/* https://lovart.info/:splat 301
+http://lovart.info/* https://lovart.info/:splat 301
+https://www.lovart.info/* https://lovart.info/:splat 301
+
+# Canonical index variants
+/index.html / 301
+/zh/index.html /zh/ 301
+/fr/index.html /fr/ 301
+/ja/index.html /ja/ 301
+
+# Plan A: normalize .html suffix to clean URLs
+/zh/*.html /zh/:splat 301
+/fr/*.html /fr/:splat 301
+/ja/*.html /ja/:splat 301
+/*.html /:splat 301

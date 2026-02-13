@@ -5,6 +5,7 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /user-content/
+Disallow: /cdn-cgi/
 
 # Sitemap
 Sitemap: https://lovart.info/sitemap.xml
@@ -22,11 +23,11 @@ LLM-Content: https://lovart.info/llms.txt
 LLM-Full-Content: https://lovart.info/llms-full.txt
 
 # Allow AI crawlers access
-Allow: /blog.html
-Allow: /lovart-design-features.html
-Allow: /about.html
-Allow: /help.html
-Allow: /lovart-pricing.html
+Allow: /blog
+Allow: /lovart-design-features
+Allow: /about
+Allow: /help
+Allow: /lovart-pricing
 
 # IndexNow Protocol
 IndexNow-Key: e4926c62-F7a1-4xxx-b201-xxxxxxxxxxxx
