@@ -7,7 +7,8 @@
     "build": "node build.js",
     "build:css": "tailwindcss -i ./src/styles/styles.css -o ./dist/styles.css --minify",
     "dev": "npx serve dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "indexnow:submit": "node scripts/indexnow-submit.js"
   },
   "repository": {
     "type": "git",

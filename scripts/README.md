@@ -19,3 +19,5 @@
 - `create_optimized_versions.sh`：创建优化版本脚本
 - `update_html_with_optimized_videos.sh`：HTML 视频路径更新脚本
 - `update_html_with_small_images.sh`：HTML 图片路径更新脚本
+
+- `indexnow-submit.js`：向 Bing IndexNow 提交新增/更新/删除 URL

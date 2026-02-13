@@ -11,5 +11,6 @@
 - `llms.txt`：AI 爬虫内容指引
 - `llms-full.txt`：AI 爬虫完整内容
 - `ads.txt`：广告授权声明
-- `indexnow.txt`：IndexNow 验证文件
+- `indexnow.txt`：IndexNow 当前生效 key（纯文本）
+- `<INDEXNOW_KEY>.txt`：IndexNow 官方验证 key 文件（纯文本）
 - `images/`：网站图片资源目录

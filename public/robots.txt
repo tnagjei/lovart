@@ -30,4 +30,5 @@ Allow: /help
 Allow: /lovart-pricing
 
 # IndexNow Protocol
-IndexNow-Key: e4926c62-F7a1-4xxx-b201-xxxxxxxxxxxx
+IndexNow-Key: 90614044-08BA-488D-A634-FA4C284FD8A4
+IndexNow-Key-Location: https://lovart.info/90614044-08BA-488D-A634-FA4C284FD8A4.txt
