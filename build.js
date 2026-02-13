@@ -11,6 +11,47 @@ const config = {
     supportedLangs: ['en', 'zh', 'fr', 'ja']
 };
 
+const baseUrl = 'https://lovart.info';
+
+function getLocalizedCanonicalPath(pageName, lang, defaultLang) {
+    if (pageName === 'index') {
+        return lang === defaultLang ? '/' : `/${lang}/`;
+    }
+
+    return lang === defaultLang ? `/${pageName}` : `/${lang}/${pageName}`;
+}
+
+function getLocalizedCanonicalUrl(pageName, lang, defaultLang) {
+    return `${baseUrl}${getLocalizedCanonicalPath(pageName, lang, defaultLang)}`;
+}
+
+function buildSitemapXml(pageNames, supportedLangs, defaultLang) {
+    const lastmod = new Date().toISOString().split('T')[0];
+    const orderedPageNames = ['index', ...pageNames.filter((pageName) => pageName !== 'index').sort()];
+
+    const urlEntries = [];
+
+    for (const pageName of orderedPageNames) {
+        const hreflangLinks = supportedLangs.map((hrefLang) => ({
+            hreflang: hrefLang,
+            href: getLocalizedCanonicalUrl(pageName, hrefLang, defaultLang)
+        }));
+        const xDefaultHref = getLocalizedCanonicalUrl(pageName, defaultLang, defaultLang);
+
+        for (const lang of supportedLangs) {
+            const loc = getLocalizedCanonicalUrl(pageName, lang, defaultLang);
+            const linkXml = [
+                ...hreflangLinks.map(({ hreflang, href }) => `    <xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}"/>`),
+                `    <xhtml:link rel="alternate" hreflang="x-default" href="${xDefaultHref}"/>`
+            ].join('\n');
+
+            urlEntries.push(`  <url>\n    <loc>${loc}</loc>\n${linkXml}\n    <lastmod>${lastmod}</lastmod>\n  </url>`);
+        }
+    }
+
+    return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n        xmlns:xhtml="http://www.w3.org/1999/xhtml"\n        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"\n        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9\n                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n${urlEntries.join('\n\n')}\n</urlset>\n`;
+}
+
 async function build() {
     try {
         // 1. Clean dist directory
@@ -29,13 +70,11 @@ async function build() {
         }
 
         // 3. Copy public directory to dist root (images, robots.txt, etc.)
-        // We now use absolute paths (e.g., /images/foo.jpg) so no need to copy to language subdirs
         if (await fs.pathExists(path.join(__dirname, 'public'))) {
             await fs.copy(path.join(__dirname, 'public'), config.distDir);
             console.log('Copied public directory to dist');
         }
 
-        // 3. Load locales
         // 3. Load locales
         const locales = {};
         const defaultLocalePath = path.join(config.srcDir, 'locales', `${config.defaultLang}.json`);
@@ -86,6 +125,9 @@ async function build() {
         }
 
         const templateFiles = await fs.readdir(templatesDir);
+        const pageNames = templateFiles
+            .filter((file) => path.extname(file) === '.ejs')
+            .map((file) => path.basename(file, '.ejs'));
 
         for (const file of templateFiles) {
             if (path.extname(file) === '.ejs') {
@@ -106,16 +148,8 @@ async function build() {
                         outputPath = path.join(config.distDir, lang, `${pageName}.html`);
                     }
 
-                    // Calculate canonical URL (Option A: No .html extension for clean URLs)
-                    const baseUrl = 'https://lovart.info';
-                    let urlPath;
-                    if (pageName === 'index') {
-                        urlPath = isDefault ? '' : `${lang}/`;
-                    } else {
-                        // Strip .html for all other pages as well
-                        urlPath = isDefault ? `${pageName}` : `${lang}/${pageName}`;
-                    }
-                    const canonicalUrl = `${baseUrl}/${urlPath}`;
+                    // Calculate canonical URL (suffixless clean URLs)
+                    const canonicalUrl = getLocalizedCanonicalUrl(pageName, lang, config.defaultLang);
 
                     const normalizeInternalPath = (rawPath) => {
                         if (typeof rawPath !== 'string') {
@@ -190,6 +224,11 @@ async function build() {
                 }
             }
         }
+
+        // 5. Generate sitemap.xml with full multilingual loc coverage
+        const sitemapXml = buildSitemapXml(pageNames, config.supportedLangs, config.defaultLang);
+        await fs.writeFile(path.join(config.distDir, 'sitemap.xml'), sitemapXml);
+        console.log('Generated: sitemap.xml');
 
         console.log('Build completed successfully!');
 
