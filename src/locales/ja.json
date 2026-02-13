@@ -1,7 +1,7 @@
 {
     "seo": {
         "title": "Lovart: AI Design Platform for Creative Professionals",
-        "description": "Unlock your creative potential with Lovart, the AI-powered design platform. Create stunning visuals, collaborate effectively, and streamline your workflow. Try Lovart now!",
+        "description": "LovartはAIデザインを高速化するプラットフォームです。高品質なビジュアル作成、共同編集、制作効率化を実現。今すぐ無料で試す。",
         "keywords": ""
     },
     "nav": {
@@ -206,7 +206,7 @@
     "features_page": {
         "seo": {
             "title": "Lovart Design Features | AI-Powered Creative Tools & Platform",
-            "description": "Explore the powerful design features of Lovart. From AI-driven suggestions and intuitive interfaces to real-time collaboration and vast asset libraries, Lovart empowers your creativity. Discover 'Lovart AI design tool' capabilities.",
+            "description": "Lovartの主要機能を確認：AI提案、直感的エディター、リアルタイム共同作業、豊富な素材ライブラリ。機能を今すぐ見る。",
             "keywords": "lovart features, ai design tools, creative platform, lovart ai, graphic design features, lovart design capabilities, lovart platform"
         },
         "hero": {
@@ -304,7 +304,7 @@
     "pricing_page": {
         "seo": {
             "title": "Lovart AI Pricing Plans | Affordable Design Solutions",
-            "description": "Find the perfect Lovart AI pricing plan for your needs. Explore our flexible and affordable options for individuals, teams, and businesses.",
+            "description": "Lovart AIの料金プランを比較し、個人・チーム・企業に最適なプランを選択。機能と上限を明確に確認できます。今すぐ確認。",
             "keywords": "lovart ai pricing, lovart pricing, lovart plans, ai design platform cost"
         },
         "hero": {
@@ -421,7 +421,7 @@
     "about_page": {
         "seo": {
             "title": "私たちについて - Lovart AI デザインプラットフォーム",
-            "description": "Lovartのストーリー、ミッション、価値観、そして革新的なチームをご覧ください。2020年以来、LovartはAI技術とデザインの創造性を融合させ、デザイナーの効率を高め、無限の創造の可能性を発見することに専念してきました。",
+            "description": "Lovartのミッション、チーム、歩みをご紹介。AIとデザインを融合し、クリエイターの生産性向上を支援します。詳しく見る。",
             "keywords": "Lovartについて, 会社概要, デザインチーム, AIデザインのミッション"
         },
         "hero": {
@@ -564,7 +564,7 @@
     "blog_page": {
         "seo": {
             "title": "ブログ - Lovart AI デザインプラットフォーム",
-            "description": "Lovart公式ブログをフォローして、最新のAIデザインのトレンド分析、実践的なデザインチュートリアル、成功事例、クリエイティブなインスピレーションを得ましょう。",
+            "description": "Lovart公式ブログでAIデザインの最新トレンド、実践チュートリアル、成功事例をチェック。今すぐ読む。",
             "keywords": "AIデザイン, デザインブログ, インスピレーション, チュートリアル"
         },
         "hero": {
@@ -676,7 +676,7 @@
     "help_page": {
         "seo": {
             "title": "ヘルプセンター - Lovart AI デザインプラットフォーム",
-            "description": "Lovartヘルプセンターにアクセスして、詳細なユーザーガイド、FAQ、ビデオチュートリアル、技術サポートを入手してください。",
+            "description": "Lovartヘルプセンターでガイド、FAQ、技術サポートを確認し、利用中の課題をすばやく解決。今すぐサポートを見る。",
             "keywords": "ヘルプセンター, ユーザーガイド, FAQ, 技術サポート"
         },
         "hero": {
@@ -830,7 +830,7 @@
     "terms_page": {
         "seo": {
             "title": "利用規約 - Lovart",
-            "description": "Lovartの利用規約をご覧ください。",
+            "description": "Lovart利用規約を確認し、権利・義務・支払い・利用条件を把握して安心してサービスをご利用ください。規約を今すぐ確認。",
             "keywords": "利用規約, ユーザー契約"
         },
         "hero": {
@@ -983,7 +983,7 @@
     "privacy_page": {
         "seo": {
             "title": "プライバシーポリシー - Lovart",
-            "description": "Lovartのプライバシーポリシー。",
+            "description": "Lovartプライバシーポリシーで、個人情報の収集・利用・保護方法とユーザーの権利を確認できます。今すぐ確認。",
             "keywords": "プライバシー, データ保護"
         },
         "hero": {
@@ -1167,7 +1167,7 @@
     "lovart_ai_code_page": {
         "seo": {
             "title": "Lovart for Developers | AI Design API & SDK Integration",
-            "description": "Integrate Lovart's powerful AI design capabilities into your applications, build custom solutions using Lovart API and SDKs. Explore infinite AI design possibilities, documentation tips, programming examples, authentication process detailed guidance, helping developers get started quickly.",
+            "description": "開発者向けLovart AI Code情報：AI機能、実装方針、技術資料、連携アイデアをまとめて確認。今すぐチェック。",
             "keywords": "lovart for developers, lovart api, lovart sdk, ai design api, integrate lovart, lovart developer platform, lovart ai code"
         },
         "hero": {
@@ -1287,7 +1287,7 @@
     "lovart_api_page": {
         "seo": {
             "title": "Lovart API Documentation - AI Design API & SDK Integration",
-            "description": "Lovart AI Design API documentation. Integrate powerful AI design capabilities into your applications with our RESTful API and SDKs.",
+            "description": "Lovart APIドキュメントでREST APIとSDKを使ったAIデザイン機能の統合方法を確認。今すぐ開発を開始。",
             "keywords": "Lovart API, AI design API, design SDK, API documentation, Lovart ai api, integration guide"
         },
         "hero": {
@@ -1577,7 +1577,7 @@
     "lovart_free_page": {
         "seo": {
             "title": "Free Trial - Lovart AI Design Platform",
-            "description": "Experience Lovart AI design platform's core features for free. Explore free version limits, feature introductions, trial period details, and feature comparison with paid versions. Learn how to start using Lovart for AI-assisted creative design.",
+            "description": "Lovart無料版で主要機能を体験し、利用上限や有料版との違いを比較して最適な始め方を選べます。今すぐ無料体験。",
             "keywords": "Lovart free trial, AI design free, is lovart ai free, Lovart free policy, free design tool"
         },
         "hero": {

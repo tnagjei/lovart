@@ -1,7 +1,7 @@
 {
     "seo": {
         "title": "Lovart: AI Design Platform for Creative Professionals",
-        "description": "Unlock your creative potential with Lovart, the AI-powered design platform. Create stunning visuals, collaborate effectively, and streamline your workflow. Try Lovart now!",
+        "description": "使用 Lovart AI 设计平台快速生成高质量视觉内容，协作创作更高效，轻松完成从灵感到成稿。立即免费体验。",
         "keywords": ""
     },
     "nav": {
@@ -206,7 +206,7 @@
     "features_page": {
         "seo": {
             "title": "Lovart Design Features | AI-Powered Creative Tools & Platform",
-            "description": "Explore the powerful design features of Lovart. From AI-driven suggestions and intuitive interfaces to real-time collaboration and vast asset libraries, Lovart empowers your creativity. Discover 'Lovart AI design tool' capabilities.",
+            "description": "探索 Lovart 的 AI 设计功能：智能建议、拖拽编辑、实时协作与海量素材库，全面提升创作效率。立即查看功能。",
             "keywords": "lovart features, ai design tools, creative platform, lovart ai, graphic design features, lovart design capabilities, lovart platform"
         },
         "hero": {
@@ -304,7 +304,7 @@
     "pricing_page": {
         "seo": {
             "title": "Lovart AI Pricing Plans | Affordable Design Solutions",
-            "description": "Find the perfect Lovart AI pricing plan for your needs. Explore our flexible and affordable options for individuals, teams, and businesses.",
+            "description": "查看 Lovart AI 定价方案，按个人、团队与企业需求选择灵活套餐，清晰对比功能与额度。立即选择合适方案。",
             "keywords": "lovart ai pricing, lovart pricing, lovart plans, ai design platform cost"
         },
         "hero": {
@@ -421,7 +421,7 @@
     "about_page": {
         "seo": {
             "title": "关于我们 - Lovart AI 设计平台",
-            "description": "探索 Lovart 的故事、使命、价值观和创新团队。自 2020 年以来，Lovart一直致力于将 AI 技术与设计创意相结合，帮助设计师提高效率，发现无限创意可能。了解我们的历史、核心成员和企业文化。",
+            "description": "了解 Lovart 的使命、团队与发展历程，看看我们如何把 AI 与设计结合，帮助创作者持续提升效率。立即了解我们。",
             "keywords": "关于 Lovart, 公司介绍, 设计团队, AI 设计使命"
         },
         "hero": {
@@ -564,7 +564,7 @@
     "blog_page": {
         "seo": {
             "title": "博客 - Lovart AI 设计平台",
-            "description": "关注 Lovart 官方博客，获取最新的 AI 设计趋势分析、实用设计教程、成功案例分享和创意灵感来源。了解如何利用 AI 提升设计效率，掌握前沿设计技巧，获取专业创意指导和行业洞察。",
+            "description": "阅读 Lovart 博客，获取 AI 设计趋势、实战教程与案例拆解，学习更高效的创意工作流。立即开始阅读。",
             "keywords": "AI 设计, 设计博客, 创意灵感, 设计教程, Lovart 博客"
         },
         "hero": {
@@ -676,7 +676,7 @@
     "help_page": {
         "seo": {
             "title": "帮助中心 - Lovart AI 设计平台",
-            "description": "访问 Lovart 帮助中心获取详细的用户指南、常见问题解答、视频教程和技术支持。了解如何注册、使用 AI 设计工具、解决常见问题以及联系我们的客户服务团队。",
+            "description": "访问 Lovart 帮助中心，查找新手指南、常见问题与技术支持，快速解决使用中的关键问题。立即获取帮助。",
             "keywords": "帮助中心, 用户指南, 常见问题, 技术支持, Lovart 帮助"
         },
         "hero": {
@@ -831,7 +831,7 @@
     "terms_page": {
         "seo": {
             "title": "服务条款 - Lovart AI 设计平台",
-            "description": "查看 Lovart 服务条款和用户协议，了解使用 Lovart AI 设计平台时的权利、义务、服务范围、支付政策和使用限制。了解我们的内容政策、数据处理条款和账户管理规则。",
+            "description": "查看 Lovart 服务条款与用户协议，了解账户、付款、内容规范与使用边界，保障您的合规使用。立即查看条款。",
             "keywords": "服务条款, 用户协议, Lovart 条款, AI 设计平台协议"
         },
         "hero": {
@@ -990,7 +990,7 @@
     "privacy_page": {
         "seo": {
             "title": "隐私政策 - Lovart AI 设计平台",
-            "description": "了解 Lovart 的隐私政策，包括我们如何收集、使用、存储和保护您的个人信息，数据处理准则，第三方共享原则，您的隐私权，以及如何管理您的账户数据隐私设置。",
+            "description": "阅读 Lovart 隐私政策，了解我们如何收集、使用与保护您的数据，以及您可行使的隐私权利。立即查看隐私政策。",
             "keywords": "隐私政策, 数据保护, 个人信息, Lovart 隐私, AI 设计平台隐私"
         },
         "hero": {
@@ -1180,7 +1180,7 @@
     "lovart_ai_code_page": {
         "seo": {
             "title": "Lovart for Developers | AI Design API & SDK Integration",
-            "description": "Integrate Lovart's powerful AI design capabilities into your applications, build custom solutions using Lovart API and SDKs. Explore infinite AI design possibilities, documentation tips, programming examples, authentication process detailed guidance, helping developers get started quickly.",
+            "description": "面向开发者的 Lovart AI Code 指南：了解 AI 能力、集成思路、示例与文档入口，加速产品落地。立即查看开发资源。",
             "keywords": "lovart for developers, lovart api, lovart sdk, ai design api, integrate lovart, lovart developer platform, lovart ai code"
         },
         "hero": {
@@ -1300,7 +1300,7 @@
     "lovart_api_page": {
         "seo": {
             "title": "Lovart API Documentation - AI Design API & SDK Integration",
-            "description": "Lovart AI Design API documentation. Integrate powerful AI design capabilities into your applications with our RESTful API and SDKs.",
+            "description": "查阅 Lovart API 文档，使用 REST API 与 SDK 集成 AI 设计能力，快速实现生成、编辑与自动化流程。立即开始接入。",
             "keywords": "Lovart API, AI design API, design SDK, API documentation, Lovart ai api, integration guide"
         },
         "hero": {
@@ -1590,7 +1590,7 @@
     "lovart_free_page": {
         "seo": {
             "title": "Free Trial - Lovart AI Design Platform",
-            "description": "Experience Lovart AI design platform's core features for free. Explore free version limits, feature introductions, trial period details, and feature comparison with paid versions. Learn how to start using Lovart for AI-assisted creative design.",
+            "description": "体验 Lovart 免费版，了解试用额度、功能范围与付费版差异，低门槛开启 AI 辅助设计。立即免费试用。",
             "keywords": "Lovart free trial, AI design free, is lovart ai free, Lovart free policy, free design tool"
         },
         "hero": {
