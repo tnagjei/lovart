@@ -13,7 +13,8 @@
         "about": "About",
         "get_started": "Get Started",
         "free": "免费试用",
-        "api": "API"
+        "api": "API",
+        "ai_code": "AI Code"
     },
     "hero": {
         "title": "Lovart: Unleash Your Creative Genius with AI-Powered Design",
@@ -195,7 +196,8 @@
         "title": "Ready to Revolutionize Your Design Process with Lovart?",
         "subtitle": "Join thousands of creators who are already building their best work with Lovart. Experience the future of design, today.",
         "cta_trial": "Start Your Free Lovart Trial",
-        "cta_explore": "Explore Lovart Features"
+        "cta_explore": "Explore Lovart Features",
+        "cta_developers": "开发者指南"
     },
     "cookie_consent": {
         "text": "We use cookies to enhance your experience and analyze our traffic. By continuing to visit this site you agree to our use of cookies.",
@@ -297,6 +299,11 @@
                     "title": "免费试用 Lovart",
                     "desc": "零成本开始使用 Lovart AI 设计",
                     "link_text": "免费开始 →"
+                },
+                {
+                    "title": "Lovart AI 代码",
+                    "desc": "面向开发者的技术集成指南",
+                    "link_text": "查看代码指南 →"
                 }
             ]
         },
@@ -621,6 +628,11 @@
                     "title": "Lovart API 文档",
                     "desc": "将 Lovart AI 集成到您的应用中",
                     "link_text": "API 文档 →"
+                },
+                {
+                    "title": "Lovart AI 代码",
+                    "desc": "面向开发者的技术集成指南",
+                    "link_text": "查看代码指南 →"
                 }
             ]
         },
@@ -886,157 +898,170 @@
     },
     "help_page": {
         "seo": {
-            "title": "帮助中心 - Lovart AI 设计平台",
-            "description": "进入 Lovart 帮助中心，快速查找新手入门、账号计费、功能使用与故障排查指南，并获取常见问题与支持渠道说明，帮助你在创作过程中稳定解决问题。",
-            "keywords": "帮助中心, 用户指南, 常见问题, 技术支持, Lovart 帮助"
+            "title": "帮助中心 - Lovart AI 设计官方资源",
+            "description": "访问 Lovart AI 官方帮助中心，获取积分消耗规则、订阅指南、商业授权说明及技术支持。通过邮件或 Discord 获取帮助。",
+            "keywords": "Lovart 帮助, AI 积分规则, Flux.1 商用说明, Lovart 订阅支持"
         },
         "hero": {
-            "title": "帮助中心",
-            "desc": "我们在这里帮助您充分利用 Lovart 的强大功能。浏览常见问题、用户指南或联系支持团队。",
-            "search_placeholder": "搜索帮助文档..."
+            "title": "我们能为您提供什么帮助？",
+            "desc": "Lovart AI 用户的官方资源中心。了解积分消耗、订阅支付、设备登录限制、商用版权与退款政策。",
+            "search_placeholder": "搜索官方帮助资源...",
+            "search_hint": "试着搜索“积分消耗规则”、“商用版权”或“退款流程”",
+            "search_keywords": [
+                "Lovart 积分消耗规则",
+                "Flux.1 商业授权说明",
+                "Lovart 退款申请流程",
+                "AI 设计多端登录问题"
+            ]
         },
         "quick_help": {
-            "title": "快速帮助",
+            "title": "按分类浏览",
             "items": [
                 {
-                    "title": "快速开始",
-                    "desc": "了解如何快速上手 Lovart"
+                    "title": "积分与消耗",
+                    "desc": "区分 Agent 生成与画布生成的积分消耗规则。",
+                    "icon": "💳",
+                    "bg_class": "bg-primary"
                 },
                 {
-                    "title": "设计教程",
-                    "desc": "掌握 AI 设计功能"
+                    "title": "订阅与支付",
+                    "desc": "查看升级、降级、取消与账单周期说明。",
+                    "icon": "📅",
+                    "bg_class": "bg-secondary"
                 },
                 {
-                    "title": "账单问题",
-                    "desc": "订阅与支付相关"
+                    "title": "账号与设备",
+                    "desc": "了解多端登录上限与账号安全规则。",
+                    "icon": "🔐",
+                    "bg_class": "bg-green-500"
                 },
                 {
-                    "title": "技术支持",
-                    "desc": "故障排除与技术问题"
+                    "title": "内容与版权",
+                    "desc": "确认商用版权归属与模型许可限制。",
+                    "icon": "🧾",
+                    "bg_class": "bg-orange-500"
+                },
+                {
+                    "title": "退款政策",
+                    "desc": "7 天退款条件与申请流程说明。",
+                    "icon": "💸",
+                    "bg_class": "bg-indigo-500"
                 }
             ]
         },
         "getting_started": {
-            "title": "新手指南",
+            "title": "快速上手指南",
             "steps": [
                 {
-                    "title": "创建账户",
-                    "desc": "注册 Lovart 账户并选择适合您的订阅计划。我们提供免费试用，让您体验所有功能。",
+                    "title": "领取免费积分",
+                    "desc": "新用户可获得免费积分试用所有模型。通过邮箱或社交登录即可开始。",
                     "list": [
-                        "邮箱注册",
-                        "社交账号登录",
-                        "企业账户设置"
+                        "新手试用积分",
+                        "每日签到奖励",
+                        "邀请好友奖励"
                     ],
-                    "link": "查看详细教程"
+                    "link": "立即开始"
                 },
                 {
-                    "title": "选择模板",
-                    "desc": "从我们丰富的模板库中选择合适的设计模板，或者从空白画布开始您的设计项目。",
+                    "title": "使用 AI 创作",
+                    "desc": "输入提示词，使用 Flux.1 或 Stable Diffusion 模型生成专业设计。",
                     "list": [
-                        "浏览模板库",
-                        "自定义模板",
-                        "保存个人模板"
+                        "提示词工程",
+                        "图生图功能",
+                        "局部重绘"
                     ],
-                    "link": "查看详细教程"
+                    "link": "如何编写提示词"
                 },
                 {
-                    "title": "开始设计",
-                    "desc": "使用我们的 AI 设计工具和拖放界面，快速创建专业级的设计作品。",
+                    "title": "商业化导出",
+                    "desc": "下载您的创作并获得商业授权。支持高分辨率导出。",
                     "list": [
-                        "AI 辅助设计",
-                        "拖放编辑器",
-                        "实时预览"
+                        "SVG/PNG 导出",
+                        "商业用途权限",
+                        "4K 高清输出"
                     ],
-                    "link": "查看详细教程"
+                    "link": "授权说明"
                 }
             ]
         },
         "faq": {
-            "title": "常见问题",
+            "title": "常见问题解答",
             "items": [
                 {
-                    "question": "如何开始使用 Lovart？",
-                    "answer": "<p>开始使用 Lovart 非常简单：</p><ol class=\"list-decimal list-inside mt-2 space-y-1\"><li>访问我们的网站并点击“免费开始”</li><li>选择适合您的订阅计划（我们提供免费试用）</li><li>完成注册流程</li><li>观看快速入门教程</li><li>开始您的第一个设计项目</li></ol>"
+                    "question": "积分如何计算？",
+                    "answer": "<p>Lovart 主要有两类积分消耗：</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li><strong>Agent 积分：</strong>用于 AI 理解复杂指令与流程。</li><li><strong>画布积分：</strong>用于画布生成，按尺寸、质量和模型消耗。</li></ul><p class=\"mt-2\">模型越高级、质量设置越高，消耗积分越多。</p>"
                 },
                 {
-                    "question": "Lovart 支持哪些文件格式？",
-                    "answer": "<p>Lovart 支持多种文件格式，确保与您的工作流无缝集成：</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li><strong>导入格式：</strong> JPG, PNG, SVG, PDF, PSD</li><li><strong>导出格式：</strong> JPG, PNG, SVG, PDF, GIF, MP4</li><li><strong>高质量输出：</strong> 支持高达 4K 分辨率</li><li><strong>透明背景：</strong> PNG 格式支持透明背景导出</li></ul>"
+                    "question": "积分会过期吗？",
+                    "answer": "<p>取决于积分类型：</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li><strong>订阅积分：</strong>每个账期结束后清零，不结转。</li><li><strong>加油包积分：</strong>永久有效，不会过期。</li></ul>"
                 },
                 {
-                    "question": "如何取消订阅？",
-                    "answer": "<p>您可以随时取消 Lovart 订阅：</p><ol class=\"list-decimal list-inside mt-2 space-y-1\"><li>登录您的 Lovart 账户</li><li>进入“账户设置” > “订阅管理”</li><li>点击“取消订阅”按钮</li><li>确认取消操作</li></ol><p class=\"mt-2 text-sm\">注：取消后，您仍可使用至当前计费周期结束。我们提供30天退款保证。</p>"
+                    "question": "生成内容可以商用吗？",
+                    "answer": "<p>可以。用户拥有生成内容的商用使用权，但仍需遵守底层模型许可（如 Flux、Midjourney 等）的约束。禁止转售模型本身或用输出构建竞争性模型服务。</p>"
                 },
                 {
-                    "question": "AI 设计功能是如何工作的？",
-                    "answer": "<p>Lovart 的 AI 设计功能基于先进的机器学习算法：</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li>分析您的设计需求和偏好</li><li>从海量设计数据中学习最佳实践</li><li>提供个性化的设计建议</li><li>自动生成设计元素和布局</li><li>持续学习以提升建议质量</li></ul>"
+                    "question": "什么是无限模式？什么时候可用？",
+                    "answer": "<p>无限模式仅在部分套餐可用，主要用于非高速生成场景，适合大规模探索。该模式受公平使用与反滥用规则保护。</p>"
                 },
                 {
-                    "question": "如何联系客户支持？",
-                    "answer": "<p>我们提供多种支持渠道：</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li><strong>在线聊天：</strong> 工作日 9:00-18:00</li><li><strong>邮件支持：</strong> support@lovart.info</li><li><strong>帮助文档：</strong> 详细的在线教程</li><li><strong>社区论坛：</strong> 与其他用户交流</li><li><strong>视频教程：</strong> YouTube 频道</li></ul>"
+                    "question": "退款政策是什么？",
+                    "answer": "<p>一般支持 7 天内、低消耗（通常少于 20 积分）的退款申请。请联系官方支持发起退款流程。</p>"
                 }
             ]
+        },
+        "faq_cta": {
+            "title": "需要更多积分？",
+            "desc": "升级您的计划以获取更多积分和商业使用权。",
+            "primary_button": "查看定价",
+            "secondary_button": "免费尝试"
         },
         "videos": {
             "title": "视频教程",
             "items": [
                 {
-                    "title": "Lovart 快速入门",
-                    "desc": "5分钟了解 Lovart 核心功能",
-                    "duration": "5:32",
+                    "title": "Lovart 工作流指南",
+                    "desc": "从提示词到最终高清导出的全流程。",
+                    "duration": "4:15",
                     "level": "初学者"
                 },
                 {
-                    "title": "AI 设计功能详解",
-                    "desc": "深入了解 AI 如何提升设计效率",
-                    "duration": "12:45",
-                    "level": "进阶"
+                    "title": "精通 Flux.1 模型",
+                    "desc": "获取 Flux 模型最佳效果的进阶技巧。",
+                    "duration": "8:20",
+                    "level": "中级"
                 },
                 {
-                    "title": "高级设计技巧",
-                    "desc": "专业设计师分享的高级技巧",
-                    "duration": "18:20",
+                    "title": "使用 AI 打造设计作品集",
+                    "desc": "利用 AI 工具构建专业设计组合。",
+                    "duration": "12:30",
                     "level": "高级"
                 }
             ]
         },
         "contact": {
-            "title": "需要更多帮助？",
-            "desc": "我们的支持团队随时为您提供帮助。选择最适合您的联系方式。",
-            "chat": {
-                "title": "在线聊天",
-                "desc": "工作日 9:00 - 18:00",
-                "button": "开始聊天"
-            },
+            "title": "还在寻找答案？",
+            "desc": "我们的支持团队随时准备通过邮件或 Discord 为您提供帮助。",
             "email": {
-                "title": "邮件支持",
-                "desc": "24小时内回复",
+                "title": "官方邮件",
+                "desc": "处理账单和法律相关问题的官方渠道。",
                 "button": "发送邮件"
             },
-            "phone": {
-                "title": "电话支持",
-                "desc": "紧急问题优先处理",
-                "button": "拨打电话"
+            "community": {
+                "title": "Discord 社区",
+                "desc": "加入 5 万+ 创作者社区获取即时帮助。",
+                "button": "加入 Discord",
+                "url": "https://discord.gg/lovart"
             },
             "quick_search": {
-                "title": "快速常见问题搜索",
+                "title": "热门话题",
                 "tags": [
-                    "忘记密码",
-                    "账单问题",
-                    "技术故障",
-                    "功能使用",
-                    "账号管理"
+                    "积分消耗",
+                    "商用版权",
+                    "退款申请",
+                    "无限模式",
+                    "设备登录"
                 ]
             }
-        },
-        "footer": {
-            "titles": {
-                "lovart": "Lovart",
-                "products": "产品",
-                "company": "公司",
-                "contact": "联系方式"
-            },
-            "desc": "为创意专业人士打造的 AI 设计平台。",
-            "rights": "Lovart.info. 版权所有."
         }
     },
     "terms_page": {
@@ -1395,114 +1420,142 @@
             "keywords": "lovart for developers, lovart api, lovart sdk, ai design api, integrate lovart, lovart developer platform, lovart ai code"
         },
         "hero": {
-            "title": "Lovart AI Code & Developer Information",
-            "description": "Welcome to the hub for developers interested in Lovart's AI capabilities. This section is dedicated to providing insights into our AI technology, potential \"Lovart API\" access, \"Lovart AI code\" integration possibilities, and other technical resources to help \"Lovart for developers\" leverage the power of our platform. We are committed to supporting the \"Lovart for developers\" community with robust tools and information regarding \"Lovart AI code\"."
+            "title": "Lovart AI 开发者集成指南",
+            "description": "本页用于帮助开发者规划 Lovart 接入路径。接口字段与参数细节请查看 API 文档页，本页聚焦接入策略与落地顺序。",
+            "badges": [
+                "API 文档：Available",
+                "部分能力：Preview",
+                "高级权限：Private Beta"
+            ]
         },
         "ai_core": {
-            "title": "Delving into Lovart's AI Engine for \"Lovart AI Code\"",
-            "p1": "Lovart's intelligent features are powered by a sophisticated AI engine designed to understand creative contexts and assist in the design process. Our AI models are trained on vast datasets of visual information to analyze elements, suggest design improvements, automate repetitive tasks, and even generate creative ideas. This forms the backbone of any \"Lovart AI code\" implementation. For \"Lovart for developers\", understanding this core is key to unlocking its potential.",
-            "p2": "The AI engine utilizes advanced machine learning algorithms, including deep learning networks, to interpret user inputs and design assets. While the specific architecture of our core \"Lovart AI code\" is proprietary, we focus on exposing its powerful functionalities through well-defined interfaces, primarily the upcoming \"Lovart API\". This approach allows \"Lovart for developers\" to build innovative applications without needing to delve into the complexities of the underlying AI models themselves. We believe this abstraction is beneficial for the \"Lovart for developers\" ecosystem.",
-            "p3": "Our research and development team is continuously working on enhancing these capabilities, pushing the boundaries of what \"Lovart AI code\" can achieve in creative fields. Future iterations will likely see improvements in contextual understanding, generation quality, and processing speed, all accessible via the \"Lovart API\"."
+            "title": "Lovart AI 能力如何接入你的产品流程",
+            "p1": "Lovart 将生成、编辑与设计辅助能力整合在同一工作流。开发团队可先确定自动化环节，再逐步扩展接入范围。",
+            "p2": "具体端点、鉴权头与请求格式以 Lovart API 文档页为准。本页主要提供实现路径与上线节奏建议。",
+            "p3": "建议先选择一个可量化场景做试点，验证质量与稳定性后，再扩大到更多业务流程。"
         },
         "api_integration": {
-            "title": "\"Lovart API\" Access & \"Lovart AI Code\" Integration (Coming Soon)",
-            "p1": "We understand the immense value of interoperability and extending Lovart's capabilities. That's why we are actively developing a comprehensive \"Lovart API\" that will empower \"Lovart for developers\" to integrate Lovart's AI features into their own applications, workflows, and services. This \"Lovart API\" will be the primary way to interact with \"Lovart AI code\" programmatically.",
-            "p_endpoints": "Potential \"Lovart API\" endpoints might include:",
+            "title": "API 接入状态与申请路径",
+            "p1": "Lovart API 参考文档已可访问。不同能力的开放范围可能受账号等级与审批范围影响，上线前请先确认状态。",
+            "p_endpoints": "当前 API 页面已覆盖的接入类别包括：",
             "list": [
                 {
-                    "title": "AI-Powered Image Analysis:",
-                    "desc": "Submit images to the \"Lovart API\" for automated tagging, object recognition, color palette extraction, and quality assessment. This \"Lovart AI code\" functionality can be used for content management systems or automated design feedback tools."
+                    "title": "设计生成：",
+                    "desc": "基于提示词和参数生成视觉内容，适用于自动化素材生产流程。"
                 },
                 {
-                    "title": "Parametric Design Generation:",
-                    "desc": "Utilize the \"Lovart API\" to generate design variations based on input parameters (e.g., text, color schemes, layout constraints). This aspect of \"Lovart AI code\" is perfect for creating personalized marketing materials at scale."
+                    "title": "图像处理：",
+                    "desc": "在后端流程中执行上传、增强与优化，提升内容交付效率。"
                 },
                 {
-                    "title": "Access to Specific Lovart Functionalities:",
-                    "desc": "Programmatic access via the \"Lovart API\" to features like smart resizing, background removal, or style transfer, allowing \"Lovart for developers\" to build custom editing tools."
+                    "title": "模板与复用：",
+                    "desc": "读取模板信息以标准化输出，保证多团队协作时的品牌一致性。"
                 },
                 {
-                    "title": "Content Suggestion Engine:",
-                    "desc": "An endpoint in the \"Lovart API\" that provides AI-driven suggestions for typography, imagery, or layout improvements based on a given design context. This leverages the core \"Lovart AI code\" intelligence."
+                    "title": "用户与用量上下文：",
+                    "desc": "获取账号与用量信息，支撑配额治理、监控告警与运维策略。"
                 }
             ],
-            "p_stay_tuned": "Stay tuned for updates on our \"Lovart API\" roadmap, documentation, and availability. If you have specific use cases or requirements for \"Lovart AI code\" integration or the \"Lovart API\", we encourage \"Lovart for developers\" to reach out to us. Your feedback is invaluable as we shape these tools for the \"Lovart for developers\" community."
+            "p_stay_tuned": "若你的业务依赖受限能力，请先申请 API 访问并完成环境可用性确认，再进入正式发布。",
+            "status_title": "当前可用性快照",
+            "status_items": [
+                {
+                    "name": "API 参考文档",
+                    "status": "Available"
+                },
+                {
+                    "name": "核心接入类别",
+                    "status": "Available"
+                },
+                {
+                    "name": "部分高级能力",
+                    "status": "Preview"
+                },
+                {
+                    "name": "企业范围能力",
+                    "status": "Private Beta"
+                }
+            ],
+            "docs_link_text": "查看 API 文档",
+            "access_link_text": "申请 API 访问"
         },
         "use_cases": {
-            "title": "Practical Use Cases for \"Lovart AI Code\" and the \"Lovart API\"",
-            "desc": "The true power of \"Lovart AI code\" and the \"Lovart API\" lies in its diverse applications. Here are a few examples of how \"Lovart for developers\" can leverage our technology:",
+            "title": "开发团队优先落地的接入场景",
+            "desc": "多数团队会先做一个可衡量场景，再逐步扩展接入深度：",
             "list": [
                 {
-                    "title": "Automated Social Media Content Creation:",
-                    "desc": "Develop tools that use the \"Lovart API\" to automatically generate engaging social media posts from blog articles or product descriptions, leveraging \"Lovart AI code\" for visual appeal."
+                    "title": "营销素材自动化：",
+                    "desc": "从结构化需求自动生成活动素材，减少手工制作与反复修改。"
                 },
                 {
-                    "title": "E-commerce Product Image Enhancement:",
-                    "desc": "Integrate \"Lovart AI code\" via the \"Lovart API\" into e-commerce platforms to automatically enhance product images, remove backgrounds, or create consistent visual styles."
+                    "title": "图像优化服务：",
+                    "desc": "把增强流程嵌入内容管线，提升发布前质量控制效率。"
                 },
                 {
-                    "title": "Personalized Marketing Campaigns:",
-                    "desc": "Build systems that utilize the \"Lovart API\" to create thousands of unique ad creatives tailored to different audience segments, all powered by \"Lovart AI code\"."
+                    "title": "模板化内容生产：",
+                    "desc": "使用可复用设计模式，提升跨团队和跨渠道的一致性。"
                 },
                 {
-                    "title": "Plugin Development for Existing Design Tools:",
-                    "desc": "\"Lovart for developers\" could create plugins for popular design software that tap into specific \"Lovart AI code\" functionalities through the \"Lovart API\", extending the capabilities of those tools."
+                    "title": "内部设计工具增强：",
+                    "desc": "构建结合生成与编辑的内部助手，缩短重复任务处理时间。"
                 },
                 {
-                    "title": "Content Management System (CMS) Integration:",
-                    "desc": "Enhance CMS platforms by integrating \"Lovart AI code\" to provide users with AI-powered image suggestions, automated cropping, or design quality checks directly within their content creation workflow using the \"Lovart API\"."
+                    "title": "协作流程编排：",
+                    "desc": "打通请求、评审与导出环节，明确角色分工并稳定交付节奏。"
                 }
             ],
-            "conclusion": "These are just a few ideas, and we are excited to see what innovative solutions the \"Lovart for developers\" community will build using \"Lovart AI code\" and the \"Lovart API\"."
+            "conclusion": "将 API 页面作为技术参考，将本页作为落地指南，可显著降低接入阶段的信息偏差。"
         },
         "resources": {
-            "title": "Resources for \"Lovart for Developers\"",
-            "desc": "As Lovart evolves, we are committed to building a rich and supportive ecosystem specifically for \"Lovart for developers\". Our goal is to provide you with all the necessary tools and information to successfully utilize \"Lovart AI code\" and the \"Lovart API\". Planned resources include:",
+            "title": "开发者资源与下一步动作",
+            "desc": "以下资源可帮助你降低接入风险，并保持产品与工程团队信息一致：",
             "list": [
                 {
-                    "title": "Detailed \"Lovart API\" Documentation:",
-                    "desc": "Comprehensive reference guides, endpoint descriptions, authentication details, and rate limit information for the \"Lovart API\"."
+                    "title": "API 参考文档：",
+                    "desc": "在 Lovart API 页面核对端点定义、请求字段与响应行为。"
                 },
                 {
-                    "title": "Software Development Kits (SDKs):",
-                    "desc": "Easy-to-use SDKs for popular programming languages (e.g., Python, JavaScript, Java) to simplify \"Lovart AI code\" integration and \"Lovart API\" calls."
+                    "title": "鉴权与访问流程：",
+                    "desc": "在开发前明确 API Key 管理、环境隔离与访问审批流程。"
                 },
                 {
-                    "title": "Tutorials and Code Samples:",
-                    "desc": "Practical, step-by-step tutorials and ready-to-use \"Lovart AI code\" samples to help \"Lovart for developers\" get started quickly with the \"Lovart API\"."
+                    "title": "速率与用量治理：",
+                    "desc": "提前定义重试、超时、配额与监控规则，避免上线后被动补救。"
                 },
                 {
-                    "title": "Developer Portal & Forum:",
-                    "desc": "A dedicated portal for \"Lovart for developers\" with access to API keys, usage dashboards, and a community forum for support, collaboration, and sharing \"Lovart AI code\" projects."
+                    "title": "接入实施手册：",
+                    "desc": "沉淀架构模式与最佳实践，方便后续团队复用已验证路径。"
                 },
                 {
-                    "title": "Changelogs and Versioning Information:",
-                    "desc": "Clear communication about updates, new features, and versioning for the \"Lovart API\" to ensure smooth transitions for \"Lovart for developers\"."
+                    "title": "发布前检查清单：",
+                    "desc": "每次发布前确认状态标注、降级策略与监控告警是否齐备。"
                 }
             ],
-            "objective": "Our objective is to empower \"Lovart for developers\" to build innovative solutions on top of the Lovart platform, leveraging the full potential of \"Lovart AI code\" and the \"Lovart API\"."
+            "objective": "目标是帮助开发者在明确状态边界的前提下，稳定落地 Lovart 集成并降低上线风险。"
         },
         "cta": {
-            "title": "Interested in \"Lovart for Developers\" and \"Lovart AI Code\"?",
-            "desc": "Sign up for our developer-specific newsletter or follow our technical blog to receive the latest updates on Lovart's developer tools, \"Lovart API\" releases, \"Lovart AI code\" initiatives, and opportunities for \"Lovart for developers\".",
-            "button": "Contact Us & Stay Informed"
+            "title": "准备从评估阶段进入集成阶段了吗？",
+            "desc": "先查看 API 文档获取精确技术信息，再针对受限能力提交访问申请。",
+            "button": "申请 API 访问",
+            "primary_button": "查看 API 文档",
+            "secondary_button": "申请 API 访问"
         },
         "related": {
             "title": "探索更多 Lovart 资源",
             "items": [
                 {
                     "title": "Lovart API 文档",
-                    "desc": "通过 API 访问 Lovart AI 能力",
+                    "desc": "查看端点、鉴权与接入参考信息",
                     "link_text": "API 文档 →"
                 },
                 {
                     "title": "Lovart AI 定价方案",
-                    "desc": "找到适合您需求的计划",
+                    "desc": "按开发与团队负载对比套餐",
                     "link_text": "查看定价 →"
                 },
                 {
                     "title": "免费试用 Lovart",
-                    "desc": "立即开始使用 Lovart AI 创作",
+                    "desc": "在深度接入前先体验工作流",
                     "link_text": "免费开始 →"
                 }
             ]
@@ -1794,6 +1847,11 @@
                     "title": "AI 技术",
                     "desc": "了解 Lovart 的 AI 技术",
                     "link_text": "了解更多 →"
+                },
+                {
+                    "title": "Lovart AI 代码",
+                    "desc": "面向开发者的技术集成指南",
+                    "link_text": "查看代码指南 →"
                 }
             ]
         }
@@ -2026,6 +2084,11 @@
                     "title": "Lovart API 文档",
                     "desc": "将 Lovart AI 集成到您的应用中",
                     "link_text": "API 文档 →"
+                },
+                {
+                    "title": "Lovart AI 代码",
+                    "desc": "面向开发者的技术集成指南",
+                    "link_text": "查看代码指南 →"
                 }
             ]
         }

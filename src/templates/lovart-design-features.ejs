@@ -1,87 +1,83 @@
 <!DOCTYPE html>
-<%
-const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.features, href: canonicalUrl }];
-const featuresPage = t.features_page || {};
-const overview = featuresPage.overview || null;
-const workflow = featuresPage.workflow || null;
-const featureFaq = featuresPage.faq || null;
-%>
-<html lang="<%= lang %>" class="scroll-smooth">
+<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: t.nav.features, href: canonicalUrl }]; const
+    featuresPage=t.features_page || {}; const overview=featuresPage.overview || null; const
+    workflow=featuresPage.workflow || null; const featureFaq=featuresPage.faq || null; %>
+    <html lang="<%= lang %>" class="scroll-smooth">
 
-<head>
-    <%- include('partials/head') %>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            <%= t.features_page.seo.title %>
-        </title>
-        <meta name="description" content="<%= t.features_page.seo.description %>">
-        <meta name="keywords" content="<%= t.features_page.seo.keywords %>">
-        <link rel="canonical" href="<%= canonicalUrl %>">
-        <%- include('partials/hreflang') %>
-            <link rel="stylesheet" href="/styles.css">
-            <link rel="icon" href="/favicon.ico" type="image/x-icon">
-            <script async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
-                crossorigin="anonymous"></script>
-            <%- include('partials/analytics') %>
+    <head>
+        <%- include('partials/head') %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= t.features_page.seo.title %>
+            </title>
+            <meta name="description" content="<%= t.features_page.seo.description %>">
+            <meta name="keywords" content="<%= t.features_page.seo.keywords %>">
+            <link rel="canonical" href="<%= canonicalUrl %>">
+            <%- include('partials/hreflang') %>
+                <link rel="stylesheet" href="/styles.css">
+                <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                    crossorigin="anonymous"></script>
+                <%- include('partials/analytics') %>
 
-                <style>
-                    /* Custom animations or styles not achievable via Tailwind can be placed here */
-                    /* .hero-bg-animation {
+                    <style>
+                        /* Custom animations or styles not achievable via Tailwind can be placed here */
+                        /* .hero-bg-animation {
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
         } */
 
-                    @keyframes gradient {
-                        0% {
-                            background-position: 0% 50%;
+                        @keyframes gradient {
+                            0% {
+                                background-position: 0% 50%;
+                            }
+
+                            50% {
+                                background-position: 100% 50%;
+                            }
+
+                            100% {
+                                background-position: 0% 50%;
+                            }
                         }
 
-                        50% {
-                            background-position: 100% 50%;
+                        .fade-in {
+                            animation: fadeInAnimation ease 2s;
+                            animation-iteration-count: 1;
+                            animation-fill-mode: forwards;
                         }
 
-                        100% {
-                            background-position: 0% 50%;
+                        @keyframes fadeInAnimation {
+                            0% {
+                                opacity: 0;
+                                transform: translateY(20px);
+                            }
+
+                            100% {
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
                         }
-                    }
 
-                    .fade-in {
-                        animation: fadeInAnimation ease 2s;
-                        animation-iteration-count: 1;
-                        animation-fill-mode: forwards;
-                    }
-
-                    @keyframes fadeInAnimation {
-                        0% {
+                        .section-animate {
                             opacity: 0;
-                            transform: translateY(20px);
+                            transform: translateY(30px);
+                            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
                         }
 
-                        100% {
+                        .section-animate.is-visible {
                             opacity: 1;
                             transform: translateY(0);
                         }
-                    }
+                    </style>
 
-                    .section-animate {
-                        opacity: 0;
-                        transform: translateY(30px);
-                        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-                    }
+                    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
 
-                    .section-animate.is-visible {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                </style>
-
-                <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
-
-                    <% if (featureFaq && featureFaq.items && featureFaq.items.length) { %>
-                        <script type="application/ld+json">
+                        <% if (featureFaq && featureFaq.items && featureFaq.items.length) { %>
+                            <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -99,259 +95,50 @@ const featureFaq = featuresPage.faq || null;
   ]
 }
                         </script>
-                        <% } %>
+                            <% } %>
 
-</head>
+    </head>
 
-<body class="bg-neutral-light text-neutral-dark antialiased">
+    <body class="bg-neutral-light text-neutral-dark antialiased">
 
-    <!-- Header -->
-    <%- include('partials/header') %>
+        <!-- Header -->
+        <%- include('partials/header') %>
 
-    <%- include('partials/breadcrumb', { breadcrumbItems }) %>
-        <main>
-            <!-- Hero Section -->
-            <section class="bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
-                <div class="container mx-auto px-6 text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up" style="animation-delay: 0.2s;">
-                        <%= t.features_page.hero.title %>
-                    </h1>
-                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up"
-                        style="animation-delay: 0.4s;">
-                        <%= t.features_page.hero.desc %>
-                    </p>
-                </div>
-            </section>
-
-            <% if (overview && overview.cards && overview.cards.length) { %>
-                <section class="py-14 md:py-20 bg-white section-animate">
-                    <div class="container mx-auto px-6">
-                        <div class="max-w-4xl mx-auto text-center mb-10">
-                            <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-4">
-                                <%= overview.title %>
-                            </h2>
-                            <p class="text-neutral text-lg">
-                                <%= overview.desc %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+                <main>
+                    <!-- Hero Section -->
+                    <section class="bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
+                        <div class="container mx-auto px-6 text-center">
+                            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up"
+                                style="animation-delay: 0.2s;">
+                                <%= t.features_page.hero.title %>
+                            </h1>
+                            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up"
+                                style="animation-delay: 0.4s;">
+                                <%= t.features_page.hero.desc %>
                             </p>
                         </div>
-                        <div class="grid md:grid-cols-3 gap-6">
-                            <% overview.cards.forEach(function(card) { %>
-                                <article class="bg-neutral-light rounded-xl p-6 border border-neutral-light/50">
-                                    <h3 class="text-lg font-semibold text-neutral-dark mb-3">
-                                        <%= card.title %>
-                                    </h3>
-                                    <p class="text-neutral">
-                                        <%= card.desc %>
+                    </section>
+
+                    <% if (overview && overview.cards && overview.cards.length) { %>
+                        <section class="py-14 md:py-20 bg-white section-animate">
+                            <div class="container mx-auto px-6">
+                                <div class="max-w-4xl mx-auto text-center mb-10">
+                                    <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-4">
+                                        <%= overview.title %>
+                                    </h2>
+                                    <p class="text-neutral text-lg">
+                                        <%= overview.desc %>
                                     </p>
-                                </article>
-                                <% }) %>
-                        </div>
-                    </div>
-                </section>
-                <% } %>
-
-            <!-- Detailed Features Section -->
-            <section class="py-16 md:py-24 bg-white">
-                <div class="container mx-auto px-6">
-                    <div class="space-y-16">
-
-                        <!-- Feature 1: AI-Powered Suggestions -->
-                        <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
-                            <div class="md:w-1/2">
-                                <img src="/images/features/feature-ai-suggestions.jpg"
-                                    alt="<%= t.features_page.features[0].alt %>" class="rounded-lg shadow-xl w-full">
-                            </div>
-                            <div class="md:w-1/2">
-                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
-                                    <%= t.features_page.features[0].title %>
-                                </h2>
-                                <p class="text-neutral mb-3">
-                                    <%= t.features_page.features[0].desc %>
-                                </p>
-                                <ul class="list-disc list-inside text-neutral space-y-1">
-                                    <li>
-                                        <%= t.features_page.features[0].list[0] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[0].list[1] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[0].list[2] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[0].list[3] %>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Feature 2: Intuitive Drag-and-Drop Interface -->
-                        <div class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
-                            <div class="md:w-1/2">
-                                <img src="/images/features/feature-drag-drop.jpg"
-                                    alt="<%= t.features_page.features[1].alt %>" class="rounded-lg shadow-xl w-full">
-                            </div>
-                            <div class="md:w-1/2">
-                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
-                                    <%= t.features_page.features[1].title %>
-                                </h2>
-                                <p class="text-neutral mb-3">
-                                    <%= t.features_page.features[1].desc %>
-                                </p>
-                                <ul class="list-disc list-inside text-neutral space-y-1">
-                                    <li>
-                                        <%= t.features_page.features[1].list[0] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[1].list[1] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[1].list[2] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[1].list[3] %>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Feature 3: Vast Asset Library -->
-                        <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
-                            <div class="md:w-1/2">
-                                <img src="/images/features/feature-assets.jpg"
-                                    alt="<%= t.features_page.features[2].alt %>" class="rounded-lg shadow-xl w-full">
-                            </div>
-                            <div class="md:w-1/2">
-                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
-                                    <%= t.features_page.features[2].title %>
-                                </h2>
-                                <p class="text-neutral mb-3">
-                                    <%= t.features_page.features[2].desc %>
-                                </p>
-                                <ul class="list-disc list-inside text-neutral space-y-1">
-                                    <li>
-                                        <%= t.features_page.features[2].list[0] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[2].list[1] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[2].list[2] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[2].list[3] %>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Feature 4: Real-Time Collaboration (Coming Soon) -->
-                        <div class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
-                            <div class="md:w-1/2">
-                                <img src="/images/features/feature-collaboration.jpg"
-                                    alt="<%= t.features_page.features[3].alt %>" class="rounded-lg shadow-xl w-full">
-                            </div>
-                            <div class="md:w-1/2">
-                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
-                                    <%= t.features_page.features[3].title %>
-                                </h2>
-                                <p class="text-neutral mb-3">
-                                    <%= t.features_page.features[3].desc %>
-                                </p>
-                                <ul class="list-disc list-inside text-neutral space-y-1">
-                                    <li>
-                                        <%= t.features_page.features[3].list[0] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[3].list[1] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[3].list[2] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[3].list[3] %>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Feature 5: One-Click Export & Sharing -->
-                        <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
-                            <div class="md:w-1/2">
-                                <img src="/images/features/feature-export.jpg"
-                                    alt="<%= t.features_page.features[4].alt %>" class="rounded-lg shadow-xl w-full">
-                            </div>
-                            <div class="md:w-1/2">
-                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
-                                    <%= t.features_page.features[4].title %>
-                                </h2>
-                                <p class="text-neutral mb-3">
-                                    <%= t.features_page.features[4].desc %>
-                                </p>
-                                <ul class="list-disc list-inside text-neutral space-y-1">
-                                    <li>
-                                        <%= t.features_page.features[4].list[0] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[4].list[1] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[4].list[2] %>
-                                    </li>
-                                    <li>
-                                        <%= t.features_page.features[4].list[3] %>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <% if (workflow && workflow.steps && workflow.steps.length) { %>
-                <section class="py-16 md:py-24 bg-neutral-light section-animate">
-                    <div class="container mx-auto px-6">
-                        <div class="max-w-4xl mx-auto text-center mb-12">
-                            <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-4">
-                                <%= workflow.title %>
-                            </h2>
-                            <p class="text-neutral text-lg">
-                                <%= workflow.desc %>
-                            </p>
-                        </div>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <% workflow.steps.forEach(function(step) { %>
-                                <article class="bg-white rounded-xl p-6 border border-neutral-light/60 shadow-sm">
-                                    <p class="text-xs uppercase tracking-wide text-primary font-semibold mb-3">
-                                        <%= step.label %>
-                                    </p>
-                                    <h3 class="text-lg font-semibold text-neutral-dark mb-2">
-                                        <%= step.title %>
-                                    </h3>
-                                    <p class="text-neutral text-sm leading-6">
-                                        <%= step.desc %>
-                                    </p>
-                                </article>
-                                <% }) %>
-                        </div>
-                    </div>
-                </section>
-                <% } %>
-
-                    <% if (featureFaq && featureFaq.items && featureFaq.items.length) { %>
-                        <section class="py-16 md:py-20 bg-white section-animate">
-                            <div class="container mx-auto px-6 max-w-4xl">
-                                <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-8 text-center">
-                                    <%= featureFaq.title %>
-                                </h2>
-                                <div class="space-y-6">
-                                    <% featureFaq.items.forEach(function(item) { %>
-                                        <article class="border border-neutral-light/60 rounded-lg p-5">
-                                            <h3 class="text-lg font-semibold text-neutral-dark mb-2">
-                                                <%= item.q %>
+                                </div>
+                                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                    <% overview.cards.forEach(function(card) { %>
+                                        <article class="bg-neutral-light rounded-xl p-6 border border-neutral-light/50">
+                                            <h3 class="text-lg font-semibold text-neutral-dark mb-3">
+                                                <%= card.title %>
                                             </h3>
                                             <p class="text-neutral">
-                                                <%= item.a %>
+                                                <%= card.desc %>
                                             </p>
                                         </article>
                                         <% }) %>
@@ -360,99 +147,331 @@ const featureFaq = featuresPage.faq || null;
                         </section>
                         <% } %>
 
-            <!-- Call to Action Section -->
-            <section class="py-16 md:py-24 bg-neutral-light section-animate">
-                <div class="container mx-auto px-6 text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark mb-6">
-                        <%= t.features_page.cta.title %>
-                    </h2>
-                    <p class="text-lg text-neutral mb-8 max-w-xl mx-auto">
-                        <%= t.features_page.cta.desc %>
-                    </p>
-                    <a href="<%= link('lovart-pricing.html') %>"
-                        class="bg-primary text-white px-10 py-4 rounded-md hover:bg-primary-dark transition-colors text-lg font-medium">
-                        <%= t.features_page.cta.button %>
-                    </a>
-                </div>
-            </section>
+                            <!-- Detailed Features Section -->
+                            <section class="py-16 md:py-24 bg-white">
+                                <div class="container mx-auto px-6">
+                                    <div class="space-y-16">
 
-            <!-- Related Resources Section -->
-            <section class="py-12 bg-white">
-                <div class="container mx-auto px-6 max-w-6xl">
-                    <h2 class="text-2xl font-bold mb-8 text-center">
-                        <%= t.features_page.related.title %>
-                    </h2>
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <a href="<%= link('lovart-pricing.html') %>"
-                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
-                            <h3 class="font-semibold mb-1">
-                                <%= t.features_page.related.items[0].title %>
-                            </h3>
-                            <p class="text-xs text-neutral mb-2">
-                                <%= t.features_page.related.items[0].desc %>
-                            </p>
-                            <span class="text-primary text-sm font-medium">
-                                <%= t.features_page.related.items[0].link_text %>
-                            </span>
-                        </a>
-                        <a href="<%= link('lovart-api.html') %>"
-                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
-                            <h3 class="font-semibold mb-1">
-                                <%= t.features_page.related.items[1].title %>
-                            </h3>
-                            <p class="text-xs text-neutral mb-2">
-                                <%= t.features_page.related.items[1].desc %>
-                            </p>
-                            <span class="text-primary text-sm font-medium">
-                                <%= t.features_page.related.items[1].link_text %>
-                            </span>
-                        </a>
-                        <a href="<%= link('lovart-free.html') %>"
-                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
-                            <h3 class="font-semibold mb-1">
-                                <%= t.features_page.related.items[2].title %>
-                            </h3>
-                            <p class="text-xs text-neutral mb-2">
-                                <%= t.features_page.related.items[2].desc %>
-                            </p>
-                            <span class="text-primary text-sm font-medium">
-                                <%= t.features_page.related.items[2].link_text %>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
+                                        <!-- Feature 1: AI-Powered Suggestions -->
+                                        <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
+                                            <div class="md:w-1/2">
+                                                <img src="/images/features/feature-ai-suggestions.jpg"
+                                                    alt="<%= t.features_page.features[0].alt %>"
+                                                    class="rounded-lg shadow-xl w-full">
+                                            </div>
+                                            <div class="md:w-1/2">
+                                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                                    <%= t.features_page.features[0].title %>
+                                                </h2>
+                                                <p class="text-neutral mb-3">
+                                                    <%= t.features_page.features[0].desc %>
+                                                </p>
+                                                <ul class="list-disc list-inside text-neutral space-y-1">
+                                                    <li>
+                                                        <%= t.features_page.features[0].list[0] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[0].list[1] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[0].list[2] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[0].list[3] %>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
 
-        <!-- Footer -->
-        <%- include('partials/footer') %>
+                                        <!-- Feature 2: Intuitive Drag-and-Drop Interface -->
+                                        <div
+                                            class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
+                                            <div class="md:w-1/2">
+                                                <img src="/images/features/feature-drag-drop.jpg"
+                                                    alt="<%= t.features_page.features[1].alt %>"
+                                                    class="rounded-lg shadow-xl w-full">
+                                            </div>
+                                            <div class="md:w-1/2">
+                                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                                    <%= t.features_page.features[1].title %>
+                                                </h2>
+                                                <p class="text-neutral mb-3">
+                                                    <%= t.features_page.features[1].desc %>
+                                                </p>
+                                                <ul class="list-disc list-inside text-neutral space-y-1">
+                                                    <li>
+                                                        <%= t.features_page.features[1].list[0] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[1].list[1] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[1].list[2] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[1].list[3] %>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
 
-            <script>
-                document.getElementById('currentYear').textContent = new Date().getFullYear();
+                                        <!-- Feature 3: Vast Asset Library -->
+                                        <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
+                                            <div class="md:w-1/2">
+                                                <img src="/images/features/feature-assets.jpg"
+                                                    alt="<%= t.features_page.features[2].alt %>"
+                                                    class="rounded-lg shadow-xl w-full">
+                                            </div>
+                                            <div class="md:w-1/2">
+                                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                                    <%= t.features_page.features[2].title %>
+                                                </h2>
+                                                <p class="text-neutral mb-3">
+                                                    <%= t.features_page.features[2].desc %>
+                                                </p>
+                                                <ul class="list-disc list-inside text-neutral space-y-1">
+                                                    <li>
+                                                        <%= t.features_page.features[2].list[0] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[2].list[1] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[2].list[2] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[2].list[3] %>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
 
-                // Mobile menu toggle
-                const mobileMenuButton = document.getElementById('mobile-menu-button');
-                const mobileMenu = document.getElementById('mobile-menu');
-                if (mobileMenuButton && mobileMenu) {
-                    mobileMenuButton.addEventListener('click', () => {
-                        mobileMenu.classList.toggle('hidden');
-                    });
-                }
+                                        <!-- Feature 4: Real-Time Collaboration (Coming Soon) -->
+                                        <div
+                                            class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
+                                            <div class="md:w-1/2">
+                                                <img src="/images/features/feature-collaboration.jpg"
+                                                    alt="<%= t.features_page.features[3].alt %>"
+                                                    class="rounded-lg shadow-xl w-full">
+                                            </div>
+                                            <div class="md:w-1/2">
+                                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                                    <%= t.features_page.features[3].title %>
+                                                </h2>
+                                                <p class="text-neutral mb-3">
+                                                    <%= t.features_page.features[3].desc %>
+                                                </p>
+                                                <ul class="list-disc list-inside text-neutral space-y-1">
+                                                    <li>
+                                                        <%= t.features_page.features[3].list[0] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[3].list[1] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[3].list[2] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[3].list[3] %>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
 
-                // Intersection Observer for section animations
-                const sections = document.querySelectorAll('.section-animate');
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('is-visible');
-                            observer.unobserve(entry.target);
+                                        <!-- Feature 5: One-Click Export & Sharing -->
+                                        <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
+                                            <div class="md:w-1/2">
+                                                <img src="/images/features/feature-export.jpg"
+                                                    alt="<%= t.features_page.features[4].alt %>"
+                                                    class="rounded-lg shadow-xl w-full">
+                                            </div>
+                                            <div class="md:w-1/2">
+                                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                                    <%= t.features_page.features[4].title %>
+                                                </h2>
+                                                <p class="text-neutral mb-3">
+                                                    <%= t.features_page.features[4].desc %>
+                                                </p>
+                                                <ul class="list-disc list-inside text-neutral space-y-1">
+                                                    <li>
+                                                        <%= t.features_page.features[4].list[0] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[4].list[1] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[4].list[2] %>
+                                                    </li>
+                                                    <li>
+                                                        <%= t.features_page.features[4].list[3] %>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <% if (workflow && workflow.steps && workflow.steps.length) { %>
+                                <section class="py-16 md:py-24 bg-neutral-light section-animate">
+                                    <div class="container mx-auto px-6">
+                                        <div class="max-w-4xl mx-auto text-center mb-12">
+                                            <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-4">
+                                                <%= workflow.title %>
+                                            </h2>
+                                            <p class="text-neutral text-lg">
+                                                <%= workflow.desc %>
+                                            </p>
+                                        </div>
+                                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                            <% workflow.steps.forEach(function(step) { %>
+                                                <article
+                                                    class="bg-white rounded-xl p-6 border border-neutral-light/60 shadow-sm">
+                                                    <p
+                                                        class="text-xs uppercase tracking-wide text-primary font-semibold mb-3">
+                                                        <%= step.label %>
+                                                    </p>
+                                                    <h3 class="text-lg font-semibold text-neutral-dark mb-2">
+                                                        <%= step.title %>
+                                                    </h3>
+                                                    <p class="text-neutral text-sm leading-6">
+                                                        <%= step.desc %>
+                                                    </p>
+                                                </article>
+                                                <% }) %>
+                                        </div>
+                                    </div>
+                                </section>
+                                <% } %>
+
+                                    <% if (featureFaq && featureFaq.items && featureFaq.items.length) { %>
+                                        <section class="py-16 md:py-20 bg-white section-animate">
+                                            <div class="container mx-auto px-6 max-w-4xl">
+                                                <h2
+                                                    class="text-2xl md:text-3xl font-bold text-neutral-dark mb-8 text-center">
+                                                    <%= featureFaq.title %>
+                                                </h2>
+                                                <div class="space-y-6">
+                                                    <% featureFaq.items.forEach(function(item) { %>
+                                                        <article class="border border-neutral-light/60 rounded-lg p-5">
+                                                            <h3 class="text-lg font-semibold text-neutral-dark mb-2">
+                                                                <%= item.q %>
+                                                            </h3>
+                                                            <p class="text-neutral">
+                                                                <%= item.a %>
+                                                            </p>
+                                                        </article>
+                                                        <% }) %>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <% } %>
+
+                                            <!-- Call to Action Section -->
+                                            <section class="py-16 md:py-24 bg-neutral-light section-animate">
+                                                <div class="container mx-auto px-6 text-center">
+                                                    <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark mb-6">
+                                                        <%= t.features_page.cta.title %>
+                                                    </h2>
+                                                    <p class="text-lg text-neutral mb-8 max-w-xl mx-auto">
+                                                        <%= t.features_page.cta.desc %>
+                                                    </p>
+                                                    <a href="<%= link('lovart-pricing.html') %>"
+                                                        class="bg-primary text-white px-10 py-4 rounded-md hover:bg-primary-dark transition-colors text-lg font-medium">
+                                                        <%= t.features_page.cta.button %>
+                                                    </a>
+                                                </div>
+                                            </section>
+
+                                            <!-- Related Resources Section -->
+                                            <section class="py-12 bg-white">
+                                                <div class="container mx-auto px-6 max-w-6xl">
+                                                    <h2 class="text-2xl font-bold mb-8 text-center">
+                                                        <%= t.features_page.related.title %>
+                                                    </h2>
+                                                    <div class="grid md:grid-cols-3 gap-6">
+                                                        <a href="<%= link('lovart-pricing.html') %>"
+                                                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                                                            <h3 class="font-semibold mb-1">
+                                                                <%= t.features_page.related.items[0].title %>
+                                                            </h3>
+                                                            <p class="text-xs text-neutral mb-2">
+                                                                <%= t.features_page.related.items[0].desc %>
+                                                            </p>
+                                                            <span class="text-primary text-sm font-medium">
+                                                                <%= t.features_page.related.items[0].link_text %>
+                                                            </span>
+                                                        </a>
+                                                        <a href="<%= link('lovart-api.html') %>"
+                                                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                                                            <h3 class="font-semibold mb-1">
+                                                                <%= t.features_page.related.items[1].title %>
+                                                            </h3>
+                                                            <p class="text-xs text-neutral mb-2">
+                                                                <%= t.features_page.related.items[1].desc %>
+                                                            </p>
+                                                            <span class="text-primary text-sm font-medium">
+                                                                <%= t.features_page.related.items[1].link_text %>
+                                                            </span>
+                                                        </a>
+                                                        <a href="<%= link('lovart-free.html') %>"
+                                                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                                                            <h3 class="font-semibold mb-1">
+                                                                <%= t.features_page.related.items[2].title %>
+                                                            </h3>
+                                                            <p class="text-xs text-neutral mb-2">
+                                                                <%= t.features_page.related.items[2].desc %>
+                                                            </p>
+                                                            <span class="text-primary text-sm font-medium">
+                                                                <%= t.features_page.related.items[2].link_text %>
+                                                            </span>
+                                                        </a>
+                                                        <a href="<%= link('lovart-ai-code.html') %>"
+                                                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                                                            <h3 class="font-semibold mb-1">
+                                                                <%= t.lovart_ai_code_page.hero.title %>
+                                                            </h3>
+                                                            <p class="text-xs text-neutral mb-2">
+                                                                <%= t.features_page.related.items[3].desc %>
+                                                            </p>
+                                                            <span class="text-primary text-sm font-medium">
+                                                                <%= t.features_page.related.items[3].link_text %>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </section>
+                </main>
+
+                <!-- Footer -->
+                <%- include('partials/footer') %>
+
+                    <script>
+                        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+                        // Mobile menu toggle
+                        const mobileMenuButton = document.getElementById('mobile-menu-button');
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        if (mobileMenuButton && mobileMenu) {
+                            mobileMenuButton.addEventListener('click', () => {
+                                mobileMenu.classList.toggle('hidden');
+                            });
                         }
-                    });
-                }, { threshold: 0.1 });
-                sections.forEach(section => {
-                    observer.observe(section);
-                });
-            </script>
-</body>
 
-</html>
+                        // Intersection Observer for section animations
+                        const sections = document.querySelectorAll('.section-animate');
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    entry.target.classList.add('is-visible');
+                                    observer.unobserve(entry.target);
+                                }
+                            });
+                        }, { threshold: 0.1 });
+                        sections.forEach(section => {
+                            observer.observe(section);
+                        });
+                    </script>
+    </body>
+
+    </html>

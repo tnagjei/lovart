@@ -1,442 +1,470 @@
 <!DOCTYPE html>
-<%
-const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.pricing, href: canonicalUrl }];
-const pricingPage = t.pricing_page;
-const plans = pricingPage.plans || [];
-const faqItems = pricingPage.faq && pricingPage.faq.items ? pricingPage.faq.items : [];
-const comparisonTable = pricingPage.comparison_table || null;
-const deepDive = pricingPage.deep_dive || null;
-%>
-<html lang="<%= lang %>" class="scroll-smooth">
+<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: t.nav.pricing, href: canonicalUrl }]; const
+    pricingPage=t.pricing_page; const plans=pricingPage.plans || []; const faqItems=pricingPage.faq &&
+    pricingPage.faq.items ? pricingPage.faq.items : []; const comparisonTable=pricingPage.comparison_table || null;
+    const deepDive=pricingPage.deep_dive || null; %>
+    <html lang="<%= lang %>" class="scroll-smooth">
 
-<head>
-    <%- include('partials/head') %>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            <%= pricingPage.seo.title %>
-        </title>
-        <meta name="description" content="<%= pricingPage.seo.description %>">
-        <meta name="keywords" content="<%= pricingPage.seo.keywords %>">
-        <link rel="canonical" href="<%= canonicalUrl %>">
-        <%- include('partials/hreflang') %>
-            <link rel="stylesheet" href="/styles.css">
-            <link rel="icon" href="/favicon.ico" type="image/x-icon">
-            <script async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
-                crossorigin="anonymous"></script>
-            <%- include('partials/analytics') %>
+    <head>
+        <%- include('partials/head') %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= pricingPage.seo.title %>
+            </title>
+            <meta name="description" content="<%= pricingPage.seo.description %>">
+            <meta name="keywords" content="<%= pricingPage.seo.keywords %>">
+            <link rel="canonical" href="<%= canonicalUrl %>">
+            <%- include('partials/hreflang') %>
+                <link rel="stylesheet" href="/styles.css">
+                <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                    crossorigin="anonymous"></script>
+                <%- include('partials/analytics') %>
 
-                <style>
-                    @keyframes gradient {
-                        0% {
-                            background-position: 0% 50%;
+                    <style>
+                        @keyframes gradient {
+                            0% {
+                                background-position: 0% 50%;
+                            }
+
+                            50% {
+                                background-position: 100% 50%;
+                            }
+
+                            100% {
+                                background-position: 0% 50%;
+                            }
                         }
 
-                        50% {
-                            background-position: 100% 50%;
+                        .fade-in {
+                            animation: fadeInAnimation ease 2s;
+                            animation-iteration-count: 1;
+                            animation-fill-mode: forwards;
                         }
 
-                        100% {
-                            background-position: 0% 50%;
+                        @keyframes fadeInAnimation {
+                            0% {
+                                opacity: 0;
+                                transform: translateY(20px);
+                            }
+
+                            100% {
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
                         }
-                    }
 
-                    .fade-in {
-                        animation: fadeInAnimation ease 2s;
-                        animation-iteration-count: 1;
-                        animation-fill-mode: forwards;
-                    }
-
-                    @keyframes fadeInAnimation {
-                        0% {
+                        .section-animate {
                             opacity: 0;
-                            transform: translateY(20px);
+                            transform: translateY(30px);
+                            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
                         }
 
-                        100% {
+                        .section-animate.is-visible {
                             opacity: 1;
                             transform: translateY(0);
                         }
-                    }
 
-                    .section-animate {
-                        opacity: 0;
-                        transform: translateY(30px);
-                        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-                    }
+                        summary::-webkit-details-marker {
+                            display: none;
+                        }
 
-                    .section-animate.is-visible {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
+                        .comparison-indicator {
+                            transition: transform 0.2s ease;
+                        }
 
-                    summary::-webkit-details-marker {
-                        display: none;
-                    }
+                        details[open] .comparison-indicator {
+                            transform: rotate(45deg);
+                        }
+                    </style>
 
-                    .comparison-indicator {
-                        transition: transform 0.2s ease;
-                    }
+                    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
 
-                    details[open] .comparison-indicator {
-                        transform: rotate(45deg);
-                    }
-                </style>
+    </head>
 
-                <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+    <body class="bg-neutral-light text-neutral-dark antialiased">
 
-</head>
+        <!-- Header -->
+        <%- include('partials/header') %>
 
-<body class="bg-neutral-light text-neutral-dark antialiased">
-
-    <!-- Header -->
-    <%- include('partials/header') %>
-
-    <%- include('partials/breadcrumb', { breadcrumbItems }) %>
-        <main>
-            <section class="py-16 md:py-24 section-animate">
-                <div class="container mx-auto px-6">
-                    <h1 class="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-6 animate-fade-in-up">
-                        <%= pricingPage.hero.title %>
-                    </h1>
-                    <p class="text-center text-neutral text-lg max-w-3xl mx-auto mb-10 animate-fade-in-up"
-                        style="animation-delay: 0.2s;">
-                        <%= pricingPage.hero.desc %>
-                    </p>
-
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-3 mb-12 animate-fade-in-up"
-                        style="animation-delay: 0.3s;">
-                        <div class="inline-flex items-center bg-white border border-neutral-light rounded-full p-1 shadow-sm"
-                            role="group" aria-label="<%= pricingPage.billing_toggle.label %>">
-                            <button type="button"
-                                class="billing-toggle-btn px-5 py-2 rounded-full text-sm font-medium transition-colors"
-                                data-billing="monthly" aria-pressed="true">
-                                <%= pricingPage.billing_toggle.monthly %>
-                            </button>
-                            <button type="button"
-                                class="billing-toggle-btn px-5 py-2 rounded-full text-sm font-medium transition-colors"
-                                data-billing="yearly" aria-pressed="false">
-                                <%= pricingPage.billing_toggle.yearly %>
-                            </button>
-                        </div>
-                        <span class="text-sm text-secondary-dark bg-secondary-light/50 px-3 py-1 rounded-full font-medium">
-                            <%= pricingPage.billing_toggle.yearly_badge %>
-                        </span>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-                        <% plans.forEach(function(plan, index) { %>
-                            <% const badgeType = plan.badge_type || ''; %>
-                                <% const cardClass = badgeType === 'popular'
-                                    ? 'bg-white p-8 rounded-lg shadow-xl border-2 border-primary flex flex-col animate-fade-in-up'
-                                    : badgeType === 'flash'
-                                        ? 'bg-white p-8 rounded-lg shadow-xl border-2 border-secondary flex flex-col animate-fade-in-up'
-                                        : 'bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 flex flex-col animate-fade-in-up'; %>
-                                    <% const badgeClass = badgeType === 'popular'
-                                        ? 'bg-primary-light text-primary-dark'
-                                        : badgeType === 'flash'
-                                            ? 'bg-secondary-light text-secondary-dark'
-                                            : 'bg-neutral-light text-neutral-dark'; %>
-                                        <% const ctaClass = badgeType === 'popular'
-                                            ? 'mt-auto w-full bg-primary text-white text-center px-6 py-3 rounded-md hover:bg-primary-dark transition-colors font-medium'
-                                            : badgeType === 'flash'
-                                                ? 'mt-auto w-full bg-secondary text-white text-center px-6 py-3 rounded-md hover:bg-secondary-dark transition-colors font-medium'
-                                                : 'mt-auto w-full bg-neutral-dark text-white text-center px-6 py-3 rounded-md hover:bg-gray-700 transition-colors font-medium'; %>
-
-                                            <% const animationDelay = (0.4 + (index * 0.1)).toFixed(1) + 's'; %>
-                                            <div class="<%= cardClass %>" style="animation-delay: <%= animationDelay %>;">
-                                                <div class="flex items-center gap-2 mb-2 flex-wrap">
-                                                    <h3 class="text-2xl font-semibold text-neutral-dark">
-                                                        <%= plan.name %>
-                                                    </h3>
-                                                    <% if (plan.badge) { %>
-                                                        <span class="text-xs font-semibold px-2 py-1 rounded-full <%= badgeClass %>">
-                                                            <%= plan.badge %>
-                                                        </span>
-                                                        <% } %>
-                                                </div>
-
-                                                <p class="text-primary font-bold text-3xl mb-2 leading-none">
-                                                    <span class="price-value" data-monthly="<%= plan.price.monthly %>"
-                                                        data-yearly="<%= plan.price.yearly %>">
-                                                        <%= plan.price.monthly %>
-                                                    </span>
-                                                </p>
-                                                <p class="text-sm text-neutral mb-5">
-                                                    <span class="period-value" data-monthly="<%= plan.period.monthly %>"
-                                                        data-yearly="<%= plan.period.yearly %>">
-                                                        <%= plan.period.monthly %>
-                                                    </span>
-                                                </p>
-
-                                                <p class="text-neutral mb-6 flex-grow">
-                                                    <%= plan.desc %>
-                                                </p>
-
-                                                <ul class="list-disc list-inside text-neutral space-y-2 mb-8 flex-grow">
-                                                    <% (plan.features || []).forEach(function(feature) { %>
-                                                        <li>
-                                                            <%= feature %>
-                                                        </li>
-                                                        <% }) %>
-                                                </ul>
-
-                                                <a href="mailto:sales@lovart.info?subject=<%= encodeURIComponent('Inquiry about ' + plan.name + ' Plan') %>"
-                                                    class="<%= ctaClass %>">
-                                                    <%= plan.cta %>
-                                                </a>
-                                            </div>
-                                            <% }) %>
-                    </div>
-
-                    <div class="mb-16 animate-fade-in-up" style="animation-delay: 0.8s;">
-                        <%- include('partials/adsense', { slot: '2395486240', format: 'auto', minHeight: '120px' }) %>
-                    </div>
-
-                    <div class="py-8 animate-fade-in-up" style="animation-delay: 0.85s;">
-                        <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-6 text-center">
-                            <%= pricingPage.why_choose.title %>
-                        </h2>
-                        <div class="grid md:grid-cols-2 gap-8 items-center">
-                            <div class="text-neutral">
-                                <p class="mb-4">
-                                    <%= pricingPage.why_choose.p1 %>
-                                </p>
-                                <p class="mb-4">
-                                    <%= pricingPage.why_choose.p2 %>
-                                </p>
-                            </div>
-                            <div>
-                                <picture>
-                                    <source type="image/webp" srcset="/images/02.webp">
-                                    <img src="/images/02.png" alt="Lovart pricing comparison"
-                                        class="w-full h-40 object-cover rounded-md mb-4">
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-
-                    <% if (comparisonTable) { %>
-                        <div class="py-8 animate-fade-in-up" style="animation-delay: 0.9s;">
-                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4 text-center">
-                                <%= comparisonTable.title %>
-                            </h2>
-                            <p class="text-neutral text-center max-w-3xl mx-auto mb-6">
-                                <%= comparisonTable.summary %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+                <main>
+                    <section class="py-16 md:py-24 section-animate">
+                        <div class="container mx-auto px-6">
+                            <h1
+                                class="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-6 animate-fade-in-up">
+                                <%= pricingPage.hero.title %>
+                            </h1>
+                            <p class="text-center text-neutral text-lg max-w-3xl mx-auto mb-10 animate-fade-in-up"
+                                style="animation-delay: 0.2s;">
+                                <%= pricingPage.hero.desc %>
                             </p>
 
-                            <details class="bg-white rounded-lg border border-neutral-light shadow-sm" data-comparison-details>
-                                <summary class="cursor-pointer px-5 py-4 font-semibold text-neutral-dark flex items-center justify-between">
-                                    <span>
-                                        <%= comparisonTable.toggle %>
-                                    </span>
-                                    <span class="comparison-indicator text-primary text-xl leading-none">+</span>
-                                </summary>
-                                <div class="px-4 pb-4">
-                                    <div class="overflow-x-auto">
-                                        <table class="w-full border-collapse text-sm text-left">
-                                            <thead>
-                                                <tr class="bg-neutral-light/60">
-                                                    <% (comparisonTable.headers || []).forEach(function(header) { %>
-                                                        <th class="px-4 py-3 font-semibold text-neutral-dark border-b border-neutral-light whitespace-nowrap">
-                                                            <%= header %>
-                                                        </th>
+                            <div class="flex flex-col md:flex-row items-center justify-center gap-3 mb-12 animate-fade-in-up"
+                                style="animation-delay: 0.3s;">
+                                <div class="inline-flex items-center bg-white border border-neutral-light rounded-full p-1 shadow-sm"
+                                    role="group" aria-label="<%= pricingPage.billing_toggle.label %>">
+                                    <button type="button"
+                                        class="billing-toggle-btn px-5 py-2 rounded-full text-sm font-medium transition-colors"
+                                        data-billing="monthly" aria-pressed="true">
+                                        <%= pricingPage.billing_toggle.monthly %>
+                                    </button>
+                                    <button type="button"
+                                        class="billing-toggle-btn px-5 py-2 rounded-full text-sm font-medium transition-colors"
+                                        data-billing="yearly" aria-pressed="false">
+                                        <%= pricingPage.billing_toggle.yearly %>
+                                    </button>
+                                </div>
+                                <span
+                                    class="text-sm text-secondary-dark bg-secondary-light/50 px-3 py-1 rounded-full font-medium">
+                                    <%= pricingPage.billing_toggle.yearly_badge %>
+                                </span>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                                <% plans.forEach(function(plan, index) { %>
+                                    <% const badgeType=plan.badge_type || '' ; %>
+                                        <% const cardClass=badgeType==='popular'
+                                            ? 'bg-white p-8 rounded-lg shadow-xl border-2 border-primary flex flex-col animate-fade-in-up'
+                                            : badgeType==='flash'
+                                            ? 'bg-white p-8 rounded-lg shadow-xl border-2 border-secondary flex flex-col animate-fade-in-up'
+                                            : 'bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 flex flex-col animate-fade-in-up'
+                                            ; %>
+                                            <% const badgeClass=badgeType==='popular'
+                                                ? 'bg-primary-light text-primary-dark' : badgeType==='flash'
+                                                ? 'bg-secondary-light text-secondary-dark'
+                                                : 'bg-neutral-light text-neutral-dark' ; %>
+                                                <% const ctaClass=badgeType==='popular'
+                                                    ? 'mt-auto w-full bg-primary text-white text-center px-6 py-3 rounded-md hover:bg-primary-dark transition-colors font-medium'
+                                                    : badgeType==='flash'
+                                                    ? 'mt-auto w-full bg-secondary text-white text-center px-6 py-3 rounded-md hover:bg-secondary-dark transition-colors font-medium'
+                                                    : 'mt-auto w-full bg-neutral-dark text-white text-center px-6 py-3 rounded-md hover:bg-gray-700 transition-colors font-medium'
+                                                    ; %>
+
+                                                    <% const animationDelay=(0.4 + (index * 0.1)).toFixed(1) + 's' ; %>
+                                                        <div class="<%= cardClass %>"
+                                                            style="animation-delay: <%= animationDelay %>;">
+                                                            <div class="flex items-center gap-2 mb-2 flex-wrap">
+                                                                <h3 class="text-2xl font-semibold text-neutral-dark">
+                                                                    <%= plan.name %>
+                                                                </h3>
+                                                                <% if (plan.badge) { %>
+                                                                    <span
+                                                                        class="text-xs font-semibold px-2 py-1 rounded-full <%= badgeClass %>">
+                                                                        <%= plan.badge %>
+                                                                    </span>
+                                                                    <% } %>
+                                                            </div>
+
+                                                            <p
+                                                                class="text-primary font-bold text-3xl mb-2 leading-none">
+                                                                <span class="price-value"
+                                                                    data-monthly="<%= plan.price.monthly %>"
+                                                                    data-yearly="<%= plan.price.yearly %>">
+                                                                    <%= plan.price.monthly %>
+                                                                </span>
+                                                            </p>
+                                                            <p class="text-sm text-neutral mb-5">
+                                                                <span class="period-value"
+                                                                    data-monthly="<%= plan.period.monthly %>"
+                                                                    data-yearly="<%= plan.period.yearly %>">
+                                                                    <%= plan.period.monthly %>
+                                                                </span>
+                                                            </p>
+
+                                                            <p class="text-neutral mb-6 flex-grow">
+                                                                <%= plan.desc %>
+                                                            </p>
+
+                                                            <ul
+                                                                class="list-disc list-inside text-neutral space-y-2 mb-8 flex-grow">
+                                                                <% (plan.features || []).forEach(function(feature) { %>
+                                                                    <li>
+                                                                        <%= feature %>
+                                                                    </li>
+                                                                    <% }) %>
+                                                            </ul>
+
+                                                            <a href="mailto:sales@lovart.info?subject=<%= encodeURIComponent('Inquiry about ' + plan.name + ' Plan') %>"
+                                                                class="<%= ctaClass %>">
+                                                                <%= plan.cta %>
+                                                            </a>
+                                                        </div>
                                                         <% }) %>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <% (comparisonTable.rows || []).forEach(function(row) { %>
-                                                    <tr class="odd:bg-white even:bg-neutral-light/20">
-                                                        <td class="px-4 py-3 border-b border-neutral-light font-medium text-neutral-dark whitespace-nowrap">
-                                                            <%= row.feature %>
-                                                        </td>
-                                                        <% (row.values || []).forEach(function(value) { %>
-                                                            <td class="px-4 py-3 border-b border-neutral-light text-neutral whitespace-nowrap">
-                                                                <%= value %>
-                                                            </td>
-                                                            <% }) %>
-                                                    </tr>
-                                                    <% }) %>
-                                            </tbody>
-                                        </table>
+                            </div>
+
+                            <div class="mb-16 animate-fade-in-up" style="animation-delay: 0.8s;">
+                                <%- include('partials/adsense', { slot: '2395486240' , format: 'auto' ,
+                                    minHeight: '120px' }) %>
+                            </div>
+
+                            <div class="py-8 animate-fade-in-up" style="animation-delay: 0.85s;">
+                                <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-6 text-center">
+                                    <%= pricingPage.why_choose.title %>
+                                </h2>
+                                <div class="grid md:grid-cols-2 gap-8 items-center">
+                                    <div class="text-neutral">
+                                        <p class="mb-4">
+                                            <%= pricingPage.why_choose.p1 %>
+                                        </p>
+                                        <p class="mb-4">
+                                            <%= pricingPage.why_choose.p2 %>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/images/02.webp">
+                                            <img src="/images/02.png" alt="Lovart pricing comparison"
+                                                class="w-full h-40 object-cover rounded-md mb-4">
+                                        </picture>
                                     </div>
                                 </div>
-                            </details>
-                        </div>
-                        <% } %>
+                            </div>
 
-                            <% if (deepDive) { %>
-                                <div class="mt-8 pt-10 border-t border-neutral-light animate-fade-in-up"
-                                    style="animation-delay: 0.95s;">
-                                    <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-6 text-center">
-                                        <%= deepDive.title %>
+                            <% if (comparisonTable) { %>
+                                <div class="py-8 animate-fade-in-up" style="animation-delay: 0.9s;">
+                                    <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4 text-center">
+                                        <%= comparisonTable.title %>
                                     </h2>
-                                    <div class="max-w-4xl mx-auto text-neutral space-y-4">
-                                        <p>
-                                            <%= deepDive.p1 %>
-                                        </p>
-                                        <p>
-                                            <%= deepDive.p2 %>
-                                        </p>
-                                        <p>
-                                            <%= deepDive.p3 %>
-                                        </p>
-                                    </div>
+                                    <p class="text-neutral text-center max-w-3xl mx-auto mb-6">
+                                        <%= comparisonTable.summary %>
+                                    </p>
+
+                                    <details class="bg-white rounded-lg border border-neutral-light shadow-sm"
+                                        data-comparison-details>
+                                        <summary
+                                            class="cursor-pointer px-5 py-4 font-semibold text-neutral-dark flex items-center justify-between">
+                                            <span>
+                                                <%= comparisonTable.toggle %>
+                                            </span>
+                                            <span
+                                                class="comparison-indicator text-primary text-xl leading-none">+</span>
+                                        </summary>
+                                        <div class="px-4 pb-4">
+                                            <div class="overflow-x-auto">
+                                                <table class="w-full border-collapse text-sm text-left">
+                                                    <thead>
+                                                        <tr class="bg-neutral-light/60">
+                                                            <% (comparisonTable.headers || []).forEach(function(header)
+                                                                { %>
+                                                                <th
+                                                                    class="px-4 py-3 font-semibold text-neutral-dark border-b border-neutral-light whitespace-nowrap">
+                                                                    <%= header %>
+                                                                </th>
+                                                                <% }) %>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <% (comparisonTable.rows || []).forEach(function(row) { %>
+                                                            <tr class="odd:bg-white even:bg-neutral-light/20">
+                                                                <td
+                                                                    class="px-4 py-3 border-b border-neutral-light font-medium text-neutral-dark whitespace-nowrap">
+                                                                    <%= row.feature %>
+                                                                </td>
+                                                                <% (row.values || []).forEach(function(value) { %>
+                                                                    <td
+                                                                        class="px-4 py-3 border-b border-neutral-light text-neutral whitespace-nowrap">
+                                                                        <%= value %>
+                                                                    </td>
+                                                                    <% }) %>
+                                                            </tr>
+                                                            <% }) %>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </details>
                                 </div>
                                 <% } %>
 
-                                    <div class="mt-10 pt-12 border-t border-neutral-light animate-fade-in-up"
-                                        style="animation-delay: 1s;">
-                                        <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-8 text-center">
-                                            <%= pricingPage.faq.title %>
-                                        </h2>
-                                        <div class="space-y-6 max-w-3xl mx-auto">
-                                            <% faqItems.forEach(function(item, index) { %>
-                                                <div>
-                                                    <h4 class="text-lg font-semibold text-neutral-dark mb-1">
-                                                        <%= item.q %>
-                                                    </h4>
-                                                    <p class="text-neutral">
-                                                        <%= item.a %>
-                                                    </p>
-                                                </div>
-
-                                                <% if (index === 1) { %>
-                                                    <%- include('partials/adsense', { slot: '7744440876', format: 'auto', minHeight: '180px' }) %>
-                                                        <% } %>
-                                                            <% }) %>
+                                    <% if (deepDive) { %>
+                                        <div class="mt-8 pt-10 border-t border-neutral-light animate-fade-in-up"
+                                            style="animation-delay: 0.95s;">
+                                            <h2
+                                                class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-6 text-center">
+                                                <%= deepDive.title %>
+                                            </h2>
+                                            <div class="max-w-4xl mx-auto text-neutral space-y-4">
+                                                <p>
+                                                    <%= deepDive.p1 %>
+                                                </p>
+                                                <p>
+                                                    <%= deepDive.p2 %>
+                                                </p>
+                                                <p>
+                                                    <%= deepDive.p3 %>
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
+                                        <% } %>
 
-                                    <div id="contact-sales" class="text-center mt-16 pt-12 animate-fade-in-up"
-                                        style="animation-delay: 1.05s;">
-                                        <h3 class="text-xl md:text-2xl font-semibold text-neutral-dark mb-4">
-                                            <%= pricingPage.contact.title %>
-                                        </h3>
-                                        <p class="text-neutral mb-8 max-w-xl mx-auto">
-                                            <%= pricingPage.contact.desc %>
-                                        </p>
-                                        <a href="mailto:sales@lovart.info?subject=Custom%20Lovart%20AI%20Pricing%20Inquiry"
-                                            class="bg-secondary text-white px-8 py-4 rounded-md hover:bg-secondary-dark transition-colors text-lg font-medium">
-                                            <%= pricingPage.contact.cta %>
-                                        </a>
-                                    </div>
-                </div>
-            </section>
+                                            <div class="mt-10 pt-12 border-t border-neutral-light animate-fade-in-up"
+                                                style="animation-delay: 1s;">
+                                                <h2
+                                                    class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-8 text-center">
+                                                    <%= pricingPage.faq.title %>
+                                                </h2>
+                                                <div class="space-y-6 max-w-3xl mx-auto">
+                                                    <% faqItems.forEach(function(item, index) { %>
+                                                        <div>
+                                                            <h4 class="text-lg font-semibold text-neutral-dark mb-1">
+                                                                <%= item.q %>
+                                                            </h4>
+                                                            <p class="text-neutral">
+                                                                <%= item.a %>
+                                                            </p>
+                                                        </div>
 
-            <section class="py-12 bg-white">
-                <div class="container mx-auto px-6 max-w-6xl">
-                    <h2 class="text-2xl font-bold mb-8 text-center">
-                        <%= pricingPage.related.title %>
-                    </h2>
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <a href="<%= link('lovart-design-features.html') %>"
-                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
-                            <h3 class="font-semibold mb-1">
-                                <%= pricingPage.related.items[0].title %>
-                            </h3>
-                            <p class="text-xs text-neutral mb-2">
-                                <%= pricingPage.related.items[0].desc %>
-                            </p>
-                            <span class="text-primary text-sm font-medium">
-                                <%= pricingPage.related.items[0].link_text %>
-                            </span>
-                        </a>
-                        <a href="<%= link('lovart-free.html') %>"
-                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
-                            <h3 class="font-semibold mb-1">
-                                <%= pricingPage.related.items[1].title %>
-                            </h3>
-                            <p class="text-xs text-neutral mb-2">
-                                <%= pricingPage.related.items[1].desc %>
-                            </p>
-                            <span class="text-primary text-sm font-medium">
-                                <%= pricingPage.related.items[1].link_text %>
-                            </span>
-                        </a>
-                        <a href="<%= link('lovart-api.html') %>"
-                            class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
-                            <h3 class="font-semibold mb-1">
-                                <%= pricingPage.related.items[2].title %>
-                            </h3>
-                            <p class="text-xs text-neutral mb-2">
-                                <%= pricingPage.related.items[2].desc %>
-                            </p>
-                            <span class="text-primary text-sm font-medium">
-                                <%= pricingPage.related.items[2].link_text %>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
+                                                        <% if (index===1) { %>
+                                                            <%- include('partials/adsense', { slot: '7744440876' ,
+                                                                format: 'auto' , minHeight: '180px' }) %>
+                                                                <% } %>
+                                                                    <% }) %>
+                                                </div>
+                                            </div>
 
-        <%- include('partials/footer') %>
+                                            <div id="contact-sales" class="text-center mt-16 pt-12 animate-fade-in-up"
+                                                style="animation-delay: 1.05s;">
+                                                <h3 class="text-xl md:text-2xl font-semibold text-neutral-dark mb-4">
+                                                    <%= pricingPage.contact.title %>
+                                                </h3>
+                                                <p class="text-neutral mb-8 max-w-xl mx-auto">
+                                                    <%= pricingPage.contact.desc %>
+                                                </p>
+                                                <a href="mailto:sales@lovart.info?subject=Custom%20Lovart%20AI%20Pricing%20Inquiry"
+                                                    class="bg-secondary text-white px-8 py-4 rounded-md hover:bg-secondary-dark transition-colors text-lg font-medium">
+                                                    <%= pricingPage.contact.cta %>
+                                                </a>
+                                            </div>
+                        </div>
+                    </section>
 
-            <script>
-                document.getElementById('currentYear').textContent = new Date().getFullYear();
+                    <section class="py-12 bg-white">
+                        <div class="container mx-auto px-6 max-w-6xl">
+                            <h2 class="text-2xl font-bold mb-8 text-center">
+                                <%= pricingPage.related.title %>
+                            </h2>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <a href="<%= link('lovart-design-features.html') %>"
+                                    class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                                    <h3 class="font-semibold mb-1">
+                                        <%= pricingPage.related.items[0].title %>
+                                    </h3>
+                                    <p class="text-xs text-neutral mb-2">
+                                        <%= pricingPage.related.items[0].desc %>
+                                    </p>
+                                    <span class="text-primary text-sm font-medium">
+                                        <%= pricingPage.related.items[0].link_text %>
+                                    </span>
+                                </a>
+                                <a href="<%= link('lovart-free.html') %>"
+                                    class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                                    <h3 class="font-semibold mb-1">
+                                        <%= pricingPage.related.items[1].title %>
+                                    </h3>
+                                    <p class="text-xs text-neutral mb-2">
+                                        <%= pricingPage.related.items[1].desc %>
+                                    </p>
+                                    <span class="text-primary text-sm font-medium">
+                                        <%= pricingPage.related.items[1].link_text %>
+                                    </span>
+                                </a>
+                                <a href="<%= link('lovart-api.html') %>"
+                                    class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                                    <h3 class="font-semibold mb-1">
+                                        <%= pricingPage.related.items[2].title %>
+                                    </h3>
+                                    <p class="text-xs text-neutral mb-2">
+                                        <%= pricingPage.related.items[2].desc %>
+                                    </p>
+                                    <span class="text-primary text-sm font-medium">
+                                        <%= pricingPage.related.items[2].link_text %>
+                                    </span>
+                                </a>
+                                <a href="<%= link('lovart-ai-code.html') %>"
+                                    class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
+                                    <h3 class="font-semibold mb-1">
+                                        <%= t.lovart_ai_code_page.hero.title %>
+                                    </h3>
+                                    <p class="text-xs text-neutral mb-2">
+                                        <%= t.pricing_page.related.items[3].desc %>
+                                    </p>
+                                    <span class="text-primary text-sm font-medium">
+                                        <%= t.pricing_page.related.items[3].link_text %>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </main>
 
-                const mobileMenuButton = document.getElementById('mobile-menu-button');
-                const mobileMenu = document.getElementById('mobile-menu');
-                if (mobileMenuButton && mobileMenu) {
-                    mobileMenuButton.addEventListener('click', () => {
-                        mobileMenu.classList.toggle('hidden');
-                    });
-                }
+                <%- include('partials/footer') %>
 
-                const sections = document.querySelectorAll('.section-animate');
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('is-visible');
-                            observer.unobserve(entry.target);
+                    <script>
+                        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+                        const mobileMenuButton = document.getElementById('mobile-menu-button');
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        if (mobileMenuButton && mobileMenu) {
+                            mobileMenuButton.addEventListener('click', () => {
+                                mobileMenu.classList.toggle('hidden');
+                            });
                         }
-                    });
-                }, { threshold: 0.1 });
 
-                sections.forEach(section => {
-                    observer.observe(section);
-                });
+                        const sections = document.querySelectorAll('.section-animate');
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    entry.target.classList.add('is-visible');
+                                    observer.unobserve(entry.target);
+                                }
+                            });
+                        }, { threshold: 0.1 });
 
-                const billingButtons = document.querySelectorAll('.billing-toggle-btn');
-                const priceValues = document.querySelectorAll('.price-value');
-                const periodValues = document.querySelectorAll('.period-value');
-
-                const setBillingMode = (mode) => {
-                    billingButtons.forEach(button => {
-                        const isActive = button.dataset.billing === mode;
-                        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-                        button.classList.toggle('bg-primary', isActive);
-                        button.classList.toggle('text-white', isActive);
-                        button.classList.toggle('shadow-sm', isActive);
-                        button.classList.toggle('text-neutral-dark', !isActive);
-                    });
-
-                    priceValues.forEach(node => {
-                        const nextValue = node.dataset[mode];
-                        if (nextValue) {
-                            node.textContent = nextValue;
-                        }
-                    });
-
-                    periodValues.forEach(node => {
-                        const nextValue = node.dataset[mode];
-                        if (nextValue) {
-                            node.textContent = nextValue;
-                        }
-                    });
-                };
-
-                if (billingButtons.length > 0) {
-                    billingButtons.forEach(button => {
-                        button.addEventListener('click', () => {
-                            setBillingMode(button.dataset.billing);
+                        sections.forEach(section => {
+                            observer.observe(section);
                         });
-                    });
-                    setBillingMode('monthly');
-                }
-            </script>
-</body>
 
-</html>
+                        const billingButtons = document.querySelectorAll('.billing-toggle-btn');
+                        const priceValues = document.querySelectorAll('.price-value');
+                        const periodValues = document.querySelectorAll('.period-value');
+
+                        const setBillingMode = (mode) => {
+                            billingButtons.forEach(button => {
+                                const isActive = button.dataset.billing === mode;
+                                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                                button.classList.toggle('bg-primary', isActive);
+                                button.classList.toggle('text-white', isActive);
+                                button.classList.toggle('shadow-sm', isActive);
+                                button.classList.toggle('text-neutral-dark', !isActive);
+                            });
+
+                            priceValues.forEach(node => {
+                                const nextValue = node.dataset[mode];
+                                if (nextValue) {
+                                    node.textContent = nextValue;
+                                }
+                            });
+
+                            periodValues.forEach(node => {
+                                const nextValue = node.dataset[mode];
+                                if (nextValue) {
+                                    node.textContent = nextValue;
+                                }
+                            });
+                        };
+
+                        if (billingButtons.length > 0) {
+                            billingButtons.forEach(button => {
+                                button.addEventListener('click', () => {
+                                    setBillingMode(button.dataset.billing);
+                                });
+                            });
+                            setBillingMode('monthly');
+                        }
+                    </script>
+    </body>
+
+    </html>

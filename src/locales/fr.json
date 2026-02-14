@@ -13,7 +13,8 @@
         "about": "About",
         "get_started": "Get Started",
         "free": "Essai gratuit",
-        "api": "API"
+        "api": "API",
+        "ai_code": "AI Code"
     },
     "hero": {
         "title": "Lovart: Unleash Your Creative Genius with AI-Powered Design",
@@ -195,7 +196,8 @@
         "title": "Ready to Revolutionize Your Design Process with Lovart?",
         "subtitle": "Join thousands of creators who are already building their best work with Lovart. Experience the future of design, today.",
         "cta_trial": "Start Your Free Lovart Trial",
-        "cta_explore": "Explore Lovart Features"
+        "cta_explore": "Explore Lovart Features",
+        "cta_developers": "Guide Développeur"
     },
     "cookie_consent": {
         "text": "We use cookies to enhance your experience and analyze our traffic. By continuing to visit this site you agree to our use of cookies.",
@@ -297,6 +299,11 @@
                     "title": "Essayer Lovart gratuitement",
                     "desc": "Commencez à créer avec Lovart AI sans frais",
                     "link_text": "Commencer gratuitement →"
+                },
+                {
+                    "title": "Code IA Lovart",
+                    "desc": "Guides d'intégration technique pour les développeurs",
+                    "link_text": "Guide du code →"
                 }
             ]
         },
@@ -621,6 +628,11 @@
                     "title": "Documentation Lovart API",
                     "desc": "Intégrez Lovart AI dans vos applications",
                     "link_text": "Documentation API →"
+                },
+                {
+                    "title": "Code IA Lovart",
+                    "desc": "Guides d'intégration technique pour les développeurs",
+                    "link_text": "Guide du code →"
                 }
             ]
         },
@@ -886,156 +898,170 @@
     },
     "help_page": {
         "seo": {
-            "title": "Centre d'Aide - Plateforme de Design IA Lovart",
-            "description": "Accédez au centre d’aide Lovart: guides, FAQ et support technique pour résoudre rapidement vos questions d’utilisation. Obtenez de l’aide maintenant.",
-            "keywords": "Centre d'Aide, Guide Utilisateur, FAQ, Support Technique"
+            "title": "Help Center - Lovart AI Design Official Resources",
+            "description": "Access Lovart AI's official Help Center for credit usage rules, subscription guides, commercial license info, and troubleshooting. Get support via email or Discord.",
+            "keywords": "Lovart Help, AI credits guide, Flux.1 commercial use, Lovart subscription support"
         },
         "hero": {
-            "title": "Centre d'Aide",
-            "desc": "Nous sommes là pour vous aider à tirer le meilleur parti de Lovart. Parcourez les FAQ ou contactez le support.",
-            "search_placeholder": "Rechercher dans l'aide..."
+            "title": "How can we help you?",
+            "desc": "Official resource center for Lovart AI users. Learn credits usage, subscriptions, account limits, commercial rights, and refund policies.",
+            "search_placeholder": "Search official help resources...",
+            "search_hint": "Try searching 'credits usage', 'commercial rights', or 'refund'",
+            "search_keywords": [
+                "Lovart credits usage rules",
+                "Flux.1 commercial license",
+                "Lovart refund request process",
+                "AI design multi-device login limit"
+            ]
         },
         "quick_help": {
-            "title": "Aide Rapide",
+            "title": "Browse by Category",
             "items": [
                 {
-                    "title": "Démarrage Rapide",
-                    "desc": "Apprenez à démarrer"
+                    "title": "Credits & Usage",
+                    "desc": "Understand agent credits vs canvas credits and cost rules.",
+                    "icon": "💳",
+                    "bg_class": "bg-primary"
                 },
                 {
-                    "title": "Tutoriels Design",
-                    "desc": "Maîtriser l'IA"
+                    "title": "Subscription & Billing",
+                    "desc": "Upgrade, downgrade, cancel, and payment cycle details.",
+                    "icon": "📅",
+                    "bg_class": "bg-secondary"
                 },
                 {
-                    "title": "Facturation",
-                    "desc": "Abonnement et paiement"
+                    "title": "Account & Devices",
+                    "desc": "Login limits and account access across devices.",
+                    "icon": "🔐",
+                    "bg_class": "bg-green-500"
                 },
                 {
-                    "title": "Support Technique",
-                    "desc": "Dépannage"
+                    "title": "Content & Copyright",
+                    "desc": "Commercial usage rights and model-license constraints.",
+                    "icon": "🧾",
+                    "bg_class": "bg-orange-500"
+                },
+                {
+                    "title": "Refund Policy",
+                    "desc": "7-day refund rules and eligibility requirements.",
+                    "icon": "💸",
+                    "bg_class": "bg-indigo-500"
                 }
             ]
         },
         "getting_started": {
-            "title": "Guide de Démarrage",
+            "title": "Quick Start Guide",
             "steps": [
                 {
-                    "title": "Créer un Compte",
-                    "desc": "Inscrivez-vous à Lovart et choisissez un plan. Essai gratuit disponible.",
+                    "title": "Claim Free Credits",
+                    "desc": "New users get free credits to try all models. Sign up via email or social login to start.",
                     "list": [
-                        "Inscription Email",
-                        "Connexion Social",
-                        "Compte Entreprise"
+                        "Free Trial Credits",
+                        "Daily Rewards",
+                        "Referral Bonus"
                     ],
-                    "link": "Voir Tutoriel"
+                    "link": "Start Free"
                 },
                 {
-                    "title": "Choisir un Modèle",
-                    "desc": "Choisissez un modèle ou commencez à zéro.",
+                    "title": "Create with AI",
+                    "desc": "Enter prompts to generate professional designs using Flux.1 or Stable Diffusion models.",
                     "list": [
-                        "Parcourir la Bibliothèque",
-                        "Personnaliser",
-                        "Enregistrer Modèle"
+                        "Prompt Engineering",
+                        "Image-to-Image",
+                        "In-painting"
                     ],
-                    "link": "Voir Tutoriel"
+                    "link": "How to Prompt"
                 },
                 {
-                    "title": "Commencer le Design",
-                    "desc": "Utilisez nos outils IA et l'interface glisser-déposer.",
+                    "title": "Commercial Export",
+                    "desc": "Download your creations with commercial licenses. High-resolution exports supported.",
                     "list": [
-                        "Design Assisté IA",
-                        "Éditeur Glisser-Déposer",
-                        "Aperçu Temps Réel"
+                        "SVG/PNG Export",
+                        "Commercial Rights",
+                        "4K Resolution"
                     ],
-                    "link": "Voir Tutoriel"
+                    "link": "License Info"
                 }
             ]
         },
         "faq": {
-            "title": "Foire Aux Questions",
+            "title": "Frequently Asked Questions",
             "items": [
                 {
-                    "question": "Comment commencer avec Lovart ?",
-                    "answer": "<p>C'est très simple :</p><ol class=\"list-decimal list-inside mt-2 space-y-1\"><li>Visitez le site</li><li>Choisissez un plan</li><li>Inscrivez-vous</li><li>Regardez le tutoriel</li></ol>"
+                    "question": "How are credits calculated?",
+                    "answer": "<p>Lovart has two main credit paths:</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li><strong>Agent Credits:</strong> Used when AI interprets complex instructions and workflows.</li><li><strong>Canvas Credits:</strong> Used when generating images on canvas, based on size, quality, and model.</li></ul><p class=\"mt-2\">Higher quality settings and advanced models consume more credits.</p>"
                 },
                 {
-                    "question": "Quels formats de fichiers Lovart supporte-t-il ?",
-                    "answer": "<p>Lovart supporte de nombreux formats :</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li><strong>Import :</strong> JPG, PNG, SVG, PDF, PSD</li><li><strong>Export :</strong> JPG, PNG, SVG, PDF, GIF, MP4</li></ul>"
+                    "question": "Do credits expire?",
+                    "answer": "<p>Yes, depending on credit type:</p><ul class=\"list-disc list-inside mt-2 space-y-1\"><li><strong>Subscription Credits:</strong> Reset at the end of each billing cycle and do not roll over.</li><li><strong>Top-up Credits:</strong> Permanent and never expire.</li></ul>"
                 },
                 {
-                    "question": "Comment annuler l'abonnement ?",
-                    "answer": "<p>Vous pouvez annuler à tout moment dans les paramètres de compte.</p>"
+                    "question": "Can generated content be used commercially?",
+                    "answer": "<p>Yes. Users own the commercial usage rights for generated content, but usage must follow the underlying model license (for example Flux or Midjourney terms). You cannot resell the model itself or build a competing model service with the outputs.</p>"
                 },
                 {
-                    "question": "Comment fonctionne le design IA ?",
-                    "answer": "<p>Basé sur des algorithmes avancés pour analyser vos besoins et générer des suggestions.</p>"
+                    "question": "What is Unlimited mode and when can I use it?",
+                    "answer": "<p>Unlimited mode is available on eligible plans for non-high-speed generation scenarios. It is designed for broader exploration and is protected by fair-use and anti-abuse rules.</p>"
                 },
                 {
-                    "question": "Comment contacter le support ?",
-                    "answer": "<p>Chat en direct, Email, Documentation et Forum.</p>"
+                    "question": "What is the refund policy?",
+                    "answer": "<p>Refund requests are supported within 7 days for accounts with very low usage (commonly under 20 consumed credits). Contact official support to start the refund process.</p>"
                 }
             ]
         },
+        "faq_cta": {
+            "title": "Need more credits?",
+            "desc": "Upgrade your plan to get more credits and commercial usage rights.",
+            "primary_button": "View Pricing",
+            "secondary_button": "Try Free"
+        },
         "videos": {
-            "title": "Tutoriels Vidéo",
+            "title": "Video Tutorials",
             "items": [
                 {
-                    "title": "Démarrage Rapide Lovart",
-                    "desc": "Comprendre les fonctions clés en 5 min",
-                    "duration": "5:32",
-                    "level": "Débutant"
+                    "title": "Lovart Workflow Guide",
+                    "desc": "From prompt to final high-resolution export.",
+                    "duration": "4:15",
+                    "level": "Beginner"
                 },
                 {
-                    "title": "Fonctions Design IA",
-                    "desc": "Comment l'IA améliore l'efficacité",
-                    "duration": "12:45",
-                    "level": "Intermédiaire"
+                    "title": "Mastering Flux.1 Model",
+                    "desc": "Tips for getting the best results with Flux models.",
+                    "duration": "8:20",
+                    "level": "Intermediate"
                 },
                 {
-                    "title": "Astuces Avancées",
-                    "desc": "Conseils de pros",
-                    "duration": "18:20",
-                    "level": "Avancé"
+                    "title": "Design Portfolio with AI",
+                    "desc": "Building a professional portfolio using AI tools.",
+                    "duration": "12:30",
+                    "level": "Advanced"
                 }
             ]
         },
         "contact": {
-            "title": "Besoin de plus d'aide ?",
-            "desc": "Notre équipe est là pour vous aider.",
-            "chat": {
-                "title": "Chat en Direct",
-                "desc": "Lun-Ven 9h-18h",
-                "button": "Lancer Chat"
-            },
+            "title": "Still Looking for Answers?",
+            "desc": "Our support team is ready to help you via email or Discord.",
             "email": {
-                "title": "Support Email",
-                "desc": "Réponse sous 24h",
-                "button": "Envoyer Email"
+                "title": "Official Email",
+                "desc": "Support for billing and legal issues.",
+                "button": "Send Email"
             },
-            "phone": {
-                "title": "Support Téléphone",
-                "desc": "Pour urgences",
-                "button": "Appeler"
+            "community": {
+                "title": "Discord Community",
+                "desc": "Join 50k+ creators for instant help.",
+                "button": "Join Discord",
+                "url": "https://discord.gg/lovart"
             },
             "quick_search": {
-                "title": "Recherche FAQ Rapide",
+                "title": "Common Topics",
                 "tags": [
-                    "Mot de passe oublié",
-                    "Facturation",
-                    "Technique",
-                    "Compte"
+                    "Credits Usage",
+                    "Commercial Rights",
+                    "Refund Request",
+                    "Unlimited Mode",
+                    "Device Limit"
                 ]
             }
-        },
-        "footer": {
-            "titles": {
-                "lovart": "Lovart",
-                "products": "Produits",
-                "company": "Société",
-                "contact": "Contact"
-            },
-            "desc": "Plateforme de design IA pour les professionnels créatifs.",
-            "rights": "Lovart.info. Tous droits réservés."
         }
     },
     "terms_page": {
@@ -1382,114 +1408,142 @@
             "keywords": "lovart for developers, lovart api, lovart sdk, ai design api, integrate lovart, lovart developer platform, lovart ai code"
         },
         "hero": {
-            "title": "Lovart AI Code & Developer Information",
-            "description": "Welcome to the hub for developers interested in Lovart's AI capabilities. This section is dedicated to providing insights into our AI technology, potential \"Lovart API\" access, \"Lovart AI code\" integration possibilities, and other technical resources to help \"Lovart for developers\" leverage the power of our platform. We are committed to supporting the \"Lovart for developers\" community with robust tools and information regarding \"Lovart AI code\"."
+            "title": "Guide d’intégration Lovart AI pour développeurs",
+            "description": "Cette page sert de guide d’implémentation. Pour les paramètres exacts et les endpoints, utilisez la page de référence API Lovart.",
+            "badges": [
+                "Référence API : Available",
+                "Capacités sélectionnées : Preview",
+                "Accès avancé : Private Beta"
+            ]
         },
         "ai_core": {
-            "title": "Delving into Lovart's AI Engine for \"Lovart AI Code\"",
-            "p1": "Lovart's intelligent features are powered by a sophisticated AI engine designed to understand creative contexts and assist in the design process. Our AI models are trained on vast datasets of visual information to analyze elements, suggest design improvements, automate repetitive tasks, and even generate creative ideas. This forms the backbone of any \"Lovart AI code\" implementation. For \"Lovart for developers\", understanding this core is key to unlocking its potential.",
-            "p2": "The AI engine utilizes advanced machine learning algorithms, including deep learning networks, to interpret user inputs and design assets. While the specific architecture of our core \"Lovart AI code\" is proprietary, we focus on exposing its powerful functionalities through well-defined interfaces, primarily the upcoming \"Lovart API\". This approach allows \"Lovart for developers\" to build innovative applications without needing to delve into the complexities of the underlying AI models themselves. We believe this abstraction is beneficial for the \"Lovart for developers\" ecosystem.",
-            "p3": "Our research and development team is continuously working on enhancing these capabilities, pushing the boundaries of what \"Lovart AI code\" can achieve in creative fields. Future iterations will likely see improvements in contextual understanding, generation quality, and processing speed, all accessible via the \"Lovart API\"."
+            "title": "Comment intégrer les capacités Lovart dans vos flux produit",
+            "p1": "Lovart combine génération, édition et assistance design dans un workflow unique. Les équipes peuvent commencer par un cas simple puis étendre progressivement.",
+            "p2": "La source de vérité pour les endpoints, champs de requête et authentification reste la page API Lovart. Cette page se concentre sur la stratégie d’intégration.",
+            "p3": "La meilleure approche consiste à valider un premier cas d’usage mesurable, puis à augmenter la couverture une fois la qualité confirmée."
         },
         "api_integration": {
-            "title": "\"Lovart API\" Access & \"Lovart AI Code\" Integration (Coming Soon)",
-            "p1": "We understand the immense value of interoperability and extending Lovart's capabilities. That's why we are actively developing a comprehensive \"Lovart API\" that will empower \"Lovart for developers\" to integrate Lovart's AI features into their own applications, workflows, and services. This \"Lovart API\" will be the primary way to interact with \"Lovart AI code\" programmatically.",
-            "p_endpoints": "Potential \"Lovart API\" endpoints might include:",
+            "title": "Statut d’intégration API et chemin d’accès",
+            "p1": "La documentation API Lovart est disponible. La disponibilité réelle peut varier selon le niveau de compte et le périmètre d’autorisation.",
+            "p_endpoints": "Les catégories d’intégration actuellement documentées incluent :",
             "list": [
                 {
-                    "title": "AI-Powered Image Analysis:",
-                    "desc": "Submit images to the \"Lovart API\" for automated tagging, object recognition, color palette extraction, and quality assessment. This \"Lovart AI code\" functionality can be used for content management systems or automated design feedback tools."
+                    "title": "Génération de design :",
+                    "desc": "Produire des visuels à partir de prompts et paramètres structurés pour les workflows automatisés."
                 },
                 {
-                    "title": "Parametric Design Generation:",
-                    "desc": "Utilize the \"Lovart API\" to generate design variations based on input parameters (e.g., text, color schemes, layout constraints). This aspect of \"Lovart AI code\" is perfect for creating personalized marketing materials at scale."
+                    "title": "Traitement d’image :",
+                    "desc": "Importer, améliorer et optimiser des assets dans des pipelines backend."
                 },
                 {
-                    "title": "Access to Specific Lovart Functionalities:",
-                    "desc": "Programmatic access via the \"Lovart API\" to features like smart resizing, background removal, or style transfer, allowing \"Lovart for developers\" to build custom editing tools."
+                    "title": "Templates et réutilisation :",
+                    "desc": "Lire des modèles pour standardiser la production et maintenir la cohérence de marque."
                 },
                 {
-                    "title": "Content Suggestion Engine:",
-                    "desc": "An endpoint in the \"Lovart API\" that provides AI-driven suggestions for typography, imagery, or layout improvements based on a given design context. This leverages the core \"Lovart AI code\" intelligence."
+                    "title": "Contexte utilisateur et usage :",
+                    "desc": "Récupérer les informations de compte et d’usage pour gouverner quotas et monitoring."
                 }
             ],
-            "p_stay_tuned": "Stay tuned for updates on our \"Lovart API\" roadmap, documentation, and availability. If you have specific use cases or requirements for \"Lovart AI code\" integration or the \"Lovart API\", we encourage \"Lovart for developers\" to reach out to us. Your feedback is invaluable as we shape these tools for the \"Lovart for developers\" community."
+            "p_stay_tuned": "Si votre cas dépend de capacités restreintes, demandez l’accès avant le lancement et validez la disponibilité de l’environnement.",
+            "status_title": "Instantané de disponibilité",
+            "status_items": [
+                {
+                    "name": "Page de référence API",
+                    "status": "Available"
+                },
+                {
+                    "name": "Catégories cœur",
+                    "status": "Available"
+                },
+                {
+                    "name": "Capacités avancées ciblées",
+                    "status": "Preview"
+                },
+                {
+                    "name": "Fonctionnalités entreprise",
+                    "status": "Private Beta"
+                }
+            ],
+            "docs_link_text": "Voir la doc API",
+            "access_link_text": "Demander un accès API"
         },
         "use_cases": {
-            "title": "Practical Use Cases for \"Lovart AI Code\" and the \"Lovart API\"",
-            "desc": "The true power of \"Lovart AI code\" and the \"Lovart API\" lies in its diverse applications. Here are a few examples of how \"Lovart for developers\" can leverage our technology:",
+            "title": "Cas d’intégration prioritaires pour les développeurs",
+            "desc": "La plupart des équipes commencent par un flux mesurable, puis élargissent :",
             "list": [
                 {
-                    "title": "Automated Social Media Content Creation:",
-                    "desc": "Develop tools that use the \"Lovart API\" to automatically generate engaging social media posts from blog articles or product descriptions, leveraging \"Lovart AI code\" for visual appeal."
+                    "title": "Automatisation des assets marketing :",
+                    "desc": "Générer des créas de campagne depuis des briefs structurés pour réduire les cycles manuels."
                 },
                 {
-                    "title": "E-commerce Product Image Enhancement:",
-                    "desc": "Integrate \"Lovart AI code\" via the \"Lovart API\" into e-commerce platforms to automatically enhance product images, remove backgrounds, or create consistent visual styles."
+                    "title": "Services d’optimisation image :",
+                    "desc": "Ajouter l’amélioration d’images dans la chaîne de publication pour accélérer le contrôle qualité."
                 },
                 {
-                    "title": "Personalized Marketing Campaigns:",
-                    "desc": "Build systems that utilize the \"Lovart API\" to create thousands of unique ad creatives tailored to different audience segments, all powered by \"Lovart AI code\"."
+                    "title": "Production pilotée par templates :",
+                    "desc": "Réutiliser des patterns design pour homogénéiser les sorties inter-équipes."
                 },
                 {
-                    "title": "Plugin Development for Existing Design Tools:",
-                    "desc": "\"Lovart for developers\" could create plugins for popular design software that tap into specific \"Lovart AI code\" functionalities through the \"Lovart API\", extending the capabilities of those tools."
+                    "title": "Outils internes augmentés :",
+                    "desc": "Construire des assistants internes combinant génération et édition pour les tâches répétitives."
                 },
                 {
-                    "title": "Content Management System (CMS) Integration:",
-                    "desc": "Enhance CMS platforms by integrating \"Lovart AI code\" to provide users with AI-powered image suggestions, automated cropping, or design quality checks directly within their content creation workflow using the \"Lovart API\"."
+                    "title": "Orchestration d’équipe :",
+                    "desc": "Structurer demande, revue et export avec des responsabilités plus claires."
                 }
             ],
-            "conclusion": "These are just a few ideas, and we are excited to see what innovative solutions the \"Lovart for developers\" community will build using \"Lovart AI code\" and the \"Lovart API\"."
+            "conclusion": "Utilisez la doc API comme référence technique et cette page comme guide de déploiement pour limiter les ambiguïtés."
         },
         "resources": {
-            "title": "Resources for \"Lovart for Developers\"",
-            "desc": "As Lovart evolves, we are committed to building a rich and supportive ecosystem specifically for \"Lovart for developers\". Our goal is to provide you with all the necessary tools and information to successfully utilize \"Lovart AI code\" and the \"Lovart API\". Planned resources include:",
+            "title": "Ressources développeur et prochaines étapes",
+            "desc": "Ces ressources réduisent le risque d’intégration et alignent produit, tech et opérations :",
             "list": [
                 {
-                    "title": "Detailed \"Lovart API\" Documentation:",
-                    "desc": "Comprehensive reference guides, endpoint descriptions, authentication details, and rate limit information for the \"Lovart API\"."
+                    "title": "Documentation de référence API :",
+                    "desc": "Vérifiez définitions d’endpoints, champs et comportement des réponses."
                 },
                 {
-                    "title": "Software Development Kits (SDKs):",
-                    "desc": "Easy-to-use SDKs for popular programming languages (e.g., Python, JavaScript, Java) to simplify \"Lovart AI code\" integration and \"Lovart API\" calls."
+                    "title": "Authentification et accès :",
+                    "desc": "Cadrez la gestion des clés API, la séparation des environnements et l’approbation d’accès."
                 },
                 {
-                    "title": "Tutorials and Code Samples:",
-                    "desc": "Practical, step-by-step tutorials and ready-to-use \"Lovart AI code\" samples to help \"Lovart for developers\" get started quickly with the \"Lovart API\"."
+                    "title": "Gouvernance du débit et de l’usage :",
+                    "desc": "Définissez tôt les règles de retry, timeout, quotas et supervision."
                 },
                 {
-                    "title": "Developer Portal & Forum:",
-                    "desc": "A dedicated portal for \"Lovart for developers\" with access to API keys, usage dashboards, and a community forum for support, collaboration, and sharing \"Lovart AI code\" projects."
+                    "title": "Playbooks d’intégration :",
+                    "desc": "Documentez les architectures retenues pour réutiliser les chemins déjà validés."
                 },
                 {
-                    "title": "Changelogs and Versioning Information:",
-                    "desc": "Clear communication about updates, new features, and versioning for the \"Lovart API\" to ensure smooth transitions for \"Lovart for developers\"."
+                    "title": "Checklist de mise en production :",
+                    "desc": "Validez statuts, fallback et monitoring avant chaque release."
                 }
             ],
-            "objective": "Our objective is to empower \"Lovart for developers\" to build innovative solutions on top of the Lovart platform, leveraging the full potential of \"Lovart AI code\" and the \"Lovart API\"."
+            "objective": "Objectif : permettre aux développeurs de livrer des intégrations Lovart fiables avec des statuts clairs."
         },
         "cta": {
-            "title": "Interested in \"Lovart for Developers\" and \"Lovart AI Code\"?",
-            "desc": "Sign up for our developer-specific newsletter or follow our technical blog to receive the latest updates on Lovart's developer tools, \"Lovart API\" releases, \"Lovart AI code\" initiatives, and opportunities for \"Lovart for developers\".",
-            "button": "Contact Us & Stay Informed"
+            "title": "Prêt à passer de l’évaluation à l’intégration ?",
+            "desc": "Commencez par la documentation API, puis demandez un accès pour les capacités encore restreintes.",
+            "button": "Demander un accès API",
+            "primary_button": "Voir la doc API",
+            "secondary_button": "Demander un accès API"
         },
         "related": {
-            "title": "Découvrez plus de ressources Lovart",
+            "title": "Explorer plus de ressources Lovart",
             "items": [
                 {
-                    "title": "Documentation Lovart API",
-                    "desc": "Accédez aux capacités de Lovart AI via l'API",
-                    "link_text": "Documentation API →"
+                    "title": "Documentation API Lovart",
+                    "desc": "Consultez endpoints, auth et référence technique",
+                    "link_text": "Doc API →"
                 },
                 {
                     "title": "Tarifs Lovart AI",
-                    "desc": "Trouvez le forfait adapté à vos besoins",
+                    "desc": "Comparez les plans selon votre charge dev et équipe",
                     "link_text": "Voir les tarifs →"
                 },
                 {
                     "title": "Essayer Lovart gratuitement",
-                    "desc": "Commencez à créer avec Lovart AI dès aujourd'hui",
+                    "desc": "Testez les workflows avant une intégration plus profonde",
                     "link_text": "Commencer gratuitement →"
                 }
             ]
@@ -1781,6 +1835,11 @@
                     "title": "Technologie IA",
                     "desc": "Découvrez la technologie IA de Lovart",
                     "link_text": "En savoir plus →"
+                },
+                {
+                    "title": "Code IA Lovart",
+                    "desc": "Guides d'intégration technique pour les développeurs",
+                    "link_text": "Guide du code →"
                 }
             ]
         }
@@ -2013,6 +2072,11 @@
                     "title": "Documentation Lovart API",
                     "desc": "Intégrez Lovart AI dans vos applications",
                     "link_text": "Documentation API →"
+                },
+                {
+                    "title": "Code IA Lovart",
+                    "desc": "Guides d'intégration technique pour les développeurs",
+                    "link_text": "Guide du code →"
                 }
             ]
         }
