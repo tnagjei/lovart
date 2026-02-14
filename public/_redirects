@@ -9,6 +9,10 @@ https://www.lovart.info/* https://lovart.info/:splat 301
 /fr/index.html /fr/ 301
 /ja/index.html /ja/ 301
 
+# Non-content entry paths should not be indexable
+/signup /404 404
+/login /404 404
+
 # Plan A: normalize .html suffix to clean URLs
 /zh/*.html /zh/:splat 301
 /fr/*.html /fr/:splat 301

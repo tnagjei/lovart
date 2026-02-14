@@ -1,6 +1,6 @@
 {
     "seo": {
-        "title": "Lovart: AI Design Platform for Creative Professionals",
+        "title": "Lovart | クリエイター向けAIデザインプラットフォーム",
         "description": "LovartはAIデザインを高速化するプラットフォームです。高品質なビジュアル作成、共同編集、制作効率化を実現。今すぐ無料で試す。",
         "keywords": ""
     },
@@ -205,7 +205,7 @@
     },
     "features_page": {
         "seo": {
-            "title": "Lovart Design Features | AI-Powered Creative Tools & Platform",
+            "title": "Lovart 機能一覧 | AIデザインツールと制作支援",
             "description": "Lovartの主要機能を確認：AI提案、直感的エディター、リアルタイム共同作業、豊富な素材ライブラリ。機能を今すぐ見る。",
             "keywords": "lovart features, ai design tools, creative platform, lovart ai, graphic design features, lovart design capabilities, lovart platform"
         },
@@ -303,7 +303,7 @@
     },
     "pricing_page": {
         "seo": {
-            "title": "Lovart AI Pricing Plans | Affordable Design Solutions",
+            "title": "Lovart AI 料金プラン | 個人・チーム向け",
             "description": "Lovart AIの料金プランを比較し、個人・チーム・企業に最適なプランを選択。機能と上限を明確に確認できます。今すぐ確認。",
             "keywords": "lovart ai pricing, lovart pricing, lovart plans, ai design platform cost"
         },
@@ -1166,7 +1166,7 @@
     },
     "lovart_ai_code_page": {
         "seo": {
-            "title": "Lovart for Developers | AI Design API & SDK Integration",
+            "title": "Lovart 開発者向け | AI Code 連携ガイド",
             "description": "開発者向けLovart AI Code情報：AI機能、実装方針、技術資料、連携アイデアをまとめて確認。今すぐチェック。",
             "keywords": "lovart for developers, lovart api, lovart sdk, ai design api, integrate lovart, lovart developer platform, lovart ai code"
         },
@@ -1286,7 +1286,7 @@
     },
     "lovart_api_page": {
         "seo": {
-            "title": "Lovart API Documentation - AI Design API & SDK Integration",
+            "title": "Lovart API ドキュメント | AIデザインAPIとSDK",
             "description": "Lovart APIドキュメントでREST APIとSDKを使ったAIデザイン機能の統合方法を確認。今すぐ開発を開始。",
             "keywords": "Lovart API, AI design API, design SDK, API documentation, Lovart ai api, integration guide"
         },
@@ -1576,7 +1576,7 @@
     },
     "lovart_free_page": {
         "seo": {
-            "title": "Free Trial - Lovart AI Design Platform",
+            "title": "Lovart 無料トライアル | AIデザインを今すぐ体験",
             "description": "Lovart無料版で主要機能を体験し、利用上限や有料版との違いを比較して最適な始め方を選べます。今すぐ無料体験。",
             "keywords": "Lovart free trial, AI design free, is lovart ai free, Lovart free policy, free design tool"
         },

@@ -1,6 +1,6 @@
 {
     "seo": {
-        "title": "Lovart: AI Design Platform for Creative Professionals",
+        "title": "Lovart AI 设计平台 | 创意设计与协作工具",
         "description": "使用 Lovart AI 设计平台快速生成高质量视觉内容，协作创作更高效，轻松完成从灵感到成稿。立即免费体验。",
         "keywords": ""
     },
@@ -205,7 +205,7 @@
     },
     "features_page": {
         "seo": {
-            "title": "Lovart Design Features | AI-Powered Creative Tools & Platform",
+            "title": "Lovart 功能总览 | AI 设计工具与创作能力",
             "description": "探索 Lovart 的 AI 设计功能：智能建议、拖拽编辑、实时协作与海量素材库，全面提升创作效率。立即查看功能。",
             "keywords": "lovart features, ai design tools, creative platform, lovart ai, graphic design features, lovart design capabilities, lovart platform"
         },
@@ -303,7 +303,7 @@
     },
     "pricing_page": {
         "seo": {
-            "title": "Lovart AI Pricing Plans | Affordable Design Solutions",
+            "title": "Lovart AI 定价方案 | 个人与团队套餐",
             "description": "查看 Lovart AI 定价方案，按个人、团队与企业需求选择灵活套餐，清晰对比功能与额度。立即选择合适方案。",
             "keywords": "lovart ai pricing, lovart pricing, lovart plans, ai design platform cost"
         },
@@ -1179,7 +1179,7 @@
     },
     "lovart_ai_code_page": {
         "seo": {
-            "title": "Lovart for Developers | AI Design API & SDK Integration",
+            "title": "Lovart 开发者中心 | AI Code 与集成指南",
             "description": "面向开发者的 Lovart AI Code 指南：了解 AI 能力、集成思路、示例与文档入口，加速产品落地。立即查看开发资源。",
             "keywords": "lovart for developers, lovart api, lovart sdk, ai design api, integrate lovart, lovart developer platform, lovart ai code"
         },
@@ -1299,7 +1299,7 @@
     },
     "lovart_api_page": {
         "seo": {
-            "title": "Lovart API Documentation - AI Design API & SDK Integration",
+            "title": "Lovart API 文档 | AI 设计 API 与 SDK 集成",
             "description": "查阅 Lovart API 文档，使用 REST API 与 SDK 集成 AI 设计能力，快速实现生成、编辑与自动化流程。立即开始接入。",
             "keywords": "Lovart API, AI design API, design SDK, API documentation, Lovart ai api, integration guide"
         },
@@ -1589,7 +1589,7 @@
     },
     "lovart_free_page": {
         "seo": {
-            "title": "Free Trial - Lovart AI Design Platform",
+            "title": "Lovart 免费试用 | 立即体验 AI 设计平台",
             "description": "体验 Lovart 免费版，了解试用额度、功能范围与付费版差异，低门槛开启 AI 辅助设计。立即免费试用。",
             "keywords": "Lovart free trial, AI design free, is lovart ai free, Lovart free policy, free design tool"
         },

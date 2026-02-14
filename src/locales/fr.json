@@ -1,6 +1,6 @@
 {
     "seo": {
-        "title": "Lovart: AI Design Platform for Creative Professionals",
+        "title": "Lovart | Plateforme de design IA pour créatifs",
         "description": "Créez plus vite avec Lovart, la plateforme de design IA: visuels de qualité, collaboration fluide et workflow simplifié. Essayez gratuitement dès maintenant.",
         "keywords": ""
     },
@@ -205,7 +205,7 @@
     },
     "features_page": {
         "seo": {
-            "title": "Lovart Design Features | AI-Powered Creative Tools & Platform",
+            "title": "Fonctionnalités Lovart | Outils de design IA",
             "description": "Découvrez les fonctionnalités Lovart: suggestions IA, éditeur intuitif, collaboration en temps réel et grande bibliothèque d’assets. Explorez les fonctionnalités.",
             "keywords": "lovart features, ai design tools, creative platform, lovart ai, graphic design features, lovart design capabilities, lovart platform"
         },
@@ -303,7 +303,7 @@
     },
     "pricing_page": {
         "seo": {
-            "title": "Lovart AI Pricing Plans | Affordable Design Solutions",
+            "title": "Tarifs Lovart AI | Offres pour particuliers et équipes",
             "description": "Comparez les offres Lovart AI pour particuliers, équipes et entreprises, avec des tarifs clairs et des options flexibles. Choisissez votre plan dès maintenant.",
             "keywords": "lovart ai pricing, lovart pricing, lovart plans, ai design platform cost"
         },
@@ -1166,7 +1166,7 @@
     },
     "lovart_ai_code_page": {
         "seo": {
-            "title": "Lovart for Developers | AI Design API & SDK Integration",
+            "title": "Lovart pour développeurs | Guide AI Code et intégration",
             "description": "Explorez Lovart AI Code pour développeurs: capacités IA, pistes d’intégration, exemples et ressources techniques. Accédez à la doc maintenant.",
             "keywords": "lovart for developers, lovart api, lovart sdk, ai design api, integrate lovart, lovart developer platform, lovart ai code"
         },
@@ -1286,7 +1286,7 @@
     },
     "lovart_api_page": {
         "seo": {
-            "title": "Lovart API Documentation - AI Design API & SDK Integration",
+            "title": "Documentation API Lovart | API et SDK de design IA",
             "description": "Consultez la documentation API Lovart et intégrez nos capacités de design IA via API REST et SDK. Commencez l’intégration maintenant.",
             "keywords": "Lovart API, AI design API, design SDK, API documentation, Lovart ai api, integration guide"
         },
@@ -1576,7 +1576,7 @@
     },
     "lovart_free_page": {
         "seo": {
-            "title": "Free Trial - Lovart AI Design Platform",
+            "title": "Essai gratuit Lovart | Testez la plateforme IA",
             "description": "Testez la version gratuite de Lovart et comparez limites, fonctionnalités et options payantes pour démarrer avec l’IA design. Essayez gratuitement.",
             "keywords": "Lovart free trial, AI design free, is lovart ai free, Lovart free policy, free design tool"
         },
