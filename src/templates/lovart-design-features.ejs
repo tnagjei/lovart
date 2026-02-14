@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<% const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.features, href: canonicalUrl }]; %>
+<%
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.features, href: canonicalUrl }];
+const featuresPage = t.features_page || {};
+const overview = featuresPage.overview || null;
+const workflow = featuresPage.workflow || null;
+const featureFaq = featuresPage.faq || null;
+%>
 <html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
@@ -74,6 +80,27 @@
 
                 <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
 
+                    <% if (featureFaq && featureFaq.items && featureFaq.items.length) { %>
+                        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    <% featureFaq.items.forEach(function(item, index) { %>
+    {
+      "@type": "Question",
+      "name": "<%= item.q.replace(/"/g, '\\"') %>",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<%= item.a.replace(/"/g, '\\"') %>"
+      }
+    }<%= index < featureFaq.items.length - 1 ? ',' : '' %>
+    <% }); %>
+  ]
+}
+                        </script>
+                        <% } %>
+
 </head>
 
 <body class="bg-neutral-light text-neutral-dark antialiased">
@@ -95,6 +122,33 @@
                     </p>
                 </div>
             </section>
+
+            <% if (overview && overview.cards && overview.cards.length) { %>
+                <section class="py-14 md:py-20 bg-white section-animate">
+                    <div class="container mx-auto px-6">
+                        <div class="max-w-4xl mx-auto text-center mb-10">
+                            <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-4">
+                                <%= overview.title %>
+                            </h2>
+                            <p class="text-neutral text-lg">
+                                <%= overview.desc %>
+                            </p>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <% overview.cards.forEach(function(card) { %>
+                                <article class="bg-neutral-light rounded-xl p-6 border border-neutral-light/50">
+                                    <h3 class="text-lg font-semibold text-neutral-dark mb-3">
+                                        <%= card.title %>
+                                    </h3>
+                                    <p class="text-neutral">
+                                        <%= card.desc %>
+                                    </p>
+                                </article>
+                                <% }) %>
+                        </div>
+                    </div>
+                </section>
+                <% } %>
 
             <!-- Detailed Features Section -->
             <section class="py-16 md:py-24 bg-white">
@@ -253,6 +307,58 @@
                     </div>
                 </div>
             </section>
+
+            <% if (workflow && workflow.steps && workflow.steps.length) { %>
+                <section class="py-16 md:py-24 bg-neutral-light section-animate">
+                    <div class="container mx-auto px-6">
+                        <div class="max-w-4xl mx-auto text-center mb-12">
+                            <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-4">
+                                <%= workflow.title %>
+                            </h2>
+                            <p class="text-neutral text-lg">
+                                <%= workflow.desc %>
+                            </p>
+                        </div>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <% workflow.steps.forEach(function(step) { %>
+                                <article class="bg-white rounded-xl p-6 border border-neutral-light/60 shadow-sm">
+                                    <p class="text-xs uppercase tracking-wide text-primary font-semibold mb-3">
+                                        <%= step.label %>
+                                    </p>
+                                    <h3 class="text-lg font-semibold text-neutral-dark mb-2">
+                                        <%= step.title %>
+                                    </h3>
+                                    <p class="text-neutral text-sm leading-6">
+                                        <%= step.desc %>
+                                    </p>
+                                </article>
+                                <% }) %>
+                        </div>
+                    </div>
+                </section>
+                <% } %>
+
+                    <% if (featureFaq && featureFaq.items && featureFaq.items.length) { %>
+                        <section class="py-16 md:py-20 bg-white section-animate">
+                            <div class="container mx-auto px-6 max-w-4xl">
+                                <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-8 text-center">
+                                    <%= featureFaq.title %>
+                                </h2>
+                                <div class="space-y-6">
+                                    <% featureFaq.items.forEach(function(item) { %>
+                                        <article class="border border-neutral-light/60 rounded-lg p-5">
+                                            <h3 class="text-lg font-semibold text-neutral-dark mb-2">
+                                                <%= item.q %>
+                                            </h3>
+                                            <p class="text-neutral">
+                                                <%= item.a %>
+                                            </p>
+                                        </article>
+                                        <% }) %>
+                                </div>
+                            </div>
+                        </section>
+                        <% } %>
 
             <!-- Call to Action Section -->
             <section class="py-16 md:py-24 bg-neutral-light section-animate">

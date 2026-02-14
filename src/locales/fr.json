@@ -299,6 +299,75 @@
                     "link_text": "Commencer gratuitement →"
                 }
             ]
+        },
+        "overview": {
+            "title": "Pourquoi les équipes choisissent les fonctionnalités Lovart",
+            "desc": "Lovart réunit créativité IA, vitesse de production et livraison multicanale dans un seul espace de travail visuel.",
+            "cards": [
+                {
+                    "title": "Idéation et brouillons plus rapides",
+                    "desc": "Générez plusieurs directions visuelles en quelques minutes au lieu de partir d’une page blanche."
+                },
+                {
+                    "title": "Qualité de marque cohérente",
+                    "desc": "Styles partagés, assets réutilisables et suggestions guidées pour garder une identité homogène."
+                },
+                {
+                    "title": "Diffusion multi-canal",
+                    "desc": "Préparez des visuels pour web, social et print depuis une seule source et réduisez les retouches."
+                }
+            ]
+        },
+        "workflow": {
+            "title": "Comment intégrer Lovart à votre workflow",
+            "desc": "Un processus simple en 4 étapes pour créer, valider et publier plus vite.",
+            "steps": [
+                {
+                    "label": "Étape 1",
+                    "title": "Définir l’objectif et la direction créative",
+                    "desc": "Précisez audience, message et contraintes de marque pour obtenir des suggestions plus pertinentes."
+                },
+                {
+                    "label": "Étape 2",
+                    "title": "Générer puis affiner rapidement",
+                    "desc": "Combinez suggestions IA et édition drag-and-drop pour comparer plusieurs compositions."
+                },
+                {
+                    "label": "Étape 3",
+                    "title": "Réviser et aligner l’équipe",
+                    "desc": "Centralisez les retours et finalisez les versions avec un historique d’itérations clair."
+                },
+                {
+                    "label": "Étape 4",
+                    "title": "Exporter et distribuer",
+                    "desc": "Exportez au bon format pour vos canaux web, social, présentation et campagnes."
+                }
+            ]
+        },
+        "faq": {
+            "title": "Questions fréquentes sur les fonctionnalités",
+            "items": [
+                {
+                    "q": "Que puis-je créer avec Lovart ?",
+                    "a": "Vous pouvez produire des visuels social media, bannières publicitaires, visuels de landing pages et assets de marque."
+                },
+                {
+                    "q": "Lovart convient-il aux non-designers ?",
+                    "a": "Oui. Les suggestions IA et l’éditeur visuel simplifient fortement la production de contenus design."
+                },
+                {
+                    "q": "Comment garder une cohérence de marque ?",
+                    "a": "Les assets partagés et les règles visuelles permettent de maintenir une identité stable sur plusieurs campagnes."
+                },
+                {
+                    "q": "Les créations sont-elles utilisables commercialement ?",
+                    "a": "Oui, selon les droits inclus dans votre plan. Consultez la page pricing pour les détails les plus récents."
+                },
+                {
+                    "q": "Quel plan choisir pour les usages avancés ?",
+                    "a": "Comparez Basic, Pro et Ultimate si vous avez besoin d’un volume plus élevé et d’un flux de production accéléré."
+                }
+            ]
         }
     },
     "pricing_page": {

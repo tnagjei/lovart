@@ -299,6 +299,75 @@
             "contact": "Contact",
             "rights": "Lovart. All rights reserved. Discover \"Lovart AI design tool\" power.",
             "tagline": "The \"Lovart platform\" - Redefining Digital Creation."
+        },
+        "overview": {
+            "title": "Why Teams Choose Lovart Features",
+            "desc": "Lovart combines AI creativity, production speed, and publishing-ready output in one visual workspace. This helps teams move from idea to launch without switching tools.",
+            "cards": [
+                {
+                    "title": "Faster Ideation and Drafting",
+                    "desc": "Generate layout, copy direction, and visual style options in minutes instead of starting from a blank canvas."
+                },
+                {
+                    "title": "Consistent Brand Quality",
+                    "desc": "Use shared styles, reusable assets, and guided suggestions to keep every campaign aligned with your brand system."
+                },
+                {
+                    "title": "Multi-Channel Delivery",
+                    "desc": "Prepare web, social, and print-ready assets from one source file so your team can publish faster with fewer revisions."
+                }
+            ]
+        },
+        "workflow": {
+            "title": "How Lovart Features Fit Your Workflow",
+            "desc": "A practical 4-step process for design, review, and delivery with fewer handoffs.",
+            "steps": [
+                {
+                    "label": "Step 1",
+                    "title": "Define goals and creative direction",
+                    "desc": "Start with campaign objective, audience, and brand constraints so AI suggestions remain relevant."
+                },
+                {
+                    "label": "Step 2",
+                    "title": "Generate and refine visual options",
+                    "desc": "Use AI suggestions plus drag-and-drop editing to quickly compare multiple compositions."
+                },
+                {
+                    "label": "Step 3",
+                    "title": "Review, comment, and align",
+                    "desc": "Collect feedback and finalize assets with clear iteration history before publishing."
+                },
+                {
+                    "label": "Step 4",
+                    "title": "Export and distribute assets",
+                    "desc": "Export in the right format and deliver to web, social, and presentation channels."
+                }
+            ]
+        },
+        "faq": {
+            "title": "Feature Questions from New Users",
+            "items": [
+                {
+                    "q": "What can I build with Lovart features?",
+                    "a": "You can create social creatives, ad banners, landing visuals, brand assets, and presentation graphics from one workspace."
+                },
+                {
+                    "q": "Is Lovart suitable for non-designers?",
+                    "a": "Yes. The AI suggestions and drag-and-drop editor reduce design complexity, so marketers and founders can produce quality visuals quickly."
+                },
+                {
+                    "q": "Can I keep brand consistency across campaigns?",
+                    "a": "Yes. Shared assets, structured layouts, and guided styling help teams maintain consistent visual output over time."
+                },
+                {
+                    "q": "Are generated designs available for commercial usage?",
+                    "a": "Commercial usage support is included in current plans. Check the pricing page for the latest details and plan differences."
+                },
+                {
+                    "q": "Which plan should I choose for advanced features?",
+                    "a": "If you need higher output volume and faster throughput, compare Basic, Pro, and Ultimate on the pricing page before subscribing."
+                }
+            ]
         }
     },
     "pricing_page": {
