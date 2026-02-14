@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<% const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.pricing, href: canonicalUrl }]; %>
+<%
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.pricing, href: canonicalUrl }];
+const pricingPage = t.pricing_page;
+const plans = pricingPage.plans || [];
+const faqItems = pricingPage.faq && pricingPage.faq.items ? pricingPage.faq.items : [];
+const comparisonTable = pricingPage.comparison_table || null;
+const deepDive = pricingPage.deep_dive || null;
+%>
 <html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
@@ -7,10 +14,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            <%= t.pricing_page.seo.title %>
+            <%= pricingPage.seo.title %>
         </title>
-        <meta name="description" content="<%= t.pricing_page.seo.description %>">
-        <meta name="keywords" content="<%= t.pricing_page.seo.keywords %>">
+        <meta name="description" content="<%= pricingPage.seo.description %>">
+        <meta name="keywords" content="<%= pricingPage.seo.keywords %>">
         <link rel="canonical" href="<%= canonicalUrl %>">
         <%- include('partials/hreflang') %>
             <link rel="stylesheet" href="/styles.css">
@@ -21,13 +28,6 @@
             <%- include('partials/analytics') %>
 
                 <style>
-                    /* Custom animations or styles not achievable via Tailwind can be placed here */
-                    /* .hero-bg-animation {
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-        } */
-
                     @keyframes gradient {
                         0% {
                             background-position: 0% 50%;
@@ -70,6 +70,18 @@
                         opacity: 1;
                         transform: translateY(0);
                     }
+
+                    summary::-webkit-details-marker {
+                        display: none;
+                    }
+
+                    .comparison-indicator {
+                        transition: transform 0.2s ease;
+                    }
+
+                    details[open] .comparison-indicator {
+                        transform: rotate(45deg);
+                    }
                 </style>
 
                 <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
@@ -86,276 +98,272 @@
             <section class="py-16 md:py-24 section-animate">
                 <div class="container mx-auto px-6">
                     <h1 class="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-6 animate-fade-in-up">
-                        <%= t.pricing_page.hero.title %>
+                        <%= pricingPage.hero.title %>
                     </h1>
-                    <p class="text-center text-neutral text-lg max-w-3xl mx-auto mb-12 animate-fade-in-up"
+                    <p class="text-center text-neutral text-lg max-w-3xl mx-auto mb-10 animate-fade-in-up"
                         style="animation-delay: 0.2s;">
-                        <%= t.pricing_page.hero.desc %>
+                        <%= pricingPage.hero.desc %>
                     </p>
 
-                    <!-- Pricing Tiers -->
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                        <!-- Plan 1: Starter Spark (Free) -->
-                        <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 flex flex-col animate-fade-in-up"
-                            style="animation-delay: 0.4s;">
-                            <h3 class="text-2xl font-semibold text-neutral-dark mb-2">
-                                <%= t.pricing_page.plans[0].name %>
-                            </h3>
-                            <p class="text-primary font-bold text-3xl mb-4">
-                                <%= t.pricing_page.plans[0].price %>
-                            </p>
-                            <p class="text-neutral mb-6 flex-grow">
-                                <%= t.pricing_page.plans[0].desc %>
-                            </p>
-                            <ul class="list-disc list-inside text-neutral space-y-2 mb-8 flex-grow">
-                                <li>
-                                    <%= t.pricing_page.plans[0].features[0] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[0].features[1] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[0].features[2] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[0].features[3] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[0].features[4] %>
-                                </li>
-                            </ul>
-                            <a href="mailto:sales@lovart.info?subject=Inquiry%20about%20Starter%20Spark%20Plan"
-                                class="mt-auto w-full bg-primary text-white text-center px-6 py-3 rounded-md hover:bg-primary-dark transition-colors font-medium">
-                                <%= t.pricing_page.plans[0].cta %>
-                            </a>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-3 mb-12 animate-fade-in-up"
+                        style="animation-delay: 0.3s;">
+                        <div class="inline-flex items-center bg-white border border-neutral-light rounded-full p-1 shadow-sm"
+                            role="group" aria-label="<%= pricingPage.billing_toggle.label %>">
+                            <button type="button"
+                                class="billing-toggle-btn px-5 py-2 rounded-full text-sm font-medium transition-colors"
+                                data-billing="monthly" aria-pressed="true">
+                                <%= pricingPage.billing_toggle.monthly %>
+                            </button>
+                            <button type="button"
+                                class="billing-toggle-btn px-5 py-2 rounded-full text-sm font-medium transition-colors"
+                                data-billing="yearly" aria-pressed="false">
+                                <%= pricingPage.billing_toggle.yearly %>
+                            </button>
                         </div>
-
-                        <!-- Plan 2: Creative Pro -->
-                        <div class="bg-white p-8 rounded-lg shadow-xl text-center border-2 border-primary flex flex-col animate-fade-in-up"
-                            style="animation-delay: 0.5s;">
-                            <div class="flex justify-center items-center mb-2">
-                                <h3 class="text-2xl font-semibold text-neutral-dark">
-                                    <%= t.pricing_page.plans[1].name %>
-                                </h3>
-                                <span
-                                    class="ml-2 bg-secondary-light text-secondary-dark text-xs font-semibold px-2 py-1 rounded-full">
-                                    <%= t.pricing_page.plans[1].tag %>
-                                </span>
-                            </div>
-                            <p class="text-primary font-bold text-3xl mb-4">
-                                <%= t.pricing_page.plans[1].price %><span class="text-lg text-neutral font-normal">
-                                        <%= t.pricing_page.plans[1].period %>
-                                    </span>
-                            </p>
-                            <p class="text-neutral mb-6 flex-grow">
-                                <%= t.pricing_page.plans[1].desc %>
-                            </p>
-                            <ul class="list-disc list-inside text-neutral space-y-2 mb-8 flex-grow">
-                                <li>
-                                    <%= t.pricing_page.plans[1].features[0] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[1].features[1] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[1].features[2] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[1].features[3] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[1].features[4] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[1].features[5] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[1].features[6] %>
-                                </li>
-                            </ul>
-                            <a href="mailto:sales@lovart.info?subject=Inquiry%20about%20Creative%20Pro%20Plan"
-                                class="mt-auto w-full bg-primary text-white text-center px-6 py-3 rounded-md hover:bg-primary-dark transition-colors font-medium">
-                                <%= t.pricing_page.plans[1].cta %>
-                            </a>
-                        </div>
-
-                        <!-- Plan 3: Business Scale -->
-                        <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 flex flex-col animate-fade-in-up"
-                            style="animation-delay: 0.6s;">
-                            <h3 class="text-2xl font-semibold text-neutral-dark mb-2">
-                                <%= t.pricing_page.plans[2].name %>
-                            </h3>
-                            <p class="text-primary font-bold text-3xl mb-4">
-                                <%= t.pricing_page.plans[2].price %>
-                            </p>
-                            <p class="text-neutral mb-6 flex-grow">
-                                <%= t.pricing_page.plans[2].desc %>
-                            </p>
-                            <ul class="list-disc list-inside text-neutral space-y-2 mb-8 flex-grow">
-                                <li>
-                                    <%= t.pricing_page.plans[2].features[0] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[2].features[1] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[2].features[2] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[2].features[3] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[2].features[4] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[2].features[5] %>
-                                </li>
-                                <li>
-                                    <%= t.pricing_page.plans[2].features[6] %>
-                                </li>
-                            </ul>
-                            <a href="mailto:sales@lovart.info?subject=Inquiry%20about%20Business%20Scale%20Plan"
-                                class="mt-auto w-full bg-neutral-dark text-white text-center px-6 py-3 rounded-md hover:bg-gray-700 transition-colors font-medium">
-                                <%= t.pricing_page.plans[2].cta %>
-                            </a>
-                        </div>
+                        <span class="text-sm text-secondary-dark bg-secondary-light/50 px-3 py-1 rounded-full font-medium">
+                            <%= pricingPage.billing_toggle.yearly_badge %>
+                        </span>
                     </div>
 
-                    <!-- Why Choose Lovart AI Pricing Section -->
-                    <div class="py-12 animate-fade-in-up" style="animation-delay: 0.7s;">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                        <% plans.forEach(function(plan, index) { %>
+                            <% const badgeType = plan.badge_type || ''; %>
+                                <% const cardClass = badgeType === 'popular'
+                                    ? 'bg-white p-8 rounded-lg shadow-xl border-2 border-primary flex flex-col animate-fade-in-up'
+                                    : badgeType === 'flash'
+                                        ? 'bg-white p-8 rounded-lg shadow-xl border-2 border-secondary flex flex-col animate-fade-in-up'
+                                        : 'bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 flex flex-col animate-fade-in-up'; %>
+                                    <% const badgeClass = badgeType === 'popular'
+                                        ? 'bg-primary-light text-primary-dark'
+                                        : badgeType === 'flash'
+                                            ? 'bg-secondary-light text-secondary-dark'
+                                            : 'bg-neutral-light text-neutral-dark'; %>
+                                        <% const ctaClass = badgeType === 'popular'
+                                            ? 'mt-auto w-full bg-primary text-white text-center px-6 py-3 rounded-md hover:bg-primary-dark transition-colors font-medium'
+                                            : badgeType === 'flash'
+                                                ? 'mt-auto w-full bg-secondary text-white text-center px-6 py-3 rounded-md hover:bg-secondary-dark transition-colors font-medium'
+                                                : 'mt-auto w-full bg-neutral-dark text-white text-center px-6 py-3 rounded-md hover:bg-gray-700 transition-colors font-medium'; %>
+
+                                            <div class="<%= cardClass %>" style="animation-delay: <%= (0.4 + (index * 0.1)).toFixed(1) %>s;">
+                                                <div class="flex items-center gap-2 mb-2 flex-wrap">
+                                                    <h3 class="text-2xl font-semibold text-neutral-dark">
+                                                        <%= plan.name %>
+                                                    </h3>
+                                                    <% if (plan.badge) { %>
+                                                        <span class="text-xs font-semibold px-2 py-1 rounded-full <%= badgeClass %>">
+                                                            <%= plan.badge %>
+                                                        </span>
+                                                        <% } %>
+                                                </div>
+
+                                                <p class="text-primary font-bold text-3xl mb-2 leading-none">
+                                                    <span class="price-value" data-monthly="<%= plan.price.monthly %>"
+                                                        data-yearly="<%= plan.price.yearly %>">
+                                                        <%= plan.price.monthly %>
+                                                    </span>
+                                                </p>
+                                                <p class="text-sm text-neutral mb-5">
+                                                    <span class="period-value" data-monthly="<%= plan.period.monthly %>"
+                                                        data-yearly="<%= plan.period.yearly %>">
+                                                        <%= plan.period.monthly %>
+                                                    </span>
+                                                </p>
+
+                                                <p class="text-neutral mb-6 flex-grow">
+                                                    <%= plan.desc %>
+                                                </p>
+
+                                                <ul class="list-disc list-inside text-neutral space-y-2 mb-8 flex-grow">
+                                                    <% (plan.features || []).forEach(function(feature) { %>
+                                                        <li>
+                                                            <%= feature %>
+                                                        </li>
+                                                        <% }) %>
+                                                </ul>
+
+                                                <a href="mailto:sales@lovart.info?subject=<%= encodeURIComponent(`Inquiry about ${plan.name} Plan`) %>"
+                                                    class="<%= ctaClass %>">
+                                                    <%= plan.cta %>
+                                                </a>
+                                            </div>
+                                            <% }) %>
+                    </div>
+
+                    <div class="mb-16 animate-fade-in-up" style="animation-delay: 0.8s;">
+                        <%- include('partials/adsense', { slot: '2395486240', format: 'auto', minHeight: '120px' }) %>
+                    </div>
+
+                    <div class="py-8 animate-fade-in-up" style="animation-delay: 0.85s;">
                         <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-6 text-center">
-                            <%= t.pricing_page.why_choose.title %>
+                            <%= pricingPage.why_choose.title %>
                         </h2>
                         <div class="grid md:grid-cols-2 gap-8 items-center">
                             <div class="text-neutral">
                                 <p class="mb-4">
-                                    <%= t.pricing_page.why_choose.p1 %>
+                                    <%= pricingPage.why_choose.p1 %>
                                 </p>
                                 <p class="mb-4">
-                                    <%= t.pricing_page.why_choose.p2 %>
+                                    <%= pricingPage.why_choose.p2 %>
                                 </p>
                             </div>
                             <div>
-                                <!-- You can add an illustrative image or graphic here -->
                                 <picture>
                                     <source type="image/webp" srcset="/images/02.webp">
-                                    <img src="/images/02.png" alt="Standard Plan"
+                                    <img src="/images/02.png" alt="Lovart pricing comparison"
                                         class="w-full h-40 object-cover rounded-md mb-4">
                                 </picture>
-                                <!-- Replace with an actual illustration if available, or remove -->
                             </div>
                         </div>
                     </div>
 
+                    <% if (comparisonTable) { %>
+                        <div class="py-8 animate-fade-in-up" style="animation-delay: 0.9s;">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4 text-center">
+                                <%= comparisonTable.title %>
+                            </h2>
+                            <p class="text-neutral text-center max-w-3xl mx-auto mb-6">
+                                <%= comparisonTable.summary %>
+                            </p>
 
-                    <!-- Pricing FAQ -->
-                    <div class="mt-10 pt-12 border-t border-neutral-light animate-fade-in-up"
-                        style="animation-delay: 0.8s;">
-                        <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-8 text-center">
-                            <%= t.pricing_page.faq.title %>
-                        </h2>
-                        <div class="space-y-6 max-w-3xl mx-auto">
-                            <div>
-                                <h4 class="text-lg font-semibold text-neutral-dark mb-1">
-                                    <%= t.pricing_page.faq.items[0].q %>
-                                </h4>
-                                <p class="text-neutral">
-                                    <%= t.pricing_page.faq.items[0].a %>
-                                </p>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-neutral-dark mb-1">
-                                    <%= t.pricing_page.faq.items[1].q %>
-                                </h4>
-                                <p class="text-neutral">
-                                    <%= t.pricing_page.faq.items[1].a %>
-                                </p>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-neutral-dark mb-1">
-                                    <%= t.pricing_page.faq.items[2].q %>
-                                </h4>
-                                <p class="text-neutral">
-                                    <%= t.pricing_page.faq.items[2].a %>
-                                </p>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-neutral-dark mb-1">
-                                    <%= t.pricing_page.faq.items[3].q %>
-                                </h4>
-                                <p class="text-neutral">
-                                    <%= t.pricing_page.faq.items[3].a %>
-                                </p>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-neutral-dark mb-1">
-                                    <%= t.pricing_page.faq.items[4].q %>
-                                </h4>
-                                <p class="text-neutral">
-                                    <%= t.pricing_page.faq.items[4].a %>
-                                </p>
-                            </div>
+                            <details class="bg-white rounded-lg border border-neutral-light shadow-sm" data-comparison-details>
+                                <summary class="cursor-pointer px-5 py-4 font-semibold text-neutral-dark flex items-center justify-between">
+                                    <span>
+                                        <%= comparisonTable.toggle %>
+                                    </span>
+                                    <span class="comparison-indicator text-primary text-xl leading-none">+</span>
+                                </summary>
+                                <div class="px-4 pb-4">
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full border-collapse text-sm text-left">
+                                            <thead>
+                                                <tr class="bg-neutral-light/60">
+                                                    <% (comparisonTable.headers || []).forEach(function(header) { %>
+                                                        <th class="px-4 py-3 font-semibold text-neutral-dark border-b border-neutral-light whitespace-nowrap">
+                                                            <%= header %>
+                                                        </th>
+                                                        <% }) %>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <% (comparisonTable.rows || []).forEach(function(row) { %>
+                                                    <tr class="odd:bg-white even:bg-neutral-light/20">
+                                                        <td class="px-4 py-3 border-b border-neutral-light font-medium text-neutral-dark whitespace-nowrap">
+                                                            <%= row.feature %>
+                                                        </td>
+                                                        <% (row.values || []).forEach(function(value) { %>
+                                                            <td class="px-4 py-3 border-b border-neutral-light text-neutral whitespace-nowrap">
+                                                                <%= value %>
+                                                            </td>
+                                                            <% }) %>
+                                                    </tr>
+                                                    <% }) %>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
-                    </div>
+                        <% } %>
 
-                    <!-- Contact for Custom Needs -->
-                    <div id="contact-sales" class="text-center mt-16 pt-12 animate-fade-in-up"
-                        style="animation-delay: 0.9s;">
-                        <h3 class="text-xl md:text-2xl font-semibold text-neutral-dark mb-4">
-                            <%= t.pricing_page.contact.title %>
-                        </h3>
-                        <p class="text-neutral mb-8 max-w-xl mx-auto">
-                            <%= t.pricing_page.contact.desc %>
-                        </p>
-                        <a href="mailto:sales@lovart.info?subject=Custom%20Lovart%20AI%20Pricing%20Inquiry"
-                            class="bg-secondary text-white px-8 py-4 rounded-md hover:bg-secondary-dark transition-colors text-lg font-medium">
-                            <%= t.pricing_page.contact.cta %>
-                        </a>
-                    </div>
+                            <% if (deepDive) { %>
+                                <div class="mt-8 pt-10 border-t border-neutral-light animate-fade-in-up"
+                                    style="animation-delay: 0.95s;">
+                                    <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-6 text-center">
+                                        <%= deepDive.title %>
+                                    </h2>
+                                    <div class="max-w-4xl mx-auto text-neutral space-y-4">
+                                        <p>
+                                            <%= deepDive.p1 %>
+                                        </p>
+                                        <p>
+                                            <%= deepDive.p2 %>
+                                        </p>
+                                        <p>
+                                            <%= deepDive.p3 %>
+                                        </p>
+                                    </div>
+                                </div>
+                                <% } %>
+
+                                    <div class="mt-10 pt-12 border-t border-neutral-light animate-fade-in-up"
+                                        style="animation-delay: 1s;">
+                                        <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-8 text-center">
+                                            <%= pricingPage.faq.title %>
+                                        </h2>
+                                        <div class="space-y-6 max-w-3xl mx-auto">
+                                            <% faqItems.forEach(function(item, index) { %>
+                                                <div>
+                                                    <h4 class="text-lg font-semibold text-neutral-dark mb-1">
+                                                        <%= item.q %>
+                                                    </h4>
+                                                    <p class="text-neutral">
+                                                        <%= item.a %>
+                                                    </p>
+                                                </div>
+
+                                                <% if (index === 1) { %>
+                                                    <%- include('partials/adsense', { slot: '7744440876', format: 'auto', minHeight: '180px' }) %>
+                                                        <% } %>
+                                                            <% }) %>
+                                        </div>
+                                    </div>
+
+                                    <div id="contact-sales" class="text-center mt-16 pt-12 animate-fade-in-up"
+                                        style="animation-delay: 1.05s;">
+                                        <h3 class="text-xl md:text-2xl font-semibold text-neutral-dark mb-4">
+                                            <%= pricingPage.contact.title %>
+                                        </h3>
+                                        <p class="text-neutral mb-8 max-w-xl mx-auto">
+                                            <%= pricingPage.contact.desc %>
+                                        </p>
+                                        <a href="mailto:sales@lovart.info?subject=Custom%20Lovart%20AI%20Pricing%20Inquiry"
+                                            class="bg-secondary text-white px-8 py-4 rounded-md hover:bg-secondary-dark transition-colors text-lg font-medium">
+                                            <%= pricingPage.contact.cta %>
+                                        </a>
+                                    </div>
                 </div>
             </section>
 
-            <!-- Related Resources Section -->
             <section class="py-12 bg-white">
                 <div class="container mx-auto px-6 max-w-6xl">
                     <h2 class="text-2xl font-bold mb-8 text-center">
-                        <%= t.pricing_page.related.title %>
+                        <%= pricingPage.related.title %>
                     </h2>
                     <div class="grid md:grid-cols-3 gap-6">
                         <a href="<%= link('lovart-design-features.html') %>"
                             class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                             <h3 class="font-semibold mb-1">
-                                <%= t.pricing_page.related.items[0].title %>
+                                <%= pricingPage.related.items[0].title %>
                             </h3>
                             <p class="text-xs text-neutral mb-2">
-                                <%= t.pricing_page.related.items[0].desc %>
+                                <%= pricingPage.related.items[0].desc %>
                             </p>
                             <span class="text-primary text-sm font-medium">
-                                <%= t.pricing_page.related.items[0].link_text %>
+                                <%= pricingPage.related.items[0].link_text %>
                             </span>
                         </a>
                         <a href="<%= link('lovart-free.html') %>"
                             class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                             <h3 class="font-semibold mb-1">
-                                <%= t.pricing_page.related.items[1].title %>
+                                <%= pricingPage.related.items[1].title %>
                             </h3>
                             <p class="text-xs text-neutral mb-2">
-                                <%= t.pricing_page.related.items[1].desc %>
+                                <%= pricingPage.related.items[1].desc %>
                             </p>
                             <span class="text-primary text-sm font-medium">
-                                <%= t.pricing_page.related.items[1].link_text %>
+                                <%= pricingPage.related.items[1].link_text %>
                             </span>
                         </a>
                         <a href="<%= link('lovart-api.html') %>"
                             class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                             <h3 class="font-semibold mb-1">
-                                <%= t.pricing_page.related.items[2].title %>
+                                <%= pricingPage.related.items[2].title %>
                             </h3>
                             <p class="text-xs text-neutral mb-2">
-                                <%= t.pricing_page.related.items[2].desc %>
+                                <%= pricingPage.related.items[2].desc %>
                             </p>
                             <span class="text-primary text-sm font-medium">
-                                <%= t.pricing_page.related.items[2].link_text %>
+                                <%= pricingPage.related.items[2].link_text %>
                             </span>
                         </a>
                     </div>
@@ -363,13 +371,11 @@
             </section>
         </main>
 
-        <!-- Footer -->
         <%- include('partials/footer') %>
 
             <script>
                 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-                // Mobile menu toggle
                 const mobileMenuButton = document.getElementById('mobile-menu-button');
                 const mobileMenu = document.getElementById('mobile-menu');
                 if (mobileMenuButton && mobileMenu) {
@@ -378,7 +384,6 @@
                     });
                 }
 
-                // Intersection Observer for section animations
                 const sections = document.querySelectorAll('.section-animate');
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
@@ -388,9 +393,48 @@
                         }
                     });
                 }, { threshold: 0.1 });
+
                 sections.forEach(section => {
                     observer.observe(section);
                 });
+
+                const billingButtons = document.querySelectorAll('.billing-toggle-btn');
+                const priceValues = document.querySelectorAll('.price-value');
+                const periodValues = document.querySelectorAll('.period-value');
+
+                const setBillingMode = (mode) => {
+                    billingButtons.forEach(button => {
+                        const isActive = button.dataset.billing === mode;
+                        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                        button.classList.toggle('bg-primary', isActive);
+                        button.classList.toggle('text-white', isActive);
+                        button.classList.toggle('shadow-sm', isActive);
+                        button.classList.toggle('text-neutral-dark', !isActive);
+                    });
+
+                    priceValues.forEach(node => {
+                        const nextValue = node.dataset[mode];
+                        if (nextValue) {
+                            node.textContent = nextValue;
+                        }
+                    });
+
+                    periodValues.forEach(node => {
+                        const nextValue = node.dataset[mode];
+                        if (nextValue) {
+                            node.textContent = nextValue;
+                        }
+                    });
+                };
+
+                if (billingButtons.length > 0) {
+                    billingButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            setBillingMode(button.dataset.billing);
+                        });
+                    });
+                    setBillingMode('monthly');
+                }
             </script>
 </body>
 

@@ -308,94 +308,232 @@
             "keywords": "lovart ai pricing, lovart pricing, lovart plans, ai design platform cost"
         },
         "hero": {
-            "title": "Lovart AI Pricing Plans",
-            "desc": "Welcome to the Lovart AI pricing page. We believe in transparent and flexible \"Lovart plans\" designed to fit your creative needs and budget. Explore our \"Lovart AI pricing\" options below and find the perfect solution to unlock the full power of AI in your design workflow. Our goal is to provide clear \"Lovart AI pricing\" tiers for every type of user."
+            "title": "Lovart AI 定价方案",
+            "desc": "提供 Starter、Basic、Pro、Ultimate 四档套餐。可直接切换月付与年付，对比 Fast Points、慢速生成能力与并发任务上限。"
+        },
+        "billing_toggle": {
+            "label": "计费周期",
+            "monthly": "月付",
+            "yearly": "年付",
+            "yearly_badge": "年付更省"
         },
         "plans": [
             {
-                "name": "Starter Spark",
-                "price": "Free",
-                "desc": "Perfect for individuals getting started with AI design and exploring basic \"Lovart AI pricing\" features.",
+                "name": "Starter",
+                "price": {
+                    "monthly": "$19",
+                    "yearly": "$16"
+                },
+                "period": {
+                    "monthly": "/月",
+                    "yearly": "/月（按年计费）"
+                },
+                "desc": "适合个人创作者的入门方案，覆盖日常图像产出与基础商业发布。",
                 "features": [
-                    "Access to core AI design tools",
-                    "Limited monthly AI generations",
-                    "Basic template library",
-                    "Community support",
-                    "A great introduction to \"Lovart plans\""
+                    "每月 2,000 Fast Points",
+                    "最多 2 个并发任务",
+                    "生成内容可商用授权",
+                    "标准生成队列",
+                    "48 小时内邮件支持"
                 ],
-                "cta": "Get Started Free"
+                "cta": "选择 Starter"
             },
             {
-                "name": "Creative Pro",
-                "tag": "Most Popular",
-                "price": "$29",
-                "period": "/month",
-                "desc": "Ideal for professional designers, freelancers, and small teams needing advanced features and higher usage limits. This \"Lovart AI pricing\" tier offers excellent value.",
+                "name": "Basic",
+                "price": {
+                    "monthly": "$32",
+                    "yearly": "$27"
+                },
+                "period": {
+                    "monthly": "/月",
+                    "yearly": "/月（按年计费）"
+                },
+                "desc": "适合高频创作团队，兼顾成本与产能，支持无限慢速生成。",
                 "features": [
-                    "All Starter Spark features, plus:",
-                    "Increased AI generations",
-                    "Premium template library",
-                    "Advanced AI editing tools",
-                    "Priority email support",
-                    "Commercial usage rights",
-                    "Flexible \"Lovart AI pricing\""
+                    "每月 3,500 Fast Points",
+                    "Unlimited Slow Generations（Nano Banana）",
+                    "最多 4 个并发任务",
+                    "加充点数享 10% 折扣",
+                    "商用授权 + 团队协作交付",
+                    "优先邮件支持"
                 ],
-                "cta": "Choose Pro Plan"
+                "cta": "选择 Basic"
             },
             {
-                "name": "Business Scale",
-                "price": "Custom",
-                "desc": "Tailored \"Lovart AI pricing\" solutions for larger organizations and enterprises with specific needs for collaboration, security, and support.",
+                "name": "Pro",
+                "badge": "最受欢迎",
+                "badge_type": "popular",
+                "price": {
+                    "monthly": "$69",
+                    "yearly": "$45"
+                },
+                "period": {
+                    "monthly": "/月（限时价）",
+                    "yearly": "/月（按年计费）"
+                },
+                "desc": "面向增长型团队，强调生成速度、并发能力与高质量输出。",
                 "features": [
-                    "All Creative Pro features, plus:",
-                    "Unlimited AI generations (subject to fair use)",
-                    "Custom integrations & API access (planned)",
-                    "Team management & collaboration tools",
-                    "Dedicated account manager",
-                    "Enterprise-grade security & SLAs",
-                    "Bespoke \"Lovart plans\""
+                    "限时促销价格，年付折扣更高",
+                    "每月 11,000 Fast Points",
+                    "Unlimited Slow Generations + GPT Image 1.5",
+                    "最多 8 个并发任务",
+                    "加充点数享 15% 折扣",
+                    "优先队列与更快重生成",
+                    "更高级商业使用权益"
                 ],
-                "cta": "Contact Sales"
+                "cta": "选择 Pro"
+            },
+            {
+                "name": "Ultimate",
+                "badge": "限时 50% OFF",
+                "badge_type": "flash",
+                "price": {
+                    "monthly": "$149",
+                    "yearly": "$99"
+                },
+                "period": {
+                    "monthly": "/月（限时价）",
+                    "yearly": "/月（按年计费）"
+                },
+                "desc": "适合代理商与企业团队，提供更高配额、更高并发和更稳定支持。",
+                "features": [
+                    "每月 27,000 Fast Points",
+                    "Unlimited Slow Generations + 顶级模型访问",
+                    "最多 10 个并发任务",
+                    "加充点数享 20% 折扣",
+                    "4K 高画质导出与清理增强",
+                    "专属上线支持与策略服务",
+                    "增强 SLA 响应窗口"
+                ],
+                "cta": "选择 Ultimate"
             }
         ],
         "why_choose": {
-            "title": "Why Our \"Lovart AI Pricing\" Works For You",
-            "p1": "At Lovart, we've structured our \"Lovart AI pricing\" to be both competitive and value-driven. We understand that different users have different needs, which is why our \"Lovart plans\" offer a range of options. Whether you're just starting or scaling your business, there's a \"Lovart AI pricing\" tier designed to support your growth.",
-            "p2": "Our commitment is to provide powerful AI design tools without a complex \"Lovart AI pricing\" model. We focus on delivering continuous improvements and new features across all our \"Lovart plans\", ensuring you always get the best return on your investment. The flexibility in \"Lovart AI pricing\" allows you to scale as your needs evolve."
+            "title": "为什么这样定价更高效",
+            "p1": "Lovart 的四档定价对应不同生产阶段：从个人创作到企业级交付，都能在不改变核心工作流的前提下平滑升级。",
+            "p2": "Fast Points 覆盖时效敏感任务，Unlimited Slow Generations 保证基础吞吐。双轨机制让成本更可控、产能更稳定。"
+        },
+        "comparison_table": {
+            "title": "详细套餐对照表",
+            "summary": "对比图像生成上限、商用授权能力与开发者相关能力，快速选择合适套餐。",
+            "toggle": "展开完整功能矩阵",
+            "headers": [
+                "功能项",
+                "Starter",
+                "Basic",
+                "Pro",
+                "Ultimate"
+            ],
+            "rows": [
+                {
+                    "feature": "Fast Points / 月",
+                    "values": [
+                        "2,000",
+                        "3,500",
+                        "11,000",
+                        "27,000"
+                    ]
+                },
+                {
+                    "feature": "Unlimited Slow Generations",
+                    "values": [
+                        "否",
+                        "是",
+                        "是",
+                        "是"
+                    ]
+                },
+                {
+                    "feature": "并发任务数",
+                    "values": [
+                        "2",
+                        "4",
+                        "8",
+                        "10"
+                    ]
+                },
+                {
+                    "feature": "Commercial License AI Assets",
+                    "values": [
+                        "是",
+                        "是",
+                        "高级",
+                        "企业级"
+                    ]
+                },
+                {
+                    "feature": "GPT Image 1.5 访问",
+                    "values": [
+                        "否",
+                        "否",
+                        "是",
+                        "是"
+                    ]
+                },
+                {
+                    "feature": "4K 高质量导出",
+                    "values": [
+                        "否",
+                        "否",
+                        "可选",
+                        "包含"
+                    ]
+                },
+                {
+                    "feature": "充值折扣",
+                    "values": [
+                        "-",
+                        "10%",
+                        "15%",
+                        "20%"
+                    ]
+                },
+                {
+                    "feature": "API Access for Developers",
+                    "values": [
+                        "规划中",
+                        "规划中",
+                        "优先规划",
+                        "优先规划"
+                    ]
+                }
+            ]
+        },
+        "deep_dive": {
+            "title": "如何选择合适的 Lovart 套餐",
+            "p1": "如果你主要处理阶段性设计任务，Starter 或 Basic 通常可以覆盖完整流程，并保持可预测的月度成本。",
+            "p2": "当团队需要更快交付、多任务并行与更高画质时，Pro 会更合适，尤其适用于营销高峰与多项目并行场景。",
+            "p3": "Ultimate 面向代理商与企业运营团队，提供更高 Fast Points、更高并发与更强支持能力，帮助大规模产出保持稳定。"
         },
         "faq": {
-            "title": "Frequently Asked Questions about \"Lovart AI Pricing\"",
+            "title": "Lovart 定价常见问题",
             "items": [
                 {
-                    "q": "Is there a free trial for paid \"Lovart plans\"?",
-                    "a": "While our \"Starter Spark\" plan is completely free and offers a great way to experience Lovart, we may offer limited-time trials for our \"Creative Pro\" plan periodically. Keep an eye on our promotions or sign up for our newsletter for updates on \"Lovart AI pricing\" offers."
+                    "q": "可以先选低档，再升级吗？",
+                    "a": "可以。随着任务量增长，你可从 Starter 升级到 Basic、Pro 或 Ultimate。升级与降级通常在下一计费周期生效。"
                 },
                 {
-                    "q": "Can I change my \"Lovart AI pricing\" plan later?",
-                    "a": "Absolutely! You can upgrade or downgrade your \"Lovart plan\" at any time. If you upgrade, the changes are usually pro-rated. If you downgrade, the changes will take effect at the end of your current billing cycle. Our \"Lovart AI pricing\" is designed for flexibility."
+                    "q": "Fast Points 与 Slow Generations 有什么区别？",
+                    "a": "Fast Points 用于速度优先的生成任务；Slow Generations 排队更久但可持续提供基础产能，部分套餐支持无限慢速生成。"
                 },
                 {
-                    "q": "What payment methods are accepted for \"Lovart AI pricing\"?",
-                    "a": "We accept all major credit cards (Visa, MasterCard, American Express) for our \"Lovart AI pricing\" plans. For \"Business Scale\" plans, we may also offer invoicing options. Please contact sales for more details on payment for your chosen \"Lovart plan\"."
+                    "q": "所有套餐都支持商用吗？",
+                    "a": "支持。四档套餐均包含商用授权，Pro 与 Ultimate 在商业协作与运营权限上覆盖更广。"
                 },
                 {
-                    "q": "Are there discounts for annual \"Lovart plans\"?",
-                    "a": "Yes, we typically offer a discount if you choose to pay annually for our \"Creative Pro\" plan. This can be a great way to save on your \"Lovart AI pricing\". Check the payment section during checkout or contact us for current annual \"Lovart AI pricing\" rates."
+                    "q": "年付是否有优惠？",
+                    "a": "有。四档套餐均支持年付优惠，长期稳定使用建议优先选择年付。"
                 },
                 {
-                    "q": "What counts as an \"AI generation\" in the \"Lovart AI pricing\" plans?",
-                    "a": "An AI generation typically refers to a single instance where you utilize one of Lovart's core AI features to produce an output, such as generating a design element, suggesting a layout, or performing an AI-assisted edit. Specifics may vary per feature, and details are provided within the platform. Our \"Lovart AI pricing\" aims to be clear about these limits."
+                    "q": "Pro 和 Ultimate 应该怎么选？",
+                    "a": "高频营销团队通常选择 Pro；需要更高并发、更大配额与更强服务保障时建议选择 Ultimate。"
                 }
             ]
         },
         "contact": {
-            "title": "Need a Custom \"Lovart AI Pricing\" Solution?",
-            "desc": "If your team has unique requirements or you're interested in our \"Business Scale\" \"Lovart plan\", please get in touch. We're happy to discuss custom \"Lovart AI pricing\" and tailor a solution that fits your organization perfectly.",
-            "cta": "Contact Our Sales Team"
-        },
-        "footer": {
-            "rights": "Lovart. All rights reserved.",
-            "tagline": "Innovate with AI, Design with Lovart."
+            "title": "需要定制化套餐？",
+            "desc": "如果你需要更高额度、专属 onboarding 或采购流程支持，请联系销售团队获取定制方案。",
+            "cta": "联系销售团队"
         },
         "related": {
             "title": "探索更多 Lovart 资源",
@@ -416,6 +554,10 @@
                     "link_text": "API 文档 →"
                 }
             ]
+        },
+        "footer": {
+            "rights": "Lovart. All rights reserved.",
+            "tagline": "Innovate with AI, Design with Lovart."
         }
     },
     "about_page": {
@@ -564,7 +706,7 @@
     "blog_page": {
         "seo": {
             "title": "博客 - Lovart AI 设计平台",
-            "description": "阅读 Lovart 博客，获取 AI 设计趋势、实战教程与案例拆解，学习更高效的创意工作流。立即开始阅读。",
+            "description": "阅读 Lovart 博客，持续获取 AI 设计趋势解读、工作流实战教程与真实项目案例，帮助你从灵感整理到成品交付都更高效，适合设计师与内容团队长期参考。",
             "keywords": "AI 设计, 设计博客, 创意灵感, 设计教程, Lovart 博客"
         },
         "hero": {
@@ -676,7 +818,7 @@
     "help_page": {
         "seo": {
             "title": "帮助中心 - Lovart AI 设计平台",
-            "description": "访问 Lovart 帮助中心，查找新手指南、常见问题与技术支持，快速解决使用中的关键问题。立即获取帮助。",
+            "description": "进入 Lovart 帮助中心，快速查找新手入门、账号计费、功能使用与故障排查指南，并获取常见问题与支持渠道说明，帮助你在创作过程中稳定解决问题。",
             "keywords": "帮助中心, 用户指南, 常见问题, 技术支持, Lovart 帮助"
         },
         "hero": {
@@ -831,7 +973,7 @@
     "terms_page": {
         "seo": {
             "title": "服务条款 - Lovart AI 设计平台",
-            "description": "查看 Lovart 服务条款与用户协议，了解账户、付款、内容规范与使用边界，保障您的合规使用。立即查看条款。",
+            "description": "查看 Lovart 服务条款与用户协议，全面了解账户注册、订阅付款、内容责任、可接受使用范围与违约处理规则，明确你在平台上的权利义务并降低合规风险。",
             "keywords": "服务条款, 用户协议, Lovart 条款, AI 设计平台协议"
         },
         "hero": {
@@ -990,7 +1132,7 @@
     "privacy_page": {
         "seo": {
             "title": "隐私政策 - Lovart AI 设计平台",
-            "description": "阅读 Lovart 隐私政策，了解我们如何收集、使用与保护您的数据，以及您可行使的隐私权利。立即查看隐私政策。",
+            "description": "阅读 Lovart 隐私政策，了解我们收集哪些信息、如何使用与存储数据、何时共享以及你可行使的访问、更正、删除等隐私权利，便于你安全透明地使用服务。",
             "keywords": "隐私政策, 数据保护, 个人信息, Lovart 隐私, AI 设计平台隐私"
         },
         "hero": {

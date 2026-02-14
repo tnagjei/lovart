@@ -308,94 +308,232 @@
             "keywords": "lovart ai pricing, lovart pricing, lovart plans, ai design platform cost"
         },
         "hero": {
-            "title": "Lovart AI Pricing Plans",
-            "desc": "Welcome to the Lovart AI pricing page. We believe in transparent and flexible \"Lovart plans\" designed to fit your creative needs and budget. Explore our \"Lovart AI pricing\" options below and find the perfect solution to unlock the full power of AI in your design workflow. Our goal is to provide clear \"Lovart AI pricing\" tiers for every type of user."
+            "title": "Lovart AI 料金プラン",
+            "desc": "Starter・Basic・Pro・Ultimate の4プランを比較できます。月額/年額の切り替え、Fast Points、生成上限、同時実行数を一画面で確認できます。"
+        },
+        "billing_toggle": {
+            "label": "課金周期",
+            "monthly": "月額",
+            "yearly": "年額",
+            "yearly_badge": "年額でさらにお得"
         },
         "plans": [
             {
-                "name": "Starter Spark",
-                "price": "Free",
-                "desc": "Perfect for individuals getting started with AI design and exploring basic \"Lovart AI pricing\" features.",
+                "name": "Starter",
+                "price": {
+                    "monthly": "$19",
+                    "yearly": "$16"
+                },
+                "period": {
+                    "monthly": "/月",
+                    "yearly": "/月（年払い）"
+                },
+                "desc": "個人クリエイター向けの入門プラン。日常的な制作と商用公開を安定して進められます。",
                 "features": [
-                    "Access to core AI design tools",
-                    "Limited monthly AI generations",
-                    "Basic template library",
-                    "Community support",
-                    "A great introduction to \"Lovart plans\""
+                    "毎月 2,000 Fast Points",
+                    "同時実行タスク最大 2",
+                    "商用ライセンス込み",
+                    "標準生成キュー",
+                    "48時間以内のメールサポート"
                 ],
-                "cta": "Get Started Free"
+                "cta": "Starterを選ぶ"
             },
             {
-                "name": "Creative Pro",
-                "tag": "Most Popular",
-                "price": "$29",
-                "period": "/month",
-                "desc": "Ideal for professional designers, freelancers, and small teams needing advanced features and higher usage limits. This \"Lovart AI pricing\" tier offers excellent value.",
+                "name": "Basic",
+                "price": {
+                    "monthly": "$32",
+                    "yearly": "$27"
+                },
+                "period": {
+                    "monthly": "/月",
+                    "yearly": "/月（年払い）"
+                },
+                "desc": "制作量が多いチーム向けのバランス型プラン。コストを抑えつつ安定した処理能力を確保します。",
                 "features": [
-                    "All Starter Spark features, plus:",
-                    "Increased AI generations",
-                    "Premium template library",
-                    "Advanced AI editing tools",
-                    "Priority email support",
-                    "Commercial usage rights",
-                    "Flexible \"Lovart AI pricing\""
+                    "毎月 3,500 Fast Points",
+                    "Unlimited Slow Generations（Nano Banana）",
+                    "同時実行タスク最大 4",
+                    "追加ポイント購入 10% 割引",
+                    "商用ライセンス + チーム引き継ぎ対応",
+                    "優先メールサポート"
                 ],
-                "cta": "Choose Pro Plan"
+                "cta": "Basicを選ぶ"
             },
             {
-                "name": "Business Scale",
-                "price": "Custom",
-                "desc": "Tailored \"Lovart AI pricing\" solutions for larger organizations and enterprises with specific needs for collaboration, security, and support.",
+                "name": "Pro",
+                "badge": "一番人気",
+                "badge_type": "popular",
+                "price": {
+                    "monthly": "$69",
+                    "yearly": "$45"
+                },
+                "period": {
+                    "monthly": "/月（期間限定）",
+                    "yearly": "/月（年払い）"
+                },
+                "desc": "高速生成・高並列・高品質出力が必要な成長チーム向けの主力プランです。",
                 "features": [
-                    "All Creative Pro features, plus:",
-                    "Unlimited AI generations (subject to fair use)",
-                    "Custom integrations & API access (planned)",
-                    "Team management & collaboration tools",
-                    "Dedicated account manager",
-                    "Enterprise-grade security & SLAs",
-                    "Bespoke \"Lovart plans\""
+                    "期間限定価格で年額はさらにお得",
+                    "毎月 11,000 Fast Points",
+                    "Unlimited Slow Generations + GPT Image 1.5",
+                    "同時実行タスク最大 8",
+                    "追加ポイント購入 15% 割引",
+                    "優先キューと高速再生成",
+                    "高度な商用利用権"
                 ],
-                "cta": "Contact Sales"
+                "cta": "Proを選ぶ"
+            },
+            {
+                "name": "Ultimate",
+                "badge": "期間限定 50% OFF",
+                "badge_type": "flash",
+                "price": {
+                    "monthly": "$149",
+                    "yearly": "$99"
+                },
+                "period": {
+                    "monthly": "/月（期間限定）",
+                    "yearly": "/月（年払い）"
+                },
+                "desc": "複数案件を同時運用する代理店・エンタープライズ向けの最大キャパシティプランです。",
+                "features": [
+                    "毎月 27,000 Fast Points",
+                    "Unlimited Slow Generations + 上位モデル利用",
+                    "同時実行タスク最大 10",
+                    "追加ポイント購入 20% 割引",
+                    "4K高品質エクスポート",
+                    "専任オンボーディングと戦略サポート",
+                    "強化SLAレスポンス"
+                ],
+                "cta": "Ultimateを選ぶ"
             }
         ],
         "why_choose": {
-            "title": "Why Our \"Lovart AI Pricing\" Works For You",
-            "p1": "At Lovart, we've structured our \"Lovart AI pricing\" to be both competitive and value-driven. We understand that different users have different needs, which is why our \"Lovart plans\" offer a range of options. Whether you're just starting or scaling your business, there's a \"Lovart AI pricing\" tier designed to support your growth.",
-            "p2": "Our commitment is to provide powerful AI design tools without a complex \"Lovart AI pricing\" model. We focus on delivering continuous improvements and new features across all our \"Lovart plans\", ensuring you always get the best return on your investment. The flexibility in \"Lovart AI pricing\" allows you to scale as your needs evolve."
+            "title": "Lovart料金が選ばれる理由",
+            "p1": "4つの料金帯は、個人制作から企業運用まで実際の制作フェーズに対応しています。ワークフローを変えずに段階的にアップグレードできます。",
+            "p2": "Fast Points は納期重視の作業を加速し、Unlimited Slow Generations は基礎スループットを維持します。コストと生産性の両立がしやすくなります。"
+        },
+        "comparison_table": {
+            "title": "詳細プラン比較",
+            "summary": "画像生成上限、商用ライセンス、開発者向け機能を横断比較できます。",
+            "toggle": "機能マトリクスを表示",
+            "headers": [
+                "機能",
+                "Starter",
+                "Basic",
+                "Pro",
+                "Ultimate"
+            ],
+            "rows": [
+                {
+                    "feature": "Fast Points / 月",
+                    "values": [
+                        "2,000",
+                        "3,500",
+                        "11,000",
+                        "27,000"
+                    ]
+                },
+                {
+                    "feature": "Unlimited Slow Generations",
+                    "values": [
+                        "いいえ",
+                        "はい",
+                        "はい",
+                        "はい"
+                    ]
+                },
+                {
+                    "feature": "同時実行タスク",
+                    "values": [
+                        "2",
+                        "4",
+                        "8",
+                        "10"
+                    ]
+                },
+                {
+                    "feature": "Commercial License AI Assets",
+                    "values": [
+                        "はい",
+                        "はい",
+                        "上位",
+                        "企業向け"
+                    ]
+                },
+                {
+                    "feature": "GPT Image 1.5 アクセス",
+                    "values": [
+                        "いいえ",
+                        "いいえ",
+                        "はい",
+                        "はい"
+                    ]
+                },
+                {
+                    "feature": "4K高品質エクスポート",
+                    "values": [
+                        "いいえ",
+                        "いいえ",
+                        "オプション",
+                        "含む"
+                    ]
+                },
+                {
+                    "feature": "チャージ割引",
+                    "values": [
+                        "-",
+                        "10%",
+                        "15%",
+                        "20%"
+                    ]
+                },
+                {
+                    "feature": "API Access for Developers",
+                    "values": [
+                        "ロードマップ",
+                        "ロードマップ",
+                        "優先ロードマップ",
+                        "優先ロードマップ"
+                    ]
+                }
+            ]
+        },
+        "deep_dive": {
+            "title": "最適なLovartプランの選び方",
+            "p1": "定期的な制作業務が中心なら、Starter または Basic で多くのケースをカバーできます。月額コストを予測しやすいのも利点です。",
+            "p2": "高速な納品、複数案件の並行処理、上位モデル利用が重要なら Pro が適しています。繁忙期の安定運用に向いています。",
+            "p3": "Ultimate は、より高い同時実行数と大規模配分、強いサポートが必要な代理店・企業運用向けです。"
         },
         "faq": {
-            "title": "Frequently Asked Questions about \"Lovart AI Pricing\"",
+            "title": "Lovart料金に関するよくある質問",
             "items": [
                 {
-                    "q": "Is there a free trial for paid \"Lovart plans\"?",
-                    "a": "While our \"Starter Spark\" plan is completely free and offers a great way to experience Lovart, we may offer limited-time trials for our \"Creative Pro\" plan periodically. Keep an eye on our promotions or sign up for our newsletter for updates on \"Lovart AI pricing\" offers."
+                    "q": "小さいプランから始めて後でアップグレードできますか？",
+                    "a": "はい。業務量に応じて Starter から Basic、Pro、Ultimate へ移行できます。通常は次回課金サイクルで反映されます。"
                 },
                 {
-                    "q": "Can I change my \"Lovart AI pricing\" plan later?",
-                    "a": "Absolutely! You can upgrade or downgrade your \"Lovart plan\" at any time. If you upgrade, the changes are usually pro-rated. If you downgrade, the changes will take effect at the end of your current billing cycle. Our \"Lovart AI pricing\" is designed for flexibility."
+                    "q": "Fast Points と Slow Generations の違いは？",
+                    "a": "Fast Points は速度重視の生成に使われます。Slow Generations は待ち時間が長い代わりにスループット維持に有効で、プランによっては実質無制限です。"
                 },
                 {
-                    "q": "What payment methods are accepted for \"Lovart AI pricing\"?",
-                    "a": "We accept all major credit cards (Visa, MasterCard, American Express) for our \"Lovart AI pricing\" plans. For \"Business Scale\" plans, we may also offer invoicing options. Please contact sales for more details on payment for your chosen \"Lovart plan\"."
+                    "q": "すべてのプランで商用利用できますか？",
+                    "a": "はい。全プランで商用利用が可能です。Pro と Ultimate は運用面のカバー範囲がさらに広くなります。"
                 },
                 {
-                    "q": "Are there discounts for annual \"Lovart plans\"?",
-                    "a": "Yes, we typically offer a discount if you choose to pay annually for our \"Creative Pro\" plan. This can be a great way to save on your \"Lovart AI pricing\". Check the payment section during checkout or contact us for current annual \"Lovart AI pricing\" rates."
+                    "q": "年額課金の割引はありますか？",
+                    "a": "あります。4プランすべてで年額課金のほうが月換算コストを抑えられます。"
                 },
                 {
-                    "q": "What counts as an \"AI generation\" in the \"Lovart AI pricing\" plans?",
-                    "a": "An AI generation typically refers to a single instance where you utilize one of Lovart's core AI features to produce an output, such as generating a design element, suggesting a layout, or performing an AI-assisted edit. Specifics may vary per feature, and details are provided within the platform. Our \"Lovart AI pricing\" aims to be clear about these limits."
+                    "q": "Pro と Ultimate はどう選べばいいですか？",
+                    "a": "高頻度のマーケ運用なら Pro、より高い同時実行数・大容量配分・企業向けサポートが必要なら Ultimate を推奨します。"
                 }
             ]
         },
         "contact": {
-            "title": "Need a Custom \"Lovart AI Pricing\" Solution?",
-            "desc": "If your team has unique requirements or you're interested in our \"Business Scale\" \"Lovart plan\", please get in touch. We're happy to discuss custom \"Lovart AI pricing\" and tailor a solution that fits your organization perfectly.",
-            "cta": "Contact Our Sales Team"
-        },
-        "footer": {
-            "rights": "Lovart. All rights reserved.",
-            "tagline": "Innovate with AI, Design with Lovart."
+            "title": "カスタムプランが必要ですか？",
+            "desc": "より高い配分、専用オンボーディング、調達条件の個別対応が必要な場合は営業チームへご連絡ください。",
+            "cta": "営業チームに連絡"
         },
         "related": {
             "title": "Lovart のその他のリソース",
@@ -416,6 +554,10 @@
                     "link_text": "API ドキュメント →"
                 }
             ]
+        },
+        "footer": {
+            "rights": "Lovart. All rights reserved.",
+            "tagline": "Innovate with AI, Design with Lovart."
         }
     },
     "about_page": {
@@ -676,7 +818,7 @@
     "help_page": {
         "seo": {
             "title": "ヘルプセンター - Lovart AI デザインプラットフォーム",
-            "description": "Lovartヘルプセンターでガイド、FAQ、技術サポートを確認し、利用中の課題をすばやく解決。今すぐサポートを見る。",
+            "description": "Lovartヘルプセンターでは、初期設定ガイド、FAQ、請求やアカウント管理、トラブル解決手順まで一括で確認でき、制作中の疑問を短時間で解消できます。",
             "keywords": "ヘルプセンター, ユーザーガイド, FAQ, 技術サポート"
         },
         "hero": {
@@ -983,7 +1125,7 @@
     "privacy_page": {
         "seo": {
             "title": "プライバシーポリシー - Lovart",
-            "description": "Lovartプライバシーポリシーで、個人情報の収集・利用・保護方法とユーザーの権利を確認できます。今すぐ確認。",
+            "description": "Lovartプライバシーポリシーでは、収集する情報の種類、利用目的、保存期間、第三者提供の条件、そして開示・訂正・削除などユーザーの権利をわかりやすく確認できます。",
             "keywords": "プライバシー, データ保護"
         },
         "hero": {

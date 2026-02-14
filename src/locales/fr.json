@@ -308,94 +308,232 @@
             "keywords": "lovart ai pricing, lovart pricing, lovart plans, ai design platform cost"
         },
         "hero": {
-            "title": "Lovart AI Pricing Plans",
-            "desc": "Welcome to the Lovart AI pricing page. We believe in transparent and flexible \"Lovart plans\" designed to fit your creative needs and budget. Explore our \"Lovart AI pricing\" options below and find the perfect solution to unlock the full power of AI in your design workflow. Our goal is to provide clear \"Lovart AI pricing\" tiers for every type of user."
+            "title": "Tarifs Lovart AI",
+            "desc": "Comparez quatre offres (Starter, Basic, Pro, Ultimate), basculez entre facturation mensuelle et annuelle, et vérifiez quotas, vitesse et concurrence de génération."
+        },
+        "billing_toggle": {
+            "label": "Période de facturation",
+            "monthly": "Mensuel",
+            "yearly": "Annuel",
+            "yearly_badge": "Économisez avec l’annuel"
         },
         "plans": [
             {
-                "name": "Starter Spark",
-                "price": "Free",
-                "desc": "Perfect for individuals getting started with AI design and exploring basic \"Lovart AI pricing\" features.",
+                "name": "Starter",
+                "price": {
+                    "monthly": "$19",
+                    "yearly": "$16"
+                },
+                "period": {
+                    "monthly": "/mois",
+                    "yearly": "/mois (facturé annuellement)"
+                },
+                "desc": "Une offre d’entrée pour les créateurs indépendants qui publient des visuels commerciaux chaque semaine.",
                 "features": [
-                    "Access to core AI design tools",
-                    "Limited monthly AI generations",
-                    "Basic template library",
-                    "Community support",
-                    "A great introduction to \"Lovart plans\""
+                    "2 000 Fast Points par mois",
+                    "Jusqu’à 2 tâches simultanées",
+                    "Licence commerciale incluse",
+                    "File de génération standard",
+                    "Support e-mail sous 48 h"
                 ],
-                "cta": "Get Started Free"
+                "cta": "Choisir Starter"
             },
             {
-                "name": "Creative Pro",
-                "tag": "Most Popular",
-                "price": "$29",
-                "period": "/month",
-                "desc": "Ideal for professional designers, freelancers, and small teams needing advanced features and higher usage limits. This \"Lovart AI pricing\" tier offers excellent value.",
+                "name": "Basic",
+                "price": {
+                    "monthly": "$32",
+                    "yearly": "$27"
+                },
+                "period": {
+                    "monthly": "/mois",
+                    "yearly": "/mois (facturé annuellement)"
+                },
+                "desc": "Le plan équilibré pour les équipes de création qui veulent plus de débit et des générations lentes illimitées.",
                 "features": [
-                    "All Starter Spark features, plus:",
-                    "Increased AI generations",
-                    "Premium template library",
-                    "Advanced AI editing tools",
-                    "Priority email support",
-                    "Commercial usage rights",
-                    "Flexible \"Lovart AI pricing\""
+                    "3 500 Fast Points par mois",
+                    "Unlimited Slow Generations (Nano Banana)",
+                    "Jusqu’à 4 tâches simultanées",
+                    "10 % de remise sur la recharge",
+                    "Licence commerciale + transfert d’équipe",
+                    "Support e-mail prioritaire"
                 ],
-                "cta": "Choose Pro Plan"
+                "cta": "Choisir Basic"
             },
             {
-                "name": "Business Scale",
-                "price": "Custom",
-                "desc": "Tailored \"Lovart AI pricing\" solutions for larger organizations and enterprises with specific needs for collaboration, security, and support.",
+                "name": "Pro",
+                "badge": "Le plus populaire",
+                "badge_type": "popular",
+                "price": {
+                    "monthly": "$69",
+                    "yearly": "$45"
+                },
+                "period": {
+                    "monthly": "/mois (flash sale)",
+                    "yearly": "/mois (facturé annuellement)"
+                },
+                "desc": "Conçu pour les équipes à fort volume qui recherchent vitesse, parallélisme et qualité de sortie élevée.",
                 "features": [
-                    "All Creative Pro features, plus:",
-                    "Unlimited AI generations (subject to fair use)",
-                    "Custom integrations & API access (planned)",
-                    "Team management & collaboration tools",
-                    "Dedicated account manager",
-                    "Enterprise-grade security & SLAs",
-                    "Bespoke \"Lovart plans\""
+                    "Prix promotionnel avec forte économie annuelle",
+                    "11 000 Fast Points par mois",
+                    "Unlimited Slow Generations + GPT Image 1.5",
+                    "Jusqu’à 8 tâches simultanées",
+                    "15 % de remise sur la recharge",
+                    "File prioritaire et régénération plus rapide",
+                    "Droits commerciaux avancés"
                 ],
-                "cta": "Contact Sales"
+                "cta": "Choisir Pro"
+            },
+            {
+                "name": "Ultimate",
+                "badge": "Flash Sale -50 %",
+                "badge_type": "flash",
+                "price": {
+                    "monthly": "$149",
+                    "yearly": "$99"
+                },
+                "period": {
+                    "monthly": "/mois (flash sale)",
+                    "yearly": "/mois (facturé annuellement)"
+                },
+                "desc": "Capacité entreprise pour les agences et équipes avancées gérant plusieurs campagnes simultanément.",
+                "features": [
+                    "27 000 Fast Points par mois",
+                    "Unlimited Slow Generations + modèles premium",
+                    "Jusqu’à 10 tâches simultanées",
+                    "20 % de remise sur la recharge",
+                    "Export 4K haute qualité",
+                    "Onboarding dédié et accompagnement stratégique",
+                    "Fenêtre SLA renforcée"
+                ],
+                "cta": "Choisir Ultimate"
             }
         ],
         "why_choose": {
-            "title": "Why Our \"Lovart AI Pricing\" Works For You",
-            "p1": "At Lovart, we've structured our \"Lovart AI pricing\" to be both competitive and value-driven. We understand that different users have different needs, which is why our \"Lovart plans\" offer a range of options. Whether you're just starting or scaling your business, there's a \"Lovart AI pricing\" tier designed to support your growth.",
-            "p2": "Our commitment is to provide powerful AI design tools without a complex \"Lovart AI pricing\" model. We focus on delivering continuous improvements and new features across all our \"Lovart plans\", ensuring you always get the best return on your investment. The flexibility in \"Lovart AI pricing\" allows you to scale as your needs evolve."
+            "title": "Pourquoi ce modèle tarifaire est performant",
+            "p1": "Chaque niveau Lovart correspond à une étape réelle de production : du créateur solo à la livraison entreprise. Vous pouvez évoluer sans changer votre workflow principal.",
+            "p2": "Les Fast Points couvrent les tâches urgentes, tandis que les générations lentes illimitées stabilisent le débit de fond. Résultat : coût prévisible et production continue."
+        },
+        "comparison_table": {
+            "title": "Comparatif détaillé des offres",
+            "summary": "Comparez limites de génération d’images, licence commerciale et capacités orientées développeurs.",
+            "toggle": "Afficher la matrice complète",
+            "headers": [
+                "Fonction",
+                "Starter",
+                "Basic",
+                "Pro",
+                "Ultimate"
+            ],
+            "rows": [
+                {
+                    "feature": "Fast Points / mois",
+                    "values": [
+                        "2 000",
+                        "3 500",
+                        "11 000",
+                        "27 000"
+                    ]
+                },
+                {
+                    "feature": "Unlimited Slow Generations",
+                    "values": [
+                        "Non",
+                        "Oui",
+                        "Oui",
+                        "Oui"
+                    ]
+                },
+                {
+                    "feature": "Tâches simultanées",
+                    "values": [
+                        "2",
+                        "4",
+                        "8",
+                        "10"
+                    ]
+                },
+                {
+                    "feature": "Commercial License AI Assets",
+                    "values": [
+                        "Oui",
+                        "Oui",
+                        "Avancé",
+                        "Entreprise"
+                    ]
+                },
+                {
+                    "feature": "Accès GPT Image 1.5",
+                    "values": [
+                        "Non",
+                        "Non",
+                        "Oui",
+                        "Oui"
+                    ]
+                },
+                {
+                    "feature": "Export 4K haute qualité",
+                    "values": [
+                        "Non",
+                        "Non",
+                        "Optionnel",
+                        "Inclus"
+                    ]
+                },
+                {
+                    "feature": "Remise recharge",
+                    "values": [
+                        "-",
+                        "10 %",
+                        "15 %",
+                        "20 %"
+                    ]
+                },
+                {
+                    "feature": "API Access for Developers",
+                    "values": [
+                        "Roadmap",
+                        "Roadmap",
+                        "Roadmap prioritaire",
+                        "Roadmap prioritaire"
+                    ]
+                }
+            ]
+        },
+        "deep_dive": {
+            "title": "Comment choisir la bonne offre Lovart AI",
+            "p1": "Pour des besoins créatifs ponctuels, Starter ou Basic couvrent généralement le flux complet avec un coût mensuel maîtrisé.",
+            "p2": "Pro convient aux équipes qui dépendent d’une cadence élevée, du multitâche et d’un accès aux modèles premium pendant les périodes de forte charge.",
+            "p3": "Ultimate s’adresse aux agences et opérations avancées nécessitant quotas élevés, concurrence maximale et support renforcé."
         },
         "faq": {
-            "title": "Frequently Asked Questions about \"Lovart AI Pricing\"",
+            "title": "FAQ sur les tarifs Lovart",
             "items": [
                 {
-                    "q": "Is there a free trial for paid \"Lovart plans\"?",
-                    "a": "While our \"Starter Spark\" plan is completely free and offers a great way to experience Lovart, we may offer limited-time trials for our \"Creative Pro\" plan periodically. Keep an eye on our promotions or sign up for our newsletter for updates on \"Lovart AI pricing\" offers."
+                    "q": "Puis-je commencer petit puis évoluer ?",
+                    "a": "Oui. Vous pouvez passer de Starter à Basic, Pro ou Ultimate selon la charge. Les changements prennent effet au cycle de facturation suivant."
                 },
                 {
-                    "q": "Can I change my \"Lovart AI pricing\" plan later?",
-                    "a": "Absolutely! You can upgrade or downgrade your \"Lovart plan\" at any time. If you upgrade, the changes are usually pro-rated. If you downgrade, the changes will take effect at the end of your current billing cycle. Our \"Lovart AI pricing\" is designed for flexibility."
+                    "q": "Quelle différence entre Fast Points et Slow Generations ?",
+                    "a": "Les Fast Points servent aux rendus prioritaires. Les Slow Generations sont plus lentes mais assurent le débit, avec option illimitée selon l’offre."
                 },
                 {
-                    "q": "What payment methods are accepted for \"Lovart AI pricing\"?",
-                    "a": "We accept all major credit cards (Visa, MasterCard, American Express) for our \"Lovart AI pricing\" plans. For \"Business Scale\" plans, we may also offer invoicing options. Please contact sales for more details on payment for your chosen \"Lovart plan\"."
+                    "q": "Les droits commerciaux sont-ils inclus ?",
+                    "a": "Oui. Les quatre offres incluent un usage commercial, avec une couverture opérationnelle plus large sur Pro et Ultimate."
                 },
                 {
-                    "q": "Are there discounts for annual \"Lovart plans\"?",
-                    "a": "Yes, we typically offer a discount if you choose to pay annually for our \"Creative Pro\" plan. This can be a great way to save on your \"Lovart AI pricing\". Check the payment section during checkout or contact us for current annual \"Lovart AI pricing\" rates."
+                    "q": "Y a-t-il un avantage en facturation annuelle ?",
+                    "a": "Oui. Les quatre offres sont plus avantageuses en équivalent mensuel lorsqu’elles sont facturées à l’année."
                 },
                 {
-                    "q": "What counts as an \"AI generation\" in the \"Lovart AI pricing\" plans?",
-                    "a": "An AI generation typically refers to a single instance where you utilize one of Lovart's core AI features to produce an output, such as generating a design element, suggesting a layout, or performing an AI-assisted edit. Specifics may vary per feature, and details are provided within the platform. Our \"Lovart AI pricing\" aims to be clear about these limits."
+                    "q": "Comment choisir entre Pro et Ultimate ?",
+                    "a": "Pro est adapté aux équipes marketing à fort volume. Ultimate est recommandé pour une concurrence plus élevée et des besoins de support entreprise."
                 }
             ]
         },
         "contact": {
-            "title": "Need a Custom \"Lovart AI Pricing\" Solution?",
-            "desc": "If your team has unique requirements or you're interested in our \"Business Scale\" \"Lovart plan\", please get in touch. We're happy to discuss custom \"Lovart AI pricing\" and tailor a solution that fits your organization perfectly.",
-            "cta": "Contact Our Sales Team"
-        },
-        "footer": {
-            "rights": "Lovart. All rights reserved.",
-            "tagline": "Innovate with AI, Design with Lovart."
+            "title": "Besoin d’un plan sur mesure ?",
+            "desc": "Si votre équipe a besoin de quotas plus élevés, d’un onboarding dédié ou de conditions d’achat spécifiques, contactez-nous.",
+            "cta": "Contacter l’équipe commerciale"
         },
         "related": {
             "title": "Découvrez plus de ressources Lovart",
@@ -416,6 +554,10 @@
                     "link_text": "Documentation API →"
                 }
             ]
+        },
+        "footer": {
+            "rights": "Lovart. All rights reserved.",
+            "tagline": "Innovate with AI, Design with Lovart."
         }
     },
     "about_page": {
@@ -830,7 +972,7 @@
     "terms_page": {
         "seo": {
             "title": "Conditions d'Utilisation - Lovart",
-            "description": "Consultez les Conditions d’utilisation Lovart pour comprendre vos droits, obligations, paiements et règles d’usage. Lire les conditions maintenant.",
+            "description": "Consultez les Conditions d’utilisation Lovart: règles de compte, d’abonnement, de paiement, d’usage et de responsabilité pour utiliser le service en conformité.",
             "keywords": "Conditions d'utilisation, Accord Utilisateur"
         },
         "hero": {
