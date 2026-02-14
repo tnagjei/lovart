@@ -644,21 +644,22 @@
     "about_page": {
         "seo": {
             "title": "About Us - Lovart AI Design Platform",
-            "description": "Explore Lovart's story, mission, values, and innovative team. Since 2020, Lovart has been dedicated to combining AI technology with design creativity to help designers improve efficiency and discover infinite creative possibilities. Learn about our history, core team members, and corporate culture.",
-            "keywords": "About Lovart, Company Introduction, Design Team, AI Design Mission"
+            "description": "Learn about Lovart AI, the world's first Design Agent. Discover our mission, our San Francisco team led by Melvin Chen and Haofan Wang, and our MCoT technology.",
+            "keywords": "About Lovart, Melvin Chen, Haofan Wang, Design Agent, AI Design San Francisco, MCoT AI, Lovart Story"
         },
         "hero": {
             "title": "About Lovart",
-            "desc": "We believe everyone has infinite creative potential. Lovart is dedicated to making design smarter, more efficient, and more fun through artificial intelligence technology.",
+            "desc": "Lovart is the world's first Design Agent. We believe everyone has infinite creative potential, and we're here to unlock it through the power of AI-native systems.",
             "stats": [
-                "Serving 100+ Countries",
-                "500k+ Users",
-                "10M+ Designs Created"
-            ]
+                "70+ Countries Globally",
+                "800k+ Creative Users",
+                "MCoT Reasoning Engine"
+            ],
+            "cta_features": "Explore Features"
         },
         "mission": {
             "title": "Our Mission",
-            "desc": "Lovart was born from a simple idea: design should be creative, not technical. We are committed to eliminating technical barriers in the design process, allowing everyone to transform their ideas into stunning visual works.",
+            "desc": "Our mission is to empower the creative process by integrating generative AI with intuitive design tools. We aim to automate professional-grade workflows, making sophisticated branding accessible to everyone.",
             "values": [
                 {
                     "title": "Empowering Creativity",
@@ -678,24 +679,20 @@
             "title": "Our Story",
             "timeline": [
                 {
-                    "year": "2020",
-                    "desc": "The Lovart concept was born; a group of designers and developers decided to change the design industry."
-                },
-                {
-                    "year": "2021",
-                    "desc": "Secured seed funding, assembled the core team, and began product development."
-                },
-                {
-                    "year": "2022",
-                    "desc": "Beta version released, gaining the first 1,000 beta users."
-                },
-                {
-                    "year": "2023",
-                    "desc": "Official version released, users exceeded 100,000, and secured Series A funding."
-                },
-                {
                     "year": "2024",
-                    "desc": "Serving over 100 countries globally, becoming a leading AI design platform."
+                    "desc": "Lovart AI founded in San Francisco; core research on MCoT (Mind Chain of Thought) reasoning engine begins."
+                },
+                {
+                    "year": "Early 2025",
+                    "desc": "Global beta phase attracts over 800,000 creators, proving the value of human-AI collaboration in design."
+                },
+                {
+                    "year": "July 2025",
+                    "desc": "Official launch of the Design Agent platform, revolutionizing creative workflows across 70 countries."
+                },
+                {
+                    "year": "Future",
+                    "desc": "Scaling multi-agent orchestration to handle complex, cross-media design challenges for global brands."
                 }
             ]
         },
@@ -704,24 +701,24 @@
             "desc": "We are a passionate team dedicated to changing the design world with technology.",
             "members": [
                 {
-                    "name": "Ming Zhang",
+                    "name": "Melvin Chen",
                     "role": "Founder & CEO",
-                    "bio": "Former Google Design Lead, 10 years of design industry experience."
+                    "bio": "Visionary entrepreneur and designer. Specialized in human-AI collaborative workflows and bringing agency-quality design to everyone."
                 },
                 {
-                    "name": "Na Li",
+                    "name": "Haofan Wang",
                     "role": "Co-founder & CTO",
-                    "bio": "AI Expert, former Facebook Researcher, PhD in Machine Learning."
+                    "bio": "AI Researcher (CMU). Developer of InstantID & InstantStyle. Leading Lovart's research in generative and agentic models."
                 },
                 {
-                    "name": "Qiang Wang",
-                    "role": "Design Director",
-                    "bio": "Former Apple Designer, focusing on UX and UI design."
+                    "name": "Creative Pioneers",
+                    "role": "Design & Product Team",
+                    "bio": "A diverse group of tool startup innovators and AI enthusiasts dedicated to building the future of design."
                 },
                 {
-                    "name": "Min Chen",
-                    "role": "Product Manager",
-                    "bio": "Former Microsoft Product Manager, focusing on SaaS product design."
+                    "name": "Global Community",
+                    "role": "Join Us",
+                    "bio": "Our 800k+ users are our greatest teammates, helping us refine the world's first Design Agent every day."
                 }
             ]
         },
@@ -755,23 +752,20 @@
             ]
         },
         "contact": {
-            "title": "Contact Us",
-            "desc": "Have any questions or collaboration ideas? We'd love to hear from you.",
+            "title": "Get in Touch",
+            "desc": "Join our community or reach out for collaboration. Let's build the future of design together.",
             "items": [
                 {
-                    "title": "Email Contact",
-                    "desc": "General inquiries and collaboration"
+                    "title": "Join Discord",
+                    "desc": "Connect with 800k+ creators and get instant support.",
+                    "link": "https://discord.gg/lovart"
                 },
                 {
-                    "title": "Business Cooperation",
-                    "desc": "Enterprise solutions"
-                },
-                {
-                    "title": "Media Contact",
-                    "desc": "Press and media inquiries"
+                    "title": "Email Support",
+                    "desc": "For business inquiries and professional support.",
+                    "link": "mailto:hello@lovart.ai"
                 }
-            ],
-            "follow": "Follow Us"
+            ]
         },
         "footer": {
             "titles": {
@@ -782,6 +776,11 @@
             },
             "desc": "AI-powered design platform for creative professionals.",
             "rights": "Lovart.info. All rights reserved."
+        },
+        "cta_conversion": {
+            "title": "Ready to Unlock Your Creative Potential?",
+            "desc": "Join 800k+ creators and start designing with the world's first Design Agent.",
+            "button": "Get Started for Free"
         }
     },
     "blog_page": {
