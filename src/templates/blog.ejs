@@ -1,813 +1,599 @@
 <!DOCTYPE html>
-<% const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.blog, href: canonicalUrl }]; %>
+<%
+const blogCategoryFilters = [
+    { key: 'all', slug: 'all', href: link('blog.html') },
+    { key: 'ai_design', slug: 'ai-design', href: link('blog.html?category=ai-design') },
+    { key: 'tutorials', slug: 'tutorials', href: link('blog.html?category=tutorials') },
+    { key: 'industry', slug: 'industry', href: link('blog.html?category=industry') },
+    { key: 'updates', slug: 'updates', href: link('blog.html?category=updates') },
+    { key: 'stories', slug: 'stories', href: link('blog.html?category=stories') }
+];
+
+const blogFeaturedSlug = 'how-ai-is-reshaping-modern-design-workflows';
+const latestPostSlugs = [
+    'master-lovart-ai-design-in-5-minutes',
+    'ui-ux-design-trends-2024',
+    'how-designers-boost-efficiency-with-lovart',
+    'ai-assisted-product-design-best-practices',
+    'break-creative-block-with-ai-inspiration',
+    'lovart-january-update-new-features'
+];
+const latestPostImages = [
+    '/images/small_03.jpg',
+    '/images/02.jpg',
+    '/images/05.jpg',
+    '/images/06.jpg',
+    '/images/07.jpg',
+    '/images/08.jpg'
+];
+const latestPostCategorySlugs = ['tutorials', 'industry', 'stories', 'ai-design', 'ai-design', 'updates'];
+const latestPostIsoDates = ['2024-01-12', '2024-01-10', '2024-01-08', '2024-01-05', '2024-01-03', '2024-01-01'];
+
+function toAbsoluteBlogUrl(relativeOrAbsoluteUrl) {
+    if (!relativeOrAbsoluteUrl || typeof relativeOrAbsoluteUrl !== 'string') {
+        return canonicalUrl;
+    }
+
+    if (/^https?:\/\//i.test(relativeOrAbsoluteUrl)) {
+        return relativeOrAbsoluteUrl;
+    }
+
+    const normalizedPath = relativeOrAbsoluteUrl.startsWith('/') ? relativeOrAbsoluteUrl : `/${relativeOrAbsoluteUrl}`;
+    return `https://lovart.info${normalizedPath}`;
+}
+
+function getShareLinks(relativeUrl, title) {
+    const absoluteUrl = toAbsoluteBlogUrl(relativeUrl);
+    const encodedUrl = encodeURIComponent(absoluteUrl);
+    const encodedTitle = encodeURIComponent(title || 'Lovart Blog');
+
+    return {
+        facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+        x: `https://x.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
+        linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+    };
+}
+
+const featuredPost = {
+    slug: blogFeaturedSlug,
+    url: link(`blog-${blogFeaturedSlug}.html`),
+    title: t.blog_page.featured.article_title,
+    desc: t.blog_page.featured.desc,
+    tag: t.blog_page.featured.tag,
+    date: t.blog_page.featured.date,
+    datePublished: '2024-01-15',
+    author: t.blog_page.featured.author,
+    authorRole: t.blog_page.featured.role,
+    categorySlug: 'ai-design',
+    image: '/images/01.jpg',
+    thumb: '/images/thumb-01.jpg'
+};
+const featuredPostShareLinks = getShareLinks(featuredPost.url, featuredPost.title);
+
+const latestPosts = t.blog_page.latest.posts.map((post, index) => {
+    const slug = latestPostSlugs[index] || `blog-post-${index + 1}`;
+    const url = link(`blog-${slug}.html`);
+
+    return {
+        ...post,
+        slug,
+        url,
+        image: latestPostImages[index] || '/images/placeholder.jpg',
+        thumb: latestPostImages[index] || '/images/placeholder.jpg',
+        categorySlug: latestPostCategorySlugs[index] || 'ai-design',
+        datePublished: latestPostIsoDates[index] || '2024-01-01',
+        shareLinks: getShareLinks(url, post.title)
+    };
+});
+
+const blogPosts = [featuredPost, ...latestPosts].map((post) => ({
+    ...post,
+    absoluteUrl: toAbsoluteBlogUrl(post.url),
+    shareLinks: getShareLinks(post.url, post.title)
+}));
+
+const blogTagLinks = [
+    { label: t.blog_page.categories.ai_design, href: link('blog.html?category=ai-design') },
+    { label: t.blog_page.categories.tutorials, href: link('blog.html?category=tutorials') },
+    { label: t.blog_page.categories.industry, href: link('blog.html?category=industry') },
+    { label: t.blog_page.categories.updates, href: link('blog.html?category=updates') },
+    { label: t.blog_page.categories.stories, href: link('blog.html?category=stories') }
+];
+
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.blog, href: canonicalUrl }];
+const categoryCounts = blogPosts.reduce((acc, post) => {
+    acc[post.categorySlug] = (acc[post.categorySlug] || 0) + 1;
+    return acc;
+}, {});
+const defaultCategoryCount = blogPosts.length;
+const blogUiMessageMap = {
+    en: {
+        postSingular: 'post',
+        postPlural: 'posts',
+        emptyCategory: 'No posts found for this category yet.',
+        blocked: 'Submission blocked.',
+        invalidEmail: 'Please enter a valid email address.',
+        confirmMail: 'Please confirm the subscription email in your mail app.'
+    },
+    zh: {
+        postSingular: '篇文章',
+        postPlural: '篇文章',
+        emptyCategory: '该分类暂无文章。',
+        blocked: '提交已拦截。',
+        invalidEmail: '请输入有效邮箱地址。',
+        confirmMail: '请在邮件应用中确认订阅。'
+    },
+    fr: {
+        postSingular: 'article',
+        postPlural: 'articles',
+        emptyCategory: 'Aucun article dans cette catégorie pour le moment.',
+        blocked: 'Soumission bloquée.',
+        invalidEmail: 'Veuillez saisir une adresse e-mail valide.',
+        confirmMail: "Veuillez confirmer l'abonnement dans votre application mail."
+    },
+    ja: {
+        postSingular: '件の記事',
+        postPlural: '件の記事',
+        emptyCategory: 'このカテゴリにはまだ記事がありません。',
+        blocked: '送信はブロックされました。',
+        invalidEmail: '有効なメールアドレスを入力してください。',
+        confirmMail: 'メールアプリで購読を確認してください。'
+    }
+};
+const blogUiMessages = blogUiMessageMap[lang] || blogUiMessageMap.en;
+%>
 <html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
     <%- include('partials/head') %>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            <%= t.blog_page.seo.title %>
-        </title>
-        <meta name="description" content="<%= t.blog_page.seo.description %>">
-        <meta name="keywords" content="<%= t.blog_page.seo.keywords %>">
-        <link rel="canonical" href="<%= canonicalUrl %>">
-        <%- include('partials/hreflang') %>
-            <link rel="stylesheet" href="/styles.css">
-            <link rel="icon" href="/favicon.ico" type="image/x-icon">
-            <script async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
-                crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= t.blog_page.seo.title %></title>
+    <meta name="description" content="<%= t.blog_page.seo.description %>">
+    <meta name="keywords" content="<%= t.blog_page.seo.keywords %>">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <%- include('partials/hreflang') %>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-            <%- include('partials/analytics') %>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963" crossorigin="anonymous"></script>
 
-                <style>
-                    .section-animate {
-                        opacity: 0;
-                        transform: translateY(30px);
-                        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-                    }
+    <%- include('partials/analytics') %>
 
-                    .section-animate.is-visible {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
+    <style>
+        .section-animate {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
 
-                    .blog-card {
-                        transition: all 0.3s ease;
-                    }
+        .section-animate.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-                    .blog-card:hover {
-                        transform: translateY(-5px);
-                    }
+        .blog-card {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
 
-                    .category-pill {
-                        transition: all 0.2s ease;
-                    }
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+        }
 
-                    .category-pill:hover {
-                        transform: scale(1.05);
-                    }
+        .blog-surface {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+        }
 
-                    /* AdSense 占位符样式 */
-                    .ad-slot-container {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #f3f4f6;
-                        min-height: 280px;
-                        margin: 2rem 0;
-                        position: relative;
-                        border-radius: 0.5rem;
-                        overflow: hidden;
-                    }
+        .blog-meta {
+            font-size: 0.9375rem;
+            line-height: 1.45;
+            color: #64748b;
+        }
 
-                    .ad-slot-container::before {
-                        content: 'Advertisement';
-                        position: absolute;
-                        color: #9ca3af;
-                        font-size: 0.875rem;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        z-index: 0;
-                    }
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
 
-                    .ad-slot-container ins {
-                        z-index: 1;
-                        background: white;
-                    }
-                </style>
+        .category-link {
+            transition: all 0.2s ease;
+        }
 
-                <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+        .category-link.is-active {
+            background: rgb(59 130 246);
+            color: white;
+            border-color: rgb(59 130 246);
+        }
 
+        .ad-slot-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+            border: 1px dashed #d1d5db;
+            min-height: 96px;
+            margin: 0.75rem 0;
+            position: relative;
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+
+        .ad-slot-container::before {
+            content: 'Ad';
+            position: absolute;
+            color: #9ca3af;
+            font-size: 0.75rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .ad-slot-container.is-collapsed {
+            display: none;
+        }
+
+        .ad-slot-container ins {
+            z-index: 1;
+            background: transparent;
+            width: 100%;
+        }
+
+        /* Prevent third-party floating share widgets from covering the content area */
+        #st-1,
+        #st-2,
+        .st-sticky-share-buttons,
+        .a2a_floating_style,
+        .a2a_kit.a2a_floating_style,
+        .addtoany_share_save_container {
+            display: none !important;
+        }
+
+        [class*="share"][style*="position: fixed"][style*="right"],
+        [id*="share"][style*="position: fixed"][style*="right"] {
+            display: none !important;
+        }
+    </style>
+
+    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+    <%- include('partials/schema-blog-list', { blogPosts }) %>
 </head>
 
 <body class="bg-neutral-light text-neutral-dark antialiased">
-
-    <!-- Header -->
     <%- include('partials/header') %>
-
     <%- include('partials/breadcrumb', { breadcrumbItems }) %>
-        <main>
-            <!-- Hero Section -->
-            <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">
-                <div class="container mx-auto px-6 text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
-                        <%= t.blog_page.hero.title %>
-                    </h1>
-                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
-                        <%= t.blog_page.hero.desc %>
-                    </p>
-                    <div class="flex flex-wrap justify-center gap-3">
-                        <% t.blog_page.hero.tags.forEach(function(tag) { %>
-                            <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
-                                <%= tag %>
-                            </span>
-                            <% }); %>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Category Filter -->
-            <section class="py-8 bg-white">
-                <div class="container mx-auto px-6">
-                    <div class="flex flex-wrap justify-center gap-3">
-                        <button class="category-pill bg-primary text-white px-6 py-2 rounded-full text-sm font-medium">
-                            <%= t.blog_page.categories.all %>
-                        </button>
-                        <button
-                            class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">
-                            <%= t.blog_page.categories.ai_design %>
-                        </button>
-                        <button
-                            class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">
-                            <%= t.blog_page.categories.tutorials %>
-                        </button>
-                        <button
-                            class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">
-                            <%= t.blog_page.categories.industry %>
-                        </button>
-                        <button
-                            class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">
-                            <%= t.blog_page.categories.updates %>
-                        </button>
-                        <button
-                            class="category-pill bg-neutral-light text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-sm font-medium">
-                            <%= t.blog_page.categories.stories %>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Featured Post -->
-            <section class="py-12 bg-neutral-light">
-                <div class="container mx-auto px-6">
-                    <div class="max-w-6xl mx-auto">
-                        <h2 class="text-2xl font-bold text-neutral-dark mb-8">
-                            <%= t.blog_page.featured.title %>
-                        </h2>
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <div class="md:flex">
-                                <div class="md:w-1/2">
-                                    <img src="/images/01.jpg" alt="<%= t.blog_page.featured.article_title %>"
-                                        class="w-full h-64 md:h-full object-cover">
-                                </div>
-                                <div class="md:w-1/2 p-8">
-                                    <div class="flex items-center gap-3 mb-4">
-                                        <span
-                                            class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">
-                                            <%= t.blog_page.featured.tag %>
-                                        </span>
-                                        <span class="text-neutral text-sm">
-                                            <%= t.blog_page.featured.date %>
-                                        </span>
-                                    </div>
-                                    <h3 class="text-2xl font-bold text-neutral-dark mb-4">
-                                        <%= t.blog_page.featured.article_title %>
-                                    </h3>
-                                    <p class="text-neutral mb-6">
-                                        <%= t.blog_page.featured.desc %>
-                                    </p>
-                                    <div class="flex flex-col gap-4">
-                                        <div class="flex items-center justify-between">
-                                            <div class="flex items-center gap-3">
-                                                <img src="/images/02.png" alt="Author Avatar"
-                                                    class="w-10 h-10 rounded-full object-cover">
-                                                <div>
-                                                    <p class="font-medium text-neutral-dark">
-                                                        <%= t.blog_page.featured.author %>
-                                                    </p>
-                                                    <p class="text-sm text-neutral">
-                                                        <%= t.blog_page.featured.role %>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="text-primary hover:text-primary-dark font-medium">
-                                                <%= t.blog_page.featured.read_more %>
-                                                    →
-                                            </a>
-                                        </div>
-                                        <!-- Social Share -->
-                                        <div class="flex items-center gap-3 border-t border-gray-100 pt-4">
-                                            <span class="text-sm text-neutral-500">
-                                                <%= t.blog_page.latest.share %>
-                                            </span>
-                                            <div class="flex gap-2">
-                                                <a href="#"
-                                                    class="text-neutral-400 hover:text-blue-600 transition-colors"><svg
-                                                        class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                                                    </svg></a>
-                                                <a href="#"
-                                                    class="text-neutral-400 hover:text-black transition-colors"><svg
-                                                        class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                                    </svg></a>
-                                                <a href="#"
-                                                    class="text-neutral-400 hover:text-blue-700 transition-colors"><svg
-                                                        class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                                                    </svg></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Blog Content with Sidebar -->
-            <section class="py-16 bg-white">
-                <div class="container mx-auto px-6">
-                    <div class="flex flex-col lg:flex-row gap-12">
-
-                        <!-- Sidebar (Right) -->
-                        <aside class="lg:w-1/3 space-y-8">
-
-                            <!-- Categories -->
-                            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                                <h3 class="text-lg font-bold text-neutral-dark mb-4">
-                                    <%= t.blog_page.sidebar.categories %>
-                                </h3>
-                                <ul class="space-y-2">
-                                    <li><a href="#" class="text-neutral hover:text-primary transition-colors">
-                                            <%= t.blog_page.categories.ai_design %>
-                                                (5)
-                                        </a></li>
-                                    <li><a href="#" class="text-neutral hover:text-primary transition-colors">
-                                            <%= t.blog_page.categories.tutorials %>
-                                                (8)
-                                        </a></li>
-                                    <li><a href="#" class="text-neutral hover:text-primary transition-colors">
-                                            <%= t.blog_page.categories.industry %>
-                                                (3)
-                                        </a></li>
-                                    <li><a href="#" class="text-neutral hover:text-primary transition-colors">
-                                            <%= t.blog_page.categories.updates %>
-                                                (6)
-                                        </a></li>
-                                    <li><a href="#" class="text-neutral hover:text-primary transition-colors">
-                                            <%= t.blog_page.categories.stories %>
-                                                (4)
-                                        </a></li>
-                                    <li><a href="#"
-                                            class="text-neutral hover:text-primary transition-colors">Inspiration
-                                            (7)</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- Recent Posts -->
-                            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                                <h3 class="text-lg font-bold text-neutral-dark mb-4">
-                                    <%= t.blog_page.sidebar.recent_posts %>
-                                </h3>
-                                <ul class="space-y-4">
-                                    <li class="flex items-center gap-3">
-                                        <img src="/images/thumb-01.jpg" alt="Recent Post Thumbnail"
-                                            class="w-16 h-16 object-cover rounded-md">
-                                        <div>
-                                            <a href="#"
-                                                class="text-neutral-dark hover:text-primary font-medium text-sm">
-                                                <%= t.blog_page.featured.article_title %>
-                                            </a>
-                                            <p class="text-neutral text-xs">
-                                                <%= t.blog_page.featured.date %>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-center gap-3">
-                                        <img src="/images/thumb-02.jpg" alt="Recent Post Thumbnail"
-                                            class="w-16 h-16 object-cover rounded-md">
-                                        <div>
-                                            <a href="#"
-                                                class="text-neutral-dark hover:text-primary font-medium text-sm">
-                                                <%= t.blog_page.latest.posts[0].title %>
-                                            </a>
-                                            <p class="text-neutral text-xs">
-                                                <%= t.blog_page.latest.posts[0].date %>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-center gap-3">
-                                        <img src="/images/thumb-03.jpg" alt="Recent Post Thumbnail"
-                                            class="w-16 h-16 object-cover rounded-md">
-                                        <div>
-                                            <a href="#"
-                                                class="text-neutral-dark hover:text-primary font-medium text-sm">
-                                                <%= t.blog_page.latest.posts[1].title %>
-                                            </a>
-                                            <p class="text-neutral text-xs">
-                                                <%= t.blog_page.latest.posts[1].date %>
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Tags -->
-                            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                                <h3 class="text-lg font-bold text-neutral-dark mb-4">
-                                    <%= t.blog_page.sidebar.tags %>
-                                </h3>
-                                <div class="flex flex-wrap gap-2">
-                                    <a href="#"
-                                        class="bg-neutral-light text-neutral hover:bg-primary hover:text-white px-3 py-1 rounded-full text-xs">AI
-                                        Design</a>
-                                    <a href="#"
-                                        class="bg-neutral-light text-neutral hover:bg-primary hover:text-white px-3 py-1 rounded-full text-xs">UI/UX</a>
-                                    <a href="#"
-                                        class="bg-neutral-light text-neutral hover:bg-primary hover:text-white px-3 py-1 rounded-full text-xs">Tutorial</a>
-                                    <a href="#"
-                                        class="bg-neutral-light text-neutral hover:bg-primary hover:text-white px-3 py-1 rounded-full text-xs">Trends</a>
-                                    <a href="#"
-                                        class="bg-neutral-light text-neutral hover:bg-primary hover:text-white px-3 py-1 rounded-full text-xs">Productivity</a>
-                                    <a href="#"
-                                        class="bg-neutral-light text-neutral hover:bg-primary hover:text-white px-3 py-1 rounded-full text-xs">Inspiration</a>
-                                    <a href="#"
-                                        class="bg-neutral-light text-neutral hover:bg-primary hover:text-white px-3 py-1 rounded-full text-xs">Case
-                                        Study</a>
-                                </div>
-                            </div>
-
-                            <!-- Ad Slot: Sidebar (e.g., 300x250) -->
-                            <div class="ad-slot-container" style="min-height: 250px;">
-                                <!--
-                                Tip: Use "Display ads" style in AdSense
-                                Suggested size: 300x250 or Fluid
-                            -->
-                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3083296102953963"
-                                    data-ad-slot="8855551987" data-ad-format="auto"
-                                    data-full-width-responsive="true"></ins>
-                                <script>
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                                </script>
-                            </div>
-
-                        </aside>
-
-                        <!-- Main Content (Left) -->
-                        <div class="lg:w-2/3">
-                            <h2 class="text-2xl font-bold text-neutral-dark mb-8">
-                                <%= t.blog_page.latest.title %>
-                            </h2>
-                            <div class="grid md:grid-cols-2 gap-8">
-
-                                <!-- Blog Post 1 -->
-                                <article
-                                    class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                    <img src="/images/small_03.jpg" alt="Blog Post 2" class="w-full h-48 object-cover">
-                                    <div class="p-6">
-                                        <div class="flex items-center gap-3 mb-3">
-                                            <span
-                                                class="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
-                                                <%= t.blog_page.latest.posts[0].tag %>
-                                            </span>
-                                            <span class="text-neutral text-sm">
-                                                <%= t.blog_page.latest.posts[0].date %>
-                                            </span>
-                                        </div>
-                                        <h3 class="text-xl font-bold text-neutral-dark mb-3">
-                                            <%= t.blog_page.latest.posts[0].title %>
-                                        </h3>
-                                        <p class="text-neutral mb-4 line-clamp-3">
-                                            <%= t.blog_page.latest.posts[0].desc %>
-                                        </p>
-                                        <div class="flex flex-col gap-3">
-                                            <div class="flex items-center justify-between">
-                                                <span class="text-sm text-neutral">
-                                                    <%= t.blog_page.latest.posts[0].author %>
-                                                </span>
-                                                <a href="#"
-                                                    class="text-primary hover:text-primary-dark font-medium text-sm">
-                                                    <%= t.blog_page.latest.read_more %>
-                                                </a>
-                                            </div>
-                                            <div class="flex items-center gap-2 border-t border-gray-100 pt-3">
-                                                <span class="text-xs text-neutral-500">
-                                                    <%= t.blog_page.latest.share %>
-                                                </span>
-                                                <a href="#" class="text-neutral-400 hover:text-blue-600"><svg
-                                                        class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                                                    </svg></a>
-                                                <a href="#" class="text-neutral-400 hover:text-black"><svg
-                                                        class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                                    </svg></a>
-                                                <a href="#" class="text-neutral-400 hover:text-blue-700"><svg
-                                                        class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                                                    </svg></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <!-- Blog Post 2 -->
-                                <article
-                                    class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                    <img src="/images/02.jpg" alt="Blog Post 1" class="w-full h-48 object-cover">
-                                    <div class="p-6">
-                                        <div class="flex items-center gap-3 mb-3">
-                                            <span
-                                                class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium">
-                                                <%= t.blog_page.latest.posts[1].tag %>
-                                            </span>
-                                            <span class="text-neutral text-sm">
-                                                <%= t.blog_page.latest.posts[1].date %>
-                                            </span>
-                                        </div>
-                                        <h3 class="text-xl font-bold text-neutral-dark mb-3">
-                                            <%= t.blog_page.latest.posts[1].title %>
-                                        </h3>
-                                        <p class="text-neutral mb-4 line-clamp-3">
-                                            <%= t.blog_page.latest.posts[1].desc %>
-                                        </p>
-                                        <div class="flex flex-col gap-3">
-                                            <div class="flex items-center justify-between">
-                                                <span class="text-sm text-neutral">
-                                                    <%= t.blog_page.latest.posts[1].author %>
-                                                </span>
-                                                <a href="#"
-                                                    class="text-primary hover:text-primary-dark font-medium text-sm">
-                                                    <%= t.blog_page.latest.read_more %>
-                                                </a>
-                                            </div>
-                                            <div class="flex items-center gap-2 border-t border-gray-100 pt-3">
-                                                <span class="text-xs text-neutral-500">
-                                                    <%= t.blog_page.latest.share %>
-                                                </span>
-                                                <a href="#" class="text-neutral-400 hover:text-blue-600"><svg
-                                                        class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                                                    </svg></a>
-                                                <a href="#" class="text-neutral-400 hover:text-black"><svg
-                                                        class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                                    </svg></a>
-                                                <a href="#" class="text-neutral-400 hover:text-blue-700"><svg
-                                                        class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                                                    </svg></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <!-- Ad Slot: In-Feed (Between Posts) -->
-                                <div class="md:col-span-2">
-                                    <div class="ad-slot-container" style="min-height: 250px; margin: 0;">
-                                        <!-- 
-                                        Tip: Use "In-feed ads" style in AdSense
-                                        Suggested size: Fluid or Responsive 
-                                    -->
-                                        <ins class="adsbygoogle" style="display:block"
-                                            data-ad-client="ca-pub-3083296102953963" data-ad-slot="7744440876"
-                                            data-ad-format="auto" data-full-width-responsive="true"></ins>
-                                        <script>
-                                            (adsbygoogle = window.adsbygoogle || []).push({});
-                                        </script>
-                                    </div>
-                                </div>
-
-                                <!-- Blog Post 3 -->
-                                <article
-                                    class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                    <img src="/images/05.jpg" alt="User Case Study" class="w-full h-48 object-cover">
-                                    <div class="p-6">
-                                        <div class="flex items-center gap-3 mb-3">
-                                            <span
-                                                class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">
-                                                <%= t.blog_page.latest.posts[2].tag %>
-                                            </span>
-                                            <span class="text-neutral text-sm">
-                                                <%= t.blog_page.latest.posts[2].date %>
-                                            </span>
-                                        </div>
-                                        <h3 class="text-xl font-bold text-neutral-dark mb-3">
-                                            <%= t.blog_page.latest.posts[2].title %>
-                                        </h3>
-                                        <p class="text-neutral mb-4 line-clamp-3">
-                                            <%= t.blog_page.latest.posts[2].desc %>
-                                        </p>
-                                        <div class="flex items-center justify-between">
-                                            <span class="text-sm text-neutral">
-                                                <%= t.blog_page.latest.posts[2].author %>
-                                            </span>
-                                            <a href="#"
-                                                class="text-primary hover:text-primary-dark font-medium text-sm">
-                                                <%= t.blog_page.latest.read_more %>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <!-- Blog Post 4 -->
-                                <article
-                                    class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                    <img src="/images/06.jpg" alt="Product Design" class="w-full h-48 object-cover">
-                                    <div class="p-6">
-                                        <div class="flex items-center gap-3 mb-3">
-                                            <span
-                                                class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">
-                                                <%= t.blog_page.latest.posts[3].tag %>
-                                            </span>
-                                            <span class="text-neutral text-sm">
-                                                <%= t.blog_page.latest.posts[3].date %>
-                                            </span>
-                                        </div>
-                                        <h3 class="text-xl font-bold text-neutral-dark mb-3">
-                                            <%= t.blog_page.latest.posts[3].title %>
-                                        </h3>
-                                        <p class="text-neutral mb-4 line-clamp-3">
-                                            <%= t.blog_page.latest.posts[3].desc %>
-                                        </p>
-                                        <div class="flex items-center justify-between">
-                                            <span class="text-sm text-neutral">
-                                                <%= t.blog_page.latest.posts[3].author %>
-                                            </span>
-                                            <a href="#"
-                                                class="text-primary hover:text-primary-dark font-medium text-sm">
-                                                <%= t.blog_page.latest.read_more %>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <!-- Blog Post 5 -->
-                                <article
-                                    class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                    <img src="/images/07.jpg" alt="Creative Inspiration"
-                                        class="w-full h-48 object-cover">
-                                    <div class="p-6">
-                                        <div class="flex items-center gap-3 mb-3">
-                                            <span
-                                                class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium">
-                                                <%= t.blog_page.latest.posts[4].tag %>
-                                            </span>
-                                            <span class="text-neutral text-sm">
-                                                <%= t.blog_page.latest.posts[4].date %>
-                                            </span>
-                                        </div>
-                                        <h3 class="text-xl font-bold text-neutral-dark mb-3">
-                                            <%= t.blog_page.latest.posts[4].title %>
-                                        </h3>
-                                        <p class="text-neutral mb-4 line-clamp-3">
-                                            <%= t.blog_page.latest.posts[4].desc %>
-                                        </p>
-                                        <div class="flex items-center justify-between">
-                                            <span class="text-sm text-neutral">
-                                                <%= t.blog_page.latest.posts[4].author %>
-                                            </span>
-                                            <a href="#"
-                                                class="text-primary hover:text-primary-dark font-medium text-sm">
-                                                <%= t.blog_page.latest.read_more %>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <!-- Blog Post 6 -->
-                                <article
-                                    class="blog-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-                                    <img src="/images/08.jpg" alt="Product Updates" class="w-full h-48 object-cover">
-                                    <div class="p-6">
-                                        <div class="flex items-center gap-3 mb-3">
-                                            <span
-                                                class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">
-                                                <%= t.blog_page.latest.posts[5].tag %>
-                                            </span>
-                                            <span class="text-neutral text-sm">
-                                                <%= t.blog_page.latest.posts[5].date %>
-                                            </span>
-                                        </div>
-                                        <h3 class="text-xl font-bold text-neutral-dark mb-3">
-                                            <%= t.blog_page.latest.posts[5].title %>
-                                        </h3>
-                                        <p class="text-neutral mb-4 line-clamp-3">
-                                            <%= t.blog_page.latest.posts[5].desc %>
-                                        </p>
-                                        <div class="flex items-center justify-between">
-                                            <span class="text-sm text-neutral">
-                                                <%= t.blog_page.latest.posts[5].author %>
-                                            </span>
-                                            <a href="#"
-                                                class="text-primary hover:text-primary-dark font-medium text-sm">
-                                                <%= t.blog_page.latest.read_more %>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </article>
-
-                            </div>
-                        </div>
-
-                        <!-- Sidebar (Right) -->
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-neutral hover:text-primary cursor-pointer">Efficiency Boost</span>
-                        <span class="bg-white px-2 py-1 rounded text-xs text-neutral-500">18</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-neutral hover:text-primary cursor-pointer">Creative
-                            Inspiration</span>
-                        <span class="bg-white px-2 py-1 rounded text-xs text-neutral-500">32</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-neutral hover:text-primary cursor-pointer">UI/UX Design</span>
-                        <span class="bg-white px-2 py-1 rounded text-xs text-neutral-500">21</span>
-                    </div>
-                </div>
-                </div>
-
-                <!-- Newsletter (Mini version) -->
-                <div class="bg-primary p-6 rounded-lg shadow-md text-white">
-                    <h3 class="text-xl font-bold mb-2">
-                        <%= t.blog_page.newsletter.title %>
-                    </h3>
-                    <p class="text-sm opacity-90 mb-4">
-                        <%= t.blog_page.newsletter.desc %>
-                    </p>
-                    <form class="space-y-3">
-                        <input type="email" placeholder="<%= t.blog_page.newsletter.placeholder %>"
-                            class="w-full px-4 py-2 rounded text-neutral-dark focus:outline-none">
-                        <button type="submit"
-                            class="w-full bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded font-medium transition-colors">
-                            <%= t.blog_page.newsletter.button %>
-                        </button>
-                    </form>
-                </div>
-
-                </aside>
-
-                </div>
-                </div>
-            </section>
-
-            <!-- Newsletter Section -->
-            <section class="py-16 bg-primary text-white">
-                <div class="container mx-auto px-6">
-                    <div class="max-w-4xl mx-auto text-center">
-                        <h2 class="text-3xl font-bold mb-4">
-                            <%= t.blog_page.bottom_newsletter.title %>
-                        </h2>
-                        <p class="text-lg mb-8 opacity-90">
-                            <%= t.blog_page.bottom_newsletter.desc %>
-                        </p>
-                        <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                            <input type="email" placeholder="<%= t.blog_page.bottom_newsletter.placeholder %>"
-                                class="flex-1 px-4 py-3 rounded-lg text-neutral-dark focus:outline-none focus:ring-2 focus:ring-white">
-                            <button type="submit"
-                                class="bg-secondary text-white px-6 py-3 rounded-lg hover:bg-secondary-dark transition-colors font-medium">
-                                <%= t.blog_page.bottom_newsletter.button %>
-                            </button>
-                        </form>
-                        <p class="text-sm mt-4 opacity-75">
-                            <%= t.blog_page.bottom_newsletter.privacy %>
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Ad Slot: Multiplex Ads (Related Content) -->
-            <section class="container mx-auto px-6 mb-16">
-                <div class="ad-slot-container">
-                    <!-- 
-                    Tip: Use "Multiplex ads" style in AdSense
-                    Suggested size: Responsive
-                -->
-                    <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
-                        data-ad-client="ca-pub-3083296102953963" data-ad-slot="6414622305"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-            </section>
-
-        </main>
-
-        <%- include('partials/footer') %>
-
-            <script>
-                // Mobile menu toggle
-                const mobileMenuButton = document.getElementById('mobile-menu-button');
-                const mobileMenu = document.getElementById('mobile-menu');
-                if (mobileMenuButton && mobileMenu) {
-                    mobileMenuButton.addEventListener('click', () => {
-                        mobileMenu.classList.toggle('hidden');
-                    });
-                    // Close mobile menu when a link is clicked
-                    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-                    mobileMenuLinks.forEach(link => {
-                        link.addEventListener('click', () => {
-                            mobileMenu.classList.add('hidden');
-                        });
-                    });
-                }
-
-                // Set current year in footer
-                const currentYearSpan = document.getElementById('currentYear');
-                if (currentYearSpan) {
-                    currentYearSpan.textContent = new Date().getFullYear();
-                }
-
-                // Section scroll animations
-                const sections = document.querySelectorAll('.section-animate');
-                const observerOptions = {
-                    root: null,
-                    rootMargin: '0px',
-                    threshold: 0.1
-                };
-
-                const observer = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('is-visible');
-                        }
-                    });
-                }, observerOptions);
-
-                sections.forEach(section => {
-                    observer.observe(section);
-                });
-
-                // Category filter functionality
-                const categoryButtons = document.querySelectorAll('.category-pill');
-                categoryButtons.forEach(button => {
-                    button.addEventListener('click', () => {
-                        // Remove active state from all buttons
-                        categoryButtons.forEach(btn => {
-                            btn.classList.remove('bg-primary', 'text-white');
-                            btn.classList.add('bg-neutral-light', 'text-neutral');
-                        });
-                        // Add active state to clicked button
-                        button.classList.remove('bg-neutral-light', 'text-neutral');
-                        button.classList.add('bg-primary', 'text-white');
-                    });
-                });
-            </script>
-            <!-- Cookie Consent Banner -->
-            <div id="cookie-consent"
-                class="fixed bottom-0 left-0 right-0 bg-neutral-dark text-white p-4 shadow-lg transform translate-y-full transition-transform duration-300 z-50"
-                style="display: none;">
-                <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <div class="text-sm">
-                        <p>We use cookies to enhance your experience and analyze our traffic. By continuing to visit
-                            this
-                            site
-                            you agree to our use of cookies. <a href="<%= link('privacy-policy.html') %>"
-                                class="underline hover:text-primary">Learn more</a></p>
-                    </div>
-                    <div class="flex gap-3">
-                        <button id="cookie-decline"
-                            class="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-neutral-dark transition-colors">Decline</button>
-                        <button id="cookie-accept"
-                            class="px-4 py-2 text-sm bg-primary text-white rounded hover:bg-primary-dark transition-colors">Accept</button>
-                    </div>
+    <main>
+        <section class="bg-gradient-to-br from-primary to-secondary text-white py-16 section-animate">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6"><%= t.blog_page.hero.title %></h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8"><%= t.blog_page.hero.desc %></p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <% t.blog_page.hero.tags.forEach(function(tag) { %>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm"><%= tag %></span>
+                    <% }); %>
                 </div>
             </div>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                    const cookieConsent = document.getElementById('cookie-consent');
-                    const acceptBtn = document.getElementById('cookie-accept');
-                    const declineBtn = document.getElementById('cookie-decline');
+        </section>
 
-                    if (!localStorage.getItem('cookieConsent')) {
-                        cookieConsent.style.display = 'block';
-                        setTimeout(() => {
-                            cookieConsent.classList.remove('translate-y-full');
-                        }, 100);
-                    }
+        <section class="py-8 bg-white border-b border-gray-100 section-animate">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-wrap justify-center gap-3" role="navigation" aria-label="Blog categories">
+                    <% blogCategoryFilters.forEach(function(filter) { %>
+                    <a href="<%= filter.href %>" data-category-link data-category="<%= filter.slug %>" class="category-link bg-neutral-light border border-transparent text-neutral hover:bg-primary hover:text-white px-6 py-2 rounded-full text-base font-medium">
+                        <%= t.blog_page.categories[filter.key] %>
+                    </a>
+                    <% }); %>
+                </div>
+            </div>
+        </section>
 
-                    acceptBtn.addEventListener('click', () => {
-                        localStorage.setItem('cookieConsent', 'accepted');
-                        cookieConsent.classList.add('translate-y-full');
-                        setTimeout(() => {
-                            cookieConsent.style.display = 'none';
-                        }, 300);
-                    });
+        <section class="py-12 bg-neutral-light section-animate">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-8"><%= t.blog_page.featured.title %></h2>
+                    <article class="blog-surface overflow-hidden" data-category="<%= featuredPost.categorySlug %>">
+                        <div class="md:flex">
+                            <div class="md:w-1/2">
+                                <img src="<%= featuredPost.image %>" alt="<%= featuredPost.title %>" class="w-full h-64 md:h-full object-cover" width="1200" height="675" fetchpriority="high" decoding="async">
+                            </div>
+                            <div class="md:w-1/2 p-8">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-medium"><%= featuredPost.tag %></span>
+                                    <span class="blog-meta"><%= featuredPost.date %></span>
+                                </div>
+                                <h3 class="text-2xl font-bold text-neutral-dark mb-4"><%= featuredPost.title %></h3>
+                                <p class="text-neutral leading-relaxed mb-6"><%= featuredPost.desc %></p>
 
-                    declineBtn.addEventListener('click', () => {
-                        localStorage.setItem('cookieConsent', 'declined');
-                        cookieConsent.classList.add('translate-y-full');
-                        setTimeout(() => {
-                            cookieConsent.style.display = 'none';
-                        }, 300);
-                    });
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center justify-between gap-4">
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/02.png" alt="<%= featuredPost.author %>" class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy" decoding="async">
+                                            <div>
+                                                <p class="font-medium text-neutral-dark"><%= featuredPost.author %></p>
+                                                <p class="blog-meta"><%= featuredPost.authorRole %></p>
+                                            </div>
+                                        </div>
+                                        <a href="<%= featuredPost.url %>" class="text-primary hover:text-primary-dark font-medium"><%= t.blog_page.featured.read_more %> →</a>
+                                    </div>
+
+                                    <div class="flex items-center gap-3 border-t border-gray-100 pt-4">
+                                        <span class="blog-meta"><%= t.blog_page.latest.share %></span>
+                                        <div class="flex gap-3">
+                                            <a href="<%= featuredPostShareLinks.facebook %>" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-blue-600 transition-colors" aria-label="Share on Facebook"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.49 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg></a>
+                                            <a href="<%= featuredPostShareLinks.x %>" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-black transition-colors" aria-label="Share on X"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg></a>
+                                            <a href="<%= featuredPostShareLinks.linkedin %>" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-blue-700 transition-colors" aria-label="Share on LinkedIn"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM8 19H5V9h3v10zM6.5 7.732a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V9h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white section-animate">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-10">
+                    <div class="lg:w-2/3">
+                        <div class="flex items-center justify-between gap-4 mb-8">
+                            <h2 class="text-2xl font-bold text-neutral-dark"><%= t.blog_page.latest.title %></h2>
+                            <p id="category-result-count" class="blog-meta"></p>
+                        </div>
+
+                        <p id="category-empty-state" class="hidden bg-neutral-light border border-gray-200 rounded-lg p-4 blog-meta mb-8"></p>
+
+                        <div class="grid md:grid-cols-2 gap-8 auto-rows-fr" id="blog-post-grid">
+                            <% latestPosts.forEach(function(post) { %>
+                            <article class="blog-card blog-surface h-full flex flex-col overflow-hidden" data-category="<%= post.categorySlug %>">
+                                <img src="<%= post.image %>" alt="<%= post.title %>" class="w-full h-48 object-cover" width="720" height="405" loading="lazy" decoding="async">
+                                <div class="p-6 flex flex-col flex-1">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium"><%= post.tag %></span>
+                                        <span class="blog-meta"><%= post.date %></span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3"><%= post.title %></h3>
+                                    <p class="text-neutral leading-relaxed mb-4 line-clamp-3 flex-1"><%= post.desc %></p>
+
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="blog-meta"><%= post.author %></span>
+                                            <a href="<%= post.url %>" class="text-primary hover:text-primary-dark font-medium text-sm"><%= t.blog_page.latest.read_more %></a>
+                                        </div>
+                                        <div class="flex items-center gap-2 border-t border-gray-100 pt-3">
+                                            <span class="blog-meta"><%= t.blog_page.latest.share %></span>
+                                            <a href="<%= post.shareLinks.facebook %>" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-blue-600" aria-label="Share <%= post.title %> on Facebook"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.49 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg></a>
+                                            <a href="<%= post.shareLinks.x %>" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-black" aria-label="Share <%= post.title %> on X"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg></a>
+                                            <a href="<%= post.shareLinks.linkedin %>" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-blue-700" aria-label="Share <%= post.title %> on LinkedIn"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM8 19H5V9h3v10zM6.5 7.732a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V9h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <% }); %>
+                        </div>
+                    </div>
+
+                    <aside class="lg:w-1/3 space-y-6">
+                        <div class="blog-surface p-6">
+                            <h3 class="text-lg font-bold text-neutral-dark mb-4"><%= t.blog_page.sidebar.categories %></h3>
+                            <ul class="space-y-2">
+                                <% blogCategoryFilters.forEach(function(filter) { %>
+                                <li>
+                                    <a href="<%= filter.href %>" class="blog-meta hover:text-primary transition-colors">
+                                        <%= t.blog_page.categories[filter.key] %>
+                                        (<%= filter.slug === 'all' ? defaultCategoryCount : (categoryCounts[filter.slug] || 0) %>)
+                                    </a>
+                                </li>
+                                <% }); %>
+                            </ul>
+                        </div>
+
+                        <div class="blog-surface p-6">
+                            <h3 class="text-lg font-bold text-neutral-dark mb-4"><%= t.blog_page.sidebar.recent_posts %></h3>
+                            <ul class="space-y-4">
+                                <% blogPosts.slice(0, 3).forEach(function(post) { %>
+                                <li class="flex items-center gap-3">
+                                    <img src="<%= post.thumb %>" alt="<%= post.title %>" class="w-16 h-16 object-cover rounded-md" width="64" height="64" loading="lazy" decoding="async">
+                                    <div>
+                                        <a href="<%= post.url %>" class="text-neutral-dark hover:text-primary font-medium text-base leading-snug"><%= post.title %></a>
+                                        <p class="blog-meta"><%= post.date %></p>
+                                    </div>
+                                </li>
+                                <% }); %>
+                            </ul>
+                        </div>
+
+                        <div class="blog-surface p-6">
+                            <h3 class="text-lg font-bold text-neutral-dark mb-4"><%= t.blog_page.sidebar.tags %></h3>
+                            <div class="flex flex-wrap gap-2">
+                                <% blogTagLinks.forEach(function(tagLink) { %>
+                                <a href="<%= tagLink.href %>" class="bg-neutral-light text-neutral hover:bg-primary hover:text-white px-3 py-1 rounded-full text-sm"><%= tagLink.label %></a>
+                                <% }); %>
+                            </div>
+                        </div>
+
+                        <div class="ad-slot-container" style="min-height: 180px;">
+                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3083296102953963" data-ad-slot="8855551987" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+
+                        <div class="bg-primary p-6 rounded-lg shadow-md text-white">
+                            <h3 class="text-xl font-bold mb-2"><%= t.blog_page.newsletter.title %></h3>
+                            <p class="text-base opacity-90 mb-4"><%= t.blog_page.newsletter.desc %></p>
+                            <form class="space-y-3" data-newsletter-form>
+                                <label class="sr-only" for="sidebar-newsletter-email"><%= t.blog_page.newsletter.placeholder %></label>
+                                <input id="sidebar-newsletter-email" type="email" name="email" required placeholder="<%= t.blog_page.newsletter.placeholder %>" class="w-full px-4 py-2.5 rounded text-neutral-dark focus:outline-none" autocomplete="email">
+                                <input type="text" name="company_website" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+                                <button type="submit" class="w-full bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded font-medium transition-colors"><%= t.blog_page.newsletter.button %></button>
+                                <p class="text-sm opacity-90" data-newsletter-feedback aria-live="polite"></p>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-primary text-white section-animate">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-4"><%= t.blog_page.bottom_newsletter.title %></h2>
+                    <p class="text-lg mb-8 opacity-90"><%= t.blog_page.bottom_newsletter.desc %></p>
+                    <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" data-newsletter-form>
+                        <label class="sr-only" for="bottom-newsletter-email"><%= t.blog_page.bottom_newsletter.placeholder %></label>
+                        <input id="bottom-newsletter-email" type="email" name="email" required placeholder="<%= t.blog_page.bottom_newsletter.placeholder %>" class="flex-1 px-4 py-3 rounded-lg text-neutral-dark focus:outline-none focus:ring-2 focus:ring-white" autocomplete="email">
+                        <input type="text" name="company_website" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <button type="submit" class="bg-secondary text-white px-6 py-3 rounded-lg hover:bg-secondary-dark transition-colors font-medium"><%= t.blog_page.bottom_newsletter.button %></button>
+                    </form>
+                    <p class="text-base mt-3 opacity-90" data-newsletter-feedback aria-live="polite"></p>
+                    <p class="text-base mt-4 opacity-75"><%= t.blog_page.bottom_newsletter.privacy %></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 mb-16">
+            <div class="ad-slot-container">
+                <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-3083296102953963" data-ad-slot="6414622305"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            mobileMenu.querySelectorAll('a').forEach((menuLink) => {
+                menuLink.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
                 });
-            </script>
+            });
+        }
+
+        const currentYearSpan = document.getElementById('currentYear');
+        if (currentYearSpan) {
+            currentYearSpan.textContent = new Date().getFullYear();
+        }
+
+        const sections = document.querySelectorAll('.section-animate');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        sections.forEach((section) => observer.observe(section));
+
+        const params = new URLSearchParams(window.location.search);
+        const selectedCategory = params.get('category') || 'all';
+        const articleCards = document.querySelectorAll('#blog-post-grid article[data-category]');
+        const categoryLinks = document.querySelectorAll('[data-category-link]');
+        const categoryResultCount = document.getElementById('category-result-count');
+        const categoryEmptyState = document.getElementById('category-empty-state');
+        const uiMessages = <%- JSON.stringify(blogUiMessages) %>;
+
+        let visibleCount = 0;
+        articleCards.forEach((card) => {
+            const cardCategory = card.dataset.category;
+            const shouldShow = selectedCategory === 'all' || cardCategory === selectedCategory;
+            card.classList.toggle('hidden', !shouldShow);
+            if (shouldShow) {
+                visibleCount += 1;
+            }
+        });
+
+        categoryLinks.forEach((categoryLink) => {
+            const isActive = categoryLink.dataset.category === selectedCategory;
+            categoryLink.classList.toggle('is-active', isActive);
+        });
+
+        if (categoryResultCount) {
+            categoryResultCount.textContent = `${visibleCount} ${visibleCount === 1 ? uiMessages.postSingular : uiMessages.postPlural}`;
+        }
+
+        if (categoryEmptyState) {
+            if (visibleCount === 0) {
+                categoryEmptyState.classList.remove('hidden');
+                categoryEmptyState.textContent = uiMessages.emptyCategory;
+            } else {
+                categoryEmptyState.classList.add('hidden');
+            }
+        }
+
+        document.querySelectorAll('[data-newsletter-form]').forEach((newsletterForm) => {
+            newsletterForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+
+                const emailInput = newsletterForm.querySelector('input[type="email"]');
+                const honeypotInput = newsletterForm.querySelector('input[name="company_website"]');
+                let feedback = newsletterForm.querySelector('[data-newsletter-feedback]');
+
+                if (!feedback) {
+                    feedback = newsletterForm.parentElement.querySelector('[data-newsletter-feedback]');
+                }
+
+                if (!emailInput || !feedback) {
+                    return;
+                }
+
+                if (honeypotInput && honeypotInput.value.trim()) {
+                    feedback.textContent = uiMessages.blocked;
+                    feedback.className = 'text-sm text-red-200';
+                    return;
+                }
+
+                const emailValue = emailInput.value.trim();
+                if (!emailValue) {
+                    feedback.textContent = uiMessages.invalidEmail;
+                    feedback.className = 'text-sm text-red-200';
+                    return;
+                }
+
+                const subject = encodeURIComponent('Lovart Blog Newsletter Subscription');
+                const body = encodeURIComponent(`Email: ${emailValue}\nSource: ${window.location.href}\nLanguage: ${document.documentElement.lang}`);
+                window.location.href = `mailto:support@lovart.info?subject=${subject}&body=${body}`;
+
+                feedback.textContent = uiMessages.confirmMail;
+                feedback.className = 'text-sm text-green-200';
+                newsletterForm.reset();
+            });
+        });
+
+        const collapseEmptyAdSlots = () => {
+            document.querySelectorAll('.ad-slot-container').forEach((adContainer) => {
+                const adElement = adContainer.querySelector('ins.adsbygoogle');
+                if (!adElement) {
+                    return;
+                }
+                const adStatus = adElement.getAttribute('data-ad-status');
+                const isLikelyEmptySlot = !adStatus && adElement.childElementCount === 0 && adElement.offsetHeight < 40;
+                if (adStatus === 'unfilled' || isLikelyEmptySlot) {
+                    adContainer.classList.add('is-collapsed');
+                }
+            });
+        };
+
+        window.addEventListener('load', () => {
+            window.setTimeout(collapseEmptyAdSlots, 4500);
+            window.setTimeout(collapseEmptyAdSlots, 9000);
+        });
+    </script>
 </body>
 
 </html>

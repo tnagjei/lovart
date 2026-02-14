@@ -1,0 +1,270 @@
+<%
+const blogFeaturedSlug = 'how-ai-is-reshaping-modern-design-workflows';
+const latestPostSlugs = [
+    'master-lovart-ai-design-in-5-minutes',
+    'ui-ux-design-trends-2024',
+    'how-designers-boost-efficiency-with-lovart',
+    'ai-assisted-product-design-best-practices',
+    'break-creative-block-with-ai-inspiration',
+    'lovart-january-update-new-features'
+];
+const latestPostImages = [
+    '/images/small_03.jpg',
+    '/images/02.jpg',
+    '/images/05.jpg',
+    '/images/06.jpg',
+    '/images/07.jpg',
+    '/images/08.jpg'
+];
+const latestPostCategorySlugs = ['tutorials', 'industry', 'stories', 'ai-design', 'ai-design', 'updates'];
+const latestPostIsoDates = ['2024-01-12', '2024-01-10', '2024-01-08', '2024-01-05', '2024-01-03', '2024-01-01'];
+
+function toAbsoluteBlogUrl(relativeOrAbsoluteUrl) {
+    if (!relativeOrAbsoluteUrl || typeof relativeOrAbsoluteUrl !== 'string') {
+        return canonicalUrl;
+    }
+
+    if (/^https?:\/\//i.test(relativeOrAbsoluteUrl)) {
+        return relativeOrAbsoluteUrl;
+    }
+
+    const normalizedPath = relativeOrAbsoluteUrl.startsWith('/') ? relativeOrAbsoluteUrl : `/${relativeOrAbsoluteUrl}`;
+    return `https://lovart.info${normalizedPath}`;
+}
+
+function getShareLinks(relativeUrl, title) {
+    const absoluteUrl = toAbsoluteBlogUrl(relativeUrl);
+    const encodedUrl = encodeURIComponent(absoluteUrl);
+    const encodedTitle = encodeURIComponent(title || 'Lovart Blog');
+
+    return {
+        facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+        x: `https://x.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
+        linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+    };
+}
+
+const featuredPost = {
+    slug: blogFeaturedSlug,
+    url: link(`blog-${blogFeaturedSlug}.html`),
+    title: t.blog_page.featured.article_title,
+    desc: t.blog_page.featured.desc,
+    tag: t.blog_page.featured.tag,
+    date: t.blog_page.featured.date,
+    datePublished: '2024-01-15',
+    author: t.blog_page.featured.author,
+    authorRole: t.blog_page.featured.role,
+    categorySlug: 'ai-design',
+    image: '/images/01.jpg',
+    thumb: '/images/thumb-01.jpg'
+};
+
+const latestPosts = t.blog_page.latest.posts.map((post, index) => {
+    const slug = latestPostSlugs[index] || `blog-post-${index + 1}`;
+    const url = link(`blog-${slug}.html`);
+
+    return {
+        ...post,
+        slug,
+        url,
+        image: latestPostImages[index] || '/images/placeholder.jpg',
+        thumb: latestPostImages[index] || '/images/placeholder.jpg',
+        categorySlug: latestPostCategorySlugs[index] || 'ai-design',
+        datePublished: latestPostIsoDates[index] || '2024-01-01'
+    };
+});
+
+const blogPosts = [featuredPost, ...latestPosts].map((post) => ({
+    ...post,
+    absoluteUrl: toAbsoluteBlogUrl(post.url),
+    shareLinks: getShareLinks(post.url, post.title)
+}));
+
+const blogPostsBySlug = blogPosts.reduce((acc, post) => {
+    acc[post.slug] = post;
+    return acc;
+}, {});
+
+const selectedArticle = blogPostsBySlug[articleSlug] || blogPosts[0];
+const relatedPosts = blogPosts.filter((post) => post.slug !== selectedArticle.slug).slice(0, 3);
+const breadcrumbItems = [
+    { name: t.nav.home, href: link('/') },
+    { name: t.nav.blog, href: link('blog.html') },
+    { name: selectedArticle.title, href: canonicalUrl }
+];
+const articleShareLinks = getShareLinks(canonicalUrl, selectedArticle.title);
+%>
+<!DOCTYPE html>
+<html lang="<%= lang %>" class="scroll-smooth">
+
+<head>
+    <%- include('head') %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= selectedArticle.title %> - <%= t.blog_page.seo.title %></title>
+    <meta name="description" content="<%= selectedArticle.desc %>">
+    <meta name="keywords" content="<%= t.blog_page.seo.keywords %>">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <%- include('hreflang') %>
+    <link rel="stylesheet" href="/styles.css">
+
+    <%- include('analytics') %>
+    <%- include('schema-breadcrumb', { breadcrumbItems }) %>
+
+    <script type="application/ld+json">
+<%- JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: selectedArticle.title,
+    description: selectedArticle.desc,
+    url: canonicalUrl,
+    datePublished: selectedArticle.datePublished,
+    author: {
+        '@type': 'Person',
+        name: selectedArticle.author
+    },
+    publisher: {
+        '@type': 'Organization',
+        name: 'Lovart',
+        url: 'https://lovart.info'
+    }
+}, null, 2) %>
+</script>
+</head>
+
+<body class="bg-neutral-light text-neutral-dark antialiased">
+    <%- include('header') %>
+    <%- include('breadcrumb', { breadcrumbItems }) %>
+
+    <main>
+        <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <p class="text-sm uppercase tracking-wide opacity-90 mb-3"><%= t.blog_page.featured.tag %></p>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4"><%= selectedArticle.title %></h1>
+                <p class="text-lg opacity-95 mb-6"><%= selectedArticle.desc %></p>
+                <div class="flex flex-wrap items-center gap-4 text-sm">
+                    <span><%= selectedArticle.date %></span>
+                    <span>•</span>
+                    <span><%= selectedArticle.author %></span>
+                </div>
+            </div>
+        </section>
+
+        <article class="py-14 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <img src="<%= selectedArticle.image %>" alt="<%= selectedArticle.title %>" class="w-full h-auto rounded-xl mb-8" width="1200" height="675" fetchpriority="high">
+
+                <div class="prose prose-neutral max-w-none">
+                    <p><%= selectedArticle.desc %></p>
+                    <p><%= t.blog_page.hero.desc %></p>
+                    <p><%= t.blog_page.bottom_newsletter.desc %></p>
+
+                    <h2 class="mt-10 mb-4 text-2xl font-bold text-neutral-dark"><%= t.blog_page.hero.title %></h2>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <% t.blog_page.hero.tags.slice(0, 4).forEach(function(topic) { %>
+                        <li><%= topic %></li>
+                        <% }); %>
+                    </ul>
+                </div>
+
+                <div class="mt-10 border-t border-gray-200 pt-6">
+                    <p class="text-sm text-neutral mb-3"><%= t.blog_page.latest.share %></p>
+                    <div class="flex items-center gap-4">
+                        <a href="<%= articleShareLinks.facebook %>" target="_blank" rel="noopener noreferrer" class="text-neutral hover:text-primary" aria-label="Share on Facebook">Facebook</a>
+                        <a href="<%= articleShareLinks.x %>" target="_blank" rel="noopener noreferrer" class="text-neutral hover:text-primary" aria-label="Share on X">X</a>
+                        <a href="<%= articleShareLinks.linkedin %>" target="_blank" rel="noopener noreferrer" class="text-neutral hover:text-primary" aria-label="Share on LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section class="py-14 bg-neutral-light">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-2xl font-bold text-neutral-dark mb-8"><%= t.blog_page.latest.title %></h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <% relatedPosts.forEach(function(post) { %>
+                    <article class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                        <img src="<%= post.image %>" alt="<%= post.title %>" class="w-full h-40 object-cover" width="480" height="270" loading="lazy" decoding="async">
+                        <div class="p-5">
+                            <p class="text-xs text-neutral mb-2"><%= post.date %></p>
+                            <h3 class="font-bold text-neutral-dark mb-3 line-clamp-2"><%= post.title %></h3>
+                            <a href="<%= post.url %>" class="text-primary hover:text-primary-dark font-medium text-sm"><%= t.blog_page.latest.read_more %> →</a>
+                        </div>
+                    </article>
+                    <% }); %>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-primary text-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-4"><%= t.blog_page.bottom_newsletter.title %></h2>
+                    <p class="text-lg opacity-90 mb-8"><%= t.blog_page.bottom_newsletter.desc %></p>
+                    <form class="space-y-4" data-newsletter-form>
+                        <label class="sr-only" for="article-newsletter-email"><%= t.blog_page.bottom_newsletter.placeholder %></label>
+                        <input id="article-newsletter-email" type="email" name="email" required placeholder="<%= t.blog_page.bottom_newsletter.placeholder %>" class="w-full px-4 py-3 rounded-lg text-neutral-dark" autocomplete="email">
+                        <input type="text" name="company_website" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <button type="submit" class="bg-secondary text-white px-6 py-3 rounded-lg hover:bg-secondary-dark transition-colors font-medium"><%= t.blog_page.bottom_newsletter.button %></button>
+                        <p class="text-sm opacity-80" data-newsletter-feedback aria-live="polite"></p>
+                    </form>
+                    <p class="text-sm mt-4 opacity-75"><%= t.blog_page.bottom_newsletter.privacy %></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('footer') %>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+            mobileMenu.querySelectorAll('a').forEach((menuLink) => {
+                menuLink.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            });
+        }
+
+        const currentYearSpan = document.getElementById('currentYear');
+        if (currentYearSpan) {
+            currentYearSpan.textContent = new Date().getFullYear();
+        }
+
+        document.querySelectorAll('[data-newsletter-form]').forEach((newsletterForm) => {
+            newsletterForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const feedback = newsletterForm.querySelector('[data-newsletter-feedback]');
+                const emailInput = newsletterForm.querySelector('input[type="email"]');
+                const honeypot = newsletterForm.querySelector('input[name="company_website"]');
+
+                if (!feedback || !emailInput) {
+                    return;
+                }
+
+                if (honeypot && honeypot.value.trim()) {
+                    feedback.textContent = 'Submission blocked.';
+                    feedback.className = 'text-sm text-red-200';
+                    return;
+                }
+
+                const emailValue = emailInput.value.trim();
+                if (!emailValue) {
+                    feedback.textContent = 'Please enter a valid email address.';
+                    feedback.className = 'text-sm text-red-200';
+                    return;
+                }
+
+                const subject = encodeURIComponent('Lovart Blog Newsletter Subscription');
+                const body = encodeURIComponent(`Email: ${emailValue}\nSource: ${window.location.href}\nLanguage: ${document.documentElement.lang}`);
+                window.location.href = `mailto:support@lovart.info?subject=${subject}&body=${body}`;
+
+                feedback.textContent = 'Please confirm the subscription email in your mail app.';
+                feedback.className = 'text-sm text-green-200';
+                newsletterForm.reset();
+            });
+        });
+    </script>
+</body>
+
+</html>
