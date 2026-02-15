@@ -1,0 +1,30 @@
+<%
+const supportClusterData = locals.supportCluster || {};
+const disclaimer = supportClusterData.disclaimer || {};
+const disclaimerPoints = Array.isArray(disclaimer.points) ? disclaimer.points : [];
+const verificationDate = locals.verificationDate || supportClusterData.last_verified || '2026-02-15';
+%>
+<section class="bg-amber-50 border border-amber-200 rounded-lg p-6">
+    <div class="flex flex-wrap items-center gap-3 mb-3">
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-amber-200 text-amber-900 text-xs font-semibold">
+            <%= disclaimer.badge || 'third-party information guide' %>
+        </span>
+        <span class="text-xs text-amber-900">
+            <strong><%= disclaimer.verification_label || 'Last verified' %>:</strong>
+            <%= verificationDate %>
+        </span>
+    </div>
+    <h2 class="text-xl font-bold text-amber-900 mb-2">
+        <%= disclaimer.title || 'Non-official support notice' %>
+    </h2>
+    <p class="text-amber-900 mb-4">
+        <%= disclaimer.description || 'This page is a third-party reference and is not official Lovart support.' %>
+    </p>
+    <% if (disclaimerPoints.length) { %>
+    <ul class="list-disc list-inside text-sm text-amber-900 space-y-1">
+        <% disclaimerPoints.forEach(function(point) { %>
+        <li><%= point %></li>
+        <% }); %>
+    </ul>
+    <% } %>
+</section>

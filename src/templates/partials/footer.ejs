@@ -1,6 +1,7 @@
-<footer class="bg-neutral-dark text-neutral-light py-12 section-animate">
+<footer class="bg-neutral-dark text-neutral-light py-12">
+    <% const footerSupportLinks = (t.support_cluster && Array.isArray(t.support_cluster.footer_links)) ? t.support_cluster.footer_links : []; %>
     <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 text-left">
+        <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8 text-left">
             <div>
                 <h3 class="text-xl font-semibold text-white mb-3">
                     <%= t.footer.about_title %>
@@ -86,6 +87,22 @@
                         </a></li>
                 </ul>
             </div>
+            <% if (footerSupportLinks.length) { %>
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-3">
+                    <%= (t.support_cluster && t.support_cluster.footer_title) ? t.support_cluster.footer_title : 'Support & Policy' %>
+                </h3>
+                <ul class="space-y-2">
+                    <% footerSupportLinks.forEach(function(item) { %>
+                    <li>
+                        <a href="<%= link(item.path + '.html') %>" class="text-neutral hover:text-primary transition-colors">
+                            <%= item.title %>
+                        </a>
+                    </li>
+                    <% }); %>
+                </ul>
+            </div>
+            <% } %>
             <div>
                 <h3 class="text-xl font-semibold text-white mb-3">
                     <%= t.footer.contact_title %>

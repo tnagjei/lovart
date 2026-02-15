@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<% const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.breadcrumb.pages.terms_of_service, href: canonicalUrl }]; %>
+<%
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.breadcrumb.pages.terms_of_service, href: canonicalUrl }];
+const supportCluster = t.support_cluster || {};
+const termsBridge = supportCluster.terms_bridge || {};
+%>
 <html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
@@ -60,6 +64,24 @@
                     </p>
                     <div class="mt-8 text-sm opacity-80">
                         <%= t.terms_page.hero.last_updated %>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-8 bg-white">
+                <div class="container mx-auto px-6 max-w-4xl space-y-5">
+                    <%- include('partials/official-disclaimer', { supportCluster, verificationDate: supportCluster.last_verified }) %>
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                        <h2 class="text-xl font-semibold text-blue-900 mb-2">
+                            <%= termsBridge.title || 'Official Terms of Use Link' %>
+                        </h2>
+                        <p class="text-blue-900 mb-4">
+                            <%= termsBridge.desc || 'For binding legal clauses and latest updates, refer to the official Lovart terms page.' %>
+                        </p>
+                        <a href="<%= termsBridge.url || 'https://www.lovart.ai/statement/terms-of-use' %>" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center text-primary hover:text-primary-dark font-medium">
+                            <%= termsBridge.cta || 'Open official terms' %> →
+                        </a>
                     </div>
                 </div>
             </section>
@@ -341,7 +363,7 @@
                                     </picture>
                                     <%= t.terms_page.contact.help_btn %>
                                 </a>
-                                <a href="mailto:support@lovart.info"
+                                <a href="mailto:support@lovart.ai"
                                     class="bg-secondary text-white px-6 py-3 rounded-md hover:bg-secondary-dark transition-colors">
                                     <%= t.terms_page.contact.contact_btn %>
                                 </a>

@@ -187,7 +187,7 @@
         "terms": "Terms of Service",
         "privacy": "Privacy Policy",
         "contact_column": {
-            "email": "Email: support@lovart.info",
+            "email": "Email: support@lovart.ai",
             "phone": "Phone: +1 (555) LOV-ART0 (568-2780)",
             "address": "123 Design Street, Creativity City, USA"
         }
@@ -893,6 +893,371 @@
             },
             "desc": "AI-powered design platform for creative professionals.",
             "rights": "Lovart.info. All rights reserved."
+        }
+    },
+    "support_cluster": {
+        "last_verified": "2026-02-15",
+        "disclaimer": {
+            "badge": "third-party information guide",
+            "verification_label": "Last verified",
+            "title": "Non-official notice",
+            "description": "This site is a third-party support navigation page and is not official Lovart support.",
+            "points": [
+                "No affiliation with Lovart official support operations.",
+                "We provide routing guidance only and do not process tickets on your behalf.",
+                "For final rules and actions, always use official Lovart pages."
+            ]
+        },
+        "official_outlet_title": "Official Lovart channels",
+        "official_intro": "Use the links below to continue directly on official Lovart endpoints.",
+        "open_official_cta": "Open official link",
+        "faq_title": "FAQ (routing only)",
+        "related_title": "Related support guides",
+        "related_desc": "Each page focuses on a single intent to avoid overlap.",
+        "help_section_title": "Support & Policy Navigation",
+        "help_section_desc": "Choose the intent page first, then continue to official Lovart channels.",
+        "footer_title": "Support & Policy",
+        "help_links": [
+            {
+                "path": "lovart-customer-support",
+                "title": "Lovart Customer Support",
+                "desc": "General support entrance for login, access and issue routing."
+            },
+            {
+                "path": "lovart-support-contact",
+                "title": "Lovart Support Contact",
+                "desc": "Official contact channels including email and Discord."
+            },
+            {
+                "path": "lovart-refund-guide",
+                "title": "Lovart Refund Guide",
+                "desc": "Refund and billing process routing with official exits."
+            },
+            {
+                "path": "lovart-account-deletion-guide",
+                "title": "Lovart Account Deletion Guide",
+                "desc": "Account deletion and account-security request routing."
+            },
+            {
+                "path": "lovart-privacy-policy-guide",
+                "title": "Lovart Privacy Policy Guide",
+                "desc": "Privacy summary and official policy jump."
+            },
+            {
+                "path": "lovart-terms-of-use-guide",
+                "title": "Lovart Terms of Use Guide",
+                "desc": "Terms summary and official legal text jump."
+            }
+        ],
+        "footer_links": [
+            {
+                "path": "lovart-customer-support",
+                "title": "Customer Support"
+            },
+            {
+                "path": "lovart-support-contact",
+                "title": "Support Contact"
+            },
+            {
+                "path": "lovart-refund-guide",
+                "title": "Refund Guide"
+            },
+            {
+                "path": "lovart-account-deletion-guide",
+                "title": "Account Deletion"
+            },
+            {
+                "path": "lovart-privacy-policy-guide",
+                "title": "Privacy Policy Guide"
+            },
+            {
+                "path": "lovart-terms-of-use-guide",
+                "title": "Terms of Use Guide"
+            }
+        ],
+        "privacy_bridge": {
+            "title": "Official Privacy Policy",
+            "desc": "This page is a third-party summary. For binding and latest policy text, open the official Lovart privacy page.",
+            "cta": "Open official privacy policy",
+            "url": "https://www.lovart.ai/statement/privacy-policy"
+        },
+        "terms_bridge": {
+            "title": "Official Terms of Use",
+            "desc": "This page is a third-party summary. For binding and latest legal clauses, open the official Lovart terms page.",
+            "cta": "Open official terms of use",
+            "url": "https://www.lovart.ai/statement/terms-of-use"
+        },
+        "pages": {
+            "customer_support": {
+                "path": "lovart-customer-support",
+                "breadcrumb": "Lovart Customer Support",
+                "seo": {
+                    "title": "Lovart Customer Support Guide | Third-Party Official Routing",
+                    "description": "Third-party Lovart support guide for login issues, account access and common troubleshooting. Jump to official Lovart support channels directly.",
+                    "keywords": "lovart customer support, lovart login help, lovart support guide"
+                },
+                "hero": {
+                    "title": "Lovart Customer Support Guide",
+                    "desc": "Use this third-party routing page to find the right official Lovart support channel."
+                },
+                "official_intro": "Start with the official home and support channels below.",
+                "official_links": [
+                    {
+                        "label": "Lovart Official Website",
+                        "desc": "Primary official portal for account access and product status.",
+                        "url": "https://www.lovart.ai/",
+                        "cta": "Open lovart.ai"
+                    },
+                    {
+                        "label": "Official Support Email",
+                        "desc": "Use the official mailbox for support and account requests.",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "Email support@lovart.ai"
+                    },
+                    {
+                        "label": "Official Discord Community",
+                        "desc": "Get product updates and community troubleshooting in the official server.",
+                        "url": "https://discord.gg/lovart",
+                        "cta": "Join official Discord"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "Can this page solve my ticket directly?",
+                        "a": "No. This page is a third-party navigation page. It only routes you to official Lovart channels."
+                    },
+                    {
+                        "q": "I cannot log in to Lovart. What should I do first?",
+                        "a": "Check the official site login and then contact support@lovart.ai if the issue persists."
+                    },
+                    {
+                        "q": "Where can I find official announcements?",
+                        "a": "Use the official website and official Discord channels listed above."
+                    }
+                ]
+            },
+            "support_contact": {
+                "path": "lovart-support-contact",
+                "breadcrumb": "Lovart Support Contact",
+                "seo": {
+                    "title": "Lovart Support Contact | Official Email & Discord Routing",
+                    "description": "Find official Lovart support contact channels, including support@lovart.ai and the official Discord server.",
+                    "keywords": "support@lovart.ai, lovart support contact, lovart official email"
+                },
+                "hero": {
+                    "title": "Lovart Support Contact Routing",
+                    "desc": "Quickly jump to official Lovart contact channels for support and account issues."
+                },
+                "official_intro": "Use these official contact points only.",
+                "official_links": [
+                    {
+                        "label": "Official Support Email",
+                        "desc": "Primary official contact channel for account and support requests.",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "Send email"
+                    },
+                    {
+                        "label": "Official Discord",
+                        "desc": "Community support and announcements in the official server.",
+                        "url": "https://discord.gg/lovart",
+                        "cta": "Open Discord"
+                    },
+                    {
+                        "label": "Official Site Contact Entry",
+                        "desc": "Navigate from the official website for latest contact options.",
+                        "url": "https://www.lovart.ai/",
+                        "cta": "Open official website"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "Is support@lovart.ai an official mailbox?",
+                        "a": "Yes, use support@lovart.ai directly for official email communication."
+                    },
+                    {
+                        "q": "Can I submit payment issues via Discord?",
+                        "a": "Use Discord for community guidance first, then follow official staff instructions to the right channel."
+                    },
+                    {
+                        "q": "Do you provide phone support here?",
+                        "a": "No. This page only routes to official Lovart channels and does not provide direct support."
+                    }
+                ]
+            },
+            "refund_guide": {
+                "path": "lovart-refund-guide",
+                "breadcrumb": "Lovart Refund Guide",
+                "seo": {
+                    "title": "Lovart Refund Guide | Official Billing & Refund Routing",
+                    "description": "Third-party Lovart refund and billing guide. Understand how to reach official Lovart channels for refunds and subscription issues.",
+                    "keywords": "lovart refund, lovart billing, lovart subscription cancel"
+                },
+                "hero": {
+                    "title": "Lovart Refund & Billing Guide",
+                    "desc": "Understand refund and billing paths, then continue through official Lovart channels."
+                },
+                "official_intro": "For final billing outcomes, use official Lovart pages only.",
+                "official_links": [
+                    {
+                        "label": "Official Pricing & Billing Entry",
+                        "desc": "Start from official pricing and billing references.",
+                        "url": "https://www.lovart.ai/pricing",
+                        "cta": "Open official pricing"
+                    },
+                    {
+                        "label": "Official Support Email",
+                        "desc": "Use the official mailbox for refund and payment disputes.",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "Email billing support"
+                    },
+                    {
+                        "label": "Official Website",
+                        "desc": "Use the official site for account verification before requesting refund support.",
+                        "url": "https://www.lovart.ai/",
+                        "cta": "Open official website"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "Can this page approve my refund?",
+                        "a": "No. Refund approval is handled only by official Lovart support."
+                    },
+                    {
+                        "q": "What should I include in a refund request?",
+                        "a": "Include account email, order detail and payment timestamp when contacting support@lovart.ai."
+                    },
+                    {
+                        "q": "Where can I check subscription plans first?",
+                        "a": "Review official pricing details from lovart.ai before submitting a billing request."
+                    }
+                ]
+            },
+            "account_deletion_guide": {
+                "path": "lovart-account-deletion-guide",
+                "breadcrumb": "Lovart Account Deletion Guide",
+                "seo": {
+                    "title": "Lovart Account Deletion Guide | Official Deletion Request Routing",
+                    "description": "Third-party Lovart account deletion guide. Route your account deletion request to official Lovart channels safely.",
+                    "keywords": "lovart delete account, lovart account deletion, lovart注销"
+                },
+                "hero": {
+                    "title": "Lovart Account Deletion Guide",
+                    "desc": "Use this page to route account deletion requests to official Lovart channels."
+                },
+                "official_intro": "Account deletion decisions are processed only by official Lovart support.",
+                "official_links": [
+                    {
+                        "label": "Official Support Email",
+                        "desc": "Submit account deletion requests through official support.",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "Request account deletion"
+                    },
+                    {
+                        "label": "Official Privacy Policy",
+                        "desc": "Review official policy terms related to account data and deletion.",
+                        "url": "https://www.lovart.ai/statement/privacy-policy",
+                        "cta": "Open privacy policy"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "Can this page delete my account directly?",
+                        "a": "No. This page cannot execute account actions. Use the official contact channels."
+                    },
+                    {
+                        "q": "How can I prove account ownership?",
+                        "a": "Provide matching account email and relevant account details to official support."
+                    },
+                    {
+                        "q": "Is deletion immediate?",
+                        "a": "Processing time and retention rules are determined by official Lovart policies."
+                    }
+                ]
+            },
+            "privacy_policy_guide": {
+                "path": "lovart-privacy-policy-guide",
+                "breadcrumb": "Lovart Privacy Policy Guide",
+                "seo": {
+                    "title": "Lovart Privacy Policy Guide | Third-Party Summary + Official Link",
+                    "description": "Third-party Lovart privacy policy guide with official policy jump. Read summary points and continue to official text.",
+                    "keywords": "lovart privacy policy, lovart data privacy, lovart official privacy"
+                },
+                "hero": {
+                    "title": "Lovart Privacy Policy Guide",
+                    "desc": "Summary and routing only. For legal effect, always read the official Lovart privacy policy."
+                },
+                "official_intro": "For binding policy details, open official Lovart documentation.",
+                "official_links": [
+                    {
+                        "label": "Official Privacy Policy",
+                        "desc": "Latest official policy text and compliance updates.",
+                        "url": "https://www.lovart.ai/statement/privacy-policy",
+                        "cta": "Open official privacy page"
+                    },
+                    {
+                        "label": "Official Support Email",
+                        "desc": "Use official support for privacy-related data requests.",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "Contact official support"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "Is this page the official privacy policy?",
+                        "a": "No. This is a third-party summary page. Use the official privacy page for legal text."
+                    },
+                    {
+                        "q": "Where should I send privacy requests?",
+                        "a": "Route requests via official support channels listed on this page."
+                    },
+                    {
+                        "q": "How often is this summary updated?",
+                        "a": "The verification date is shown, but final authority is always the official policy text."
+                    }
+                ]
+            },
+            "terms_of_use_guide": {
+                "path": "lovart-terms-of-use-guide",
+                "breadcrumb": "Lovart Terms of Use Guide",
+                "seo": {
+                    "title": "Lovart Terms of Use Guide | Third-Party Summary + Official Link",
+                    "description": "Third-party Lovart terms guide with routing to official terms of use.",
+                    "keywords": "lovart terms of use, lovart terms, lovart user agreement"
+                },
+                "hero": {
+                    "title": "Lovart Terms of Use Guide",
+                    "desc": "Intent guide only. For binding clauses, review official Lovart terms."
+                },
+                "official_intro": "Open official terms for legal wording and latest updates.",
+                "official_links": [
+                    {
+                        "label": "Official Terms of Use",
+                        "desc": "Binding legal terms and latest revisions from Lovart.",
+                        "url": "https://www.lovart.ai/statement/terms-of-use",
+                        "cta": "Open official terms"
+                    },
+                    {
+                        "label": "Official Support Email",
+                        "desc": "Use official support if you need clarification for account-related terms.",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "Contact official support"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "Does this page replace official terms?",
+                        "a": "No. This page is a third-party routing summary, not a legal replacement."
+                    },
+                    {
+                        "q": "Can I rely on this page for legal decisions?",
+                        "a": "Always use the official terms page for final legal interpretation."
+                    },
+                    {
+                        "q": "What if terms conflict with this summary?",
+                        "a": "Official Lovart terms always take precedence."
+                    }
+                ]
+            }
         }
     },
     "help_page": {

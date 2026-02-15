@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<% const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.breadcrumb.pages.privacy_policy, href: canonicalUrl }]; %>
+<%
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.breadcrumb.pages.privacy_policy, href: canonicalUrl }];
+const supportCluster = t.support_cluster || {};
+const privacyBridge = supportCluster.privacy_bridge || {};
+%>
 <html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
@@ -60,6 +64,24 @@
                     </p>
                     <div class="mt-8 text-sm opacity-80">
                         <%= t.privacy_page.hero.last_updated %>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-8 bg-white">
+                <div class="container mx-auto px-6 max-w-4xl space-y-5">
+                    <%- include('partials/official-disclaimer', { supportCluster, verificationDate: supportCluster.last_verified }) %>
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                        <h2 class="text-xl font-semibold text-blue-900 mb-2">
+                            <%= privacyBridge.title || 'Official Privacy Policy Link' %>
+                        </h2>
+                        <p class="text-blue-900 mb-4">
+                            <%= privacyBridge.desc || 'For the binding and latest legal text, use the official Lovart policy page.' %>
+                        </p>
+                        <a href="<%= privacyBridge.url || 'https://www.lovart.ai/statement/privacy-policy' %>" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center text-primary hover:text-primary-dark font-medium">
+                            <%= privacyBridge.cta || 'Open official policy' %> →
+                        </a>
                     </div>
                 </div>
             </section>

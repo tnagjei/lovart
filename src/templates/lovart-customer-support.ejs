@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<%
+const supportCluster = t.support_cluster || {};
+const pages = supportCluster.pages || {};
+const currentSupportPageKey = typeof supportPageKey === 'string' ? supportPageKey : 'customer_support';
+const pageData = pages[currentSupportPageKey] || {};
+const pageSeo = pageData.seo || {};
+const heroData = pageData.hero || {};
+const officialLinks = Array.isArray(pageData.official_links) ? pageData.official_links : [];
+const faqItems = Array.isArray(pageData.faq) ? pageData.faq : [];
+const helpLinks = Array.isArray(supportCluster.help_links) ? supportCluster.help_links : [];
+const verificationDate = supportCluster.last_verified || '2026-02-15';
+const currentPath = pageData.path || 'lovart-customer-support';
+const relatedLinks = helpLinks.filter((item) => item && item.path && item.path !== currentPath);
+const breadcrumbItems = [
+    { name: t.nav.home, href: link('/') },
+    { name: t.nav.help, href: link('help.html') },
+    { name: pageData.breadcrumb || heroData.title || t.nav.help, href: canonicalUrl }
+];
+%>
+<html lang="<%= lang %>" class="scroll-smooth">
+
+<head>
+    <%- include('partials/head') %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageSeo.title || 'Lovart Support Guide' %></title>
+    <meta name="description" content="<%= pageSeo.description || '' %>">
+    <meta name="keywords" content="<%= pageSeo.keywords || '' %>">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <%- include('partials/hreflang') %>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <%- include('partials/analytics') %>
+    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+</head>
+
+<body class="bg-neutral-light text-neutral-dark antialiased">
+    <%- include('partials/header') %>
+    <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+
+    <main class="min-h-screen">
+        <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-5"><%= heroData.title || 'Lovart Support' %></h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-6"><%= heroData.desc || '' %></p>
+                <p class="text-sm opacity-90">
+                    <strong><%= (supportCluster.disclaimer && supportCluster.disclaimer.verification_label) || 'Last verified' %>:</strong>
+                    <%= verificationDate %>
+                </p>
+            </div>
+        </section>
+
+        <section class="py-8 bg-white">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <%- include('partials/official-disclaimer', { supportCluster, verificationDate }) %>
+            </div>
+        </section>
+
+        <section class="py-14 bg-neutral-light">
+            <div class="container mx-auto px-6">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-3">
+                        <%= supportCluster.official_outlet_title || 'Official channels' %>
+                    </h2>
+                    <p class="text-neutral mb-8">
+                        <%= pageData.official_intro || supportCluster.official_intro || '' %>
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <% officialLinks.forEach(function(item) { %>
+                        <article class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                            <h3 class="text-lg font-semibold text-neutral-dark mb-2"><%= item.label %></h3>
+                            <p class="text-sm text-neutral mb-4"><%= item.desc %></p>
+                            <a href="<%= item.url %>" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary hover:text-primary-dark font-medium">
+                                <%= item.cta || (supportCluster.open_official_cta || 'Open official link') %> →
+                            </a>
+                        </article>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-14 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-8">
+                        <%= supportCluster.faq_title || 'FAQ (routing only)' %>
+                    </h2>
+                    <div class="space-y-4">
+                        <% faqItems.forEach(function(item) { %>
+                        <details class="bg-neutral-light border border-gray-200 rounded-lg p-5">
+                            <summary class="font-semibold text-neutral-dark cursor-pointer"><%= item.q %></summary>
+                            <p class="text-neutral mt-3"><%= item.a %></p>
+                        </details>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-14 bg-neutral-light">
+            <div class="container mx-auto px-6">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-3">
+                        <%= supportCluster.related_title || 'Related support guides' %>
+                    </h2>
+                    <p class="text-neutral mb-8"><%= supportCluster.related_desc || '' %></p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <% relatedLinks.forEach(function(item) { %>
+                        <a href="<%= link(item.path + '.html') %>" class="bg-white border border-gray-200 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all">
+                            <h3 class="font-semibold text-neutral-dark mb-1"><%= item.title %></h3>
+                            <p class="text-sm text-neutral"><%= item.desc %></p>
+                        </a>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            mobileMenu.querySelectorAll('a').forEach((menuLink) => {
+                menuLink.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        const currentYearSpan = document.getElementById('currentYear');
+        if (currentYearSpan) {
+            currentYearSpan.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+
+</html>

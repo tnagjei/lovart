@@ -2,6 +2,8 @@
 <%
 const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.help, href: canonicalUrl }];
 const helpPage = t.help_page || {};
+const supportCluster = t.support_cluster || {};
+const supportHelpLinks = Array.isArray(supportCluster.help_links) ? supportCluster.help_links : [];
 const quickHelpItems = (helpPage.quick_help && helpPage.quick_help.items) ? helpPage.quick_help.items : [];
 const gettingStartedSteps = (helpPage.getting_started && helpPage.getting_started.steps) ? helpPage.getting_started.steps : [];
 const faqItems = (helpPage.faq && helpPage.faq.items) ? helpPage.faq.items : [];
@@ -70,6 +72,7 @@ const videoImageSet = [
                     .search-box:focus-within {
                         transform: scale(1.01);
                     }
+
                 </style>
                 <%- include('partials/schema-organization') %>
                     <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
@@ -147,6 +150,29 @@ const videoImageSet = [
                         </div>
                     </div>
                 </section>
+
+                <% if (supportHelpLinks.length) { %>
+                <section class="py-14 bg-neutral-light border-t border-b border-gray-200">
+                    <div class="container mx-auto px-6">
+                        <div class="max-w-6xl mx-auto">
+                            <h2 class="text-2xl font-bold text-neutral-dark mb-3 text-center">
+                                <%= supportCluster.help_section_title || 'Support & Policy Navigation' %>
+                            </h2>
+                            <p class="text-neutral text-center mb-8">
+                                <%= supportCluster.help_section_desc || 'Use these routing guides to reach official Lovart channels quickly.' %>
+                            </p>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                                <% supportHelpLinks.forEach(function(item) { %>
+                                <a href="<%= link(item.path + '.html') %>" class="bg-white p-5 rounded-lg border border-gray-200 hover:border-primary hover:shadow-md transition-all">
+                                    <h3 class="text-lg font-semibold text-neutral-dark mb-1"><%= item.title %></h3>
+                                    <p class="text-sm text-neutral"><%= item.desc %></p>
+                                </a>
+                                <% }); %>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <% } %>
 
                 <section class="py-16 bg-neutral-light">
                     <div class="container mx-auto px-6">
@@ -318,7 +344,7 @@ const videoImageSet = [
                                     <p class="text-sm opacity-80 mb-4">
                                         <%= helpPage.contact.email.desc %>
                                     </p>
-                                    <a href="mailto:support@lovart.info"
+                                    <a href="mailto:support@lovart.ai"
                                         class="bg-white text-primary px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors inline-block font-medium">
                                         <%= helpPage.contact.email.button %>
                                     </a>

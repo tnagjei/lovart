@@ -187,7 +187,7 @@
         "terms": "Terms of Service",
         "privacy": "Privacy Policy",
         "contact_column": {
-            "email": "Email: support@lovart.info",
+            "email": "Email: support@lovart.ai",
             "phone": "Phone: +1 (555) LOV-ART0 (568-2780)",
             "address": "123 Design Street, Creativity City, USA"
         }
@@ -893,6 +893,27 @@
             },
             "desc": "クリエイティブプロフェッショナルのためのAIデザインプラットフォーム。",
             "rights": "Lovart.info. 無断複写・転載を禁じます。"
+        }
+    },
+    "support_cluster": {
+        "disclaimer": {
+            "badge": "third-party ガイド",
+            "verification_label": "最終確認日",
+            "title": "非公式のお知らせ",
+            "description": "このページは third-party 情報ガイドであり、Lovart 公式（official）サポートではありません。"
+        },
+        "help_section_title": "サポート・ポリシーナビゲーション",
+        "help_section_desc": "意図別ガイドを選択し、公式 Lovart チャネルへ進んでください。",
+        "footer_title": "サポート・ポリシー",
+        "privacy_bridge": {
+            "title": "公式プライバシーポリシー",
+            "desc": "このページは third-party 要約です。法的効力は公式ポリシー本文を参照してください。",
+            "cta": "公式ポリシーを開く"
+        },
+        "terms_bridge": {
+            "title": "公式利用規約",
+            "desc": "このページは third-party 要約です。法的効力は公式規約本文を参照してください。",
+            "cta": "公式規約を開く"
         }
     },
     "help_page": {

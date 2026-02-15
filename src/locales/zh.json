@@ -187,7 +187,7 @@
         "terms": "Terms of Service",
         "privacy": "Privacy Policy",
         "contact_column": {
-            "email": "Email: support@lovart.info",
+            "email": "Email: support@lovart.ai",
             "phone": "Phone: +1 (555) LOV-ART0 (568-2780)",
             "address": "123 Design Street, Creativity City, USA"
         }
@@ -893,6 +893,371 @@
             },
             "desc": "为创意专业人士打造的 AI 设计平台。",
             "rights": "Lovart.info. 版权所有."
+        }
+    },
+    "support_cluster": {
+        "last_verified": "2026-02-15",
+        "disclaimer": {
+            "badge": "third-party 信息导航",
+            "verification_label": "最后核验",
+            "title": "非官方说明",
+            "description": "本页为第三方（third-party）信息导航页，并非 Lovart 官方（official）客服。",
+            "points": [
+                "本页不代替官方客服，不与官方客服工单系统直连。",
+                "我们只提供路径分流与说明，不承诺代办处理。",
+                "最终规则、结果与时效以 Lovart 官方页面为准。"
+            ]
+        },
+        "official_outlet_title": "官方渠道入口",
+        "official_intro": "以下链接均指向官方 Lovart 渠道，请优先使用官方入口处理问题。",
+        "open_official_cta": "打开官方链接",
+        "faq_title": "常见问题（仅分流说明）",
+        "related_title": "相关客服与政策导航",
+        "related_desc": "每个页面仅对应一个意图，避免内容重叠。",
+        "help_section_title": "客服与政策导航",
+        "help_section_desc": "先选择意图页面，再跳转到官方渠道完成处理。",
+        "footer_title": "客服与政策",
+        "help_links": [
+            {
+                "path": "lovart-customer-support",
+                "title": "Lovart 客服总入口",
+                "desc": "登录、访问异常与常见问题分流入口。"
+            },
+            {
+                "path": "lovart-support-contact",
+                "title": "Lovart 联系客服",
+                "desc": "官方邮箱与 Discord 渠道导航。"
+            },
+            {
+                "path": "lovart-refund-guide",
+                "title": "Lovart 退款指南",
+                "desc": "退款与订阅支付问题分流。"
+            },
+            {
+                "path": "lovart-account-deletion-guide",
+                "title": "Lovart 删号指南",
+                "desc": "账号删除与账号安全请求分流。"
+            },
+            {
+                "path": "lovart-privacy-policy-guide",
+                "title": "Lovart 隐私政策解读",
+                "desc": "隐私政策摘要与官方跳转。"
+            },
+            {
+                "path": "lovart-terms-of-use-guide",
+                "title": "Lovart 使用条款解读",
+                "desc": "条款摘要与官方法务文本跳转。"
+            }
+        ],
+        "footer_links": [
+            {
+                "path": "lovart-customer-support",
+                "title": "客服总入口"
+            },
+            {
+                "path": "lovart-support-contact",
+                "title": "联系官方客服"
+            },
+            {
+                "path": "lovart-refund-guide",
+                "title": "退款指南"
+            },
+            {
+                "path": "lovart-account-deletion-guide",
+                "title": "删号指南"
+            },
+            {
+                "path": "lovart-privacy-policy-guide",
+                "title": "隐私政策解读"
+            },
+            {
+                "path": "lovart-terms-of-use-guide",
+                "title": "使用条款解读"
+            }
+        ],
+        "privacy_bridge": {
+            "title": "官方隐私政策入口",
+            "desc": "本页为第三方摘要说明。具有法律效力的最新文本请以 Lovart 官方隐私政策为准。",
+            "cta": "查看官方隐私政策",
+            "url": "https://www.lovart.ai/statement/privacy-policy"
+        },
+        "terms_bridge": {
+            "title": "官方使用条款入口",
+            "desc": "本页为第三方摘要说明。具有法律效力的最新文本请以 Lovart 官方使用条款为准。",
+            "cta": "查看官方使用条款",
+            "url": "https://www.lovart.ai/statement/terms-of-use"
+        },
+        "pages": {
+            "customer_support": {
+                "path": "lovart-customer-support",
+                "breadcrumb": "Lovart 客服总入口",
+                "seo": {
+                    "title": "Lovart 客服总入口指南（第三方）",
+                    "description": "第三方 Lovart 客服导航页，覆盖登录异常、账号访问与问题分流，并提供官方渠道跳转。",
+                    "keywords": "lovart 客服, lovart login, lovart 官网入口"
+                },
+                "hero": {
+                    "title": "Lovart 客服总入口指南",
+                    "desc": "先确认问题类型，再跳转到官方渠道处理。"
+                },
+                "official_intro": "以下为官方 Lovart 渠道入口。",
+                "official_links": [
+                    {
+                        "label": "Lovart 官方网站",
+                        "desc": "官方入口，用于登录与账号状态确认。",
+                        "url": "https://www.lovart.ai/",
+                        "cta": "打开 lovart.ai"
+                    },
+                    {
+                        "label": "官方客服邮箱",
+                        "desc": "用于账号、登录、支付等客服请求。",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "发送邮件至 support@lovart.ai"
+                    },
+                    {
+                        "label": "官方 Discord 社区",
+                        "desc": "查看官方公告与社区问题讨论。",
+                        "url": "https://discord.gg/lovart",
+                        "cta": "加入官方 Discord"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "你们能直接处理我的工单吗？",
+                        "a": "不能。本页只做分流说明，实际处理需通过官方渠道完成。"
+                    },
+                    {
+                        "q": "登录不上 Lovart 应该先做什么？",
+                        "a": "先检查官网登录状态，再联系 support@lovart.ai。"
+                    },
+                    {
+                        "q": "哪里查看官方最新公告？",
+                        "a": "请使用上方官方站点与官方 Discord。"
+                    }
+                ]
+            },
+            "support_contact": {
+                "path": "lovart-support-contact",
+                "breadcrumb": "Lovart 联系客服",
+                "seo": {
+                    "title": "Lovart 官方客服联系方式（第三方导航）",
+                    "description": "汇总 Lovart 官方客服邮箱 support@lovart.ai 与 Discord 渠道，帮助快速触达官方支持。",
+                    "keywords": "support@lovart.ai, lovart 客服邮箱, lovart 联系方式"
+                },
+                "hero": {
+                    "title": "Lovart 联系客服导航",
+                    "desc": "快速跳转至官方邮箱与官方社区支持渠道。"
+                },
+                "official_intro": "请优先使用以下官方联系渠道。",
+                "official_links": [
+                    {
+                        "label": "官方客服邮箱",
+                        "desc": "处理账号、支付、订阅、访问异常等问题。",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "发送邮件"
+                    },
+                    {
+                        "label": "官方 Discord",
+                        "desc": "社区交流与官方动态同步。",
+                        "url": "https://discord.gg/lovart",
+                        "cta": "进入 Discord"
+                    },
+                    {
+                        "label": "官方网站入口",
+                        "desc": "通过官网进入最新官方联系路径。",
+                        "url": "https://www.lovart.ai/",
+                        "cta": "打开官网"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "support@lovart.ai 是官方邮箱吗？",
+                        "a": "是，建议直接通过该邮箱发起官方客服请求。"
+                    },
+                    {
+                        "q": "Discord 能处理退款吗？",
+                        "a": "可先获取指引，最终请按官方客服要求走正式处理流程。"
+                    },
+                    {
+                        "q": "你们提供电话客服吗？",
+                        "a": "不提供。本页仅做官方渠道导航。"
+                    }
+                ]
+            },
+            "refund_guide": {
+                "path": "lovart-refund-guide",
+                "breadcrumb": "Lovart 退款指南",
+                "seo": {
+                    "title": "Lovart 退款与支付问题指南（第三方）",
+                    "description": "退款、订阅与支付问题的第三方分流说明，并提供官方处理入口。",
+                    "keywords": "lovart 退款, lovart 订阅, lovart 支付"
+                },
+                "hero": {
+                    "title": "Lovart 退款与支付指南",
+                    "desc": "本页只做流程分流，最终结果以官方处理为准。"
+                },
+                "official_intro": "退款与支付争议请通过官方渠道提交。",
+                "official_links": [
+                    {
+                        "label": "官方定价页面",
+                        "desc": "先核对官方订阅与计费信息。",
+                        "url": "https://www.lovart.ai/pricing",
+                        "cta": "查看官方定价"
+                    },
+                    {
+                        "label": "官方客服邮箱",
+                        "desc": "提交退款与账单核查请求。",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "发送退款请求"
+                    },
+                    {
+                        "label": "官方网站",
+                        "desc": "账号核验与订单信息确认入口。",
+                        "url": "https://www.lovart.ai/",
+                        "cta": "打开官网"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "你们可以直接给我退款吗？",
+                        "a": "不可以。退款审批只能由官方团队处理。"
+                    },
+                    {
+                        "q": "提交退款时要准备什么？",
+                        "a": "建议提供账号邮箱、订单信息和支付时间。"
+                    },
+                    {
+                        "q": "先看哪里确认套餐信息？",
+                        "a": "先查看官方定价页，再联系官方客服。"
+                    }
+                ]
+            },
+            "account_deletion_guide": {
+                "path": "lovart-account-deletion-guide",
+                "breadcrumb": "Lovart 删号指南",
+                "seo": {
+                    "title": "Lovart 删号指南（第三方）",
+                    "description": "账号删除请求分流页面，帮助你通过官方渠道完成删除申请。",
+                    "keywords": "lovart 删除账号, lovart 注销"
+                },
+                "hero": {
+                    "title": "Lovart 账号删除指南",
+                    "desc": "账号删除需通过官方审核与处理。"
+                },
+                "official_intro": "账号删除相关操作仅能通过官方渠道执行。",
+                "official_links": [
+                    {
+                        "label": "官方客服邮箱",
+                        "desc": "提交账号删除与数据处理请求。",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "申请删除账号"
+                    },
+                    {
+                        "label": "官方隐私政策",
+                        "desc": "查看官方关于数据与删除请求的说明。",
+                        "url": "https://www.lovart.ai/statement/privacy-policy",
+                        "cta": "查看官方隐私政策"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "本页可以直接删号吗？",
+                        "a": "不可以。本页不执行账号操作，只提供官方分流。"
+                    },
+                    {
+                        "q": "如何证明账号归属？",
+                        "a": "建议提交账号邮箱及必要的账号验证信息给官方。"
+                    },
+                    {
+                        "q": "删号多久完成？",
+                        "a": "处理时效与规则以官方回复和政策为准。"
+                    }
+                ]
+            },
+            "privacy_policy_guide": {
+                "path": "lovart-privacy-policy-guide",
+                "breadcrumb": "Lovart 隐私政策解读",
+                "seo": {
+                    "title": "Lovart 隐私政策解读（第三方摘要）",
+                    "description": "第三方隐私政策摘要与官方跳转入口，便于快速定位正式政策页面。",
+                    "keywords": "lovart 隐私政策, lovart 数据隐私"
+                },
+                "hero": {
+                    "title": "Lovart 隐私政策解读",
+                    "desc": "本页仅为第三方摘要，法律文本请以官方为准。"
+                },
+                "official_intro": "正式隐私条款请直接查看官方页面。",
+                "official_links": [
+                    {
+                        "label": "官方隐私政策",
+                        "desc": "官方最新隐私条款与更新记录。",
+                        "url": "https://www.lovart.ai/statement/privacy-policy",
+                        "cta": "打开官方隐私政策"
+                    },
+                    {
+                        "label": "官方客服邮箱",
+                        "desc": "隐私与数据请求请通过官方邮箱提交。",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "联系官方客服"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "这是官方隐私政策吗？",
+                        "a": "不是。本页是第三方摘要页，正式文本请看官方页面。"
+                    },
+                    {
+                        "q": "隐私请求该提交到哪里？",
+                        "a": "请通过官方客服邮箱或官网渠道提交。"
+                    },
+                    {
+                        "q": "摘要与官方冲突时以哪个为准？",
+                        "a": "一律以官方隐私政策为准。"
+                    }
+                ]
+            },
+            "terms_of_use_guide": {
+                "path": "lovart-terms-of-use-guide",
+                "breadcrumb": "Lovart 使用条款解读",
+                "seo": {
+                    "title": "Lovart 使用条款解读（第三方摘要）",
+                    "description": "第三方条款摘要页，提供官方条款入口与分流说明。",
+                    "keywords": "lovart 使用条款, lovart terms"
+                },
+                "hero": {
+                    "title": "Lovart 使用条款解读",
+                    "desc": "本页仅为意图分流，法律效力以官方条款为准。"
+                },
+                "official_intro": "条款与法律解释请以官方页面为准。",
+                "official_links": [
+                    {
+                        "label": "官方使用条款",
+                        "desc": "官方法律条款与历史更新。",
+                        "url": "https://www.lovart.ai/statement/terms-of-use",
+                        "cta": "打开官方条款"
+                    },
+                    {
+                        "label": "官方客服邮箱",
+                        "desc": "若需条款相关说明，请联系官方客服。",
+                        "url": "mailto:support@lovart.ai",
+                        "cta": "联系官方客服"
+                    }
+                ],
+                "faq": [
+                    {
+                        "q": "本页能替代官方条款吗？",
+                        "a": "不能。本页仅做第三方摘要与跳转。"
+                    },
+                    {
+                        "q": "我要按哪个版本执行？",
+                        "a": "请始终按官方条款页面中的最新版本执行。"
+                    },
+                    {
+                        "q": "本页与官方条款不一致怎么办？",
+                        "a": "以官方条款原文为唯一依据。"
+                    }
+                ]
+            }
         }
     },
     "help_page": {
