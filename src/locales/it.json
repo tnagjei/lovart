@@ -1,0 +1,212 @@
+{
+    "nav": {
+        "home": "Home",
+        "features": "Funzionalita",
+        "pricing": "Prezzi",
+        "blog": "Blog",
+        "help": "Supporto",
+        "about": "Chi siamo",
+        "get_started": "Inizia",
+        "free": "Prova gratuita",
+        "api": "API",
+        "ai_code": "Codice IA"
+    },
+    "footer": {
+        "products_title": "Prodotti",
+        "company_title": "Azienda",
+        "contact_title": "Contatto Lovart",
+        "partner_site": "Sito partner",
+        "terms": "Termini di servizio",
+        "privacy": "Informativa sulla privacy",
+        "contact_column": {
+            "email": "Email: support@lovart.ai"
+        }
+    },
+    "pricing_page": {
+        "seo": {
+            "title": "Piani e Prezzi Lovart AI | Soluzioni di Design Convenienti",
+            "description": "Confronta i piani di prezzo di Lovart AI per creator, team e aziende. Scegli l'opzione adatta al tuo flusso di lavoro.",
+            "keywords": "prezzi lovart ai, piani lovart, costo lovart, abbonamento lovart"
+        }
+    },
+    "lovart_api_page": {
+        "seo": {
+            "title": "Documentazione API Lovart | Integrazione API e SDK di Design IA",
+            "description": "Documentazione della API di design Lovart AI. Integra funzionalita di design IA nelle tue applicazioni tramite API REST e SDK.",
+            "keywords": "API Lovart, API design IA, SDK design, documentazione API Lovart"
+        }
+    },
+    "support_cluster": {
+        "last_verified": "2026-02-15",
+        "disclaimer": {
+            "badge": "guida informativa di terze parti",
+            "verification_label": "Ultima verifica",
+            "title": "Avviso non ufficiale",
+            "description": "Questo sito e una pagina di navigazione supporto di terze parti e non e il supporto ufficiale Lovart.",
+            "points": [
+                "Nessuna affiliazione con il supporto ufficiale Lovart.",
+                "Forniamo solo indicazioni di instradamento e non gestiamo ticket per tuo conto.",
+                "Per regole e azioni definitive, usa sempre le pagine ufficiali Lovart."
+            ]
+        },
+        "official_outlet_title": "Canali ufficiali Lovart",
+        "official_intro": "Usa i link qui sotto per proseguire direttamente sugli endpoint ufficiali Lovart.",
+        "open_official_cta": "Apri link ufficiale",
+        "faq_title": "FAQ (solo instradamento)",
+        "related_title": "Guide di supporto correlate",
+        "related_desc": "Ogni pagina e focalizzata su una singola intenzione per evitare sovrapposizioni.",
+        "help_section_title": "Navigazione Supporto e Policy",
+        "help_section_desc": "Scegli prima la pagina di intenzione, poi continua sui canali ufficiali Lovart.",
+        "footer_title": "Supporto e Policy",
+        "help_links": [
+            {
+                "path": "lovart-customer-support",
+                "title": "Supporto Clienti Lovart",
+                "desc": "Ingresso generale per login, accesso account e instradamento problemi."
+            },
+            {
+                "path": "lovart-support-contact",
+                "title": "Contatti Supporto Lovart",
+                "desc": "Canali di contatto ufficiali, inclusi email e Discord."
+            },
+            {
+                "path": "lovart-refund-guide",
+                "title": "Guida Rimborso Lovart",
+                "desc": "Instradamento rimborsi e fatturazione con uscite ufficiali."
+            },
+            {
+                "path": "lovart-account-deletion-guide",
+                "title": "Guida Eliminazione Account Lovart",
+                "desc": "Instradamento richieste di eliminazione account e sicurezza."
+            },
+            {
+                "path": "lovart-privacy-policy-guide",
+                "title": "Guida Privacy Policy Lovart",
+                "desc": "Sintesi privacy e passaggio alla policy ufficiale."
+            },
+            {
+                "path": "lovart-terms-of-use-guide",
+                "title": "Guida Termini d'Uso Lovart",
+                "desc": "Sintesi termini e passaggio al testo legale ufficiale."
+            }
+        ],
+        "footer_links": [
+            {
+                "path": "lovart-customer-support",
+                "title": "Supporto Clienti"
+            },
+            {
+                "path": "lovart-support-contact",
+                "title": "Contatti Supporto"
+            },
+            {
+                "path": "lovart-refund-guide",
+                "title": "Guida Rimborso"
+            },
+            {
+                "path": "lovart-account-deletion-guide",
+                "title": "Eliminazione Account"
+            },
+            {
+                "path": "lovart-privacy-policy-guide",
+                "title": "Guida Privacy"
+            },
+            {
+                "path": "lovart-terms-of-use-guide",
+                "title": "Guida Termini"
+            }
+        ],
+        "privacy_bridge": {
+            "title": "Privacy Policy Ufficiale",
+            "desc": "Questa pagina e un riepilogo di terze parti. Per il testo vincolante e aggiornato, apri la privacy policy ufficiale Lovart.",
+            "cta": "Apri privacy policy ufficiale",
+            "url": "https://www.lovart.ai/statement/privacy-policy"
+        },
+        "terms_bridge": {
+            "title": "Termini d'Uso Ufficiali",
+            "desc": "Questa pagina e un riepilogo di terze parti. Per clausole legali vincolanti e aggiornate, apri i termini ufficiali Lovart.",
+            "cta": "Apri termini ufficiali",
+            "url": "https://www.lovart.ai/statement/terms-of-use"
+        },
+        "pages": {
+            "customer_support": {
+                "breadcrumb": "Supporto Clienti Lovart",
+                "seo": {
+                    "title": "Guida Supporto Clienti Lovart | Instradamento Ufficiale di Terze Parti",
+                    "description": "Guida di terze parti per supporto Lovart su login, accesso account e problemi comuni. Vai ai canali ufficiali Lovart.",
+                    "keywords": "supporto lovart, aiuto login lovart, guida supporto lovart"
+                },
+                "hero": {
+                    "title": "Guida Supporto Clienti Lovart",
+                    "desc": "Usa questa pagina di instradamento di terze parti per trovare il canale ufficiale giusto di Lovart."
+                },
+                "official_intro": "Inizia dal sito ufficiale e dai canali di supporto indicati qui sotto."
+            },
+            "support_contact": {
+                "breadcrumb": "Contatti Supporto Lovart",
+                "seo": {
+                    "title": "Contatti Supporto Lovart | Email e Discord Ufficiali",
+                    "description": "Trova i canali ufficiali di contatto Lovart, inclusi support@lovart.ai e il server Discord ufficiale.",
+                    "keywords": "support@lovart.ai, contatto supporto lovart, email ufficiale lovart"
+                },
+                "hero": {
+                    "title": "Instradamento Contatti Supporto Lovart",
+                    "desc": "Accedi rapidamente ai canali ufficiali di contatto Lovart per supporto e account."
+                },
+                "official_intro": "Usa soltanto questi punti di contatto ufficiali."
+            },
+            "refund_guide": {
+                "breadcrumb": "Guida Rimborso Lovart",
+                "seo": {
+                    "title": "Guida Rimborso Lovart | Instradamento Ufficiale Fatturazione e Rimborsi",
+                    "description": "Guida di terze parti su rimborsi e fatturazione Lovart. Scopri come raggiungere i canali ufficiali per rimborsi e abbonamenti.",
+                    "keywords": "rimborso lovart, fatturazione lovart, annullare abbonamento lovart"
+                },
+                "hero": {
+                    "title": "Guida Rimborso e Fatturazione Lovart",
+                    "desc": "Comprendi i percorsi di rimborso e fatturazione, poi prosegui tramite i canali ufficiali Lovart."
+                },
+                "official_intro": "Per gli esiti finali di fatturazione, usa solo pagine ufficiali Lovart."
+            },
+            "account_deletion_guide": {
+                "breadcrumb": "Guida Eliminazione Account Lovart",
+                "seo": {
+                    "title": "Guida Eliminazione Account Lovart | Instradamento Richiesta Ufficiale",
+                    "description": "Guida di terze parti per eliminare account Lovart. Instrada la tua richiesta in modo sicuro ai canali ufficiali.",
+                    "keywords": "eliminare account lovart, cancellazione account lovart, chiudere account lovart"
+                },
+                "hero": {
+                    "title": "Guida Eliminazione Account Lovart",
+                    "desc": "Usa questa pagina per instradare le richieste di eliminazione account ai canali ufficiali Lovart."
+                },
+                "official_intro": "Le decisioni di eliminazione account sono gestite solo dal supporto ufficiale Lovart."
+            },
+            "privacy_policy_guide": {
+                "breadcrumb": "Guida Privacy Policy Lovart",
+                "seo": {
+                    "title": "Guida Privacy Lovart | Sintesi di Terze Parti + Link Ufficiale",
+                    "description": "Guida di terze parti alla privacy policy Lovart con accesso alla policy ufficiale. Leggi il riepilogo e passa al testo ufficiale.",
+                    "keywords": "privacy policy lovart, privacy dati lovart, privacy ufficiale lovart"
+                },
+                "hero": {
+                    "title": "Guida Privacy Policy Lovart",
+                    "desc": "Solo sintesi e instradamento. Per validita legale, leggi sempre la privacy policy ufficiale Lovart."
+                },
+                "official_intro": "Per dettagli vincolanti della policy, apri la documentazione ufficiale Lovart."
+            },
+            "terms_of_use_guide": {
+                "breadcrumb": "Guida Termini d'Uso Lovart",
+                "seo": {
+                    "title": "Guida Termini d'Uso Lovart | Sintesi di Terze Parti + Link Ufficiale",
+                    "description": "Guida di terze parti ai termini Lovart con instradamento ai termini d'uso ufficiali.",
+                    "keywords": "termini d'uso lovart, termini lovart, accordo utente lovart"
+                },
+                "hero": {
+                    "title": "Guida Termini d'Uso Lovart",
+                    "desc": "Solo guida di intenzione. Per clausole vincolanti, consulta i termini ufficiali Lovart."
+                },
+                "official_intro": "Apri i termini ufficiali per testo legale e aggiornamenti."
+            }
+        }
+    }
+}

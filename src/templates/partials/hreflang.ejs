@@ -1,9 +1,19 @@
 <!-- hreflang tags for multilingual SEO -->
-<% const baseUrl='https://lovart.info' ; %>
-    <% supportedLangs.forEach(function(hrefLang) { %>
-        <% let hrefPath; if (pageName==='index' ) { hrefPath=hrefLang==='en' ? '' : `${hrefLang}/`; } else {
-            hrefPath=hrefLang==='en' ? `${pageName}` : `${hrefLang}/${pageName}`; } %>
-            <link rel="alternate" hreflang="<%= hrefLang %>" href="<%= baseUrl %>/<%= hrefPath %>">
-            <% }); %>
-                <% const defaultHrefPath=pageName==='index' ? '' : `${pageName}`; %>
-                    <link rel="alternate" hreflang="x-default" href="<%= baseUrl %>/<%= defaultHrefPath %>">
+<%
+const baseUrl = 'https://lovart.info';
+const activeLangs = Array.isArray(pageSupportedLangs) && pageSupportedLangs.length
+    ? pageSupportedLangs
+    : (Array.isArray(supportedLangs) ? supportedLangs : ['en']);
+const defaultLanguage = typeof defaultLang === 'string' ? defaultLang : 'en';
+const xDefaultLang = activeLangs.includes(defaultLanguage) ? defaultLanguage : activeLangs[0];
+const toHrefPath = function (targetLang) {
+    if (pageName === 'index') {
+        return targetLang === defaultLanguage ? '' : `${targetLang}/`;
+    }
+    return targetLang === defaultLanguage ? `${pageName}` : `${targetLang}/${pageName}`;
+};
+%>
+<% activeLangs.forEach(function(hrefLang) { %>
+<link rel="alternate" hreflang="<%= hrefLang %>" href="<%= baseUrl %>/<%= toHrefPath(hrefLang) %>">
+<% }); %>
+<link rel="alternate" hreflang="x-default" href="<%= baseUrl %>/<%= toHrefPath(xDefaultLang) %>">

@@ -4,11 +4,30 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 // Configuration
+const baseSupportedLangs = ['en', 'zh', 'fr', 'ja'];
+const extendedSupportedLangs = [...baseSupportedLangs, 'es', 'it'];
+const esItCorePages = [
+    'lovart-customer-support',
+    'lovart-support-contact',
+    'lovart-refund-guide',
+    'lovart-account-deletion-guide',
+    'lovart-privacy-policy-guide',
+    'lovart-terms-of-use-guide',
+    'lovart-pricing',
+    'lovart-api'
+];
+
+const pageLangMap = Object.fromEntries(
+    esItCorePages.map((pageName) => [pageName, [...extendedSupportedLangs]])
+);
+
 const config = {
     srcDir: path.join(__dirname, 'src'),
     distDir: path.join(__dirname, 'dist'),
     defaultLang: 'en', // English is default
-    supportedLangs: ['en', 'zh', 'fr', 'ja']
+    supportedLangs: extendedSupportedLangs,
+    defaultPageLangs: baseSupportedLangs,
+    pageLangMap
 };
 
 const baseUrl = 'https://lovart.info';
@@ -25,20 +44,41 @@ function getLocalizedCanonicalUrl(pageName, lang, defaultLang) {
     return `${baseUrl}${getLocalizedCanonicalPath(pageName, lang, defaultLang)}`;
 }
 
-function buildSitemapXml(pageNames, supportedLangs, defaultLang) {
+function resolvePageSupportedLangs(pageName, cfg) {
+    const mappedLangs = cfg.pageLangMap[pageName];
+    const fallbackLangs = cfg.defaultPageLangs;
+    const requestedLangs = Array.isArray(mappedLangs) && mappedLangs.length
+        ? mappedLangs
+        : fallbackLangs;
+
+    const normalizedLangs = cfg.supportedLangs.filter((lang) => requestedLangs.includes(lang));
+    if (!normalizedLangs.includes(cfg.defaultLang)) {
+        return [cfg.defaultLang, ...normalizedLangs.filter((lang) => lang !== cfg.defaultLang)];
+    }
+
+    return normalizedLangs;
+}
+
+function buildSitemapXml(pageNames, getPageSupportedLangs, defaultLang) {
     const lastmod = new Date().toISOString().split('T')[0];
     const orderedPageNames = ['index', ...pageNames.filter((pageName) => pageName !== 'index').sort()];
 
     const urlEntries = [];
 
     for (const pageName of orderedPageNames) {
-        const hreflangLinks = supportedLangs.map((hrefLang) => ({
+        const pageSupportedLangs = getPageSupportedLangs(pageName);
+        if (!pageSupportedLangs.length) {
+            continue;
+        }
+
+        const hreflangLinks = pageSupportedLangs.map((hrefLang) => ({
             hreflang: hrefLang,
             href: getLocalizedCanonicalUrl(pageName, hrefLang, defaultLang)
         }));
-        const xDefaultHref = getLocalizedCanonicalUrl(pageName, defaultLang, defaultLang);
+        const xDefaultLang = pageSupportedLangs.includes(defaultLang) ? defaultLang : pageSupportedLangs[0];
+        const xDefaultHref = getLocalizedCanonicalUrl(pageName, xDefaultLang, defaultLang);
 
-        for (const lang of supportedLangs) {
+        for (const lang of pageSupportedLangs) {
             const loc = getLocalizedCanonicalUrl(pageName, lang, defaultLang);
             const linkXml = [
                 ...hreflangLinks.map(({ hreflang, href }) => `    <xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}"/>`),
@@ -128,14 +168,61 @@ async function build() {
         const pageNames = templateFiles
             .filter((file) => path.extname(file) === '.ejs')
             .map((file) => path.basename(file, '.ejs'));
+        const getPageSupportedLangs = (pageName) => resolvePageSupportedLangs(pageName, config);
 
         for (const file of templateFiles) {
             if (path.extname(file) === '.ejs') {
                 const templatePath = path.join(templatesDir, file);
                 const template = await fs.readFile(templatePath, 'utf-8');
                 const pageName = path.basename(file, '.ejs'); // e.g., 'index'
+                const pageSupportedLangs = getPageSupportedLangs(pageName);
 
-                for (const lang of config.supportedLangs) {
+                const resolveTargetPageName = (rawPath) => {
+                    if (typeof rawPath !== 'string') {
+                        return null;
+                    }
+
+                    if (/^(https?:)?\/\//i.test(rawPath) || rawPath.startsWith('mailto:') || rawPath.startsWith('tel:')) {
+                        return null;
+                    }
+
+                    const match = rawPath.match(/^([^?#]*)([?#].*)?$/);
+                    if (!match) {
+                        return null;
+                    }
+
+                    let basePath = match[1];
+                    if (!basePath) {
+                        return 'index';
+                    }
+
+                    if (basePath.startsWith('/')) {
+                        basePath = basePath.slice(1);
+                    }
+                    if (basePath.endsWith('/')) {
+                        basePath = basePath.slice(0, -1);
+                    }
+                    if (!basePath) {
+                        return 'index';
+                    }
+
+                    const segments = basePath.split('/').filter(Boolean);
+                    if (!segments.length) {
+                        return 'index';
+                    }
+                    if (config.supportedLangs.includes(segments[0])) {
+                        segments.shift();
+                    }
+                    if (!segments.length) {
+                        return 'index';
+                    }
+
+                    const lastSegment = segments[segments.length - 1];
+                    const pageSlug = lastSegment.endsWith('.html') ? lastSegment.slice(0, -5) : lastSegment;
+                    return pageSlug || 'index';
+                };
+
+                for (const lang of pageSupportedLangs) {
                     const isDefault = lang === config.defaultLang;
 
                     // Determine output path
@@ -195,7 +282,9 @@ async function build() {
                         isDefault: isDefault,
                         canonicalUrl: canonicalUrl,
                         pageName: pageName, // For hreflang
-                        supportedLangs: config.supportedLangs, // For hreflang
+                        supportedLangs: pageSupportedLangs, // For hreflang
+                        pageSupportedLangs: pageSupportedLangs,
+                        defaultLang: config.defaultLang,
                         // Helper to generate localized links with Plan A suffixless policy
                         link: (rawPath) => {
                             if (typeof rawPath !== 'string') {
@@ -206,9 +295,14 @@ async function build() {
                                 return rawPath;
                             }
 
-                            const localizedPath = isDefault
-                                ? rawPath
-                                : `/${lang}${rawPath.startsWith('/') ? rawPath : `/${rawPath}`}`;
+                            const targetPageName = resolveTargetPageName(rawPath);
+                            const targetPageLangs = targetPageName
+                                ? getPageSupportedLangs(targetPageName)
+                                : config.defaultPageLangs;
+                            const shouldLocalizePath = !isDefault && targetPageName && targetPageLangs.includes(lang);
+                            const localizedPath = shouldLocalizePath
+                                ? `/${lang}${rawPath.startsWith('/') ? rawPath : `/${rawPath}`}`
+                                : rawPath;
 
                             return normalizeInternalPath(localizedPath);
                         }
@@ -226,7 +320,7 @@ async function build() {
         }
 
         // 5. Generate sitemap.xml with full multilingual loc coverage
-        const sitemapXml = buildSitemapXml(pageNames, config.supportedLangs, config.defaultLang);
+        const sitemapXml = buildSitemapXml(pageNames, getPageSupportedLangs, config.defaultLang);
         await fs.writeFile(path.join(config.distDir, 'sitemap.xml'), sitemapXml);
         console.log('Generated: sitemap.xml');
 
