@@ -257,7 +257,7 @@ const articleShareLinks = getShareLinks(canonicalUrl, selectedArticle.title);
 
                 const subject = encodeURIComponent('Lovart Blog Newsletter Subscription');
                 const body = encodeURIComponent(`Email: ${emailValue}\nSource: ${window.location.href}\nLanguage: ${document.documentElement.lang}`);
-                window.location.href = `mailto:support@lovart.info?subject=${subject}&body=${body}`;
+                window.location.href = `mailto:support@lovart.ai?subject=${subject}&body=${body}`;
 
                 feedback.textContent = 'Please confirm the subscription email in your mail app.';
                 feedback.className = 'text-sm text-green-200';

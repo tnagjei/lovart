@@ -758,7 +758,7 @@
                 {
                     "title": "加入 Discord",
                     "desc": "与 80 万+ 创作者交流并获取即时支持。",
-                    "link": "https://discord.gg/lovart"
+                    "link": "https://discord.com/invite/3Fr4KPrwbA"
                 },
                 {
                     "title": "邮件支持",
@@ -1017,7 +1017,7 @@
                     {
                         "label": "官方 Discord 社区",
                         "desc": "查看官方公告与社区问题讨论。",
-                        "url": "https://discord.gg/lovart",
+                        "url": "https://discord.com/invite/3Fr4KPrwbA",
                         "cta": "加入官方 Discord"
                     }
                 ],
@@ -1059,7 +1059,7 @@
                     {
                         "label": "官方 Discord",
                         "desc": "社区交流与官方动态同步。",
-                        "url": "https://discord.gg/lovart",
+                        "url": "https://discord.com/invite/3Fr4KPrwbA",
                         "cta": "进入 Discord"
                     },
                     {
@@ -1414,7 +1414,7 @@
                 "title": "Discord 社区",
                 "desc": "加入 5 万+ 创作者社区获取即时帮助。",
                 "button": "加入 Discord",
-                "url": "https://discord.gg/lovart"
+                "url": "https://discord.com/invite/3Fr4KPrwbA"
             },
             "quick_search": {
                 "title": "热门话题",

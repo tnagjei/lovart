@@ -396,7 +396,7 @@ const privacyBridge = supportCluster.privacy_bridge || {};
                                 class="w-16 h-16 rounded-full mx-auto mb-4">
                         </picture>
                         <div class="flex flex-col md:flex-row justify-center gap-4">
-                            <a href="mailto:privacy@lovart.info"
+                            <a href="<%= privacyBridge.url || 'https://www.lovart.ai/statement/privacy-policy' %>"
                                 class="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary-dark transition-colors font-semibold">
                                 <%= t.privacy_page.contact.email_btn %>
                             </a>

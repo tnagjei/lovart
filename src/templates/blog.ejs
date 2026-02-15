@@ -567,7 +567,7 @@ const blogUiMessages = blogUiMessageMap[lang] || blogUiMessageMap.en;
 
                 const subject = encodeURIComponent('Lovart Blog Newsletter Subscription');
                 const body = encodeURIComponent(`Email: ${emailValue}\nSource: ${window.location.href}\nLanguage: ${document.documentElement.lang}`);
-                window.location.href = `mailto:support@lovart.info?subject=${subject}&body=${body}`;
+                window.location.href = `mailto:support@lovart.ai?subject=${subject}&body=${body}`;
 
                 feedback.textContent = uiMessages.confirmMail;
                 feedback.className = 'text-sm text-green-200';
