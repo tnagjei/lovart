@@ -98,7 +98,12 @@ const articleShareLinks = getShareLinks(canonicalUrl, selectedArticle.title);
 <html lang="<%= lang %>" class="scroll-smooth">
 
 <head>
-    <%- include('head') %>
+    <%- include('head', {
+        socialTitle: `${selectedArticle.title} - ${t.blog_page.seo.title}`,
+        socialDescription: selectedArticle.desc,
+        socialImage: selectedArticle.image,
+        socialType: 'article'
+    }) %>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= selectedArticle.title %> - <%= t.blog_page.seo.title %></title>
