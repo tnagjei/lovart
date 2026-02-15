@@ -8,6 +8,8 @@ https://www.lovart.info/* https://lovart.info/:splat 301
 /zh/index.html /zh/ 301
 /fr/index.html /fr/ 301
 /ja/index.html /ja/ 301
+/es/index.html /es/ 301
+/it/index.html /it/ 301
 
 # Non-content entry paths should not be indexable
 /signup /404 404
@@ -17,4 +19,6 @@ https://www.lovart.info/* https://lovart.info/:splat 301
 /zh/*.html /zh/:splat 301
 /fr/*.html /fr/:splat 301
 /ja/*.html /ja/:splat 301
+/es/*.html /es/:splat 301
+/it/*.html /it/:splat 301
 /*.html /:splat 301
