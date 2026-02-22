@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Prompt Guide' , href: canonicalUrl }]; %>
+    <html lang="<%= lang %>" class="scroll-smooth">
+
+    <head>
+        <%- include('partials/head') %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= t.seo.prompt_guide.title %>
+            </title>
+            <meta name="description" content="<%= t.seo.prompt_guide.description %>">
+            <link rel="canonical" href="<%= canonicalUrl %>">
+            <%- include('partials/hreflang') %>
+                <link rel="stylesheet" href="/styles.css">
+                <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                    crossorigin="anonymous"></script>
+                <%- include('partials/analytics') %>
+                    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+
+                        <style>
+                            .prompt-box {
+                                background-color: #f8fafc;
+                                border: 1px solid #e2e8f0;
+                                border-left: 4px solid var(--color-primary);
+                            }
+
+                            .prompt-box code {
+                                color: #4338ca;
+                                font-family: ui-monospace, 'Cascadia Code', monospace;
+                                font-size: 0.9rem;
+                                white-space: pre-wrap;
+                                word-break: break-word;
+                                display: block;
+                            }
+
+                            .case-card {
+                                background: #fff;
+                                border: 1px solid #e5e7eb;
+                                border-radius: 1rem;
+                                overflow: hidden;
+                                box-shadow: 0 1px 6px rgba(79, 70, 229, 0.06);
+                            }
+
+                            .case-card-img-wrap {
+                                background: #f1f5f9;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 2rem;
+                            }
+
+                            .case-card-img-wrap img {
+                                max-height: 300px;
+                                width: auto;
+                                max-width: 100%;
+                                border-radius: 0.5rem;
+                                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+                            }
+
+                            .tip-box {
+                                background: #eff6ff;
+                                border-left: 3px solid #3b82f6;
+                                border-radius: 0 0.5rem 0.5rem 0;
+                                padding: 0.875rem 1.125rem;
+                                font-size: 0.9rem;
+                                color: #1e3a8a;
+                            }
+
+                            .tip-label {
+                                font-weight: 700;
+                                color: #2563eb;
+                                font-size: 0.75rem;
+                                text-transform: uppercase;
+                                letter-spacing: 0.08em;
+                                margin-bottom: 0.25rem;
+                            }
+
+                            .formula-badge {
+                                display: inline-block;
+                                background: #ddd6fe;
+                                color: #4f46e5;
+                                font-size: 0.75rem;
+                                font-weight: 600;
+                                padding: 0.2rem 0.6rem;
+                                border-radius: 999px;
+                                margin: 0 0.1rem 0.3rem;
+                            }
+
+                            .intro-card {
+                                background: #fafafa;
+                                border: 1px solid #ede9fe;
+                                border-radius: 0.75rem;
+                                padding: 1.5rem 2rem;
+                            }
+                        </style>
+    </head>
+
+    <body class="bg-neutral-light text-neutral-dark antialiased">
+
+        <%- include('partials/header') %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+
+                <main>
+
+                    <!-- H1 Hero -->
+                    <section
+                        class="bg-gradient-to-b from-primary/10 to-transparent py-16 lg:py-24 relative overflow-hidden">
+                        <div class="container mx-auto px-6 text-center relative z-10 max-w-3xl">
+                            <span
+                                class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-5">
+                                🎨 AI Design Resource
+                            </span>
+                            <h1 class="text-4xl md:text-5xl font-bold mb-5 text-neutral-dark">
+                                Lovart Prompt Guide: Create Stunning Logos & Brand Kits with AI
+                            </h1>
+                            <p class="text-xl text-neutral leading-relaxed">
+                                Learn the exact <strong>lovart prompt</strong> formulas that designers use to generate
+                                professional logos, brand kits, and vector art — and copy them for free.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Intro -->
+                    <section class="container mx-auto px-6 max-w-3xl mt-10 mb-2">
+                        <div class="intro-card mb-6">
+                            <h2 class="text-xl font-bold text-neutral-dark mb-2">What Is a Lovart Prompt?</h2>
+                            <p class="text-neutral leading-relaxed">
+                                A <strong>lovart prompt</strong> is a text instruction you type into
+                                <a href="<%= link('lovart-free') %>" class="text-primary hover:underline">Lovart AI</a>
+                                to generate a design. Unlike traditional design software, Lovart's design agent reads
+                                your
+                                <strong>lovart prompt</strong> and autonomously handles composition, typography, color
+                                harmony,
+                                and export — turning a single sentence into a print-ready asset. The better your
+                                <strong>lovart prompt</strong>, the more refined your output.
+                            </p>
+                        </div>
+
+                        <p class="text-lg text-neutral-dark leading-relaxed mb-4">
+                            Writing an effective <strong>lovart prompt</strong> follows a four-part formula:
+                            <strong>Subject + Style + Color Palette + Medium</strong>.
+                            Each element guides the Lovart design engine toward a specific aesthetic.
+                            A vague <strong>lovart prompt</strong> like "make a logo" produces generic results.
+                            A precise <strong>lovart prompt</strong> like "minimalist geometric logo, neural network
+                            motif, neon cyan gradient, clean vector, dark background" produces something ready for a
+                            pitch deck.
+                        </p>
+                        <p class="text-neutral leading-relaxed mb-4">
+                            In this guide, we cover three categories where a well-crafted <strong>lovart prompt</strong>
+                            makes an immediate commercial impact: <strong>lovart logo</strong> design for tech brands,
+                            vintage badge creation for local businesses, and character mascot design for gaming studios.
+                            Each section includes a copy-ready <strong>lovart prompt</strong>, a breakdown of why it
+                            works,
+                            and a Pro Tip for getting the most out of your Lovart session.
+                        </p>
+                    </section>
+
+                    <!-- Ad Slot 1 -->
+                    <div class="container mx-auto px-6 max-w-3xl my-8">
+                        <%- include('partials/adsense', { format: 'horizontal' }) %>
+                    </div>
+
+                    <!-- CASE 1 -->
+                    <section class="container mx-auto px-6 max-w-3xl my-12">
+                        <div class="case-card">
+                            <div class="case-card-img-wrap">
+                                <img src="/images/prompt-guide/tech-logo.png"
+                                    alt="Minimalist tech startup lovart logo generated from a lovart prompt"
+                                    loading="lazy" width="400" height="400">
+                            </div>
+                            <div class="p-6 md:p-8">
+                                <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-3">
+                                    1. Lovart Logo Prompt: The Minimalist Tech Startup
+                                </h2>
+                                <p class="text-neutral mb-5 leading-relaxed">
+                                    Tech startups need a <strong>lovart logo</strong> that signals intelligence,
+                                    precision, and forward momentum. This <strong>lovart prompt</strong> generates
+                                    a neural-network geometric mark with a neon cyan-to-violet gradient —
+                                    the visual language of AI-native companies. Use this <strong>lovart prompt</strong>
+                                    whenever a client needs a clean, scalable brand identity in under five minutes.
+                                </p>
+
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">The Lovart Prompt</h3>
+                                <p class="text-sm font-semibold uppercase tracking-wider text-primary mb-2">Copy this
+                                    Lovart Prompt ↓</p>
+                                <div class="prompt-box p-5 rounded-r-lg mb-5">
+                                    <code>Minimalist geometric logo design for an AI technology startup, abstract interconnected neural network shape converging into a central core, neon cyan and deep violet gradient colors, clean vector style, dark background, modern and sleek aesthetic.</code>
+                                </div>
+
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">Why This Lovart Prompt Works
+                                </h3>
+                                <p class="text-neutral text-sm leading-relaxed mb-3">
+                                    This <strong>lovart prompt</strong> uses five precision layers:
+                                    <span class="formula-badge">Subject</span>
+                                    <span class="formula-badge">Style</span>
+                                    <span class="formula-badge">Color</span>
+                                    <span class="formula-badge">Medium</span>
+                                    <span class="formula-badge">Mood</span>.
+                                    "Neural network shape" anchors the subject. "Neon cyan and deep violet gradient"
+                                    defines the entire color system. "Clean vector style" is the most critical keyword
+                                    in any <strong>lovart prompt</strong> aimed at logos — it tells Lovart to output
+                                    crisp, infinitely scalable paths instead of a raster render. Without "vector style"
+                                    in your <strong>lovart prompt</strong>, results may look painterly rather than
+                                    logo-ready.
+                                </p>
+
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">When to Use This Lovart Logo
+                                    Style</h3>
+                                <p class="text-neutral text-sm leading-relaxed mb-4">
+                                    This <strong>lovart logo</strong> style is ideal for SaaS startups, AI platforms,
+                                    fintech brands, and developer tools. Its geometric clarity means the
+                                    <strong>lovart logo</strong> works at any size — from a 16px favicon to a billboard
+                                    —
+                                    with zero quality loss. Pair this <strong>lovart prompt</strong> with a monochrome
+                                    variant by appending "black and white version" to create a complete brand kit in one
+                                    session.
+                                </p>
+
+                                <div class="tip-box">
+                                    <div class="tip-label">💡 Pro Tip</div>
+                                    Always include "clean vector style" and "dark background" in your <strong>lovart
+                                        prompt</strong>
+                                    if you plan to export the logo as a transparent PNG for marketing materials.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ad Slot 2 -->
+                    <div class="container mx-auto px-6 max-w-3xl my-8">
+                        <%- include('partials/adsense', { format: 'square' }) %>
+                    </div>
+
+                    <!-- CASE 2 -->
+                    <section class="container mx-auto px-6 max-w-3xl my-12">
+                        <div class="case-card">
+                            <div class="case-card-img-wrap">
+                                <img src="/images/prompt-guide/vintage-coffee.png"
+                                    alt="Vintage artisan coffee shop lovart logo generated from a lovart prompt"
+                                    loading="lazy" width="400" height="400">
+                            </div>
+                            <div class="p-6 md:p-8">
+                                <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-3">
+                                    2. Lovart Logo Prompt: The Vintage Artisan Badge
+                                </h2>
+                                <p class="text-neutral mb-5 leading-relaxed">
+                                    For artisan brands, a <strong>lovart prompt</strong> that evokes heritage
+                                    and craftsmanship instantly communicates trust. The badge-style
+                                    <strong>lovart logo</strong> generated by this <strong>lovart prompt</strong>
+                                    is structured, warm, and print-ready — perfect for coffee shops,
+                                    bakeries, craft breweries, and food packaging. This
+                                    <strong>lovart prompt</strong> uses layout keywords to enforce a circular crest
+                                    shape,
+                                    preventing the AI from generating uncontained, freeform illustrations.
+                                </p>
+
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">The Lovart Prompt</h3>
+                                <p class="text-sm font-semibold uppercase tracking-wider text-primary mb-2">Copy this
+                                    Lovart Prompt ↓</p>
+                                <div class="prompt-box p-5 rounded-r-lg mb-5">
+                                    <code>Vintage style circular badge logo for an artisan coffee roasting house, hand drawn detailed illustration of coffee beans and a steaming ceramic coffee cup, warm earthy tones like sepia and burnt orange, retro crest styling, cream background, established vibe.</code>
+                                </div>
+
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">Why This Lovart Prompt Works
+                                </h3>
+                                <p class="text-neutral text-sm leading-relaxed mb-3">
+                                    "Circular badge" and "retro crest styling" are <strong>lovart prompt</strong> layout
+                                    keywords that define the outer container of the design. Without them, a generic
+                                    <strong>lovart prompt</strong> for a coffee logo might produce a scattered
+                                    illustration
+                                    with no clear shape boundary. The warm palette ("sepia", "burnt orange") in this
+                                    <strong>lovart prompt</strong> locks the output to a coherent, professional
+                                    visual identity — essential for a <strong>lovart logo</strong> that will appear on
+                                    physical packaging, stamps, and clothing.
+                                </p>
+
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">When to Use This Lovart Logo
+                                    Style</h3>
+                                <p class="text-neutral text-sm leading-relaxed mb-4">
+                                    Use this <strong>lovart prompt</strong> for any brand that competes on
+                                    authenticity and handcraft quality. The <strong>lovart logo</strong> style this
+                                    <strong>lovart prompt</strong> generates is particularly well-suited for
+                                    embroidery, screen printing, and traditional product labels — formats where
+                                    a clean silhouette is a hard requirement.
+                                </p>
+
+                                <div class="tip-box">
+                                    <div class="tip-label">💡 Pro Tip</div>
+                                    Add "isolated on white background" at the end of this <strong>lovart prompt</strong>
+                                    when you need a version for e-commerce product listings or print-on-demand
+                                    platforms.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ad Slot 3 -->
+                    <div class="container mx-auto px-6 max-w-3xl my-8">
+                        <%- include('partials/adsense', { format: 'horizontal' }) %>
+                    </div>
+
+                    <!-- CASE 3 -->
+                    <section class="container mx-auto px-6 max-w-3xl my-12">
+                        <div class="case-card">
+                            <div class="case-card-img-wrap" style="background: #1a1a2e;">
+                                <img src="/images/prompt-guide/cyberpunk-mascot.png"
+                                    alt="Cyberpunk neon robotic mascot generated from a lovart prompt" loading="lazy"
+                                    width="400" height="400">
+                            </div>
+                            <div class="p-6 md:p-8">
+                                <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-3">
+                                    3. Lovart Prompt: The Cyberpunk Mascot Character
+                                </h2>
+                                <p class="text-neutral mb-5 leading-relaxed">
+                                    A great mascot character requires both artistic detail and commercial usability.
+                                    This <strong>lovart prompt</strong> generates a neon-lit, mechanical animal mascot
+                                    with intricate circuitry — perfect for gaming studios, esports brands, and
+                                    crypto projects. The key innovation in this <strong>lovart prompt</strong> is the
+                                    background isolation keyword, which makes the result immediately cut-out-ready
+                                    for any design context.
+                                </p>
+
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">The Lovart Prompt</h3>
+                                <p class="text-sm font-semibold uppercase tracking-wider text-primary mb-2">Copy this
+                                    Lovart Prompt ↓</p>
+                                <div class="prompt-box p-5 rounded-r-lg mb-5">
+                                    <code>Cyberpunk glowing robotic animal mascot character, vector illustration style, neon pink and hot cyan lighting, intricate circuitry and mechanical parts details, cyberpunk aesthetic, isolated over a solid dark background.</code>
+                                </div>
+
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">Why This Lovart Prompt Works
+                                </h3>
+                                <p class="text-neutral text-sm leading-relaxed mb-3">
+                                    The phrase "isolated over a solid dark background" is the single most powerful
+                                    modifier in this <strong>lovart prompt</strong>. It instructs Lovart's design agent
+                                    to render the mascot in clear separation from a uniform background — making
+                                    post-export cleanup trivial. "Intricate circuitry and mechanical parts details"
+                                    pushes this <strong>lovart prompt</strong> beyond a simple cartoon and into
+                                    premium character design territory. For a <strong>lovart prompt</strong> targeting
+                                    mascot generation, specificity of character features is everything.
+                                </p>
+
+                                <h3 class="text-lg font-semibold text-neutral-dark mb-2">When to Use This Lovart Prompt
+                                    Style</h3>
+                                <p class="text-neutral text-sm leading-relaxed mb-4">
+                                    This <strong>lovart prompt</strong> excels for Discord server assets, Twitch
+                                    stream overlays, esports team branding, merchandise prints, and NFT collections.
+                                    To create a full character sheet from one <strong>lovart prompt</strong> session,
+                                    append "front view, side view, back view" to generate multiple angles at once.
+                                </p>
+
+                                <div class="tip-box">
+                                    <div class="tip-label">💡 Pro Tip</div>
+                                    The "isolated over a solid dark background" keyword in this <strong>lovart
+                                        prompt</strong>
+                                    makes it effortless to cut out the mascot in any image editor for use on shirts,
+                                    stickers, or web graphics.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Closing summary -->
+                    <section class="container mx-auto px-6 max-w-3xl my-12">
+                        <h2 class="text-2xl font-bold text-neutral-dark mb-4">Build Your Own Lovart Prompt — The Formula
+                        </h2>
+                        <p class="text-neutral leading-relaxed mb-4">
+                            Every effective <strong>lovart prompt</strong> follows the same core structure.
+                            Start with a clear <strong>subject</strong> (what is the design?), add a
+                            <strong>style</strong> (vector, hand-drawn, 3D render), specify a
+                            <strong>color palette</strong> (warm earth tones, neon gradient, monochrome),
+                            and end with a <strong>medium or use-case keyword</strong> (logo, badge, mascot character,
+                            poster). This four-part <strong>lovart prompt</strong> formula works across every
+                            design category Lovart supports.
+                        </p>
+                        <p class="text-neutral leading-relaxed mb-4">
+                            For <strong>lovart logo</strong> creation specifically, always include the output format
+                            in your <strong>lovart prompt</strong>: "clean vector style" for logos, "transparent PNG"
+                            for web graphics, "print-ready CMYK" for physical merchandise.
+                            A <strong>lovart logo</strong> <strong>lovart prompt</strong> that includes the export
+                            format produces an asset that skips the post-processing step entirely —
+                            saving hours in production workflows.
+                        </p>
+                        <p class="text-neutral leading-relaxed">
+                            Bookmark this page — we regularly publish new <strong>lovart prompt</strong> examples
+                            across industries including social media, packaging design, and editorial illustration.
+                            Each new <strong>lovart prompt</strong> template is tested for commercial readiness
+                            before publication, so you can copy and use them immediately in professional projects.
+                        </p>
+                    </section>
+
+                    <!-- Final CTA -->
+                    <section class="bg-gradient-to-r from-primary to-primary-light py-20 mt-4">
+                        <div class="container mx-auto px-6 text-center">
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                                <%= t.prompt_guide.cta.title %>
+                            </h2>
+                            <p class="text-lg text-white/80 max-w-xl mx-auto mb-8">
+                                <%= t.prompt_guide.cta.desc %>
+                            </p>
+                            <a href="<%= link('lovart-free') %>"
+                                class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary text-lg font-semibold rounded-lg shadow-lg hover:bg-neutral-light transition-all transform hover:-translate-y-1">
+                                <%= t.prompt_guide.cta.button %> →
+                            </a>
+                        </div>
+                    </section>
+
+                </main>
+
+                <%- include('partials/footer') %>
+
+                    <script>
+                        const btn = document.getElementById('mobile-menu-button');
+                        const menu = document.getElementById('mobile-menu');
+                        if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+                        const yr = document.getElementById('currentYear');
+                        if (yr) yr.textContent = new Date().getFullYear();
+                    </script>
+
+    </body>
+
+    </html>

@@ -165,6 +165,7 @@
 - 结构：1 个 **H1** + 多个 **H2** + 多个**H3**
 - **Canonical URL** 必须存在
 - Title / Meta Description / URL：包含关键词，且尽量靠前
+- TDH都要包含核心关键词。注意，Title需要控制在50-60字符，Description要控制在140-160字符，keywords空着不填写内容
 
 ### 11.3 可信与转化表达
 - 内容专业、真实，避免夸张承诺。
