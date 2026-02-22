@@ -1,129 +1,142 @@
-<%
-const socialBaseUrl = (() => {
+<% const socialBaseUrl=(()=> {
     if (typeof canonicalUrl === 'string' && /^https?:\/\//i.test(canonicalUrl)) {
-        const match = canonicalUrl.match(/^(https?:\/\/[^/]+)/i);
-        if (match && match[1]) {
-            return match[1];
-        }
+    const match = canonicalUrl.match(/^(https?:\/\/[^/]+)/i);
+    if (match && match[1]) {
+    return match[1];
+    }
     }
 
     return 'https://lovart.info';
-})();
+    })();
 
-function toAbsoluteSocialUrl(input, fallbackPath = '/') {
+    function toAbsoluteSocialUrl(input, fallbackPath = '/') {
     const raw = (typeof input === 'string' && input.trim()) ? input.trim() : fallbackPath;
     if (/^https?:\/\//i.test(raw)) {
-        return raw;
+    return raw;
     }
     if (/^\/\//.test(raw)) {
-        return `https:${raw}`;
+    return `https:${raw}`;
     }
     if (raw.startsWith('/')) {
-        return `${socialBaseUrl}${raw}`;
+    return `${socialBaseUrl}${raw}`;
     }
 
     return `${socialBaseUrl}/${raw.replace(/^\/+/, '')}`;
-}
+    }
 
-const isBlogArticlePage = typeof selectedArticle !== 'undefined' && selectedArticle;
-const defaultSocialImagePath = '/images/og-default.jpg';
-const currentPageName = typeof pageName === 'string' ? pageName : '';
+    const isBlogArticlePage = typeof selectedArticle !== 'undefined' && selectedArticle;
+    const defaultSocialImagePath = '/images/og-default.jpg';
+    const currentPageName = typeof pageName === 'string' ? pageName : '';
 
-function resolvePageSeoByPageName() {
+    function resolvePageSeoByPageName() {
     if (!t) {
-        return {};
+    return {};
     }
 
     switch (currentPageName) {
-        case 'about':
-            return (t.about_page && t.about_page.seo) || {};
-        case 'blog':
-            return (t.blog_page && t.blog_page.seo) || {};
-        case 'help':
-            return (typeof helpPage !== 'undefined' && helpPage && helpPage.seo) || (t.help_page && t.help_page.seo) || {};
-        case 'lovart-ai-code':
-            return (t.lovart_ai_code_page && t.lovart_ai_code_page.seo) || {};
-        case 'lovart-api':
-            return (t.lovart_api_page && t.lovart_api_page.seo) || {};
-        case 'lovart-design-features':
-            return (t.features_page && t.features_page.seo) || {};
-        case 'lovart-free':
-            return (t.lovart_free_page && t.lovart_free_page.seo) || {};
-        case 'lovart-pricing':
-            return (t.pricing_page && t.pricing_page.seo) || {};
-        case 'lovart-customer-support':
-            return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.customer_support && t.support_cluster.pages.customer_support.seo) || {};
-        case 'lovart-support-contact':
-            return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.support_contact && t.support_cluster.pages.support_contact.seo) || {};
-        case 'lovart-refund-guide':
-            return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.refund_guide && t.support_cluster.pages.refund_guide.seo) || {};
-        case 'lovart-account-deletion-guide':
-            return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.account_deletion_guide && t.support_cluster.pages.account_deletion_guide.seo) || {};
-        case 'lovart-privacy-policy-guide':
-            return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.privacy_policy_guide && t.support_cluster.pages.privacy_policy_guide.seo) || {};
-        case 'lovart-terms-of-use-guide':
-            return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.terms_of_use_guide && t.support_cluster.pages.terms_of_use_guide.seo) || {};
-        case 'privacy-policy':
-            return (t.privacy_page && t.privacy_page.seo) || {};
-        case 'terms-of-service':
-            return (t.terms_page && t.terms_page.seo) || {};
-        case 'index':
-            return t.seo || {};
-        default:
-            return t.seo || {};
+    case 'about':
+    return (t.about_page && t.about_page.seo) || {};
+    case 'blog':
+    return (t.blog_page && t.blog_page.seo) || {};
+    case 'help':
+    return (typeof helpPage !== 'undefined' && helpPage && helpPage.seo) || (t.help_page && t.help_page.seo) || {};
+    case 'lovart-ai-code':
+    return (t.lovart_ai_code_page && t.lovart_ai_code_page.seo) || {};
+    case 'lovart-api':
+    return (t.lovart_api_page && t.lovart_api_page.seo) || {};
+    case 'lovart-design-features':
+    return (t.features_page && t.features_page.seo) || {};
+    case 'lovart-free':
+    return (t.lovart_free_page && t.lovart_free_page.seo) || {};
+    case 'lovart-logo':
+    return (t.seo && t.seo.lovart_logo) || {};
+    case 'lovart-pricing':
+    return (t.pricing_page && t.pricing_page.seo) || {};
+    case 'lovart-customer-support':
+    return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.customer_support &&
+    t.support_cluster.pages.customer_support.seo) || {};
+    case 'lovart-support-contact':
+    return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.support_contact &&
+    t.support_cluster.pages.support_contact.seo) || {};
+    case 'lovart-refund-guide':
+    return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.refund_guide &&
+    t.support_cluster.pages.refund_guide.seo) || {};
+    case 'lovart-account-deletion-guide':
+    return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.account_deletion_guide &&
+    t.support_cluster.pages.account_deletion_guide.seo) || {};
+    case 'lovart-privacy-policy-guide':
+    return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.privacy_policy_guide &&
+    t.support_cluster.pages.privacy_policy_guide.seo) || {};
+    case 'lovart-terms-of-use-guide':
+    return (t.support_cluster && t.support_cluster.pages && t.support_cluster.pages.terms_of_use_guide &&
+    t.support_cluster.pages.terms_of_use_guide.seo) || {};
+    case 'privacy-policy':
+    return (t.privacy_page && t.privacy_page.seo) || {};
+    case 'terms-of-service':
+    return (t.terms_page && t.terms_page.seo) || {};
+    case 'index':
+    return t.seo || {};
+    default:
+    return t.seo || {};
     }
-}
+    }
 
-const pageNameSeo = resolvePageSeoByPageName();
-const computedTitle =
+    const pageNameSeo = resolvePageSeoByPageName();
+    const computedTitle =
     (typeof socialTitle !== 'undefined' && socialTitle) ||
-    (isBlogArticlePage && t && t.blog_page && t.blog_page.seo && t.blog_page.seo.title ? `${selectedArticle.title} - ${t.blog_page.seo.title}` : null) ||
+    (isBlogArticlePage && t && t.blog_page && t.blog_page.seo && t.blog_page.seo.title ? `${selectedArticle.title} -
+    ${t.blog_page.seo.title}` : null) ||
     (typeof pageSeo !== 'undefined' && pageSeo && pageSeo.title ? pageSeo.title : null) ||
     (typeof page !== 'undefined' && page && page.seo && page.seo.title ? page.seo.title : null) ||
-    (typeof pricingPage !== 'undefined' && pricingPage && pricingPage.seo && pricingPage.seo.title ? pricingPage.seo.title : null) ||
+    (typeof pricingPage !== 'undefined' && pricingPage && pricingPage.seo && pricingPage.seo.title ?
+    pricingPage.seo.title : null) ||
     (typeof helpPage !== 'undefined' && helpPage && helpPage.seo && helpPage.seo.title ? helpPage.seo.title : null) ||
     (pageNameSeo && pageNameSeo.title ? pageNameSeo.title : null) ||
     'Lovart';
 
-const computedDescription =
+    const computedDescription =
     (typeof socialDescription !== 'undefined' && socialDescription) ||
     (isBlogArticlePage && selectedArticle.desc ? selectedArticle.desc : null) ||
     (typeof pageSeo !== 'undefined' && pageSeo && pageSeo.description ? pageSeo.description : null) ||
     (typeof page !== 'undefined' && page && page.seo && page.seo.description ? page.seo.description : null) ||
-    (typeof pricingPage !== 'undefined' && pricingPage && pricingPage.seo && pricingPage.seo.description ? pricingPage.seo.description : null) ||
-    (typeof helpPage !== 'undefined' && helpPage && helpPage.seo && helpPage.seo.description ? helpPage.seo.description : null) ||
+    (typeof pricingPage !== 'undefined' && pricingPage && pricingPage.seo && pricingPage.seo.description ?
+    pricingPage.seo.description : null) ||
+    (typeof helpPage !== 'undefined' && helpPage && helpPage.seo && helpPage.seo.description ? helpPage.seo.description
+    : null) ||
     (pageNameSeo && pageNameSeo.description ? pageNameSeo.description : null) ||
     '';
 
-const computedType = (typeof socialType !== 'undefined' && socialType) || (isBlogArticlePage ? 'article' : 'website');
-const computedUrl = toAbsoluteSocialUrl(typeof canonicalUrl === 'string' ? canonicalUrl : '/');
-const computedImage = toAbsoluteSocialUrl(
+    const computedType = (typeof socialType !== 'undefined' && socialType) || (isBlogArticlePage ? 'article' :
+    'website');
+    const computedUrl = toAbsoluteSocialUrl(typeof canonicalUrl === 'string' ? canonicalUrl : '/');
+    const computedImage = toAbsoluteSocialUrl(
     (typeof socialImage !== 'undefined' && socialImage) ||
     (isBlogArticlePage && selectedArticle.image ? selectedArticle.image : defaultSocialImagePath),
     defaultSocialImagePath
-);
-const twitterCard = (typeof socialTwitterCard !== 'undefined' && socialTwitterCard) || 'summary_large_image';
-const twitterSiteValue = (typeof socialTwitterSite !== 'undefined' && socialTwitterSite) ? socialTwitterSite : '';
-const robotsValue = (typeof robotsDirective === 'string' && robotsDirective.trim()) ? robotsDirective.trim() : 'index,follow';
-%>
-<meta name="robots" content="<%= robotsValue %>">
-<meta property="og:title" content="<%= computedTitle %>">
-<meta property="og:description" content="<%= computedDescription %>">
-<meta property="og:type" content="<%= computedType %>">
-<meta property="og:url" content="<%= computedUrl %>">
-<meta property="og:image" content="<%= computedImage %>">
+    );
+    const twitterCard = (typeof socialTwitterCard !== 'undefined' && socialTwitterCard) || 'summary_large_image';
+    const twitterSiteValue = (typeof socialTwitterSite !== 'undefined' && socialTwitterSite) ? socialTwitterSite : '';
+    const robotsValue = (typeof robotsDirective === 'string' && robotsDirective.trim()) ? robotsDirective.trim() :
+    'index,follow';
+    %>
+    <meta name="robots" content="<%= robotsValue %>">
+    <meta property="og:title" content="<%= computedTitle %>">
+    <meta property="og:description" content="<%= computedDescription %>">
+    <meta property="og:type" content="<%= computedType %>">
+    <meta property="og:url" content="<%= computedUrl %>">
+    <meta property="og:image" content="<%= computedImage %>">
 
-<meta name="twitter:card" content="<%= twitterCard %>">
-<meta name="twitter:title" content="<%= computedTitle %>">
-<meta name="twitter:description" content="<%= computedDescription %>">
-<meta name="twitter:image" content="<%= computedImage %>">
-<% if (twitterSiteValue) { %>
-<meta name="twitter:site" content="<%= twitterSiteValue %>">
-<% } %>
+    <meta name="twitter:card" content="<%= twitterCard %>">
+    <meta name="twitter:title" content="<%= computedTitle %>">
+    <meta name="twitter:description" content="<%= computedDescription %>">
+    <meta name="twitter:image" content="<%= computedImage %>">
+    <% if (twitterSiteValue) { %>
+        <meta name="twitter:site" content="<%= twitterSiteValue %>">
+        <% } %>
 
-<!-- Resource Preloading -->
-<link rel="preload" href="/styles.css" as="style">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://www.googletagmanager.com">
-<link rel="preconnect" href="https://www.clarity.ms">
-<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+            <!-- Resource Preloading -->
+            <link rel="preload" href="/styles.css" as="style">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://www.googletagmanager.com">
+            <link rel="preconnect" href="https://www.clarity.ms">
+            <link rel="preconnect" href="https://pagead2.googlesyndication.com">
