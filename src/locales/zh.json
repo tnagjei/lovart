@@ -20,6 +20,12 @@
             "description": "Lovart 品牌套件将颜色、字体和 Logo 集中存储，让每一个设计都保持品牌一致性。探索品牌套件功能，让团队整齐划一。",
             "keywords": "",
             "canonical_url": "https://lovart.info/zh/lovart-brand-kit"
+        },
+        "lovart_apk": {
+            "title": "Lovart APK：安卓安装指南（远离假 APK）",
+            "description": "目前没有官方 Lovart APK。了解如何通过 3 个步骤在安卓手机上安全安装 Lovart 网页版，远离含恶意软件的假 APK。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/zh/lovart-apk"
         }
     },
     "nav": {
@@ -2796,5 +2802,97 @@
         },
         "pro_badge": "专业版功能",
         "faq_intro": "Lovart 品牌套件是实现真正品牌一致性的最快路径。无论你管理一个品牌还是十个，品牌套件都能随你的工作流扩展——让每位设计师随时获取完全相同的品牌色、字体和 Logo。"
+    },
+    "lovart_apk_page": {
+        "seo": {
+            "title": "Lovart APK：安卓安装指南（远离假 APK）",
+            "description": "目前没有官方 Lovart APK。了解如何通过 3 个步骤在安卓手机上安全安装 Lovart 网页版，远离含恶意软件的假 APK。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/zh/lovart-apk"
+        },
+        "hero": {
+            "badge": "📱 安卓安装指南",
+            "title": "在找 Lovart APK？下载前请先看这里",
+            "subtitle": "保护你的设备免受恶意软件侵害。目前没有官方 Lovart APK——但你可以在 3 分钟内安全地在安卓手机上安装 Lovart。",
+            "cta_primary": "在浏览器中免费使用 Lovart",
+            "cta_secondary": "查看价格方案"
+        },
+        "warning": {
+            "badge": "⚠️ 安全警告",
+            "heading": "警惕假冒 Lovart Mod APK",
+            "points": [
+                "Google Play 或任何第三方网站均没有官方 Lovart APK。",
+                "第三方「Lovart mod APK」文件极大概率含病毒、间谍软件或广告软件，会窃取你的数据。",
+                "下载假 Lovart APK 可能导致你的谷歌账号、联系人和金融信息被盗。",
+                "在安卓上使用 Lovart 的唯一安全方式是通过手机浏览器或 PWA 方式安装。"
+            ]
+        },
+        "guide": {
+            "heading": "如何在安卓上安装 Lovart——100% 安全",
+            "subheading": "按照以下 3 个步骤，在手机上获得接近原生 App 的 Lovart 体验——无需 APK，零风险。",
+            "steps": [
+                {
+                    "num": "01",
+                    "title": "在 Chrome 中打开 Lovart",
+                    "desc": "在安卓手机上打开 Chrome，访问 lovart.com，登录或创建免费账号。"
+                },
+                {
+                    "num": "02",
+                    "title": "点击右上角三个点",
+                    "desc": "点击 Chrome 右上角的 ⋮ 图标，打开浏览器菜单。"
+                },
+                {
+                    "num": "03",
+                    "title": "选择「添加到主屏幕」",
+                    "desc": "点击「添加到主屏幕」并确认。Lovart 将像原生 App 一样显示在你的主屏幕上，支持离线使用。"
+                }
+            ]
+        },
+        "compare": {
+            "heading": "Lovart PWA vs 假 APK——哪个更好？",
+            "fake_title": "❌ 第三方假 APK",
+            "fake_items": [
+                "极高的恶意软件和病毒风险",
+                "可能窃取你的密码和联系人",
+                "频繁崩溃，无官方更新",
+                "侵犯隐私——擅自访问相机和存储",
+                "出问题后没有客服支持"
+            ],
+            "pwa_title": "✅ Lovart 网页版（PWA）",
+            "pwa_items": [
+                "100% 安全——直接来自 lovart.com",
+                "随 Lovart 每次发布自动更新",
+                "支持离线访问最近的项目",
+                "无需安装——即开即用",
+                "背后有完整的 Lovart 官方客服团队"
+            ],
+            "cta": "立即以 PWA 方式安装 Lovart"
+        },
+        "faq": {
+            "heading": "常见问题",
+            "items": [
+                {
+                    "q": "Google Play 上有官方 Lovart APK 吗？",
+                    "a": "没有。目前 Lovart 在 Google Play 和 Apple App Store 均没有官方应用。在安卓上使用 Lovart 的官方方式是通过手机浏览器（推荐 Chrome）访问，或将其添加到主屏幕作为渐进式网页应用（PWA）使用。"
+                },
+                {
+                    "q": "Lovart 在安卓手机上适配好吗？",
+                    "a": "是的。Lovart 已针对手机浏览器进行了完整优化，界面可适应小屏幕，你可以直接通过安卓 Chrome 访问所有核心设计功能。"
+                },
+                {
+                    "q": "Lovart 未来会推出官方安卓 App 吗？",
+                    "a": "Lovart 尚未公布官方 Google Play APK 的发布计划。但 PWA 体验在持续改善，已能提供接近原生应用的性能。我们建议将 Lovart 添加到主屏幕以获得最佳体验。"
+                },
+                {
+                    "q": "Lovart 网页 App 与 APK 安装有什么区别？",
+                    "a": "通过 Chrome 将 Lovart 添加到主屏幕会创建 PWA，外观和操作感觉与原生 App 相同，可离线使用，加载速度极快——不存在第三方 APK 的任何安全风险。"
+                }
+            ]
+        },
+        "cta": {
+            "title": "在任意设备上开始 Lovart 设计之旅",
+            "desc": "无需 APK。在手机浏览器中打开 Lovart，立即免费创作专业设计。",
+            "button": "立即免费使用 Lovart"
+        }
     }
 }

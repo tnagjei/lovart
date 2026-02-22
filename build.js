@@ -16,7 +16,8 @@ const esItCorePages = [
     'lovart-pricing',
     'lovart-api',
     'lovart-brand-kit',
-    'lovart-logo'
+    'lovart-logo',
+    'lovart-apk'
 ];
 const noindexLangs = new Set(['es', 'it']);
 const noindexShellPages = new Set(esItCorePages);

@@ -20,6 +20,12 @@
             "description": "Lovart ブランドキットでカラー・フォント・ロゴを一元管理。すべてのデザインをブランドに沿ったプロ品質に。ブランドキット機能を今すぐ体験。",
             "keywords": "",
             "canonical_url": "https://lovart.info/ja/lovart-brand-kit"
+        },
+        "lovart_apk": {
+            "title": "Lovart APK：Androidの安全なインストールガイド",
+            "description": "公式Lovart APKは存在しません。3ステップでLovartをAndroidにWebアプリとして安全にインストールする方法と、偽APKの危険を解説します。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/ja/lovart-apk"
         }
     },
     "nav": {
@@ -2432,13 +2438,105 @@
         },
         "features_intro": "Lovart brand kit includes three core modules — giving your team everything they need to design on-brand without extra steps.",
         "chaos": {
-            "heading": "Brand Inconsistency Costs More Than You Think",
+            "heading": "ブランドの非一貫性はあなたが思う以上にコストがかかる",
             "p1": "Lovart brand kit eliminates hours wasted on color codes, logo versions, and typography rules.",
             "p2": "The Lovart brand kit is a living design system in your editor — ensuring consistent brand colors, fonts, and logos every time.",
             "p3": "Teams using the Lovart brand kit report fewer revision cycles and faster asset delivery.",
-            "cta": "Start Building Your Brand Kit Free"
+            "cta": "ブランドキットの作成を無料で始める"
         },
-        "pro_badge": "Pro Feature",
+        "pro_badge": "Proプラン機能",
         "faq_intro": "The Lovart brand kit is the fastest way to achieve true brand consistency across every design your team creates."
+    },
+    "lovart_apk_page": {
+        "seo": {
+            "title": "Lovart APK：Androidの安全なインストールガイド",
+            "description": "公式Lovart APKは存在しません。3ステップでLovartをAndroidにWebアプリとして安全にインストールする方法と、偽APKの危険を解説します。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/ja/lovart-apk"
+        },
+        "hero": {
+            "badge": "📱 Androidインストールガイド",
+            "title": "Lovart APKをお探しですか？ダウンロード前にお読みください",
+            "subtitle": "デバイスをマルウェアから守りましょう。公式Lovart APKは存在しませんが、3分でAndroidに安全にインストールできます。",
+            "cta_primary": "ブラウザでLovartを無料で試す",
+            "cta_secondary": "料金プランを見る"
+        },
+        "warning": {
+            "badge": "⚠️ セキュリティ警告",
+            "heading": "偽のLovart Mod APKにご注意ください",
+            "points": [
+                "Google Playや第三者サイトに公式Lovart APKは存在しません。",
+                "第三者の「Lovart mod APK」ファイルには、データを盗むマルウェアやスパイウェアが含まれることが多いです。",
+                "偽のLovart APKをダウンロードすると、Googleアカウント・連絡先・金融情報が危険にさらされます。",
+                "AndroidでLovartを使う唯一の安全な方法は、モバイルブラウザまたはPWAとして追加することです。"
+            ]
+        },
+        "guide": {
+            "heading": "AndroidへのLovartインストール方法 — 100%安全",
+            "subheading": "以下の3ステップで、スマートフォンでネイティブアプリに近いLovart体験を実現できます — APK不要、ゼロリスク。",
+            "steps": [
+                {
+                    "num": "01",
+                    "title": "ChromeでLovartを開く",
+                    "desc": "AndroidスマートフォンでChromeを開き、lovart.comにアクセスします。サインインまたは無料アカウントを作成してください。"
+                },
+                {
+                    "num": "02",
+                    "title": "右上の三点メニューをタップ",
+                    "desc": "Chromeの右上にある⋮アイコンをタップしてブラウザメニューを開きます。"
+                },
+                {
+                    "num": "03",
+                    "title": "「ホーム画面に追加」を選択",
+                    "desc": "「ホーム画面に追加」をタップして確認します。Lovartがネイティブアプリのようにホーム画面に表示されます。"
+                }
+            ]
+        },
+        "compare": {
+            "heading": "Lovart PWA vs 偽APK — どちらを選ぶべきか",
+            "fake_title": "❌ 第三者偽APK",
+            "fake_items": [
+                "マルウェアやウイルスの高リスク",
+                "パスワードや連絡先が盗まれる可能性",
+                "頻繁にクラッシュ、公式アップデートなし",
+                "プライバシー侵害 — カメラやストレージに不正アクセス",
+                "問題が起きてもサポートなし"
+            ],
+            "pwa_title": "✅ LovartウェブアプリPWA",
+            "pwa_items": [
+                "100%安全 — 直接lovart.comから",
+                "新バージョンリリースのたびに自動更新",
+                "最近のプロジェクトにオフラインアクセス可能",
+                "インストール不要 — 即時アクセス",
+                "Lovart公式サポートチームのサポートあり"
+            ],
+            "cta": "今すぐLovartをPWAとしてインストール"
+        },
+        "faq": {
+            "heading": "よくある質問",
+            "items": [
+                {
+                    "q": "Google PlayにLovartの公式APKはありますか？",
+                    "a": "いいえ。現在、LovartはGoogle Play StoreやApple App Storeに公式アプリがありません。AndroidでLovartを使う公式の方法は、モバイルブラウザ（Chrome推奨）を使うか、ホーム画面にPWAとして追加することです。"
+                },
+                {
+                    "q": "LovartはAndroidのモバイルブラウザに最適化されていますか？",
+                    "a": "はい。Lovartはモバイルブラウザ向けに完全最適化されており、小さな画面に合わせてインターフェースが調整されます。Android ChromeからすべてのコアAIデザイン機能にアクセスできます。"
+                },
+                {
+                    "q": "将来的に公式のLovart Androidアプリはリリースされますか？",
+                    "a": "Lovartは公式Google Play APKのリリース日を発表していません。ただし、PWAエクスペリエンスは継続的に改善されており、ネイティブに近いパフォーマンスを提供しています。"
+                },
+                {
+                    "q": "LovartウェブアプリとAPKインストールはどう違いますか？",
+                    "a": "ChromeでLovartをホーム画面に追加するとPWAが作成されます。ネイティブアプリのように見えて動作し、オフラインで動作し、瞬時に読み込まれます — 第三者APKのセキュリティリスクは一切ありません。"
+                }
+            ]
+        },
+        "cta": {
+            "title": "どのデバイスでもLovartでデザインを始めましょう",
+            "desc": "APK不要。モバイルブラウザでLovartを開き、今すぐ無料でプロ品質のデザインを作成できます。",
+            "button": "今すぐLovartを無料で試す"
+        }
     }
 }

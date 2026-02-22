@@ -20,6 +20,12 @@
             "description": "The Lovart brand kit stores your colors, fonts, and logos in one place — so every design stays on-brand. Explore brand kit features and keep your team aligned.",
             "keywords": "",
             "canonical_url": "https://lovart.info/lovart-brand-kit"
+        },
+        "lovart_apk": {
+            "title": "Lovart APK: Safe Android Install Guide (No Fake APK)",
+            "description": "There is no official Lovart APK. Learn how to safely install Lovart on Android as a web app in 3 steps — and avoid fake APKs that contain malware.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/lovart-apk"
         }
     },
     "nav": {
@@ -2796,5 +2802,97 @@
         },
         "pro_badge": "Pro Feature",
         "faq_intro": "The Lovart brand kit is the fastest way to achieve true brand consistency across every design your team creates. Whether you manage one brand or ten, the Lovart brand kit scales with your workflow — giving every designer instant access to the exact same brand kit colors, fonts, and logos, every single time."
+    },
+    "lovart_apk_page": {
+        "seo": {
+            "title": "Lovart APK: Safe Android Install Guide (No Fake APK)",
+            "description": "There is no official Lovart APK. Learn how to safely install Lovart on Android as a web app in 3 steps — and avoid fake APKs that contain malware.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/lovart-apk"
+        },
+        "hero": {
+            "badge": "📱 Android Installation Guide",
+            "title": "Looking for the Lovart APK? Read This Before You Download",
+            "subtitle": "Protect your device from malware. There is no official Lovart APK — but you can install Lovart on Android safely in 3 minutes.",
+            "cta_primary": "Try Lovart Free in Browser",
+            "cta_secondary": "See Pricing"
+        },
+        "warning": {
+            "badge": "⚠️ Security Warning",
+            "heading": "Beware of Fake Lovart Mod APKs",
+            "points": [
+                "There is no official Lovart APK on Google Play or any third-party site.",
+                "Third-party \"Lovart mod APK\" files frequently contain malware, spyware, or adware that steals your data.",
+                "Downloading a fake Lovart APK can compromise your Google account, contacts, and financial information.",
+                "The only safe way to use Lovart on Android is through your mobile browser or as a PWA."
+            ]
+        },
+        "guide": {
+            "heading": "How to Install Lovart on Android — 100% Safe",
+            "subheading": "Follow these 3 steps to get a native-app-like Lovart experience on your phone — no APK, no risk.",
+            "steps": [
+                {
+                    "num": "01",
+                    "title": "Open Lovart in Chrome",
+                    "desc": "On your Android phone, open Chrome and visit lovart.com. Sign in or create a free account."
+                },
+                {
+                    "num": "02",
+                    "title": "Tap the Three-Dot Menu",
+                    "desc": "Tap the ⋮ icon in the top-right corner of Chrome to open the browser menu."
+                },
+                {
+                    "num": "03",
+                    "title": "Select Add to Home Screen",
+                    "desc": "Tap \"Add to Home Screen\" and confirm. Lovart now appears on your home screen just like a native app — with full offline-ready features."
+                }
+            ]
+        },
+        "compare": {
+            "heading": "Lovart PWA vs Fake APK — Which Should You Choose?",
+            "fake_title": "❌ Third-Party Fake APK",
+            "fake_items": [
+                "High risk of malware and viruses",
+                "May steal your passwords and contacts",
+                "Crashes frequently, no official updates",
+                "Violates privacy — accesses camera and storage",
+                "No customer support if something goes wrong"
+            ],
+            "pwa_title": "✅ Lovart Web App (PWA)",
+            "pwa_items": [
+                "100% safe — direct from lovart.com",
+                "Auto-updates with every new Lovart release",
+                "Works offline for recent projects",
+                "No installation required — instant access",
+                "Full Lovart support team behind it"
+            ],
+            "cta": "Install Lovart as PWA Now"
+        },
+        "faq": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+                {
+                    "q": "Is there an official Lovart APK on Google Play?",
+                    "a": "No. As of now, Lovart does not have an official app on Google Play Store or Apple App Store. The official way to use Lovart on Android is through your mobile browser (Chrome recommended) or by adding it to your home screen as a Progressive Web App (PWA)."
+                },
+                {
+                    "q": "Is Lovart mobile-friendly on Android?",
+                    "a": "Yes. Lovart is fully optimized for mobile browsers. The interface adapts to smaller screens, and you can access all core design features — canvas, AI generation, text tools, and asset libraries — directly from Chrome on Android."
+                },
+                {
+                    "q": "Will there be an official Lovart Android app in the future?",
+                    "a": "Lovart has not announced an official Google Play APK release date. However, the PWA (Progressive Web App) experience is continuously improving and delivers near-native performance. We recommend adding Lovart to your home screen for the best experience."
+                },
+                {
+                    "q": "How is the Lovart web app different from installing a Lovart APK?",
+                    "a": "Adding Lovart to your home screen via Chrome creates a Progressive Web App (PWA). It looks and feels like a native app, can work offline, and loads instantly — without any of the security risks associated with downloading an APK from an unknown third-party source."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Start Designing with Lovart on Any Device",
+            "desc": "No APK needed. Open Lovart in your mobile browser and start creating professional designs for free — right now.",
+            "button": "Try Lovart Free Now"
+        }
     }
 }
