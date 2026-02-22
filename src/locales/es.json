@@ -278,6 +278,12 @@
             "description": "Usa el Lovart logo maker para crear logos de IA profesionales gratis. Explora 8 estilos, copia prompts y descarga en segundos — sin habilidades de diseño.",
             "keywords": "",
             "canonical_url": "https://lovart.info/es/lovart-logo"
+        },
+        "lovart_brand_kit": {
+            "title": "Lovart Brand Kit: Mantén la Coherencia de tu Marca",
+            "description": "El Lovart brand kit centraliza tus colores, fuentes y logos para garantizar coherencia visual en cada diseño. Explora las funciones del brand kit y mantén a tu equipo alineado.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/es/lovart-brand-kit"
         }
     },
     "image_context": {
@@ -342,103 +348,114 @@
         "gallery": {
             "heading": "Galería de Lovart Logos — 8 Estilos para Generar Hoy",
             "subheading": "Cada lovart logo fue creado con un solo prompt. Haz clic en cualquier prompt para copiarlo y usarlo en Lovart AI.",
-            "copy_label": "Copiar Prompt",
-            "items": [
-                {
-                    "file": "tech-startup.png",
-                    "title": "Minimalist Tech Startup Logo",
-                    "industry": "SaaS / AI / Fintech",
-                    "prompt": "Minimalist geometric logo for an AI technology startup, abstract neural network nodes in a hexagonal form, neon cyan and deep violet gradient, clean flat vector style, pure black background, no text."
-                },
-                {
-                    "file": "vintage-badge.png",
-                    "title": "Vintage Artisan Badge Logo",
-                    "industry": "Coffee / Food / Craft",
-                    "prompt": "Vintage circular badge logo for an artisan coffee roastery, hand-drawn illustration of coffee beans and a steaming cup inside a round crest border, warm sepia and burnt orange palette, cream background."
-                },
-                {
-                    "file": "cyberpunk.png",
-                    "title": "Cyberpunk Glitch Logo",
-                    "industry": "Gaming / Crypto / Web3",
-                    "prompt": "Cyberpunk glitch-style logo mark, angular geometric wolf head with circuit-board patterns, neon pink and electric cyan glow, dark navy background, vector flat style, no text."
-                },
-                {
-                    "file": "nature-organic.png",
-                    "title": "Organic Nature Logo",
-                    "industry": "Wellness / Eco / Organic",
-                    "prompt": "Organic nature logo mark, single stylized leaf formed by overlapping hand-drawn strokes, fresh forest green and sage tones, white background, minimal flat vector style, eco-friendly."
-                },
-                {
-                    "file": "luxury-fashion.png",
-                    "title": "Luxury Fashion Logo",
-                    "industry": "Fashion / Beauty / Lifestyle",
-                    "prompt": "Luxury fashion brand logo mark, minimalist interlocked double-ring monogram shape, thin line geometric style, champagne gold on pure white background, elegant and high-end, no text."
-                },
-                {
-                    "file": "gaming-esports.png",
-                    "title": "Gaming Esports Logo",
-                    "industry": "Esports / Streaming / Gaming",
-                    "prompt": "Gaming esports team logo, bold shield shape with a stylized lightning bolt, electric blue and vivid orange gradient, dark charcoal background, flat vector style, strong and aggressive, no text."
-                },
-                {
-                    "file": "food-restaurant.png",
-                    "title": "Restaurant & Dining Logo",
-                    "industry": "Restaurant / Food Delivery",
-                    "prompt": "Restaurant logo mark, elegant fork and spoon forming a circular icon, warm amber and terracotta palette, minimal flat vector style, white background, friendly and approachable, no text."
-                },
-                {
-                    "file": "abstract-geometric.png",
-                    "title": "Abstract Geometric Logo",
-                    "industry": "Creative Agency / Design Studio",
-                    "prompt": "Abstract geometric logo mark, overlapping hexagonal prisms forming a 3D diamond shape, vivid purple-to-coral gradient, clean vector style, white background, modern and versatile, no text."
-                }
-            ]
+            "copy_label": "Copiar Prompt"
         },
         "howto": {
-            "heading": "Cómo Crear un Lovart Logo — 3 Pasos Simples",
-            "steps": [
-                {
-                    "num": "01",
-                    "title": "Write Your Lovart Logo Prompt",
-                    "desc": "Describe your brand style, color palette, and industry in one sentence. The more specific your lovart logo prompt, the more refined the result."
-                },
-                {
-                    "num": "02",
-                    "title": "Pick Your Favorite Lovart Logo",
-                    "desc": "Lovart AI generates multiple lovart logo variations instantly. Browse the results and select the one that best fits your brand identity."
-                },
-                {
-                    "num": "03",
-                    "title": "Download and Use Your Logo",
-                    "desc": "Download your lovart logo as a high-resolution PNG. Use it on your website, business cards, social media, and marketing materials right away."
-                }
-            ]
+            "heading": "Cómo Crear un Lovart Logo — 3 Pasos Simples"
         },
         "faq": {
-            "heading": "Preguntas Frecuentes",
-            "items": [
-                {
-                    "q": "Is the Lovart logo maker free to use?",
-                    "a": "Yes. The Lovart logo maker offers a free plan where you can generate and download lovart logo designs at no cost. Premium plans unlock higher resolution exports and additional styles."
-                },
-                {
-                    "q": "Can I use my Lovart logo commercially?",
-                    "a": "Yes. Logos generated with the Lovart logo maker are yours to use commercially, including for product packaging, trademarks, and business registration, depending on your plan."
-                },
-                {
-                    "q": "What file formats does the Lovart logo maker export?",
-                    "a": "The Lovart logo maker exports PNG by default. SVG vector exports are available on premium plans, giving you a fully scalable lovart logo for print and large-format use."
-                },
-                {
-                    "q": "How is Lovart logo different from other AI logo generators?",
-                    "a": "Unlike basic generators, the Lovart logo maker acts as a full design agent — it understands composition, typography, and brand identity, not just image generation. Each lovart logo is designed to be commercially ready."
-                }
-            ]
+            "heading": "Preguntas Frecuentes"
         },
         "cta": {
             "title": "Tu Marca Merece un Mejor Logo",
             "desc": "Genera un lovart logo profesional en segundos — completamente gratis. Sin tarjeta de crédito, sin habilidades de diseño.",
             "button": "Empezar a Crear Mi Lovart Logo Gratis"
+        }
+    },
+    "lovart_brand_kit_page": {
+        "seo": {
+            "title": "Lovart Brand Kit: Mantén la Coherencia de tu Marca",
+            "description": "El Lovart brand kit centraliza tus colores, fuentes y logos para garantizar coherencia visual en cada diseño. Explora las funciones del brand kit y mantén a tu equipo alineado.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/es/lovart-brand-kit"
+        },
+        "hero": {
+            "badge": "✦ Herramienta de Coherencia de Marca",
+            "title": "Garantiza la Coherencia de tu Marca con Lovart Brand Kit",
+            "subtitle": "Deja de buscar códigos hex y fuentes. Centraliza colores, tipografía y logos en tu Lovart brand kit — y aplícalos a cada diseño con un clic.",
+            "cta_primary": "Probar Lovart Brand Kit Gratis",
+            "cta_secondary": "Ver Precios"
+        },
+        "pain": {
+            "heading": "¿Te Resulta Familiar?",
+            "before_title": "Sin Brand Kit",
+            "before_items": [
+                "Buscando el código hex en tus notas",
+                "Adivinando qué peso de fuente usar",
+                "Colores inconsistentes entre diseños",
+                "Re-subiendo el logo en cada proyecto",
+                "Horas perdidas en alineación de marca"
+            ],
+            "after_title": "Con Lovart Brand Kit",
+            "after_items": [
+                "Colores de marca siempre a un clic",
+                "Reglas tipográficas definidas una vez, aplicadas en todas partes",
+                "Cada diseño se ve profesional y on-brand",
+                "Todos los logos versionados en una biblioteca",
+                "El equipo se mantiene alineado automáticamente"
+            ]
+        },
+        "features": {
+            "heading": "¿Qué Incluye el Lovart Brand Kit?",
+            "items": [
+                {
+                    "icon": "🎨",
+                    "title": "Paletas de Colores de Marca",
+                    "desc": "Guarda tus colores primarios, secundarios y de acento con códigos hex exactos. Cada diseño en Lovart accede instantáneamente a tu paleta de marca."
+                },
+                {
+                    "icon": "✍️",
+                    "title": "Tipografía de Marca",
+                    "desc": "Define una vez tus fuentes de título, cuerpo y jerarquía de tamaño. El Lovart brand kit aplica tus reglas tipográficas automáticamente en todas las plantillas."
+                },
+                {
+                    "icon": "🖼️",
+                    "title": "Biblioteca de Logos y Assets",
+                    "desc": "Sube todas las variantes de tu logo y assets de marca. Accede a ellos en cualquier diseño sin volver a subir archivos."
+                }
+            ]
+        },
+        "features_intro": "Un Lovart brand kit completo incluye tres módulos esenciales — dando a tu equipo todo lo necesario para diseñar on-brand sin pasos adicionales.",
+        "upsell": {
+            "heading": "¿Listo para Crear tu Brand Kit?",
+            "desc": "El Lovart brand kit está disponible en los planes Pro y Equipo. Empieza con una prueba gratuita para explorar todas las funciones — sin tarjeta de crédito.",
+            "cta_primary": "Empezar Prueba Gratuita",
+            "cta_secondary": "Ver Planes de Precios"
+        },
+        "pro_badge": "Función Pro",
+        "chaos": {
+            "heading": "La Inconsistencia de Marca Cuesta Más de lo que Crees",
+            "p1": "Sin un Lovart brand kit, cada decisión de diseño se convierte en una investigación. Los equipos pierden horas reconciliando colores, buscando la variante de logo correcta y restableciendo reglas tipográficas — trabajo que un lovart brand kit elimina por completo.",
+            "p2": "El Lovart brand kit no es solo almacenamiento de archivos — es un sistema de diseño vivo integrado en tu editor, garantizando que cada persona de tu equipo aplique los colores, fuentes y logos correctos del lovart brand kit cada vez que abre Lovart.",
+            "p3": "Las marcas que adoptan un Lovart brand kit reportan significativamente menos ciclos de revisión y mayor velocidad de publicación. Tu brand kit se convierte en la fuente única de verdad de toda tu identidad visual.",
+            "cta": "Empieza a Construir tu Brand Kit Gratis"
+        },
+        "faq": {
+            "heading": "Preguntas Frecuentes",
+            "items": [
+                {
+                    "q": "¿El Lovart brand kit está disponible en el plan gratuito?",
+                    "a": "El brand kit es exclusivo de los planes Pro y Equipo. Los usuarios gratuitos pueden acceder a herramientas de diseño básicas, pero el Lovart brand kit completo requiere una suscripción Pro o Equipo."
+                },
+                {
+                    "q": "¿Cómo comparto mi Lovart brand kit con mi equipo?",
+                    "a": "Con el plan Equipo, tu Lovart brand kit se comparte automáticamente con todos los miembros del espacio de trabajo."
+                },
+                {
+                    "q": "¿Puedo tener múltiples brand kits en Lovart?",
+                    "a": "Sí. Los usuarios Pro y Equipo pueden crear múltiples Lovart brand kits — ideal para agencias que gestionan múltiples clientes."
+                },
+                {
+                    "q": "¿El Lovart brand kit admite fuentes personalizadas?",
+                    "a": "Sí. Puedes subir archivos de fuentes personalizadas a tu Lovart brand kit, disponibles en todos tus diseños del espacio de trabajo."
+                }
+            ]
+        },
+        "faq_intro": "El Lovart brand kit es la forma más rápida de lograr una verdadera coherencia de marca en cada diseño que crea tu equipo. Tanto si gestionas una marca como diez, el Lovart brand kit escala con tu flujo de trabajo.",
+        "cta": {
+            "title": "Empieza a Construir tu Lovart Brand Kit Hoy",
+            "desc": "Únete a miles de diseñadores y equipos que usan el Lovart brand kit para mantenerse on-brand, ahorrar tiempo y diseñar más rápido.",
+            "button": "Empezar Gratis"
         }
     }
 }

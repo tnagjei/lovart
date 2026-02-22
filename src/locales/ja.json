@@ -14,6 +14,12 @@
             "description": "Lovart ロゴメーカーで無料・高品質な AI ロゴを生成。8 種のスタイルからプロンプトをコピーするだけ。デザイン経験不要。",
             "keywords": "",
             "canonical_url": "https://lovart.info/ja/lovart-logo"
+        },
+        "lovart_brand_kit": {
+            "title": "Lovart ブランドキット：デザインの一貫性を保つ",
+            "description": "Lovart ブランドキットでカラー・フォント・ロゴを一元管理。すべてのデザインをブランドに沿ったプロ品質に。ブランドキット機能を今すぐ体験。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/ja/lovart-brand-kit"
         }
     },
     "nav": {
@@ -2338,5 +2344,101 @@
             "desc": "Lovart ロゴメーカーで数秒でプロ品質のロゴを無料生成。クレジットカード不要、デザインスキル不要。",
             "button": "Lovart ロゴの作成を始める"
         }
+    },
+    "lovart_brand_kit_page": {
+        "seo": {
+            "title": "Lovart ブランドキット：デザインの一貫性を保つ",
+            "description": "Lovart ブランドキットでカラー・フォント・ロゴを一元管理。すべてのデザインをブランドに沿ったプロ品質に。ブランドキット機能を今すぐ体験。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/ja/lovart-brand-kit"
+        },
+        "hero": {
+            "badge": "✦ ブランド一貫性ツール",
+            "title": "Lovart ブランドキットで毎回ブランド一貫性を確保",
+            "subtitle": "カラーコードやフォントを探し回るのはもう終わり。カラー・タイポグラフィ・ロゴを Lovart ブランドキットに一元化し、ワンクリックで適用。",
+            "cta_primary": "Lovart ブランドキット無料体験",
+            "cta_secondary": "料金プランを見る"
+        },
+        "pain": {
+            "heading": "こんな経験はありませんか？",
+            "before_title": "ブランドキットがない場合",
+            "before_items": [
+                "メモからカラーコードを探す",
+                "どのフォントウェイトか毎回迷う",
+                "デザインによって色がバラバラ",
+                "毎回ロゴを再アップロード",
+                "ブランド統一に膨大な時間を浪費"
+            ],
+            "after_title": "Lovart ブランドキットがある場合",
+            "after_items": [
+                "ブランドカラーはワンクリックで呼び出せる",
+                "タイポグラフィルールは一度設定すれば自動適用",
+                "すべてのデザインがプロ水準のブランド感に統一",
+                "すべてのロゴバリエーションをライブラリで一元管理",
+                "チームが自動的にブランドに沿った作業を維持"
+            ]
+        },
+        "features": {
+            "heading": "Lovart ブランドキットの中身は？",
+            "items": [
+                {
+                    "icon": "🎨",
+                    "title": "ブランドカラーパレット",
+                    "desc": "プライマリ・セカンダリ・アクセントカラーを正確な HEX コードで保存。すべての Lovart デザインから即座にブランドパレットにアクセスできます。"
+                },
+                {
+                    "icon": "✍️",
+                    "title": "ブランドタイポグラフィ",
+                    "desc": "見出しフォント・本文フォント・サイズ階層を一度定義するだけ。Lovart ブランドキットがすべてのテンプレートに自動適用します。"
+                },
+                {
+                    "icon": "🖼️",
+                    "title": "ロゴ & アセットライブラリ",
+                    "desc": "すべてのロゴバリエーション（ライト・ダーク・横・縦）とブランド素材を Lovart ブランドキットにアップロード。再アップロード不要でどのデザインにも挿入できます。"
+                }
+            ]
+        },
+        "upsell": {
+            "heading": "ブランドキットを始める準備はできましたか？",
+            "desc": "Lovart ブランドキットは Pro・チームプランで利用可能。クレジットカード不要の無料トライアルで全機能をお試しください。",
+            "cta_primary": "無料トライアルを始める",
+            "cta_secondary": "料金プランを見る"
+        },
+        "faq": {
+            "heading": "よくある質問",
+            "items": [
+                {
+                    "q": "Lovart ブランドキットは無料プランで使えますか？",
+                    "a": "ブランドキット機能は Pro・チームプランの専用機能です。無料プランでは基本的なデザインツールを利用できますが、完全な Lovart ブランドキットには Pro またはチームプランへのアップグレードが必要です。"
+                },
+                {
+                    "q": "Lovart ブランドキットをチームで共有するには？",
+                    "a": "チームプランでは、Lovart ブランドキットがワークスペースの全メンバーに自動共有されます。全員が同じブランドカラー・フォント・ロゴアセットを利用できます。"
+                },
+                {
+                    "q": "複数の Lovart ブランドキットを作成できますか？",
+                    "a": "はい。Pro・チームプランでは複数のブランドキットを作成可能です。複数クライアントのブランドを管理するエージェンシーに最適です。"
+                },
+                {
+                    "q": "Lovart ブランドキットはカスタムフォントに対応していますか？",
+                    "a": "はい。カスタムフォントファイルをブランドキットにアップロードできます。アップロード後はワークスペース内のすべてのデザインで利用可能になります。"
+                }
+            ]
+        },
+        "cta": {
+            "title": "今すぐ Lovart ブランドキットを始めましょう",
+            "desc": "Lovart ブランドキットでブランド一貫性を保ち、時間を節約し、デザインを加速させている数千人のデザイナーに加わりましょう。",
+            "button": "無料で始める"
+        },
+        "features_intro": "Lovart brand kit includes three core modules — giving your team everything they need to design on-brand without extra steps.",
+        "chaos": {
+            "heading": "Brand Inconsistency Costs More Than You Think",
+            "p1": "Lovart brand kit eliminates hours wasted on color codes, logo versions, and typography rules.",
+            "p2": "The Lovart brand kit is a living design system in your editor — ensuring consistent brand colors, fonts, and logos every time.",
+            "p3": "Teams using the Lovart brand kit report fewer revision cycles and faster asset delivery.",
+            "cta": "Start Building Your Brand Kit Free"
+        },
+        "pro_badge": "Pro Feature",
+        "faq_intro": "The Lovart brand kit is the fastest way to achieve true brand consistency across every design your team creates."
     }
 }

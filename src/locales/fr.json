@@ -14,6 +14,12 @@
             "description": "Utilisez le Lovart logo maker pour créer des logos IA professionnels gratuitement. Parcourez 8 styles, copiez les prompts et téléchargez en quelques secondes.",
             "keywords": "",
             "canonical_url": "https://lovart.info/fr/lovart-logo"
+        },
+        "lovart_brand_kit": {
+            "title": "Lovart Brand Kit : Cohérence Visuelle à Chaque Design",
+            "description": "Le Lovart brand kit centralise vos couleurs, polices et logos pour garantir la cohérence de votre marque sur chaque création. Découvrez les fonctionnalités.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/fr/lovart-brand-kit"
         }
     },
     "nav": {
@@ -2338,5 +2344,101 @@
             "desc": "Générez un lovart logo professionnel en quelques secondes — entièrement gratuit. Sans carte de crédit, sans compétences en design.",
             "button": "Commencer à Créer Mon Lovart Logo"
         }
+    },
+    "lovart_brand_kit_page": {
+        "seo": {
+            "title": "Lovart Brand Kit : Cohérence Visuelle à Chaque Design",
+            "description": "Le Lovart brand kit centralise vos couleurs, polices et logos pour garantir la cohérence de votre marque sur chaque création. Découvrez les fonctionnalités.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/fr/lovart-brand-kit"
+        },
+        "hero": {
+            "badge": "✦ Outil de Cohérence de Marque",
+            "title": "Garantissez la Cohérence de Votre Marque avec Lovart Brand Kit",
+            "subtitle": "Fini la chasse aux codes hex et aux polices. Centralisez couleurs, typographie et logos dans votre Lovart brand kit — appliqués en un clic à chaque design.",
+            "cta_primary": "Essayer Lovart Brand Kit Gratuitement",
+            "cta_secondary": "Voir les Tarifs"
+        },
+        "pain": {
+            "heading": "Ça Vous Rappelle Quelque Chose ?",
+            "before_title": "Sans Brand Kit",
+            "before_items": [
+                "Chercher le code hex dans vos notes",
+                "Deviner la graisse de police à utiliser",
+                "Couleurs incohérentes d'un design à l'autre",
+                "Re-télécharger le logo à chaque projet",
+                "Des heures perdues en alignement marque"
+            ],
+            "after_title": "Avec Lovart Brand Kit",
+            "after_items": [
+                "Couleurs de marque accessibles en un clic",
+                "Règles typographiques définies une fois, appliquées partout",
+                "Chaque design est professionnellement on-brand",
+                "Tous les logos versionnés en bibliothèque",
+                "L'équipe reste alignée automatiquement"
+            ]
+        },
+        "features": {
+            "heading": "Que Contient le Lovart Brand Kit ?",
+            "items": [
+                {
+                    "icon": "🎨",
+                    "title": "Palettes de Couleurs de Marque",
+                    "desc": "Stockez vos couleurs primaires, secondaires et d'accent avec leurs codes hex exacts. Chaque design Lovart accède instantanément à votre palette."
+                },
+                {
+                    "icon": "✍️",
+                    "title": "Typographie de Marque",
+                    "desc": "Définissez une fois vos polices de titres, de corps et la hiérarchie de taille. Le Lovart brand kit applique vos règles typographiques automatiquement."
+                },
+                {
+                    "icon": "🖼️",
+                    "title": "Bibliothèque de Logos et Assets",
+                    "desc": "Uploadez toutes les variantes de votre logo et vos assets de marque dans votre Lovart brand kit. Accédez-y dans n'importe quel design sans re-téléchargement."
+                }
+            ]
+        },
+        "upsell": {
+            "heading": "Prêt à Créer Votre Brand Kit ?",
+            "desc": "Le Lovart brand kit est disponible dans les plans Pro et Équipe. Commencez par un essai gratuit pour explorer toutes les fonctionnalités — sans carte de crédit.",
+            "cta_primary": "Commencer l'Essai Gratuit",
+            "cta_secondary": "Voir les Plans Tarifaires"
+        },
+        "faq": {
+            "heading": "Questions Fréquentes",
+            "items": [
+                {
+                    "q": "Le Lovart brand kit est-il disponible en version gratuite ?",
+                    "a": "Le brand kit est réservé aux plans Pro et Équipe. Les utilisateurs gratuits accèdent aux outils de design de base, mais le Lovart brand kit complet nécessite un abonnement Pro ou Équipe."
+                },
+                {
+                    "q": "Comment partager mon Lovart brand kit avec mon équipe ?",
+                    "a": "Avec le plan Équipe, votre Lovart brand kit est automatiquement partagé avec tous les membres de l'espace de travail."
+                },
+                {
+                    "q": "Puis-je avoir plusieurs brand kits dans Lovart ?",
+                    "a": "Oui. Les utilisateurs Pro et Équipe peuvent créer plusieurs Lovart brand kits — idéal pour les agences gérant plusieurs marques clientes."
+                },
+                {
+                    "q": "Le Lovart brand kit prend-il en charge les polices personnalisées ?",
+                    "a": "Oui. Vous pouvez télécharger des fichiers de polices personnalisées dans votre Lovart brand kit, disponibles dans tous vos designs."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Commencez à Créer Votre Lovart Brand Kit Aujourd'hui",
+            "desc": "Rejoignez des milliers de designers qui utilisent le Lovart brand kit pour rester on-brand, gagner du temps et concevoir plus vite.",
+            "button": "Commencer Gratuitement"
+        },
+        "features_intro": "Un Lovart brand kit complet comprend trois modules essentiels — offrant a votre equipe tout ce dont elle a besoin pour concevoir on-brand, sans etapes supplementaires.",
+        "chaos": {
+            "heading": "L'Incoherence de Marque Coute Plus Que Vous Ne le Pensez",
+            "p1": "Sans Lovart brand kit, chaque decision de design devient une recherche. Les equipes perdent des heures a reconcilier des couleurs, chercher la bonne variante de logo et retablir des regles typographiques — un travail qu'un lovart brand kit elimine totalement.",
+            "p2": "Le Lovart brand kit n'est pas qu'un simple stockage de fichiers — c'est un systeme de design vivant integre dans votre editeur, garantissant que chaque membre de l'equipe applique les bonnes couleurs, polices et logos a chaque ouverture de Lovart.",
+            "p3": "Les marques qui adoptent un Lovart brand kit signalent moins de cycles de revision et une mise en ligne plus rapide pour chaque asset. Votre brand kit devient la source de verite unique de toute votre identite visuelle.",
+            "cta": "Commencer a Creer Mon Brand Kit Gratuitement"
+        },
+        "pro_badge": "Fonctionnalite Pro",
+        "faq_intro": "Le Lovart brand kit est le moyen le plus rapide d'atteindre une veritable coherence de marque sur chaque design cree par votre equipe. Qu'il s'agisse d'une ou dix marques, le Lovart brand kit s'adapte a votre flux de travail."
     }
 }

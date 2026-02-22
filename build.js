@@ -14,7 +14,9 @@ const esItCorePages = [
     'lovart-privacy-policy-guide',
     'lovart-terms-of-use-guide',
     'lovart-pricing',
-    'lovart-api'
+    'lovart-api',
+    'lovart-brand-kit',
+    'lovart-logo'
 ];
 const noindexLangs = new Set(['es', 'it']);
 const noindexShellPages = new Set(esItCorePages);

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Brand Kit' , href: canonicalUrl }]; %>
+    <html lang="<%= lang %>" class="scroll-smooth">
+
+    <head>
+        <%- include('partials/head') %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= t.seo.lovart_brand_kit.title %>
+            </title>
+            <meta name="description" content="<%= t.seo.lovart_brand_kit.description %>">
+            <link rel="canonical" href="<%= canonicalUrl %>">
+            <%- include('partials/hreflang') %>
+                <link rel="stylesheet" href="/styles.css">
+                <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                    crossorigin="anonymous"></script>
+                <%- include('partials/analytics') %>
+                    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+                        <script type="application/ld+json"><%- JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": t.lovart_brand_kit_page.faq.items.map(function(f) {
+            return { "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } };
+        })
+    }) %></script>
+
+                        <style>
+                            /* Before/After comparison */
+                            .compare-card {
+                                border-radius: 0.875rem;
+                                padding: 2rem;
+                            }
+
+                            .compare-card.before {
+                                background: #fff8f7;
+                                border: 1.5px solid #fecaca;
+                            }
+
+                            .compare-card.after {
+                                background: #f5f3ff;
+                                border: 1.5px solid #c4b5fd;
+                            }
+
+                            .compare-item {
+                                display: flex;
+                                align-items: flex-start;
+                                gap: 0.625rem;
+                                margin-bottom: 0.75rem;
+                                font-size: 0.9rem;
+                            }
+
+                            .compare-icon {
+                                flex-shrink: 0;
+                                font-size: 1rem;
+                                margin-top: 0.1rem;
+                            }
+
+                            /* Feature cards */
+                            .feature-card {
+                                background: #fff;
+                                border: 1px solid #e5e7eb;
+                                border-radius: 0.875rem;
+                                padding: 2rem 1.75rem;
+                                transition: box-shadow 0.2s, transform 0.2s;
+                            }
+
+                            .feature-card:hover {
+                                box-shadow: 0 8px 24px rgba(79, 70, 229, 0.10);
+                                transform: translateY(-3px);
+                            }
+
+                            .feature-icon {
+                                font-size: 2rem;
+                                margin-bottom: 1rem;
+                                display: block;
+                            }
+
+                            /* Upsell banner */
+                            .upsell-banner {
+                                background: linear-gradient(135deg, #f5f3ff 0%, #eef2ff 100%);
+                                border: 1.5px solid #c4b5fd;
+                                border-radius: 1rem;
+                                padding: 2.5rem 2rem;
+                            }
+
+                            /* FAQ accordion */
+                            details summary {
+                                cursor: pointer;
+                                list-style: none;
+                            }
+
+                            details summary::-webkit-details-marker {
+                                display: none;
+                            }
+
+                            details[open] summary {
+                                color: var(--color-primary);
+                            }
+
+                            .chevron {
+                                transition: transform 0.2s;
+                                display: inline-block;
+                            }
+
+                            details[open] .chevron {
+                                transform: rotate(180deg);
+                            }
+                        </style>
+    </head>
+
+    <body class="bg-neutral-light text-neutral-dark antialiased">
+
+        <%- include('partials/header') %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+
+                <main>
+
+                    <!-- ═══ HERO ═══ -->
+                    <section class="bg-gradient-to-b from-primary/10 to-transparent pt-16 pb-20 lg:pt-24 lg:pb-28">
+                        <div class="container mx-auto px-6 max-w-5xl">
+                            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                                <div>
+                                    <span
+                                        class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-5">
+                                        <%= t.lovart_brand_kit_page.hero.badge %>
+                                    </span>
+                                    <h1
+                                        class="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-dark mb-5 leading-tight">
+                                        <%= t.lovart_brand_kit_page.hero.title %>
+                                    </h1>
+                                    <p class="text-lg text-neutral mb-8 leading-relaxed">
+                                        <%= t.lovart_brand_kit_page.hero.subtitle %>
+                                    </p>
+                                    <div class="flex flex-wrap gap-3">
+                                        <a href="<%= link('lovart-free') %>"
+                                            class="inline-flex items-center px-7 py-3.5 bg-primary text-white text-base font-semibold rounded-lg shadow-lg hover:bg-primary-dark transition-all transform hover:-translate-y-0.5">
+                                            <%= t.lovart_brand_kit_page.hero.cta_primary %> →
+                                        </a>
+                                        <a href="<%= link('lovart-pricing') %>"
+                                            class="inline-flex items-center px-7 py-3.5 bg-white text-primary text-base font-semibold rounded-lg border-2 border-primary hover:bg-primary/5 transition-all">
+                                            <%= t.lovart_brand_kit_page.hero.cta_secondary %>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hidden lg:block">
+                                    <img src="/images/brand-kit/dashboard.png"
+                                        alt="Lovart brand kit dashboard showing color palettes, typography, and logo library"
+                                        class="rounded-xl shadow-2xl w-full" width="600" height="450" loading="eager">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ad Slot 1 -->
+                    <div class="container mx-auto px-6 max-w-5xl my-8">
+                        <%- include('partials/adsense', { format: 'horizontal' }) %>
+                    </div>
+
+                    <!-- ═══ PAIN POINT: Before vs After ═══ -->
+                    <section class="container mx-auto px-6 max-w-5xl my-16">
+                        <h2 class="text-3xl font-bold text-neutral-dark mb-2 text-center">
+                            <%= t.lovart_brand_kit_page.pain.heading %>
+                        </h2>
+                        <p class="text-neutral text-center mb-10 max-w-xl mx-auto text-sm leading-relaxed">
+                            Teams without a <strong>Lovart brand kit</strong> spend an average of 3–5 hours per week on
+                            brand alignment alone. A <strong>lovart brand kit</strong> eliminates this entirely — every
+                            color, font, and logo is always one click away.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+
+                            <!-- BEFORE -->
+                            <div class="compare-card before">
+                                <div class="flex items-center gap-2 mb-5">
+                                    <span class="text-2xl">😩</span>
+                                    <h3 class="text-lg font-bold text-red-700">
+                                        <%= t.lovart_brand_kit_page.pain.before_title %>
+                                    </h3>
+                                </div>
+                                <% t.lovart_brand_kit_page.pain.before_items.forEach(function(item) { %>
+                                    <div class="compare-item">
+                                        <span class="compare-icon text-red-400">✗</span>
+                                        <span class="text-neutral-dark">
+                                            <%= item %>
+                                        </span>
+                                    </div>
+                                    <% }) %>
+                            </div>
+
+                            <!-- AFTER -->
+                            <div class="compare-card after">
+                                <div class="flex items-center gap-2 mb-5">
+                                    <span class="text-2xl">✨</span>
+                                    <h3 class="text-lg font-bold text-primary">
+                                        <%= t.lovart_brand_kit_page.pain.after_title %>
+                                    </h3>
+                                </div>
+                                <% t.lovart_brand_kit_page.pain.after_items.forEach(function(item) { %>
+                                    <div class="compare-item">
+                                        <span class="compare-icon text-primary">✓</span>
+                                        <span class="text-neutral-dark">
+                                            <%= item %>
+                                        </span>
+                                    </div>
+                                    <% }) %>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- ═══ FEATURES ═══ -->
+                    <section class="bg-white py-16 my-4">
+                        <div class="container mx-auto px-6 max-w-5xl">
+                            <h2 class="text-3xl font-bold text-neutral-dark mb-3 text-center">
+                                <%= t.lovart_brand_kit_page.features.heading %>
+                            </h2>
+                            <p class="text-neutral text-center mb-12 max-w-2xl mx-auto text-sm leading-relaxed">
+                                <%= t.lovart_brand_kit_page.features_intro %>
+                            </p>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <% t.lovart_brand_kit_page.features.items.forEach(function(feat) { %>
+                                    <div class="feature-card">
+                                        <span class="feature-icon">
+                                            <%= feat.icon %>
+                                        </span>
+                                        <h3 class="text-lg font-bold text-neutral-dark mb-3">
+                                            <%= feat.title %>
+                                        </h3>
+                                        <p class="text-neutral text-sm leading-relaxed">
+                                            <%= feat.desc %>
+                                        </p>
+                                    </div>
+                                    <% }) %>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ad Slot 2 -->
+                    <div class="container mx-auto px-6 max-w-4xl my-8">
+                        <%- include('partials/adsense', { format: 'square' }) %>
+                    </div>
+
+                    <!-- ═══ UPSELL ═══ -->
+                    <section class="container mx-auto px-6 max-w-4xl my-10">
+                        <div class="upsell-banner">
+                            <div class="flex flex-col md:flex-row items-center gap-6">
+                                <div class="flex-1">
+                                    <div class="text-sm font-semibold text-primary uppercase tracking-wide mb-2">🔓 <%=
+                                            t.lovart_brand_kit_page.pro_badge %>
+                                    </div>
+                                    <h2 class="text-2xl font-bold text-neutral-dark mb-3">
+                                        <%= t.lovart_brand_kit_page.upsell.heading %>
+                                    </h2>
+                                    <p class="text-neutral text-sm leading-relaxed max-w-lg">
+                                        <%= t.lovart_brand_kit_page.upsell.desc %>
+                                    </p>
+                                </div>
+                                <div class="flex flex-col gap-3 flex-shrink-0">
+                                    <a href="<%= link('lovart-free') %>"
+                                        class="inline-flex items-center justify-center px-7 py-3.5 bg-primary text-white font-semibold rounded-lg shadow-md hover:bg-primary-dark transition-all whitespace-nowrap">
+                                        <%= t.lovart_brand_kit_page.upsell.cta_primary %> →
+                                    </a>
+                                    <a href="<%= link('lovart-pricing') %>"
+                                        class="inline-flex items-center justify-center px-7 py-3.5 bg-white text-primary font-semibold rounded-lg border-2 border-primary hover:bg-primary/5 transition-all whitespace-nowrap">
+                                        <%= t.lovart_brand_kit_page.upsell.cta_secondary %>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Dashboard image in upsell -->
+                            <div class="mt-8 rounded-lg overflow-hidden border border-primary/20">
+                                <img src="/images/brand-kit/dashboard.png"
+                                    alt="Lovart brand kit Pro dashboard with full color palette and typography management"
+                                    class="w-full object-cover max-h-56 object-top" width="860" height="220"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ═══ CHAOS IMAGE SECTION ═══ -->
+                    <section class="bg-neutral-light py-12">
+                        <div class="container mx-auto px-6 max-w-5xl">
+                            <div class="grid md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <img src="/images/brand-kit/chaos.png"
+                                        alt="Messy workspace without a Lovart brand kit — scattered hex codes and fonts"
+                                        class="rounded-xl shadow-lg w-full" width="560" height="420" loading="lazy">
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl font-bold text-neutral-dark mb-4">
+                                        <%= t.lovart_brand_kit_page.chaos.heading %>
+                                    </h2>
+                                    <p class="text-neutral text-sm leading-relaxed mb-4">
+                                        <%= t.lovart_brand_kit_page.chaos.p1 %>
+                                    </p>
+                                    <p class="text-neutral text-sm leading-relaxed mb-4">
+                                        <%= t.lovart_brand_kit_page.chaos.p2 %>
+                                    </p>
+                                    <p class="text-neutral text-sm leading-relaxed">
+                                        <%= t.lovart_brand_kit_page.chaos.p3 %>
+                                    </p>
+                                    <a href="<%= link('lovart-free') %>"
+                                        class="inline-flex items-center mt-6 text-primary font-semibold text-sm hover:underline">
+                                        <%= t.lovart_brand_kit_page.chaos.cta %> →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ad Slot 3 -->
+                    <div class="container mx-auto px-6 max-w-4xl my-8">
+                        <%- include('partials/adsense', { format: 'horizontal' }) %>
+                    </div>
+
+                    <!-- ═══ FAQ ═══ -->
+                    <section class="container mx-auto px-6 max-w-3xl my-16">
+                        <p class="text-neutral text-center text-sm leading-relaxed mb-10 max-w-2xl mx-auto">
+                            <%= t.lovart_brand_kit_page.faq_intro %>
+                        </p>
+                        <h2 class="text-3xl font-bold text-neutral-dark mb-8 text-center">
+                            <%= t.lovart_brand_kit_page.faq.heading %>
+                        </h2>
+                        <div class="space-y-3">
+                            <% t.lovart_brand_kit_page.faq.items.forEach(function(faq) { %>
+                                <details class="bg-white border border-neutral-light rounded-xl px-5 py-4">
+                                    <summary
+                                        class="flex justify-between items-center font-semibold text-neutral-dark text-sm md:text-base">
+                                        <h3 class="m-0 font-semibold">
+                                            <%= faq.q %>
+                                        </h3>
+                                        <span class="chevron text-primary ml-4 flex-shrink-0">▾</span>
+                                    </summary>
+                                    <p class="mt-3 text-neutral text-sm leading-relaxed border-t border-gray-100 pt-3">
+                                        <%= faq.a %>
+                                    </p>
+                                </details>
+                                <% }) %>
+                        </div>
+                    </section>
+
+                    <!-- ═══ FINAL CTA ═══ -->
+                    <section class="bg-gradient-to-r from-primary to-primary-light py-20 mt-4">
+                        <div class="container mx-auto px-6 text-center max-w-3xl">
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                                <%= t.lovart_brand_kit_page.cta.title %>
+                            </h2>
+                            <p class="text-lg text-white/80 max-w-xl mx-auto mb-8">
+                                <%= t.lovart_brand_kit_page.cta.desc %>
+                            </p>
+                            <a href="<%= link('lovart-free') %>"
+                                class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary text-lg font-semibold rounded-lg shadow-lg hover:bg-neutral-light transition-all transform hover:-translate-y-1">
+                                <%= t.lovart_brand_kit_page.cta.button %> →
+                            </a>
+                        </div>
+                    </section>
+
+                </main>
+
+                <%- include('partials/footer') %>
+
+                    <script>
+                        const btn = document.getElementById('mobile-menu-button');
+                        const menu = document.getElementById('mobile-menu');
+                        if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+                        const yr = document.getElementById('currentYear');
+                        if (yr) yr.textContent = new Date().getFullYear();
+                    </script>
+
+    </body>
+
+    </html>

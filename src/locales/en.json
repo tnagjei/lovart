@@ -14,6 +14,12 @@
             "description": "Use Lovart logo maker to generate stunning AI logos for free. Browse 8 lovart logo styles, copy prompts, and download in seconds — no design skills needed.",
             "keywords": "",
             "canonical_url": "https://lovart.info/lovart-logo"
+        },
+        "lovart_brand_kit": {
+            "title": "Lovart Brand Kit: Keep Your Designs Consistent",
+            "description": "The Lovart brand kit stores your colors, fonts, and logos in one place — so every design stays on-brand. Explore brand kit features and keep your team aligned.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/lovart-brand-kit"
         }
     },
     "nav": {
@@ -2694,5 +2700,101 @@
             "desc": "Generate a professional lovart logo in seconds — completely free. No credit card, no design skills needed.",
             "button": "Start Creating Your Lovart Logo Free"
         }
+    },
+    "lovart_brand_kit_page": {
+        "seo": {
+            "title": "Lovart Brand Kit: Keep Your Designs Consistent",
+            "description": "The Lovart brand kit stores your colors, fonts, and logos in one place — so every design stays on-brand. Explore brand kit features and keep your team aligned.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/lovart-brand-kit"
+        },
+        "hero": {
+            "badge": "✦ Brand Consistency Tool",
+            "title": "Ensure Brand Consistency Every Time with Lovart Brand Kit",
+            "subtitle": "Stop searching for hex codes and fonts. Store your colors, typography, and logos in one Lovart brand kit — and apply them to every design in one click.",
+            "cta_primary": "Try Lovart Brand Kit Free",
+            "cta_secondary": "See Pricing"
+        },
+        "pain": {
+            "heading": "Does This Look Familiar?",
+            "before_title": "Without a Brand Kit",
+            "before_items": [
+                "Searching notes for your hex code",
+                "Guessing which font weight to use",
+                "Inconsistent colors across designs",
+                "Re-uploading your logo every project",
+                "Hours lost on brand alignment"
+            ],
+            "after_title": "With Lovart Brand Kit",
+            "after_items": [
+                "Brand colors always one click away",
+                "Typography rules set once, applied everywhere",
+                "Every design looks professionally on-brand",
+                "Logos stored and versioned in one library",
+                "Your team stays aligned automatically"
+            ]
+        },
+        "features": {
+            "heading": "What's Inside the Lovart Brand Kit?",
+            "items": [
+                {
+                    "icon": "🎨",
+                    "title": "Brand Color Palettes",
+                    "desc": "Store your primary, secondary, and accent colors with exact hex codes. Every Lovart design can access your brand palette instantly — no more guessing or pasting codes."
+                },
+                {
+                    "icon": "✍️",
+                    "title": "Brand Typography",
+                    "desc": "Define your heading font, body font, and size hierarchy once. The Lovart brand kit applies your typography rules automatically across all templates and layouts."
+                },
+                {
+                    "icon": "🖼️",
+                    "title": "Logo & Asset Library",
+                    "desc": "Upload all logo variants (light, dark, horizontal, vertical) and brand assets into your Lovart brand kit. Access and place them in any design without re-uploading."
+                }
+            ]
+        },
+        "upsell": {
+            "heading": "Ready to Build Your Brand Kit?",
+            "desc": "The Lovart brand kit is available on Pro and Team plans. Start with a free trial to explore all brand kit features — no credit card required.",
+            "cta_primary": "Start Free Trial",
+            "cta_secondary": "View Pricing Plans"
+        },
+        "faq": {
+            "heading": "Frequently Asked Questions",
+            "items": [
+                {
+                    "q": "Is the Lovart brand kit available on the free plan?",
+                    "a": "The brand kit feature is available on Lovart Pro and Team plans. Free plan users can access basic design tools, but the full Lovart brand kit — including color palettes, typography rules, and asset libraries — requires a Pro or Team subscription."
+                },
+                {
+                    "q": "How do I share my Lovart brand kit with my team?",
+                    "a": "On Team plans, your Lovart brand kit is automatically shared with all workspace members. Every team member can access the same brand colors, fonts, and logo assets when they open the Lovart editor."
+                },
+                {
+                    "q": "Can I have multiple brand kits in Lovart?",
+                    "a": "Yes. Pro and Team plan users can create multiple Lovart brand kits — ideal for agencies or businesses managing multiple client brands within one Lovart workspace."
+                },
+                {
+                    "q": "Does the Lovart brand kit support custom fonts?",
+                    "a": "Yes. You can upload custom font files to your Lovart brand kit. Once uploaded, your custom fonts are available across all designs in your workspace, ensuring consistent typography at every touch-point."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Start Building Your Lovart Brand Kit Today",
+            "desc": "Join thousands of designers and teams who use the Lovart brand kit to stay on-brand, save time, and design faster.",
+            "button": "Get Started Free"
+        },
+        "features_intro": "A complete Lovart brand kit includes three core modules — giving your team everything they need to design on-brand without extra steps or guesswork.",
+        "chaos": {
+            "heading": "Brand Inconsistency Costs More Than You Think",
+            "p1": "Without a Lovart brand kit, every design decision becomes a research project. Teams waste hours reconciling color discrepancies, hunting for the right logo variant, and re-establishing typography rules — work that a lovart brand kit eliminates completely.",
+            "p2": "The Lovart brand kit is not just a file storage system — it is a living design system embedded directly into your editor, ensuring that every person on your team applies the right lovart brand kit colors, fonts, and logos every time they open Lovart.",
+            "p3": "Brands that adopt a Lovart brand kit report significantly fewer revision cycles and faster time-to-publish for every design asset. Your brand kit becomes the single source of truth for your entire visual identity.",
+            "cta": "Start Building Your Brand Kit Free"
+        },
+        "pro_badge": "Pro Feature",
+        "faq_intro": "The Lovart brand kit is the fastest way to achieve true brand consistency across every design your team creates. Whether you manage one brand or ten, the Lovart brand kit scales with your workflow — giving every designer instant access to the exact same brand kit colors, fonts, and logos, every single time."
     }
 }
