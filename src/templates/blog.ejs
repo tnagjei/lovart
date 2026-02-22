@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <%
 const blogCategoryFilters = [
-    { key: 'all', slug: 'all', href: link('blog.html') },
-    { key: 'ai_design', slug: 'ai-design', href: link('blog.html?category=ai-design') },
-    { key: 'tutorials', slug: 'tutorials', href: link('blog.html?category=tutorials') },
-    { key: 'industry', slug: 'industry', href: link('blog.html?category=industry') },
-    { key: 'updates', slug: 'updates', href: link('blog.html?category=updates') },
-    { key: 'stories', slug: 'stories', href: link('blog.html?category=stories') }
+    { key: 'all', slug: 'all', href: link('/blog') },
+    { key: 'ai_design', slug: 'ai-design', href: link('/blog?category=ai-design') },
+    { key: 'tutorials', slug: 'tutorials', href: link('/blog?category=tutorials') },
+    { key: 'industry', slug: 'industry', href: link('/blog?category=industry') },
+    { key: 'updates', slug: 'updates', href: link('/blog?category=updates') },
+    { key: 'stories', slug: 'stories', href: link('/blog?category=stories') }
 ];
 
 const blogFeaturedSlug = 'how-ai-is-reshaping-modern-design-workflows';
@@ -56,7 +56,7 @@ function getShareLinks(relativeUrl, title) {
 
 const featuredPost = {
     slug: blogFeaturedSlug,
-    url: link(`blog-${blogFeaturedSlug}.html`),
+    url: link(`/blog-${blogFeaturedSlug}`),
     title: t.blog_page.featured.article_title,
     desc: t.blog_page.featured.desc,
     tag: t.blog_page.featured.tag,
@@ -72,7 +72,7 @@ const featuredPostShareLinks = getShareLinks(featuredPost.url, featuredPost.titl
 
 const latestPosts = t.blog_page.latest.posts.map((post, index) => {
     const slug = latestPostSlugs[index] || `blog-post-${index + 1}`;
-    const url = link(`blog-${slug}.html`);
+    const url = link(`/blog-${slug}`);
 
     return {
         ...post,
@@ -93,11 +93,11 @@ const blogPosts = [featuredPost, ...latestPosts].map((post) => ({
 }));
 
 const blogTagLinks = [
-    { label: t.blog_page.categories.ai_design, href: link('blog.html?category=ai-design') },
-    { label: t.blog_page.categories.tutorials, href: link('blog.html?category=tutorials') },
-    { label: t.blog_page.categories.industry, href: link('blog.html?category=industry') },
-    { label: t.blog_page.categories.updates, href: link('blog.html?category=updates') },
-    { label: t.blog_page.categories.stories, href: link('blog.html?category=stories') }
+    { label: t.blog_page.categories.ai_design, href: link('/blog?category=ai-design') },
+    { label: t.blog_page.categories.tutorials, href: link('/blog?category=tutorials') },
+    { label: t.blog_page.categories.industry, href: link('/blog?category=industry') },
+    { label: t.blog_page.categories.updates, href: link('/blog?category=updates') },
+    { label: t.blog_page.categories.stories, href: link('/blog?category=stories') }
 ];
 
 const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.nav.blog, href: canonicalUrl }];
@@ -471,6 +471,8 @@ const blogUiMessages = blogUiMessageMap[lang] || blogUiMessageMap.en;
 
     <%- include('partials/footer') %>
 
+    <script id="blog-ui-messages" type="application/json"><%- JSON.stringify(blogUiMessages) %></script>
+
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -506,7 +508,8 @@ const blogUiMessages = blogUiMessageMap[lang] || blogUiMessageMap.en;
         const categoryLinks = document.querySelectorAll('[data-category-link]');
         const categoryResultCount = document.getElementById('category-result-count');
         const categoryEmptyState = document.getElementById('category-empty-state');
-        const uiMessages = <%- JSON.stringify(blogUiMessages) %>;
+        const uiMessagesNode = document.getElementById('blog-ui-messages');
+        const uiMessages = uiMessagesNode ? JSON.parse(uiMessagesNode.textContent || '{}') : {};
 
         let visibleCount = 0;
         articleCards.forEach((card) => {

@@ -145,7 +145,7 @@
 
                                                     <% const animationDelay=(0.4 + (index * 0.1)).toFixed(1) + 's' ; %>
                                                         <div class="<%= cardClass %>"
-                                                            style="animation-delay: <%= animationDelay %>;">
+                                                            data-animation-delay="<%= animationDelay %>">
                                                             <div class="flex items-center gap-2 mb-2 flex-wrap">
                                                                 <h3 class="text-2xl font-semibold text-neutral-dark">
                                                                     <%= plan.name %>
@@ -216,7 +216,8 @@
                                     <div>
                                         <picture>
                                             <source type="image/webp" srcset="/images/02.webp">
-                                            <img src="/images/02.png" alt="Lovart pricing comparison"
+                                            <img src="/images/02.png"
+                                                alt="<%= imageAlt('/images/02.png', { contextKey: 'pricing.comparison' }) %>"
                                                 class="w-full h-40 object-cover rounded-md mb-4">
                                         </picture>
                                     </div>
@@ -347,7 +348,7 @@
                                 <%= pricingPage.related.title %>
                             </h2>
                             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                <a href="<%= link('lovart-design-features.html') %>"
+                                <a href="<%= link('lovart-design-features') %>"
                                     class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                                     <h3 class="font-semibold mb-1">
                                         <%= pricingPage.related.items[0].title %>
@@ -359,7 +360,7 @@
                                         <%= pricingPage.related.items[0].link_text %>
                                     </span>
                                 </a>
-                                <a href="<%= link('lovart-free.html') %>"
+                                <a href="<%= link('lovart-free') %>"
                                     class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                                     <h3 class="font-semibold mb-1">
                                         <%= pricingPage.related.items[1].title %>
@@ -371,7 +372,7 @@
                                         <%= pricingPage.related.items[1].link_text %>
                                     </span>
                                 </a>
-                                <a href="<%= link('lovart-api.html') %>"
+                                <a href="<%= link('lovart-api') %>"
                                     class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                                     <h3 class="font-semibold mb-1">
                                         <%= pricingPage.related.items[2].title %>
@@ -383,7 +384,7 @@
                                         <%= pricingPage.related.items[2].link_text %>
                                     </span>
                                 </a>
-                                <a href="<%= link('lovart-ai-code.html') %>"
+                                <a href="<%= link('lovart-ai-code') %>"
                                     class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                                     <h3 class="font-semibold mb-1">
                                         <%= t.lovart_ai_code_page.hero.title %>
@@ -412,6 +413,12 @@
                                 mobileMenu.classList.toggle('hidden');
                             });
                         }
+
+                        document.querySelectorAll('[data-animation-delay]').forEach((node) => {
+                            if (node.dataset.animationDelay) {
+                                node.style.animationDelay = node.dataset.animationDelay;
+                            }
+                        });
 
                         const sections = document.querySelectorAll('.section-animate');
                         const observer = new IntersectionObserver((entries) => {

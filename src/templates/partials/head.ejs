@@ -104,7 +104,9 @@ const computedImage = toAbsoluteSocialUrl(
 );
 const twitterCard = (typeof socialTwitterCard !== 'undefined' && socialTwitterCard) || 'summary_large_image';
 const twitterSiteValue = (typeof socialTwitterSite !== 'undefined' && socialTwitterSite) ? socialTwitterSite : '';
+const robotsValue = (typeof robotsDirective === 'string' && robotsDirective.trim()) ? robotsDirective.trim() : 'index,follow';
 %>
+<meta name="robots" content="<%= robotsValue %>">
 <meta property="og:title" content="<%= computedTitle %>">
 <meta property="og:description" content="<%= computedDescription %>">
 <meta property="og:type" content="<%= computedType %>">

@@ -354,11 +354,12 @@ const termsBridge = supportCluster.terms_bridge || {};
                                 <%= t.terms_page.contact.desc %>
                             </p>
                             <div class="space-x-4">
-                                <a href="<%= link('help.html') %>"
+                                <a href="<%= link('help') %>"
                                     class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors">
                                     <picture>
                                         <source type="image/webp" srcset="/images/small_03.webp">
-                                        <img src="/images/small_03.jpg" alt="Terms of Service"
+                                        <img src="/images/small_03.jpg"
+                                            alt="<%= imageAlt('/images/small_03.jpg', { contextKey: 'terms.hero' }) %>"
                                             class="w-16 h-16 rounded-full mx-auto mb-4">
                                     </picture>
                                     <%= t.terms_page.contact.help_btn %>

@@ -91,15 +91,15 @@
     "gallery": {
         "title": "Lovart in Action: Creative Showcase",
         "images": [
-            "Lovart creative showcase image 1",
-            "Lovart creative showcase image 2",
-            "Lovart creative showcase image 3",
-            "Lovart creative showcase image 4",
-            "Lovart creative showcase image 5",
-            "Lovart creative showcase image 6",
-            "Lovart creative showcase image 7",
-            "Lovart creative showcase image 8",
-            "Lovart creative showcase image 9"
+            "Lovartで作成したブランドキャンペーンのモックアップ",
+            "Lovartで作成したSNS向けビジュアル",
+            "Lovartで構成したポスターデザイン",
+            "Lovartで生成したWebバナー案",
+            "Lovartで作成した商品カードデザイン",
+            "Lovartで仕上げたマーケティングレイアウト",
+            "Lovartワークスペースで整理したイラスト素材",
+            "Lovartで作成したモバイルデザインプレビュー",
+            "Lovartで作成したクリエイティブムードボード"
         ],
         "video_fallback": "Your browser does not support the video tag."
     },
@@ -219,7 +219,7 @@
             {
                 "title": "AI-Powered Suggestions & Smart Assistance by Lovart",
                 "desc": "Let Lovart's intelligent AI be your creative partner. It analyzes your content and design goals to offer smart suggestions for layouts, color palettes, typography, and imagery. Overcome creative blocks and discover new possibilities with the \"Lovart AI design tool\".",
-                "alt": "Lovart AI providing design suggestions",
+                "alt": "Lovart AIによるデザイン提案",
                 "list": [
                     "Context-aware layout recommendations",
                     "Harmonious color scheme generation",
@@ -230,7 +230,7 @@
             {
                 "title": "Intuitive Drag-and-Drop Interface with Lovart",
                 "desc": "Lovart features a beautifully designed and easy-to-use drag-and-drop editor. Effortlessly arrange elements, resize objects, and build complex layouts without writing a single line of code. Focus on your creativity, not on learning complicated software. This is a key aspect of the \"Lovart platform\".",
-                "alt": "Lovart's intuitive drag and drop interface",
+                "alt": "Lovartのドラッグ＆ドロップ編集画面",
                 "list": [
                     "Pixel-perfect control and alignment guides",
                     "Easy-to-use tools for shapes, text, and media",
@@ -241,7 +241,7 @@
             {
                 "title": "Vast Integrated Asset Library in Lovart",
                 "desc": "Access millions of high-quality stock photos, illustrations, icons, videos, and fonts directly within the Lovart editor. Our curated library, a core part of \"Lovart AI\", ensures you have the perfect assets to bring your vision to life without ever leaving the platform.",
-                "alt": "Accessing Lovart's vast asset library",
+                "alt": "Lovartの素材ライブラリを閲覧する画面",
                 "list": [
                     "Millions of royalty-free images and videos",
                     "Extensive collection of icons and illustrations",
@@ -252,7 +252,7 @@
             {
                 "title": "Real-Time Collaboration with Lovart (Coming Soon)",
                 "desc": "Work seamlessly with your team or clients in real-time. Share designs, leave comments directly on the canvas, and see changes as they happen. Lovart's collaborative features (soon on the \"Lovart platform\") will streamline your review process and boost productivity.",
-                "alt": "Team collaborating in real-time with Lovart",
+                "alt": "Lovartでチームがリアルタイム共同編集する様子",
                 "list": [
                     "Shareable design links with permission controls",
                     "On-canvas commenting and annotations",
@@ -263,7 +263,7 @@
             {
                 "title": "Versatile One-Click Export & Sharing by Lovart",
                 "desc": "Once your design is perfect, Lovart makes it easy to share it with the world. Export your creations in various formats optimized for web, print, or social media with a single click. Lovart ensures your designs look great everywhere.",
-                "alt": "Lovart's one-click export options",
+                "alt": "Lovartのワンクリック書き出しオプション",
                 "list": [
                     "Multiple export formats (JPG, PNG, PDF, SVG - planned)",
                     "Customizable export settings for quality and size",
@@ -2107,6 +2107,63 @@
             "lovart_ai_code": "Lovart AI Code",
             "privacy_policy": "プライバシーポリシー",
             "terms_of_service": "利用規約"
+        }
+    },
+    "assets": {
+        "default_alt": "Lovartのデザインイメージ",
+        "images": {
+            "/images/01.jpg": "Lovartチームがデザインスタジオで協業している様子",
+            "/images/02.png": "Lovartデザイナーのプロフィール画像",
+            "/images/small_01.jpg": "Lovartで新規プロジェクトを開始するデザイナー",
+            "/images/small_03.jpg": "Lovartでレイアウトを調整するデザイナー",
+            "/images/small_04.jpg": "Lovartでデザイン案をレビューするチーム",
+            "/images/small_05.jpg": "Lovartで完成したデザインを発表するクリエイター",
+            "/images/small_06.jpg": "Lovartで作成したブランドキャンペーンのモックアップ",
+            "/images/small_07.jpg": "Lovartで作成したSNS向けビジュアル",
+            "/images/small_08.jpg": "Lovartで構成したポスターデザイン",
+            "/images/small_09.jpg": "Lovartで生成したWebバナー案",
+            "/images/small_10.jpg": "Lovartで作成した商品カードデザイン",
+            "/images/small_11.jpg": "Lovartで仕上げたマーケティングレイアウト",
+            "/images/12.jpg": "Lovartワークスペースで整理したイラスト素材",
+            "/images/13.jpg": "Lovartで作成したモバイルデザインプレビュー",
+            "/images/14.jpg": "Lovartで作成したクリエイティブムードボード",
+            "/images/features/feature-ai-suggestions.jpg": "Lovart AIによるデザイン提案",
+            "/images/features/feature-drag-drop.jpg": "Lovartのドラッグ＆ドロップ編集画面",
+            "/images/features/feature-assets.jpg": "Lovartの素材ライブラリを閲覧する画面",
+            "/images/features/feature-collaboration.jpg": "Lovartでチームがリアルタイム共同編集する様子",
+            "/images/features/feature-export.jpg": "Lovartのワンクリック書き出しオプション",
+            "/images/03.jpg": "Lovartのステップ解説チュートリアル画像"
+        },
+        "image_context": {
+            "about.team.photo": "Lovartチームの集合写真",
+            "index.hero.primary": "Lovart AIデザインプラットフォームのダッシュボード",
+            "index.how_it_works.step1": "Lovartのテンプレートから新規プロジェクトを開始する画面",
+            "index.how_it_works.step2": "LovartのAI提案とドラッグ操作でデザインを編集する画面",
+            "index.how_it_works.step3": "Lovartで共同編集し成果物を書き出すワークフロー",
+            "index.testimonials.alex_avatar": "Lovartユーザー Alex V. のアバター",
+            "index.testimonials.sarah_avatar": "Lovartユーザー Sarah M. のアバター",
+            "index.testimonials.james_avatar": "Lovartユーザー James P. のアバター",
+            "index.gallery.image_1": "Lovartで作成したブランドキャンペーンのモックアップ",
+            "index.gallery.image_2": "Lovartで作成したSNS向けビジュアル",
+            "index.gallery.image_3": "Lovartで構成したポスターデザイン",
+            "index.gallery.image_4": "Lovartで生成したWebバナー案",
+            "index.gallery.image_5": "Lovartで作成した商品カードデザイン",
+            "index.gallery.image_6": "Lovartで仕上げたマーケティングレイアウト",
+            "index.gallery.image_7": "Lovartワークスペースで整理したイラスト素材",
+            "index.gallery.image_8": "Lovartで作成したモバイルデザインプレビュー",
+            "index.gallery.image_9": "Lovartで作成したクリエイティブムードボード",
+            "index.cta.visual": "Lovartがクリエイターの高品質な制作物公開を支援するイメージ",
+            "pricing.comparison": "Lovart料金プランの比較イメージ",
+            "privacy.security": "データ保護とアカウントセキュリティを示すイメージ",
+            "terms.hero": "Lovart利用規約とサポート案内のアイコン",
+            "features_page.ai_suggestions": "Lovart AIによるデザイン提案",
+            "features_page.drag_drop": "Lovartのドラッグ＆ドロップ編集画面",
+            "features_page.asset_library": "Lovartの素材ライブラリを閲覧する画面",
+            "features_page.collaboration": "Lovartでチームがリアルタイム共同編集する様子",
+            "features_page.export": "Lovartのワンクリック書き出しオプション",
+            "help.video.tutorial_1": "ヘルプ動画サムネイル：Lovartワークスペースの導入",
+            "help.video.tutorial_2": "ヘルプ動画サムネイル：Lovartテンプレートと編集ツールの使い方",
+            "help.video.tutorial_3": "ヘルプ動画サムネイル：Lovartでの書き出しと共有方法"
         }
     }
 }

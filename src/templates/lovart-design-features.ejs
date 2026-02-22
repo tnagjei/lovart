@@ -156,7 +156,7 @@
                                         <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
                                             <div class="md:w-1/2">
                                                 <img src="/images/features/feature-ai-suggestions.jpg"
-                                                    alt="<%= t.features_page.features[0].alt %>"
+                                                    alt="<%= imageAlt('/images/features/feature-ai-suggestions.jpg', { contextKey: 'features_page.ai_suggestions', fallback: t.features_page.features[0].alt }) %>"
                                                     class="rounded-lg shadow-xl w-full">
                                             </div>
                                             <div class="md:w-1/2">
@@ -188,7 +188,7 @@
                                             class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
                                             <div class="md:w-1/2">
                                                 <img src="/images/features/feature-drag-drop.jpg"
-                                                    alt="<%= t.features_page.features[1].alt %>"
+                                                    alt="<%= imageAlt('/images/features/feature-drag-drop.jpg', { contextKey: 'features_page.drag_drop', fallback: t.features_page.features[1].alt }) %>"
                                                     class="rounded-lg shadow-xl w-full">
                                             </div>
                                             <div class="md:w-1/2">
@@ -219,7 +219,7 @@
                                         <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
                                             <div class="md:w-1/2">
                                                 <img src="/images/features/feature-assets.jpg"
-                                                    alt="<%= t.features_page.features[2].alt %>"
+                                                    alt="<%= imageAlt('/images/features/feature-assets.jpg', { contextKey: 'features_page.asset_library', fallback: t.features_page.features[2].alt }) %>"
                                                     class="rounded-lg shadow-xl w-full">
                                             </div>
                                             <div class="md:w-1/2">
@@ -251,7 +251,7 @@
                                             class="flex flex-col md:flex-row-reverse items-center gap-8 section-animate">
                                             <div class="md:w-1/2">
                                                 <img src="/images/features/feature-collaboration.jpg"
-                                                    alt="<%= t.features_page.features[3].alt %>"
+                                                    alt="<%= imageAlt('/images/features/feature-collaboration.jpg', { contextKey: 'features_page.collaboration', fallback: t.features_page.features[3].alt }) %>"
                                                     class="rounded-lg shadow-xl w-full">
                                             </div>
                                             <div class="md:w-1/2">
@@ -282,7 +282,7 @@
                                         <div class="flex flex-col md:flex-row items-center gap-8 section-animate">
                                             <div class="md:w-1/2">
                                                 <img src="/images/features/feature-export.jpg"
-                                                    alt="<%= t.features_page.features[4].alt %>"
+                                                    alt="<%= imageAlt('/images/features/feature-export.jpg', { contextKey: 'features_page.export', fallback: t.features_page.features[4].alt }) %>"
                                                     class="rounded-lg shadow-xl w-full">
                                             </div>
                                             <div class="md:w-1/2">
@@ -376,7 +376,7 @@
                                                     <p class="text-lg text-neutral mb-8 max-w-xl mx-auto">
                                                         <%= t.features_page.cta.desc %>
                                                     </p>
-                                                    <a href="<%= link('lovart-pricing.html') %>"
+                                                    <a href="<%= link('lovart-pricing') %>"
                                                         class="bg-primary text-white px-10 py-4 rounded-md hover:bg-primary-dark transition-colors text-lg font-medium">
                                                         <%= t.features_page.cta.button %>
                                                     </a>
@@ -390,7 +390,7 @@
                                                         <%= t.features_page.related.title %>
                                                     </h2>
                                                     <div class="grid md:grid-cols-3 gap-6">
-                                                        <a href="<%= link('lovart-pricing.html') %>"
+                                                        <a href="<%= link('lovart-pricing') %>"
                                                             class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                                                             <h3 class="font-semibold mb-1">
                                                                 <%= t.features_page.related.items[0].title %>
@@ -402,7 +402,7 @@
                                                                 <%= t.features_page.related.items[0].link_text %>
                                                             </span>
                                                         </a>
-                                                        <a href="<%= link('lovart-api.html') %>"
+                                                        <a href="<%= link('lovart-api') %>"
                                                             class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                                                             <h3 class="font-semibold mb-1">
                                                                 <%= t.features_page.related.items[1].title %>
@@ -414,7 +414,7 @@
                                                                 <%= t.features_page.related.items[1].link_text %>
                                                             </span>
                                                         </a>
-                                                        <a href="<%= link('lovart-free.html') %>"
+                                                        <a href="<%= link('lovart-free') %>"
                                                             class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                                                             <h3 class="font-semibold mb-1">
                                                                 <%= t.features_page.related.items[2].title %>
@@ -426,7 +426,7 @@
                                                                 <%= t.features_page.related.items[2].link_text %>
                                                             </span>
                                                         </a>
-                                                        <a href="<%= link('lovart-ai-code.html') %>"
+                                                        <a href="<%= link('lovart-ai-code') %>"
                                                             class="block p-5 rounded-xl border border-neutral-light/30 hover:shadow-md hover:border-primary/30 transition-all text-center">
                                                             <h3 class="font-semibold mb-1">
                                                                 <%= t.lovart_ai_code_page.hero.title %>

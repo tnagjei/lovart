@@ -14,9 +14,9 @@ const quickSearchTags = (helpPage.contact && helpPage.contact.quick_search && he
     : [];
 const quickHelpBgClasses = ['bg-primary', 'bg-secondary', 'bg-green-500', 'bg-orange-500', 'bg-indigo-500'];
 const videoImageSet = [
-    { webp: '/images/02.webp', fallback: '/images/02.png', alt: 'Help tutorial 1' },
-    { webp: '/images/03.webp', fallback: '/images/03.jpg', alt: 'Help tutorial 2' },
-    { webp: '/images/small_03.webp', fallback: '/images/small_03.jpg', alt: 'Help tutorial 3' },
+    { webp: '/images/02.webp', fallback: '/images/02.png', contextKey: 'help.video.tutorial_1' },
+    { webp: '/images/03.webp', fallback: '/images/03.jpg', contextKey: 'help.video.tutorial_2' },
+    { webp: '/images/small_03.webp', fallback: '/images/small_03.jpg', contextKey: 'help.video.tutorial_3' },
 ];
 %>
 <html lang="<%= lang %>" class="scroll-smooth">
@@ -163,7 +163,7 @@ const videoImageSet = [
                             </p>
                             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                                 <% supportHelpLinks.forEach(function(item) { %>
-                                <a href="<%= link(item.path + '.html') %>" class="bg-white p-5 rounded-lg border border-gray-200 hover:border-primary hover:shadow-md transition-all">
+                                <a href="<%= link(item.path) %>" class="bg-white p-5 rounded-lg border border-gray-200 hover:border-primary hover:shadow-md transition-all">
                                     <h3 class="text-lg font-semibold text-neutral-dark mb-1"><%= item.title %></h3>
                                     <p class="text-sm text-neutral"><%= item.desc %></p>
                                 </a>
@@ -200,7 +200,7 @@ const videoImageSet = [
                                                     </li>
                                                     <% }) %>
                                             </ul>
-                                            <a href="<%= link('help.html') %>" class="text-primary hover:text-primary-dark font-medium text-sm">
+                                            <a href="<%= link('help') %>" class="text-primary hover:text-primary-dark font-medium text-sm">
                                                 <%= step.link %> →
                                             </a>
                                         </div>
@@ -258,11 +258,11 @@ const videoImageSet = [
                                         <%= helpPage.faq_cta.desc %>
                                     </p>
                                     <div class="flex flex-wrap justify-center gap-3">
-                                        <a href="<%= link('lovart-pricing.html') %>"
+                                        <a href="<%= link('lovart-pricing') %>"
                                             class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors font-medium">
                                             <%= helpPage.faq_cta.primary_button %>
                                         </a>
-                                        <a href="<%= link('lovart-free.html') %>"
+                                        <a href="<%= link('lovart-free') %>"
                                             class="bg-white border border-neutral-light text-neutral-dark px-6 py-3 rounded-md hover:bg-neutral-light transition-colors font-medium">
                                             <%= helpPage.faq_cta.secondary_button %>
                                         </a>
@@ -286,7 +286,8 @@ const videoImageSet = [
                                             <div class="relative">
                                                 <picture>
                                                     <source type="image/webp" srcset="<%= media.webp %>">
-                                                    <img src="<%= media.fallback %>" alt="<%= media.alt %>"
+                                                    <img src="<%= media.fallback %>"
+                                                        alt="<%= imageAlt(media.fallback, { contextKey: media.contextKey, fallback: video.title }) %>"
                                                         class="w-full h-48 object-cover">
                                                 </picture>
                                                 <div
@@ -469,7 +470,7 @@ const videoImageSet = [
                     <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
                         <div class="text-sm">
                             <p>We use cookies to enhance your experience and analyze our traffic. By continuing to visit
-                                this site you agree to our use of cookies. <a href="<%= link('privacy-policy.html') %>"
+                                this site you agree to our use of cookies. <a href="<%= link('privacy-policy') %>"
                                     class="underline hover:text-primary">Learn more</a></p>
                         </div>
                         <div class="flex gap-3">

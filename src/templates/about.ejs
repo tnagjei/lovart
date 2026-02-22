@@ -107,7 +107,7 @@
                                     </div>
                                 </div>
                                 <div class="flex justify-center">
-                                    <a href="<%= link('lovart-design-features.html') %>"
+                                    <a href="<%= link('lovart-design-features') %>"
                                         class="bg-white text-primary px-8 py-3 rounded-md font-bold hover:bg-opacity-90 transition-all transform hover:scale-105">
                                         <%= t.about_page.hero.cta_features %>
                                     </a>
@@ -175,7 +175,9 @@
                                     <div class="relative">
                                         <picture>
                                             <source type="image/webp" srcset="/images/01.webp">
-                                            <img src="/images/01.jpg" alt="Lovart Team" class="rounded-lg shadow-xl">
+                                            <img src="/images/01.jpg"
+                                                alt="<%= imageAlt('/images/01.jpg', { contextKey: 'about.team.photo' }) %>"
+                                                class="rounded-lg shadow-xl">
                                         </picture>
                                         <div
                                             class="absolute -bottom-4 -right-4 bg-primary text-white p-4 rounded-lg shadow-lg">
@@ -300,11 +302,11 @@
                                     <%= t.about_page.cta_conversion.desc %>
                                 </p>
                                 <div class="flex flex-wrap justify-center gap-4">
-                                    <a href="<%= link('lovart-pricing.html') %>"
+                                    <a href="<%= link('lovart-pricing') %>"
                                         class="bg-primary text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-primary-dark transition-all transform hover:scale-105 shadow-lg">
                                         <%= t.about_page.cta_conversion.button %>
                                     </a>
-                                    <a href="<%= link('lovart-design-features.html') %>"
+                                    <a href="<%= link('lovart-design-features') %>"
                                         class="bg-transparent border-2 border-primary text-primary px-10 py-4 rounded-md font-bold text-lg hover:bg-primary hover:text-white transition-all transform hover:scale-105">
                                         <%= t.nav.features %>
                                     </a>

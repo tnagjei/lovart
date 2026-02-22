@@ -91,15 +91,15 @@
     "gallery": {
         "title": "Lovart in Action: Creative Showcase",
         "images": [
-            "Lovart creative showcase image 1",
-            "Lovart creative showcase image 2",
-            "Lovart creative showcase image 3",
-            "Lovart creative showcase image 4",
-            "Lovart creative showcase image 5",
-            "Lovart creative showcase image 6",
-            "Lovart creative showcase image 7",
-            "Lovart creative showcase image 8",
-            "Lovart creative showcase image 9"
+            "使用 Lovart 制作的品牌活动视觉",
+            "在 Lovart 中设计的社媒创意图",
+            "在 Lovart 中排版的海报设计",
+            "由 Lovart 生成的网页横幅草图",
+            "在 Lovart 中完成的产品展示卡片",
+            "在 Lovart 中精修的营销版式",
+            "在 Lovart 工作区整理的插画素材",
+            "来自 Lovart 的移动端设计预览",
+            "使用 Lovart 创建的创意情绪板"
         ],
         "video_fallback": "Your browser does not support the video tag."
     },
@@ -219,7 +219,7 @@
             {
                 "title": "AI-Powered Suggestions & Smart Assistance by Lovart",
                 "desc": "Let Lovart's intelligent AI be your creative partner. It analyzes your content and design goals to offer smart suggestions for layouts, color palettes, typography, and imagery. Overcome creative blocks and discover new possibilities with the \"Lovart AI design tool\".",
-                "alt": "Lovart AI providing design suggestions",
+                "alt": "Lovart AI 提供设计建议",
                 "list": [
                     "Context-aware layout recommendations",
                     "Harmonious color scheme generation",
@@ -230,7 +230,7 @@
             {
                 "title": "Intuitive Drag-and-Drop Interface with Lovart",
                 "desc": "Lovart features a beautifully designed and easy-to-use drag-and-drop editor. Effortlessly arrange elements, resize objects, and build complex layouts without writing a single line of code. Focus on your creativity, not on learning complicated software. This is a key aspect of the \"Lovart platform\".",
-                "alt": "Lovart's intuitive drag and drop interface",
+                "alt": "Lovart 拖拽编辑界面",
                 "list": [
                     "Pixel-perfect control and alignment guides",
                     "Easy-to-use tools for shapes, text, and media",
@@ -241,7 +241,7 @@
             {
                 "title": "Vast Integrated Asset Library in Lovart",
                 "desc": "Access millions of high-quality stock photos, illustrations, icons, videos, and fonts directly within the Lovart editor. Our curated library, a core part of \"Lovart AI\", ensures you have the perfect assets to bring your vision to life without ever leaving the platform.",
-                "alt": "Accessing Lovart's vast asset library",
+                "alt": "浏览 Lovart 素材库",
                 "list": [
                     "Millions of royalty-free images and videos",
                     "Extensive collection of icons and illustrations",
@@ -252,7 +252,7 @@
             {
                 "title": "Real-Time Collaboration with Lovart (Coming Soon)",
                 "desc": "Work seamlessly with your team or clients in real-time. Share designs, leave comments directly on the canvas, and see changes as they happen. Lovart's collaborative features (soon on the \"Lovart platform\") will streamline your review process and boost productivity.",
-                "alt": "Team collaborating in real-time with Lovart",
+                "alt": "团队在 Lovart 中实时协作",
                 "list": [
                     "Shareable design links with permission controls",
                     "On-canvas commenting and annotations",
@@ -263,7 +263,7 @@
             {
                 "title": "Versatile One-Click Export & Sharing by Lovart",
                 "desc": "Once your design is perfect, Lovart makes it easy to share it with the world. Export your creations in various formats optimized for web, print, or social media with a single click. Lovart ensures your designs look great everywhere.",
-                "alt": "Lovart's one-click export options",
+                "alt": "Lovart 一键导出选项",
                 "list": [
                     "Multiple export formats (JPG, PNG, PDF, SVG - planned)",
                     "Customizable export settings for quality and size",
@@ -2463,6 +2463,63 @@
             "lovart_ai_code": "Lovart AI Code",
             "privacy_policy": "隐私政策",
             "terms_of_service": "服务条款"
+        }
+    },
+    "assets": {
+        "default_alt": "Lovart 设计场景图",
+        "images": {
+            "/images/01.jpg": "Lovart 团队在设计工作室协作",
+            "/images/02.png": "Lovart 设计师头像",
+            "/images/small_01.jpg": "设计师在 Lovart 中启动新项目",
+            "/images/small_03.jpg": "设计师在 Lovart 中精修布局",
+            "/images/small_04.jpg": "团队在 Lovart 中审阅设计迭代",
+            "/images/small_05.jpg": "创作者展示 Lovart 完成作品",
+            "/images/small_06.jpg": "使用 Lovart 制作的品牌活动视觉",
+            "/images/small_07.jpg": "在 Lovart 中设计的社媒创意图",
+            "/images/small_08.jpg": "在 Lovart 中排版的海报设计",
+            "/images/small_09.jpg": "由 Lovart 生成的网页横幅草图",
+            "/images/small_10.jpg": "在 Lovart 中完成的产品展示卡片",
+            "/images/small_11.jpg": "在 Lovart 中精修的营销版式",
+            "/images/12.jpg": "在 Lovart 工作区整理的插画素材",
+            "/images/13.jpg": "来自 Lovart 的移动端设计预览",
+            "/images/14.jpg": "使用 Lovart 创建的创意情绪板",
+            "/images/features/feature-ai-suggestions.jpg": "Lovart AI 提供设计建议",
+            "/images/features/feature-drag-drop.jpg": "Lovart 拖拽编辑界面",
+            "/images/features/feature-assets.jpg": "浏览 Lovart 素材库",
+            "/images/features/feature-collaboration.jpg": "团队在 Lovart 中实时协作",
+            "/images/features/feature-export.jpg": "Lovart 一键导出选项",
+            "/images/03.jpg": "Lovart 分步教程示意图"
+        },
+        "image_context": {
+            "about.team.photo": "Lovart 团队合影",
+            "index.hero.primary": "Lovart AI 设计平台界面预览",
+            "index.how_it_works.step1": "在 Lovart 中从模板启动新项目",
+            "index.how_it_works.step2": "使用 Lovart AI 建议与拖拽工具进行设计",
+            "index.how_it_works.step3": "在 Lovart 中协作审阅并导出成果",
+            "index.testimonials.alex_avatar": "设计师 Alex V. 的头像",
+            "index.testimonials.sarah_avatar": "设计师 Sarah M. 的头像",
+            "index.testimonials.james_avatar": "设计师 James P. 的头像",
+            "index.gallery.image_1": "使用 Lovart 制作的品牌活动视觉",
+            "index.gallery.image_2": "在 Lovart 中设计的社媒创意图",
+            "index.gallery.image_3": "在 Lovart 中排版的海报设计",
+            "index.gallery.image_4": "由 Lovart 生成的网页横幅草图",
+            "index.gallery.image_5": "在 Lovart 中完成的产品展示卡片",
+            "index.gallery.image_6": "在 Lovart 中精修的营销版式",
+            "index.gallery.image_7": "在 Lovart 工作区整理的插画素材",
+            "index.gallery.image_8": "来自 Lovart 的移动端设计预览",
+            "index.gallery.image_9": "使用 Lovart 创建的创意情绪板",
+            "index.cta.visual": "Lovart 帮助创作者高效输出高质量视觉",
+            "pricing.comparison": "Lovart 价格方案对比示意图",
+            "privacy.security": "数据隐私与账户安全示意图",
+            "terms.hero": "Lovart 使用条款与支持入口示意图",
+            "features_page.ai_suggestions": "Lovart AI 提供设计建议",
+            "features_page.drag_drop": "Lovart 拖拽编辑界面",
+            "features_page.asset_library": "浏览 Lovart 素材库",
+            "features_page.collaboration": "团队在 Lovart 中实时协作",
+            "features_page.export": "Lovart 一键导出选项",
+            "help.video.tutorial_1": "帮助教程封面：快速上手 Lovart 工作区",
+            "help.video.tutorial_2": "帮助教程封面：使用 Lovart 模板与工具",
+            "help.video.tutorial_3": "帮助教程封面：在 Lovart 中导出与分享"
         }
     }
 }

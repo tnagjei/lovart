@@ -202,7 +202,7 @@
                                 <source type="image/webp" media="(max-width: 1024px)" srcset="/images/small_01.webp">
                                 <source type="image/webp" srcset="/images/small_01.webp">
                                 <img data-src="/images/small_01.jpg" src="/images/placeholder.jpg"
-                                    alt="Lovart AI Design Platform in action"
+                                    alt="<%= imageAlt('/images/small_01.jpg', { contextKey: 'index.hero.primary' }) %>"
                                     class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy"
                                     decoding="async">
                             </picture>
@@ -332,7 +332,8 @@
                         <div class="p-6 animate-fade-in-up" style="animation-delay: 0.1s;">
                             <picture>
                                 <source type="image/webp" srcset="/images/small_01.webp">
-                                <img src="/images/small_01.jpg" alt="Step 1: Ignite Your Project with Lovart"
+                                <img src="/images/small_01.jpg"
+                                    alt="<%= imageAlt('/images/small_01.jpg', { contextKey: 'index.how_it_works.step1' }) %>"
                                     class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
                             </picture>
                             <h3 class="text-xl font-semibold mb-2">
@@ -347,7 +348,7 @@
                             <picture>
                                 <source type="image/webp" srcset="/images/small_03.webp">
                                 <img src="/images/small_03.jpg"
-                                    alt="Step 2: Design with Lovart's AI and Intuitive Tools"
+                                    alt="<%= imageAlt('/images/small_03.jpg', { contextKey: 'index.how_it_works.step2' }) %>"
                                     class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
                             </picture>
                             <h3 class="text-xl font-semibold mb-2">
@@ -361,7 +362,8 @@
                         <div class="p-6 animate-fade-in-up" style="animation-delay: 0.5s;">
                             <picture>
                                 <source type="image/webp" srcset="/images/small_04.webp">
-                                <img src="/images/small_04.jpg" alt="Step 3: Collaborate, Refine & Export with Lovart"
+                                <img src="/images/small_04.jpg"
+                                    alt="<%= imageAlt('/images/small_04.jpg', { contextKey: 'index.how_it_works.step3' }) %>"
                                     class="w-full h-48 object-cover rounded-lg mx-auto mb-6 shadow-lg transition-transform duration-300 hover:scale-105">
                             </picture>
                             <h3 class="text-xl font-semibold mb-2">
@@ -391,7 +393,8 @@
                             <div class="flex items-center">
                                 <picture>
                                     <source type="image/webp" srcset="/images/02.webp">
-                                    <img src="/images/02.png" alt="Avatar of Alex V."
+                                    <img src="/images/02.png"
+                                        alt="<%= imageAlt('/images/02.png', { contextKey: 'index.testimonials.alex_avatar' }) %>"
                                         class="w-12 h-12 rounded-full mr-4 object-cover">
                                     <!-- Replace with real avatar -->
                                 </picture>
@@ -414,7 +417,8 @@
                             <div class="flex items-center">
                                 <picture>
                                     <source type="image/webp" srcset="/images/small_03.webp">
-                                    <img src="/images/small_03.jpg" alt="Avatar of Sarah M."
+                                    <img src="/images/small_03.jpg"
+                                        alt="<%= imageAlt('/images/small_03.jpg', { contextKey: 'index.testimonials.sarah_avatar' }) %>"
                                         class="w-12 h-12 rounded-full mr-4 object-cover">
                                     <!-- Replace with real avatar -->
                                 </picture>
@@ -437,7 +441,8 @@
                             <div class="flex items-center">
                                 <picture>
                                     <source type="image/webp" srcset="/images/small_04.webp">
-                                    <img src="/images/small_04.jpg" alt="Avatar of James P."
+                                    <img src="/images/small_04.jpg"
+                                        alt="<%= imageAlt('/images/small_04.jpg', { contextKey: 'index.testimonials.james_avatar' }) %>"
                                         class="w-12 h-12 rounded-full mr-4 object-cover"> <!-- 替换为真实头像 -->
                                 </picture>
                                 <div>
@@ -470,7 +475,7 @@
                                     <source type="image/webp" srcset="/images/small_06.webp">
                                     <source media="(max-width: 640px)" srcset="/images/small_06.jpg">
                                     <img data-src="/images/small_06.jpg" src="/images/placeholder.jpg"
-                                        alt="<%= t.gallery.images[0] %>"
+                                        alt="<%= imageAlt('/images/small_06.jpg', { contextKey: 'index.gallery.image_1', fallback: t.gallery.images[0] }) %>"
                                         class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy"
                                         decoding="async">
                                 </picture>
@@ -489,7 +494,7 @@
                                     <source type="image/webp" srcset="/images/small_07.webp">
                                     <source media="(max-width: 640px)" srcset="/images/small_07.jpg">
                                     <img data-src="/images/small_07.jpg" src="/images/placeholder.jpg"
-                                        alt="<%= t.gallery.images[1] %>"
+                                        alt="<%= imageAlt('/images/small_07.jpg', { contextKey: 'index.gallery.image_2', fallback: t.gallery.images[1] }) %>"
                                         class="lazy-load w-full h-full object-cover rounded-lg" loading="lazy"
                                         decoding="async">
                                 </picture>
@@ -505,7 +510,8 @@
                                 <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_08.webp">
                                 <source type="image/webp" srcset="/images/small_08.webp">
                                 <source media="(max-width: 640px)" srcset="/images/small_08.jpg">
-                                <img src="/images/small_08.jpg" alt="<%= t.gallery.images[2] %>"
+                                <img src="/images/small_08.jpg"
+                                    alt="<%= imageAlt('/images/small_08.jpg', { contextKey: 'index.gallery.image_3', fallback: t.gallery.images[2] }) %>"
                                     class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                     loading="lazy" decoding="async">
                             </picture>
@@ -516,7 +522,8 @@
                                 <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_09.webp">
                                 <source type="image/webp" srcset="/images/small_09.webp">
                                 <source media="(max-width: 640px)" srcset="/images/small_09.jpg">
-                                <img src="/images/small_09.jpg" alt="<%= t.gallery.images[3] %>"
+                                <img src="/images/small_09.jpg"
+                                    alt="<%= imageAlt('/images/small_09.jpg', { contextKey: 'index.gallery.image_4', fallback: t.gallery.images[3] }) %>"
                                     class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                     loading="lazy" decoding="async">
                             </picture>
@@ -527,7 +534,8 @@
                                 <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_10.webp">
                                 <source type="image/webp" srcset="/images/small_10.webp">
                                 <source media="(max-width: 640px)" srcset="/images/small_10.jpg">
-                                <img src="/images/small_10.jpg" alt="<%= t.gallery.images[4] %>"
+                                <img src="/images/small_10.jpg"
+                                    alt="<%= imageAlt('/images/small_10.jpg', { contextKey: 'index.gallery.image_5', fallback: t.gallery.images[4] }) %>"
                                     class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                     loading="lazy" decoding="async">
                             </picture>
@@ -538,7 +546,8 @@
                                 <source type="image/webp" media="(max-width: 640px)" srcset="/images/small_11.webp">
                                 <source type="image/webp" srcset="/images/small_11.webp">
                                 <source media="(max-width: 640px)" srcset="/images/small_11.jpg">
-                                <img src="/images/small_11.jpg" alt="<%= t.gallery.images[5] %>"
+                                <img src="/images/small_11.jpg"
+                                    alt="<%= imageAlt('/images/small_11.jpg', { contextKey: 'index.gallery.image_6', fallback: t.gallery.images[5] }) %>"
                                     class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                     loading="lazy" decoding="async">
                             </picture>
@@ -566,7 +575,8 @@
                                 <source type="image/webp" media="(max-width: 640px)" srcset="/images/12.webp">
                                 <source type="image/webp" srcset="/images/12.webp">
                                 <source media="(max-width: 640px)" srcset="/images/12.jpg">
-                                <img src="/images/12.jpg" alt="<%= t.gallery.images[6] %>"
+                                <img src="/images/12.jpg"
+                                    alt="<%= imageAlt('/images/12.jpg', { contextKey: 'index.gallery.image_7', fallback: t.gallery.images[6] }) %>"
                                     class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                     loading="lazy" decoding="async">
                             </picture>
@@ -577,7 +587,8 @@
                                 <source type="image/webp" media="(max-width: 640px)" srcset="/images/13.webp">
                                 <source type="image/webp" srcset="/images/13.webp">
                                 <source media="(max-width: 640px)" srcset="/images/13.jpg">
-                                <img src="/images/13.jpg" alt="<%= t.gallery.images[7] %>"
+                                <img src="/images/13.jpg"
+                                    alt="<%= imageAlt('/images/13.jpg', { contextKey: 'index.gallery.image_8', fallback: t.gallery.images[7] }) %>"
                                     class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                     loading="lazy" decoding="async">
                             </picture>
@@ -588,7 +599,8 @@
                                 <source type="image/webp" media="(max-width: 640px)" srcset="/images/14.webp">
                                 <source type="image/webp" srcset="/images/14.webp">
                                 <source media="(max-width: 640px)" srcset="/images/14.jpg">
-                                <img src="/images/14.jpg" alt="<%= t.gallery.images[8] %>"
+                                <img src="/images/14.jpg"
+                                    alt="<%= imageAlt('/images/14.jpg', { contextKey: 'index.gallery.image_9', fallback: t.gallery.images[8] }) %>"
                                     class="w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                                     loading="lazy" decoding="async">
                             </picture>
@@ -1038,7 +1050,7 @@
                                     class="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-md hover:bg-white hover:text-secondary transition-all transform hover:scale-105 text-lg inline-block">
                                     <%= t.cta_section.cta_explore %>
                                 </a>
-                                <a href="<%= link('lovart-ai-code.html') %>"
+                                <a href="<%= link('lovart-ai-code') %>"
                                     class="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-md hover:bg-white hover:text-secondary transition-all transform hover:scale-105 text-lg inline-block mt-2 md:mt-0">
                                     <%= t.cta_section.cta_developers %>
                                 </a>
@@ -1046,7 +1058,8 @@
                         </div>
                         <div class="md:w-1/2 lg:w-3/5 flex justify-center md:justify-end animate-fade-in-up"
                             style="animation-delay: 0.3s;">
-                            <img src="/images/small_05.jpg" alt="Lovart platform empowering creative designs"
+                            <img src="/images/small_05.jpg"
+                                alt="<%= imageAlt('/images/small_05.jpg', { contextKey: 'index.cta.visual' }) %>"
                                 class="rounded-lg shadow-xl max-w-lg w-full object-cover" style="max-height: 350px;">
                         </div>
                     </div>
@@ -1207,7 +1220,7 @@
                 <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
                     <div class="text-sm">
                         <p>
-                            <%= t.cookie_consent.text %> <a href="<%= link('privacy-policy.html') %>"
+                            <%= t.cookie_consent.text %> <a href="<%= link('privacy-policy') %>"
                                     class="underline hover:text-primary">
                                     <%= t.cookie_consent.learn_more %>
                                 </a>

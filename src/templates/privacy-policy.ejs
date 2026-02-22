@@ -392,7 +392,8 @@ const privacyBridge = supportCluster.privacy_bridge || {};
                         </p>
                         <picture>
                             <source type="image/webp" srcset="/images/small_04.webp">
-                            <img src="/images/small_04.jpg" alt="Data Security"
+                            <img src="/images/small_04.jpg"
+                                alt="<%= imageAlt('/images/small_04.jpg', { contextKey: 'privacy.security' }) %>"
                                 class="w-16 h-16 rounded-full mx-auto mb-4">
                         </picture>
                         <div class="flex flex-col md:flex-row justify-center gap-4">
@@ -400,7 +401,7 @@ const privacyBridge = supportCluster.privacy_bridge || {};
                                 class="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary-dark transition-colors font-semibold">
                                 <%= t.privacy_page.contact.email_btn %>
                             </a>
-                            <a href="<%= link('help.html') %>"
+                            <a href="<%= link('help') %>"
                                 class="bg-white text-neutral-dark border border-neutral-dark px-8 py-3 rounded-md hover:bg-gray-50 transition-colors font-semibold">
                                 <%= t.privacy_page.contact.help_btn %>
                             </a>

@@ -14,7 +14,7 @@ const currentPath = pageData.path || 'lovart-customer-support';
 const relatedLinks = helpLinks.filter((item) => item && item.path && item.path !== currentPath);
 const breadcrumbItems = [
     { name: t.nav.home, href: link('/') },
-    { name: t.nav.help, href: link('help.html') },
+    { name: t.nav.help, href: link('help') },
     { name: pageData.breadcrumb || heroData.title || t.nav.help, href: canonicalUrl }
 ];
 %>
@@ -108,7 +108,7 @@ const breadcrumbItems = [
                     <p class="text-neutral mb-8"><%= supportCluster.related_desc || '' %></p>
                     <div class="grid md:grid-cols-2 gap-4">
                         <% relatedLinks.forEach(function(item) { %>
-                        <a href="<%= link(item.path + '.html') %>" class="bg-white border border-gray-200 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all">
+                        <a href="<%= link(item.path) %>" class="bg-white border border-gray-200 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all">
                             <h3 class="font-semibold text-neutral-dark mb-1"><%= item.title %></h3>
                             <p class="text-sm text-neutral"><%= item.desc %></p>
                         </a>

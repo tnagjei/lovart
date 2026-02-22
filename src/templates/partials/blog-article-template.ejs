@@ -46,7 +46,7 @@ function getShareLinks(relativeUrl, title) {
 
 const featuredPost = {
     slug: blogFeaturedSlug,
-    url: link(`blog-${blogFeaturedSlug}.html`),
+    url: link(`blog-${blogFeaturedSlug}`),
     title: t.blog_page.featured.article_title,
     desc: t.blog_page.featured.desc,
     tag: t.blog_page.featured.tag,
@@ -61,7 +61,7 @@ const featuredPost = {
 
 const latestPosts = t.blog_page.latest.posts.map((post, index) => {
     const slug = latestPostSlugs[index] || `blog-post-${index + 1}`;
-    const url = link(`blog-${slug}.html`);
+    const url = link(`blog-${slug}`);
 
     return {
         ...post,
@@ -89,7 +89,7 @@ const selectedArticle = blogPostsBySlug[articleSlug] || blogPosts[0];
 const relatedPosts = blogPosts.filter((post) => post.slug !== selectedArticle.slug).slice(0, 3);
 const breadcrumbItems = [
     { name: t.nav.home, href: link('/') },
-    { name: t.nav.blog, href: link('blog.html') },
+    { name: t.nav.blog, href: link('blog') },
     { name: selectedArticle.title, href: canonicalUrl }
 ];
 const articleShareLinks = getShareLinks(canonicalUrl, selectedArticle.title);

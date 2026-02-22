@@ -91,15 +91,15 @@
     "gallery": {
         "title": "Lovart in Action: Creative Showcase",
         "images": [
-            "Lovart creative showcase image 1",
-            "Lovart creative showcase image 2",
-            "Lovart creative showcase image 3",
-            "Lovart creative showcase image 4",
-            "Lovart creative showcase image 5",
-            "Lovart creative showcase image 6",
-            "Lovart creative showcase image 7",
-            "Lovart creative showcase image 8",
-            "Lovart creative showcase image 9"
+            "Brand campaign mockup created with Lovart",
+            "Social media visual drafted in Lovart",
+            "Poster concept assembled in Lovart",
+            "Web banner concept generated with Lovart",
+            "Product card design produced in Lovart",
+            "Marketing layout polished in Lovart",
+            "Illustration set organized in Lovart workspace",
+            "Mobile design preview from Lovart",
+            "Creative moodboard built with Lovart"
         ],
         "video_fallback": "Your browser does not support the video tag."
     },
@@ -230,7 +230,7 @@
             {
                 "title": "Intuitive Drag-and-Drop Interface with Lovart",
                 "desc": "Lovart features a beautifully designed and easy-to-use drag-and-drop editor. Effortlessly arrange elements, resize objects, and build complex layouts without writing a single line of code. Focus on your creativity, not on learning complicated software. This is a key aspect of the \"Lovart platform\".",
-                "alt": "Lovart's intuitive drag and drop interface",
+                "alt": "Lovart drag-and-drop interface for visual editing",
                 "list": [
                     "Pixel-perfect control and alignment guides",
                     "Easy-to-use tools for shapes, text, and media",
@@ -241,7 +241,7 @@
             {
                 "title": "Vast Integrated Asset Library in Lovart",
                 "desc": "Access millions of high-quality stock photos, illustrations, icons, videos, and fonts directly within the Lovart editor. Our curated library, a core part of \"Lovart AI\", ensures you have the perfect assets to bring your vision to life without ever leaving the platform.",
-                "alt": "Accessing Lovart's vast asset library",
+                "alt": "Browsing Lovart's integrated asset library",
                 "list": [
                     "Millions of royalty-free images and videos",
                     "Extensive collection of icons and illustrations",
@@ -252,7 +252,7 @@
             {
                 "title": "Real-Time Collaboration with Lovart (Coming Soon)",
                 "desc": "Work seamlessly with your team or clients in real-time. Share designs, leave comments directly on the canvas, and see changes as they happen. Lovart's collaborative features (soon on the \"Lovart platform\") will streamline your review process and boost productivity.",
-                "alt": "Team collaborating in real-time with Lovart",
+                "alt": "Team collaborating in real time with Lovart",
                 "list": [
                     "Shareable design links with permission controls",
                     "On-canvas commenting and annotations",
@@ -263,7 +263,7 @@
             {
                 "title": "Versatile One-Click Export & Sharing by Lovart",
                 "desc": "Once your design is perfect, Lovart makes it easy to share it with the world. Export your creations in various formats optimized for web, print, or social media with a single click. Lovart ensures your designs look great everywhere.",
-                "alt": "Lovart's one-click export options",
+                "alt": "Lovart one-click export options",
                 "list": [
                     "Multiple export formats (JPG, PNG, PDF, SVG - planned)",
                     "Customizable export settings for quality and size",
@@ -2463,6 +2463,63 @@
             "lovart_ai_code": "Lovart AI Code",
             "privacy_policy": "Privacy Policy",
             "terms_of_service": "Terms of Service"
+        }
+    },
+    "assets": {
+        "default_alt": "Lovart design scene",
+        "images": {
+            "/images/01.jpg": "Lovart team collaborating in a design studio",
+            "/images/02.png": "Designer profile avatar in Lovart",
+            "/images/small_01.jpg": "Designer starting a project in Lovart",
+            "/images/small_03.jpg": "Designer refining a layout in Lovart",
+            "/images/small_04.jpg": "Team reviewing design iterations in Lovart",
+            "/images/small_05.jpg": "Creator presenting a finished Lovart design",
+            "/images/small_06.jpg": "Brand campaign mockup created with Lovart",
+            "/images/small_07.jpg": "Social media visual drafted in Lovart",
+            "/images/small_08.jpg": "Poster concept assembled in Lovart",
+            "/images/small_09.jpg": "Web banner concept generated with Lovart",
+            "/images/small_10.jpg": "Product card design produced in Lovart",
+            "/images/small_11.jpg": "Marketing layout polished in Lovart",
+            "/images/12.jpg": "Illustration set organized in Lovart workspace",
+            "/images/13.jpg": "Mobile design preview from Lovart",
+            "/images/14.jpg": "Creative moodboard built with Lovart",
+            "/images/features/feature-ai-suggestions.jpg": "Lovart AI providing design suggestions",
+            "/images/features/feature-drag-drop.jpg": "Lovart drag-and-drop interface for visual editing",
+            "/images/features/feature-assets.jpg": "Browsing Lovart's integrated asset library",
+            "/images/features/feature-collaboration.jpg": "Team collaborating in real time with Lovart",
+            "/images/features/feature-export.jpg": "Lovart one-click export options",
+            "/images/03.jpg": "Step-by-step Lovart tutorial visual"
+        },
+        "image_context": {
+            "about.team.photo": "Lovart core team portrait",
+            "index.hero.primary": "Lovart AI design platform dashboard preview",
+            "index.how_it_works.step1": "Starting a new Lovart project from a template",
+            "index.how_it_works.step2": "Designing with Lovart AI suggestions and drag-and-drop tools",
+            "index.how_it_works.step3": "Collaborating and exporting final assets in Lovart",
+            "index.testimonials.alex_avatar": "Avatar of Alex V., Lovart user testimonial",
+            "index.testimonials.sarah_avatar": "Avatar of Sarah M., Lovart user testimonial",
+            "index.testimonials.james_avatar": "Avatar of James P., Lovart user testimonial",
+            "index.gallery.image_1": "Brand campaign mockup created with Lovart",
+            "index.gallery.image_2": "Social media visual drafted in Lovart",
+            "index.gallery.image_3": "Poster concept assembled in Lovart",
+            "index.gallery.image_4": "Web banner concept generated with Lovart",
+            "index.gallery.image_5": "Product card design produced in Lovart",
+            "index.gallery.image_6": "Marketing layout polished in Lovart",
+            "index.gallery.image_7": "Illustration set organized in Lovart workspace",
+            "index.gallery.image_8": "Mobile design preview from Lovart",
+            "index.gallery.image_9": "Creative moodboard built with Lovart",
+            "index.cta.visual": "Lovart helping creators ship polished visuals",
+            "pricing.comparison": "Comparison view of Lovart pricing plans",
+            "privacy.security": "Visual symbol of data protection and account security",
+            "terms.hero": "Support icon for Lovart terms and usage guidance",
+            "features_page.ai_suggestions": "Lovart AI providing design suggestions",
+            "features_page.drag_drop": "Lovart drag-and-drop interface for visual editing",
+            "features_page.asset_library": "Browsing Lovart's integrated asset library",
+            "features_page.collaboration": "Team collaborating in real time with Lovart",
+            "features_page.export": "Lovart one-click export options",
+            "help.video.tutorial_1": "Help tutorial cover: onboarding your Lovart workspace",
+            "help.video.tutorial_2": "Help tutorial cover: using Lovart templates and tools",
+            "help.video.tutorial_3": "Help tutorial cover: exporting and sharing from Lovart"
         }
     }
 }

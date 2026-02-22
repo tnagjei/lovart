@@ -16,6 +16,8 @@ const esItCorePages = [
     'lovart-pricing',
     'lovart-api'
 ];
+const noindexLangs = new Set(['es', 'it']);
+const noindexShellPages = new Set(esItCorePages);
 
 const pageLangMap = Object.fromEntries(
     esItCorePages.map((pageName) => [pageName, [...extendedSupportedLangs]])
@@ -59,14 +61,19 @@ function resolvePageSupportedLangs(pageName, cfg) {
     return normalizedLangs;
 }
 
-function buildSitemapXml(pageNames, getPageSupportedLangs, defaultLang) {
+function shouldNoindexPage(pageName, lang) {
+    return noindexLangs.has(lang) && noindexShellPages.has(pageName);
+}
+
+function buildSitemapXml(pageNames, getPageSupportedLangs, defaultLang, isIndexablePage) {
     const lastmod = new Date().toISOString().split('T')[0];
     const orderedPageNames = ['index', ...pageNames.filter((pageName) => pageName !== 'index').sort()];
 
     const urlEntries = [];
 
     for (const pageName of orderedPageNames) {
-        const pageSupportedLangs = getPageSupportedLangs(pageName);
+        const pageSupportedLangs = getPageSupportedLangs(pageName)
+            .filter((lang) => isIndexablePage(pageName, lang));
         if (!pageSupportedLangs.length) {
             continue;
         }
@@ -156,6 +163,39 @@ async function build() {
             }
             locales[lang] = localeData;
         }
+
+        const normalizeImageSrc = (rawSrc) => {
+            if (typeof rawSrc !== 'string') {
+                return '';
+            }
+
+            const source = rawSrc.split(/[?#]/)[0].trim();
+            if (!source) {
+                return '';
+            }
+
+            if (/^https?:\/\//i.test(source)) {
+                try {
+                    const parsedUrl = new URL(source);
+                    return parsedUrl.pathname || source;
+                } catch (err) {
+                    return source;
+                }
+            }
+
+            return source;
+        };
+
+        const getNestedValue = (obj, dottedPath) => {
+            if (!obj || typeof dottedPath !== 'string' || !dottedPath) {
+                return '';
+            }
+
+            if (Object.prototype.hasOwnProperty.call(obj, dottedPath)) {
+                return obj[dottedPath];
+            }
+            return undefined;
+        };
 
         // 4. Build pages
         const templatesDir = path.join(config.srcDir, 'templates');
@@ -281,9 +321,10 @@ async function build() {
                         t: locales[lang], // Translation object
                         isDefault: isDefault,
                         canonicalUrl: canonicalUrl,
+                        robotsDirective: shouldNoindexPage(pageName, lang) ? 'noindex,follow' : 'index,follow',
                         pageName: pageName, // For hreflang
-                        supportedLangs: pageSupportedLangs, // For hreflang
-                        pageSupportedLangs: pageSupportedLangs,
+                        supportedLangs: pageSupportedLangs.filter(l => !shouldNoindexPage(pageName, l)), // For hreflang
+                        pageSupportedLangs: pageSupportedLangs.filter(l => !shouldNoindexPage(pageName, l)),
                         defaultLang: config.defaultLang,
                         // Helper to generate localized links with Plan A suffixless policy
                         link: (rawPath) => {
@@ -305,6 +346,22 @@ async function build() {
                                 : rawPath;
 
                             return normalizeInternalPath(localizedPath);
+                        },
+                        imageAlt: (src, options = {}) => {
+                            const normalizedSrc = normalizeImageSrc(src);
+                            const localeAssets = (locales[lang] && locales[lang].assets) || {};
+                            const fallbackAssets = (defaultLocale && defaultLocale.assets) || {};
+                            const contextKey = typeof options.contextKey === 'string' ? options.contextKey : '';
+                            const fallback = typeof options.fallback === 'string' ? options.fallback : '';
+
+                            const contextAlt = contextKey ? getNestedValue(localeAssets.image_context, contextKey) : '';
+                            const imageAltBySrc = normalizedSrc && localeAssets.images ? localeAssets.images[normalizedSrc] : '';
+                            const safeFallback = localeAssets.default_alt || fallbackAssets.default_alt || 'Image';
+
+                            const resolvedAlt = contextAlt || imageAltBySrc || fallback || safeFallback;
+                            return typeof resolvedAlt === 'string' && resolvedAlt.trim()
+                                ? resolvedAlt.trim()
+                                : safeFallback;
                         }
                     };
 
@@ -320,7 +377,12 @@ async function build() {
         }
 
         // 5. Generate sitemap.xml with full multilingual loc coverage
-        const sitemapXml = buildSitemapXml(pageNames, getPageSupportedLangs, config.defaultLang);
+        const sitemapXml = buildSitemapXml(
+            pageNames,
+            getPageSupportedLangs,
+            config.defaultLang,
+            (pageName, lang) => !shouldNoindexPage(pageName, lang)
+        );
         await fs.writeFile(path.join(config.distDir, 'sitemap.xml'), sitemapXml);
         console.log('Generated: sitemap.xml');
 
