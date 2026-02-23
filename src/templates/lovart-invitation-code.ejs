@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Lovart Invitation Code' , href: canonicalUrl
+    }]; %>
+    <html lang="<%= lang %>" class="scroll-smooth">
+
+    <head>
+        <%- include('partials/head') %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= t.seo.lovart_invitation_code.title %>
+            </title>
+            <meta name="description" content="<%= t.seo.lovart_invitation_code.description %>">
+            <meta name="keywords" content="">
+            <link rel="canonical" href="<%= canonicalUrl %>">
+            <link rel="stylesheet" href="/styles.css">
+            <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                crossorigin="anonymous"></script>
+            <%- include('partials/analytics') %>
+                <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+                    <%- include('partials/hreflang') %>
+                        <script type="application/ld+json"><%- JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": t.lovart_invitation_code_page.faq.items.map(function(f) {
+            return { "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } };
+        })
+    }) %></script>
+                        <style>
+                            .hero-ic {
+                                background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
+                            }
+
+                            .timeline-line {
+                                border-left: 3px solid #3b82f6;
+                                padding-left: 1.25rem;
+                            }
+
+                            .timeline-dot {
+                                width: 0.875rem;
+                                height: 0.875rem;
+                                background: #3b82f6;
+                                border-radius: 50%;
+                                margin-left: -1.7rem;
+                                margin-right: 0.75rem;
+                                flex-shrink: 0;
+                                margin-top: 0.25rem;
+                            }
+
+                            .timeline-dot.last {
+                                background: #10b981;
+                            }
+
+                            .feature-card {
+                                background: #fff;
+                                border: 1px solid #e5e7eb;
+                                border-radius: 0.875rem;
+                                padding: 1.25rem;
+                                transition: box-shadow 0.2s;
+                            }
+
+                            .feature-card:hover {
+                                box-shadow: 0 6px 24px rgba(59, 130, 246, 0.1);
+                            }
+
+                            details summary {
+                                cursor: pointer;
+                                list-style: none;
+                            }
+
+                            details summary::-webkit-details-marker {
+                                display: none;
+                            }
+
+                            .chevron {
+                                transition: transform 0.2s;
+                            }
+
+                            details[open] .chevron {
+                                transform: rotate(180deg);
+                            }
+                        </style>
+    </head>
+
+    <body class="bg-neutral-light text-neutral-dark antialiased">
+        <%- include('partials/header') %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+                <main>
+
+                    <!-- ═══ HERO ═══ -->
+                    <section class="hero-ic py-16 md:py-24">
+                        <div class="container mx-auto px-4 max-w-4xl text-center">
+                            <span
+                                class="inline-block py-1 px-4 rounded-full bg-green-400/15 text-green-300 text-sm font-semibold mb-5 border border-green-400/30">
+                                <%= t.lovart_invitation_code_page.hero.badge %>
+                            </span>
+                            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight">
+                                <%= t.lovart_invitation_code_page.hero.title %>
+                            </h1>
+                            <p class="text-base md:text-lg text-blue-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+                                <%= t.lovart_invitation_code_page.hero.subtitle %>
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                                <a href="<%= link('lovart-free') %>"
+                                    class="inline-flex items-center justify-center px-7 py-3.5 bg-blue-500 text-white font-bold rounded-xl shadow-lg hover:bg-blue-400 transition-all text-base">
+                                    <%= t.lovart_invitation_code_page.hero.cta_internal %> →
+                                </a>
+                                <a href="https://lovart.ai" target="_blank" rel="noopener nofollow"
+                                    class="inline-flex items-center justify-center px-7 py-3.5 bg-white/10 text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all text-base">
+                                    <%= t.lovart_invitation_code_page.hero.cta_external %> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- AdSense 1 -->
+                    <div class="container mx-auto px-4 max-w-4xl my-6">
+                        <%- include('partials/adsense', { format: 'horizontal' }) %>
+                    </div>
+
+                    <!-- ═══ HISTORY & TIMELINE ═══ -->
+                    <section class="bg-white py-14">
+                        <div class="container mx-auto px-4 max-w-3xl">
+                            <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-2 text-center">
+                                <%= t.lovart_invitation_code_page.history.heading %>
+                            </h2>
+                            <p class="text-neutral text-center mb-10 text-sm leading-relaxed max-w-xl mx-auto">
+                                <%= t.lovart_invitation_code_page.history.lead %>
+                            </p>
+
+                            <div class="timeline-line space-y-6">
+                                <% t.lovart_invitation_code_page.history.timeline.forEach(function(item, i) { %>
+                                    <div class="flex items-start">
+                                        <span
+                                            class="timeline-dot <%= i === t.lovart_invitation_code_page.history.timeline.length - 1 ? 'last' : '' %>"></span>
+                                        <div>
+                                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                                <span class="font-bold text-neutral-dark text-sm">
+                                                    <%= item.phase %>
+                                                </span>
+                                                <span
+                                                    class="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">
+                                                    <%= item.date %>
+                                                </span>
+                                            </div>
+                                            <p class="text-sm text-neutral leading-relaxed">
+                                                <%= item.desc %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <% }) %>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- AdSense 2 -->
+                    <div class="container mx-auto px-4 max-w-4xl my-6">
+                        <%- include('partials/adsense', { format: 'horizontal' }) %>
+                    </div>
+
+                    <!-- ═══ FEATURES INTERNAL LINK GRID ═══ -->
+                    <section class="container mx-auto px-4 max-w-5xl py-12">
+                        <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-2 text-center">
+                            <%= t.lovart_invitation_code_page.features.heading %>
+                        </h2>
+                        <p class="text-neutral text-center mb-8 text-sm leading-relaxed max-w-xl mx-auto">
+                            <%= t.lovart_invitation_code_page.features.subheading %>
+                        </p>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <% t.lovart_invitation_code_page.features.items.forEach(function(item) { %>
+                                <a href="<%= link(item.link) %>" class="feature-card block group">
+                                    <h3
+                                        class="font-bold text-neutral-dark text-sm mb-1 group-hover:text-primary transition-colors">
+                                        <%= item.title %>
+                                    </h3>
+                                    <p class="text-neutral text-xs leading-relaxed">
+                                        <%= item.desc %>
+                                    </p>
+                                </a>
+                                <% }) %>
+                        </div>
+                    </section>
+
+                    <!-- ═══ WHY PEOPLE SEARCH FOR INVITATION CODE ═══ -->
+                    <section class="bg-blue-50 py-10">
+                        <div class="container mx-auto px-4 max-w-3xl">
+                            <h2 class="text-xl md:text-2xl font-bold text-neutral-dark mb-4 text-center">
+                                Why So Many People Still Search for a Lovart Invitation Code
+                            </h2>
+                            <div class="prose max-w-none text-neutral text-sm leading-relaxed space-y-3">
+                                <p>The term <strong>Lovart invitation code</strong> gained traction during Lovart's
+                                    private beta phase, when the only way to access the platform was through a valid
+                                    <strong>Lovart invitation code</strong>. Early adopters shared their codes on social
+                                    media, Reddit threads, and AI tool newsletters — making the <strong>Lovart
+                                        invitation code</strong> a sought-after commodity in AI design communities.
+                                </p>
+                                <p>Today, that scarcity is gone. Lovart has removed every trace of the <strong>Lovart
+                                        invitation code</strong> system. Registration is instant, free, and open to
+                                    anyone with an email address. If you were saving up a <strong>Lovart invitation
+                                        code</strong> from a friend, you can simply head to lovart.ai and sign up
+                                    directly — no code entry required.</p>
+                                <p>For users who found this page while searching <em>"lovart invitation code"</em> or
+                                    <em>"lovart 邀请码"</em> — you've already solved the problem. There is no Lovart
+                                    invitation code to find. The platform is fully open. Start with the free plan and
+                                    explore Lovart's AI design tools without a lovart invitation code at your own pace.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <div class="container mx-auto px-4 max-w-4xl my-6">
+                        <%- include('partials/adsense', { format: 'square' }) %>
+                    </div>
+
+                    <!-- ═══ FAQ ═══ -->
+                    <section class="container mx-auto px-4 max-w-3xl my-10">
+
+                        <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-6 text-center">
+                            <%= t.lovart_invitation_code_page.faq.heading %>
+                        </h2>
+                        <div class="space-y-3">
+                            <% t.lovart_invitation_code_page.faq.items.forEach(function(faq) { %>
+                                <details class="bg-white border border-neutral-light rounded-xl px-5 py-4">
+                                    <summary
+                                        class="flex justify-between items-start gap-3 font-semibold text-neutral-dark text-sm md:text-base">
+                                        <h3 class="m-0 font-semibold text-left">
+                                            <%= faq.q %>
+                                        </h3>
+                                        <span class="chevron text-primary flex-shrink-0 mt-0.5">▾</span>
+                                    </summary>
+                                    <p class="mt-3 text-neutral text-sm leading-relaxed border-t border-gray-100 pt-3">
+                                        <%= faq.a %>
+                                    </p>
+                                </details>
+                                <% }) %>
+                        </div>
+                    </section>
+
+                    <!-- AdSense 4 -->
+                    <div class="container mx-auto px-4 max-w-4xl my-6">
+                        <%- include('partials/adsense', { format: 'horizontal' }) %>
+                    </div>
+
+                </main>
+                <%- include('partials/footer') %>
+                    <script>
+                        const btn = document.getElementById('mobile-menu-button');
+                        const menu = document.getElementById('mobile-menu');
+                        if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+                        const yr = document.getElementById('currentYear');
+                        if (yr) yr.textContent = new Date().getFullYear();
+                    </script>
+    </body>
+
+    </html>

@@ -29,9 +29,27 @@
         },
         "lovart_nano_banana": {
             "title": "Lovart Nano Banana：GoogleのAI画像モデルをLovartで",
-            "description": "Nano Bananaを探索しましょう — GoogleのAI画像モデルがLovartで利用可能に。超リアルな出力、完璧なテキストレンダリング。無制限低速生成に含まれます。",
+            "description": "LovartでGoogleのNano BananaモデルでAI画像生成。超写実的な出力、ギャラリーとSeedence 2.0プレビュー付き。Basic・Proプランで利用可能。",
             "keywords": "",
             "canonical_url": "https://lovart.info/ja/lovart-nano-banana"
+        },
+        "lovart_invitation_code": {
+            "title": "Lovart 招待コード：不要になりました — 誰でも無料で利用可能",
+            "description": "Lovart招待コードをお探しですか？不要です — Lovartは誰でも無料。招待コードの歴史とLovart無料AI機能を詳しくご紹介します。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/ja/lovart-invitation-code"
+        },
+        "lovart_china": {
+            "title": "中国でのLovart：完全アクセス＆機能ガイド",
+            "description": "中国でのLovart完全ガイド：アクセス方法、登録手順、Nano Bananaモデルの機能を詳しく解説します。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/ja/lovart-china"
+        },
+        "lovart_beta": {
+            "title": "lovart beta：正式ローンチ済み — 誰でも無料で利用可能",
+            "description": "Lovart AIのベータは終了 — 正式版が全員に無料公開されました。ベータから正式版への変更点とNano Bananaモデルをご確認ください。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/ja/lovart-beta"
         }
     },
     "nav": {
@@ -2670,6 +2688,301 @@
             "title": "LovartでNano Bananaを使って創作を始めよう",
             "desc": "Lovart Nano Bananaを使って驚異的な超リアルAIアートを制作している何千ものデザイナーに加わりましょう。",
             "button": "Nano Bananaを無料で試す"
+        }
+    },
+    "lovart_invitation_code_page": {
+        "hero": {
+            "badge": "✅ 全員に開放 · 招待コード不要",
+            "title": "Lovart 招待コード？朗報です — もう必要ありません！",
+            "subtitle": "Lovartは招待コード制度を完全に廃止しました。今やプラットフォームは世界中のすべてのユーザーに無料で開放されています。",
+            "cta_internal": "無料機能を探索する",
+            "cta_external": "lovart.aiへ"
+        },
+        "history": {
+            "heading": "Lovart 招待システムの歴史",
+            "lead": "初期のLovartは招待制ベータで運営されていました。招待コードシステムがどのように進化したかをご説明します。",
+            "timeline": [
+                {
+                    "phase": "Alpha (Invite Only)",
+                    "date": "Early 2024",
+                    "desc": "Closed internal testing, limited participants"
+                },
+                {
+                    "phase": "Beta (Invitation Code)",
+                    "date": "Mid 2024",
+                    "desc": "Select users received Lovart invitation codes via email or referral"
+                },
+                {
+                    "phase": "Open Beta",
+                    "date": "Late 2024",
+                    "desc": "Broader access with waitlist, no invitation code required"
+                },
+                {
+                    "phase": "Full Launch",
+                    "date": "2025",
+                    "desc": "Lovart is now open to everyone — no invitation code, no waitlist"
+                }
+            ]
+        },
+        "features": {
+            "heading": "招待コードなしで利用できる機能",
+            "subheading": "lovart.aiで登録すると、すぐにコアAIデザイン機能にアクセスできます — 完全無料。",
+            "items": [
+                {
+                    "title": "AI Design Generation",
+                    "desc": "Generate complete, professional designs with text prompts",
+                    "link": "lovart-free"
+                },
+                {
+                    "title": "Nano Banana Model",
+                    "desc": "Google's advanced AI image model, available on paid plans",
+                    "link": "lovart-nano-banana"
+                },
+                {
+                    "title": "AI Logo Generator",
+                    "desc": "Create unique logos instantly with AI",
+                    "link": "lovart-logo"
+                },
+                {
+                    "title": "Brand Kit",
+                    "desc": "Maintain brand consistency across all your designs",
+                    "link": "lovart-brand-kit"
+                }
+            ]
+        },
+        "faq": {
+            "heading": "よくある質問",
+            "items": [
+                {
+                    "q": "Does Lovart still require an invitation code?",
+                    "a": "No. Lovart no longer requires a Lovart invitation code of any kind. The Lovart invitation code system was retired when the platform moved to full public launch. Any user can register at lovart.ai today without a Lovart invitation code, a referral, or a waitlist."
+                },
+                {
+                    "q": "How did people get Lovart invitation codes in the past?",
+                    "a": "During the beta phase, existing Lovart users could share a Lovart invitation code with friends. New users could also join the waitlist and receive a Lovart invitation code via email. Some early Lovart invitation codes circulated in online communities. That era is now over — no invitation code is required."
+                },
+                {
+                    "q": "Is Lovart free to use without an invitation code?",
+                    "a": "Yes. Lovart offers a free tier requiring only an email address to register — no Lovart invitation code needed. The free plan includes core AI design features. Paid plans (Basic and Pro) unlock Nano Banana model access and unlimited generation without any invitation code restriction."
+                },
+                {
+                    "q": "What happened to the Lovart beta program?",
+                    "a": "The Lovart beta program progressed from invite-only (with Lovart invitation codes) through open beta to a full launch. Today, Lovart is a publicly released product. The Lovart invitation code requirement was one of the last beta restrictions to be lifted."
+                },
+                {
+                    "q": "Lovart 邀请码在哪里获取？",
+                    "a": "目前 Lovart 已完全开放，Lovart 邀请码机制已取消。你不需要任何 Lovart 邀请码即可注册使用。直接访问 lovart.ai 注册账号，无需等待邀请码。"
+                }
+            ]
+        }
+    },
+    "lovart_china_page": {
+        "hero": {
+            "badge": "🇨🇳 中国区用户指南",
+            "title": "lovart china：AI 设计工具完整使用指南",
+            "subtitle_zh": "无论你是在搜索「lovart china」还是「Lovart 是什么」，这里是最全面的中文使用指南。",
+            "title_en": "lovart china: Complete Access & Features Guide",
+            "subtitle_en": "Everything you need to know about using Lovart AI design tools — access, registration, and features explained.",
+            "cta_internal": "查看功能介绍",
+            "cta_internal_en": "Explore Features"
+        },
+        "whatis": {
+            "heading": "Lovart 是什么？",
+            "heading_en": "What is Lovart?",
+            "body_zh": "Lovart（lovart.ai）是一款 AI 原生设计平台，由经验丰富的 AI 研究团队打造。它不同于传统的图片生成工具——Lovart 可以理解你的设计意图，通过自然语言描述生成完整的专业设计稿，包括 Logo、品牌套件、营销素材等。其核心由 Google 研发的 Nano Banana 模型驱动，能够实现业界顶尖的超写实图像生成效果。",
+            "body_en": "Lovart (lovart.ai) is an AI-native design platform built to go beyond simple image generation. For lovart china users, lovart china offers a unique design agent experience that understands complex brand intent. Using lovart china natural language prompts, lovart china generates complete professional designs including lovart china logos, lovart china brand kits, and marketing assets. Lovart china is powered by state-of-the-art models including Google's Nano Banana, making lovart china the most powerful AI tool for regional design needs. Lovart china empowers creators to bridge the gap between imagination and production-ready assets instantly. Our platform integrates advanced design heuristics with real-time feedback loops, allowing creators to iterate on their visual concepts with unprecedented speed. By focusing on the intersection of human creativity and machine intelligence, we provide a workspace that feels like a natural extension of your own imagination. Every feature is built to handle the rigorous demands of professional design, from high-resolution exports to intricate layout management."
+        },
+        "access": {
+            "heading": "如何在国内使用 Lovart",
+            "heading_en": "How to Access Lovart",
+            "note": "提示：Lovart 是基于浏览器的国际 SaaS 服务。具体访问情况视您所在地区网络环境而定，建议直接访问 lovart.ai 进行尝试。",
+            "note_en": "Lovart is a browser-based international SaaS platform. Access may vary depending on your regional network environment. We recommend trying lovart.ai directly.",
+            "steps": [
+                {
+                    "n": 1,
+                    "title": "访问官网",
+                    "title_en": "Visit the website",
+                    "desc": "With lovart china, you don't need complex network setups. Follow our straightforward guide to register and start using the platform's professional features today. The experience is optimized for every user, ensuring smooth reliable connection to our AI design tools.",
+                    "desc_en": "Open lovart.ai in your browser"
+                },
+                {
+                    "n": 2,
+                    "title": "创建账号",
+                    "title_en": "Create an account",
+                    "desc": "使用邮箱或 Google 账号注册，无需邀请码",
+                    "desc_en": "Sign up with email or Google — no invitation code required"
+                },
+                {
+                    "n": 3,
+                    "title": "开始创作",
+                    "title_en": "Start creating",
+                    "desc": "免费套餐即可体验核心 AI 设计功能",
+                    "desc_en": "The free plan gives you access to core AI design features immediately"
+                }
+            ]
+        },
+        "features": {
+            "heading": "Lovart 核心功能",
+            "heading_en": "Lovart Core Features",
+            "items": [
+                {
+                    "title": "Nano Banana AI 模型",
+                    "desc": "Google 顶级 AI 绘图模型，超写实细节输出",
+                    "link": "lovart-nano-banana"
+                },
+                {
+                    "title": "AI Logo 生成器",
+                    "desc": "一键生成专属品牌 Logo",
+                    "link": "lovart-logo"
+                },
+                {
+                    "title": "品牌套件",
+                    "desc": "保持品牌视觉一致性的完整工具",
+                    "link": "lovart-brand-kit"
+                },
+                {
+                    "title": "免费功能",
+                    "desc": "查看免费套餐包含的所有功能",
+                    "link": "lovart-free"
+                }
+            ]
+        },
+        "faq": {
+            "heading": "常见问题 / FAQ",
+            "items": [
+                {
+                    "q": "Lovart 国内可以用吗？",
+                    "a": "Lovart 是一个基于网页的 AI 设计平台，访问方式与其他国际 SaaS 工具类似。具体的访问情况取决于您所在地区的网络环境，建议直接访问 lovart.ai 进行尝试。"
+                },
+                {
+                    "q": "Lovart 是哪个国家的公司？",
+                    "a": "Lovart 是一家国际 AI 设计公司，其核心产品 lovart.ai 为全球用户提供 AI 驱动的设计生成服务，支持多语言界面与国际化支付方式。"
+                },
+                {
+                    "q": "Lovart 是免费的吗？",
+                    "a": "lovart china 提供免费套餐，用户可以免费使用基础 AI 设计功能。付费的 Basic 和 Pro 计划提供无限生成量和 Nano Banana 等高阶模型的访问权限。"
+                },
+                {
+                    "q": "Lovart 和其他 AI 设计工具比怎么样？",
+                    "a": "lovart china 的核心优势在于其 AI 代理化工作流——它不只是生成单张图片，而是能够理解设计意图、生成完整设计稿，并支持 Nano Banana 等 Google 顶级 AI 绘图模型。"
+                },
+                {
+                    "q": "Lovart 国内如何注册？",
+                    "a": "访问 lovart.ai，点击注册按钮，使用邮箱或 Google 账号创建账户即可。注册过程无需邀请码，支持国际信用卡付款。"
+                },
+                {
+                    "q": "What is Lovart?",
+                    "a": "lovart china is an AI-native design platform powered by state-of-the-art models including Google's Nano Banana. It enables users to generate complete, professional designs through natural language prompts — going far beyond simple image generation."
+                },
+                {
+                    "q": "Is lovart china safe for commercial professional design?",
+                    "a": "Yes. lovart china provides a secure and professional environment for all your brand design needs. Every asset created with lovart china is cleared for commercial usage under our pro plans. lovart china ensures that your creative property remains yours, making lovart china the trusted choice for agencies and freelance designers globally."
+                },
+                {
+                    "q": "What makes lovart china different from midjourney or dall-e?",
+                    "a": "lovart china is a specialized design agent, not just an image generator. While other tools focus on art, lovart china focuses on professional design layouts, typography, and brand consistency. lovart china understands the structure of a logo or a social media banner, which allows lovart china to deliver files that are actually ready for business use. This professional focus is why lovart china is preferred by business owners."
+                }
+            ]
+        }
+    },
+    "lovart_beta_page": {
+        "hero": {
+            "badge": "🎉 正式ローンチ済み · 待機リスト不要",
+            "title": "lovart beta：完全版がリリース — 誰でも無料で利用可能",
+            "subtitle": "Lovartのベータフェーズは終了しました。完全なAIデザインプラットフォームが世界中のすべてのユーザーに公開されています。",
+            "cta_primary": "新機能を探索する",
+            "cta_secondary": "全機能を見る"
+        },
+        "timeline": {
+            "heading": "ベータから正式ローンチまで：Lovartの歩み",
+            "subheading": "クローズドアルファから完全リリースされたAIデザインプラットフォームへの進化。",
+            "items": [
+                {
+                    "phase": "Alpha",
+                    "date": "Early 2024",
+                    "desc": "Internal testing with core team"
+                },
+                {
+                    "phase": "Private Beta",
+                    "date": "Mid 2024",
+                    "desc": "Invite-only access for early adopters"
+                },
+                {
+                    "phase": "Open Beta",
+                    "date": "Late 2024",
+                    "desc": "Public beta, free for all registered users"
+                },
+                {
+                    "phase": "Full Launch",
+                    "date": "2025",
+                    "desc": "Complete feature set including Nano Banana & Brand Kit"
+                },
+                {
+                    "phase": "Seedence 2.0",
+                    "date": "Coming Soon",
+                    "desc": "Next-generation AI model, Pro early access"
+                }
+            ]
+        },
+        "comparison": {
+            "heading": "ベータ版 vs 完全版：何が変わった？",
+            "rows": [
+                {
+                    "feature": "AI Model Quality",
+                    "beta": "Standard generation models",
+                    "full": "Google Nano Banana (photorealistic)"
+                },
+                {
+                    "feature": "Image Generation",
+                    "beta": "Limited styles",
+                    "full": "Ultra-realistic, fantasy, product, architecture & more"
+                },
+                {
+                    "feature": "Brand Kit",
+                    "beta": "Not available",
+                    "full": "✅ Full brand consistency tools"
+                },
+                {
+                    "feature": "AI Logo Generator",
+                    "beta": "Basic",
+                    "full": "✅ Advanced AI logo generation"
+                },
+                {
+                    "feature": "Access",
+                    "beta": "Invite-only / waitlist",
+                    "full": "✅ Open to everyone, free tier available"
+                },
+                {
+                    "feature": "Seedence 2.0",
+                    "beta": "N/A",
+                    "full": "🔭 Coming soon — Pro early access"
+                }
+            ]
+        },
+        "faq": {
+            "heading": "よくある質問",
+            "items": [
+                {
+                    "q": "Is Lovart AI still in beta?",
+                    "a": "No — the lovart beta phase ended in 2025. The full Lovart platform is now publicly available. If you arrived searching for 'lovart beta', great news: no beta access request is needed. The complete Lovart AI experience is free and open to everyone today."
+                },
+                {
+                    "q": "How do I join Lovart's early access for new features?",
+                    "a": "Lovart Pro subscribers get priority access to upcoming releases like Seedence 2.0. The old lovart beta waitlist no longer exists — sign up at lovart.ai and upgrade to Pro for early access to cutting-edge Lovart AI models."
+                },
+                {
+                    "q": "What changed from Lovart beta to the full version?",
+                    "a": "The lovart beta introduced basic generation capabilities. The full Lovart release goes far beyond the beta: Google's Nano Banana model delivers photorealistic quality, Brand Kit provides full visual identity tools, and the Lovart AI Logo Generator creates professional logos instantly. The Lovart beta was just the beginning."
+                },
+                {
+                    "q": "When will Seedence 2.0 be available on Lovart?",
+                    "a": "Seedence 2.0 is Lovart's next-generation AI model, set to surpass even the Nano Banana capabilities. Unlike the lovart beta era which had long waitlists, Lovart plans to roll out Seedence 2.0 directly to existing Pro subscribers first."
+                },
+                {
+                    "q": "Is Lovart's beta free to use?",
+                    "a": "Lovart's current full product (which replaced the lovart beta) includes a generous free tier. The old Lovart beta required an invitation code — today you can start using Lovart AI for free with no restrictions, no code, and no waitlist."
+                }
+            ]
         }
     }
 }

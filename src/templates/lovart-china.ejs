@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'lovart china' , href: canonicalUrl }]; %>
+    <html lang="<%= lang %>" class="scroll-smooth">
+
+    <head>
+        <%- include('partials/head') %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= t.seo.lovart_china.title %>
+            </title>
+            <meta name="description" content="<%= t.seo.lovart_china.description %>">
+            <meta name="keywords" content="">
+            <link rel="canonical" href="<%= canonicalUrl %>">
+            <link rel="stylesheet" href="/styles.css">
+            <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                crossorigin="anonymous"></script>
+            <%- include('partials/analytics') %>
+                <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+                    <%- include('partials/hreflang') %>
+                        <script type="application/ld+json"><%- JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": t.lovart_china_page.faq.items.map(function(f) {
+            return { "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } };
+        })
+    }) %></script>
+                        <style>
+                            .hero-china {
+                                background: linear-gradient(135deg, #1a0a0a 0%, #7c1313 40%, #450a0a 100%);
+                            }
+
+                            .step-card {
+                                background: #fff;
+                                border: 1px solid #e5e7eb;
+                                border-radius: 0.875rem;
+                                padding: 1.25rem;
+                            }
+
+                            .step-num {
+                                width: 2rem;
+                                height: 2rem;
+                                background: linear-gradient(135deg, #ef4444, #b91c1c);
+                                color: #fff;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-weight: 900;
+                                font-size: 0.85rem;
+                                flex-shrink: 0;
+                            }
+
+                            .feature-link-card {
+                                background: #fff;
+                                border: 1px solid #e5e7eb;
+                                border-radius: 0.875rem;
+                                padding: 1.25rem;
+                                transition: box-shadow 0.2s, border-color 0.2s;
+                            }
+
+                            .feature-link-card:hover {
+                                box-shadow: 0 4px 20px rgba(220, 38, 38, 0.1);
+                                border-color: #fca5a5;
+                            }
+
+                            details summary {
+                                cursor: pointer;
+                                list-style: none;
+                            }
+
+                            details summary::-webkit-details-marker {
+                                display: none;
+                            }
+
+                            .chevron {
+                                transition: transform 0.2s;
+                            }
+
+                            details[open] .chevron {
+                                transform: rotate(180deg);
+                            }
+
+                            .bilingual-badge {
+                                background: linear-gradient(90deg, #ef4444, #f97316);
+                                -webkit-background-clip: text;
+                                background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
+                        </style>
+    </head>
+
+    <body class="bg-neutral-light text-neutral-dark antialiased">
+        <%- include('partials/header') %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+                <main>
+
+                    <!-- ═══ HERO ═══ -->
+                    <section class="hero-china py-16 md:py-24 relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-5 pointer-events-none"
+                            style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 36px 36px;">
+                        </div>
+                        <div class="container mx-auto px-4 max-w-4xl text-center relative">
+                            <span
+                                class="inline-block py-1 px-4 rounded-full bg-red-400/15 text-red-300 text-sm font-semibold mb-5 border border-red-400/30">
+                                <%= t.lovart_china_page.hero.badge %>
+                            </span>
+                            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 leading-tight">
+                                <%= t.lovart_china_page.hero.title %>
+                            </h1>
+                            <p class="text-sm text-red-200 mb-4 opacity-80">
+                                <%= t.lovart_china_page.hero.subtitle_zh %>
+                            </p>
+                            <p class="text-base text-red-100 mb-8 max-w-2xl mx-auto leading-relaxed opacity-90">
+                                <%= t.lovart_china_page.hero.title_en %>: <%= t.lovart_china_page.hero.subtitle_en %>
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                                <a href="<%= link('lovart-free') %>"
+                                    class="inline-flex items-center justify-center px-7 py-3.5 bg-red-500 text-white font-bold rounded-xl shadow-lg hover:bg-red-400 transition-all text-base">
+                                    <%= t.lovart_china_page.hero.cta_internal %> →
+                                </a>
+                                <a href="<%= link('lovart-nano-banana') %>"
+                                    class="inline-flex items-center justify-center px-7 py-3.5 bg-white/10 text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all text-base">
+                                    <%= t.lovart_china_page.hero.cta_internal_en %> 🍌
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- AdSense 1 -->
+                    <div class="container mx-auto px-4 max-w-4xl my-6">
+                        <%- include('partials/adsense', { format: 'horizontal' }) %>
+                    </div>
+
+                    <!-- ═══ WHAT IS LOVART ═══ -->
+                    <section class="bg-white py-14">
+                        <div class="container mx-auto px-4 max-w-3xl">
+                            <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-1 text-center">
+                                <span class="bilingual-badge">
+                                    <%= t.lovart_china_page.whatis.heading %>
+                                </span>
+                            </h2>
+                            <p class="text-center text-xs text-gray-400 mb-8">/ <%=
+                                    t.lovart_china_page.whatis.heading_en %>
+                            </p>
+                            <div class="prose max-w-none text-neutral text-sm leading-relaxed space-y-4">
+                                <p><strong class="text-neutral-dark">lovart china</strong>使用说明：<%=
+                                        t.lovart_china_page.whatis.body_zh %>
+                                </p>
+                                <p class="text-gray-400 text-xs leading-relaxed border-t border-gray-100 pt-4">
+                                    <%= t.lovart_china_page.whatis.body_en %>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- AdSense 2 -->
+                    <div class="container mx-auto px-4 max-w-4xl my-6">
+                        <%- include('partials/adsense', { format: 'horizontal' }) %>
+                    </div>
+
+                    <!-- ═══ ACCESS GUIDE ═══ -->
+                    <section class="container mx-auto px-4 max-w-4xl py-12">
+                        <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-1 text-center">
+                            <%= t.lovart_china_page.access.heading %>
+                        </h2>
+                        <p class="text-center text-xs text-gray-400 mb-3">/ <%= t.lovart_china_page.access.heading_en %>
+                        </p>
+                        <p
+                            class="text-center text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-4 py-2 mb-8 max-w-2xl mx-auto">
+                            ⚠️ <%= t.lovart_china_page.access.note %>
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <% t.lovart_china_page.access.steps.forEach(function(step) { %>
+                                <div class="step-card">
+                                    <div class="flex items-start gap-3 mb-3">
+                                        <span class="step-num">
+                                            <%= step.n %>
+                                        </span>
+                                        <div>
+                                            <h3 class="font-bold text-neutral-dark text-sm">
+                                                <%= step.title %>
+                                            </h3>
+                                            <p class="text-xs text-gray-400">
+                                                <%= step.title_en %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs text-neutral leading-relaxed">
+                                        <%= step.desc %>
+                                    </p>
+                                    <p class="text-xs text-gray-400 mt-1">
+                                        <%= step.desc_en %>
+                                    </p>
+                                </div>
+                                <% }) %>
+                        </div>
+                    </section>
+
+                    <!-- AdSense 3 -->
+                    <div class="container mx-auto px-4 max-w-4xl my-6">
+                        <%- include('partials/adsense', { format: 'square' }) %>
+                    </div>
+
+                    <!-- ═══ FEATURES INTERNAL LINKS ═══ -->
+                    <section class="bg-white py-12">
+                        <div class="container mx-auto px-4 max-w-5xl">
+                            <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-8 text-center">
+                                <%= t.lovart_china_page.features.heading %>
+                                    <span class="text-base font-normal text-gray-400 ml-2">/ <%=
+                                            t.lovart_china_page.features.heading_en %></span>
+                            </h2>
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <% t.lovart_china_page.features.items.forEach(function(item) { %>
+                                    <a href="<%= link(item.link) %>" class="feature-link-card block group">
+                                        <h3
+                                            class="font-bold text-neutral-dark text-sm mb-1 group-hover:text-red-600 transition-colors">
+                                            <%= item.title %>
+                                        </h3>
+                                        <p class="text-neutral text-xs leading-relaxed">
+                                            <%= item.desc %>
+                                        </p>
+                                    </a>
+                                    <% }) %>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ═══ FAQ ═══ -->
+                    <section class="container mx-auto px-4 max-w-3xl my-10">
+                        <p
+                            class="text-neutral text-center text-xs leading-relaxed mb-8 max-w-2xl mx-auto text-gray-400">
+                            本页面旨在回答中国区用户关于 <strong class="text-gray-600">lovart china</strong> 的所有常见疑问。无论你是在搜索 <strong
+                                class="text-gray-600">lovart china</strong> 使用方法，还是想了解 <strong
+                                class="text-gray-600">Lovart 是什么</strong>，以下 FAQ 都将为你提供详尽的解答。
+                        </p>
+                        <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-6 text-center">
+                            <%= t.lovart_china_page.faq.heading %>
+                        </h2>
+                        <div class="space-y-3">
+                            <% t.lovart_china_page.faq.items.forEach(function(faq) { %>
+                                <details class="bg-white border border-neutral-light rounded-xl px-5 py-4">
+                                    <summary
+                                        class="flex justify-between items-start gap-3 font-semibold text-neutral-dark text-sm md:text-base">
+                                        <h3 class="m-0 font-semibold text-left">
+                                            <%= faq.q %>
+                                        </h3>
+                                        <span class="chevron text-red-500 flex-shrink-0 mt-0.5">▾</span>
+                                    </summary>
+                                    <p class="mt-3 text-neutral text-sm leading-relaxed border-t border-gray-100 pt-3">
+                                        <%= faq.a %>
+                                    </p>
+                                </details>
+                                <% }) %>
+                        </div>
+                    </section>
+
+                    <!-- AdSense 4 -->
+                    <div class="container mx-auto px-4 max-w-4xl my-6">
+                        <%- include('partials/adsense', { format: 'horizontal' }) %>
+                    </div>
+
+                </main>
+                <%- include('partials/footer') %>
+                    <script>
+                        const btn = document.getElementById('mobile-menu-button');
+                        const menu = document.getElementById('mobile-menu');
+                        if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+                        const yr = document.getElementById('currentYear');
+                        if (yr) yr.textContent = new Date().getFullYear();
+                    </script>
+    </body>
+
+    </html>
