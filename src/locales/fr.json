@@ -26,6 +26,12 @@
             "description": "Il n'existe pas d'APK Lovart officiel. Apprenez comment installer Lovart sur Android en 3 étapes — et évitez les faux APK contenant des malwares.",
             "keywords": "",
             "canonical_url": "https://lovart.info/fr/lovart-apk"
+        },
+        "lovart_nano_banana": {
+            "title": "Lovart Nano Banana : Le Modèle IA de Google sur Lovart",
+            "description": "Explorez Nano Banana — le modèle IA avancé de Google désormais sur Lovart. Rendus photoréalistes, texte parfait & plus. Disponible dans les Générations Lentes Illimitées.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/fr/lovart-nano-banana"
         }
     },
     "nav": {
@@ -2537,6 +2543,133 @@
             "title": "Commencez à Créer avec Lovart sur N'importe Quel Appareil",
             "desc": "Pas d'APK nécessaire. Ouvrez Lovart dans votre navigateur mobile et commencez à créer des designs professionnels gratuitement.",
             "button": "Essayer Lovart Gratuitement"
+        }
+    },
+    "lovart_nano_banana_page": {
+        "seo": {
+            "title": "Lovart Nano Banana : Le Modèle IA de Google sur Lovart",
+            "description": "Explorez Nano Banana — le modèle IA avancé de Google désormais sur Lovart. Rendus photoréalistes, texte parfait & plus. Disponible dans les Générations Lentes Illimitées.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/fr/lovart-nano-banana"
+        },
+        "hero": {
+            "badge": "🍌 Nouveau · Propulsé par Google",
+            "title": "Découvrez le Modèle Nano Banana de Google sur Lovart",
+            "subtitle": "Débloquez la génération d'images IA de nouvelle génération. Détails photoréalistes, rendu de texte parfait et intelligence compositionnelle époustouflante — maintenant sur Lovart.",
+            "cta_primary": "Essayer Nano Banana Maintenant",
+            "cta_secondary": "Voir les Plans"
+        },
+        "gallery": {
+            "heading": "Ce que Nano Banana Peut Créer",
+            "subheading": "Chaque image ci-dessous a été générée avec le modèle Nano Banana sur Lovart. Cliquez sur n'importe quel prompt pour le copier et l'essayer.",
+            "copy_label": "Copier le Prompt",
+            "copied_label": "Copié !",
+            "items": [
+                {
+                    "prompt": "Cyberpunk cityscape at night, neon reflections on wet streets, ultra photorealistic, 8K, detailed buildings with holographic ads, rain atmosphere, cinematic composition",
+                    "caption": "Cyberpunk Metropolis"
+                },
+                {
+                    "prompt": "Enchanted forest fairy, glowing bioluminescent plants, golden hour light rays through ancient trees, photorealistic fantasy portrait, magical atmosphere, hyperdetailed",
+                    "caption": "Fantasy Portrait"
+                },
+                {
+                    "prompt": "Luxury perfume bottle product photography, black marble surface, dramatic studio lighting, water droplets, ultra sharp focus, cinematic depth of field, high-end commercial style",
+                    "caption": "Product Photography"
+                },
+                {
+                    "prompt": "Futuristic minimalist architecture, floating concrete geometric structure over misty mountains, sunrise golden light, ultra photorealistic render, stunning architectural visualization",
+                    "caption": "Architectural Render"
+                },
+                {
+                    "prompt": "Classic oil painting portrait style, aristocratic woman in renaissance dress, dramatic chiaroscuro lighting, masterpiece quality, rich textured brushwork, museum-worthy art",
+                    "caption": "Oil Painting Art"
+                },
+                {
+                    "prompt": "Futuristic restaurant interior design, bioluminescent blue lighting, organic curved walls, floating dining pods, ultra modern luxury, cinematic concept art render",
+                    "caption": "Future Interior"
+                }
+            ]
+        },
+        "access": {
+            "heading": "Comment Accéder à Nano Banana",
+            "subheading": "Nano Banana est disponible dans la fonctionnalité Générations Lentes Illimitées, incluse dans les plans Basic et Pro de Lovart.",
+            "table_header": [
+                "Fonctionnalité",
+                "Gratuit",
+                "Basic",
+                "Pro"
+            ],
+            "table": [
+                {
+                    "feature": "Nano Banana access",
+                    "free": "❌",
+                    "basic": "✅ Slow queue",
+                    "pro": "✅ Priority queue"
+                },
+                {
+                    "feature": "Monthly generations",
+                    "free": "Limited",
+                    "basic": "Unlimited (slow)",
+                    "pro": "Unlimited (fast)"
+                },
+                {
+                    "feature": "Seedence 2.0 (coming)",
+                    "free": "❌",
+                    "basic": "✅",
+                    "pro": "✅ Early access"
+                },
+                {
+                    "feature": "Commercial license",
+                    "free": "❌",
+                    "basic": "✅",
+                    "pro": "✅"
+                }
+            ],
+            "cta": "Mettre à Niveau pour Débloquer Nano Banana",
+            "note": "À partir de 9,9$/mois. Annulation à tout moment."
+        },
+        "seedence": {
+            "badge": "🔭 Bientôt Disponible",
+            "heading": "Aperçu : Seedence 2.0 arrive sur Lovart",
+            "desc": "Seedence 2.0 est le modèle IA de nouvelle génération avec des améliorations révolutionnaires en vitesse de génération, précision sémantique et rendu ultra-haute résolution. Les abonnés Lovart Pro recevront un accès anticipé au lancement de Seedence 2.0.",
+            "bullets": [
+                "Génération 10× plus rapide que Nano Banana",
+                "Sortie ultra-haute résolution native 4K",
+                "Contrôle compositionnel multi-sujets amélioré",
+                "Compréhension sémantique des prompts plus profonde"
+            ],
+            "cta": "Obtenir Pro pour un Accès Anticipé"
+        },
+        "faq": {
+            "heading": "Questions Fréquemment Posées",
+            "items": [
+                {
+                    "q": "What is Nano Banana AI?",
+                    "a": "Nano Banana is a next-generation AI image generation model developed by Google. It delivers exceptional photorealistic detail, superior text rendering within images, and advanced compositional understanding compared to standard AI image models. On Lovart, it is available as part of the Unlimited Slow Generations feature."
+                },
+                {
+                    "q": "Is Nano Banana free on Lovart?",
+                    "a": "Nano Banana on Lovart requires a Basic or Pro subscription. Free plan users have limited access to standard generation models. Upgrading to Basic or Pro unlocks Nano Banana with Unlimited Slow Generations, while Pro subscribers benefit from priority queue placement for faster results."
+                },
+                {
+                    "q": "How does Nano Banana compare to standard AI image models?",
+                    "a": "Nano Banana significantly outperforms standard models in three key areas: (1) Photorealism — details like skin texture, fabric, and reflections are dramatically more lifelike. (2) Text rendering — Nano Banana can accurately generate readable text inside images, a task where most AI models struggle. (3) Prompt coherence — it follows complex, multi-condition prompts more accurately."
+                },
+                {
+                    "q": "What is 'Unlimited Slow Generations' on Lovart?",
+                    "a": "Unlimited Slow Generations is a Lovart plan feature that gives Basic and Pro subscribers unlimited access to premium AI models — including Nano Banana — without a monthly cap. The 'slow' designation refers to generation queue priority: Basic users share a standard queue, while Pro users receive priority queue access for faster results."
+                },
+                {
+                    "q": "What is Seedence 2.0 and when will it come to Lovart?",
+                    "a": "Seedence 2.0 is the next frontier AI image generation model, expected to deliver significant improvements in generation speed, semantic understanding, and ultra-high-resolution output compared to Nano Banana. Lovart is actively working on integrating Seedence 2.0. Pro subscribers will receive early access once it launches."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Commencez à Créer avec Nano Banana sur Lovart",
+            "desc": "Rejoignez des milliers de designers utilisant déjà Lovart Nano Banana pour produire des œuvres d'art IA photoréalistes époustouflantes.",
+            "button": "Essayer Nano Banana Gratuitement"
         }
     }
 }

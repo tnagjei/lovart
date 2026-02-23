@@ -26,6 +26,12 @@
             "description": "公式Lovart APKは存在しません。3ステップでLovartをAndroidにWebアプリとして安全にインストールする方法と、偽APKの危険を解説します。",
             "keywords": "",
             "canonical_url": "https://lovart.info/ja/lovart-apk"
+        },
+        "lovart_nano_banana": {
+            "title": "Lovart Nano Banana：GoogleのAI画像モデルをLovartで",
+            "description": "Nano Bananaを探索しましょう — GoogleのAI画像モデルがLovartで利用可能に。超リアルな出力、完璧なテキストレンダリング。無制限低速生成に含まれます。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/ja/lovart-nano-banana"
         }
     },
     "nav": {
@@ -2537,6 +2543,133 @@
             "title": "どのデバイスでもLovartでデザインを始めましょう",
             "desc": "APK不要。モバイルブラウザでLovartを開き、今すぐ無料でプロ品質のデザインを作成できます。",
             "button": "今すぐLovartを無料で試す"
+        }
+    },
+    "lovart_nano_banana_page": {
+        "seo": {
+            "title": "Lovart Nano Banana：GoogleのAI画像モデルをLovartで",
+            "description": "Nano Bananaを探索しましょう — GoogleのAI画像モデルがLovartで利用可能に。超リアルな出力、完璧なテキストレンダリング。無制限低速生成に含まれます。",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/ja/lovart-nano-banana"
+        },
+        "hero": {
+            "badge": "🍌 新登場 · Google提供",
+            "title": "LovartでGoogleのNano BananaモデルをAI体験",
+            "subtitle": "次世代AI画像生成を解放しましょう。超リアルな細部表現、完璧なテキストレンダリング、驚異的な構図知性 — Lovartで今すぐ利用可能。",
+            "cta_primary": "Nano Bananaを今すぐ試す",
+            "cta_secondary": "プランを見る"
+        },
+        "gallery": {
+            "heading": "Nano Bananaが生み出せる作品",
+            "subheading": "以下すべての画像はLovartのNano Bananaモデルで生成されました。プロンプトをクリックしてコピーし、自分で試してみましょう。",
+            "copy_label": "プロンプトをコピー",
+            "copied_label": "コピーしました！",
+            "items": [
+                {
+                    "prompt": "Cyberpunk cityscape at night, neon reflections on wet streets, ultra photorealistic, 8K, detailed buildings with holographic ads, rain atmosphere, cinematic composition",
+                    "caption": "Cyberpunk Metropolis"
+                },
+                {
+                    "prompt": "Enchanted forest fairy, glowing bioluminescent plants, golden hour light rays through ancient trees, photorealistic fantasy portrait, magical atmosphere, hyperdetailed",
+                    "caption": "Fantasy Portrait"
+                },
+                {
+                    "prompt": "Luxury perfume bottle product photography, black marble surface, dramatic studio lighting, water droplets, ultra sharp focus, cinematic depth of field, high-end commercial style",
+                    "caption": "Product Photography"
+                },
+                {
+                    "prompt": "Futuristic minimalist architecture, floating concrete geometric structure over misty mountains, sunrise golden light, ultra photorealistic render, stunning architectural visualization",
+                    "caption": "Architectural Render"
+                },
+                {
+                    "prompt": "Classic oil painting portrait style, aristocratic woman in renaissance dress, dramatic chiaroscuro lighting, masterpiece quality, rich textured brushwork, museum-worthy art",
+                    "caption": "Oil Painting Art"
+                },
+                {
+                    "prompt": "Futuristic restaurant interior design, bioluminescent blue lighting, organic curved walls, floating dining pods, ultra modern luxury, cinematic concept art render",
+                    "caption": "Future Interior"
+                }
+            ]
+        },
+        "access": {
+            "heading": "Nano Bananaへのアクセス方法",
+            "subheading": "Nano BananaはLovart BasicおよびProプランに含まれる「無制限低速生成」機能で利用できます。",
+            "table_header": [
+                "機能",
+                "無料",
+                "Basic",
+                "Pro"
+            ],
+            "table": [
+                {
+                    "feature": "Nano Banana access",
+                    "free": "❌",
+                    "basic": "✅ Slow queue",
+                    "pro": "✅ Priority queue"
+                },
+                {
+                    "feature": "Monthly generations",
+                    "free": "Limited",
+                    "basic": "Unlimited (slow)",
+                    "pro": "Unlimited (fast)"
+                },
+                {
+                    "feature": "Seedence 2.0 (coming)",
+                    "free": "❌",
+                    "basic": "✅",
+                    "pro": "✅ Early access"
+                },
+                {
+                    "feature": "Commercial license",
+                    "free": "❌",
+                    "basic": "✅",
+                    "pro": "✅"
+                }
+            ],
+            "cta": "アップグレードしてNano Bananaを解放",
+            "note": "月額$9.9から。いつでもキャンセル可能。"
+        },
+        "seedence": {
+            "badge": "🔭 近日公開",
+            "heading": "予告：Seedence 2.0がLovartに来る",
+            "desc": "Seedence 2.0は次世代AI画像モデルで、生成速度、セマンティック精度、超高解像度レンダリングで画期的な改善を実現します。Lovart Proサブスクライバーはローンチ時に早期アクセスを受けられます。",
+            "bullets": [
+                "Nano Bananaより10倍速い生成速度",
+                "ネイティブ4K超高解像度出力",
+                "強化されたマルチ被写体構図コントロール",
+                "より深いセマンティックプロンプト理解"
+            ],
+            "cta": "Proで早期アクセスを取得"
+        },
+        "faq": {
+            "heading": "よくある質問",
+            "items": [
+                {
+                    "q": "What is Nano Banana AI?",
+                    "a": "Nano Banana is a next-generation AI image generation model developed by Google. It delivers exceptional photorealistic detail, superior text rendering within images, and advanced compositional understanding compared to standard AI image models. On Lovart, it is available as part of the Unlimited Slow Generations feature."
+                },
+                {
+                    "q": "Is Nano Banana free on Lovart?",
+                    "a": "Nano Banana on Lovart requires a Basic or Pro subscription. Free plan users have limited access to standard generation models. Upgrading to Basic or Pro unlocks Nano Banana with Unlimited Slow Generations, while Pro subscribers benefit from priority queue placement for faster results."
+                },
+                {
+                    "q": "How does Nano Banana compare to standard AI image models?",
+                    "a": "Nano Banana significantly outperforms standard models in three key areas: (1) Photorealism — details like skin texture, fabric, and reflections are dramatically more lifelike. (2) Text rendering — Nano Banana can accurately generate readable text inside images, a task where most AI models struggle. (3) Prompt coherence — it follows complex, multi-condition prompts more accurately."
+                },
+                {
+                    "q": "What is 'Unlimited Slow Generations' on Lovart?",
+                    "a": "Unlimited Slow Generations is a Lovart plan feature that gives Basic and Pro subscribers unlimited access to premium AI models — including Nano Banana — without a monthly cap. The 'slow' designation refers to generation queue priority: Basic users share a standard queue, while Pro users receive priority queue access for faster results."
+                },
+                {
+                    "q": "What is Seedence 2.0 and when will it come to Lovart?",
+                    "a": "Seedence 2.0 is the next frontier AI image generation model, expected to deliver significant improvements in generation speed, semantic understanding, and ultra-high-resolution output compared to Nano Banana. Lovart is actively working on integrating Seedence 2.0. Pro subscribers will receive early access once it launches."
+                }
+            ]
+        },
+        "cta": {
+            "title": "LovartでNano Bananaを使って創作を始めよう",
+            "desc": "Lovart Nano Bananaを使って驚異的な超リアルAIアートを制作している何千ものデザイナーに加わりましょう。",
+            "button": "Nano Bananaを無料で試す"
         }
     }
 }
