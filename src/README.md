@@ -6,6 +6,6 @@
 
 ## Files
 - `templates/`：EJS 模板目录，包含各页面和 partials
-- `locales/`：多语言 JSON 文件 (en, zh, fr, ja)
+- `locales/`：多语言 JSON 文件 (en, zh, fr, ja, es, it)
 - `styles/`：Tailwind CSS 源文件
 - `assets/`：其他静态资源

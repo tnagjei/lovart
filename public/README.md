@@ -6,7 +6,7 @@
 
 ## Files
 - `robots.txt`：搜索引擎爬虫规则
-- `sitemap.xml`：站点地图
+- `sitemap.xml`：站点地图（发布前建议与 `dist/sitemap.xml` 同步）
 - `_redirects`：URL 规范化重定向规则（协议/主机/路径）
 - `llms.txt`：AI 爬虫内容指引
 - `llms-full.txt`：AI 爬虫完整内容

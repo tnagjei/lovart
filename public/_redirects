@@ -18,6 +18,19 @@ https://www.lovart.info/* https://lovart.info/:splat 301
 /ja/lovart-login /ja/lovart-login-guide 301
 /es/lovart-login /es/lovart-login-guide 301
 /it/lovart-login /it/lovart-login-guide 301
+/lovartal /lovarte 301
+/lovarts /lovarte 301
+/lovart_ai /lovarte 301
+/zh/lovartal /zh/lovarte 301
+/fr/lovartal /fr/lovarte 301
+/ja/lovartal /ja/lovarte 301
+/es/lovartal /es/lovarte 301
+/it/lovartal /it/lovarte 301
+/zh/lovarts /zh/lovarte 301
+/fr/lovarts /fr/lovarte 301
+/ja/lovarts /ja/lovarte 301
+/es/lovarts /es/lovarte 301
+/it/lovarts /it/lovarte 301
 
 # Non-content entry paths should not be indexable
 /signup /404 404

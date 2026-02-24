@@ -1,17 +1,24 @@
-# Lovart
-> Lovart is an AI-powered design platform for creative professionals, helping users create stunning visuals, collaborate effectively, and streamline their workflows.
-Lovart leverages cutting-edge AI technology to provide intelligent design suggestions and intuitive tools, making the design process more efficient and inspiring.
+# Lovart Info
+> Lovart.info is an independent Lovart guide site focused on tutorials, comparisons, and support navigation pages.
+This website does not provide official account login or image generation. For official product access, use lovart.ai.
 
 ## Core Content
-- [Products](https://lovart.info/lovart-design-features.html): The Lovart AI design tool and platform for creating visual content, offering AI-enhanced creativity and an intuitive interface.
-- [Services & Features](https://lovart.info/lovart-design-features.html): AI-driven design suggestions, drag-and-drop interface, real-time collaboration tools, and access to a vast library of assets.
-- [Developer Resources](https://lovart.info/lovart-ai-code.html): Information for developers on Lovart AI Code, API, and SDK integration.
+- [What Is Lovart](https://lovart.info/what-is-lovart): Definition, safety notes, and quick orientation for new users.
+- [Lovart Tutorial](https://lovart.info/lovart-tutorial): Step-by-step usage guide for common Lovart workflows.
+- [Lovart Review](https://lovart.info/lovart-review): Evaluation page covering strengths, limitations, and suitable users.
+- [Lovart Alternative](https://lovart.info/lovart-alternative): Comparison page for users evaluating alternatives and trade-offs.
+- [Lovarte Guide](https://lovart.info/lovarte): Handles spelling variants like lovarte/lovartal/lovarts and routes users correctly.
 
 ## Common Resources
-- [FAQ](https://lovart.info/#faq): Answers to common questions about Lovart's features, AI capabilities, collaboration, and usage.
-- [Pricing Plans](https://lovart.info/lovart-pricing.html): Explore Lovart's flexible and affordable pricing options for individuals, teams, and businesses.
-- [Contact Information](https://lovart.info/#footer): Channels to get support and inquiries from the Lovart team (typically the footer contains contact info or links).
+- [Lovart Code Guide](https://lovart.info/lovart-code): Navigation page for code-related Lovart intents and developer links.
+- [Lovart AI Agent](https://lovart.info/lovart-ai-agent): Explains Lovart AI Agent intent and where to continue next.
+- [Pricing](https://lovart.info/lovart-pricing): Pricing and plan orientation page.
+- [API](https://lovart.info/lovart-api): API overview and developer entry point.
+- [Support Contact](https://lovart.info/lovart-support-contact): Contact and support escalation path.
+- [Help](https://lovart.info/help): Help center landing page.
 
 ## Optional
-- [About Us](https://lovart.info/): Lovart empowers creators to bring their visions to life with intuitive tools and intelligent features.
-- [Showcase/Gallery](https://lovart.info/#gallery): Showcasing designs and projects created using the Lovart platform.
+- [Design Features](https://lovart.info/lovart-design-features): Feature overview and capabilities summary.
+- [Promo Code](https://lovart.info/lovart-promo-code): Promo and invitation related guide page.
+- [Blog](https://lovart.info/blog): Articles about Lovart usage and design workflows.
+- [About](https://lovart.info/about): Site background and positioning.
