@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Lovart Login' , href: canonicalUrl }]; %>
+    <html lang="<%= lang %>" class="scroll-smooth">
+
+    <head>
+        <%- include('partials/head') %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= t.lovart_login_page.seo.title %>
+            </title>
+            <meta name="description" content="<%= t.lovart_login_page.seo.description %>">
+            <meta name="keywords" content="">
+            <link rel="canonical" href="<%= canonicalUrl %>">
+            <%- include('partials/hreflang') %>
+                <link rel="stylesheet" href="/styles.css">
+                <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                    crossorigin="anonymous"></script>
+                <%- include('partials/analytics') %>
+                    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+    </head>
+
+    <body class="bg-neutral-light text-neutral-dark antialiased">
+
+        <%- include('partials/header') %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+
+                <main>
+                    <!-- Hero Section -->
+                    <section
+                        class="bg-gradient-to-b from-primary/10 to-transparent py-20 lg:py-28 relative overflow-hidden">
+                        <div class="container mx-auto px-6 text-center relative z-10">
+                            <span
+                                class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6">
+                                🔐 <%= t.lovart_login_page.hero.badge %>
+                            </span>
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-neutral-dark">
+                                <%= t.lovart_login_page.hero.title %>
+                            </h1>
+                            <p class="text-xl text-neutral mb-8 max-w-2xl mx-auto">
+                                <%= t.lovart_login_page.hero.subtitle %>
+                            </p>
+                            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                                <a href="https://lovart.ai/login" target="_blank" rel="noopener"
+                                    class="btn-primary px-8 py-4 text-lg rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                    <%= t.lovart_login_page.hero.cta_external %>
+                                </a>
+                                <a href="<%= link('/lovart-design-features') %>"
+                                    class="btn-secondary px-8 py-4 text-lg rounded-xl font-semibold border-2 border-primary/20 hover:border-primary/50 transition-all duration-300">
+                                    <%= t.lovart_login_page.hero.cta_internal %>
+                                </a>
+                            </div>
+                            <div
+                                class="text-left max-w-4xl mx-auto text-neutral leading-relaxed prose prose-lg mx-auto">
+                                <p>
+                                    <%= t.lovart_login_page.hero.content %>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Access Methods -->
+                    <section class="py-16 bg-white">
+                        <div class="container mx-auto px-6">
+                            <div class="max-w-3xl mx-auto text-center mb-12">
+                                <h2 class="text-3xl font-bold text-neutral-dark mb-4">
+                                    <%= t.lovart_login_page.access_methods.heading %>
+                                </h2>
+                                <p class="text-lg text-neutral">
+                                    <%= t.lovart_login_page.access_methods.intro %>
+                                </p>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                                <% t.lovart_login_page.access_methods.methods.forEach(method=> { %>
+                                    <div class="bg-neutral-light p-8 rounded-2xl border border-neutral/10">
+                                        <h3 class="text-xl font-bold text-neutral-dark mb-3">
+                                            <%= method.title %>
+                                        </h3>
+                                        <p class="text-neutral leading-relaxed">
+                                            <%= method.desc %>
+                                        </p>
+                                    </div>
+                                    <% }); %>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Troubleshooting Steps -->
+                    <section class="py-16">
+                        <div class="container mx-auto px-6">
+                            <div class="max-w-3xl mx-auto mb-12">
+                                <h2 class="text-3xl font-bold text-neutral-dark mb-4">
+                                    <%= t.lovart_login_page.troubleshooting.heading %>
+                                </h2>
+                                <p class="text-lg text-neutral">
+                                    <%= t.lovart_login_page.troubleshooting.intro %>
+                                </p>
+                            </div>
+                            <div class="max-w-4xl mx-auto space-y-6">
+                                <% t.lovart_login_page.troubleshooting.steps.forEach(step=> { %>
+                                    <div
+                                        class="flex items-start gap-4 bg-white p-6 rounded-2xl shadow-sm border border-neutral/10">
+                                        <div
+                                            class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm mt-1">
+                                            ✓</div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-neutral-dark">
+                                                <%= step.step %>
+                                            </h3>
+                                            <p class="mt-2 text-neutral leading-relaxed">
+                                                <%= step.desc %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <% }); %>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Error Codes Table -->
+                    <section class="py-16 bg-white">
+                        <div class="container mx-auto px-6">
+                            <div class="max-w-4xl mx-auto">
+                                <h2 class="text-3xl font-bold text-neutral-dark mb-4">
+                                    <%= t.lovart_login_page.error_codes.heading %>
+                                </h2>
+                                <p class="text-lg text-neutral mb-8">
+                                    <%= t.lovart_login_page.error_codes.desc %>
+                                </p>
+                                <div class="overflow-x-auto rounded-xl shadow border border-neutral/10">
+                                    <table class="min-w-full divide-y divide-neutral/10">
+                                        <thead class="bg-neutral-light">
+                                            <tr>
+                                                <% t.lovart_login_page.error_codes.table_headers.forEach(header=> { %>
+                                                    <th
+                                                        class="px-6 py-4 text-left text-sm font-semibold text-neutral-dark">
+                                                        <%= header %>
+                                                    </th>
+                                                    <% }); %>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-neutral/10 bg-white">
+                                            <% t.lovart_login_page.error_codes.table_rows.forEach(row=> { %>
+                                                <tr class="hover:bg-neutral-light/50">
+                                                    <td class="px-6 py-4 text-sm font-medium text-primary">
+                                                        <%= row.code %>
+                                                    </td>
+                                                    <td class="px-6 py-4 text-sm text-neutral-dark">
+                                                        <%= row.meaning %>
+                                                    </td>
+                                                    <td class="px-6 py-4 text-sm text-neutral">
+                                                        <%= row.resolution %>
+                                                    </td>
+                                                </tr>
+                                                <% }); %>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Official Support -->
+                    <section class="py-16 bg-primary/5 border-y border-primary/10">
+                        <div class="container mx-auto px-6 text-center max-w-4xl">
+                            <h2 class="text-3xl font-bold text-neutral-dark mb-4">
+                                <%= t.lovart_login_page.official_support.heading %>
+                            </h2>
+                            <p class="text-lg text-neutral mb-6">
+                                <%= t.lovart_login_page.official_support.desc %>
+                            </p>
+                            <p class="text-sm text-neutral/70 font-medium">Links: <%=
+                                    t.lovart_login_page.official_support.links.join(' | ') %></p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-neutral-dark mb-10 text-center"><%= t.lovart_login_page.faq.heading %></h2>
+                    <div class="space-y-6">
+                        <% t.lovart_login_page.faq.items.forEach(item => { %>
+                        <div class="bg-white rounded-2xl p-6 border border-neutral/10 shadow-sm hover:shadow-md transition-shadow">
+                            <h3 class="text-xl font-bold text-neutral-dark mb-3"><%= item.q %></h3>
+                            <p class="text-neutral leading-relaxed"><%= item.a %></p>
+                        </div>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto bg-gradient-to-r from-primary to-accent rounded-3xl p-10 sm:p-16 shadow-2xl text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4"><%= t.lovart_login_page.cta.title %></h2>
+                    <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto"><%= t.lovart_login_page.cta.desc %></p>
+                    <a href="https://lovart.ai/login" target="_blank" rel="noopener"
+                        class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl bg-white text-primary hover:bg-neutral-light shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <%= t.lovart_login_page.cta.button %>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+    </body>
+
+    </html>

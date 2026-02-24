@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Lovart Promo Code' , href: canonicalUrl }]; %>
+    <html lang="<%= lang %>" class="scroll-smooth">
+
+    <head>
+        <%- include('partials/head') %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= t.lovart_promo_page.seo.title %>
+            </title>
+            <meta name="description" content="<%= t.lovart_promo_page.seo.description %>">
+            <meta name="keywords" content="">
+            <link rel="canonical" href="<%= canonicalUrl %>">
+            <%- include('partials/hreflang') %>
+                <link rel="stylesheet" href="/styles.css">
+                <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                    crossorigin="anonymous"></script>
+                <%- include('partials/analytics') %>
+                    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+    </head>
+
+    <body class="bg-neutral-light text-neutral-dark antialiased">
+
+        <%- include('partials/header') %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+
+                <main>
+                    <!-- Hero Section -->
+                    <section
+                        class="bg-gradient-to-b from-primary/10 to-transparent py-20 lg:py-28 relative overflow-hidden">
+                        <div class="container mx-auto px-6 text-center relative z-10">
+                            <span
+                                class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6">
+                                💳 <%= t.lovart_promo_page.hero.badge %>
+                            </span>
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-neutral-dark">
+                                <%= t.lovart_promo_page.hero.title %>
+                            </h1>
+                            <p class="text-xl text-neutral mb-8 max-w-2xl mx-auto">
+                                <%= t.lovart_promo_page.hero.subtitle %>
+                            </p>
+                            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                                <a href="<%= link('/lovart-pricing') %>"
+                                    class="btn-primary px-8 py-4 text-lg rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                    <%= t.lovart_promo_page.hero.cta_external %>
+                                </a>
+                                <a href="#saving-paths"
+                                    class="btn-secondary px-8 py-4 text-lg rounded-xl font-semibold border-2 border-primary/20 hover:border-primary/50 transition-all duration-300">
+                                    <%= t.lovart_promo_page.hero.cta_internal %>
+                                </a>
+                            </div>
+                            <div
+                                class="text-left max-w-4xl mx-auto text-neutral leading-relaxed prose prose-lg mx-auto">
+                                <p>
+                                    <%= t.lovart_promo_page.hero.content %>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Status Warning Box -->
+                    <section class="py-8">
+                        <div class="container mx-auto px-6">
+                            <div
+                                class="max-w-4xl mx-auto bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-xl shadow-sm">
+                                <h3 class="text-lg font-bold text-amber-900 mb-2">
+                                    <%= t.lovart_promo_page.status_box.heading %>
+                                </h3>
+                                <p class="text-amber-800 leading-relaxed">
+                                    <%= t.lovart_promo_page.status_box.status %>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Comparison Table -->
+                    <section class="py-16 bg-white">
+                        <div class="container mx-auto px-6">
+                            <div class="max-w-4xl mx-auto">
+                                <h2 class="text-3xl font-bold text-neutral-dark mb-4">
+                                    <%= t.lovart_promo_page.comparison.heading %>
+                                </h2>
+                                <p class="text-lg text-neutral mb-8">
+                                    <%= t.lovart_promo_page.comparison.desc %>
+                                </p>
+                                <div class="overflow-hidden rounded-xl shadow border border-neutral/10">
+                                    <table class="min-w-full divide-y divide-neutral/10 text-left">
+                                        <thead class="bg-neutral-light">
+                                            <tr>
+                                                <th class="px-6 py-4 font-semibold text-neutral-dark">Attribute</th>
+                                                <th class="px-6 py-4 font-semibold text-green-700">Real Offer ✓</th>
+                                                <th class="px-6 py-4 font-semibold text-red-600">Fake Offer ✗</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-neutral/10 bg-white">
+                                            <% t.lovart_promo_page.comparison.rows.forEach(row=> { %>
+                                                <tr class="hover:bg-neutral-light/50">
+                                                    <td class="px-6 py-4 font-medium text-neutral-dark">
+                                                        <%= row.aspect %>
+                                                    </td>
+                                                    <td class="px-6 py-4 text-neutral">
+                                                        <%= row.real %>
+                                                    </td>
+                                                    <td class="px-6 py-4 text-neutral">
+                                                        <%= row.fake %>
+                                                    </td>
+                                                </tr>
+                                                <% }); %>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Saving Paths -->
+                    <section id="saving-paths" class="py-16">
+                        <div class="container mx-auto px-6">
+                            <div class="max-w-3xl mx-auto text-center mb-12">
+                                <h2 class="text-3xl font-bold text-neutral-dark mb-4">
+                                    <%= t.lovart_promo_page.saving_paths.heading %>
+                                </h2>
+                                <p class="text-lg text-neutral">
+                                    <%= t.lovart_promo_page.saving_paths.intro %>
+                                </p>
+                            </div>
+                            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                                <% t.lovart_promo_page.saving_paths.paths.forEach(p=> { %>
+                                    <div
+                                        class="bg-white p-8 rounded-2xl shadow-sm border border-neutral/10 hover:shadow-md transition-shadow">
+                                        <h3 class="text-xl font-bold text-neutral-dark mb-3">
+                                            <%= p.title %>
+                                        </h3>
+                                        <p class="text-neutral leading-relaxed">
+                                            <%= p.desc %>
+                                        </p>
+                                    </div>
+                                    <% }); %>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FAQ Section -->
+                    <section class="py-16 bg-white">
+                        <div class="container mx-auto px-6">
+                            <div class="max-w-4xl mx-auto">
+                                <h2 class="text-3xl font-bold text-neutral-dark mb-10 text-center">
+                                    <%= t.lovart_promo_page.faq.heading %>
+                                </h2>
+                                <div class="space-y-6">
+                                    <% t.lovart_promo_page.faq.items.forEach(item=> { %>
+                                        <div
+                                            class="bg-neutral-light rounded-2xl p-6 border border-neutral/10 shadow-sm hover:shadow-md transition-shadow">
+                                            <h3 class="text-xl font-bold text-neutral-dark mb-3">
+                                                <%= item.q %>
+                                            </h3>
+                                            <p class="text-neutral leading-relaxed">
+                                                <%= item.a %>
+                                            </p>
+                                        </div>
+                                        <% }); %>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Bottom CTA -->
+                    <section class="py-20">
+                        <div class="container mx-auto px-6">
+                            <div
+                                class="max-w-4xl mx-auto bg-gradient-to-r from-primary to-accent rounded-3xl p-10 sm:p-16 shadow-2xl text-center">
+                                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+                                    <%= t.lovart_promo_page.cta.title %>
+                                </h2>
+                                <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+                                    <%= t.lovart_promo_page.cta.desc %>
+                                </p>
+                                <a href="<%= link('/lovart-pricing') %>"
+                                    class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl bg-white text-primary hover:bg-neutral-light shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                    <%= t.lovart_promo_page.cta.button %>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+                <%- include('partials/footer') %>
+    </body>
+
+    </html>

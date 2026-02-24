@@ -1,1005 +1,1303 @@
 {
-    "nav": {
-        "home": "Home",
-        "features": "Funzionalita",
-        "pricing": "Prezzi",
-        "blog": "Blog",
-        "help": "Supporto",
-        "about": "Chi siamo",
-        "get_started": "Inizia",
-        "free": "Prova gratuita",
-        "api": "API",
-        "ai_code": "Codice IA"
-    },
-    "footer": {
-        "products_title": "Prodotti",
-        "company_title": "Azienda",
-        "contact_title": "Contatto Lovart",
-        "partner_site": "Sito partner",
-        "terms": "Termini di servizio",
-        "privacy": "Informativa sulla privacy",
-        "contact_column": {
-            "email": "Email: support@lovart.ai"
-        }
-    },
-    "pricing_page": {
-        "seo": {
-            "title": "Piani e Prezzi Lovart AI | Soluzioni di Design Convenienti",
-            "description": "Confronta i piani di prezzo di Lovart AI per creator, team e aziende. Scegli l'opzione adatta al tuo flusso di lavoro.",
-            "keywords": "prezzi lovart ai, piani lovart, costo lovart, abbonamento lovart"
-        }
-    },
-    "lovart_api_page": {
-        "seo": {
-            "title": "Documentazione API Lovart | Integrazione API e SDK di Design IA",
-            "description": "Documentazione della API di design Lovart AI. Integra funzionalita di design IA nelle tue applicazioni tramite API REST e SDK.",
-            "keywords": "API Lovart, API design IA, SDK design, documentazione API Lovart"
-        }
-    },
-    "support_cluster": {
-        "last_verified": "2026-02-15",
-        "disclaimer": {
-            "badge": "guida informativa di terze parti",
-            "verification_label": "Ultima verifica",
-            "title": "Avviso non ufficiale",
-            "description": "Questo sito e una pagina di navigazione supporto di terze parti e non e il supporto ufficiale Lovart.",
-            "points": [
-                "Nessuna affiliazione con il supporto ufficiale Lovart.",
-                "Forniamo solo indicazioni di instradamento e non gestiamo ticket per tuo conto.",
-                "Per regole e azioni definitive, usa sempre le pagine ufficiali Lovart."
-            ]
-        },
-        "official_outlet_title": "Canali ufficiali Lovart",
-        "official_intro": "Usa i link qui sotto per proseguire direttamente sugli endpoint ufficiali Lovart.",
-        "open_official_cta": "Apri link ufficiale",
-        "faq_title": "FAQ (solo instradamento)",
-        "related_title": "Guide di supporto correlate",
-        "related_desc": "Ogni pagina e focalizzata su una singola intenzione per evitare sovrapposizioni.",
-        "help_section_title": "Navigazione Supporto e Policy",
-        "help_section_desc": "Scegli prima la pagina di intenzione, poi continua sui canali ufficiali Lovart.",
-        "footer_title": "Supporto e Policy",
-        "help_links": [
-            {
-                "path": "lovart-customer-support",
-                "title": "Supporto Clienti Lovart",
-                "desc": "Ingresso generale per login, accesso account e instradamento problemi."
-            },
-            {
-                "path": "lovart-support-contact",
-                "title": "Contatti Supporto Lovart",
-                "desc": "Canali di contatto ufficiali, inclusi email e Discord."
-            },
-            {
-                "path": "lovart-refund-guide",
-                "title": "Guida Rimborso Lovart",
-                "desc": "Instradamento rimborsi e fatturazione con uscite ufficiali."
-            },
-            {
-                "path": "lovart-account-deletion-guide",
-                "title": "Guida Eliminazione Account Lovart",
-                "desc": "Instradamento richieste di eliminazione account e sicurezza."
-            },
-            {
-                "path": "lovart-privacy-policy-guide",
-                "title": "Guida Privacy Policy Lovart",
-                "desc": "Sintesi privacy e passaggio alla policy ufficiale."
-            },
-            {
-                "path": "lovart-terms-of-use-guide",
-                "title": "Guida Termini d'Uso Lovart",
-                "desc": "Sintesi termini e passaggio al testo legale ufficiale."
-            }
-        ],
-        "footer_links": [
-            {
-                "path": "lovart-customer-support",
-                "title": "Supporto Clienti"
-            },
-            {
-                "path": "lovart-support-contact",
-                "title": "Contatti Supporto"
-            },
-            {
-                "path": "lovart-refund-guide",
-                "title": "Guida Rimborso"
-            },
-            {
-                "path": "lovart-account-deletion-guide",
-                "title": "Eliminazione Account"
-            },
-            {
-                "path": "lovart-privacy-policy-guide",
-                "title": "Guida Privacy"
-            },
-            {
-                "path": "lovart-terms-of-use-guide",
-                "title": "Guida Termini"
-            }
-        ],
-        "privacy_bridge": {
-            "title": "Privacy Policy Ufficiale",
-            "desc": "Questa pagina e un riepilogo di terze parti. Per il testo vincolante e aggiornato, apri la privacy policy ufficiale Lovart.",
-            "cta": "Apri privacy policy ufficiale",
-            "url": "https://www.lovart.ai/statement/privacy-policy"
-        },
-        "terms_bridge": {
-            "title": "Termini d'Uso Ufficiali",
-            "desc": "Questa pagina e un riepilogo di terze parti. Per clausole legali vincolanti e aggiornate, apri i termini ufficiali Lovart.",
-            "cta": "Apri termini ufficiali",
-            "url": "https://www.lovart.ai/statement/terms-of-use"
-        },
-        "pages": {
-            "customer_support": {
-                "breadcrumb": "Supporto Clienti Lovart",
-                "seo": {
-                    "title": "Guida Supporto Clienti Lovart | Instradamento Ufficiale di Terze Parti",
-                    "description": "Guida di terze parti per supporto Lovart su login, accesso account e problemi comuni. Vai ai canali ufficiali Lovart.",
-                    "keywords": "supporto lovart, aiuto login lovart, guida supporto lovart"
-                },
-                "hero": {
-                    "title": "Guida Supporto Clienti Lovart",
-                    "desc": "Usa questa pagina di instradamento di terze parti per trovare il canale ufficiale giusto di Lovart."
-                },
-                "official_intro": "Inizia dal sito ufficiale e dai canali di supporto indicati qui sotto."
-            },
-            "support_contact": {
-                "breadcrumb": "Contatti Supporto Lovart",
-                "seo": {
-                    "title": "Contatti Supporto Lovart | Email e Discord Ufficiali",
-                    "description": "Trova i canali ufficiali di contatto Lovart, inclusi support@lovart.ai e il server Discord ufficiale.",
-                    "keywords": "support@lovart.ai, contatto supporto lovart, email ufficiale lovart"
-                },
-                "hero": {
-                    "title": "Instradamento Contatti Supporto Lovart",
-                    "desc": "Accedi rapidamente ai canali ufficiali di contatto Lovart per supporto e account."
-                },
-                "official_intro": "Usa soltanto questi punti di contatto ufficiali."
-            },
-            "refund_guide": {
-                "breadcrumb": "Guida Rimborso Lovart",
-                "seo": {
-                    "title": "Guida Rimborso Lovart | Instradamento Ufficiale Fatturazione e Rimborsi",
-                    "description": "Guida di terze parti su rimborsi e fatturazione Lovart. Scopri come raggiungere i canali ufficiali per rimborsi e abbonamenti.",
-                    "keywords": "rimborso lovart, fatturazione lovart, annullare abbonamento lovart"
-                },
-                "hero": {
-                    "title": "Guida Rimborso e Fatturazione Lovart",
-                    "desc": "Comprendi i percorsi di rimborso e fatturazione, poi prosegui tramite i canali ufficiali Lovart."
-                },
-                "official_intro": "Per gli esiti finali di fatturazione, usa solo pagine ufficiali Lovart."
-            },
-            "account_deletion_guide": {
-                "breadcrumb": "Guida Eliminazione Account Lovart",
-                "seo": {
-                    "title": "Guida Eliminazione Account Lovart | Instradamento Richiesta Ufficiale",
-                    "description": "Guida di terze parti per eliminare account Lovart. Instrada la tua richiesta in modo sicuro ai canali ufficiali.",
-                    "keywords": "eliminare account lovart, cancellazione account lovart, chiudere account lovart"
-                },
-                "hero": {
-                    "title": "Guida Eliminazione Account Lovart",
-                    "desc": "Usa questa pagina per instradare le richieste di eliminazione account ai canali ufficiali Lovart."
-                },
-                "official_intro": "Le decisioni di eliminazione account sono gestite solo dal supporto ufficiale Lovart."
-            },
-            "privacy_policy_guide": {
-                "breadcrumb": "Guida Privacy Policy Lovart",
-                "seo": {
-                    "title": "Guida Privacy Lovart | Sintesi di Terze Parti + Link Ufficiale",
-                    "description": "Guida di terze parti alla privacy policy Lovart con accesso alla policy ufficiale. Leggi il riepilogo e passa al testo ufficiale.",
-                    "keywords": "privacy policy lovart, privacy dati lovart, privacy ufficiale lovart"
-                },
-                "hero": {
-                    "title": "Guida Privacy Policy Lovart",
-                    "desc": "Solo sintesi e instradamento. Per validita legale, leggi sempre la privacy policy ufficiale Lovart."
-                },
-                "official_intro": "Per dettagli vincolanti della policy, apri la documentazione ufficiale Lovart."
-            },
-            "terms_of_use_guide": {
-                "breadcrumb": "Guida Termini d'Uso Lovart",
-                "seo": {
-                    "title": "Guida Termini d'Uso Lovart | Sintesi di Terze Parti + Link Ufficiale",
-                    "description": "Guida di terze parti ai termini Lovart con instradamento ai termini d'uso ufficiali.",
-                    "keywords": "termini d'uso lovart, termini lovart, accordo utente lovart"
-                },
-                "hero": {
-                    "title": "Guida Termini d'Uso Lovart",
-                    "desc": "Solo guida di intenzione. Per clausole vincolanti, consulta i termini ufficiali Lovart."
-                },
-                "official_intro": "Apri i termini ufficiali per testo legale e aggiornamenti."
-            }
-        }
-    },
-    "assets": {
-        "default_alt": "Scenario di design Lovart",
-        "images": {
-            "/images/01.jpg": "Team Lovart in collaborazione in studio di design",
-            "/images/02.png": "Avatar profilo designer in Lovart",
-            "/images/small_01.jpg": "Designer che avvia un progetto in Lovart",
-            "/images/small_03.jpg": "Designer che rifinisce un layout in Lovart",
-            "/images/small_04.jpg": "Team che rivede iterazioni di design in Lovart",
-            "/images/small_05.jpg": "Creator che presenta un design finale in Lovart",
-            "/images/small_06.jpg": "Mockup campagna brand creato con Lovart",
-            "/images/small_07.jpg": "Visual social media creato in Lovart",
-            "/images/small_08.jpg": "Concept poster composto in Lovart",
-            "/images/small_09.jpg": "Concept banner web generato con Lovart",
-            "/images/small_10.jpg": "Card prodotto progettata in Lovart",
-            "/images/small_11.jpg": "Layout marketing rifinito in Lovart",
-            "/images/12.jpg": "Set di illustrazioni organizzato in Lovart",
-            "/images/13.jpg": "Anteprima mobile creata con Lovart",
-            "/images/14.jpg": "Moodboard creativo costruito con Lovart",
-            "/images/features/feature-ai-suggestions.jpg": "Lovart AI che propone suggerimenti di design",
-            "/images/features/feature-drag-drop.jpg": "Interfaccia drag and drop di Lovart",
-            "/images/features/feature-assets.jpg": "Esplorazione libreria risorse di Lovart",
-            "/images/features/feature-collaboration.jpg": "Team che collabora in tempo reale con Lovart",
-            "/images/features/feature-export.jpg": "Opzioni export con un clic in Lovart",
-            "/images/03.jpg": "Visual tutorial passo passo di Lovart"
-        },
-        "image_context": {
-            "about.team.photo": "Ritratto del team principale Lovart",
-            "index.hero.primary": "Anteprima dashboard principale di Lovart AI design",
-            "index.how_it_works.step1": "Avvio progetto Lovart da modello",
-            "index.how_it_works.step2": "Design con suggerimenti AI e strumenti drag and drop di Lovart",
-            "index.how_it_works.step3": "Collaborazione ed export finale in Lovart",
-            "index.testimonials.alex_avatar": "Avatar di Alex V., testimonianza utente Lovart",
-            "index.testimonials.sarah_avatar": "Avatar di Sarah M., testimonianza utente Lovart",
-            "index.testimonials.james_avatar": "Avatar di James P., testimonianza utente Lovart",
-            "index.gallery.image_1": "Mockup campagna brand creato con Lovart",
-            "index.gallery.image_2": "Visual social media creato in Lovart",
-            "index.gallery.image_3": "Concept poster composto in Lovart",
-            "index.gallery.image_4": "Concept banner web generato con Lovart",
-            "index.gallery.image_5": "Card prodotto progettata in Lovart",
-            "index.gallery.image_6": "Layout marketing rifinito in Lovart",
-            "index.gallery.image_7": "Set di illustrazioni organizzato in Lovart",
-            "index.gallery.image_8": "Anteprima mobile creata con Lovart",
-            "index.gallery.image_9": "Moodboard creativo costruito con Lovart",
-            "index.cta.visual": "Lovart aiuta i creator a pubblicare visual di qualita",
-            "pricing.comparison": "Confronto dei piani prezzo Lovart",
-            "privacy.security": "Simbolo visivo di privacy dati e sicurezza account",
-            "terms.hero": "Icona di supporto per termini e uso Lovart",
-            "features_page.ai_suggestions": "Lovart AI che propone suggerimenti di design",
-            "features_page.drag_drop": "Interfaccia drag and drop di Lovart",
-            "features_page.asset_library": "Esplorazione libreria risorse di Lovart",
-            "features_page.collaboration": "Team che collabora in tempo reale con Lovart",
-            "features_page.export": "Opzioni export con un clic in Lovart",
-            "help.video.tutorial_1": "Copertina tutorial assistenza: avvio workspace Lovart",
-            "help.video.tutorial_2": "Copertina tutorial assistenza: uso template e strumenti Lovart",
-            "help.video.tutorial_3": "Copertina tutorial assistenza: esportazione e condivisione da Lovart"
-        }
-    },
+  "nav": {
+    "home": "Home",
+    "features": "Funzionalita",
+    "pricing": "Prezzi",
+    "blog": "Blog",
+    "help": "Supporto",
+    "about": "Chi siamo",
+    "get_started": "Inizia",
+    "free": "Prova gratuita",
+    "api": "API",
+    "ai_code": "Codice IA"
+  },
+  "footer": {
+    "products_title": "Prodotti",
+    "company_title": "Azienda",
+    "contact_title": "Contatto Lovart",
+    "partner_site": "Sito partner",
+    "terms": "Termini di servizio",
+    "privacy": "Informativa sulla privacy",
+    "contact_column": {
+      "email": "Email: support@lovart.ai"
+    }
+  },
+  "pricing_page": {
     "seo": {
-        "prompt_guide": {
-            "title": "Lovart AI Prompt Guide: Logo & Brand Design Tips",
-            "description": "Discover proven Lovart AI prompt formulas to create minimalist logos, vintage badges & cyberpunk mascots. Copy ready-to-use prompts and start designing free.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/lovart-prompt-guide"
+      "title": "Piani e Prezzi Lovart AI | Soluzioni di Design Convenienti",
+      "description": "Confronta i piani di prezzo di Lovart AI per creator, team e aziende. Scegli l'opzione adatta al tuo flusso di lavoro.",
+      "keywords": "prezzi lovart ai, piani lovart, costo lovart, abbonamento lovart"
+    }
+  },
+  "lovart_api_page": {
+    "seo": {
+      "title": "Documentazione API Lovart | Integrazione API e SDK di Design IA",
+      "description": "Documentazione della API di design Lovart AI. Integra funzionalita di design IA nelle tue applicazioni tramite API REST e SDK.",
+      "keywords": "API Lovart, API design IA, SDK design, documentazione API Lovart"
+    }
+  },
+  "support_cluster": {
+    "last_verified": "2026-02-15",
+    "disclaimer": {
+      "badge": "guida informativa di terze parti",
+      "verification_label": "Ultima verifica",
+      "title": "Avviso non ufficiale",
+      "description": "Questo sito e una pagina di navigazione supporto di terze parti e non e il supporto ufficiale Lovart.",
+      "points": [
+        "Nessuna affiliazione con il supporto ufficiale Lovart.",
+        "Forniamo solo indicazioni di instradamento e non gestiamo ticket per tuo conto.",
+        "Per regole e azioni definitive, usa sempre le pagine ufficiali Lovart."
+      ]
+    },
+    "official_outlet_title": "Canali ufficiali Lovart",
+    "official_intro": "Usa i link qui sotto per proseguire direttamente sugli endpoint ufficiali Lovart.",
+    "open_official_cta": "Apri link ufficiale",
+    "faq_title": "FAQ (solo instradamento)",
+    "related_title": "Guide di supporto correlate",
+    "related_desc": "Ogni pagina e focalizzata su una singola intenzione per evitare sovrapposizioni.",
+    "help_section_title": "Navigazione Supporto e Policy",
+    "help_section_desc": "Scegli prima la pagina di intenzione, poi continua sui canali ufficiali Lovart.",
+    "footer_title": "Supporto e Policy",
+    "help_links": [
+      {
+        "path": "lovart-customer-support",
+        "title": "Supporto Clienti Lovart",
+        "desc": "Ingresso generale per login, accesso account e instradamento problemi."
+      },
+      {
+        "path": "lovart-support-contact",
+        "title": "Contatti Supporto Lovart",
+        "desc": "Canali di contatto ufficiali, inclusi email e Discord."
+      },
+      {
+        "path": "lovart-refund-guide",
+        "title": "Guida Rimborso Lovart",
+        "desc": "Instradamento rimborsi e fatturazione con uscite ufficiali."
+      },
+      {
+        "path": "lovart-account-deletion-guide",
+        "title": "Guida Eliminazione Account Lovart",
+        "desc": "Instradamento richieste di eliminazione account e sicurezza."
+      },
+      {
+        "path": "lovart-privacy-policy-guide",
+        "title": "Guida Privacy Policy Lovart",
+        "desc": "Sintesi privacy e passaggio alla policy ufficiale."
+      },
+      {
+        "path": "lovart-terms-of-use-guide",
+        "title": "Guida Termini d'Uso Lovart",
+        "desc": "Sintesi termini e passaggio al testo legale ufficiale."
+      }
+    ],
+    "footer_links": [
+      {
+        "path": "lovart-customer-support",
+        "title": "Supporto Clienti"
+      },
+      {
+        "path": "lovart-support-contact",
+        "title": "Contatti Supporto"
+      },
+      {
+        "path": "lovart-refund-guide",
+        "title": "Guida Rimborso"
+      },
+      {
+        "path": "lovart-account-deletion-guide",
+        "title": "Eliminazione Account"
+      },
+      {
+        "path": "lovart-privacy-policy-guide",
+        "title": "Guida Privacy"
+      },
+      {
+        "path": "lovart-terms-of-use-guide",
+        "title": "Guida Termini"
+      }
+    ],
+    "privacy_bridge": {
+      "title": "Privacy Policy Ufficiale",
+      "desc": "Questa pagina e un riepilogo di terze parti. Per il testo vincolante e aggiornato, apri la privacy policy ufficiale Lovart.",
+      "cta": "Apri privacy policy ufficiale",
+      "url": "https://www.lovart.ai/statement/privacy-policy"
+    },
+    "terms_bridge": {
+      "title": "Termini d'Uso Ufficiali",
+      "desc": "Questa pagina e un riepilogo di terze parti. Per clausole legali vincolanti e aggiornate, apri i termini ufficiali Lovart.",
+      "cta": "Apri termini ufficiali",
+      "url": "https://www.lovart.ai/statement/terms-of-use"
+    },
+    "pages": {
+      "customer_support": {
+        "breadcrumb": "Supporto Clienti Lovart",
+        "seo": {
+          "title": "Guida Supporto Clienti Lovart | Instradamento Ufficiale di Terze Parti",
+          "description": "Guida di terze parti per supporto Lovart su login, accesso account e problemi comuni. Vai ai canali ufficiali Lovart.",
+          "keywords": "supporto lovart, aiuto login lovart, guida supporto lovart"
         },
-        "lovart_logo": {
-            "title": "Lovart Logo Maker: Crea Logo AI Gratis in Secondi",
-            "description": "Usa il Lovart logo maker per creare logo AI professionali gratis. Sfoglia 8 stili, copia i prompt e scarica in pochi secondi — nessuna competenza di design richiesta.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-logo"
+        "hero": {
+          "title": "Guida Supporto Clienti Lovart",
+          "desc": "Usa questa pagina di instradamento di terze parti per trovare il canale ufficiale giusto di Lovart."
         },
-        "lovart_brand_kit": {
-            "title": "Lovart Brand Kit: Mantieni la Coerenza del Brand",
-            "description": "Il Lovart brand kit centralizza colori, font e loghi per garantire coerenza visiva in ogni design. Scopri le funzionalità del brand kit e mantieni il team allineato.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-brand-kit"
+        "official_intro": "Inizia dal sito ufficiale e dai canali di supporto indicati qui sotto."
+      },
+      "support_contact": {
+        "breadcrumb": "Contatti Supporto Lovart",
+        "seo": {
+          "title": "Contatti Supporto Lovart | Email e Discord Ufficiali",
+          "description": "Trova i canali ufficiali di contatto Lovart, inclusi support@lovart.ai e il server Discord ufficiale.",
+          "keywords": "support@lovart.ai, contatto supporto lovart, email ufficiale lovart"
         },
-        "lovart_apk": {
-            "title": "Lovart APK: Guida all'Installazione Sicura su Android",
-            "description": "Non esiste un APK ufficiale di Lovart. Scopri come installare Lovart su Android in 3 passi in modo sicuro — e come evitare APK falsi con malware.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-apk"
+        "hero": {
+          "title": "Instradamento Contatti Supporto Lovart",
+          "desc": "Accedi rapidamente ai canali ufficiali di contatto Lovart per supporto e account."
         },
-        "lovart_nano_banana": {
-            "title": "Lovart Nano Banana: Il Modello IA di Google su Lovart",
-            "description": "Usa il modello Nano Banana di Google su Lovart: immagini fotorealistiche con IA. Galleria, prompt e anteprima Seedence 2.0. Disponibile nei piani Basic e Pro.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-nano-banana"
+        "official_intro": "Usa soltanto questi punti di contatto ufficiali."
+      },
+      "refund_guide": {
+        "breadcrumb": "Guida Rimborso Lovart",
+        "seo": {
+          "title": "Guida Rimborso Lovart | Instradamento Ufficiale Fatturazione e Rimborsi",
+          "description": "Guida di terze parti su rimborsi e fatturazione Lovart. Scopri come raggiungere i canali ufficiali per rimborsi e abbonamenti.",
+          "keywords": "rimborso lovart, fatturazione lovart, annullare abbonamento lovart"
         },
-        "lovart_invitation_code": {
-            "title": "Codice Invito Lovart: Non è Più Necessario — Aperto a Tutti",
-            "description": "Cerchi un codice invito Lovart? Non ne hai bisogno — Lovart è gratis per tutti. Storia del codice invito Lovart e funzionalità gratuite spiegate.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-invitation-code"
+        "hero": {
+          "title": "Guida Rimborso e Fatturazione Lovart",
+          "desc": "Comprendi i percorsi di rimborso e fatturazione, poi prosegui tramite i canali ufficiali Lovart."
         },
-        "lovart_china": {
-            "title": "Lovart in Cina: Guida Completa all'Accesso e alle Funzionalità",
-            "description": "Guida completa per usare Lovart in Cina: accesso, registrazione, funzionalità del modello Nano Banana. Tutto su Lovart in Cina spiegato.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-china"
+        "official_intro": "Per gli esiti finali di fatturazione, usa solo pagine ufficiali Lovart."
+      },
+      "account_deletion_guide": {
+        "breadcrumb": "Guida Eliminazione Account Lovart",
+        "seo": {
+          "title": "Guida Eliminazione Account Lovart | Instradamento Richiesta Ufficiale",
+          "description": "Guida di terze parti per eliminare account Lovart. Instrada la tua richiesta in modo sicuro ai canali ufficiali.",
+          "keywords": "eliminare account lovart, cancellazione account lovart, chiudere account lovart"
         },
-        "lovart_beta": {
-            "title": "lovart beta: Ora Ufficialmente Lanciato e Gratuito per Tutti",
-            "description": "La beta di Lovart AI è finita — la versione completa è gratis per tutti. Scopri le novità rispetto alla beta e il modello Nano Banana di Google.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-beta"
-        }
+        "hero": {
+          "title": "Guida Eliminazione Account Lovart",
+          "desc": "Usa questa pagina per instradare le richieste di eliminazione account ai canali ufficiali Lovart."
+        },
+        "official_intro": "Le decisioni di eliminazione account sono gestite solo dal supporto ufficiale Lovart."
+      },
+      "privacy_policy_guide": {
+        "breadcrumb": "Guida Privacy Policy Lovart",
+        "seo": {
+          "title": "Guida Privacy Lovart | Sintesi di Terze Parti + Link Ufficiale",
+          "description": "Guida di terze parti alla privacy policy Lovart con accesso alla policy ufficiale. Leggi il riepilogo e passa al testo ufficiale.",
+          "keywords": "privacy policy lovart, privacy dati lovart, privacy ufficiale lovart"
+        },
+        "hero": {
+          "title": "Guida Privacy Policy Lovart",
+          "desc": "Solo sintesi e instradamento. Per validita legale, leggi sempre la privacy policy ufficiale Lovart."
+        },
+        "official_intro": "Per dettagli vincolanti della policy, apri la documentazione ufficiale Lovart."
+      },
+      "terms_of_use_guide": {
+        "breadcrumb": "Guida Termini d'Uso Lovart",
+        "seo": {
+          "title": "Guida Termini d'Uso Lovart | Sintesi di Terze Parti + Link Ufficiale",
+          "description": "Guida di terze parti ai termini Lovart con instradamento ai termini d'uso ufficiali.",
+          "keywords": "termini d'uso lovart, termini lovart, accordo utente lovart"
+        },
+        "hero": {
+          "title": "Guida Termini d'Uso Lovart",
+          "desc": "Solo guida di intenzione. Per clausole vincolanti, consulta i termini ufficiali Lovart."
+        },
+        "official_intro": "Apri i termini ufficiali per testo legale e aggiornamenti."
+      }
+    }
+  },
+  "assets": {
+    "default_alt": "Scenario di design Lovart",
+    "images": {
+      "/images/01.jpg": "Team Lovart in collaborazione in studio di design",
+      "/images/02.png": "Avatar profilo designer in Lovart",
+      "/images/small_01.jpg": "Designer che avvia un progetto in Lovart",
+      "/images/small_03.jpg": "Designer che rifinisce un layout in Lovart",
+      "/images/small_04.jpg": "Team che rivede iterazioni di design in Lovart",
+      "/images/small_05.jpg": "Creator che presenta un design finale in Lovart",
+      "/images/small_06.jpg": "Mockup campagna brand creato con Lovart",
+      "/images/small_07.jpg": "Visual social media creato in Lovart",
+      "/images/small_08.jpg": "Concept poster composto in Lovart",
+      "/images/small_09.jpg": "Concept banner web generato con Lovart",
+      "/images/small_10.jpg": "Card prodotto progettata in Lovart",
+      "/images/small_11.jpg": "Layout marketing rifinito in Lovart",
+      "/images/12.jpg": "Set di illustrazioni organizzato in Lovart",
+      "/images/13.jpg": "Anteprima mobile creata con Lovart",
+      "/images/14.jpg": "Moodboard creativo costruito con Lovart",
+      "/images/features/feature-ai-suggestions.jpg": "Lovart AI che propone suggerimenti di design",
+      "/images/features/feature-drag-drop.jpg": "Interfaccia drag and drop di Lovart",
+      "/images/features/feature-assets.jpg": "Esplorazione libreria risorse di Lovart",
+      "/images/features/feature-collaboration.jpg": "Team che collabora in tempo reale con Lovart",
+      "/images/features/feature-export.jpg": "Opzioni export con un clic in Lovart",
+      "/images/03.jpg": "Visual tutorial passo passo di Lovart"
     },
     "image_context": {
-        "prompt.case1": "Minimalist tech startup logo generated by Lovart AI",
-        "prompt.case2": "Vintage artisan coffee shop badge logo generated by Lovart AI",
-        "prompt.case3": "Cyberpunk neon robotic animal mascot generated by Lovart AI",
-        "logo.tech-startup": "Minimalist tech startup lovart logo with neon cyan gradient generated by Lovart AI",
-        "logo.vintage-badge": "Vintage artisan coffee badge lovart logo generated by Lovart AI",
-        "logo.cyberpunk": "Cyberpunk neon wolf lovart logo generated by Lovart AI",
-        "logo.nature-organic": "Organic leaf nature lovart logo generated by Lovart AI",
-        "logo.luxury-fashion": "Luxury gold ring fashion lovart logo generated by Lovart AI",
-        "logo.gaming-esports": "Gaming esports shield lovart logo generated by Lovart AI",
-        "logo.food-restaurant": "Restaurant fork spoon lovart logo generated by Lovart AI",
-        "logo.abstract-geometric": "Abstract geometric diamond lovart logo generated by Lovart AI"
-    },
-    "prompt_guide": {
-        "hero": {
-            "title": "Mastering AI Design: The Ultimate Lovart Prompt Guide",
-            "subtitle": "Learn how to write the perfect prompts and generate stunning logos, brand kits, and vector art using the world's first design agent."
-        },
-        "intro": {
-            "p1": "Creating breathtaking visuals with Lovart AI starts with the perfect prompt. Just like a master painter needs the right brush, you need the right words.",
-            "p2": "In this comprehensive guide, we'll reveal the secrets to generating cohesive brand kits, minimalist logos, and detailed vector mascots that you can use for commercial projects."
-        },
-        "case1": {
-            "title": "1. The Minimalist Tech Startup Logo",
-            "desc": "Tech startups need clean, recognizable, and modern geometric shapes. Neon gradients instantly signal a futuristic AI vibe.",
-            "prompt": "Minimalist geometric logo design for an AI technology startup, abstract interconnected neural network shape converging into a central core, neon cyan and deep violet gradient colors, clean vector style, dark background, modern and sleek aesthetic.",
-            "tip": "Always specify 'clean vector style' and 'dark background' if you plan to extract the logo and use it with a transparent PNG later."
-        },
-        "case2": {
-            "title": "2. The Vintage Coffee Shop Badge",
-            "desc": "For local businesses or artisanal brands, vintage crests and hand-drawn aesthetics evoke trust and heritage.",
-            "prompt": "Vintage style circular badge logo for an artisan coffee roasting house, hand drawn detailed illustration of coffee beans and a steaming ceramic coffee cup, warm earthy tones like sepia and burnt orange, retro crest styling, cream background, established vibe.",
-            "tip": "Using layout keywords like 'circular badge' and 'retro crest styling' prevents the AI from generating chaotic layouts and keeps everything perfectly contained."
-        },
-        "case3": {
-            "title": "3. The Cyberpunk Mascot Character",
-            "desc": "Mascots are critical for gaming brands or creative studios. Vector illustrations with glowing details capture immediate attention.",
-            "prompt": "Cyberpunk glowing robotic animal mascot character, vector illustration style, neon pink and hot cyan lighting, intricate circuitry and mechanical parts details, cyberpunk aesthetic, isolated over a solid dark background.",
-            "tip": "The keyword 'isolated over a solid dark background' makes it infinitely easier to use the magic wand tool to cut out the mascot for your website."
-        },
-        "cta": {
-            "title": "Stop Searching. Start Creating.",
-            "desc": "You have the prompts. Now get the tool. Join 800,000+ creators building the future of design with Lovart AI.",
-            "button": "Start Your Free Trial Now"
-        }
-    },
-    "lovart_logo_page": {
-        "seo": {
-            "title": "Lovart Logo Maker: Crea Logo AI Gratis in Secondi",
-            "description": "Usa il Lovart logo maker per creare logo AI professionali gratis. Sfoglia 8 stili, copia i prompt e scarica in pochi secondi — nessuna competenza di design richiesta.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-logo"
-        },
-        "hero": {
-            "badge": "🎨 Generatore di Logo AI Gratuito",
-            "title": "Crea uno Straordinario Lovart Logo in Pochi Secondi",
-            "subtitle": "Il Lovart logo maker trasforma la tua descrizione testuale in un logo professionale pronto al download — nessuna esperienza di design richiesta.",
-            "cta": "Genera Il Mio Lovart Logo Gratis"
-        },
-        "gallery": {
-            "heading": "Galleria Lovart Logo — 8 Stili da Generare Oggi",
-            "subheading": "Ogni lovart logo qui sotto è stato creato con un solo prompt. Clicca su qualsiasi prompt per copiarlo e usarlo in Lovart AI.",
-            "copy_label": "Copia il Prompt"
-        },
-        "howto": {
-            "heading": "Come Creare un Lovart Logo — 3 Semplici Passaggi"
-        },
-        "faq": {
-            "heading": "Domande Frequenti"
-        },
-        "cta": {
-            "title": "Il Tuo Brand Merita un Logo Migliore",
-            "desc": "Genera un lovart logo professionale in pochi secondi — completamente gratis. Nessuna carta di credito, nessuna competenza di design.",
-            "button": "Inizia a Creare Il Mio Lovart Logo Gratis"
-        }
-    },
-    "lovart_brand_kit_page": {
-        "seo": {
-            "title": "Lovart Brand Kit: Mantieni la Coerenza del Brand",
-            "description": "Il Lovart brand kit centralizza colori, font e loghi per garantire coerenza visiva in ogni design. Scopri le funzionalità del brand kit e mantieni il team allineato.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-brand-kit"
-        },
-        "hero": {
-            "badge": "✦ Strumento per la Coerenza del Brand",
-            "title": "Garantisci la Coerenza del Brand con Lovart Brand Kit",
-            "subtitle": "Smetti di cercare codici hex e font. Centralizza colori, tipografia e loghi nel tuo Lovart brand kit — e applicali ad ogni design con un clic.",
-            "cta_primary": "Prova Lovart Brand Kit Gratuitamente",
-            "cta_secondary": "Vedi i Prezzi"
-        },
-        "pain": {
-            "heading": "Ti Suona Familiare?",
-            "before_title": "Senza Brand Kit",
-            "before_items": [
-                "Cercare il codice hex nelle note",
-                "Indovinare quale peso del font usare",
-                "Colori inconsistenti tra i design",
-                "Re-caricare il logo ad ogni progetto",
-                "Ore perse nell'allineamento del brand"
-            ],
-            "after_title": "Con Lovart Brand Kit",
-            "after_items": [
-                "Colori del brand sempre a portata di clic",
-                "Regole tipografiche definite una volta, applicate ovunque",
-                "Ogni design appare professionale e on-brand",
-                "Tutti i loghi versionati in un'unica libreria",
-                "Il team rimane allineato automaticamente"
-            ]
-        },
-        "features": {
-            "heading": "Cosa Include il Lovart Brand Kit?",
-            "items": [
-                {
-                    "icon": "🎨",
-                    "title": "Palette di Colori del Brand",
-                    "desc": "Salva i tuoi colori primari, secondari e di accento con codici hex esatti. Ogni design in Lovart accede istantaneamente alla tua palette del brand."
-                },
-                {
-                    "icon": "✍️",
-                    "title": "Tipografia del Brand",
-                    "desc": "Definisci una volta i tuoi font di titolo, corpo e gerarchia delle dimensioni. Il Lovart brand kit applica le regole tipografiche automaticamente in tutti i template."
-                },
-                {
-                    "icon": "🖼️",
-                    "title": "Libreria di Loghi e Asset",
-                    "desc": "Carica tutte le varianti del logo e gli asset del brand. Accedivi in qualsiasi design senza dover ricaricare i file."
-                }
-            ]
-        },
-        "features_intro": "Un Lovart brand kit completo include tre moduli essenziali — dando al tuo team tutto il necessario per progettare on-brand senza passaggi aggiuntivi.",
-        "upsell": {
-            "heading": "Pronto a Creare il Tuo Brand Kit?",
-            "desc": "Il Lovart brand kit è disponibile nei piani Pro e Team. Inizia con una prova gratuita per esplorare tutte le funzionalità — senza carta di credito.",
-            "cta_primary": "Inizia la Prova Gratuita",
-            "cta_secondary": "Vedi i Piani Tariffari"
-        },
-        "pro_badge": "Funzionalità Pro",
-        "chaos": {
-            "heading": "L'Incoerenza del Brand Costa Più di Quanto Pensi",
-            "p1": "Senza un Lovart brand kit, ogni decisione di design diventa una ricerca. I team perdono ore a riconciliare colori, cercare la variante di logo corretta e ristabilire le regole tipografiche — lavoro che un lovart brand kit elimina completamente.",
-            "p2": "Il Lovart brand kit non è solo un sistema di archiviazione file — è un sistema di design vivo integrato nel tuo editor, garantendo che ogni membro del team applichi i colori, i font e i loghi giusti del lovart brand kit ogni volta che apre Lovart.",
-            "p3": "I brand che adottano un Lovart brand kit riportano significativamente meno cicli di revisione e maggiore velocità di pubblicazione. Il tuo brand kit diventa l'unica fonte di verità per tutta la tua identità visiva.",
-            "cta": "Inizia a Costruire il Tuo Brand Kit Gratis"
-        },
-        "faq": {
-            "heading": "Domande Frequenti",
-            "items": [
-                {
-                    "q": "Il Lovart brand kit è disponibile nel piano gratuito?",
-                    "a": "Il brand kit è esclusivo dei piani Pro e Team. Gli utenti gratuiti possono accedere agli strumenti di design base, ma il Lovart brand kit completo richiede un abbonamento Pro o Team."
-                },
-                {
-                    "q": "Come condivido il mio Lovart brand kit con il team?",
-                    "a": "Con il piano Team, il tuo Lovart brand kit viene condiviso automaticamente con tutti i membri dello spazio di lavoro."
-                },
-                {
-                    "q": "Posso avere più brand kit in Lovart?",
-                    "a": "Sì. Gli utenti Pro e Team possono creare più Lovart brand kit — ideale per agenzie che gestiscono più clienti."
-                },
-                {
-                    "q": "Il Lovart brand kit supporta font personalizzati?",
-                    "a": "Sì. Puoi caricare file di font personalizzati nel tuo Lovart brand kit, disponibili in tutti i tuoi design nello spazio di lavoro."
-                }
-            ]
-        },
-        "faq_intro": "Il Lovart brand kit è il modo più veloce per ottenere una vera coerenza del brand in ogni design creato dal tuo team. Che tu gestisca uno o dieci brand, il Lovart brand kit si adatta al tuo flusso di lavoro.",
-        "cta": {
-            "title": "Inizia a Costruire il Tuo Lovart Brand Kit Oggi",
-            "desc": "Unisciti a migliaia di designer e team che usano il Lovart brand kit per rimanere on-brand, risparmiare tempo e progettare più velocemente.",
-            "button": "Inizia Gratuitamente"
-        }
-    },
-    "lovart_apk_page": {
-        "seo": {
-            "title": "Lovart APK: Guida all'Installazione Sicura su Android",
-            "description": "Non esiste un APK ufficiale di Lovart. Scopri come installare Lovart su Android in 3 passi in modo sicuro — e come evitare APK falsi con malware.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-apk"
-        },
-        "hero": {
-            "badge": "📱 Guida all'Installazione Android",
-            "title": "Cerchi l'APK di Lovart? Leggi Questo Prima di Scaricare",
-            "subtitle": "Proteggi il tuo dispositivo dai malware. Non esiste un APK ufficiale di Lovart — ma puoi installare Lovart su Android in modo sicuro in 3 minuti.",
-            "cta_primary": "Prova Lovart Gratis nel Browser",
-            "cta_secondary": "Vedi i Prezzi"
-        },
-        "warning": {
-            "badge": "⚠️ Avviso di Sicurezza",
-            "heading": "Attenzione ai Falsi APK Mod di Lovart",
-            "points": [
-                "Non esiste alcun APK ufficiale di Lovart su Google Play o su siti di terze parti.",
-                "I file \"APK mod Lovart\" di terze parti contengono frequentemente malware o spyware che rubano i tuoi dati.",
-                "Scaricare un falso APK Lovart può compromettere il tuo account Google, contatti e informazioni finanziarie.",
-                "L'unico modo sicuro per usare Lovart su Android è tramite il browser mobile o come PWA."
-            ]
-        },
-        "guide": {
-            "heading": "Come Installare Lovart su Android — 100% Sicuro",
-            "subheading": "Segui questi 3 passi per ottenere un'esperienza simile a un'app nativa sul tuo telefono — senza APK, senza rischi.",
-            "steps": [
-                {
-                    "num": "01",
-                    "title": "Aprire Lovart in Chrome",
-                    "desc": "Sul tuo telefono Android, apri Chrome e visita lovart.com. Accedi o crea un account gratuito."
-                },
-                {
-                    "num": "02",
-                    "title": "Toccare i Tre Punti",
-                    "desc": "Tocca l'icona ⋮ in alto a destra di Chrome per aprire il menu del browser."
-                },
-                {
-                    "num": "03",
-                    "title": "Selezionare Aggiungi alla Schermata Home",
-                    "desc": "Tocca \"Aggiungi alla schermata home\" e conferma. Lovart appare sulla schermata home come un'app nativa."
-                }
-            ]
-        },
-        "compare": {
-            "heading": "Lovart PWA vs APK Falso — Cosa Scegliere?",
-            "fake_title": "❌ APK Falso di Terze Parti",
-            "fake_items": [
-                "Alto rischio di malware e virus",
-                "Può rubare le tue password e contatti",
-                "Crash frequenti, nessun aggiornamento ufficiale",
-                "Viola la privacy — accede a fotocamera e storage",
-                "Nessun supporto se qualcosa va storto"
-            ],
-            "pwa_title": "✅ App Web Lovart (PWA)",
-            "pwa_items": [
-                "100% sicuro — direttamente da lovart.com",
-                "Aggiornamenti automatici ad ogni nuova versione",
-                "Funziona offline per progetti recenti",
-                "Nessuna installazione richiesta — accesso istantaneo",
-                "Tutto il team di supporto Lovart dietro di te"
-            ],
-            "cta": "Installa Lovart come PWA Ora"
-        },
-        "faq": {
-            "heading": "Domande Frequenti",
-            "items": [
-                {
-                    "q": "C'è un APK ufficiale di Lovart su Google Play?",
-                    "a": "No. Lovart non ha un'app ufficiale su Google Play Store o Apple App Store. Il modo ufficiale per usare Lovart su Android è tramite il browser mobile (Chrome consigliato) o aggiungendolo alla schermata home come PWA."
-                },
-                {
-                    "q": "Lovart è ottimizzato per Android?",
-                    "a": "Sì. Lovart è completamente ottimizzato per i browser mobili. L'interfaccia si adatta agli schermi piccoli e puoi accedere a tutte le funzionalità di design da Chrome su Android."
-                },
-                {
-                    "q": "Ci sarà un'app Lovart ufficiale per Android in futuro?",
-                    "a": "Lovart non ha annunciato una data di rilascio per un APK ufficiale su Google Play. L'esperienza PWA migliora continuamente e offre prestazioni quasi native."
-                },
-                {
-                    "q": "Qual è la differenza tra l'app web Lovart e un APK?",
-                    "a": "Aggiungere Lovart alla schermata home tramite Chrome crea una PWA. Sembra e funziona come un'app nativa, può funzionare offline e si carica istantaneamente — senza i rischi di sicurezza degli APK di terze parti."
-                }
-            ]
-        },
-        "cta": {
-            "title": "Inizia a Progettare con Lovart su Qualsiasi Dispositivo",
-            "desc": "Nessun APK necessario. Apri Lovart nel tuo browser mobile e inizia a creare design professionali gratuitamente — ora.",
-            "button": "Prova Lovart Gratis Ora"
-        }
-    },
-    "lovart_nano_banana_page": {
-        "seo": {
-            "title": "Lovart Nano Banana: Il Modello IA di Google su Lovart",
-            "description": "Esplora Nano Banana — il modello IA avanzato di Google ora su Lovart. Output fotorealistici, testo perfetto e altro. Disponibile nelle Generazioni Lente Illimitate.",
-            "keywords": "",
-            "canonical_url": "https://lovart.info/it/lovart-nano-banana"
-        },
-        "hero": {
-            "badge": "🍌 Nuovo · Sviluppato da Google",
-            "title": "Scopri il Modello Nano Banana di Google su Lovart",
-            "subtitle": "Sblocca la generazione di immagini IA di nuova generazione. Dettagli fotorealistici, rendering del testo perfetto e intelligenza compositiva straordinaria — ora su Lovart.",
-            "cta_primary": "Prova Nano Banana Ora",
-            "cta_secondary": "Vedi i Piani"
-        },
-        "gallery": {
-            "heading": "Cosa Può Creare Nano Banana",
-            "subheading": "Ogni immagine è stata generata con il modello Nano Banana su Lovart. Clicca su qualsiasi prompt per copiarlo e provarlo.",
-            "copy_label": "Copia Prompt",
-            "copied_label": "Copiato!",
-            "items": [
-                {
-                    "prompt": "Cyberpunk cityscape at night, neon reflections on wet streets, ultra photorealistic, 8K, detailed buildings with holographic ads, rain atmosphere, cinematic composition",
-                    "caption": "Cyberpunk Metropolis"
-                },
-                {
-                    "prompt": "Enchanted forest fairy, glowing bioluminescent plants, golden hour light rays through ancient trees, photorealistic fantasy portrait, magical atmosphere, hyperdetailed",
-                    "caption": "Fantasy Portrait"
-                },
-                {
-                    "prompt": "Luxury perfume bottle product photography, black marble surface, dramatic studio lighting, water droplets, ultra sharp focus, cinematic depth of field, high-end commercial style",
-                    "caption": "Product Photography"
-                },
-                {
-                    "prompt": "Futuristic minimalist architecture, floating concrete geometric structure over misty mountains, sunrise golden light, ultra photorealistic render, stunning architectural visualization",
-                    "caption": "Architectural Render"
-                },
-                {
-                    "prompt": "Classic oil painting portrait style, aristocratic woman in renaissance dress, dramatic chiaroscuro lighting, masterpiece quality, rich textured brushwork, museum-worthy art",
-                    "caption": "Oil Painting Art"
-                },
-                {
-                    "prompt": "Futuristic restaurant interior design, bioluminescent blue lighting, organic curved walls, floating dining pods, ultra modern luxury, cinematic concept art render",
-                    "caption": "Future Interior"
-                }
-            ]
-        },
-        "access": {
-            "heading": "Come Accedere a Nano Banana",
-            "subheading": "Nano Banana è disponibile nella funzionalità Generazioni Lente Illimitate, inclusa nei piani Basic e Pro di Lovart.",
-            "table_header": [
-                "Funzionalità",
-                "Gratis",
-                "Basic",
-                "Pro"
-            ],
-            "table": [
-                {
-                    "feature": "Nano Banana access",
-                    "free": "❌",
-                    "basic": "✅ Slow queue",
-                    "pro": "✅ Priority queue"
-                },
-                {
-                    "feature": "Monthly generations",
-                    "free": "Limited",
-                    "basic": "Unlimited (slow)",
-                    "pro": "Unlimited (fast)"
-                },
-                {
-                    "feature": "Seedence 2.0 (coming)",
-                    "free": "❌",
-                    "basic": "✅",
-                    "pro": "✅ Early access"
-                },
-                {
-                    "feature": "Commercial license",
-                    "free": "❌",
-                    "basic": "✅",
-                    "pro": "✅"
-                }
-            ],
-            "cta": "Aggiorna per Sbloccare Nano Banana",
-            "note": "A partire da $9,9/mese. Annulla in qualsiasi momento."
-        },
-        "seedence": {
-            "badge": "🔭 Prossimamente",
-            "heading": "Anteprima: Seedence 2.0 sta arrivando su Lovart",
-            "desc": "Seedence 2.0 è il modello IA di nuova generazione con miglioramenti rivoluzionari in velocità, precisione semantica e rendering ultra-alta risoluzione. Gli abbonati Lovart Pro riceveranno accesso anticipato.",
-            "bullets": [
-                "10× più veloce di Nano Banana",
-                "Output ultra-alta risoluzione 4K nativo",
-                "Controllo compositivo multi-soggetto migliorato",
-                "Comprensione semantica dei prompt più profonda"
-            ],
-            "cta": "Ottieni Pro per Accesso Anticipato"
-        },
-        "faq": {
-            "heading": "Domande Frequenti",
-            "items": [
-                {
-                    "q": "What is Nano Banana AI?",
-                    "a": "Nano Banana is a next-generation AI image generation model developed by Google. It delivers exceptional photorealistic detail, superior text rendering within images, and advanced compositional understanding compared to standard AI image models. On Lovart, it is available as part of the Unlimited Slow Generations feature."
-                },
-                {
-                    "q": "Is Nano Banana free on Lovart?",
-                    "a": "Nano Banana on Lovart requires a Basic or Pro subscription. Free plan users have limited access to standard generation models. Upgrading to Basic or Pro unlocks Nano Banana with Unlimited Slow Generations, while Pro subscribers benefit from priority queue placement for faster results."
-                },
-                {
-                    "q": "How does Nano Banana compare to standard AI image models?",
-                    "a": "Nano Banana significantly outperforms standard models in three key areas: (1) Photorealism — details like skin texture, fabric, and reflections are dramatically more lifelike. (2) Text rendering — Nano Banana can accurately generate readable text inside images, a task where most AI models struggle. (3) Prompt coherence — it follows complex, multi-condition prompts more accurately."
-                },
-                {
-                    "q": "What is 'Unlimited Slow Generations' on Lovart?",
-                    "a": "Unlimited Slow Generations is a Lovart plan feature that gives Basic and Pro subscribers unlimited access to premium AI models — including Nano Banana — without a monthly cap. The 'slow' designation refers to generation queue priority: Basic users share a standard queue, while Pro users receive priority queue access for faster results."
-                },
-                {
-                    "q": "What is Seedence 2.0 and when will it come to Lovart?",
-                    "a": "Seedence 2.0 is the next frontier AI image generation model, expected to deliver significant improvements in generation speed, semantic understanding, and ultra-high-resolution output compared to Nano Banana. Lovart is actively working on integrating Seedence 2.0. Pro subscribers will receive early access once it launches."
-                }
-            ]
-        },
-        "cta": {
-            "title": "Inizia a Creare con Nano Banana su Lovart",
-            "desc": "Unisciti a migliaia di designer che usano già Lovart Nano Banana per produrre straordinaria arte IA fotorealistica.",
-            "button": "Prova Nano Banana Gratis"
-        }
-    },
-    "lovart_invitation_code_page": {
-        "hero": {
-            "badge": "✅ Aperto a Tutti · Nessun Codice Richiesto",
-            "title": "Codice Invito Lovart? Ottime Notizie — Non Ne Hai Più Bisogno!",
-            "subtitle": "Lovart ha completamente rimosso il suo sistema di codici invito. La piattaforma è ora gratuita e aperta a tutti.",
-            "cta_internal": "Esplora le Funzionalità Gratuite",
-            "cta_external": "Vai su lovart.ai"
-        },
-        "history": {
-            "heading": "La Storia del Sistema di Inviti di Lovart",
-            "lead": "Agli inizi, Lovart operava con un modello beta solo su invito. Ecco come il sistema di codici invito si è evoluto.",
-            "timeline": [
-                {
-                    "phase": "Alpha (Invite Only)",
-                    "date": "Early 2024",
-                    "desc": "Closed internal testing, limited participants"
-                },
-                {
-                    "phase": "Beta (Invitation Code)",
-                    "date": "Mid 2024",
-                    "desc": "Select users received Lovart invitation codes via email or referral"
-                },
-                {
-                    "phase": "Open Beta",
-                    "date": "Late 2024",
-                    "desc": "Broader access with waitlist, no invitation code required"
-                },
-                {
-                    "phase": "Full Launch",
-                    "date": "2025",
-                    "desc": "Lovart is now open to everyone — no invitation code, no waitlist"
-                }
-            ]
-        },
-        "features": {
-            "heading": "Cosa Ottieni — Senza Codice Invito",
-            "subheading": "Una volta registrato su lovart.ai, accedi immediatamente alle funzionalità di design IA di base gratuitamente.",
-            "items": [
-                {
-                    "title": "AI Design Generation",
-                    "desc": "Generate complete, professional designs with text prompts",
-                    "link": "lovart-free"
-                },
-                {
-                    "title": "Nano Banana Model",
-                    "desc": "Google's advanced AI image model, available on paid plans",
-                    "link": "lovart-nano-banana"
-                },
-                {
-                    "title": "AI Logo Generator",
-                    "desc": "Create unique logos instantly with AI",
-                    "link": "lovart-logo"
-                },
-                {
-                    "title": "Brand Kit",
-                    "desc": "Maintain brand consistency across all your designs",
-                    "link": "lovart-brand-kit"
-                }
-            ]
-        },
-        "faq": {
-            "heading": "Domande Frequenti",
-            "items": [
-                {
-                    "q": "Does Lovart still require an invitation code?",
-                    "a": "No. Lovart no longer requires a Lovart invitation code of any kind. The Lovart invitation code system was retired when the platform moved to full public launch. Any user can register at lovart.ai today without a Lovart invitation code, a referral, or a waitlist."
-                },
-                {
-                    "q": "How did people get Lovart invitation codes in the past?",
-                    "a": "During the beta phase, existing Lovart users could share a Lovart invitation code with friends. New users could also join the waitlist and receive a Lovart invitation code via email. Some early Lovart invitation codes circulated in online communities. That era is now over — no invitation code is required."
-                },
-                {
-                    "q": "Is Lovart free to use without an invitation code?",
-                    "a": "Yes. Lovart offers a free tier requiring only an email address to register — no Lovart invitation code needed. The free plan includes core AI design features. Paid plans (Basic and Pro) unlock Nano Banana model access and unlimited generation without any invitation code restriction."
-                },
-                {
-                    "q": "What happened to the Lovart beta program?",
-                    "a": "The Lovart beta program progressed from invite-only (with Lovart invitation codes) through open beta to a full launch. Today, Lovart is a publicly released product. The Lovart invitation code requirement was one of the last beta restrictions to be lifted."
-                },
-                {
-                    "q": "Lovart 邀请码在哪里获取？",
-                    "a": "目前 Lovart 已完全开放，Lovart 邀请码机制已取消。你不需要任何 Lovart 邀请码即可注册使用。直接访问 lovart.ai 注册账号，无需等待邀请码。"
-                }
-            ]
-        }
-    },
-    "lovart_china_page": {
-        "hero": {
-            "badge": "🇨🇳 中国区用户指南",
-            "title": "lovart china：AI 设计工具完整使用指南",
-            "subtitle_zh": "无论你是在搜索「lovart china」还是「Lovart 是什么」，这里是最全面的中文使用指南。",
-            "title_en": "lovart china: Complete Access & Features Guide",
-            "subtitle_en": "Everything you need to know about using Lovart AI design tools — access, registration, and features explained.",
-            "cta_internal": "查看功能介绍",
-            "cta_internal_en": "Explore Features"
-        },
-        "whatis": {
-            "heading": "Lovart 是什么？",
-            "heading_en": "What is Lovart?",
-            "body_zh": "Lovart（lovart.ai）是一款 AI 原生设计平台，由经验丰富的 AI 研究团队打造。它不同于传统的图片生成工具——Lovart 可以理解你的设计意图，通过自然语言描述生成完整的专业设计稿，包括 Logo、品牌套件、营销素材等。其核心由 Google 研发的 Nano Banana 模型驱动，能够实现业界顶尖的超写实图像生成效果。",
-            "body_en": "Lovart (lovart.ai) is an AI-native design platform built to go beyond simple image generation. For lovart china users, lovart china offers a unique design agent experience that understands complex brand intent. Using lovart china natural language prompts, lovart china generates complete professional designs including lovart china logos, lovart china brand kits, and marketing assets. Lovart china is powered by state-of-the-art models including Google's Nano Banana, making lovart china the most powerful AI tool for regional design needs. Lovart china empowers creators to bridge the gap between imagination and production-ready assets instantly. Our platform integrates advanced design heuristics with real-time feedback loops, allowing creators to iterate on their visual concepts with unprecedented speed. By focusing on the intersection of human creativity and machine intelligence, we provide a workspace that feels like a natural extension of your own imagination. Every feature is built to handle the rigorous demands of professional design, from high-resolution exports to intricate layout management."
-        },
-        "access": {
-            "heading": "如何在国内使用 Lovart",
-            "heading_en": "How to Access Lovart",
-            "note": "提示：Lovart 是基于浏览器的国际 SaaS 服务。具体访问情况视您所在地区网络环境而定，建议直接访问 lovart.ai 进行尝试。",
-            "note_en": "Lovart is a browser-based international SaaS platform. Access may vary depending on your regional network environment. We recommend trying lovart.ai directly.",
-            "steps": [
-                {
-                    "n": 1,
-                    "title": "访问官网",
-                    "title_en": "Visit the website",
-                    "desc": "With lovart china, you don't need complex network setups. Follow our straightforward guide to register and start using the platform's professional features today. The experience is optimized for every user, ensuring smooth reliable connection to our AI design tools.",
-                    "desc_en": "Open lovart.ai in your browser"
-                },
-                {
-                    "n": 2,
-                    "title": "创建账号",
-                    "title_en": "Create an account",
-                    "desc": "使用邮箱或 Google 账号注册，无需邀请码",
-                    "desc_en": "Sign up with email or Google — no invitation code required"
-                },
-                {
-                    "n": 3,
-                    "title": "开始创作",
-                    "title_en": "Start creating",
-                    "desc": "免费套餐即可体验核心 AI 设计功能",
-                    "desc_en": "The free plan gives you access to core AI design features immediately"
-                }
-            ]
-        },
-        "features": {
-            "heading": "Lovart 核心功能",
-            "heading_en": "Lovart Core Features",
-            "items": [
-                {
-                    "title": "Nano Banana AI 模型",
-                    "desc": "Google 顶级 AI 绘图模型，超写实细节输出",
-                    "link": "lovart-nano-banana"
-                },
-                {
-                    "title": "AI Logo 生成器",
-                    "desc": "一键生成专属品牌 Logo",
-                    "link": "lovart-logo"
-                },
-                {
-                    "title": "品牌套件",
-                    "desc": "保持品牌视觉一致性的完整工具",
-                    "link": "lovart-brand-kit"
-                },
-                {
-                    "title": "免费功能",
-                    "desc": "查看免费套餐包含的所有功能",
-                    "link": "lovart-free"
-                }
-            ]
-        },
-        "faq": {
-            "heading": "常见问题 / FAQ",
-            "items": [
-                {
-                    "q": "Lovart 国内可以用吗？",
-                    "a": "Lovart 是一个基于网页的 AI 设计平台，访问方式与其他国际 SaaS 工具类似。具体的访问情况取决于您所在地区的网络环境，建议直接访问 lovart.ai 进行尝试。"
-                },
-                {
-                    "q": "Lovart 是哪个国家的公司？",
-                    "a": "Lovart 是一家国际 AI 设计公司，其核心产品 lovart.ai 为全球用户提供 AI 驱动的设计生成服务，支持多语言界面与国际化支付方式。"
-                },
-                {
-                    "q": "Lovart 是免费的吗？",
-                    "a": "lovart china 提供免费套餐，用户可以免费使用基础 AI 设计功能。付费的 Basic 和 Pro 计划提供无限生成量和 Nano Banana 等高阶模型的访问权限。"
-                },
-                {
-                    "q": "Lovart 和其他 AI 设计工具比怎么样？",
-                    "a": "lovart china 的核心优势在于其 AI 代理化工作流——它不只是生成单张图片，而是能够理解设计意图、生成完整设计稿，并支持 Nano Banana 等 Google 顶级 AI 绘图模型。"
-                },
-                {
-                    "q": "Lovart 国内如何注册？",
-                    "a": "访问 lovart.ai，点击注册按钮，使用邮箱或 Google 账号创建账户即可。注册过程无需邀请码，支持国际信用卡付款。"
-                },
-                {
-                    "q": "What is Lovart?",
-                    "a": "lovart china is an AI-native design platform powered by state-of-the-art models including Google's Nano Banana. It enables users to generate complete, professional designs through natural language prompts — going far beyond simple image generation."
-                },
-                {
-                    "q": "Is lovart china safe for commercial professional design?",
-                    "a": "Yes. lovart china provides a secure and professional environment for all your brand design needs. Every asset created with lovart china is cleared for commercial usage under our pro plans. lovart china ensures that your creative property remains yours, making lovart china the trusted choice for agencies and freelance designers globally."
-                },
-                {
-                    "q": "What makes lovart china different from midjourney or dall-e?",
-                    "a": "lovart china is a specialized design agent, not just an image generator. While other tools focus on art, lovart china focuses on professional design layouts, typography, and brand consistency. lovart china understands the structure of a logo or a social media banner, which allows lovart china to deliver files that are actually ready for business use. This professional focus is why lovart china is preferred by business owners."
-                }
-            ]
-        }
-    },
-    "lovart_beta_page": {
-        "hero": {
-            "badge": "🎉 Ufficialmente Lanciato · Nessuna Lista d'Attesa",
-            "title": "lovart beta: La Versione Completa è Qui — Gratuita per Tutti",
-            "subtitle": "La fase beta di Lovart è terminata. La piattaforma di design IA completa è ora disponibile pubblicamente in tutto il mondo.",
-            "cta_primary": "Esplora le Novità",
-            "cta_secondary": "Vedi Tutte le Funzionalità"
-        },
-        "timeline": {
-            "heading": "Dalla Beta al Lancio Completo: Il Percorso di Lovart",
-            "subheading": "L'evoluzione di Lovart da un alfa chiuso a una piattaforma di design IA completamente rilasciata.",
-            "items": [
-                {
-                    "phase": "Alpha",
-                    "date": "Early 2024",
-                    "desc": "Internal testing with core team"
-                },
-                {
-                    "phase": "Private Beta",
-                    "date": "Mid 2024",
-                    "desc": "Invite-only access for early adopters"
-                },
-                {
-                    "phase": "Open Beta",
-                    "date": "Late 2024",
-                    "desc": "Public beta, free for all registered users"
-                },
-                {
-                    "phase": "Full Launch",
-                    "date": "2025",
-                    "desc": "Complete feature set including Nano Banana & Brand Kit"
-                },
-                {
-                    "phase": "Seedence 2.0",
-                    "date": "Coming Soon",
-                    "desc": "Next-generation AI model, Pro early access"
-                }
-            ]
-        },
-        "comparison": {
-            "heading": "Beta vs Versione Completa: Cosa è Cambiato?",
-            "rows": [
-                {
-                    "feature": "AI Model Quality",
-                    "beta": "Standard generation models",
-                    "full": "Google Nano Banana (photorealistic)"
-                },
-                {
-                    "feature": "Image Generation",
-                    "beta": "Limited styles",
-                    "full": "Ultra-realistic, fantasy, product, architecture & more"
-                },
-                {
-                    "feature": "Brand Kit",
-                    "beta": "Not available",
-                    "full": "✅ Full brand consistency tools"
-                },
-                {
-                    "feature": "AI Logo Generator",
-                    "beta": "Basic",
-                    "full": "✅ Advanced AI logo generation"
-                },
-                {
-                    "feature": "Access",
-                    "beta": "Invite-only / waitlist",
-                    "full": "✅ Open to everyone, free tier available"
-                },
-                {
-                    "feature": "Seedence 2.0",
-                    "beta": "N/A",
-                    "full": "🔭 Coming soon — Pro early access"
-                }
-            ]
-        },
-        "faq": {
-            "heading": "Domande Frequenti",
-            "items": [
-                {
-                    "q": "Is Lovart AI still in beta?",
-                    "a": "No — the lovart beta phase ended in 2025. The full Lovart platform is now publicly available. If you arrived searching for 'lovart beta', great news: no beta access request is needed. The complete Lovart AI experience is free and open to everyone today."
-                },
-                {
-                    "q": "How do I join Lovart's early access for new features?",
-                    "a": "Lovart Pro subscribers get priority access to upcoming releases like Seedence 2.0. The old lovart beta waitlist no longer exists — sign up at lovart.ai and upgrade to Pro for early access to cutting-edge Lovart AI models."
-                },
-                {
-                    "q": "What changed from Lovart beta to the full version?",
-                    "a": "The lovart beta introduced basic generation capabilities. The full Lovart release goes far beyond the beta: Google's Nano Banana model delivers photorealistic quality, Brand Kit provides full visual identity tools, and the Lovart AI Logo Generator creates professional logos instantly. The Lovart beta was just the beginning."
-                },
-                {
-                    "q": "When will Seedence 2.0 be available on Lovart?",
-                    "a": "Seedence 2.0 is Lovart's next-generation AI model, set to surpass even the Nano Banana capabilities. Unlike the lovart beta era which had long waitlists, Lovart plans to roll out Seedence 2.0 directly to existing Pro subscribers first."
-                },
-                {
-                    "q": "Is Lovart's beta free to use?",
-                    "a": "Lovart's current full product (which replaced the lovart beta) includes a generous free tier. The old Lovart beta required an invitation code — today you can start using Lovart AI for free with no restrictions, no code, and no waitlist."
-                }
-            ]
-        }
+      "about.team.photo": "Ritratto del team principale Lovart",
+      "index.hero.primary": "Anteprima dashboard principale di Lovart AI design",
+      "index.how_it_works.step1": "Avvio progetto Lovart da modello",
+      "index.how_it_works.step2": "Design con suggerimenti AI e strumenti drag and drop di Lovart",
+      "index.how_it_works.step3": "Collaborazione ed export finale in Lovart",
+      "index.testimonials.alex_avatar": "Avatar di Alex V., testimonianza utente Lovart",
+      "index.testimonials.sarah_avatar": "Avatar di Sarah M., testimonianza utente Lovart",
+      "index.testimonials.james_avatar": "Avatar di James P., testimonianza utente Lovart",
+      "index.gallery.image_1": "Mockup campagna brand creato con Lovart",
+      "index.gallery.image_2": "Visual social media creato in Lovart",
+      "index.gallery.image_3": "Concept poster composto in Lovart",
+      "index.gallery.image_4": "Concept banner web generato con Lovart",
+      "index.gallery.image_5": "Card prodotto progettata in Lovart",
+      "index.gallery.image_6": "Layout marketing rifinito in Lovart",
+      "index.gallery.image_7": "Set di illustrazioni organizzato in Lovart",
+      "index.gallery.image_8": "Anteprima mobile creata con Lovart",
+      "index.gallery.image_9": "Moodboard creativo costruito con Lovart",
+      "index.cta.visual": "Lovart aiuta i creator a pubblicare visual di qualita",
+      "pricing.comparison": "Confronto dei piani prezzo Lovart",
+      "privacy.security": "Simbolo visivo di privacy dati e sicurezza account",
+      "terms.hero": "Icona di supporto per termini e uso Lovart",
+      "features_page.ai_suggestions": "Lovart AI che propone suggerimenti di design",
+      "features_page.drag_drop": "Interfaccia drag and drop di Lovart",
+      "features_page.asset_library": "Esplorazione libreria risorse di Lovart",
+      "features_page.collaboration": "Team che collabora in tempo reale con Lovart",
+      "features_page.export": "Opzioni export con un clic in Lovart",
+      "help.video.tutorial_1": "Copertina tutorial assistenza: avvio workspace Lovart",
+      "help.video.tutorial_2": "Copertina tutorial assistenza: uso template e strumenti Lovart",
+      "help.video.tutorial_3": "Copertina tutorial assistenza: esportazione e condivisione da Lovart"
     }
+  },
+  "seo": {
+    "prompt_guide": {
+      "title": "Lovart AI Prompt Guide: Logo & Brand Design Tips",
+      "description": "Discover proven Lovart AI prompt formulas to create minimalist logos, vintage badges & cyberpunk mascots. Copy ready-to-use prompts and start designing free.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/lovart-prompt-guide"
+    },
+    "lovart_logo": {
+      "title": "Lovart Logo Maker: Crea Logo AI Gratis in Secondi",
+      "description": "Usa il Lovart logo maker per creare logo AI professionali gratis. Sfoglia 8 stili, copia i prompt e scarica in pochi secondi — nessuna competenza di design richiesta.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-logo"
+    },
+    "lovart_brand_kit": {
+      "title": "Lovart Brand Kit: Mantieni la Coerenza del Brand",
+      "description": "Il Lovart brand kit centralizza colori, font e loghi per garantire coerenza visiva in ogni design. Scopri le funzionalità del brand kit e mantieni il team allineato.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-brand-kit"
+    },
+    "lovart_apk": {
+      "title": "Lovart APK: Guida all'Installazione Sicura su Android",
+      "description": "Non esiste un APK ufficiale di Lovart. Scopri come installare Lovart su Android in 3 passi in modo sicuro — e come evitare APK falsi con malware.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-apk"
+    },
+    "lovart_nano_banana": {
+      "title": "Lovart Nano Banana: Il Modello IA di Google su Lovart",
+      "description": "Usa il modello Nano Banana di Google su Lovart: immagini fotorealistiche con IA. Galleria, prompt e anteprima Seedence 2.0. Disponibile nei piani Basic e Pro.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-nano-banana"
+    },
+    "lovart_invitation_code": {
+      "title": "Codice Invito Lovart: Non è Più Necessario — Aperto a Tutti",
+      "description": "Cerchi un codice invito Lovart? Non ne hai bisogno — Lovart è gratis per tutti. Storia del codice invito Lovart e funzionalità gratuite spiegate.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-invitation-code"
+    },
+    "lovart_china": {
+      "title": "Lovart in Cina: Guida Completa all'Accesso e alle Funzionalità",
+      "description": "Guida completa per usare Lovart in Cina: accesso, registrazione, funzionalità del modello Nano Banana. Tutto su Lovart in Cina spiegato.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-china"
+    },
+    "lovart_beta": {
+      "title": "lovart beta: Ora Ufficialmente Lanciato e Gratuito per Tutti",
+      "description": "La beta di Lovart AI è finita — la versione completa è gratis per tutti. Scopri le novità rispetto alla beta e il modello Nano Banana di Google.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-beta"
+    }
+  },
+  "image_context": {
+    "prompt.case1": "Minimalist tech startup logo generated by Lovart AI",
+    "prompt.case2": "Vintage artisan coffee shop badge logo generated by Lovart AI",
+    "prompt.case3": "Cyberpunk neon robotic animal mascot generated by Lovart AI",
+    "logo.tech-startup": "Minimalist tech startup lovart logo with neon cyan gradient generated by Lovart AI",
+    "logo.vintage-badge": "Vintage artisan coffee badge lovart logo generated by Lovart AI",
+    "logo.cyberpunk": "Cyberpunk neon wolf lovart logo generated by Lovart AI",
+    "logo.nature-organic": "Organic leaf nature lovart logo generated by Lovart AI",
+    "logo.luxury-fashion": "Luxury gold ring fashion lovart logo generated by Lovart AI",
+    "logo.gaming-esports": "Gaming esports shield lovart logo generated by Lovart AI",
+    "logo.food-restaurant": "Restaurant fork spoon lovart logo generated by Lovart AI",
+    "logo.abstract-geometric": "Abstract geometric diamond lovart logo generated by Lovart AI"
+  },
+  "prompt_guide": {
+    "hero": {
+      "title": "Mastering AI Design: The Ultimate Lovart Prompt Guide",
+      "subtitle": "Learn how to write the perfect prompts and generate stunning logos, brand kits, and vector art using the world's first design agent."
+    },
+    "intro": {
+      "p1": "Creating breathtaking visuals with Lovart AI starts with the perfect prompt. Just like a master painter needs the right brush, you need the right words.",
+      "p2": "In this comprehensive guide, we'll reveal the secrets to generating cohesive brand kits, minimalist logos, and detailed vector mascots that you can use for commercial projects."
+    },
+    "case1": {
+      "title": "1. The Minimalist Tech Startup Logo",
+      "desc": "Tech startups need clean, recognizable, and modern geometric shapes. Neon gradients instantly signal a futuristic AI vibe.",
+      "prompt": "Minimalist geometric logo design for an AI technology startup, abstract interconnected neural network shape converging into a central core, neon cyan and deep violet gradient colors, clean vector style, dark background, modern and sleek aesthetic.",
+      "tip": "Always specify 'clean vector style' and 'dark background' if you plan to extract the logo and use it with a transparent PNG later."
+    },
+    "case2": {
+      "title": "2. The Vintage Coffee Shop Badge",
+      "desc": "For local businesses or artisanal brands, vintage crests and hand-drawn aesthetics evoke trust and heritage.",
+      "prompt": "Vintage style circular badge logo for an artisan coffee roasting house, hand drawn detailed illustration of coffee beans and a steaming ceramic coffee cup, warm earthy tones like sepia and burnt orange, retro crest styling, cream background, established vibe.",
+      "tip": "Using layout keywords like 'circular badge' and 'retro crest styling' prevents the AI from generating chaotic layouts and keeps everything perfectly contained."
+    },
+    "case3": {
+      "title": "3. The Cyberpunk Mascot Character",
+      "desc": "Mascots are critical for gaming brands or creative studios. Vector illustrations with glowing details capture immediate attention.",
+      "prompt": "Cyberpunk glowing robotic animal mascot character, vector illustration style, neon pink and hot cyan lighting, intricate circuitry and mechanical parts details, cyberpunk aesthetic, isolated over a solid dark background.",
+      "tip": "The keyword 'isolated over a solid dark background' makes it infinitely easier to use the magic wand tool to cut out the mascot for your website."
+    },
+    "cta": {
+      "title": "Stop Searching. Start Creating.",
+      "desc": "You have the prompts. Now get the tool. Join 800,000+ creators building the future of design with Lovart AI.",
+      "button": "Start Your Free Trial Now"
+    }
+  },
+  "lovart_logo_page": {
+    "seo": {
+      "title": "Lovart Logo Maker: Crea Logo AI Gratis in Secondi",
+      "description": "Usa il Lovart logo maker per creare logo AI professionali gratis. Sfoglia 8 stili, copia i prompt e scarica in pochi secondi — nessuna competenza di design richiesta.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-logo"
+    },
+    "hero": {
+      "badge": "🎨 Generatore di Logo AI Gratuito",
+      "title": "Crea uno Straordinario Lovart Logo in Pochi Secondi",
+      "subtitle": "Il Lovart logo maker trasforma la tua descrizione testuale in un logo professionale pronto al download — nessuna esperienza di design richiesta.",
+      "cta": "Genera Il Mio Lovart Logo Gratis"
+    },
+    "gallery": {
+      "heading": "Galleria Lovart Logo — 8 Stili da Generare Oggi",
+      "subheading": "Ogni lovart logo qui sotto è stato creato con un solo prompt. Clicca su qualsiasi prompt per copiarlo e usarlo in Lovart AI.",
+      "copy_label": "Copia il Prompt"
+    },
+    "howto": {
+      "heading": "Come Creare un Lovart Logo — 3 Semplici Passaggi"
+    },
+    "faq": {
+      "heading": "Domande Frequenti"
+    },
+    "cta": {
+      "title": "Il Tuo Brand Merita un Logo Migliore",
+      "desc": "Genera un lovart logo professionale in pochi secondi — completamente gratis. Nessuna carta di credito, nessuna competenza di design.",
+      "button": "Inizia a Creare Il Mio Lovart Logo Gratis"
+    }
+  },
+  "lovart_brand_kit_page": {
+    "seo": {
+      "title": "Lovart Brand Kit: Mantieni la Coerenza del Brand",
+      "description": "Il Lovart brand kit centralizza colori, font e loghi per garantire coerenza visiva in ogni design. Scopri le funzionalità del brand kit e mantieni il team allineato.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-brand-kit"
+    },
+    "hero": {
+      "badge": "✦ Strumento per la Coerenza del Brand",
+      "title": "Garantisci la Coerenza del Brand con Lovart Brand Kit",
+      "subtitle": "Smetti di cercare codici hex e font. Centralizza colori, tipografia e loghi nel tuo Lovart brand kit — e applicali ad ogni design con un clic.",
+      "cta_primary": "Prova Lovart Brand Kit Gratuitamente",
+      "cta_secondary": "Vedi i Prezzi"
+    },
+    "pain": {
+      "heading": "Ti Suona Familiare?",
+      "before_title": "Senza Brand Kit",
+      "before_items": [
+        "Cercare il codice hex nelle note",
+        "Indovinare quale peso del font usare",
+        "Colori inconsistenti tra i design",
+        "Re-caricare il logo ad ogni progetto",
+        "Ore perse nell'allineamento del brand"
+      ],
+      "after_title": "Con Lovart Brand Kit",
+      "after_items": [
+        "Colori del brand sempre a portata di clic",
+        "Regole tipografiche definite una volta, applicate ovunque",
+        "Ogni design appare professionale e on-brand",
+        "Tutti i loghi versionati in un'unica libreria",
+        "Il team rimane allineato automaticamente"
+      ]
+    },
+    "features": {
+      "heading": "Cosa Include il Lovart Brand Kit?",
+      "items": [
+        {
+          "icon": "🎨",
+          "title": "Palette di Colori del Brand",
+          "desc": "Salva i tuoi colori primari, secondari e di accento con codici hex esatti. Ogni design in Lovart accede istantaneamente alla tua palette del brand."
+        },
+        {
+          "icon": "✍️",
+          "title": "Tipografia del Brand",
+          "desc": "Definisci una volta i tuoi font di titolo, corpo e gerarchia delle dimensioni. Il Lovart brand kit applica le regole tipografiche automaticamente in tutti i template."
+        },
+        {
+          "icon": "🖼️",
+          "title": "Libreria di Loghi e Asset",
+          "desc": "Carica tutte le varianti del logo e gli asset del brand. Accedivi in qualsiasi design senza dover ricaricare i file."
+        }
+      ]
+    },
+    "features_intro": "Un Lovart brand kit completo include tre moduli essenziali — dando al tuo team tutto il necessario per progettare on-brand senza passaggi aggiuntivi.",
+    "upsell": {
+      "heading": "Pronto a Creare il Tuo Brand Kit?",
+      "desc": "Il Lovart brand kit è disponibile nei piani Pro e Team. Inizia con una prova gratuita per esplorare tutte le funzionalità — senza carta di credito.",
+      "cta_primary": "Inizia la Prova Gratuita",
+      "cta_secondary": "Vedi i Piani Tariffari"
+    },
+    "pro_badge": "Funzionalità Pro",
+    "chaos": {
+      "heading": "L'Incoerenza del Brand Costa Più di Quanto Pensi",
+      "p1": "Senza un Lovart brand kit, ogni decisione di design diventa una ricerca. I team perdono ore a riconciliare colori, cercare la variante di logo corretta e ristabilire le regole tipografiche — lavoro che un lovart brand kit elimina completamente.",
+      "p2": "Il Lovart brand kit non è solo un sistema di archiviazione file — è un sistema di design vivo integrato nel tuo editor, garantendo che ogni membro del team applichi i colori, i font e i loghi giusti del lovart brand kit ogni volta che apre Lovart.",
+      "p3": "I brand che adottano un Lovart brand kit riportano significativamente meno cicli di revisione e maggiore velocità di pubblicazione. Il tuo brand kit diventa l'unica fonte di verità per tutta la tua identità visiva.",
+      "cta": "Inizia a Costruire il Tuo Brand Kit Gratis"
+    },
+    "faq": {
+      "heading": "Domande Frequenti",
+      "items": [
+        {
+          "q": "Il Lovart brand kit è disponibile nel piano gratuito?",
+          "a": "Il brand kit è esclusivo dei piani Pro e Team. Gli utenti gratuiti possono accedere agli strumenti di design base, ma il Lovart brand kit completo richiede un abbonamento Pro o Team."
+        },
+        {
+          "q": "Come condivido il mio Lovart brand kit con il team?",
+          "a": "Con il piano Team, il tuo Lovart brand kit viene condiviso automaticamente con tutti i membri dello spazio di lavoro."
+        },
+        {
+          "q": "Posso avere più brand kit in Lovart?",
+          "a": "Sì. Gli utenti Pro e Team possono creare più Lovart brand kit — ideale per agenzie che gestiscono più clienti."
+        },
+        {
+          "q": "Il Lovart brand kit supporta font personalizzati?",
+          "a": "Sì. Puoi caricare file di font personalizzati nel tuo Lovart brand kit, disponibili in tutti i tuoi design nello spazio di lavoro."
+        }
+      ]
+    },
+    "faq_intro": "Il Lovart brand kit è il modo più veloce per ottenere una vera coerenza del brand in ogni design creato dal tuo team. Che tu gestisca uno o dieci brand, il Lovart brand kit si adatta al tuo flusso di lavoro.",
+    "cta": {
+      "title": "Inizia a Costruire il Tuo Lovart Brand Kit Oggi",
+      "desc": "Unisciti a migliaia di designer e team che usano il Lovart brand kit per rimanere on-brand, risparmiare tempo e progettare più velocemente.",
+      "button": "Inizia Gratuitamente"
+    }
+  },
+  "lovart_apk_page": {
+    "seo": {
+      "title": "Lovart APK: Guida all'Installazione Sicura su Android",
+      "description": "Non esiste un APK ufficiale di Lovart. Scopri come installare Lovart su Android in 3 passi in modo sicuro — e come evitare APK falsi con malware.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-apk"
+    },
+    "hero": {
+      "badge": "📱 Guida all'Installazione Android",
+      "title": "Cerchi l'APK di Lovart? Leggi Questo Prima di Scaricare",
+      "subtitle": "Proteggi il tuo dispositivo dai malware. Non esiste un APK ufficiale di Lovart — ma puoi installare Lovart su Android in modo sicuro in 3 minuti.",
+      "cta_primary": "Prova Lovart Gratis nel Browser",
+      "cta_secondary": "Vedi i Prezzi"
+    },
+    "warning": {
+      "badge": "⚠️ Avviso di Sicurezza",
+      "heading": "Attenzione ai Falsi APK Mod di Lovart",
+      "points": [
+        "Non esiste alcun APK ufficiale di Lovart su Google Play o su siti di terze parti.",
+        "I file \"APK mod Lovart\" di terze parti contengono frequentemente malware o spyware che rubano i tuoi dati.",
+        "Scaricare un falso APK Lovart può compromettere il tuo account Google, contatti e informazioni finanziarie.",
+        "L'unico modo sicuro per usare Lovart su Android è tramite il browser mobile o come PWA."
+      ]
+    },
+    "guide": {
+      "heading": "Come Installare Lovart su Android — 100% Sicuro",
+      "subheading": "Segui questi 3 passi per ottenere un'esperienza simile a un'app nativa sul tuo telefono — senza APK, senza rischi.",
+      "steps": [
+        {
+          "num": "01",
+          "title": "Aprire Lovart in Chrome",
+          "desc": "Sul tuo telefono Android, apri Chrome e visita lovart.com. Accedi o crea un account gratuito."
+        },
+        {
+          "num": "02",
+          "title": "Toccare i Tre Punti",
+          "desc": "Tocca l'icona ⋮ in alto a destra di Chrome per aprire il menu del browser."
+        },
+        {
+          "num": "03",
+          "title": "Selezionare Aggiungi alla Schermata Home",
+          "desc": "Tocca \"Aggiungi alla schermata home\" e conferma. Lovart appare sulla schermata home come un'app nativa."
+        }
+      ]
+    },
+    "compare": {
+      "heading": "Lovart PWA vs APK Falso — Cosa Scegliere?",
+      "fake_title": "❌ APK Falso di Terze Parti",
+      "fake_items": [
+        "Alto rischio di malware e virus",
+        "Può rubare le tue password e contatti",
+        "Crash frequenti, nessun aggiornamento ufficiale",
+        "Viola la privacy — accede a fotocamera e storage",
+        "Nessun supporto se qualcosa va storto"
+      ],
+      "pwa_title": "✅ App Web Lovart (PWA)",
+      "pwa_items": [
+        "100% sicuro — direttamente da lovart.com",
+        "Aggiornamenti automatici ad ogni nuova versione",
+        "Funziona offline per progetti recenti",
+        "Nessuna installazione richiesta — accesso istantaneo",
+        "Tutto il team di supporto Lovart dietro di te"
+      ],
+      "cta": "Installa Lovart come PWA Ora"
+    },
+    "faq": {
+      "heading": "Domande Frequenti",
+      "items": [
+        {
+          "q": "C'è un APK ufficiale di Lovart su Google Play?",
+          "a": "No. Lovart non ha un'app ufficiale su Google Play Store o Apple App Store. Il modo ufficiale per usare Lovart su Android è tramite il browser mobile (Chrome consigliato) o aggiungendolo alla schermata home come PWA."
+        },
+        {
+          "q": "Lovart è ottimizzato per Android?",
+          "a": "Sì. Lovart è completamente ottimizzato per i browser mobili. L'interfaccia si adatta agli schermi piccoli e puoi accedere a tutte le funzionalità di design da Chrome su Android."
+        },
+        {
+          "q": "Ci sarà un'app Lovart ufficiale per Android in futuro?",
+          "a": "Lovart non ha annunciato una data di rilascio per un APK ufficiale su Google Play. L'esperienza PWA migliora continuamente e offre prestazioni quasi native."
+        },
+        {
+          "q": "Qual è la differenza tra l'app web Lovart e un APK?",
+          "a": "Aggiungere Lovart alla schermata home tramite Chrome crea una PWA. Sembra e funziona come un'app nativa, può funzionare offline e si carica istantaneamente — senza i rischi di sicurezza degli APK di terze parti."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Inizia a Progettare con Lovart su Qualsiasi Dispositivo",
+      "desc": "Nessun APK necessario. Apri Lovart nel tuo browser mobile e inizia a creare design professionali gratuitamente — ora.",
+      "button": "Prova Lovart Gratis Ora"
+    }
+  },
+  "lovart_nano_banana_page": {
+    "seo": {
+      "title": "Lovart Nano Banana: Il Modello IA di Google su Lovart",
+      "description": "Esplora Nano Banana — il modello IA avanzato di Google ora su Lovart. Output fotorealistici, testo perfetto e altro. Disponibile nelle Generazioni Lente Illimitate.",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/it/lovart-nano-banana"
+    },
+    "hero": {
+      "badge": "🍌 Nuovo · Sviluppato da Google",
+      "title": "Scopri il Modello Nano Banana di Google su Lovart",
+      "subtitle": "Sblocca la generazione di immagini IA di nuova generazione. Dettagli fotorealistici, rendering del testo perfetto e intelligenza compositiva straordinaria — ora su Lovart.",
+      "cta_primary": "Prova Nano Banana Ora",
+      "cta_secondary": "Vedi i Piani"
+    },
+    "gallery": {
+      "heading": "Cosa Può Creare Nano Banana",
+      "subheading": "Ogni immagine è stata generata con il modello Nano Banana su Lovart. Clicca su qualsiasi prompt per copiarlo e provarlo.",
+      "copy_label": "Copia Prompt",
+      "copied_label": "Copiato!",
+      "items": [
+        {
+          "prompt": "Cyberpunk cityscape at night, neon reflections on wet streets, ultra photorealistic, 8K, detailed buildings with holographic ads, rain atmosphere, cinematic composition",
+          "caption": "Cyberpunk Metropolis"
+        },
+        {
+          "prompt": "Enchanted forest fairy, glowing bioluminescent plants, golden hour light rays through ancient trees, photorealistic fantasy portrait, magical atmosphere, hyperdetailed",
+          "caption": "Fantasy Portrait"
+        },
+        {
+          "prompt": "Luxury perfume bottle product photography, black marble surface, dramatic studio lighting, water droplets, ultra sharp focus, cinematic depth of field, high-end commercial style",
+          "caption": "Product Photography"
+        },
+        {
+          "prompt": "Futuristic minimalist architecture, floating concrete geometric structure over misty mountains, sunrise golden light, ultra photorealistic render, stunning architectural visualization",
+          "caption": "Architectural Render"
+        },
+        {
+          "prompt": "Classic oil painting portrait style, aristocratic woman in renaissance dress, dramatic chiaroscuro lighting, masterpiece quality, rich textured brushwork, museum-worthy art",
+          "caption": "Oil Painting Art"
+        },
+        {
+          "prompt": "Futuristic restaurant interior design, bioluminescent blue lighting, organic curved walls, floating dining pods, ultra modern luxury, cinematic concept art render",
+          "caption": "Future Interior"
+        }
+      ]
+    },
+    "access": {
+      "heading": "Come Accedere a Nano Banana",
+      "subheading": "Nano Banana è disponibile nella funzionalità Generazioni Lente Illimitate, inclusa nei piani Basic e Pro di Lovart.",
+      "table_header": [
+        "Funzionalità",
+        "Gratis",
+        "Basic",
+        "Pro"
+      ],
+      "table": [
+        {
+          "feature": "Nano Banana access",
+          "free": "❌",
+          "basic": "✅ Slow queue",
+          "pro": "✅ Priority queue"
+        },
+        {
+          "feature": "Monthly generations",
+          "free": "Limited",
+          "basic": "Unlimited (slow)",
+          "pro": "Unlimited (fast)"
+        },
+        {
+          "feature": "Seedence 2.0 (coming)",
+          "free": "❌",
+          "basic": "✅",
+          "pro": "✅ Early access"
+        },
+        {
+          "feature": "Commercial license",
+          "free": "❌",
+          "basic": "✅",
+          "pro": "✅"
+        }
+      ],
+      "cta": "Aggiorna per Sbloccare Nano Banana",
+      "note": "A partire da $9,9/mese. Annulla in qualsiasi momento."
+    },
+    "seedence": {
+      "badge": "🔭 Prossimamente",
+      "heading": "Anteprima: Seedence 2.0 sta arrivando su Lovart",
+      "desc": "Seedence 2.0 è il modello IA di nuova generazione con miglioramenti rivoluzionari in velocità, precisione semantica e rendering ultra-alta risoluzione. Gli abbonati Lovart Pro riceveranno accesso anticipato.",
+      "bullets": [
+        "10× più veloce di Nano Banana",
+        "Output ultra-alta risoluzione 4K nativo",
+        "Controllo compositivo multi-soggetto migliorato",
+        "Comprensione semantica dei prompt più profonda"
+      ],
+      "cta": "Ottieni Pro per Accesso Anticipato"
+    },
+    "faq": {
+      "heading": "Domande Frequenti",
+      "items": [
+        {
+          "q": "What is Nano Banana AI?",
+          "a": "Nano Banana is a next-generation AI image generation model developed by Google. It delivers exceptional photorealistic detail, superior text rendering within images, and advanced compositional understanding compared to standard AI image models. On Lovart, it is available as part of the Unlimited Slow Generations feature."
+        },
+        {
+          "q": "Is Nano Banana free on Lovart?",
+          "a": "Nano Banana on Lovart requires a Basic or Pro subscription. Free plan users have limited access to standard generation models. Upgrading to Basic or Pro unlocks Nano Banana with Unlimited Slow Generations, while Pro subscribers benefit from priority queue placement for faster results."
+        },
+        {
+          "q": "How does Nano Banana compare to standard AI image models?",
+          "a": "Nano Banana significantly outperforms standard models in three key areas: (1) Photorealism — details like skin texture, fabric, and reflections are dramatically more lifelike. (2) Text rendering — Nano Banana can accurately generate readable text inside images, a task where most AI models struggle. (3) Prompt coherence — it follows complex, multi-condition prompts more accurately."
+        },
+        {
+          "q": "What is 'Unlimited Slow Generations' on Lovart?",
+          "a": "Unlimited Slow Generations is a Lovart plan feature that gives Basic and Pro subscribers unlimited access to premium AI models — including Nano Banana — without a monthly cap. The 'slow' designation refers to generation queue priority: Basic users share a standard queue, while Pro users receive priority queue access for faster results."
+        },
+        {
+          "q": "What is Seedence 2.0 and when will it come to Lovart?",
+          "a": "Seedence 2.0 is the next frontier AI image generation model, expected to deliver significant improvements in generation speed, semantic understanding, and ultra-high-resolution output compared to Nano Banana. Lovart is actively working on integrating Seedence 2.0. Pro subscribers will receive early access once it launches."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Inizia a Creare con Nano Banana su Lovart",
+      "desc": "Unisciti a migliaia di designer che usano già Lovart Nano Banana per produrre straordinaria arte IA fotorealistica.",
+      "button": "Prova Nano Banana Gratis"
+    }
+  },
+  "lovart_invitation_code_page": {
+    "hero": {
+      "badge": "✅ Aperto a Tutti · Nessun Codice Richiesto",
+      "title": "Codice Invito Lovart? Ottime Notizie — Non Ne Hai Più Bisogno!",
+      "subtitle": "Lovart ha completamente rimosso il suo sistema di codici invito. La piattaforma è ora gratuita e aperta a tutti.",
+      "cta_internal": "Esplora le Funzionalità Gratuite",
+      "cta_external": "Vai su lovart.ai"
+    },
+    "history": {
+      "heading": "La Storia del Sistema di Inviti di Lovart",
+      "lead": "Agli inizi, Lovart operava con un modello beta solo su invito. Ecco come il sistema di codici invito si è evoluto.",
+      "timeline": [
+        {
+          "phase": "Alpha (Invite Only)",
+          "date": "Early 2024",
+          "desc": "Closed internal testing, limited participants"
+        },
+        {
+          "phase": "Beta (Invitation Code)",
+          "date": "Mid 2024",
+          "desc": "Select users received Lovart invitation codes via email or referral"
+        },
+        {
+          "phase": "Open Beta",
+          "date": "Late 2024",
+          "desc": "Broader access with waitlist, no invitation code required"
+        },
+        {
+          "phase": "Full Launch",
+          "date": "2025",
+          "desc": "Lovart is now open to everyone — no invitation code, no waitlist"
+        }
+      ]
+    },
+    "features": {
+      "heading": "Cosa Ottieni — Senza Codice Invito",
+      "subheading": "Una volta registrato su lovart.ai, accedi immediatamente alle funzionalità di design IA di base gratuitamente.",
+      "items": [
+        {
+          "title": "AI Design Generation",
+          "desc": "Generate complete, professional designs with text prompts",
+          "link": "lovart-free"
+        },
+        {
+          "title": "Nano Banana Model",
+          "desc": "Google's advanced AI image model, available on paid plans",
+          "link": "lovart-nano-banana"
+        },
+        {
+          "title": "AI Logo Generator",
+          "desc": "Create unique logos instantly with AI",
+          "link": "lovart-logo"
+        },
+        {
+          "title": "Brand Kit",
+          "desc": "Maintain brand consistency across all your designs",
+          "link": "lovart-brand-kit"
+        }
+      ]
+    },
+    "faq": {
+      "heading": "Domande Frequenti",
+      "items": [
+        {
+          "q": "Does Lovart still require an invitation code?",
+          "a": "No. Lovart no longer requires a Lovart invitation code of any kind. The Lovart invitation code system was retired when the platform moved to full public launch. Any user can register at lovart.ai today without a Lovart invitation code, a referral, or a waitlist."
+        },
+        {
+          "q": "How did people get Lovart invitation codes in the past?",
+          "a": "During the beta phase, existing Lovart users could share a Lovart invitation code with friends. New users could also join the waitlist and receive a Lovart invitation code via email. Some early Lovart invitation codes circulated in online communities. That era is now over — no invitation code is required."
+        },
+        {
+          "q": "Is Lovart free to use without an invitation code?",
+          "a": "Yes. Lovart offers a free tier requiring only an email address to register — no Lovart invitation code needed. The free plan includes core AI design features. Paid plans (Basic and Pro) unlock Nano Banana model access and unlimited generation without any invitation code restriction."
+        },
+        {
+          "q": "What happened to the Lovart beta program?",
+          "a": "The Lovart beta program progressed from invite-only (with Lovart invitation codes) through open beta to a full launch. Today, Lovart is a publicly released product. The Lovart invitation code requirement was one of the last beta restrictions to be lifted."
+        },
+        {
+          "q": "Lovart 邀请码在哪里获取？",
+          "a": "目前 Lovart 已完全开放，Lovart 邀请码机制已取消。你不需要任何 Lovart 邀请码即可注册使用。直接访问 lovart.ai 注册账号，无需等待邀请码。"
+        }
+      ]
+    }
+  },
+  "lovart_china_page": {
+    "hero": {
+      "badge": "🇨🇳 中国区用户指南",
+      "title": "lovart china：AI 设计工具完整使用指南",
+      "subtitle_zh": "无论你是在搜索「lovart china」还是「Lovart 是什么」，这里是最全面的中文使用指南。",
+      "title_en": "lovart china: Complete Access & Features Guide",
+      "subtitle_en": "Everything you need to know about using Lovart AI design tools — access, registration, and features explained.",
+      "cta_internal": "查看功能介绍",
+      "cta_internal_en": "Explore Features"
+    },
+    "whatis": {
+      "heading": "Lovart 是什么？",
+      "heading_en": "What is Lovart?",
+      "body_zh": "Lovart（lovart.ai）是一款 AI 原生设计平台，由经验丰富的 AI 研究团队打造。它不同于传统的图片生成工具——Lovart 可以理解你的设计意图，通过自然语言描述生成完整的专业设计稿，包括 Logo、品牌套件、营销素材等。其核心由 Google 研发的 Nano Banana 模型驱动，能够实现业界顶尖的超写实图像生成效果。",
+      "body_en": "Lovart (lovart.ai) is an AI-native design platform built to go beyond simple image generation. For lovart china users, lovart china offers a unique design agent experience that understands complex brand intent. Using lovart china natural language prompts, lovart china generates complete professional designs including lovart china logos, lovart china brand kits, and marketing assets. Lovart china is powered by state-of-the-art models including Google's Nano Banana, making lovart china the most powerful AI tool for regional design needs. Lovart china empowers creators to bridge the gap between imagination and production-ready assets instantly. Our platform integrates advanced design heuristics with real-time feedback loops, allowing creators to iterate on their visual concepts with unprecedented speed. By focusing on the intersection of human creativity and machine intelligence, we provide a workspace that feels like a natural extension of your own imagination. Every feature is built to handle the rigorous demands of professional design, from high-resolution exports to intricate layout management."
+    },
+    "access": {
+      "heading": "如何在国内使用 Lovart",
+      "heading_en": "How to Access Lovart",
+      "note": "提示：Lovart 是基于浏览器的国际 SaaS 服务。具体访问情况视您所在地区网络环境而定，建议直接访问 lovart.ai 进行尝试。",
+      "note_en": "Lovart is a browser-based international SaaS platform. Access may vary depending on your regional network environment. We recommend trying lovart.ai directly.",
+      "steps": [
+        {
+          "n": 1,
+          "title": "访问官网",
+          "title_en": "Visit the website",
+          "desc": "With lovart china, you don't need complex network setups. Follow our straightforward guide to register and start using the platform's professional features today. The experience is optimized for every user, ensuring smooth reliable connection to our AI design tools.",
+          "desc_en": "Open lovart.ai in your browser"
+        },
+        {
+          "n": 2,
+          "title": "创建账号",
+          "title_en": "Create an account",
+          "desc": "使用邮箱或 Google 账号注册，无需邀请码",
+          "desc_en": "Sign up with email or Google — no invitation code required"
+        },
+        {
+          "n": 3,
+          "title": "开始创作",
+          "title_en": "Start creating",
+          "desc": "免费套餐即可体验核心 AI 设计功能",
+          "desc_en": "The free plan gives you access to core AI design features immediately"
+        }
+      ]
+    },
+    "features": {
+      "heading": "Lovart 核心功能",
+      "heading_en": "Lovart Core Features",
+      "items": [
+        {
+          "title": "Nano Banana AI 模型",
+          "desc": "Google 顶级 AI 绘图模型，超写实细节输出",
+          "link": "lovart-nano-banana"
+        },
+        {
+          "title": "AI Logo 生成器",
+          "desc": "一键生成专属品牌 Logo",
+          "link": "lovart-logo"
+        },
+        {
+          "title": "品牌套件",
+          "desc": "保持品牌视觉一致性的完整工具",
+          "link": "lovart-brand-kit"
+        },
+        {
+          "title": "免费功能",
+          "desc": "查看免费套餐包含的所有功能",
+          "link": "lovart-free"
+        }
+      ]
+    },
+    "faq": {
+      "heading": "常见问题 / FAQ",
+      "items": [
+        {
+          "q": "Lovart 国内可以用吗？",
+          "a": "Lovart 是一个基于网页的 AI 设计平台，访问方式与其他国际 SaaS 工具类似。具体的访问情况取决于您所在地区的网络环境，建议直接访问 lovart.ai 进行尝试。"
+        },
+        {
+          "q": "Lovart 是哪个国家的公司？",
+          "a": "Lovart 是一家国际 AI 设计公司，其核心产品 lovart.ai 为全球用户提供 AI 驱动的设计生成服务，支持多语言界面与国际化支付方式。"
+        },
+        {
+          "q": "Lovart 是免费的吗？",
+          "a": "lovart china 提供免费套餐，用户可以免费使用基础 AI 设计功能。付费的 Basic 和 Pro 计划提供无限生成量和 Nano Banana 等高阶模型的访问权限。"
+        },
+        {
+          "q": "Lovart 和其他 AI 设计工具比怎么样？",
+          "a": "lovart china 的核心优势在于其 AI 代理化工作流——它不只是生成单张图片，而是能够理解设计意图、生成完整设计稿，并支持 Nano Banana 等 Google 顶级 AI 绘图模型。"
+        },
+        {
+          "q": "Lovart 国内如何注册？",
+          "a": "访问 lovart.ai，点击注册按钮，使用邮箱或 Google 账号创建账户即可。注册过程无需邀请码，支持国际信用卡付款。"
+        },
+        {
+          "q": "What is Lovart?",
+          "a": "lovart china is an AI-native design platform powered by state-of-the-art models including Google's Nano Banana. It enables users to generate complete, professional designs through natural language prompts — going far beyond simple image generation."
+        },
+        {
+          "q": "Is lovart china safe for commercial professional design?",
+          "a": "Yes. lovart china provides a secure and professional environment for all your brand design needs. Every asset created with lovart china is cleared for commercial usage under our pro plans. lovart china ensures that your creative property remains yours, making lovart china the trusted choice for agencies and freelance designers globally."
+        },
+        {
+          "q": "What makes lovart china different from midjourney or dall-e?",
+          "a": "lovart china is a specialized design agent, not just an image generator. While other tools focus on art, lovart china focuses on professional design layouts, typography, and brand consistency. lovart china understands the structure of a logo or a social media banner, which allows lovart china to deliver files that are actually ready for business use. This professional focus is why lovart china is preferred by business owners."
+        }
+      ]
+    }
+  },
+  "lovart_beta_page": {
+    "hero": {
+      "badge": "🎉 Ufficialmente Lanciato · Nessuna Lista d'Attesa",
+      "title": "lovart beta: La Versione Completa è Qui — Gratuita per Tutti",
+      "subtitle": "La fase beta di Lovart è terminata. La piattaforma di design IA completa è ora disponibile pubblicamente in tutto il mondo.",
+      "cta_primary": "Esplora le Novità",
+      "cta_secondary": "Vedi Tutte le Funzionalità"
+    },
+    "timeline": {
+      "heading": "Dalla Beta al Lancio Completo: Il Percorso di Lovart",
+      "subheading": "L'evoluzione di Lovart da un alfa chiuso a una piattaforma di design IA completamente rilasciata.",
+      "items": [
+        {
+          "phase": "Alpha",
+          "date": "Early 2024",
+          "desc": "Internal testing with core team"
+        },
+        {
+          "phase": "Private Beta",
+          "date": "Mid 2024",
+          "desc": "Invite-only access for early adopters"
+        },
+        {
+          "phase": "Open Beta",
+          "date": "Late 2024",
+          "desc": "Public beta, free for all registered users"
+        },
+        {
+          "phase": "Full Launch",
+          "date": "2025",
+          "desc": "Complete feature set including Nano Banana & Brand Kit"
+        },
+        {
+          "phase": "Seedence 2.0",
+          "date": "Coming Soon",
+          "desc": "Next-generation AI model, Pro early access"
+        }
+      ]
+    },
+    "comparison": {
+      "heading": "Beta vs Versione Completa: Cosa è Cambiato?",
+      "rows": [
+        {
+          "feature": "AI Model Quality",
+          "beta": "Standard generation models",
+          "full": "Google Nano Banana (photorealistic)"
+        },
+        {
+          "feature": "Image Generation",
+          "beta": "Limited styles",
+          "full": "Ultra-realistic, fantasy, product, architecture & more"
+        },
+        {
+          "feature": "Brand Kit",
+          "beta": "Not available",
+          "full": "✅ Full brand consistency tools"
+        },
+        {
+          "feature": "AI Logo Generator",
+          "beta": "Basic",
+          "full": "✅ Advanced AI logo generation"
+        },
+        {
+          "feature": "Access",
+          "beta": "Invite-only / waitlist",
+          "full": "✅ Open to everyone, free tier available"
+        },
+        {
+          "feature": "Seedence 2.0",
+          "beta": "N/A",
+          "full": "🔭 Coming soon — Pro early access"
+        }
+      ]
+    },
+    "faq": {
+      "heading": "Domande Frequenti",
+      "items": [
+        {
+          "q": "Is Lovart AI still in beta?",
+          "a": "No — the lovart beta phase ended in 2025. The full Lovart platform is now publicly available. If you arrived searching for 'lovart beta', great news: no beta access request is needed. The complete Lovart AI experience is free and open to everyone today."
+        },
+        {
+          "q": "How do I join Lovart's early access for new features?",
+          "a": "Lovart Pro subscribers get priority access to upcoming releases like Seedence 2.0. The old lovart beta waitlist no longer exists — sign up at lovart.ai and upgrade to Pro for early access to cutting-edge Lovart AI models."
+        },
+        {
+          "q": "What changed from Lovart beta to the full version?",
+          "a": "The lovart beta introduced basic generation capabilities. The full Lovart release goes far beyond the beta: Google's Nano Banana model delivers photorealistic quality, Brand Kit provides full visual identity tools, and the Lovart AI Logo Generator creates professional logos instantly. The Lovart beta was just the beginning."
+        },
+        {
+          "q": "When will Seedence 2.0 be available on Lovart?",
+          "a": "Seedence 2.0 is Lovart's next-generation AI model, set to surpass even the Nano Banana capabilities. Unlike the lovart beta era which had long waitlists, Lovart plans to roll out Seedence 2.0 directly to existing Pro subscribers first."
+        },
+        {
+          "q": "Is Lovart's beta free to use?",
+          "a": "Lovart's current full product (which replaced the lovart beta) includes a generous free tier. The old Lovart beta required an invitation code — today you can start using Lovart AI for free with no restrictions, no code, and no waitlist."
+        }
+      ]
+    }
+  },
+  "lovart_login_page": {
+    "seo": {
+      "title": "lovart login: Guida e Assistenza Account 2026",
+      "description": "Risolvi i problemi di lovart login con la nostra guida di accesso. Mantieni il tuo account AI sicuro e sempre disponibile.",
+      "keywords": "lovart login, lovart accesso",
+      "canonical_url": "https://lovart.info/it/lovart-login"
+    },
+    "hero": {
+      "badge": "Guida Accesso e Sicurezza",
+      "title": "Problemi di lovart login?",
+      "subtitle": "Ristabilisci l'accesso e torna a generare grafiche AI in sicurezza.",
+      "cta_external": "Entra",
+      "cta_internal": "Documentazione AI",
+      "content": "La pagina ufficiale di soccorso per il tuo <strong>lovart login</strong>. Assicuriamo protocolli crittografati affinché le sessioni di <strong>lovart login</strong> siano il meno interrotte possibili dai dispositivi incogniti."
+    },
+    "access_methods": {
+      "heading": "Scelte di Autenticazione",
+      "intro": "Gestisci la tua identità ufficiale con opzioni blindate.",
+      "methods": [
+        {
+          "title": "OAuth Google",
+          "desc": "Il lovart login rapido, clicca e vai."
+        },
+        {
+          "title": "Posta e Password",
+          "desc": "Logica locale robusta e basata su testo."
+        },
+        {
+          "title": "Magic Link Temporanei",
+          "desc": "Flusso che aggira smarrimento di chiavi complesse per il lovart login."
+        },
+        {
+          "title": "SSO Organizzativo",
+          "desc": "Sicurezza delegata per macro aziende."
+        }
+      ]
+    },
+    "troubleshooting": {
+      "heading": "Sblocca Subito",
+      "intro": "Manovre standard qualora bloccato:",
+      "steps": [
+        {
+          "step": "Svuotamento Dati",
+          "desc": "Azzera la cache del programma sul processo lovart login."
+        },
+        {
+          "step": "Reset Password",
+          "desc": "Recupera comodamente tutto via inbox ufficiale."
+        },
+        {
+          "step": "Down Generali",
+          "desc": "Ispezione preventiva dei tabelloni diagnostici di maintenance."
+        },
+        {
+          "step": "Isolamento Estensioni",
+          "desc": "Pausa Adblocker per prevenire stalli JavaScript."
+        }
+      ]
+    },
+    "error_codes": {
+      "heading": "Glossario degli Errori",
+      "desc": "Riferimenti specifici tecnici.",
+      "table_headers": [
+        "Sigla",
+        "Concetto",
+        "Azione"
+      ],
+      "table_rows": [
+        {
+          "code": "ERR_AUTH_001",
+          "meaning": "Non combinano o non esiste",
+          "resolution": "Revisione credenziali base (email errata?)"
+        },
+        {
+          "code": "ERR_NET_TIMEOUT",
+          "meaning": "Rete lenta",
+          "resolution": "Refresh aggressivo della scheda di lovart login."
+        },
+        {
+          "code": "ERR_RATE_LIMIT",
+          "meaning": "Attacchi multipli/Brute Force",
+          "resolution": "Riposo necessario 15 Minuti."
+        },
+        {
+          "code": "ERR_TOKEN_EXP",
+          "meaning": "Fine validità del ticket",
+          "resolution": "Autenticazione partente dal primissimo caricamento."
+        }
+      ]
+    },
+    "official_support": {
+      "heading": "Parla con Noi",
+      "desc": "Contatti diretti",
+      "links": [
+        "Portale Aiuto",
+        "Messaggi E-Mail",
+        "Gruppo Ufficiale"
+      ]
+    },
+    "faq": {
+      "heading": "FAQ per le password",
+      "items": [
+        {
+          "q": "Quanti terminali associati?",
+          "a": "L'uso su molti dispositivi comporta richieste costanti di lovart login 2FA."
+        },
+        {
+          "q": "Posta mai giunta a destinazione?",
+          "a": "Ostruita nei filtri anti-promozioni, scavalca manualmente."
+        },
+        {
+          "q": "Profili doppi simultanei?",
+          "a": "Attualmente forziamo log out obbligatorio per passare ponti virtuali personali."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Riattiva i Modelli",
+      "desc": "La tua arte necessita del suo maestro.",
+      "button": "Form Accesso Criptato"
+    }
+  },
+  "lovart_promo_page": {
+    "seo": {
+      "title": "lovart promo code 2026: Realtà e Diffide",
+      "description": "Risparmiare veramente e fuggire i falsi lovart promo code. Tutto sulle scontistiche annuali ufficiali di piattaforma.",
+      "keywords": "lovart promo code, lovart sconti, lovart coupon",
+      "canonical_url": "https://lovart.info/it/lovart-promo-code"
+    },
+    "hero": {
+      "badge": "Chiarimento Promo",
+      "title": "Il Fatto sui Codici Promo",
+      "subtitle": "L'industria è ricolma di bait-and-switch. Noi offriamo trasparenza.",
+      "cta_external": "Guarda le Vantaggiose Tariffe Annue",
+      "cta_internal": "Verita su questo Tema",
+      "content": "Navigare siti loschi per un <strong>lovart promo code</strong> logora solo nervi. Questo perché i generatori IA non adottano spesso tali strategie. Ti educhiamo alla difesa commerciale e a massimizzare ROI aziendale via pacchetti logici e strutturati. Simply grab a valid lovart promo code and start creating. A good lovart promo code never expires too fast."
+    },
+    "status_box": {
+      "heading": "Posizione Odierna",
+      "status": "Al netto di un'offerta per enti scolastici mirati, non pubblichiamo alcuna chiave stringa di sconto esterna globale. La leva primaria rimane lo scalare gli ordini su periodi ampi a pagamenti annualizzati (recupero al 20%)."
+    },
+    "comparison": {
+      "heading": "Differenze Concrete",
+      "desc": "Anatomia",
+      "rows": [
+        {
+          "aspect": "La Casa Madre",
+          "real": "Gestito sul dominio interno fatturazioni",
+          "fake": "Scatolotti pubblicitari esterni"
+        },
+        {
+          "aspect": "Funzionalità in Check-Out",
+          "real": "Sottratto da solo matematicamente",
+          "fake": "Lamenta corruzione costante testuale"
+        },
+        {
+          "aspect": "Timers Urgenza",
+          "real": "Fermo, Pacato Riferimento Economico",
+          "fake": "'2h Prima che chiuda la vendita'"
+        },
+        {
+          "aspect": "Minacce Informatiche",
+          "real": "Impossibile, Crittografia Completa",
+          "fake": "Tracciamento Terze e Quarte Entità Malevoli"
+        }
+      ]
+    },
+    "saving_paths": {
+      "heading": "Modi Intelligenti Ufficiali",
+      "intro": "Salta i falsi lovart promo code e risparmia qui.",
+      "paths": [
+        {
+          "title": "Annata in Anticipo",
+          "desc": "Impegno temporale lungo equivale a sforbiciate sui flussi mensili procapite di incasso."
+        },
+        {
+          "title": "Educational Benefit",
+          "desc": "Diamo potere a professori dotando di sconti previa validazione cartacea istituzionale."
+        },
+        {
+          "title": "Piattaforma Enterprise",
+          "desc": "Prendetene due o più per l'amministrazione generale del gruppo per dividere netto le quote base."
+        }
+      ]
+    },
+    "faq": {
+      "heading": "Le Domande Focali",
+      "items": [
+        {
+          "q": "Quindi per Black Friday?",
+          "a": "Ridurremmo l'ammontare dei cartellini base per tutta la durata per tutti. Nessun lovart promo code strano è speso e ricercato per il bonus!"
+        },
+        {
+          "q": "Cosa spinge le false speranze in giro?",
+          "a": "L'unico ritorno del venditore illegittimo è lucrare per affiliazione su una tua interazione vana generica."
+        },
+        {
+          "q": "Le comunicazioni di fiducia?",
+          "a": "Basta leggere the newsletter interna!"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Crea Adesso ad Alti Livelli",
+      "desc": "Proteggi il portafogli su base stabile a fatturazione chiara.",
+      "button": "Abbonati Sereno"
+    }
+  },
+  "what_is_lovart_page": {
+    "seo": {
+      "title": "What is Lovart? Definizione e Vantaggi dell'Arte IA",
+      "description": "What is Lovart? Il fulcro europeo del design assistito artificialmente. Scopri l'evoluzione illustrativa e concettuale.",
+      "keywords": "what is lovart, cos'è lovart, lovart intelligenza",
+      "canonical_url": "https://lovart.info/it/what-is-lovart"
+    },
+    "hero": {
+      "badge": "Identità Concettuale Eterna",
+      "title": "What is Lovart?",
+      "subtitle": "Trascende un robot illustrativo, forma il tessuto portante delle fucine di progettazione per agenzie, indie maker, marchi.",
+      "cta_external": "Visione Pricing",
+      "cta_internal": "Area Demo Interattiva",
+      "content": "Alla domanda onnipotente <strong>what is lovart</strong> si risponde che è il cambio di marcia decisivo del XXI secolo visivo per chiunque porti un'intuizione artistico commerciale o puramente astratta ma sia disarmato da complessi pacchetti offline e noia operativa. Discover what is lovart today. Wondering what is lovart capable of? Test what is lovart now."
+    },
+    "definition": {
+      "heading": "Il Punto d'Arrivo",
+      "desc": "Convertitore subitaneo che legge lettere latine logiche e dipinge arte di pregevole fattura lucidata senza sbavature al primissimo intento umano."
+    },
+    "scenarios": {
+      "heading": "Sotto la Lente",
+      "intro": "Settori che ridefiniscono le normalità sfruttandolo.",
+      "items": [
+        {
+          "title": "Marketing Accelerato",
+          "desc": "Asset multiforme a richiami del pacchetto marchio con aderenza identitaria assoluta (Brand Kit)."
+        },
+        {
+          "title": "Studi per Asset Ludo",
+          "desc": "Schizzi concept di architetture impossibili virtuali svelate subito."
+        },
+        {
+          "title": "Mercato Vetrina Digital",
+          "desc": "Catturare focus sui tuoi gadget aerei e solidi omettendo servizi studio onerosissimi extra."
+        }
+      ]
+    },
+    "comparison": {
+      "heading": "Intelligenza Vs Scetticismo Manuale",
+      "desc": "Un breve resoconto inesorabile che stravolge paradigmi.",
+      "rows": [
+        {
+          "aspect": "Giri D'Orologio",
+          "lovart": "Spaccato su manciate di secondi",
+          "traditional": "Dilaniante percorso di attesa burocratica appalto/giornate"
+        },
+        {
+          "aspect": "Contante Impegnato",
+          "lovart": "Dose fissa periodica ed onnicomprensiva",
+          "traditional": "Assoldamenti ad hoc costosissimi su royalties extra limitate"
+        },
+        {
+          "aspect": "Revisione",
+          "lovart": "Cambiare una sillaba rinnova l'intento logico e lo stile intero.",
+          "traditional": "Ore impilate di ritiri di pennello"
+        },
+        {
+          "aspect": "Skill Appresa",
+          "lovart": "Empatia Sintattica",
+          "traditional": "Tecnico Visivo Puro Informatico di UI Antiche Obsolete"
+        }
+      ]
+    },
+    "safety": {
+      "heading": "Cloud Sereno Impenetrabile",
+      "desc": "Isolato severamente. Architetture private assumeranno sempre in pancia le vostre visioni per non allenare mai reti pubbliche terze esterocettive."
+    },
+    "faq": {
+      "heading": "Estrapolazioni Complementari",
+      "items": [
+        {
+          "q": "Amichevole per il novizio?",
+          "a": "L'apprendimento su what is lovart si annulla di base coi set prestampati guida."
+        },
+        {
+          "q": "Sputa HTML?",
+          "a": "Connesse sezioni codificate agevoleranno proprio i domini Frontend che bramano aiuti stabili dal design generico al tangibile (Area AI Code)!"
+        },
+        {
+          "q": "Spodesta l'Esteta in Carne?",
+          "a": "È propulsore per artisti in carne, i quali smetteranno lo sfumino ripetitivo assumendo veste di direttori d'orchestra formidabili."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Raggiungi l'Eccellenza in Metà delle Ore Lavorative Sprecate Prima",
+      "desc": "È un salto cognitivo visivo globale necessario per restare al vertice oggi giorno nel panorama internazionale online ecc.",
+      "button": "Lancia L'Engine ora Officalmente Adesso o Domani Manco"
+    }
+  }
 }
