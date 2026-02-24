@@ -3,7 +3,7 @@
     <html lang="<%= lang %>" class="scroll-smooth">
 
     <head>
-        <%- include('partials/head') %>
+        <%- include('partials/head', { pageSeo: t.lovart_promo_page.seo }) %>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>
@@ -146,6 +146,9 @@
                                     and the latest
                                     <a href="<%= link('/lovart-review') %>"
                                         class="text-primary hover:text-primary-dark font-medium">Lovart review</a>
+                                    plus the
+                                    <a href="<%= link('/lovart-code') %>"
+                                        class="text-primary hover:text-primary-dark font-medium">Lovart code breakdown</a>
                                     to verify value vs. current pricing.
                                 </p>
                             </div>
@@ -192,6 +195,31 @@
                             </div>
                         </div>
                     </section>
+
+                    <% if (t.lovart_promo_page.related && Array.isArray(t.lovart_promo_page.related.items) && t.lovart_promo_page.related.items.length) { %>
+                        <section class="py-12 bg-neutral-light border-y border-neutral/10">
+                            <div class="container mx-auto px-6">
+                                <div class="max-w-4xl mx-auto bg-white rounded-2xl p-8 border border-neutral/10 shadow-sm">
+                                    <h2 class="text-2xl font-bold text-neutral-dark mb-6">
+                                        <%= t.lovart_promo_page.related.heading %>
+                                    </h2>
+                                    <ul class="space-y-4">
+                                        <% t.lovart_promo_page.related.items.forEach(function(item) { %>
+                                            <li>
+                                                <a href="<%= link(item.path) %>"
+                                                    class="text-primary hover:text-primary-dark font-medium transition-colors">
+                                                    <%= item.title %>
+                                                </a>
+                                                <% if (item.desc) { %>
+                                                    <p class="text-sm text-neutral mt-1"><%= item.desc %></p>
+                                                <% } %>
+                                            </li>
+                                        <% }); %>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    <% } %>
 
                     <!-- Bottom CTA -->
                     <section class="py-20">

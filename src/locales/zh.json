@@ -3543,6 +3543,31 @@
         }
       ]
     },
+    "related": {
+      "heading": "相关阅读",
+      "items": [
+        {
+          "path": "/lovart-code",
+          "title": "Lovart Code 释义页",
+          "desc": "快速区分邀请码、优惠码与 AI Code。"
+        },
+        {
+          "path": "/lovart-invitation-code",
+          "title": "Lovart 邀请码状态",
+          "desc": "确认当前是否仍需邀请码。"
+        },
+        {
+          "path": "/lovart-review",
+          "title": "Lovart 评测 2026",
+          "desc": "升级前先看价值与适配场景。"
+        },
+        {
+          "path": "/lovart-pricing",
+          "title": "官方定价页",
+          "desc": "核对最新套餐与计费方式。"
+        }
+      ]
+    },
     "cta": {
       "title": "准备好升级您的工具包了吗？",
       "desc": "跳过虚假折扣的无止尽搜索。通过合法的官方途径体验高级功能并获得最佳长期性价比。",
@@ -3634,7 +3659,25 @@
       ]
     },
     "related": {
-      "heading": "相关阅读"
+      "heading": "相关阅读",
+      "items": [
+        {
+          "path": "/lovart-alternative",
+          "title": "Lovart Alternative 对比"
+        },
+        {
+          "path": "/lovart-tutorial",
+          "title": "Lovart 教程"
+        },
+        {
+          "path": "/lovart-review",
+          "title": "Lovart 评测 2026"
+        },
+        {
+          "path": "/lovart-ai-agent",
+          "title": "Lovart AI Agent 是什么？"
+        }
+      ]
     },
     "cta": {
       "title": "答案就在行动中",
@@ -3911,6 +3954,210 @@
       ]
     }
   },
+  "lovarte_page": {
+    "seo": {
+      "title": "Lovarte 是什么？你可能在找 Lovart AI",
+      "description": "搜索 lovarte、lovartal、lovarts？本页将拼写变体映射到正确入口，帮助你安全到达 Lovart 官方页面与关键功能页。",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/zh/lovarte"
+    },
+    "hero": {
+      "badge": "拼写纠错与导航",
+      "title": "你可能想找的是 Lovart AI",
+      "subtitle": "如果你搜索的是 lovarte 或 lovartal，多半是想访问 Lovart。下面给你最短路径。",
+      "cta_official": "打开官方 Lovart",
+      "cta_pricing": "查看定价",
+      "content": "本页用于承接常见拼写误差并进行安全导流。我们是第三方导览站（lovart.info），并非 lovart.ai 官方站。若你的意图是登录、定价、功能介绍，请使用下方明确链接，避免误入仿冒网址。"
+    },
+    "mapping": {
+      "heading": "常见拼写映射",
+      "intro": "这些关键词通常指向同一个产品意图。",
+      "items": [
+        { "wrong": "lovarte", "right": "lovart.ai", "note": "最高频拼写变体" },
+        { "wrong": "lovartal", "right": "lovart.ai", "note": "域名拼写混淆" },
+        { "wrong": "lovarts", "right": "lovart.ai", "note": "复数误拼" },
+        { "wrong": "lovart_ai", "right": "lovart ai", "note": "下划线查询变体" },
+        { "wrong": "lovart.ai/home", "right": "lovart.ai", "note": "导航型 home 查询" }
+      ]
+    },
+    "destinations": {
+      "heading": "下一步去哪里",
+      "items": [
+        {
+          "path": "/what-is-lovart",
+          "title": "什么是 Lovart",
+          "desc": "先了解产品定位与核心能力。"
+        },
+        {
+          "path": "/lovart-login-guide",
+          "title": "Lovart 登录指南",
+          "desc": "账号入口与登录问题排查。"
+        },
+        {
+          "path": "/lovart-pricing",
+          "title": "Lovart 定价",
+          "desc": "查看官方套餐与计费方式。"
+        },
+        {
+          "path": "/lovart-free",
+          "title": "免费版入口",
+          "desc": "了解免费体验路径与限制。"
+        }
+      ]
+    },
+    "faq": {
+      "heading": "常见问题",
+      "items": [
+        {
+          "q": "lovarte 是官方网址吗？",
+          "a": "不是。官方产品域名是 lovart.ai。本页是第三方导航纠错页。"
+        },
+        {
+          "q": "为什么会跳到 lovart.info？",
+          "a": "你可能输入了拼写变体。请通过本页给出的明确链接进入目标页面。"
+        },
+        {
+          "q": "我应该先看哪个页面？",
+          "a": "新用户建议先看“什么是 Lovart”；账号问题看“登录指南”；付费意图看“定价页”。"
+        }
+      ]
+    },
+    "disclaimer": {
+      "title": "第三方声明",
+      "text": "lovart.info 是独立导览站，不隶属于 lovart.ai 官方。"
+    }
+  },
+  "lovart_code_page": {
+    "seo": {
+      "title": "Lovart Code 指南：邀请码、优惠码、AI Code 区分",
+      "description": "lovart code 到底指什么？本页拆解邀请码、优惠码与 AI Code 三类意图，并引导到对应页面，避免信息混淆。",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/zh/lovart-code"
+    },
+    "hero": {
+      "badge": "意图拆解页",
+      "title": "Lovart code 有三种常见含义",
+      "subtitle": "同一个关键词，背后常是三种不同需求。这里一次分清，减少跳转成本。",
+      "cta_primary": "查看定价",
+      "cta_secondary": "查看 AI Code",
+      "content": "用户搜索 lovart code 时，常常混在一起：邀请码（注册/准入）、优惠码（折扣/计费）、AI Code（开发者功能）。本页专门用于意图分流，避免和已有页面产生关键词内耗。"
+    },
+    "intents": {
+      "heading": "请选择你的真实意图",
+      "items": [
+        {
+          "path": "/lovart-invitation-code",
+          "title": "邀请码（Invitation Code）",
+          "desc": "与注册准入、历史邀请机制相关的问题。",
+          "link_text": "进入邀请码页"
+        },
+        {
+          "path": "/lovart-promo-code",
+          "title": "优惠码（Promo Code）",
+          "desc": "与折扣、促销、计费优惠相关的问题。",
+          "link_text": "进入优惠码页"
+        },
+        {
+          "path": "/lovart-ai-code",
+          "title": "AI Code（开发功能）",
+          "desc": "与开发者集成、能力说明相关的问题。",
+          "link_text": "进入 AI Code 页"
+        }
+      ]
+    },
+    "faq": {
+      "heading": "常见问题",
+      "items": [
+        {
+          "q": "lovart-code 和 lovart-ai-code 是同一页吗？",
+          "a": "不是。lovart-code 是意图导航页；lovart-ai-code 是开发者功能说明页。"
+        },
+        {
+          "q": "我想要折扣，应该先去哪里？",
+          "a": "先看 promo-code 与 pricing 两页，确认当前官方计费信息。"
+        },
+        {
+          "q": "现在还需要邀请码吗？",
+          "a": "请查看 invitation-code 页面，准入策略可能会随时间变化。"
+        }
+      ]
+    },
+    "related": {
+      "heading": "相关阅读",
+      "items": [
+        { "path": "/lovart-promo-code", "title": "Lovart 优惠码" },
+        { "path": "/lovart-invitation-code", "title": "Lovart 邀请码" },
+        { "path": "/lovart-ai-code", "title": "Lovart AI Code" },
+        { "path": "/lovart-pricing", "title": "Lovart 定价" }
+      ]
+    },
+    "disclaimer": {
+      "title": "第三方声明",
+      "text": "本页仅用于搜索意图导览，不是 lovart.ai 官方页面。"
+    }
+  },
+  "lovart_ai_agent_page": {
+    "seo": {
+      "title": "Lovart AI Agent 解释：与普通图片生成器有什么区别",
+      "description": "什么是 lovart ai agent？本页用工作流视角解释 Agent 与普通生成器差异，并提供教程与功能页延伸阅读。",
+      "keywords": "",
+      "canonical_url": "https://lovart.info/zh/lovart-ai-agent"
+    },
+    "hero": {
+      "badge": "概念解释页",
+      "title": "什么是 Lovart AI Agent？",
+      "subtitle": "很多人搜索 lovart agent，真正想了解的是“多步骤工作流能力”，而非一次性出图。",
+      "cta_primary": "查看教程",
+      "cta_secondary": "查看功能",
+      "content": "AI Agent 不只是图像生成器。它强调任务编排、约束保持与迭代交付。这个页面会用清晰对比解释 Lovart 的 Agent 语义，帮助你判断是否匹配真实工作场景。"
+    },
+    "comparison": {
+      "heading": "Agent 与普通生成器对比",
+      "rows": [
+        { "aspect": "任务模型", "agent": "多步骤编排与迭代", "generator": "单提示词、单次输出" },
+        { "aspect": "一致性", "agent": "可保持风格与系统约束", "generator": "每次输出相对独立" },
+        { "aspect": "使用场景", "agent": "品牌与活动连续产出", "generator": "快速草图与灵感探索" }
+      ]
+    },
+    "use_cases": {
+      "heading": "典型使用场景",
+      "items": [
+        { "title": "品牌连续迭代", "desc": "一套视觉语言衍生多触点素材并保持统一。"},
+        { "title": "从提示到活动资产", "desc": "把一个方向扩展为一组可落地交付物。"},
+        { "title": "设计系统对齐", "desc": "复用约束和风格规则，提升反复生产效率。"}
+      ]
+    },
+    "faq": {
+      "heading": "常见问题",
+      "items": [
+        {
+          "q": "Lovart AI Agent 是独立产品吗？",
+          "a": "不是。它描述的是 Lovart 体系内的一类工作流能力。"
+        },
+        {
+          "q": "它一定比普通生成器更好吗？",
+          "a": "一次性出图两者都可行；如果你需要连续、结构化产出，Agent 模式更稳。"
+        },
+        {
+          "q": "学习路径怎么走？",
+          "a": "先看教程与功能页，再延伸到提示词与评测页。"
+        }
+      ]
+    },
+    "related": {
+      "heading": "相关阅读",
+      "items": [
+        { "path": "/what-is-lovart", "title": "什么是 Lovart" },
+        { "path": "/lovart-tutorial", "title": "Lovart 教程" },
+        { "path": "/lovart-prompt-guide", "title": "Lovart Prompt Guide" },
+        { "path": "/lovart-design-features", "title": "Lovart 功能页" }
+      ]
+    },
+    "disclaimer": {
+      "title": "第三方声明",
+      "text": "本页由 lovart.info 维护，非 lovart.ai 官方文档。"
+    }
+  },
   "resources_section": {
     "title": "设计资源与指南",
     "subtitle": "探索我们全面的指南，掌握 AI 设计技巧并充分发挥 Lovart 的潜力。",
@@ -3956,6 +4203,24 @@
         "desc": "了解团队背景、里程碑与公司信息。",
         "link_text": "查看公司档案",
         "url": "/lovart-company"
+      },
+      {
+        "title": "Lovarte 拼写纠错",
+        "desc": "把 lovarte 等变体词导向正确入口。",
+        "link_text": "查看纠错导航",
+        "url": "/lovarte"
+      },
+      {
+        "title": "Lovart Code 指南",
+        "desc": "一次看懂邀请码、优惠码与 AI Code。",
+        "link_text": "阅读 Code 指南",
+        "url": "/lovart-code"
+      },
+      {
+        "title": "Lovart AI Agent 解释",
+        "desc": "理解 Agent 工作流与普通生成器差异。",
+        "link_text": "阅读 Agent 指南",
+        "url": "/lovart-ai-agent"
       }
     ]
   }

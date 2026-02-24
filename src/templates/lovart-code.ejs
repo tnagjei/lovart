@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<%
+const page = t.lovart_code_page;
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: page.seo.title, href: canonicalUrl }];
+%>
+<html lang="<%= lang %>" class="scroll-smooth">
+
+<head>
+    <%- include('partials/head', { pageSeo: page.seo }) %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= page.seo.title %></title>
+    <meta name="description" content="<%= page.seo.description %>">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <%- include('partials/hreflang') %>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+        crossorigin="anonymous"></script>
+    <%- include('partials/analytics') %>
+    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+    <%- include('partials/schema-faq', { faqItems: page.faq.items }) %>
+</head>
+
+<body class="bg-neutral-light text-neutral-dark antialiased">
+    <%- include('partials/header') %>
+    <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+
+    <main>
+        <section class="bg-gradient-to-b from-primary/10 to-transparent py-20 lg:py-28">
+            <div class="container mx-auto px-6 text-center max-w-4xl">
+                <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6">
+                    <%= page.hero.badge %>
+                </span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-neutral-dark"><%= page.hero.title %></h1>
+                <p class="text-xl text-neutral mb-8"><%= page.hero.subtitle %></p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-10">
+                    <a href="<%= link('/lovart-pricing') %>"
+                        class="btn-primary px-8 py-4 text-lg rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <%= page.hero.cta_primary %>
+                    </a>
+                    <a href="<%= link('/lovart-ai-code') %>"
+                        class="btn-secondary px-8 py-4 text-lg rounded-xl font-semibold border-2 border-primary/20 hover:border-primary/50 transition-all duration-300">
+                        <%= page.hero.cta_secondary %>
+                    </a>
+                </div>
+                <p class="text-left text-neutral leading-relaxed bg-white rounded-xl p-6 border border-neutral/10">
+                    <%= page.hero.content %>
+                </p>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 py-6">
+            <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="text-3xl font-bold text-neutral-dark mb-4"><%= page.intents.heading %></h2>
+                <div class="grid md:grid-cols-3 gap-8 mt-8">
+                    <% page.intents.items.forEach(function(item) { %>
+                        <div class="bg-neutral-light rounded-2xl p-8 border border-neutral/10">
+                            <h3 class="text-xl font-bold text-neutral-dark mb-3"><%= item.title %></h3>
+                            <p class="text-neutral leading-relaxed mb-6"><%= item.desc %></p>
+                            <a href="<%= link(item.path) %>"
+                                class="text-primary hover:text-primary-dark font-semibold transition-colors">
+                                <%= item.link_text %> →
+                            </a>
+                        </div>
+                    <% }); %>
+                </div>
+                <p class="text-sm text-neutral/80 mt-6">
+                    Hub links:
+                    <a href="<%= link('/') %>" class="text-primary hover:text-primary-dark font-medium">Home</a> ·
+                    <a href="<%= link('/about') %>" class="text-primary hover:text-primary-dark font-medium">About</a> ·
+                    <a href="<%= link('/blog') %>" class="text-primary hover:text-primary-dark font-medium">Blog</a> ·
+                    <a href="<%= link('/lovart-pricing') %>"
+                        class="text-primary hover:text-primary-dark font-medium">Pricing</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 py-6">
+            <%- include('partials/adsense') %>
+        </section>
+
+        <section class="py-16">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-3xl font-bold text-neutral-dark mb-8 text-center"><%= page.faq.heading %></h2>
+                <div class="space-y-5">
+                    <% page.faq.items.forEach(function(item) { %>
+                        <div class="bg-white rounded-xl p-6 border border-neutral/10 shadow-sm">
+                            <h3 class="font-semibold text-neutral-dark mb-2"><%= item.q %></h3>
+                            <p class="text-neutral leading-relaxed"><%= item.a %></p>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 py-6">
+            <%- include('partials/adsense') %>
+        </section>
+
+        <section class="py-12 bg-white border-y border-neutral/10">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-2xl font-bold text-neutral-dark mb-6"><%= page.related.heading %></h2>
+                <ul class="space-y-4">
+                    <% page.related.items.forEach(function(item) { %>
+                        <li>
+                            <a href="<%= link(item.path) %>"
+                                class="text-primary hover:text-primary-dark font-medium transition-colors"><%= item.title %></a>
+                        </li>
+                    <% }); %>
+                </ul>
+            </div>
+        </section>
+
+        <section class="py-12">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6">
+                    <h2 class="text-lg font-bold text-amber-900 mb-2"><%= page.disclaimer.title %></h2>
+                    <p class="text-amber-800 font-semibold"><%= page.disclaimer.text %></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 py-6">
+            <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>

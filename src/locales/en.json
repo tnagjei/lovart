@@ -3534,6 +3534,31 @@
                 }
             ]
         },
+        "related": {
+            "heading": "Related Reading",
+            "items": [
+                {
+                    "path": "/lovart-code",
+                    "title": "Lovart Code Explained",
+                    "desc": "Understand invitation code vs promo code vs AI code in one page."
+                },
+                {
+                    "path": "/lovart-invitation-code",
+                    "title": "Lovart Invitation Code Status",
+                    "desc": "Check whether invitation access is still needed."
+                },
+                {
+                    "path": "/lovart-review",
+                    "title": "Lovart Review 2026",
+                    "desc": "Compare pricing value before upgrading."
+                },
+                {
+                    "path": "/lovart-pricing",
+                    "title": "Official Pricing",
+                    "desc": "Verify current plan tiers and billing options."
+                }
+            ]
+        },
         "cta": {
             "title": "Stop Searching for a promo code",
             "desc": "Don't waste time looking for an expired promo code. Start designing today with our highly competitive standard pricing, or use the free tier immediately.",
@@ -3620,7 +3645,25 @@
             ]
         },
         "related": {
-            "heading": "Related Reading"
+            "heading": "Related Reading",
+            "items": [
+                {
+                    "path": "/lovart-alternative",
+                    "title": "Lovart Alternatives"
+                },
+                {
+                    "path": "/lovart-tutorial",
+                    "title": "How to Use Lovart"
+                },
+                {
+                    "path": "/lovart-review",
+                    "title": "Lovart Review 2026"
+                },
+                {
+                    "path": "/lovart-ai-agent",
+                    "title": "What Is a Lovart AI Agent?"
+                }
+            ]
         },
         "cta": {
             "title": "Experience about us for Yourself",
@@ -3897,6 +3940,210 @@
             ]
         }
     },
+    "lovarte_page": {
+        "seo": {
+            "title": "Lovarte Search Guide: Did You Mean Official Lovart AI?",
+            "description": "Searching lovarte, lovartal, or lovarts? This guide maps misspellings to Lovart AI destinations, login paths, pricing pages, and official links.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/lovarte"
+        },
+        "hero": {
+            "badge": "Spelling & Navigation Guide",
+            "title": "Did you mean Lovart AI?",
+            "subtitle": "If you searched lovarte or lovartal, you are likely trying to find the Lovart platform. Use the links below to reach the right destination safely.",
+            "cta_official": "Open Official Lovart",
+            "cta_pricing": "See Pricing",
+            "content": "This page exists to route typo traffic safely. We are a third-party guide site (lovart.info), not the official lovart.ai domain. If your intent is account login, pricing, or product docs, use the exact links we list below and avoid suspicious copycat URLs."
+        },
+        "mapping": {
+            "heading": "Common typo mapping",
+            "intro": "These variants usually point to the same intent.",
+            "items": [
+                { "wrong": "lovarte", "right": "lovart.ai", "note": "Most common typo" },
+                { "wrong": "lovartal", "right": "lovart.ai", "note": "Missing dot/domain confusion" },
+                { "wrong": "lovarts", "right": "lovart.ai", "note": "Plural typing mistake" },
+                { "wrong": "lovart_ai", "right": "lovart ai", "note": "Underscore query variant" },
+                { "wrong": "lovart.ai/home", "right": "lovart.ai", "note": "Home-path navigation intent" }
+            ]
+        },
+        "destinations": {
+            "heading": "Where to go next",
+            "items": [
+                {
+                    "path": "/what-is-lovart",
+                    "title": "What is Lovart?",
+                    "desc": "Start with product overview and capabilities."
+                },
+                {
+                    "path": "/lovart-login-guide",
+                    "title": "Lovart Login Guide",
+                    "desc": "Account access and troubleshooting."
+                },
+                {
+                    "path": "/lovart-pricing",
+                    "title": "Pricing & Plans",
+                    "desc": "Check official plan structure."
+                },
+                {
+                    "path": "/lovart-free",
+                    "title": "Free Access",
+                    "desc": "Understand free tier usage path."
+                }
+            ]
+        },
+        "faq": {
+            "heading": "FAQ",
+            "items": [
+                {
+                    "q": "Is lovarte the official website?",
+                    "a": "No. The official product domain is lovart.ai. This page is a third-party navigation aid."
+                },
+                {
+                    "q": "Why do I land on lovart.info instead of lovart.ai?",
+                    "a": "You likely searched a spelling variant. Use the direct links above to reach the intended product page."
+                },
+                {
+                    "q": "Which page should I use first?",
+                    "a": "For beginners, start with What is Lovart. For account access, use Login Guide. For billing intent, open Pricing."
+                }
+            ]
+        },
+        "disclaimer": {
+            "title": "Third-Party Notice",
+            "text": "lovart.info is an independent guide site and is not operated by lovart.ai."
+        }
+    },
+    "lovart_code_page": {
+        "seo": {
+            "title": "Lovart Code Guide: Invitation, Promo, and Developer AI Code",
+            "description": "What does lovart code mean? Learn the difference between invitation codes, promo discounts, and Lovart AI code features so you can reach the right page quickly.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/lovart-code"
+        },
+        "hero": {
+            "badge": "Intent Split Guide",
+            "title": "Lovart code: three meanings",
+            "subtitle": "Most users search 'lovart code' with different intents. This page separates each meaning so you can go to the correct page immediately.",
+            "cta_primary": "Check Pricing",
+            "cta_secondary": "View AI Code",
+            "content": "The phrase lovart code is ambiguous. Some users mean invitation access, others mean discount promo codes, and some mean AI code generation features. To prevent confusion and ranking cannibalization, this page routes each intent to the right destination."
+        },
+        "intents": {
+            "heading": "Choose your intent",
+            "items": [
+                {
+                    "path": "/lovart-invitation-code",
+                    "title": "Invitation code",
+                    "desc": "Registration or access-gating related questions.",
+                    "link_text": "Open invitation guide"
+                },
+                {
+                    "path": "/lovart-promo-code",
+                    "title": "Promo code",
+                    "desc": "Discount and billing offer related queries.",
+                    "link_text": "Open promo guide"
+                },
+                {
+                    "path": "/lovart-ai-code",
+                    "title": "AI code feature",
+                    "desc": "Developer-oriented feature and integration context.",
+                    "link_text": "Open AI code page"
+                }
+            ]
+        },
+        "faq": {
+            "heading": "FAQ",
+            "items": [
+                {
+                    "q": "Is lovart-code the same as lovart-ai-code?",
+                    "a": "No. lovart-code is a navigation page. lovart-ai-code is the developer feature page."
+                },
+                {
+                    "q": "Where should I check discounts first?",
+                    "a": "Use the promo-code and pricing pages for current billing information."
+                },
+                {
+                    "q": "Do I need an invitation code now?",
+                    "a": "Check the invitation-code status page because access policy can change over time."
+                }
+            ]
+        },
+        "related": {
+            "heading": "Related Reading",
+            "items": [
+                { "path": "/lovart-promo-code", "title": "Lovart Promo Code" },
+                { "path": "/lovart-invitation-code", "title": "Lovart Invitation Code" },
+                { "path": "/lovart-ai-code", "title": "Lovart AI Code" },
+                { "path": "/lovart-pricing", "title": "Lovart Pricing" }
+            ]
+        },
+        "disclaimer": {
+            "title": "Third-Party Notice",
+            "text": "This page is an independent guide for search intent routing and is not an official lovart.ai property."
+        }
+    },
+    "lovart_ai_agent_page": {
+        "seo": {
+            "title": "Lovart AI Agent Explained: Agent vs Image Generator",
+            "description": "What is a Lovart AI agent? Learn how agent workflows differ from basic image generators, with practical use cases, workflow examples, and tutorial links.",
+            "keywords": "",
+            "canonical_url": "https://lovart.info/lovart-ai-agent"
+        },
+        "hero": {
+            "badge": "Concept Guide",
+            "title": "What is the Lovart AI agent?",
+            "subtitle": "Users often search for 'lovart agent' when they want to understand workflow automation, not just image output.",
+            "cta_primary": "Start Tutorial",
+            "cta_secondary": "See Features",
+            "content": "An AI agent is not just a generator. It handles multi-step tasks, applies constraints, and iterates toward a usable design output. This page clarifies how the Lovart agent concept differs from one-shot image tools."
+        },
+        "comparison": {
+            "heading": "Agent vs basic generator",
+            "rows": [
+                { "aspect": "Task model", "agent": "Multi-step workflow orchestration", "generator": "Single prompt, single output" },
+                { "aspect": "Consistency", "agent": "Keeps style/system across iterations", "generator": "Each output is isolated" },
+                { "aspect": "Use case", "agent": "Campaign and brand workflow", "generator": "Quick visual drafts" }
+            ]
+        },
+        "use_cases": {
+            "heading": "When to use it",
+            "items": [
+                { "title": "Brand iteration", "desc": "Generate consistent assets across multiple touchpoints." },
+                { "title": "Prompt-to-campaign", "desc": "Turn one direction into a set of related deliverables." },
+                { "title": "Design system alignment", "desc": "Reuse constraints and style intent for repeated outputs." }
+            ]
+        },
+        "faq": {
+            "heading": "FAQ",
+            "items": [
+                {
+                    "q": "Is Lovart AI agent a separate product?",
+                    "a": "No. It describes a workflow capability within the Lovart ecosystem."
+                },
+                {
+                    "q": "Is this better than a standard generator?",
+                    "a": "For one-off images, both can work. For repeated, structured outputs, agent workflow is more reliable."
+                },
+                {
+                    "q": "Where do I start learning?",
+                    "a": "Use the tutorial and feature pages first, then expand to prompt and review pages."
+                }
+            ]
+        },
+        "related": {
+            "heading": "Related Reading",
+            "items": [
+                { "path": "/what-is-lovart", "title": "What is Lovart?" },
+                { "path": "/lovart-tutorial", "title": "Lovart Tutorial" },
+                { "path": "/lovart-prompt-guide", "title": "Lovart Prompt Guide" },
+                { "path": "/lovart-design-features", "title": "Lovart Features" }
+            ]
+        },
+        "disclaimer": {
+            "title": "Third-Party Notice",
+            "text": "This explanation page is maintained by lovart.info and is not an official lovart.ai documentation page."
+        }
+    },
     "resources_section": {
         "title": "Design Resources & Guides",
         "subtitle": "Explore our comprehensive guides to master AI design and get the most out of Lovart.",
@@ -3942,6 +4189,24 @@
                 "desc": "Funding, team, milestones, and company background.",
                 "link_text": "View Company Profile",
                 "url": "/lovart-company"
+            },
+            {
+                "title": "Lovarte Spelling Guide",
+                "desc": "Land on the correct Lovart pages when searching typo variants.",
+                "link_text": "Open Guide",
+                "url": "/lovarte"
+            },
+            {
+                "title": "Lovart Code Guide",
+                "desc": "Understand invitation code, promo code, and AI code intent.",
+                "link_text": "Read Code Guide",
+                "url": "/lovart-code"
+            },
+            {
+                "title": "Lovart AI Agent",
+                "desc": "Learn how agent workflows differ from basic generators.",
+                "link_text": "Read Agent Guide",
+                "url": "/lovart-ai-agent"
             }
         ]
     }

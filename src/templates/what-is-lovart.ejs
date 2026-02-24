@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'What is Lovart' , href: canonicalUrl }]; %>
+<%
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: 'What is Lovart', href: canonicalUrl }];
+const whatIsRelatedItems = (t.what_is_lovart_page && t.what_is_lovart_page.related && Array.isArray(t.what_is_lovart_page.related.items))
+    ? t.what_is_lovart_page.related.items
+    : [
+        { path: '/lovart-alternative', title: 'Lovart Alternative' },
+        { path: '/lovart-tutorial', title: 'Lovart Tutorial' },
+        { path: '/lovart-review', title: 'Lovart Review' },
+        { path: '/lovart-ai-agent', title: 'Lovart AI Agent' }
+    ];
+%>
     <html lang="<%= lang %>" class="scroll-smooth">
 
     <head>
-        <%- include('partials/head') %>
+        <%- include('partials/head', { pageSeo: t.what_is_lovart_page.seo }) %>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>
@@ -44,7 +54,7 @@
                                 <%= t.what_is_lovart_page.hero.subtitle %>
                             </p>
                             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                                <a href="https://lovart.ai/login" target="_blank" rel="noopener"
+                                <a href="https://lovart.ai/login" target="_blank" rel="noopener nofollow"
                                     class="btn-primary px-8 py-4 text-lg rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                                     <%= t.what_is_lovart_page.hero.cta_internal %>
                                 </a>
@@ -203,24 +213,14 @@
                                     <%= (t.what_is_lovart_page.related && t.what_is_lovart_page.related.heading) || 'Related Reading' %>
                                 </h2>
                                 <ul class="space-y-4">
-                                    <li>
-                                        <a href="<%= link('/lovart-alternative') %>"
-                                            class="text-primary hover:text-primary-dark font-medium transition-colors">
-                                            <%= (t.lovart_alternative_page && t.lovart_alternative_page.seo && t.lovart_alternative_page.seo.title) || 'Lovart Alternative' %>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="<%= link('/lovart-tutorial') %>"
-                                            class="text-primary hover:text-primary-dark font-medium transition-colors">
-                                            <%= (t.lovart_tutorial_page && t.lovart_tutorial_page.seo && t.lovart_tutorial_page.seo.title) || 'Lovart Tutorial' %>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="<%= link('/lovart-review') %>"
-                                            class="text-primary hover:text-primary-dark font-medium transition-colors">
-                                            <%= (t.lovart_review_page && t.lovart_review_page.seo && t.lovart_review_page.seo.title) || 'Lovart Review' %>
-                                        </a>
-                                    </li>
+                                    <% whatIsRelatedItems.forEach(function(item) { %>
+                                        <li>
+                                            <a href="<%= link(item.path) %>"
+                                                class="text-primary hover:text-primary-dark font-medium transition-colors">
+                                                <%= item.title %>
+                                            </a>
+                                        </li>
+                                        <% }); %>
                                 </ul>
                             </div>
                         </div>
@@ -261,7 +261,7 @@
                                 <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">
                                     <%= t.what_is_lovart_page.cta.desc %>
                                 </p>
-                                <a href="https://lovart.ai/login" target="_blank" rel="noopener"
+                                <a href="https://lovart.ai/login" target="_blank" rel="noopener nofollow"
                                     class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl bg-white text-neutral-dark hover:bg-neutral-light shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                                     <%= t.what_is_lovart_page.cta.button %>
                                 </a>

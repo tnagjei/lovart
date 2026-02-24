@@ -28,7 +28,10 @@ const esItCorePages = [
     'what-is-lovart',
     'lovart-login-guide',
     'lovart-company',
-    'lovart-promo-code'
+    'lovart-promo-code',
+    'lovarte',
+    'lovart-code',
+    'lovart-ai-agent'
 ];
 const noindexLangs = new Set(['es', 'it']);
 const noindexShellPages = new Set(esItCorePages);
