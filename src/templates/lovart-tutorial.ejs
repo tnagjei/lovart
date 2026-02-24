@@ -1,315 +1,411 @@
 <!DOCTYPE html>
-<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: t.lovart_tutorial_page.seo.title, href:
-    canonicalUrl }]; %>
+<%
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.lovart_tutorial_page.seo.title, href: canonicalUrl }];
+const relatedSectionTitle = (t.resources_section && t.resources_section.title) ? t.resources_section.title : 'Related Reading';
+const resourceCards = (t.resources_section && Array.isArray(t.resources_section.cards))
+    ? t.resources_section.cards
+    : [];
+const normalizeCardPath = (rawPath) => {
+    if (typeof rawPath !== 'string') return '';
+    return rawPath.replace(/^\/zh\//, '').replace(/^\//, '');
+};
+const cardTitleByPath = {};
+resourceCards.forEach((card) => {
+    const normalizedPath = normalizeCardPath(card.url);
+    if (normalizedPath && card && card.title) {
+        cardTitleByPath[normalizedPath] = card.title;
+    }
+});
+const fallbackTitleByPath = {
+    'what-is-lovart': t.what_is_lovart_page && t.what_is_lovart_page.seo ? t.what_is_lovart_page.seo.title : '',
+    'lovart-review': t.lovart_review_page && t.lovart_review_page.seo ? t.lovart_review_page.seo.title : '',
+    'lovart-alternative': t.lovart_alternative_page && t.lovart_alternative_page.seo ? t.lovart_alternative_page.seo.title : '',
+    'lovart-prompt-guide': t.seo && t.seo.prompt_guide ? t.seo.prompt_guide.title : ''
+};
+const relatedPaths = ['what-is-lovart', 'lovart-review', 'lovart-alternative', 'lovart-prompt-guide'];
+const relatedLinks = relatedPaths
+    .map((path) => {
+        const title = cardTitleByPath[path] || fallbackTitleByPath[path];
+        if (!title) return null;
+        return { href: link('/' + path), title };
+    })
+    .filter(Boolean);
+%>
     <html lang="<%- lang %>">
 
     <head>
-        <%- include('partials/head', { seo: t.lovart_tutorial_page.seo }) %>
+        <%- include('partials/head', { pageSeo: t.lovart_tutorial_page.seo }) %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= t.lovart_tutorial_page.seo.title %>
+            </title>
+            <meta name="description" content="<%= t.lovart_tutorial_page.seo.description %>">
+            <meta name="keywords" content="">
             <link rel="canonical" href="<%= canonicalUrl %>">
             <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
                 <%- include('partials/hreflang') %>
-                    <%- include('partials/schema-faq', { faqItems: t.lovart_tutorial_page.faq.items }) %>
-                        <style>
-                            .page-header {
-                                background: linear-gradient(135deg, #1fa2ff 0%, #12d8fa 50%, #a6ffcb 100%);
-                                color: #1a1a1a;
-                                padding: 60px 0;
-                                text-align: center;
-                            }
-
-                            .page-header h1 {
-                                font-size: 3rem;
-                                margin-bottom: 20px;
-                                font-weight: 800;
-                                letter-spacing: -0.02em;
-                            }
-
-                            .page-header p {
-                                font-size: 1.25rem;
-                                opacity: 0.9;
-                                max-width: 800px;
-                                margin: 0 auto 30px;
-                                line-height: 1.6;
-                                color: #333;
-                            }
-
-                            .badge {
-                                display: inline-block;
-                                background: rgba(0, 0, 0, 0.1);
-                                backdrop-filter: blur(10px);
-                                padding: 8px 16px;
-                                border-radius: 20px;
-                                font-size: 0.9rem;
-                                font-weight: 600;
-                                margin-bottom: 20px;
-                                text-transform: uppercase;
-                                letter-spacing: 1px;
-                                color: #333;
-                            }
-
-                            .content-section {
-                                padding: 80px 0;
-                                background: #fafafa;
-                            }
-
-                            .card {
-                                background: white;
-                                border-radius: 20px;
-                                padding: 40px;
-                                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-                                margin-bottom: 40px;
-                            }
-
-                            .card h2 {
-                                font-size: 2rem;
-                                margin-bottom: 20px;
-                                color: #1a1a1a;
-                                font-weight: 700;
-                            }
-
-                            .step-container {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 30px;
-                                margin-top: 30px;
-                            }
-
-                            .step-item {
-                                display: flex;
-                                align-items: flex-start;
-                                gap: 20px;
-                                background: #fff;
-                                border: 1px solid #eee;
-                                padding: 30px;
-                                border-radius: 12px;
-                                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
-                            }
-
-                            .step-number {
-                                flex-shrink: 0;
-                                width: 50px;
-                                height: 50px;
-                                background: #1fa2ff;
-                                color: white;
-                                border-radius: 50%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                font-size: 1.5rem;
-                                font-weight: bold;
-                            }
-
-                            .step-content h3 {
-                                margin-top: 0;
-                                color: #333;
-                                font-size: 1.4rem;
-                                margin-bottom: 15px;
-                            }
-
-                            .step-content p {
-                                color: #666;
-                                line-height: 1.6;
-                                margin-bottom: 0;
-                                font-size: 1.05rem;
-                            }
-
-                            .faq-item {
-                                border-bottom: 1px solid #eee;
-                                padding: 25px 0;
-                            }
-
-                            .faq-item:last-child {
-                                border-bottom: none;
-                                padding-bottom: 0;
-                            }
-
-                            .faq-question {
-                                font-weight: 600;
-                                font-size: 1.2rem;
-                                color: #1a1a1a;
-                                margin-bottom: 10px;
-                                display: flex;
-                                align-items: flex-start;
-                                gap: 10px;
-                            }
-
-                            .faq-answer {
-                                color: #666;
-                                line-height: 1.6;
-                                margin: 0;
-                                padding-left: 34px;
-                            }
-
-                            .cta-buttons {
-                                display: flex;
-                                justify-content: center;
-                                gap: 15px;
-                                margin-top: 20px;
-                            }
-
-                            @media (max-width: 768px) {
+                    <link rel="stylesheet" href="/styles.css">
+                    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                    <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                        crossorigin="anonymous"></script>
+                    <%- include('partials/analytics') %>
+                        <%- include('partials/schema-faq', { faqItems: t.lovart_tutorial_page.faq.items }) %>
+                            <style>
                                 .page-header {
-                                    padding: 40px 0;
+                                    background: linear-gradient(135deg, #1fa2ff 0%, #12d8fa 50%, #a6ffcb 100%);
+                                    color: #1a1a1a;
+                                    padding: 60px 0;
+                                    text-align: center;
                                 }
 
                                 .page-header h1 {
-                                    font-size: 2.2rem;
+                                    font-size: 3rem;
+                                    margin-bottom: 20px;
+                                    font-weight: 800;
+                                    letter-spacing: -0.02em;
                                 }
 
-                                .step-item {
-                                    flex-direction: column;
+                                .page-header p {
+                                    font-size: 1.25rem;
+                                    opacity: 0.9;
+                                    max-width: 800px;
+                                    margin: 0 auto 30px;
+                                    line-height: 1.6;
+                                    color: #333;
                                 }
 
-                                .step-number {
-                                    margin-bottom: 15px;
+                                .badge {
+                                    display: inline-block;
+                                    background: rgba(0, 0, 0, 0.1);
+                                    backdrop-filter: blur(10px);
+                                    padding: 8px 16px;
+                                    border-radius: 20px;
+                                    font-size: 0.9rem;
+                                    font-weight: 600;
+                                    margin-bottom: 20px;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    color: #333;
                                 }
 
-                                .cta-buttons {
-                                    flex-direction: column;
-                                }
-
-                                .cta-buttons a {
-                                    width: 100%;
+                                .content-section {
+                                    padding: 80px 0;
+                                    background: #fafafa;
                                 }
 
                                 .card {
-                                    padding: 25px;
+                                    background: white;
+                                    border-radius: 20px;
+                                    padding: 40px;
+                                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                                    margin-bottom: 40px;
                                 }
-                            }
-                        </style>
+
+                                .card h2 {
+                                    font-size: 2rem;
+                                    margin-bottom: 20px;
+                                    color: #1a1a1a;
+                                    font-weight: 700;
+                                }
+
+                                .step-container {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 30px;
+                                    margin-top: 30px;
+                                }
+
+                                .step-item {
+                                    display: flex;
+                                    align-items: flex-start;
+                                    gap: 20px;
+                                    background: #fff;
+                                    border: 1px solid #eee;
+                                    padding: 30px;
+                                    border-radius: 12px;
+                                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+                                }
+
+                                .step-number {
+                                    flex-shrink: 0;
+                                    width: 50px;
+                                    height: 50px;
+                                    background: #1fa2ff;
+                                    color: white;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 1.5rem;
+                                    font-weight: bold;
+                                }
+
+                                .step-content h3 {
+                                    margin-top: 0;
+                                    color: #333;
+                                    font-size: 1.4rem;
+                                    margin-bottom: 15px;
+                                }
+
+                                .step-content p {
+                                    color: #666;
+                                    line-height: 1.6;
+                                    margin-bottom: 0;
+                                    font-size: 1.05rem;
+                                }
+
+                                .faq-item {
+                                    border-bottom: 1px solid #eee;
+                                    padding: 25px 0;
+                                }
+
+                                .faq-item:last-child {
+                                    border-bottom: none;
+                                    padding-bottom: 0;
+                                }
+
+                                .faq-question {
+                                    font-weight: 600;
+                                    font-size: 1.2rem;
+                                    color: #1a1a1a;
+                                    margin-bottom: 10px;
+                                    display: flex;
+                                    align-items: flex-start;
+                                    gap: 10px;
+                                }
+
+                                .faq-answer {
+                                    color: #666;
+                                    line-height: 1.6;
+                                    margin: 0;
+                                    padding-left: 34px;
+                                }
+
+                                .cta-buttons {
+                                    display: flex;
+                                    justify-content: center;
+                                    gap: 15px;
+                                    margin-top: 20px;
+                                }
+
+                                @media (max-width: 768px) {
+                                    .page-header {
+                                        padding: 40px 0;
+                                    }
+
+                                    .page-header h1 {
+                                        font-size: 2.2rem;
+                                    }
+
+                                    .step-item {
+                                        flex-direction: column;
+                                    }
+
+                                    .step-number {
+                                        margin-bottom: 15px;
+                                    }
+
+                                    .cta-buttons {
+                                        flex-direction: column;
+                                    }
+
+                                    .cta-buttons a {
+                                        width: 100%;
+                                    }
+
+                                    .card {
+                                        padding: 25px;
+                                    }
+                                }
+                            </style>
     </head>
 
     <body>
         <%- include('partials/header') %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
 
-            <main>
-                <header class="page-header">
-                    <div class="container">
-                        <span class="badge">
-                            <%= t.lovart_tutorial_page.hero.badge %>
-                        </span>
-                        <h1>
-                            <%= t.lovart_tutorial_page.hero.title %>
-                        </h1>
-                        <p>
-                            <%= t.lovart_tutorial_page.hero.subtitle %>
-                        </p>
-                        <div class="cta-buttons">
-                            <a href="https://lovart.ai" target="_blank" rel="noopener nofollow"
-                                class="btn btn-primary btn-lg">
-                                <%= t.lovart_tutorial_page.hero.cta_external %>
-                            </a>
-                            <a href="<%- link('/lovart-prompt-guide') %>" class="btn btn-dark btn-lg">
-                                <%= t.lovart_tutorial_page.hero.cta_internal %>
-                            </a>
-                        </div>
-                    </div>
-                </header>
-
-                <section class="content-section">
-                    <div class="container" style="max-width: 900px;">
-
-                        <div class="card">
-                            <p class="lead"
-                                style="font-size: 1.15rem; color: #555; line-height: 1.8; margin-bottom: 0;"><%-
-                                    t.lovart_tutorial_page.hero.content %></p>
-                        </div>
-
-                        <div class="card">
-                            <h2>
-                                <%= t.lovart_tutorial_page.getting_started.heading %>
-                            </h2>
-                            <p style="color: #666; line-height: 1.7; font-size: 1.05rem;">
-                                <%= t.lovart_tutorial_page.getting_started.desc %>
+                <main>
+                    <header class="page-header">
+                        <div class="container">
+                            <span class="badge">
+                                <%= t.lovart_tutorial_page.hero.badge %>
+                            </span>
+                            <h1>
+                                <%= t.lovart_tutorial_page.hero.title %>
+                            </h1>
+                            <p>
+                                <%= t.lovart_tutorial_page.hero.subtitle %>
                             </p>
+                            <div class="cta-buttons">
+                                <a href="https://lovart.ai" target="_blank" rel="noopener nofollow"
+                                    class="btn btn-primary btn-lg">
+                                    <%= t.lovart_tutorial_page.hero.cta_external %>
+                                </a>
+                                <a href="<%- link('/lovart-design-features') %>" class="btn btn-dark btn-lg">
+                                    <%= t.lovart_tutorial_page.hero.cta_internal %>
+                                </a>
+                            </div>
                         </div>
+                    </header>
 
-                        <%- include('partials/adsense') %>
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                    </section>
+
+                    <section class="content-section">
+                        <div class="container" style="max-width: 900px;">
+
+                            <div class="card">
+                                <p class="lead"
+                                    style="font-size: 1.15rem; color: #555; line-height: 1.8; margin-bottom: 0;"><%-
+                                        t.lovart_tutorial_page.hero.content %></p>
+                            </div>
 
                             <div class="card">
                                 <h2>
-                                    <%= t.lovart_tutorial_page.workflows.heading %>
+                                    <%= t.lovart_tutorial_page.getting_started.heading %>
                                 </h2>
-                                <p style="color: #666; margin-bottom: 30px;">
-                                    <%= t.lovart_tutorial_page.workflows.intro %>
+                                <p style="color: #666; line-height: 1.7; font-size: 1.05rem;">
+                                    <%= t.lovart_tutorial_page.getting_started.desc %>
                                 </p>
-
-                                <div class="step-container">
-                                    <% t.lovart_tutorial_page.workflows.steps.forEach(function(step, index) { %>
-                                        <div class="step-item">
-                                            <div class="step-number">
-                                                <%= index + 1 %>
-                                            </div>
-                                            <div class="step-content">
-                                                <h3>
-                                                    <%= step.title %>
-                                                </h3>
-                                                <p>
-                                                    <%= step.desc %>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <% }); %>
-                                </div>
                             </div>
 
                             <%- include('partials/adsense') %>
 
                                 <div class="card">
                                     <h2>
-                                        <%= t.lovart_tutorial_page.troubleshooting.heading %>
+                                        <%= t.lovart_tutorial_page.workflows.heading %>
                                     </h2>
-                                    <p style="color: #555; line-height: 1.7;">
-                                        <%= t.lovart_tutorial_page.troubleshooting.desc %>
+                                    <p style="color: #666; margin-bottom: 30px;">
+                                        <%= t.lovart_tutorial_page.workflows.intro %>
                                     </p>
-                                    <a href="<%- link('/lovart-login') %>" class="btn btn-outline-dark mt-3">Read Login
-                                        Help
-                                        →</a>
-                                </div>
 
-                                <div class="card">
-                                    <h2>
-                                        <%= t.lovart_tutorial_page.support.heading %>
-                                    </h2>
-                                    <p style="color: #555; line-height: 1.7;">
-                                        <%= t.lovart_tutorial_page.support.desc %>
-                                    </p>
-                                </div>
-
-                                <div class="card" id="faq">
-                                    <h2>
-                                        <%= t.lovart_tutorial_page.faq.heading %>
-                                    </h2>
-                                    <div class="faq-list">
-                                        <% t.lovart_tutorial_page.faq.items.forEach(function(item) { %>
-                                            <div class="faq-item">
-                                                <h3 class="faq-question">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                        stroke="#1fa2ff" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" style="flex-shrink: 0;">
-                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                                                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                                                    </svg>
-                                                    <%= item.q %>
-                                                </h3>
-                                                <p class="faq-answer">
-                                                    <%= item.a %>
-                                                </p>
+                                    <div class="step-container">
+                                        <% t.lovart_tutorial_page.workflows.steps.forEach(function(step, index) { %>
+                                            <div class="step-item">
+                                                <div class="step-number">
+                                                    <%= index + 1 %>
+                                                </div>
+                                                <div class="step-content">
+                                                    <h3>
+                                                        <%= step.title %>
+                                                    </h3>
+                                                    <p>
+                                                        <%= step.desc %>
+                                                    </p>
+                                                    <% if (index===0) { %>
+                                                        <div
+                                                            style="margin-top: 15px; padding: 15px; background: rgba(120, 75, 160, 0.05); border-radius: 8px; border-left: 4px solid #784BA0;">
+                                                            <strong
+                                                                style="color: #784BA0; font-size: 0.9rem; text-transform: uppercase;">Pro
+                                                                Tip</strong>
+                                                            <p style="margin: 5px 0 0 0; font-size: 0.95rem;">Not sure
+                                                                where to find the login portal? Read our <a
+                                                                    href="<%= link('/lovart-login-guide') %>"
+                                                                    style="color: #2B86C5; font-weight: 600; text-decoration: none;">Lovart
+                                                                    Login Guide</a> for quick access.</p>
+                                                        </div>
+                                                        <% } %>
+                                                </div>
                                             </div>
                                             <% }); %>
                                     </div>
                                 </div>
 
-                                <div style="text-align: center; margin-top: 40px;">
-                                    <%- include('partials/adsense') %>
-                                </div>
+                                <%- include('partials/adsense') %>
 
-                    </div>
-                </section>
-            </main>
+                                    <div class="card">
+                                        <h2>
+                                            <%= t.lovart_tutorial_page.troubleshooting.heading %>
+                                        </h2>
+                                        <p style="color: #555; line-height: 1.7;">
+                                            <%= t.lovart_tutorial_page.troubleshooting.desc %>
+                                        </p>
+                                        <a href="<%- link('/lovart-login-guide') %>"
+                                            class="btn btn-outline-dark mt-3">Read
+                                            Login
+                                            Help
+                                            →</a>
+                                    </div>
 
-            <%- include('partials/footer') %>
+                                    <div class="card">
+                                        <h2>
+                                            <%= t.lovart_tutorial_page.support.heading %>
+                                        </h2>
+                                        <p style="color: #555; line-height: 1.7;">
+                                            <%= t.lovart_tutorial_page.support.desc %>
+                                        </p>
+                                        <p style="color: #555; line-height: 1.7; margin-top: 14px;">
+                                            For hands-on practice, start with
+                                            <a href="<%= link('/lovart-logo') %>"
+                                                style="color: #2B86C5; font-weight: 600; text-decoration: none;">logo generation</a>
+                                            and then build a reusable
+                                            <a href="<%= link('/lovart-brand-kit') %>"
+                                                style="color: #2B86C5; font-weight: 600; text-decoration: none;">brand kit workflow</a>.
+                                            For better prompts and platform context, continue with
+                                            <a href="<%= link('/lovart-prompt-guide') %>"
+                                                style="color: #2B86C5; font-weight: 600; text-decoration: none;">prompt guide</a>
+                                            ,
+                                            <a href="<%= link('/lovart-pricing') %>"
+                                                style="color: #2B86C5; font-weight: 600; text-decoration: none;">pricing</a>
+                                            and
+                                            <a href="<%= link('/what-is-lovart') %>"
+                                                style="color: #2B86C5; font-weight: 600; text-decoration: none;">What is Lovart</a>.
+                                        </p>
+                                    </div>
+
+                                    <div class="card">
+                                        <h2>
+                                            <%= relatedSectionTitle %>
+                                        </h2>
+                                        <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+                                            <% relatedLinks.forEach(function(item) { %>
+                                                <li style="margin-bottom: 15px;">
+                                                    <a href="<%= item.href %>"
+                                                        style="color: #2B86C5; text-decoration: none; font-weight: 600;">
+                                                        <%= item.title %>
+                                                    </a>
+                                                </li>
+                                                <% }); %>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card" id="faq">
+                                        <h2>
+                                            <%= t.lovart_tutorial_page.faq.heading %>
+                                        </h2>
+                                        <div class="faq-list">
+                                            <% t.lovart_tutorial_page.faq.items.forEach(function(item) { %>
+                                                <div class="faq-item">
+                                                    <h3 class="faq-question">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="#1fa2ff" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" style="flex-shrink: 0;">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                                        </svg>
+                                                        <%= item.q %>
+                                                    </h3>
+                                                    <p class="faq-answer">
+                                                        <%= item.a %>
+                                                    </p>
+                                                </div>
+                                                <% }); %>
+                                        </div>
+                                    </div>
+
+                                    <div style="text-align: center; margin-top: 40px;">
+                                        <%- include('partials/adsense') %>
+                                    </div>
+
+                        </div>
+                    </section>
+                </main>
+
+                <%- include('partials/footer') %>
     </body>
 
     </html>

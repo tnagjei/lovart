@@ -3,7 +3,7 @@
     <html lang="<%= lang %>" class="scroll-smooth">
 
     <head>
-        <%- include('partials/head') %>
+        <%- include('partials/head', { pageSeo: t.lovart_login_page.seo }) %>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>
@@ -20,6 +20,7 @@
                     crossorigin="anonymous"></script>
                 <%- include('partials/analytics') %>
                     <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+                        <%- include('partials/schema-faq', { faqItems: t.lovart_login_page.faq.items }) %>
     </head>
 
     <body class="bg-neutral-light text-neutral-dark antialiased">
@@ -61,6 +62,10 @@
                         </div>
                     </section>
 
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                    </section>
+
                     <!-- Access Methods -->
                     <section class="py-16 bg-white">
                         <div class="container mx-auto px-6">
@@ -73,18 +78,32 @@
                                 </p>
                             </div>
                             <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                                <% t.lovart_login_page.access_methods.methods.forEach(method=> { %>
-                                    <div class="bg-neutral-light p-8 rounded-2xl border border-neutral/10">
+                                <% t.lovart_login_page.access_methods.methods.forEach((method, index)=> { %>
+                                    <div
+                                        class="bg-neutral-light p-8 rounded-2xl border border-neutral/10 flex flex-col">
                                         <h3 class="text-xl font-bold text-neutral-dark mb-3">
                                             <%= method.title %>
                                         </h3>
-                                        <p class="text-neutral leading-relaxed">
+                                        <p class="text-neutral leading-relaxed mb-4 flex-grow">
                                             <%= method.desc %>
                                         </p>
+                                        <% if (index===0) { %>
+                                            <a href="<%= link('/lovart-tutorial') %>"
+                                                class="text-primary hover:text-primary-dark font-medium text-sm mt-auto inline-block">View
+                                                Login Tutorial →</a>
+                                            <% } else if (index===1) { %>
+                                                <a href="<%= link('/what-is-lovart') %>"
+                                                    class="text-primary hover:text-primary-dark font-medium text-sm mt-auto inline-block">Learn
+                                                    about Lovart Features →</a>
+                                                <% } %>
                                     </div>
                                     <% }); %>
                             </div>
                         </div>
+                    </section>
+
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense') %>
                     </section>
 
                     <!-- Troubleshooting Steps -->
@@ -171,44 +190,100 @@
                             <p class="text-lg text-neutral mb-6">
                                 <%= t.lovart_login_page.official_support.desc %>
                             </p>
+                            <p class="text-sm text-neutral/80 mb-4">
+                                For specific ticket routing, use
+                                <a href="<%= link('/lovart-customer-support') %>"
+                                    class="text-primary hover:text-primary-dark font-medium">customer support guide</a>
+                                or
+                                <a href="<%= link('/lovart-support-contact') %>"
+                                    class="text-primary hover:text-primary-dark font-medium">official contact channels</a>
+                                before opening a new request. For billing access issues, verify your current plan on
+                                <a href="<%= link('/lovart-pricing') %>"
+                                    class="text-primary hover:text-primary-dark font-medium">Lovart pricing</a>.
+                            </p>
                             <p class="text-sm text-neutral/70 font-medium">Links: <%=
                                     t.lovart_login_page.official_support.links.join(' | ') %></p>
             </div>
         </section>
 
-        <!-- FAQ Section -->
-        <section class="py-16">
+        <section class="container mx-auto px-6 py-6">
+            <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+        </section>
+
+        <!-- Related Reading -->
+        <section class="py-12 bg-white border-y border-neutral/10">
             <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-3xl font-bold text-neutral-dark mb-10 text-center"><%= t.lovart_login_page.faq.heading %></h2>
-                    <div class="space-y-6">
-                        <% t.lovart_login_page.faq.items.forEach(item => { %>
-                        <div class="bg-white rounded-2xl p-6 border border-neutral/10 shadow-sm hover:shadow-md transition-shadow">
-                            <h3 class="text-xl font-bold text-neutral-dark mb-3"><%= item.q %></h3>
-                            <p class="text-neutral leading-relaxed"><%= item.a %></p>
+                <div class="max-w-4xl mx-auto bg-neutral-light rounded-2xl p-8 border border-neutral/10 shadow-sm">
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-6">Related Reading</h2>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="<%= link('/lovart-tutorial') %>" class="text-primary hover:text-primary-dark
+                                    font-medium transition-colors">How to Use Lovart for Beginners</a>
+                                    </li>
+                                    <li>
+                                        <a href="<%= link('/lovart-alternative') %>"
+                                            class="text-primary hover:text-primary-dark font-medium transition-colors">Lovart
+                                            vs Canva & Competitors</a>
+                                    </li>
+                                    <li>
+                                        <a href="<%= link('/what-is-lovart') %>"
+                                            class="text-primary hover:text-primary-dark font-medium transition-colors">What
+                                            is Lovart? A Deep Dive into the Platform</a>
+                                    </li>
+                                    </ul>
                         </div>
-                        <% }); %>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        </div>
+                    </section>
 
-        <!-- Bottom CTA -->
-        <section class="py-20">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto bg-gradient-to-r from-primary to-accent rounded-3xl p-10 sm:p-16 shadow-2xl text-center">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4"><%= t.lovart_login_page.cta.title %></h2>
-                    <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto"><%= t.lovart_login_page.cta.desc %></p>
-                    <a href="https://lovart.ai/login" target="_blank" rel="noopener"
-                        class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl bg-white text-primary hover:bg-neutral-light shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                        <%= t.lovart_login_page.cta.button %>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                    </section>
 
-    <%- include('partials/footer') %>
+                    <!-- FAQ Section -->
+                    <section class="py-16">
+                        <div class="container mx-auto px-6">
+                            <div class="max-w-4xl mx-auto">
+                                <h2 class="text-3xl font-bold text-neutral-dark mb-10 text-center">
+                                    <%= t.lovart_login_page.faq.heading %>
+                                </h2>
+                                <div class="space-y-6">
+                                    <% t.lovart_login_page.faq.items.forEach(item=> { %>
+                                        <div
+                                            class="bg-white rounded-2xl p-6 border border-neutral/10 shadow-sm hover:shadow-md transition-shadow">
+                                            <h3 class="text-xl font-bold text-neutral-dark mb-3">
+                                                <%= item.q %>
+                                            </h3>
+                                            <p class="text-neutral leading-relaxed">
+                                                <%= item.a %>
+                                            </p>
+                                        </div>
+                                        <% }); %>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Bottom CTA -->
+                    <section class="py-20">
+                        <div class="container mx-auto px-6">
+                            <div
+                                class="max-w-4xl mx-auto bg-gradient-to-r from-primary to-accent rounded-3xl p-10 sm:p-16 shadow-2xl text-center">
+                                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+                                    <%= t.lovart_login_page.cta.title %>
+                                </h2>
+                                <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+                                    <%= t.lovart_login_page.cta.desc %>
+                                </p>
+                                <a href="https://lovart.ai/login" target="_blank" rel="noopener"
+                                    class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl bg-white text-primary hover:bg-neutral-light shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                    <%= t.lovart_login_page.cta.button %>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+                <%- include('partials/footer') %>
     </body>
 
     </html>

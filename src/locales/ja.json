@@ -3277,6 +3277,9 @@
         }
       ]
     },
+    "related": {
+      "heading": "関連資料"
+    },
     "cta": {
       "title": "新しい創造の世界へ",
       "desc": "革新のツールをあなたの手に。",
@@ -3461,7 +3464,7 @@
       "title": "How to Use Lovart AI (使い方)",
       "subtitle": "初心者のための完全チュートリアル。わずか3ステップでプロのアセットを生成。",
       "cta_external": "アプリを起動",
-      "cta_internal": "プロンプトガイド",
+      "cta_internal": "機能を見る",
       "content": "公式の<strong>Lovart Tutorial</strong>へようこそ。<strong>how to use Lovart</strong>（使い方）を完璧にマスターし、AIを活用した迅速なデザインを始めたい方に最適なガイドです。最大の利点は、登録不要で無料で試せることです。このLovart tutorialでは、クリエイティブを向上させる3つの実践的なワークフローを紹介します。"
     },
     "getting_started": {

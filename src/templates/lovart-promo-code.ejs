@@ -20,6 +20,7 @@
                     crossorigin="anonymous"></script>
                 <%- include('partials/analytics') %>
                     <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+                        <%- include('partials/schema-faq', { faqItems: t.lovart_promo_page.faq.items }) %>
     </head>
 
     <body class="bg-neutral-light text-neutral-dark antialiased">
@@ -61,6 +62,10 @@
                         </div>
                     </section>
 
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                    </section>
+
                     <!-- Status Warning Box -->
                     <section class="py-8">
                         <div class="container mx-auto px-6">
@@ -74,6 +79,10 @@
                                 </p>
                             </div>
                         </div>
+                    </section>
+
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense') %>
                     </section>
 
                     <!-- Comparison Table -->
@@ -116,6 +125,10 @@
                         </div>
                     </section>
 
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense') %>
+                    </section>
+
                     <!-- Saving Paths -->
                     <section id="saving-paths" class="py-16">
                         <div class="container mx-auto px-6">
@@ -125,6 +138,15 @@
                                 </h2>
                                 <p class="text-lg text-neutral">
                                     <%= t.lovart_promo_page.saving_paths.intro %>
+                                </p>
+                                <p class="text-sm text-neutral/80 mt-4">
+                                    Need background before buying? Check the
+                                    <a href="<%= link('/lovart-invitation-code') %>"
+                                        class="text-primary hover:text-primary-dark font-medium">invitation code status</a>
+                                    and the latest
+                                    <a href="<%= link('/lovart-review') %>"
+                                        class="text-primary hover:text-primary-dark font-medium">Lovart review</a>
+                                    to verify value vs. current pricing.
                                 </p>
                             </div>
                             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -141,6 +163,10 @@
                                     <% }); %>
                             </div>
                         </div>
+                    </section>
+
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
                     </section>
 
                     <!-- FAQ Section -->

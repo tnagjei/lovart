@@ -1294,6 +1294,9 @@
         }
       ]
     },
+    "related": {
+      "heading": "Letture correlate"
+    },
     "cta": {
       "title": "Raggiungi l'Eccellenza in Metà delle Ore Lavorative Sprecate Prima",
       "desc": "È un salto cognitivo visivo globale necessario per restare al vertice oggi giorno nel panorama internazionale online ecc.",
@@ -1478,7 +1481,7 @@
       "title": "Scopri How to Use Lovart",
       "subtitle": "Il manuale per partire. Da zero ad asset commerciali completi in pochi minuti.",
       "cta_external": "Avvia App",
-      "cta_internal": "Documentazione AI",
+      "cta_internal": "Funzionalità",
       "content": "Benvenuto nel sito e nel <strong>Lovart Tutorial</strong> ufficiale. Se cerchi il metodo e la tecnica su <strong>how to use Lovart</strong> per eccellere, sei a casa. Disegnato per novizi assoluti, questo sistema ti permette di saltare il format di login. Prosegui in questo Lovart tutorial per capire le tre fasi primarie del workflow generativo."
     },
     "getting_started": {

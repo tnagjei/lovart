@@ -11,6 +11,14 @@ https://www.lovart.info/* https://lovart.info/:splat 301
 /es/index.html /es/ 301
 /it/index.html /it/ 301
 
+# Route migrations
+/lovart-login /lovart-login-guide 301
+/zh/lovart-login /zh/lovart-login-guide 301
+/fr/lovart-login /fr/lovart-login-guide 301
+/ja/lovart-login /ja/lovart-login-guide 301
+/es/lovart-login /es/lovart-login-guide 301
+/it/lovart-login /it/lovart-login-guide 301
+
 # Non-content entry paths should not be indexable
 /signup /404 404
 /login /404 404

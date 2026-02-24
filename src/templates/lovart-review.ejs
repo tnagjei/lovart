@@ -1,421 +1,421 @@
 <!DOCTYPE html>
-<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: t.lovart_review_page.seo.title, href:
-    canonicalUrl }]; %>
+<%
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: t.lovart_review_page.seo.title, href: canonicalUrl }];
+const relatedSectionTitle = (t.resources_section && t.resources_section.title) ? t.resources_section.title : 'Related Reading';
+const resourceCards = (t.resources_section && Array.isArray(t.resources_section.cards))
+    ? t.resources_section.cards
+    : [];
+const normalizeCardPath = (rawPath) => {
+    if (typeof rawPath !== 'string') return '';
+    return rawPath.replace(/^\/zh\//, '').replace(/^\//, '');
+};
+const cardTitleByPath = {};
+resourceCards.forEach((card) => {
+    const normalizedPath = normalizeCardPath(card.url);
+    if (normalizedPath && card && card.title) {
+        cardTitleByPath[normalizedPath] = card.title;
+    }
+});
+const fallbackTitleByPath = {
+    'lovart-alternative': t.lovart_alternative_page && t.lovart_alternative_page.seo ? t.lovart_alternative_page.seo.title : '',
+    'lovart-promo-code': t.lovart_promo_code_page && t.lovart_promo_code_page.seo ? t.lovart_promo_code_page.seo.title : '',
+    'what-is-lovart': t.what_is_lovart_page && t.what_is_lovart_page.seo ? t.what_is_lovart_page.seo.title : '',
+    'lovart-tutorial': t.lovart_tutorial_page && t.lovart_tutorial_page.seo ? t.lovart_tutorial_page.seo.title : ''
+};
+const relatedPaths = ['lovart-alternative', 'lovart-promo-code', 'what-is-lovart', 'lovart-tutorial'];
+const relatedLinks = relatedPaths
+    .map((path) => {
+        const title = cardTitleByPath[path] || fallbackTitleByPath[path];
+        if (!title) return null;
+        return { href: link('/' + path), title };
+    })
+    .filter(Boolean);
+%>
     <html lang="<%- lang %>">
 
     <head>
-        <%- include('partials/head', { seo: t.lovart_review_page.seo }) %>
+        <%- include('partials/head', { pageSeo: t.lovart_review_page.seo }) %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= t.lovart_review_page.seo.title %>
+            </title>
+            <meta name="description" content="<%= t.lovart_review_page.seo.description %>">
+            <meta name="keywords" content="">
             <link rel="canonical" href="<%= canonicalUrl %>">
             <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
                 <%- include('partials/hreflang') %>
-                    <style>
-                        .page-header {
-                            background: linear-gradient(135deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-                            color: white;
-                            padding: 60px 0;
-                            text-align: center;
-                        }
-
-                        .page-header h1 {
-                            font-size: 3rem;
-                            margin-bottom: 20px;
-                            font-weight: 800;
-                            letter-spacing: -0.02em;
-                        }
-
-                        .page-header p {
-                            font-size: 1.25rem;
-                            opacity: 0.9;
-                            max-width: 800px;
-                            margin: 0 auto 30px;
-                            line-height: 1.6;
-                        }
-
-                        .badge {
-                            display: inline-block;
-                            background: rgba(255, 255, 255, 0.2);
-                            backdrop-filter: blur(10px);
-                            padding: 8px 16px;
-                            border-radius: 20px;
-                            font-size: 0.9rem;
-                            font-weight: 600;
-                            margin-bottom: 20px;
-                            text-transform: uppercase;
-                            letter-spacing: 1px;
-                        }
-
-                        .content-section {
-                            padding: 80px 0;
-                        }
-
-                        .card {
-                            background: white;
-                            border-radius: 20px;
-                            padding: 40px;
-                            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-                            margin-bottom: 40px;
-                        }
-
-                        .card h2 {
-                            font-size: 2rem;
-                            margin-bottom: 20px;
-                            color: #1a1a1a;
-                            font-weight: 700;
-                        }
-
-                        .card h3 {
-                            font-size: 1.25rem;
-                            margin-bottom: 15px;
-                            color: #333;
-                            font-weight: 600;
-                        }
-
-                        .rating-bar {
-                            display: flex;
-                            align-items: center;
-                            margin-bottom: 15px;
-                        }
-
-                        .rating-label {
-                            width: 250px;
-                            font-weight: 600;
-                            color: #444;
-                        }
-
-                        .rating-track {
-                            flex-grow: 1;
-                            height: 12px;
-                            background: #eee;
-                            border-radius: 6px;
-                            overflow: hidden;
-                            margin: 0 15px;
-                        }
-
-                        .rating-fill {
-                            height: 100%;
-                            background: linear-gradient(90deg, #FF3CAC, #784BA0);
-                            border-radius: 6px;
-                        }
-
-                        .rating-score {
-                            width: 60px;
-                            font-weight: 700;
-                            color: #784BA0;
-                            text-align: right;
-                        }
-
-                        .pros-cons {
-                            display: grid;
-                            grid-template-columns: 1fr 1fr;
-                            gap: 30px;
-                            margin-top: 30px;
-                        }
-
-                        .pros-box,
-                        .cons-box {
-                            padding: 30px;
-                            border-radius: 12px;
-                        }
-
-                        .pros-box {
-                            background: rgba(46, 204, 113, 0.1);
-                            border: 1px solid rgba(46, 204, 113, 0.2);
-                        }
-
-                        .cons-box {
-                            background: rgba(231, 76, 60, 0.1);
-                            border: 1px solid rgba(231, 76, 60, 0.2);
-                        }
-
-                        .pros-box h3 {
-                            color: #27ae60;
-                            display: flex;
-                            align-items: center;
-                            gap: 10px;
-                            margin-top: 0;
-                        }
-
-                        .cons-box h3 {
-                            color: #c0392b;
-                            display: flex;
-                            align-items: center;
-                            gap: 10px;
-                            margin-top: 0;
-                        }
-
-                        ul.check-list {
-                            list-style: none;
-                            padding: 0;
-                            margin: 0;
-                        }
-
-                        ul.check-list li {
-                            position: relative;
-                            padding-left: 30px;
-                            margin-bottom: 15px;
-                            line-height: 1.5;
-                            color: #555;
-                        }
-
-                        ul.check-list.pros li::before {
-                            content: '✓';
-                            color: #27ae60;
-                            position: absolute;
-                            left: 0;
-                            font-weight: bold;
-                        }
-
-                        ul.check-list.cons li::before {
-                            content: '✗';
-                            color: #c0392b;
-                            position: absolute;
-                            left: 0;
-                            font-weight: bold;
-                        }
-
-                        .scenario-grid {
-                            display: grid;
-                            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                            gap: 30px;
-                            margin-top: 40px;
-                        }
-
-                        .scenario-card {
-                            background: #f8f9fa;
-                            border-radius: 16px;
-                            padding: 30px;
-                            text-align: left;
-                            transition: transform 0.3s ease;
-                            border: 1px solid #eee;
-                        }
-
-                        .scenario-card:hover {
-                            transform: translateY(-5px);
-                            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-                        }
-
-                        .scenario-card h3 {
-                            color: #2B86C5;
-                            margin-bottom: 15px;
-                            font-size: 1.4rem;
-                        }
-
-                        .faq-item {
-                            border-bottom: 1px solid #eee;
-                            padding: 25px 0;
-                        }
-
-                        .faq-item:last-child {
-                            border-bottom: none;
-                            padding-bottom: 0;
-                        }
-
-                        .faq-question {
-                            font-weight: 600;
-                            font-size: 1.2rem;
-                            color: #1a1a1a;
-                            margin-bottom: 10px;
-                            display: flex;
-                            align-items: flex-start;
-                            gap: 10px;
-                        }
-
-                        .faq-answer {
-                            color: #666;
-                            line-height: 1.6;
-                            margin: 0;
-                            padding-left: 34px;
-                        }
-
-                        .cta-buttons {
-                            display: flex;
-                            justify-content: center;
-                            gap: 15px;
-                            margin-top: 20px;
-                        }
-
-                        @media (max-width: 768px) {
+                    <link rel="stylesheet" href="/styles.css">
+                    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                    <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                        crossorigin="anonymous"></script>
+                    <%- include('partials/analytics') %>
+                        <style>
                             .page-header {
-                                padding: 40px 0;
+                                background: linear-gradient(135deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+                                color: white;
+                                padding: 60px 0;
+                                text-align: center;
                             }
 
                             .page-header h1 {
-                                font-size: 2.2rem;
+                                font-size: 3rem;
+                                margin-bottom: 20px;
+                                font-weight: 800;
+                                letter-spacing: -0.02em;
                             }
 
-                            .pros-cons {
-                                grid-template-columns: 1fr;
+                            .page-header p {
+                                font-size: 1.25rem;
+                                opacity: 0.9;
+                                max-width: 800px;
+                                margin: 0 auto 30px;
+                                line-height: 1.6;
+                            }
+
+                            .badge {
+                                display: inline-block;
+                                background: rgba(255, 255, 255, 0.2);
+                                backdrop-filter: blur(10px);
+                                padding: 8px 16px;
+                                border-radius: 20px;
+                                font-size: 0.9rem;
+                                font-weight: 600;
+                                margin-bottom: 20px;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                            }
+
+                            .content-section {
+                                padding: 80px 0;
+                            }
+
+                            .card {
+                                background: white;
+                                border-radius: 20px;
+                                padding: 40px;
+                                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                                margin-bottom: 40px;
+                            }
+
+                            .card h2 {
+                                font-size: 2rem;
+                                margin-bottom: 20px;
+                                color: #1a1a1a;
+                                font-weight: 700;
+                            }
+
+                            .card h3 {
+                                font-size: 1.25rem;
+                                margin-bottom: 15px;
+                                color: #333;
+                                font-weight: 600;
                             }
 
                             .rating-bar {
-                                flex-direction: column;
-                                align-items: flex-start;
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 15px;
                             }
 
                             .rating-label {
-                                width: 100%;
-                                margin-bottom: 8px;
+                                width: 250px;
+                                font-weight: 600;
+                                color: #444;
                             }
 
                             .rating-track {
-                                width: 100%;
-                                margin: 8px 0;
+                                flex-grow: 1;
+                                height: 12px;
+                                background: #eee;
+                                border-radius: 6px;
+                                overflow: hidden;
+                                margin: 0 15px;
+                            }
+
+                            .rating-fill {
+                                height: 100%;
+                                background: linear-gradient(90deg, #FF3CAC, #784BA0);
+                                border-radius: 6px;
                             }
 
                             .rating-score {
-                                width: 100%;
+                                width: 60px;
+                                font-weight: 700;
+                                color: #784BA0;
+                                text-align: right;
+                            }
+
+                            .pros-cons {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                gap: 30px;
+                                margin-top: 30px;
+                            }
+
+                            .pros-box,
+                            .cons-box {
+                                padding: 30px;
+                                border-radius: 12px;
+                            }
+
+                            .pros-box {
+                                background: rgba(46, 204, 113, 0.1);
+                                border: 1px solid rgba(46, 204, 113, 0.2);
+                            }
+
+                            .cons-box {
+                                background: rgba(231, 76, 60, 0.1);
+                                border: 1px solid rgba(231, 76, 60, 0.2);
+                            }
+
+                            .pros-box h3 {
+                                color: #27ae60;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                margin-top: 0;
+                            }
+
+                            .cons-box h3 {
+                                color: #c0392b;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                margin-top: 0;
+                            }
+
+                            ul.check-list {
+                                list-style: none;
+                                padding: 0;
+                                margin: 0;
+                            }
+
+                            ul.check-list li {
+                                position: relative;
+                                padding-left: 30px;
+                                margin-bottom: 15px;
+                                line-height: 1.5;
+                                color: #555;
+                            }
+
+                            ul.check-list.pros li::before {
+                                content: '✓';
+                                color: #27ae60;
+                                position: absolute;
+                                left: 0;
+                                font-weight: bold;
+                            }
+
+                            ul.check-list.cons li::before {
+                                content: '✗';
+                                color: #c0392b;
+                                position: absolute;
+                                left: 0;
+                                font-weight: bold;
+                            }
+
+                            .scenario-grid {
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                                gap: 30px;
+                                margin-top: 40px;
+                            }
+
+                            .scenario-card {
+                                background: #f8f9fa;
+                                border-radius: 16px;
+                                padding: 30px;
                                 text-align: left;
+                                transition: transform 0.3s ease;
+                                border: 1px solid #eee;
+                            }
+
+                            .scenario-card:hover {
+                                transform: translateY(-5px);
+                                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+                            }
+
+                            .scenario-card h3 {
+                                color: #2B86C5;
+                                margin-bottom: 15px;
+                                font-size: 1.4rem;
+                            }
+
+                            .faq-item {
+                                border-bottom: 1px solid #eee;
+                                padding: 25px 0;
+                            }
+
+                            .faq-item:last-child {
+                                border-bottom: none;
+                                padding-bottom: 0;
+                            }
+
+                            .faq-question {
+                                font-weight: 600;
+                                font-size: 1.2rem;
+                                color: #1a1a1a;
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                                gap: 10px;
+                            }
+
+                            .faq-answer {
+                                color: #666;
+                                line-height: 1.6;
+                                margin: 0;
+                                padding-left: 34px;
                             }
 
                             .cta-buttons {
-                                flex-direction: column;
+                                display: flex;
+                                justify-content: center;
+                                gap: 15px;
+                                margin-top: 20px;
                             }
 
-                            .cta-buttons a {
-                                width: 100%;
+                            @media (max-width: 768px) {
+                                .page-header {
+                                    padding: 40px 0;
+                                }
+
+                                .page-header h1 {
+                                    font-size: 2.2rem;
+                                }
+
+                                .pros-cons {
+                                    grid-template-columns: 1fr;
+                                }
+
+                                .rating-bar {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                }
+
+                                .rating-label {
+                                    width: 100%;
+                                    margin-bottom: 8px;
+                                }
+
+                                .rating-track {
+                                    width: 100%;
+                                    margin: 8px 0;
+                                }
+
+                                .rating-score {
+                                    width: 100%;
+                                    text-align: left;
+                                }
+
+                                .cta-buttons {
+                                    flex-direction: column;
+                                }
+
+                                .cta-buttons a {
+                                    width: 100%;
+                                }
                             }
-                        }
-                    </style>
-                    <%- include('partials/schema-faq', { faqItems: t.lovart_review_page.faq.items }) %>
+                        </style>
+                        <%- include('partials/schema-faq', { faqItems: t.lovart_review_page.faq.items }) %>
     </head>
 
     <body>
         <%- include('partials/header') %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
 
-            <main>
-                <header class="page-header">
-                    <div class="container">
-                        <span class="badge">
-                            <%= t.lovart_review_page.hero.badge %>
-                        </span>
-                        <h1>
-                            <%= t.lovart_review_page.hero.title %>
-                        </h1>
-                        <p>
-                            <%= t.lovart_review_page.hero.subtitle %>
-                        </p>
-                        <div class="cta-buttons">
-                            <a href="https://lovart.ai" target="_blank" rel="noopener nofollow"
-                                class="btn btn-primary btn-lg">
-                                <%= t.lovart_review_page.hero.cta_external %>
-                            </a>
-                            <a href="<%- link('/lovart-pricing') %>" class="btn btn-secondary btn-lg">
-                                <%= t.lovart_review_page.hero.cta_internal %>
-                            </a>
-                        </div>
-                    </div>
-                </header>
-
-                <section class="content-section bg-light">
-                    <div class="container" style="max-width: 900px;">
-
-                        <div class="card">
-                            <p class="lead"
-                                style="font-size: 1.15rem; color: #555; line-height: 1.8; margin-bottom: 0;">
-                                <%- t.lovart_review_page.hero.content %>
+                <main>
+                    <header class="page-header">
+                        <div class="container">
+                            <span class="badge">
+                                <%= t.lovart_review_page.hero.badge %>
+                            </span>
+                            <h1>
+                                <%= t.lovart_review_page.hero.title %>
+                            </h1>
+                            <p>
+                                <%= t.lovart_review_page.hero.subtitle %>
                             </p>
-                        </div>
-
-                        <div class="card">
-                            <h2>
-                                <%= t.lovart_review_page.verdict.heading %>
-                            </h2>
-                            <p style="color: #666; margin-bottom: 30px;">
-                                <%= t.lovart_review_page.verdict.desc %>
-                            </p>
-
-                            <div class="pros-cons">
-                                <div class="pros-box">
-                                    <h3>
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <polyline points="20 6 9 17 4 12"></polyline>
-                                        </svg>
-                                        Pros
-                                    </h3>
-                                    <ul class="check-list pros">
-                                        <% t.lovart_review_page.verdict.pros.forEach(function(pro) { %>
-                                            <li>
-                                                <%= pro %>
-                                            </li>
-                                            <% }); %>
-                                    </ul>
-                                </div>
-                                <div class="cons-box">
-                                    <h3>
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                        Cons
-                                    </h3>
-                                    <ul class="check-list cons">
-                                        <% t.lovart_review_page.verdict.cons.forEach(function(con) { %>
-                                            <li>
-                                                <%= con %>
-                                            </li>
-                                            <% }); %>
-                                    </ul>
-                                </div>
+                            <div class="cta-buttons">
+                                <a href="https://lovart.ai" target="_blank" rel="noopener nofollow"
+                                    class="btn btn-primary btn-lg">
+                                    <%= t.lovart_review_page.hero.cta_external %>
+                                </a>
+                                <a href="<%- link('/lovart-pricing') %>" class="btn btn-secondary btn-lg">
+                                    <%= t.lovart_review_page.hero.cta_internal %>
+                                </a>
                             </div>
                         </div>
+                    </header>
 
-                        <%- include('partials/adsense') %>
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                    </section>
+
+                    <section class="content-section bg-light">
+                        <div class="container" style="max-width: 900px;">
+
+                            <div class="card">
+                                <p class="lead"
+                                    style="font-size: 1.15rem; color: #555; line-height: 1.8; margin-bottom: 0;">
+                                    <%- t.lovart_review_page.hero.content %>
+                                </p>
+                            </div>
 
                             <div class="card">
                                 <h2>
-                                    <%= t.lovart_review_page.ratings.heading %>
+                                    <%= t.lovart_review_page.verdict.heading %>
                                 </h2>
                                 <p style="color: #666; margin-bottom: 30px;">
-                                    <%= t.lovart_review_page.ratings.desc %>
+                                    <%= t.lovart_review_page.verdict.desc %>
+                                </p>
+                                <p style="color: #555; line-height: 1.7; margin-top: -10px; margin-bottom: 24px;">
+                                    If you are still deciding, compare options on
+                                    <a href="<%= link('/lovart-alternative') %>"
+                                        style="color: #2B86C5; font-weight: 600; text-decoration: none;">Lovart Alternatives</a>
+                                    and read the product context in
+                                    <a href="<%= link('/what-is-lovart') %>"
+                                        style="color: #2B86C5; font-weight: 600; text-decoration: none;">What is Lovart</a>.
                                 </p>
 
-                                <div class="ratings-container">
-                                    <% t.lovart_review_page.ratings.categories.forEach(function(cat) { const
-                                        percentage=parseFloat(cat.score.split('/')[0]) * 10; %>
-                                        <div class="rating-bar">
-                                            <div class="rating-label">
-                                                <%= cat.name %>
-                                                    <div
-                                                        style="font-size: 0.85rem; font-weight: normal; color: #888; margin-top: 4px;">
-                                                        <%= cat.details %>
-                                                    </div>
-                                            </div>
-                                            <div class="rating-track">
-                                                <div class="rating-fill"
-                                                    style="--rating-width: <%= percentage %>%; width: var(--rating-width);">
-                                                </div>
-                                            </div>
-                                            <div class="rating-score">
-                                                <%= cat.score %>
-                                            </div>
-                                        </div>
-                                        <% }); %>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <h2>
-                                    <%= t.lovart_review_page.scenarios.heading %>
-                                </h2>
-                                <p style="color: #666;">
-                                    <%= t.lovart_review_page.scenarios.intro %>
-                                </p>
-
-                                <div class="scenario-grid">
-                                    <% t.lovart_review_page.scenarios.items.forEach(function(item) { %>
-                                        <div class="scenario-card">
-                                            <h3>
-                                                <%= item.title %>
-                                            </h3>
-                                            <p style="color: #555; line-height: 1.6; margin: 0;">
-                                                <%= item.desc %>
-                                            </p>
-                                        </div>
-                                        <% }); %>
+                                <div class="pros-cons">
+                                    <div class="pros-box">
+                                        <h3>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            Pros
+                                        </h3>
+                                        <ul class="check-list pros">
+                                            <% t.lovart_review_page.verdict.pros.forEach(function(pro) { %>
+                                                <li>
+                                                    <%= pro %>
+                                                </li>
+                                                <% }); %>
+                                        </ul>
+                                    </div>
+                                    <div class="cons-box">
+                                        <h3>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                                            </svg>
+                                            Cons
+                                        </h3>
+                                        <ul class="check-list cons">
+                                            <% t.lovart_review_page.verdict.cons.forEach(function(con) { %>
+                                                <li>
+                                                    <%= con %>
+                                                </li>
+                                                <% }); %>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
@@ -423,50 +423,122 @@
 
                                 <div class="card">
                                     <h2>
-                                        <%= t.lovart_review_page.pricing.heading %>
+                                        <%= t.lovart_review_page.ratings.heading %>
                                     </h2>
-                                    <p style="color: #555; line-height: 1.7; margin-bottom: 25px;">
-                                        <%= t.lovart_review_page.pricing.desc %>
+                                    <p style="color: #666; margin-bottom: 30px;">
+                                        <%= t.lovart_review_page.ratings.desc %>
                                     </p>
-                                    <a href="<%- link('/lovart-pricing') %>" class="btn btn-outline-primary">
-                                        <%= t.lovart_review_page.pricing.button %> →
-                                    </a>
+
+                                    <div class="ratings-container">
+                                        <% t.lovart_review_page.ratings.categories.forEach(function(cat) { const
+                                            percentage=parseFloat(cat.score.split('/')[0]) * 10; %>
+                                            <div class="rating-bar">
+                                                <div class="rating-label">
+                                                    <%= cat.name %>
+                                                        <div
+                                                            style="font-size: 0.85rem; font-weight: normal; color: #888; margin-top: 4px;">
+                                                            <%= cat.details %>
+                                                        </div>
+                                                </div>
+                                                <div class="rating-track">
+                                                    <div class="rating-fill"
+                                                        style="--rating-width: <%= percentage %>%; width: var(--rating-width);">
+                                                    </div>
+                                                </div>
+                                                <div class="rating-score">
+                                                    <%= cat.score %>
+                                                </div>
+                                            </div>
+                                            <% }); %>
+                                    </div>
                                 </div>
 
-                                <div class="card" id="faq">
+                                <div class="card">
                                     <h2>
-                                        <%= t.lovart_review_page.faq.heading %>
+                                        <%= t.lovart_review_page.scenarios.heading %>
                                     </h2>
-                                    <div class="faq-list">
-                                        <% t.lovart_review_page.faq.items.forEach(function(item) { %>
-                                            <div class="faq-item">
-                                                <h3 class="faq-question">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                        stroke="#784BA0" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" style="flex-shrink: 0;">
-                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                                                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                                                    </svg>
-                                                    <%= item.q %>
+                                    <p style="color: #666;">
+                                        <%= t.lovart_review_page.scenarios.intro %>
+                                    </p>
+
+                                    <div class="scenario-grid">
+                                        <% t.lovart_review_page.scenarios.items.forEach(function(item) { %>
+                                            <div class="scenario-card">
+                                                <h3>
+                                                    <%= item.title %>
                                                 </h3>
-                                                <p class="faq-answer">
-                                                    <%= item.a %>
+                                                <p style="color: #555; line-height: 1.6; margin: 0;">
+                                                    <%= item.desc %>
                                                 </p>
                                             </div>
                                             <% }); %>
                                     </div>
                                 </div>
 
-                                <div style="text-align: center; margin-top: 40px;">
-                                    <%- include('partials/adsense') %>
-                                </div>
+                                <%- include('partials/adsense') %>
 
-                    </div>
-                </section>
-            </main>
+                                    <div class="card">
+                                        <h2>
+                                            <%= t.lovart_review_page.pricing.heading %>
+                                        </h2>
+                                        <p style="color: #555; line-height: 1.7; margin-bottom: 25px;">
+                                            <%= t.lovart_review_page.pricing.desc %>
+                                        </p>
+                                        <a href="<%- link('/lovart-pricing') %>" class="btn btn-outline-primary">
+                                            <%= t.lovart_review_page.pricing.button %> →
+                                        </a>
+                                    </div>
 
-            <%- include('partials/footer') %>
+                                    <div class="card">
+                                        <h2>
+                                            <%= relatedSectionTitle %>
+                                        </h2>
+                                        <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+                                            <% relatedLinks.forEach(function(item) { %>
+                                                <li style="margin-bottom: 15px;">
+                                                    <a href="<%= item.href %>"
+                                                        style="color: #2B86C5; text-decoration: none; font-weight: 600;">
+                                                        <%= item.title %>
+                                                    </a>
+                                                </li>
+                                                <% }); %>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card" id="faq">
+                                        <h2>
+                                            <%= t.lovart_review_page.faq.heading %>
+                                        </h2>
+                                        <div class="faq-list">
+                                            <% t.lovart_review_page.faq.items.forEach(function(item) { %>
+                                                <div class="faq-item">
+                                                    <h3 class="faq-question">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="#784BA0" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" style="flex-shrink: 0;">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                                        </svg>
+                                                        <%= item.q %>
+                                                    </h3>
+                                                    <p class="faq-answer">
+                                                        <%= item.a %>
+                                                    </p>
+                                                </div>
+                                                <% }); %>
+                                        </div>
+                                    </div>
+
+                                    <div style="text-align: center; margin-top: 40px;">
+                                        <%- include('partials/adsense') %>
+                                    </div>
+
+                        </div>
+                    </section>
+                </main>
+
+                <%- include('partials/footer') %>
     </body>
 
     </html>

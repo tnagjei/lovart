@@ -3277,6 +3277,9 @@
         }
       ]
     },
+    "related": {
+      "heading": "Lectures associées"
+    },
     "cta": {
       "title": "Libérez Votre Imaginaire",
       "desc": "L'art alimenté par la science, disponible tout de suite.",
@@ -3461,7 +3464,7 @@
       "title": "Exploration et How to Use Lovart AI",
       "subtitle": "Un accès complet aux commandes essentielles de base en franchissant trois stades clés et claires.",
       "cta_external": "Console Centrale",
-      "cta_internal": "Documentations & Astuces",
+      "cta_internal": "Voir les Fonctionnalités",
       "content": "Bienvenue dans le manuel pédagogique <strong>Lovart Tutorial</strong>. S'il vous est difficile d'optimiser l'outil ou s'installer avec fermeté vers une profession avec IA, <strong>how to use Lovart</strong> devrait devenir votre question et mot de repère. Le gros argument est ce pass sans enregistrement nécessaire pour naviguer ! Accrochez-vous fermement aux directives de cette structure révisée de Lovart tutorial pour concevoir dès à présent trois logistiques pratiques pour des assets remarquables."
     },
     "getting_started": {

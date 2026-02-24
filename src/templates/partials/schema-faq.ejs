@@ -1,23 +1,24 @@
 <!-- FAQ Schema Partial -->
-<% const items=locals.faqItems || (t.help_page && t.help_page.faq && t.help_page.faq.items) || []; %>
-  <script type="application/ld+json">
-{
+<%
+const items = locals.faqItems || (t.help_page && t.help_page.faq && t.help_page.faq.items) || [];
+const schema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
-    <% items.forEach(function(item, index) { 
-      const q = (item.question || item.q || "").replace(/"/g, '\\"');
-      const a = (item.answer || item.a || "").replace(/<[^>]*>/g, '').replace(/"/g, '\\"').replace(/\n/g, ' ').trim();
-    %>
-    {
-      "@type": "Question",
-      "name": "<%= q %>",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "<%= a %>"
-      }
-    }<%= index < items.length - 1 ? ',' : '' %>
-    <% }); %>
-  ]
-}
-</script>
+  "mainEntity": items.map((item) => ({
+    "@type": "Question",
+    "name": String(item.question || item.q || ''),
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": String(item.answer || item.a || '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/\n/g, ' ')
+        .trim()
+    }
+  }))
+};
+const safeJsonLd = JSON.stringify(schema)
+  .replace(/</g, '\\u003c')
+  .replace(/>/g, '\\u003e')
+  .replace(/&/g, '\\u0026');
+%>
+<script type="application/ld+json"><%- safeJsonLd %></script>

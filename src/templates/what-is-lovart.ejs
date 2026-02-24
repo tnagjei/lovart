@@ -20,6 +20,7 @@
                     crossorigin="anonymous"></script>
                 <%- include('partials/analytics') %>
                     <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+                        <%- include('partials/schema-faq', { faqItems: t.what_is_lovart_page.faq.items }) %>
     </head>
 
     <body class="bg-neutral-light text-neutral-dark antialiased">
@@ -61,6 +62,10 @@
                         </div>
                     </section>
 
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                    </section>
+
                     <!-- One-Sentence Definition -->
                     <section class="py-12">
                         <div class="container mx-auto px-6">
@@ -75,6 +80,10 @@
                         </div>
                     </section>
 
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                    </section>
+
                     <!-- Core Use Scenarios -->
                     <section class="py-16 bg-white">
                         <div class="container mx-auto px-6">
@@ -87,19 +96,36 @@
                                 </p>
                             </div>
                             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                                <% t.what_is_lovart_page.scenarios.items.forEach(s=> { %>
+                                <% t.what_is_lovart_page.scenarios.items.forEach((s, index)=> { %>
                                     <div
-                                        class="bg-neutral-light p-8 rounded-2xl border border-neutral/10 hover:-translate-y-1 transition duration-300">
+                                        class="bg-neutral-light p-8 rounded-2xl border border-neutral/10 hover:-translate-y-1 transition duration-300 flex flex-col">
                                         <h3 class="text-xl font-bold text-neutral-dark mb-3">
                                             <%= s.title %>
                                         </h3>
-                                        <p class="text-neutral leading-relaxed">
+                                        <p class="text-neutral leading-relaxed mb-4 flex-grow">
                                             <%= s.desc %>
                                         </p>
+                                        <% if (index===0) { %>
+                                            <a href="<%= link('/lovart-tutorial') %>"
+                                                class="text-primary hover:text-primary-dark font-medium text-sm mt-auto inline-block">See
+                                                Beginner's Guide →</a>
+                                            <% } else if (index===1) { %>
+                                                <a href="<%= link('/lovart-alternative') %>"
+                                                    class="text-primary hover:text-primary-dark font-medium text-sm mt-auto inline-block">Compare
+                                                    Tools →</a>
+                                                <% } else if (index===2) { %>
+                                                    <a href="<%= link('/lovart-review') %>"
+                                                        class="text-primary hover:text-primary-dark font-medium text-sm mt-auto inline-block">Read
+                                                        full review →</a>
+                                                    <% } %>
                                     </div>
                                     <% }); %>
                             </div>
                         </div>
+                    </section>
+
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense') %>
                     </section>
 
                     <!-- Comparison Table -->
@@ -143,6 +169,10 @@
                         </div>
                     </section>
 
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                    </section>
+
                     <!-- Safety Block -->
                     <section class="py-16 bg-white">
                         <div class="container mx-auto px-6">
@@ -153,6 +183,45 @@
                                 <p class="text-lg text-neutral leading-relaxed">
                                     <%= t.what_is_lovart_page.safety.desc %>
                                 </p>
+                                <p class="text-sm text-neutral/80 mt-4">
+                                    If you are evaluating workflow depth, read the
+                                    <a href="<%= link('/lovart-api') %>"
+                                        class="text-primary hover:text-primary-dark font-medium">Lovart API guide</a>
+                                    and compare practical tradeoffs in our
+                                    <a href="<%= link('/lovart-review') %>"
+                                        class="text-primary hover:text-primary-dark font-medium">Lovart review</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Related Reading -->
+                    <section class="py-12 bg-neutral-light">
+                        <div class="container mx-auto px-6">
+                            <div class="max-w-4xl mx-auto bg-white rounded-2xl p-8 border border-neutral/10 shadow-sm">
+                                <h2 class="text-2xl font-bold text-neutral-dark mb-6">
+                                    <%= (t.what_is_lovart_page.related && t.what_is_lovart_page.related.heading) || 'Related Reading' %>
+                                </h2>
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a href="<%= link('/lovart-alternative') %>"
+                                            class="text-primary hover:text-primary-dark font-medium transition-colors">
+                                            <%= (t.lovart_alternative_page && t.lovart_alternative_page.seo && t.lovart_alternative_page.seo.title) || 'Lovart Alternative' %>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<%= link('/lovart-tutorial') %>"
+                                            class="text-primary hover:text-primary-dark font-medium transition-colors">
+                                            <%= (t.lovart_tutorial_page && t.lovart_tutorial_page.seo && t.lovart_tutorial_page.seo.title) || 'Lovart Tutorial' %>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<%= link('/lovart-review') %>"
+                                            class="text-primary hover:text-primary-dark font-medium transition-colors">
+                                            <%= (t.lovart_review_page && t.lovart_review_page.seo && t.lovart_review_page.seo.title) || 'Lovart Review' %>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </section>

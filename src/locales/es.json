@@ -1294,6 +1294,9 @@
         }
       ]
     },
+    "related": {
+      "heading": "Lecturas relacionadas"
+    },
     "cta": {
       "title": "Conviértete en un pionero",
       "desc": "Empieza la transición ya mismo.",
@@ -1478,7 +1481,7 @@
       "title": "Cómo usar Lovart (How to Use Lovart)",
       "subtitle": "El tutorial definitivo para principiantes. Crea activos profesionales en tres pasos.",
       "cta_external": "Abrir Aplicación",
-      "cta_internal": "Guía de Prompts",
+      "cta_internal": "Ver Funciones",
       "content": "Bienvenido al <strong>Lovart Tutorial</strong> oficial. Si te preguntas <strong>how to use Lovart</strong> al máximo, estás en el lugar correcto. Diseñado para principiantes que buscan diseño rápido con IA, su ventaja es que no requiere registro. En este Lovart tutorial, te mostraremos tres flujos de trabajo que elevarán tu producción."
     },
     "getting_started": {

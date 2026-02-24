@@ -3633,6 +3633,9 @@
         }
       ]
     },
+    "related": {
+      "heading": "相关阅读"
+    },
     "cta": {
       "title": "答案就在行动中",
       "desc": "不要只是停留在提问阶段，今天就沉浸式测试其实力，开启您的视觉自动化新篇章。",
@@ -3817,7 +3820,7 @@
       "title": "如何充分使用 Lovart (How to Use Lovart)",
       "subtitle": "从核心基础到高级应用的全面指南。仅需三步即可掌握核心资产的生成技巧。",
       "cta_external": "启动 Web App",
-      "cta_internal": "查看提示词指南",
+      "cta_internal": "查看功能",
       "content": "欢迎来到官方呈现的 <strong>Lovart Tutorial</strong>。如果您正在寻找 <strong>how to use Lovart</strong> 来最大化释放个人创造力，那么您来对地方了。这份指南专为那些希望利用 AI 进行极速设计的初学者量身打造。该平台的一大优势在于其可以完全免注册体验。在本篇 Lovart tutorial 中，我们将向您介绍工作流程及操作界面，并帮助您的创意产出瞬间升级。"
     },
     "getting_started": {
@@ -3867,5 +3870,93 @@
         }
       ]
     }
+  },
+  "lovart_company_page": {
+    "seo": {
+      "title": "Lovart 公司与团队：AI 设计平台背后的故事",
+      "description": "了解更多关于 Lovart 公司的信息、我们的使命、团队以及我们致力于打造最好的免费 AI 设计平台的承诺。",
+      "canonical_url": "https://lovart.info/zh/lovart-company"
+    },
+    "hero": {
+      "badge": "关于公司",
+      "title": "Lovart 公司",
+      "subtitle": "我们正在构建生成式设计的未来。了解我们的使命、团队以及我们的驱动力。",
+      "cta_external": "免费体验 Lovart",
+      "cta_internal": "查看定价",
+      "content": "Lovart 公司的成立只有一个使命：让专业设计大众化。我们认为，无论技术背景或预算如何，每个人都应该能够使用高质量的视觉创作工具。我们的团队由充满激情的工程师、设计师和 AI 研究人员组成，致力于突破生成式 AI 的边界。我们很自豪能提供一个尊重用户隐私、完全在云端运行并能提供闪电般快速结果的平台。"
+    },
+    "mission": {
+      "heading": "我们的使命与愿景",
+      "desc": "通过提供即时、直观且功能强大的 AI 设计工具，消除创意瓶颈并促进创新，从而赋能全球创作者。"
+    },
+    "contact": {
+      "heading": "联系我们",
+      "desc": "有任何疑问或合作意向？我们很乐意听取您的意见。请通过 tangjei414@gmail.com 联系 Lovart 团队。"
+    },
+    "faq": {
+      "heading": "公司信息 FAQ",
+      "items": [
+        {
+          "q": "lovart.info 是 Lovart 官方网站吗？",
+          "a": "不是。本站是第三方导览站。涉及账号操作与产品访问，请以 lovart.ai 官方页面为准。"
+        },
+        {
+          "q": "在哪里查看 Lovart 官方更新？",
+          "a": "请优先查看官网和官方渠道，再结合本站评测与对比页获取第三方视角。"
+        },
+        {
+          "q": "本页是否提供已验证的融资或营收数字？",
+          "a": "我们仅引用可追溯的公开来源。没有来源支撑的数据应视为未验证信息。"
+        }
+      ]
+    }
+  },
+  "resources_section": {
+    "title": "设计资源与指南",
+    "subtitle": "探索我们全面的指南，掌握 AI 设计技巧并充分发挥 Lovart 的潜力。",
+    "cards": [
+      {
+        "title": "什么是 Lovart？",
+        "desc": "深度解析我们 AI 设计智能体的功能与架构。",
+        "link_text": "阅读指南",
+        "url": "/what-is-lovart"
+      },
+      {
+        "title": "Lovart 登录指南",
+        "desc": "了解如何安全地访问您的账户并保护您的数字资产。",
+        "link_text": "查看登录指南",
+        "url": "/lovart-login-guide"
+      },
+      {
+        "title": "Lovart 评测 2026",
+        "desc": "全面评估平台的功能、性能及价值。",
+        "link_text": "阅读评测",
+        "url": "/lovart-review"
+      },
+      {
+        "title": "Lovart vs Canva",
+        "desc": "与同类产品的横向对比，助您选择合适的工具。",
+        "link_text": "立即对比",
+        "url": "/lovart-alternative"
+      },
+      {
+        "title": "Lovart 教程",
+        "desc": "面向新用户的分步骤上手指南。",
+        "link_text": "开始教程",
+        "url": "/lovart-tutorial"
+      },
+      {
+        "title": "Lovart 优惠码",
+        "desc": "查看官方折扣路径并避开虚假优惠站点。",
+        "link_text": "查看优惠",
+        "url": "/lovart-promo-code"
+      },
+      {
+        "title": "Lovart 公司信息",
+        "desc": "了解团队背景、里程碑与公司信息。",
+        "link_text": "查看公司档案",
+        "url": "/lovart-company"
+      }
+    ]
   }
 }

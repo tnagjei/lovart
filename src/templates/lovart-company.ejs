@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<%
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: (t.lovart_company_page ? t.lovart_company_page.hero.badge : 'Company'), href: canonicalUrl }];
+const relatedSectionTitle = (t.resources_section && t.resources_section.title) ? t.resources_section.title : 'Related Reading';
+const resourceCards = (t.resources_section && Array.isArray(t.resources_section.cards))
+    ? t.resources_section.cards
+    : [];
+const normalizeCardPath = (rawPath) => {
+    if (typeof rawPath !== 'string') return '';
+    return rawPath.replace(/^\/zh\//, '').replace(/^\//, '');
+};
+const cardTitleByPath = {};
+resourceCards.forEach((card) => {
+    const normalizedPath = normalizeCardPath(card.url);
+    if (normalizedPath && card && card.title) {
+        cardTitleByPath[normalizedPath] = card.title;
+    }
+});
+const fallbackTitleByPath = {
+    'lovart-review': t.lovart_review_page && t.lovart_review_page.seo ? t.lovart_review_page.seo.title : '',
+    'lovart-alternative': t.lovart_alternative_page && t.lovart_alternative_page.seo ? t.lovart_alternative_page.seo.title : '',
+    'what-is-lovart': t.what_is_lovart_page && t.what_is_lovart_page.seo ? t.what_is_lovart_page.seo.title : '',
+    'lovart-tutorial': t.lovart_tutorial_page && t.lovart_tutorial_page.seo ? t.lovart_tutorial_page.seo.title : ''
+};
+const relatedPaths = ['lovart-review', 'lovart-alternative', 'what-is-lovart', 'lovart-tutorial'];
+const relatedLinks = relatedPaths
+    .map((path) => {
+        const title = cardTitleByPath[path] || fallbackTitleByPath[path];
+        if (!title) return null;
+        return { href: link('/' + path), title };
+    })
+    .filter(Boolean);
+%>
+    <html lang="<%= lang %>" class="scroll-smooth">
+
+    <head>
+        <%- include('partials/head', { pageSeo: t.lovart_company_page ? t.lovart_company_page.seo : null }) %>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                <%= t.lovart_company_page ? t.lovart_company_page.seo.title : 'Lovart Company' %>
+            </title>
+            <meta name="description"
+                content="<%= t.lovart_company_page ? t.lovart_company_page.seo.description : 'Lovart Company' %>">
+            <meta name="keywords" content="">
+            <link rel="canonical" href="<%= canonicalUrl %>">
+            <%- include('partials/hreflang') %>
+                <link rel="stylesheet" href="/styles.css">
+                <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
+                    crossorigin="anonymous"></script>
+                <%- include('partials/analytics') %>
+                    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+                        <%- include('partials/schema-faq', { faqItems: t.lovart_company_page && t.lovart_company_page.faq ? t.lovart_company_page.faq.items : [] }) %>
+    </head>
+
+    <body class="bg-neutral-light text-neutral-dark antialiased">
+
+        <%- include('partials/header') %>
+            <%- include('partials/breadcrumb', { breadcrumbItems }) %>
+
+                <main>
+                    <!-- Hero Section -->
+                    <section
+                        class="bg-gradient-to-b from-primary/10 to-transparent py-20 lg:py-28 relative overflow-hidden">
+                        <div class="container mx-auto px-6 text-center relative z-10">
+                            <span
+                                class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6">
+                                💼 <%= t.lovart_company_page ? t.lovart_company_page.hero.badge : 'Company' %>
+                            </span>
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-neutral-dark">
+                                <%- t.lovart_company_page ? t.lovart_company_page.hero.title : 'Lovart Company' %>
+                            </h1>
+                            <p class="text-xl text-neutral mb-8 max-w-2xl mx-auto">
+                                <%- t.lovart_company_page ? t.lovart_company_page.hero.subtitle : '' %>
+                            </p>
+                            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                                <a href="https://lovart.ai" target="_blank" rel="noopener nofollow"
+                                    class="btn-primary px-8 py-4 text-lg rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                    <%- t.lovart_company_page ? t.lovart_company_page.hero.cta_external : 'Home' %>
+                                </a>
+                                <a href="<%= link('/lovart-pricing') %>"
+                                    class="btn-secondary px-8 py-4 text-lg rounded-xl font-semibold border-2 border-primary/20 hover:border-primary/50 transition-all duration-300">
+                                    <%- t.lovart_company_page ? t.lovart_company_page.hero.cta_internal : 'Contact Us'
+                                        %>
+                                </a>
+                            </div>
+                            <div class="text-left max-w-4xl mx-auto text-neutral leading-relaxed prose prose-lg">
+                                <p>
+                                    <%- t.lovart_company_page ? t.lovart_company_page.hero.content : '' %>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="container mx-auto px-6 py-6">
+                        <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                    </section>
+
+                    <!-- Mission Section -->
+                    <section class="py-16 bg-white section-animate" id="mission">
+                        <div class="container mx-auto px-6 max-w-4xl text-center">
+                            <h2 class="text-3xl font-bold mb-6 text-neutral-dark">
+                                <%= t.lovart_company_page ? t.lovart_company_page.mission.heading : 'Mission' %>
+                            </h2>
+                            <div class="bg-neutral-light p-8 rounded-xl shadow-sm border border-neutral/10">
+                                <p class="text-xl text-neutral">
+                                    <%- t.lovart_company_page ? t.lovart_company_page.mission.desc : '' %>
+                                </p>
+                                <p class="text-sm text-neutral/80 mt-4">
+                                    For broader context, read our
+                                    <a href="<%= link('/about') %>"
+                                        class="text-primary hover:text-primary-dark font-medium">About page</a>,
+                                    follow updates on the
+                                    <a href="<%= link('/blog') %>"
+                                        class="text-primary hover:text-primary-dark font-medium">Blog</a>,
+                                    then evaluate product fit via
+                                    <a href="<%= link('/lovart-review') %>"
+                                        class="text-primary hover:text-primary-dark font-medium">Lovart Review</a>
+                                    and
+                                    <a href="<%= link('/lovart-alternative') %>"
+                                        class="text-primary hover:text-primary-dark font-medium">Alternatives</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <%- include('partials/adsense', { slot: '7744440876' , format: 'auto' , minHeight: '90px' }) %>
+
+                        <!-- Contact Section -->
+                        <section class="py-16 bg-neutral-light section-animate" id="contact">
+                            <div class="container mx-auto px-6 max-w-4xl text-center">
+                                <h2 class="text-3xl font-bold mb-6 text-neutral-dark">
+                                    <%= t.lovart_company_page ? t.lovart_company_page.contact.heading : 'Contact' %>
+                                </h2>
+                                <p class="text-lg text-neutral mb-8">
+                                    <%- t.lovart_company_page ? t.lovart_company_page.contact.desc : '' %>
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="container mx-auto px-6 py-6">
+                            <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                        </section>
+
+                        <section class="py-12 bg-white border-t border-neutral/10">
+                            <div class="container mx-auto px-6">
+                                <div
+                                    class="max-w-4xl mx-auto bg-neutral-light rounded-2xl p-8 border border-neutral/10 shadow-sm">
+                                    <h2 class="text-2xl font-bold text-neutral-dark mb-6">
+                                        <%= t.lovart_company_page && t.lovart_company_page.faq ? t.lovart_company_page.faq.heading : 'FAQ' %>
+                                    </h2>
+                                    <div class="space-y-4">
+                                        <% if (t.lovart_company_page && t.lovart_company_page.faq && t.lovart_company_page.faq.items) { %>
+                                            <% t.lovart_company_page.faq.items.forEach(function(item) { %>
+                                                <div class="bg-white border border-neutral/10 rounded-xl p-5">
+                                                    <h3 class="font-semibold text-neutral-dark mb-2">
+                                                        <%= item.q %>
+                                                    </h3>
+                                                    <p class="text-neutral text-sm leading-relaxed">
+                                                        <%= item.a %>
+                                                    </p>
+                                                </div>
+                                                <% }); %>
+                                                    <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Related Reading -->
+                        <section class="py-12 bg-white border-t border-neutral/10">
+                            <div class="container mx-auto px-6">
+                                <div
+                                    class="max-w-4xl mx-auto bg-neutral-light rounded-2xl p-8 border border-neutral/10 shadow-sm">
+                                    <h2 class="text-2xl font-bold text-neutral-dark mb-6">
+                                        <%= relatedSectionTitle %>
+                                    </h2>
+                                    <ul class="space-y-4">
+                                        <% relatedLinks.forEach(function(item) { %>
+                                            <li>
+                                                <a href="<%= item.href %>"
+                                                    class="text-primary hover:text-primary-dark font-medium transition-colors">
+                                                    <%= item.title %>
+                                                </a>
+                                            </li>
+                                            <% }); %>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="container mx-auto px-6 py-6">
+                            <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
+                        </section>
+
+                </main>
+
+                <%- include('partials/footer') %>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const sections = document.querySelectorAll('.section-animate');
+                            const observer = new IntersectionObserver((entries) => {
+                                entries.forEach(entry => {
+                                    if (entry.isIntersecting) {
+                                        entry.target.classList.add('is-visible');
+                                    }
+                                });
+                            }, { threshold: 0.1 });
+
+                            sections.forEach(section => observer.observe(section));
+                        });
+                    </script>
+    </body>
+
+    </html>
