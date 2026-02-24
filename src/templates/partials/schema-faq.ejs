@@ -1,21 +1,23 @@
-<!-- FAQ Schema for help page -->
-<script type="application/ld+json">
+<!-- FAQ Schema Partial -->
+<% const items=locals.faqItems || (t.help_page && t.help_page.faq && t.help_page.faq.items) || []; %>
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    <% if (t.help_page && t.help_page.faq && t.help_page.faq.items) { %>
-    <% t.help_page.faq.items.forEach(function(item, index) { %>
+    <% items.forEach(function(item, index) { 
+      const q = (item.question || item.q || "").replace(/"/g, '\\"');
+      const a = (item.answer || item.a || "").replace(/<[^>]*>/g, '').replace(/"/g, '\\"').replace(/\n/g, ' ').trim();
+    %>
     {
       "@type": "Question",
-      "name": "<%= item.question.replace(/"/g, '\\"') %>",
+      "name": "<%= q %>",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "<%= item.answer.replace(/<[^>]*>/g, '').replace(/"/g, '\\"').replace(/\n/g, ' ').trim() %>"
+        "text": "<%= a %>"
       }
-    }<%= index < t.help_page.faq.items.length - 1 ? ',' : '' %>
+    }<%= index < items.length - 1 ? ',' : '' %>
     <% }); %>
-    <% } %>
   ]
 }
 </script>

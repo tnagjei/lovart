@@ -1299,5 +1299,234 @@
       "desc": "È un salto cognitivo visivo globale necessario per restare al vertice oggi giorno nel panorama internazionale online ecc.",
       "button": "Lancia L'Engine ora Officalmente Adesso o Domani Manco"
     }
+  },
+  "lovart_review_page": {
+    "seo": {
+      "title": "Lovart AI Review 2026: Valutazione Completa",
+      "description": "Leggi la nostra Lovart AI Review ufficiale per il 2026. Esplora vantaggi, svantaggi e perché supererà i software tradizionali.",
+      "canonical_url": "https://lovart.info/it/lovart-review"
+    },
+    "hero": {
+      "badge": "Recensione Ufficiale",
+      "title": "Lovart AI Review 2026",
+      "subtitle": "L'analisi definitiva del generatore di design. Sostituisce davvero i software storici?",
+      "cta_external": "Prova Gratis",
+      "cta_internal": "Prezzi",
+      "content": "Gli utenti creativi cercano sempre una <strong>Lovart AI Review</strong> affidabile. Lovart si presenta come l'ecosistema definitivo per loghi, brand kit e frontend a partire da descrizioni testuali. A differenza delle classiche app pesanti, opera in cloud nel rispetto della privacy. In questa Lovart AI Review, scopriamo la sua estrema velocità e cosa aspettarsi dall'approccio via prompt."
+    },
+    "verdict": {
+      "heading": "Il Verdetto in 30 Secondi",
+      "desc": "Sintesi dei test effettuati.",
+      "pros": [
+        "Gratuito, Nessuna registrazione richiesta per iniziare.",
+        "Risultati ultra-veloci (sotto i 15 secondi).",
+        "UI professionale focalizzata sulla privacy."
+      ],
+      "cons": [
+        "Serve una rete stabile (Cloud-nativo).",
+        "Richiede familiarità con i prompt testuali."
+      ]
+    },
+    "ratings": {
+      "heading": "Valutazioni Chiave",
+      "desc": "Come performa nelle task primarie?",
+      "categories": [
+        {
+          "name": "Loghi Online",
+          "score": "9.5/10",
+          "details": "Crea loghi perfetti e commerciali all'istante."
+        },
+        {
+          "name": "Brand Kit e UI",
+          "score": "9.0/10",
+          "details": "Mantiene la coerenza del brand con facilità."
+        },
+        {
+          "name": "Codice IA Frontend",
+          "score": "9.0/10",
+          "details": "Traduce le idee in codice puro e sicuro."
+        }
+      ]
+    },
+    "scenarios": {
+      "heading": "Casi d'Uso Reali",
+      "intro": "Dove lo strumento eccelle di più.",
+      "items": [
+        {
+          "title": "Prototipazione Rapida",
+          "desc": "Per le agenzie che devono mostrare moodboard al volo."
+        },
+        {
+          "title": "Sviluppatori Solitari",
+          "desc": "Perfetto per indie hacker senza grafici a supporto."
+        },
+        {
+          "title": "Social Marketing",
+          "desc": "Produzione di massa per A/B test. Un punto di forza in ogni Lovart AI Review."
+        },
+        {
+          "title": "E-commerce",
+          "desc": "Sintetizza rapidamente i kit visivi per nuovi brand online."
+        }
+      ]
+    },
+    "pricing": {
+      "heading": "Prezzi e Valore",
+      "desc": "Le opzioni gratuite sono incredibilmente aperte. I professionisti che usano i piani a pagamento ottengono un ROI imbattibile grazie al sistema Lovart pricing, che scala assieme ai tuoi bisogni senza obblighi annuali stretti.",
+      "button": "Scopri i Piani"
+    },
+    "faq": {
+      "heading": "È l'Ecosistema per Te?",
+      "items": [
+        {
+          "q": "Questa Lovart AI Review è imparziale?",
+          "a": "Assolutamente. Mostriamo la velocità incredibile ma avvisiamo della dipendenza dal Cloud."
+        },
+        {
+          "q": "Posso usare le grafiche per scopi di lucro?",
+          "a": "Sì. Le immagini generate ti appartengono a livello commerciale."
+        },
+        {
+          "q": "Dove leggo opinioni altrui?",
+          "a": "Tanti utenti postano la loro personale Lovart AI Review sui forum di design."
+        }
+      ]
+    }
+  },
+  "lovart_alternative_page": {
+    "seo": {
+      "title": "Trova la Migliore Lovart Alternative (Lovart vs Canva)",
+      "description": "Cerchi una Lovart alternative? Leggi il confronto Lovart vs Canva e scopri il generatore di design più adatto alle tue esigenze.",
+      "canonical_url": "https://lovart.info/it/lovart-alternative"
+    },
+    "hero": {
+      "badge": "Confronto Diretto",
+      "title": "Migliori Alternative e Confronti",
+      "subtitle": "Naviga nel mercato dei tool creativi: un duro scontro Lovart vs Canva.",
+      "cta_external": "Genera Ora",
+      "cta_internal": "Funzionalità",
+      "content": "Scegliere il software creativo porta spesso a cercare un'ottima <strong>Lovart alternative</strong>. Il mercato si divide fra editor manuali e generatori di IA pura. Il dibattito regnante è <strong>Lovart vs Canva</strong>. In questa guida spieghiamo come scegliere, concentrandoci su privacy ed esperienze d'uso senza account."
+    },
+    "why_alternative": {
+      "heading": "Perché cercare una Alternative?",
+      "desc": "Dipende dal progetto: ti serve uno strumento di ricalco minuzioso a penna vettoriale o ti serve un miracolo generativo in 5 secondi? Lovart è la seconda opzione e regna in quel settore."
+    },
+    "vs_canva": {
+      "heading": "Lovart vs Canva: Scontro Finale",
+      "desc": "Il confronto Lovart vs Canva è chiaro: Canva ti butta sulla pagina migliaia di frammenti per farti comporre l'opera. Lovart vuole solo che tu gliela descriva, disegnandola lui per te al volo. Se odi spostare caselle col mouse, ecco la tua Lovart alternative definitiva.",
+      "rows": [
+        {
+          "aspect": "Filosofia",
+          "lovart": "Generazione totale originata da linguaggio discorsivo.",
+          "canva": "Composizione manuale di template grafici."
+        },
+        {
+          "aspect": "Facilità",
+          "lovart": "Nessun account, pronti-via.",
+          "canva": "Account obbligatorio, vasta libreria da frugare."
+        },
+        {
+          "aspect": "Privacy",
+          "lovart": "Risorse uniche dal Cloud isolato privato.",
+          "canva": "Pensato per il lavoro e la bacheca di squadra."
+        }
+      ]
+    },
+    "other_mentions": {
+      "heading": "Altri Competitor del 2026",
+      "items": [
+        {
+          "title": "Midjourney",
+          "desc": "Estremo, ma appoggiato a Discord. Lovart offre una Web UI nativa e matura."
+        },
+        {
+          "title": "Figma",
+          "desc": "Imbattibile per la UI, ma del tutto focalizzato sui movimenti manuali."
+        }
+      ]
+    },
+    "how_to_choose": {
+      "heading": "Come Decidere?",
+      "desc": "Se apprezzi la privacy, i risultati in 10 secondi e la libertà dai login compulsivi, Lovart è la via assoluta. Scegliere la Lovart alternative giusta equivale a domandarsi: 'Voglio operare io, o voglio comandare l'AI per farlo?'"
+    },
+    "faq": {
+      "heading": "Alternative FAQs",
+      "items": [
+        {
+          "q": "Nel duello Lovart vs Canva, chi vince?",
+          "a": "Lovart genera dal nulla con arte IA; Canva assembla decorazioni esistenti."
+        },
+        {
+          "q": "Cosa rende valida una Lovart alternative?",
+          "a": "Alta velocità e non obbligare mai l'utente a iscriversi per provare, una vera rarità."
+        },
+        {
+          "q": "Si usano assieme?",
+          "a": "Certo, in molti generano la base qui e la impaginano da altre parti."
+        }
+      ]
+    }
+  },
+  "lovart_tutorial_page": {
+    "seo": {
+      "title": "Lovart Tutorial 2026: Guida Veloce Pratica",
+      "description": "Impara i segreti con il nostro Lovart Tutorial. Scopri how to use Lovart in soli 3 passaggi, senza registrazione.",
+      "canonical_url": "https://lovart.info/it/lovart-tutorial"
+    },
+    "hero": {
+      "badge": "Guida Base",
+      "title": "Scopri How to Use Lovart",
+      "subtitle": "Il manuale per partire. Da zero ad asset commerciali completi in pochi minuti.",
+      "cta_external": "Avvia App",
+      "cta_internal": "Documentazione AI",
+      "content": "Benvenuto nel sito e nel <strong>Lovart Tutorial</strong> ufficiale. Se cerchi il metodo e la tecnica su <strong>how to use Lovart</strong> per eccellere, sei a casa. Disegnato per novizi assoluti, questo sistema ti permette di saltare il format di login. Prosegui in questo Lovart tutorial per capire le tre fasi primarie del workflow generativo."
+    },
+    "getting_started": {
+      "heading": "Parti Senza Account",
+      "desc": "La genialità del progetto sta nell'Immediatezza. Non c'è alcun form da inserire. Imparare how to use Lovart non presuppone di vendere i propri dati personali. Lovart crede fortemente nella fluidità d'azione in ambiente privato."
+    },
+    "workflows": {
+      "heading": "Tre Passi Fondamentali",
+      "intro": "Esegui questa procedura per testare il motore.",
+      "steps": [
+        {
+          "title": "Passo 1: Il Prompt Base",
+          "desc": "Comprendi come inserire termini e parole chiavi pulite nel campo testo principale."
+        },
+        {
+          "title": "Passo 2: Il Tuo Logo",
+          "desc": "Punta il motore a generarti idee di loghi. In pochi secondi avrai splendidi artefatti."
+        },
+        {
+          "title": "Passo 3: Mappatura Brand",
+          "desc": "Integra gli output prescelti per farti sviluppare intere palette cromatiche abbinate in stile vettoriale."
+        }
+      ]
+    },
+    "troubleshooting": {
+      "heading": "Risoluzione Rallentamenti",
+      "desc": "Se il server esita, pazienta. Un prompt ambiguo porta spesso a immagini strane. In questo Lovart tutorial suggeriamo parole sobrie prima di aggettivi pesanti. Aggiornare la pagina del browser durante i timeout riavvierà il calcolo senza disastri al flusso."
+    },
+    "support": {
+      "heading": "Problemi Estremi?",
+      "desc": "Se il manuale di questo Lovart tutorial non sblocca la tua problematica, non esitare a contattarci al tangjei414@gmail.com."
+    },
+    "faq": {
+      "heading": "Didattica FAQs",
+      "items": [
+        {
+          "q": "Riguardo questo Lovart tutorial, si applica gratis?",
+          "a": "Sì. Puoi replicare tutto interagendo con il generatore gratuito sul sito."
+        },
+        {
+          "q": "La modalità mobile di how to use lovart?",
+          "a": "Semplicemente visita il sito: si ri-adatterà al palmo della tua mano."
+        },
+        {
+          "q": "Si richiede sapienza artistica grafica?",
+          "a": "Nessuna. Il trucco di how to use lovart è sapersi esprimere in lingua scritta. Nessuna abilità con la matita richiesta."
+        }
+      ]
+    }
   }
 }

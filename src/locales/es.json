@@ -1299,5 +1299,234 @@
       "desc": "Empieza la transición ya mismo.",
       "button": "Visitar el Canvas Visual"
     }
+  },
+  "lovart_review_page": {
+    "seo": {
+      "title": "Lovart AI Review 2026: Evaluación del Mejor Generador de Diseño",
+      "description": "Lee nuestra completa Lovart AI Review de 2026. Explora ventajas, desventajas y por qué este generador gratuito es excepcional.",
+      "canonical_url": "https://lovart.info/es/lovart-review"
+    },
+    "hero": {
+      "badge": "Guía de Funciones",
+      "title": "Lovart AI Review 2026",
+      "subtitle": "El desglose definitivo del generador en línea. ¿Realmente reemplazará al software tradicional?",
+      "cta_external": "Prueba Lovart Gratis",
+      "cta_internal": "Ver Precios",
+      "content": "Al evaluar cualquier nueva herramienta creativa, los usuarios buscan una <strong>Lovart AI Review</strong> confiable. Lovart se posiciona como un ecosistema todo en uno para generar logotipos, kits de marca y código frontend directamente desde indicaciones de texto (prompts). En esta Lovart AI Review, exploraremos qué lo convierte en una poderosa alternativa, destacando su velocidad y su baja curva de aprendizaje."
+    },
+    "verdict": {
+      "heading": "El Veredicto en 30 Segundos",
+      "desc": "Un resumen rápido tras pruebas exhaustivas.",
+      "pros": [
+        "Gratis, sin registro requerido para funciones básicas.",
+        "Resultados ultrarrápidos (menos de 15 segundos).",
+        "UI Profesional y centrada en la privacidad."
+      ],
+      "cons": [
+        "Requiere conexión a internet estable (basado en la nube).",
+        "Los prompts avanzados requieren algo de práctica."
+      ]
+    },
+    "ratings": {
+      "heading": "Calificaciones Clave",
+      "desc": "¿Cómo funciona en tareas críticas?",
+      "categories": [
+        {
+          "name": "Generación de Logotipos",
+          "score": "9.5/10",
+          "details": "Crea logos comerciales pulidos al instante."
+        },
+        {
+          "name": "Kits de Marca y UI",
+          "score": "9.0/10",
+          "details": "Mantiene la coherencia de la marca sin esfuerzo."
+        },
+        {
+          "name": "Código Frontend IA",
+          "score": "9.0/10",
+          "details": "Traduce ideas de forma segura en código utilizable."
+        }
+      ]
+    },
+    "scenarios": {
+      "heading": "Casos de Uso Reales",
+      "intro": "Donde esta plataforma brilla en el día a día.",
+      "items": [
+        {
+          "title": "Prototipado Rápido",
+          "desc": "Para agencias que necesitan múltiples moodboards para mañana."
+        },
+        {
+          "title": "Desarrolladores Indie",
+          "desc": "Para desarrolladores solos que necesitan gráficos impresionantes sin contratar a un equipo."
+        },
+        {
+          "title": "Campañas de Marketing",
+          "desc": "Generación masiva para pruebas A/B. Esta capacidad es elogiada en cada Lovart AI Review."
+        },
+        {
+          "title": "Branding E-commerce",
+          "desc": "Sintetiza fácilmente moodboards en kits de marca completos."
+        }
+      ]
+    },
+    "pricing": {
+      "heading": "Precios y Valor",
+      "desc": "Las funciones básicas son gratuitas. Para profesionales, la suscripción premium ofrece un ROI excepcional en comparación con herramientas tradicionales. El modelo de Lovart pricing está diseñado para escalar contigo.",
+      "button": "Ver Opciones de Precio"
+    },
+    "faq": {
+      "heading": "¿Es Lovart para ti?",
+      "items": [
+        {
+          "q": "¿Es objetiva esta Lovart AI Review?",
+          "a": "Sí. Destacamos su velocidad inmensa, pero también señalamos que depende de la nube."
+        },
+        {
+          "q": "¿Puedo usar los diseños comercialmente?",
+          "a": "Absolutamente. Las imágenes generadas son tuyas para proyectos comerciales."
+        },
+        {
+          "q": "¿Dónde veo otras opiniones?",
+          "a": "Muchos usuarios comparten su propia Lovart AI Review en redes sociales."
+        }
+      ]
+    }
+  },
+  "lovart_alternative_page": {
+    "seo": {
+      "title": "El Mejor Lovart Alternative (Comparativa Lovart vs Canva)",
+      "description": "¿Buscas un Lovart alternative? Mira nuestra comparativa Lovart vs Canva para elegir el mejor generador de IA.",
+      "canonical_url": "https://lovart.info/es/lovart-alternative"
+    },
+    "hero": {
+      "badge": "Guía de Comparación",
+      "title": "Comparativa y Lovart Alternative Ideal",
+      "subtitle": "Navega por el mercado de herramientas y descubre el enfrentamiento Lovart vs Canva.",
+      "cta_external": "Empieza a Generar",
+      "cta_internal": "Ver Funciones",
+      "content": "Buscar un buen <strong>Lovart alternative</strong> es común cuando evalúas tu flujo de trabajo. Mientras algunas plataformas son para edición manual, otras generan con IA pura. El debate principal es <strong>Lovart vs Canva</strong>. Aquí desglosamos cuál elegir en base a privacidad, facilidad y registro."
+    },
+    "why_alternative": {
+      "heading": "¿Por qué buscar una Alternative?",
+      "desc": "Si necesitas ajustes manuales minuciosos de vectores, usa aplicaciones de escritorio. Si quieres generación visual instantánea desde texto, Lovart es imbatible."
+    },
+    "vs_canva": {
+      "heading": "Lovart vs Canva: Comparación Honesta",
+      "desc": "En una comparativa Lovart vs Canva, Canva te da piezas de rompecabezas para ensamblar. En Lovart, tú describes el rompecabezas y la IA lo pinta. Si odias alinear textos a mano, Lovart es el mejor Lovart alternative para automatizar el diseño.",
+      "rows": [
+        {
+          "aspect": "Filosofía",
+          "lovart": "Generación profunda y original por IA mediante lenguaje.",
+          "canva": "Edición manual de collage basada en plantillas."
+        },
+        {
+          "aspect": "Facilidad",
+          "lovart": "Sin registro, curva de aprendizaje cero para inicio.",
+          "canva": "Registro obligatorio, requiere navegar en bibliotecas."
+        },
+        {
+          "aspect": "Privacidad",
+          "lovart": "Privacidad en la nube, genera activos únicos.",
+          "canva": "Excelente para edición colaborativa en equipo."
+        }
+      ]
+    },
+    "other_mentions": {
+      "heading": "Otros Competidores en 2026",
+      "items": [
+        {
+          "title": "Midjourney",
+          "desc": "Potente, pero usa Discord. Lovart ofrece una interfaz web profesional dedicada."
+        },
+        {
+          "title": "Figma",
+          "desc": "Estándar en UI/UX, pero centrado en diseño manual, no en generación IA."
+        }
+      ]
+    },
+    "how_to_choose": {
+      "heading": "¿Cómo Elegir?",
+      "desc": "Si valoras privacidad, uso inmediato sin cuentas y resultados instantáneos, Lovart es el ganador indiscutible. La mejor Lovart alternative depende de si quieres ser el trabajador manual o el director creativo de la IA."
+    },
+    "faq": {
+      "heading": "Alternativas FAQs",
+      "items": [
+        {
+          "q": "¿En Lovart vs Canva, cuál es mejor?",
+          "a": "Depende. Lovart es superior en generación de IA pura; Canva es mejor si quieres armar con clip arts."
+        },
+        {
+          "q": "¿Qué hace a un buen Lovart alternative?",
+          "a": "Debe proveer alta calidad en la nube, pero pocos ofrecen el beneficio de 'Uso sin Registro'."
+        },
+        {
+          "q": "¿Puedo usar ambos juntos?",
+          "a": "¡Sí! Genera primero la imagen base en Lovart y edítala luego en otras herramientas."
+        }
+      ]
+    }
+  },
+  "lovart_tutorial_page": {
+    "seo": {
+      "title": "Lovart Tutorial 2026: Guía Rápida para Principiantes",
+      "description": "Domina la IA con nuestro completo Lovart Tutorial. Aprende how to use Lovart de forma gratuita y sin registros.",
+      "canonical_url": "https://lovart.info/es/lovart-tutorial"
+    },
+    "hero": {
+      "badge": "Guía Práctica",
+      "title": "Cómo usar Lovart (How to Use Lovart)",
+      "subtitle": "El tutorial definitivo para principiantes. Crea activos profesionales en tres pasos.",
+      "cta_external": "Abrir Aplicación",
+      "cta_internal": "Guía de Prompts",
+      "content": "Bienvenido al <strong>Lovart Tutorial</strong> oficial. Si te preguntas <strong>how to use Lovart</strong> al máximo, estás en el lugar correcto. Diseñado para principiantes que buscan diseño rápido con IA, su ventaja es que no requiere registro. En este Lovart tutorial, te mostraremos tres flujos de trabajo que elevarán tu producción."
+    },
+    "getting_started": {
+      "heading": "Comienza sin Registrarte",
+      "desc": "Inicia la app directamente y evita formularios. Descubrir how to use Lovart no debería requerir entregar tu email primero. Lovart elimina esta fricción respetando tu tiempo y privacidad."
+    },
+    "workflows": {
+      "heading": "3 Pasos Esenciales",
+      "intro": "Veamos tres tareas básicas para que te familiarices.",
+      "steps": [
+        {
+          "title": "Paso 1: Escribir el Prompt",
+          "desc": "Aprende el lenguaje de la IA, describiendo detalladamente el estilo y sujeto."
+        },
+        {
+          "title": "Paso 2: Generar Logotipo",
+          "desc": "Ingresa tu idea y obtén múltiples variaciones estilo vector en segundos."
+        },
+        {
+          "title": "Paso 3: Kit de Marca Completo",
+          "desc": "Usa tu logo exitoso y deja que la IA construya paletas y tipografías consistentes de manera instantánea."
+        }
+      ]
+    },
+    "troubleshooting": {
+      "heading": "Solución de Problemas",
+      "desc": "Si la generación se detiene, a veces es la red o un prompt muy complejo. En este Lovart tutorial sugerimos usar sustantivos simples primero y luego añadir los adjetivos. Si pierdes conexión, refrescar la página a menudo restaura tu sesión creativa sin pérdidas."
+    },
+    "support": {
+      "heading": "¿Necesitas Ayuda Adicional?",
+      "desc": "Si este Lovart tutorial no resolvió tu problema específico, contacta a nuestro equipo en tangjei414@gmail.com."
+    },
+    "faq": {
+      "heading": "Tutorial FAQs",
+      "items": [
+        {
+          "q": "¿Puedo practicar este Lovart tutorial gratis?",
+          "a": "Sí, todos estos pasos se pueden ejecutar en la plataforma de forma gratuita."
+        },
+        {
+          "q": "¿Cómo lograr 'how to use lovart' en móviles?",
+          "a": "La web es responsive. Ábrela en tu teléfono y la interfaz se adaptará sola."
+        },
+        {
+          "q": "¿Necesito habilidades de diseño?",
+          "a": "Para nada. El secreto aquí es saber describir tus ideas con palabras concretas."
+        }
+      ]
+    }
   }
 }

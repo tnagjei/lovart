@@ -21,7 +21,10 @@ const esItCorePages = [
     'lovart-nano-banana',
     'lovart-invitation-code',
     'lovart-china',
-    'lovart-beta'
+    'lovart-beta',
+    'lovart-review',
+    'lovart-alternative',
+    'lovart-tutorial'
 ];
 const noindexLangs = new Set(['es', 'it']);
 const noindexShellPages = new Set(esItCorePages);
