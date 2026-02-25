@@ -1,24 +1,20 @@
 <footer class="bg-neutral-dark text-neutral-light py-12">
-    <%
-    const footerSupportLinks = (t.support_cluster && Array.isArray(t.support_cluster.footer_links))
-        ? t.support_cluster.footer_links
-        : [];
-    const resourceCards = (t.resources_section && Array.isArray(t.resources_section.cards))
-        ? t.resources_section.cards
-        : [];
-    const normalizeCardPath = (rawPath) => {
+    <% const footerSupportLinks=(t.support_cluster && Array.isArray(t.support_cluster.footer_links)) ?
+        t.support_cluster.footer_links : []; const resourceCards=(t.resources_section &&
+        Array.isArray(t.resources_section.cards)) ? t.resources_section.cards : []; const normalizeCardPath=(rawPath)=>
+        {
         if (typeof rawPath !== 'string') return '';
         return rawPath.replace(/^\/zh\//, '').replace(/^\//, '');
-    };
-    const cardTitleByPath = {};
-    resourceCards.forEach((card) => {
+        };
+        const cardTitleByPath = {};
+        resourceCards.forEach((card) => {
         const normalizedPath = normalizeCardPath(card.url);
         if (normalizedPath && card && card.title) {
-            cardTitleByPath[normalizedPath] = card.title;
+        cardTitleByPath[normalizedPath] = card.title;
         }
-    });
-    const resolveCardTitle = (path, fallback) => cardTitleByPath[path] || fallback;
-    %>
+        });
+        const resolveCardTitle = (path, fallback) => cardTitleByPath[path] || fallback;
+        %>
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 lg:grid-cols-6 gap-8 mb-8 text-left">
                 <div>
@@ -88,15 +84,15 @@
                             </a></li>
                         <li><a href="<%= link('lovart-tutorial') %>"
                                 class="text-neutral hover:text-primary transition-colors">
-                                <%= resolveCardTitle('lovart-tutorial', 'Lovart Tutorial') %>
+                                <%= resolveCardTitle('lovart-tutorial', 'Lovart Tutorial' ) %>
                             </a></li>
                         <li><a href="<%= link('lovart-review') %>"
                                 class="text-neutral hover:text-primary transition-colors">
-                                <%= resolveCardTitle('lovart-review', 'Lovart Review') %>
+                                <%= resolveCardTitle('lovart-review', 'Lovart Review' ) %>
                             </a></li>
                         <li><a href="<%= link('lovart-alternative') %>"
                                 class="text-neutral hover:text-primary transition-colors">
-                                <%= resolveCardTitle('lovart-alternative', 'Lovart Alternatives') %>
+                                <%= resolveCardTitle('lovart-alternative', 'Lovart Alternatives' ) %>
                             </a></li>
                         <li><a href="<%= link('help') %>" class="text-neutral hover:text-primary transition-colors">
                                 <%= t.nav.help %>
@@ -134,7 +130,7 @@
                     <ul class="space-y-2">
                         <% if (resourceCards.length) { %>
                             <% resourceCards.forEach(function(card) { %>
-                                <% const normalizedPath = normalizeCardPath(card.url); %>
+                                <% const normalizedPath=normalizeCardPath(card.url); %>
                                     <% if (normalizedPath) { %>
                                         <li>
                                             <a href="<%= link(normalizedPath) %>"
@@ -165,13 +161,13 @@
                                     <li>
                                         <a href="<%= link('lovart-login-guide') %>"
                                             class="text-neutral hover:text-primary transition-colors">
-                                            <%= resolveCardTitle('lovart-login-guide', 'Lovart Login Guide') %>
+                                            <%= resolveCardTitle('lovart-login-guide', 'Lovart Login Guide' ) %>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="<%= link('lovart-promo-code') %>"
                                             class="text-neutral hover:text-primary transition-colors">
-                                            <%= resolveCardTitle('lovart-promo-code', 'Lovart Promo Code') %>
+                                            <%= resolveCardTitle('lovart-promo-code', 'Lovart Promo Code' ) %>
                                         </a>
                                     </li>
                         </ul>
@@ -230,6 +226,11 @@
                             class="inline-flex items-center justify-center transition hover:opacity-80">
                             <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=light"
                                 width="250" alt="Fazier badge" style="height: auto;" />
+                        </a>
+                        <a href="https://wired.business" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center justify-center transition hover:opacity-80">
+                            <img src="https://wired.business/badge1-dark.svg" alt="Featured on Wired Business"
+                                width="200" height="54">
                         </a>
                     </div>
                 </div>
