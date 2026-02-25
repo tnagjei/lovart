@@ -198,7 +198,7 @@
         "breadcrumb": "Guia de Terminos de Uso de Lovart",
         "seo": {
           "title": "Guia de Terminos de Uso de Lovart | Resumen de Terceros + Enlace Oficial",
-          "description": "Guia de terceros de terminos de Lovart con enrutamiento a terminos oficiales de uso.",
+          "description": "Guia de terceros sobre los terminos de uso de Lovart: resume reglas de cuenta, suscripcion, limites de uso y responsabilidades, y te dirige al texto oficial vigente para validacion legal.",
           "keywords": "terminos de uso lovart, terminos lovart, acuerdo de usuario lovart"
         },
         "hero": {
@@ -1005,7 +1005,7 @@
   "lovart_login_page": {
     "seo": {
       "title": "Guía de lovart login: Acceso Seguro 2026",
-      "description": "Soluciona tus problemas con lovart login. Seguridad de cuenta, métodos y ayuda paso a paso.",
+      "description": "Resuelve problemas de lovart login con una guia clara de acceso, seguridad de cuenta, recuperacion de sesion y pasos de soporte oficial para volver a entrar sin riesgo.",
       "keywords": "lovart login, lovart iniciar sesion",
       "canonical_url": "https://lovart.info/es/lovart-login"
     },

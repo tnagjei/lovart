@@ -1041,7 +1041,7 @@
         "breadcrumb": "Lovart 客服总入口",
         "seo": {
           "title": "Lovart 客服总入口指南（第三方）",
-          "description": "第三方 Lovart 客服导航页，覆盖登录异常、账号访问与问题分流，并提供官方渠道跳转。",
+          "description": "第三方 Lovart 客服导航页，覆盖登录异常、账号访问、订阅与安全问题分流，并提供官方邮件与 Discord 等正式支持渠道，帮助你快速找到正确入口。",
           "keywords": "lovart 客服, lovart login, lovart 官网入口"
         },
         "hero": {
@@ -1137,7 +1137,7 @@
         "breadcrumb": "Lovart 退款指南",
         "seo": {
           "title": "Lovart 退款与支付问题指南（第三方）",
-          "description": "退款、订阅与支付问题的第三方分流说明，并提供官方处理入口。",
+          "description": "退款、订阅与支付问题的第三方分流说明，梳理常见账单场景、处理时效与提交材料，并提供官方处理入口，帮助你更快完成工单沟通与进度跟踪。",
           "keywords": "lovart 退款, lovart 订阅, lovart 支付"
         },
         "hero": {
@@ -1185,7 +1185,7 @@
         "breadcrumb": "Lovart 删号指南",
         "seo": {
           "title": "Lovart 删号指南（第三方）",
-          "description": "账号删除请求分流页面，帮助你通过官方渠道完成删除申请。",
+          "description": "账号删除请求分流页面，说明删除前准备、身份核验与数据影响，帮助你通过官方渠道安全提交删除申请，并跟进后续处理进度与确认结果。",
           "keywords": "lovart 删除账号, lovart 注销"
         },
         "hero": {
