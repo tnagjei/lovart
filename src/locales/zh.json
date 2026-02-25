@@ -53,71 +53,71 @@
     }
   },
   "nav": {
-    "home": "Home",
-    "features": "Features",
-    "pricing": "Pricing",
-    "blog": "Blog",
-    "help": "Help",
-    "about": "About",
-    "get_started": "Get Started",
+    "home": "首页",
+    "features": "功能",
+    "pricing": "价格",
+    "blog": "博客",
+    "help": "帮助",
+    "about": "关于",
+    "get_started": "开始使用",
     "free": "免费试用",
     "api": "API",
     "ai_code": "AI Code"
   },
   "hero": {
-    "title": "Lovart: Unleash Your Creative Genius with AI-Powered Design",
-    "subtitle": "Lovart is the revolutionary design platform meticulously crafted for visionary creators like you. We empower you with a suite of intuitive tools, supercharged by cutting-edge AI-driven insights from Lovart, enabling you to effortlessly transform your most ambitious concepts into breathtaking realities. Say goodbye to cumbersome software and hello to a seamless, inspiring design journey with Lovart. Join our Lovart community today and redefine what's possible in digital creation.",
-    "cta_explore": "Explore Lovart Features",
-    "cta_pricing": "View Pricing"
+    "title": "Lovart AI 设计平台：更快产出品牌级视觉内容",
+    "subtitle": "Lovart 帮助设计师、运营和内容团队把想法快速落地。通过 AI 灵感建议、可视化编辑与团队协作，你可以在一个工作流里完成从草图到交付的全过程。",
+    "cta_explore": "查看核心功能",
+    "cta_pricing": "查看价格方案"
   },
   "features": {
-    "title": "Explore Core Lovart Features for Unprecedented Creativity",
+    "title": "用 Lovart 搭建高效率设计工作流",
     "items": [
       {
-        "title": "AI-Enhanced Creativity with Lovart",
-        "desc": "Lovart's sophisticated artificial intelligence acts as your personal design assistant. It intelligently suggests compelling design elements, harmonious color palettes, and optimal layout options, effectively supercharging your creative process with Lovart and helping you overcome creative blocks. With Lovart, innovation is always at your fingertips."
+        "title": "AI 灵感建议，减少卡壳时间",
+        "desc": "Lovart 会根据你的目标与素材上下文给出版式、配色和文案方向建议，帮助你在早期更快确认创意方向。"
       },
       {
-        "title": "Intuitive Drag & Drop Interface by Lovart",
-        "desc": "This Lovart platform boasts a beautifully designed, seamless, and remarkably user-friendly drag-and-drop interface. This allows you to focus your energy entirely on the art of design, rather than wrestling with complex tools. Lovart makes professional design accessible to everyone."
+        "title": "拖拽式编辑，快速完成排版",
+        "desc": "通过直观的拖拽界面调整元素、层级和间距，不需要复杂学习成本，适合高频迭代场景。"
       },
       {
-        "title": "Real-Time Collaboration, Powered by Lovart",
-        "desc": "Elevate your teamwork with Lovart's robust collaborative features. Instantly share your Lovart projects, gather precise feedback with on-canvas annotations, and work together seamlessly with clients or team members, no matter where they are located. Lovart fosters creative synergy."
+        "title": "多人协作与反馈闭环",
+        "desc": "你可以把设计链接给同事或客户，集中收集反馈并快速修订，减少反复沟通带来的时间损耗。"
       },
       {
-        "title": "Vast Integrated Asset Library in Lovart",
-        "desc": "Dive into Lovart's extensive, curated library, offering millions of high-quality stock images, versatile icons, stylish illustrations, and professional fonts directly within the Lovart platform. Find the perfect asset to complement your vision without ever leaving Lovart."
+        "title": "内置素材库，减少切换成本",
+        "desc": "在同一页面直接使用图片、图标和字体资源，避免在多个工具之间来回切换。"
       },
       {
-        "title": "Lovart's Versatile One-Click Export Options",
-        "desc": "Your masterpiece is ready, and Lovart ensures it reaches its audience flawlessly. Export your designs in a multitude of formats suitable for web, print, social media, and more, all with Lovart's streamlined, intelligent one-click export process. Lovart respects your time."
+        "title": "一键导出，多渠道发布",
+        "desc": "支持面向社媒、网页和演示场景的导出配置，让内容可以更快进入分发和投放环节。"
       },
       {
-        "title": "Flawless Responsive Design Previews by Lovart",
-        "desc": "In today's multi-device world, Lovart ensures your creations look impeccable everywhere. Instantly preview how your Lovart designs adapt to various screen sizes, from desktops to tablets and smartphones, using Lovart's built-in, accurate preview tools."
+        "title": "多端预览，保证展示一致",
+        "desc": "在设计阶段就可以预览桌面端与移动端效果，提前发现布局问题，降低上线返工概率。"
       }
     ]
   },
   "how_it_works": {
-    "title": "From Idea to Impact: How Lovart Streamlines Your Design Workflow",
+    "title": "三步完成从想法到成品",
     "steps": [
       {
-        "title": "Ignite Your Project: Sign Up & Choose Your Lovart Canvas",
-        "desc": "Embark on your creative journey by quickly signing up for Lovart. Get a head start with Lovart’s diverse range of professionally designed templates tailored for various needs, or unleash your unique vision on a completely blank canvas. Lovart adapts to your style."
+        "title": "第 1 步：明确目标并选择模板",
+        "desc": "根据投放渠道和受众选择合适模板，或从空白画布开始，先搭建内容结构。"
       },
       {
-        "title": "Design with Lovart's AI & Intuitive Tools",
-        "desc": "Leverage Lovart's powerful AI suggestions and user-friendly drag-and-drop interface. Access a vast library of assets within Lovart to bring your ideas to life quickly and efficiently. Lovart makes complex design simple and fun."
+        "title": "第 2 步：用 AI 建议快速迭代",
+        "desc": "结合 AI 建议调整视觉风格、信息层级和文案节奏，快速做出多个可选版本。"
       },
       {
-        "title": "Collaborate, Refine & Export with Lovart",
-        "desc": "Share your Lovart designs for feedback, iterate with ease, and when you're ready, export your masterpiece in various formats using Lovart. From initial concept to final product, Lovart supports your entire creative process."
+        "title": "第 3 步：协作确认并导出发布",
+        "desc": "收集团队反馈后定稿，按渠道需求导出并进入发布或广告投放流程。"
       }
     ]
   },
   "testimonials": {
-    "title": "Hear What Designers Say About Lovart",
+    "title": "来自创意团队的真实使用反馈",
     "items": [
       {
         "quote": "\"Lovart has completely transformed my workflow. The AI suggestions are incredibly insightful, and the collaboration tools make working with clients a breeze. I'm producing higher quality work faster than ever thanks to Lovart!\"",
@@ -152,73 +152,73 @@
     "video_fallback": "Your browser does not support the video tag."
   },
   "pricing": {
-    "title": "Find the Perfect Lovart Plan for You",
-    "subtitle": "Whether you're just starting out or leading a design team, Lovart offers flexible pricing plans packed with features to elevate your creative output. Choose Lovart and start designing today!",
+    "title": "按团队阶段选择合适方案",
+    "subtitle": "无论是个人设计者还是小团队，都可以从合适的套餐开始，在控制预算的前提下提升产出效率。",
     "plans": {
       "starter": {
-        "name": "Starter Lovart",
-        "desc": "Perfect for individuals and hobbyists exploring Lovart.",
+        "name": "Starter 入门版",
+        "desc": "适合个人尝试与轻量项目。",
         "price": "$19",
         "period": "/month",
         "features": [
-          "Basic AI Design Tools by Lovart",
-          "Limited Asset Library Access",
-          "Standard Export Options",
-          "Community Support via Lovart"
+          "基础 AI 设计能力",
+          "有限素材库访问",
+          "标准导出选项",
+          "社区支持"
         ],
-        "cta": "Choose Starter"
+        "cta": "选择 Starter"
       },
       "pro": {
-        "tag": "MOST POPULAR",
-        "name": "Pro Lovart",
-        "desc": "Ideal for professional designers and freelancers using Lovart.",
+        "tag": "最受欢迎",
+        "name": "Pro 专业版",
+        "desc": "适合自由设计师与高频创作者。",
         "price": "$49",
         "period": "/month",
         "features": [
-          "Advanced AI Design Suite by Lovart",
-          "Full Asset Library Access",
-          "Real-time Collaboration (Lovart Teams)",
-          "Priority Support from Lovart",
-          "All Export Options"
+          "完整 AI 设计工具集",
+          "全量素材库访问",
+          "实时协作功能",
+          "优先支持",
+          "全部导出能力"
         ],
-        "cta": "Choose Pro"
+        "cta": "选择 Pro"
       },
       "team": {
-        "name": "Lovart for Teams",
-        "desc": "For agencies and design teams needing advanced Lovart collaboration.",
-        "price": "Contact Us",
+        "name": "Team 团队版",
+        "desc": "适合代理公司与设计团队管理。",
+        "price": "联系我们",
         "features": [
-          "All Pro Lovart Features",
-          "Multi-user Accounts & Management",
-          "Dedicated Lovart Account Manager",
-          "Custom Integrations & API Access"
+          "包含 Pro 全部功能",
+          "多成员与权限管理",
+          "专属客户成功支持",
+          "定制集成与 API 接入"
         ],
-        "cta": "Contact Sales"
+        "cta": "联系销售"
       }
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions About Lovart",
+    "title": "关于 Lovart 的常见问题",
     "items": [
       {
-        "q": "What is Lovart and who is it for?",
-        "a": "Lovart is an innovative, AI-powered design platform built for creative professionals, including graphic designers, UI/UX designers, marketers, and content creators. Lovart aims to streamline the design process, enhance creativity with AI assistance, and facilitate seamless collaboration. Whether you're a freelancer or part of a large team, Lovart provides the tools you need to produce stunning visuals efficiently."
+        "q": "Lovart 适合哪些人使用？",
+        "a": "Lovart 适合设计师、品牌运营、内容团队和营销人员。它特别适合需要高频产出视觉内容并快速协作的场景。"
       },
       {
-        "q": "How does the AI in Lovart help my design process?",
-        "a": "Lovart's AI acts as your intelligent design partner. It can suggest color palettes, layout options, font pairings, and even generate design elements based on your input. This helps overcome creative blocks, speeds up ideation, and ensures your designs are aesthetically pleasing and effective. Lovart's AI is designed to augment your skills, not replace them."
+        "q": "Lovart 的 AI 在实际工作中能做什么？",
+        "a": "AI 主要用于提供版式、配色、元素组织和创意方向建议，帮助你更快完成初稿并缩短迭代周期。"
       },
       {
-        "q": "Can I collaborate with my team or clients using Lovart?",
-        "a": "Absolutely! Lovart offers robust real-time collaboration features. You can share your Lovart projects with team members or clients, allow them to comment directly on the canvas, and work together seamlessly. This makes the feedback process smoother and keeps everyone aligned, regardless of their location. Lovart is built for teamwork."
+        "q": "可以和同事或客户一起审稿吗？",
+        "a": "可以。你可以分享项目并收集反馈，团队可以基于同一稿件协同修改，减少来回沟通成本。"
       },
       {
-        "q": "What kind of assets are available in the Lovart library?",
-        "a": "Lovart provides an extensive integrated library featuring millions of high-quality stock photos, icons, illustrations, and fonts. This allows you to find the perfect assets for your Lovart projects without needing to switch between different platforms or pay for individual assets. The Lovart library is constantly updated to provide fresh and relevant content."
+        "q": "素材库是否足够日常使用？",
+        "a": "Lovart 内置常见图片、图标与字体资源，覆盖大多数社媒、落地页和广告素材制作需求。"
       },
       {
-        "q": "Is Lovart suitable for responsive web design?",
-        "a": "Yes, Lovart is designed with responsiveness in mind. You can easily preview how your Lovart designs will look on different screen sizes (desktop, tablet, mobile) directly within the platform. Lovart's tools help you create fluid layouts and ensure your visuals are optimized for every device, providing a seamless user experience for your audience."
+        "q": "移动端和桌面端效果能提前确认吗？",
+        "a": "可以。你可以在编辑阶段预览不同屏幕尺寸，提前修正布局问题，减少上线后的返工。"
       }
     ]
   },
@@ -241,17 +241,17 @@
     }
   },
   "cta_section": {
-    "title": "Ready to Revolutionize Your Design Process with Lovart?",
-    "subtitle": "Join thousands of creators who are already building their best work with Lovart. Experience the future of design, today.",
-    "cta_trial": "Start Your Free Lovart Trial",
-    "cta_explore": "Explore Lovart Features",
+    "title": "准备好提升你的设计产出效率了吗？",
+    "subtitle": "从灵感到交付，在一个平台完成创意生产、协作和发布。",
+    "cta_trial": "开始免费试用",
+    "cta_explore": "浏览核心功能",
     "cta_developers": "开发者指南"
   },
   "cookie_consent": {
-    "text": "We use cookies to enhance your experience and analyze our traffic. By continuing to visit this site you agree to our use of cookies.",
-    "learn_more": "Learn more",
-    "decline": "Decline",
-    "accept": "Accept"
+    "text": "我们使用 Cookie 来优化体验并分析流量。继续使用本网站即表示你同意我们的 Cookie 政策。",
+    "learn_more": "了解更多",
+    "decline": "拒绝",
+    "accept": "同意"
   },
   "features_page": {
     "seo": {
@@ -3973,11 +3973,31 @@
       "heading": "常见拼写映射",
       "intro": "这些关键词通常指向同一个产品意图。",
       "items": [
-        { "wrong": "lovarte", "right": "lovart.ai", "note": "最高频拼写变体" },
-        { "wrong": "lovartal", "right": "lovart.ai", "note": "域名拼写混淆" },
-        { "wrong": "lovarts", "right": "lovart.ai", "note": "复数误拼" },
-        { "wrong": "lovart_ai", "right": "lovart ai", "note": "下划线查询变体" },
-        { "wrong": "lovart.ai/home", "right": "lovart.ai", "note": "导航型 home 查询" }
+        {
+          "wrong": "lovarte",
+          "right": "lovart.ai",
+          "note": "最高频拼写变体"
+        },
+        {
+          "wrong": "lovartal",
+          "right": "lovart.ai",
+          "note": "域名拼写混淆"
+        },
+        {
+          "wrong": "lovarts",
+          "right": "lovart.ai",
+          "note": "复数误拼"
+        },
+        {
+          "wrong": "lovart_ai",
+          "right": "lovart ai",
+          "note": "下划线查询变体"
+        },
+        {
+          "wrong": "lovart.ai/home",
+          "right": "lovart.ai",
+          "note": "导航型 home 查询"
+        }
       ]
     },
     "destinations": {
@@ -4085,10 +4105,22 @@
     "related": {
       "heading": "相关阅读",
       "items": [
-        { "path": "/lovart-promo-code", "title": "Lovart 优惠码" },
-        { "path": "/lovart-invitation-code", "title": "Lovart 邀请码" },
-        { "path": "/lovart-ai-code", "title": "Lovart AI Code" },
-        { "path": "/lovart-pricing", "title": "Lovart 定价" }
+        {
+          "path": "/lovart-promo-code",
+          "title": "Lovart 优惠码"
+        },
+        {
+          "path": "/lovart-invitation-code",
+          "title": "Lovart 邀请码"
+        },
+        {
+          "path": "/lovart-ai-code",
+          "title": "Lovart AI Code"
+        },
+        {
+          "path": "/lovart-pricing",
+          "title": "Lovart 定价"
+        }
       ]
     },
     "disclaimer": {
@@ -4114,17 +4146,38 @@
     "comparison": {
       "heading": "Agent 与普通生成器对比",
       "rows": [
-        { "aspect": "任务模型", "agent": "多步骤编排与迭代", "generator": "单提示词、单次输出" },
-        { "aspect": "一致性", "agent": "可保持风格与系统约束", "generator": "每次输出相对独立" },
-        { "aspect": "使用场景", "agent": "品牌与活动连续产出", "generator": "快速草图与灵感探索" }
+        {
+          "aspect": "任务模型",
+          "agent": "多步骤编排与迭代",
+          "generator": "单提示词、单次输出"
+        },
+        {
+          "aspect": "一致性",
+          "agent": "可保持风格与系统约束",
+          "generator": "每次输出相对独立"
+        },
+        {
+          "aspect": "使用场景",
+          "agent": "品牌与活动连续产出",
+          "generator": "快速草图与灵感探索"
+        }
       ]
     },
     "use_cases": {
       "heading": "典型使用场景",
       "items": [
-        { "title": "品牌连续迭代", "desc": "一套视觉语言衍生多触点素材并保持统一。"},
-        { "title": "从提示到活动资产", "desc": "把一个方向扩展为一组可落地交付物。"},
-        { "title": "设计系统对齐", "desc": "复用约束和风格规则，提升反复生产效率。"}
+        {
+          "title": "品牌连续迭代",
+          "desc": "一套视觉语言衍生多触点素材并保持统一。"
+        },
+        {
+          "title": "从提示到活动资产",
+          "desc": "把一个方向扩展为一组可落地交付物。"
+        },
+        {
+          "title": "设计系统对齐",
+          "desc": "复用约束和风格规则，提升反复生产效率。"
+        }
       ]
     },
     "faq": {
@@ -4147,10 +4200,22 @@
     "related": {
       "heading": "相关阅读",
       "items": [
-        { "path": "/what-is-lovart", "title": "什么是 Lovart" },
-        { "path": "/lovart-tutorial", "title": "Lovart 教程" },
-        { "path": "/lovart-prompt-guide", "title": "Lovart Prompt Guide" },
-        { "path": "/lovart-design-features", "title": "Lovart 功能页" }
+        {
+          "path": "/what-is-lovart",
+          "title": "什么是 Lovart"
+        },
+        {
+          "path": "/lovart-tutorial",
+          "title": "Lovart 教程"
+        },
+        {
+          "path": "/lovart-prompt-guide",
+          "title": "Lovart Prompt Guide"
+        },
+        {
+          "path": "/lovart-design-features",
+          "title": "Lovart 功能页"
+        }
       ]
     },
     "disclaimer": {
