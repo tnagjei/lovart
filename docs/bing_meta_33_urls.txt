@@ -1,0 +1,27 @@
+# Bing "Meta descriptions too short" URL whitelist
+# Usage:
+# 1) Keep one URL per line.
+# 2) Paste the final full 33 URLs exported from Bing.
+# 3) Run:
+#    node scripts/map-bing-whitelist-to-meta-keys.mjs
+#
+# The following entries are prefilled from your screenshot and still need
+# to be completed/replaced with the final full whitelist.
+
+https://lovart.info/ja/
+https://lovart.info/zh/
+https://lovart.info/zh/blog
+https://lovart.info/zh/about
+https://lovart.info/lovart-terms-of-use-guide
+https://lovart.info/zh/blog-lovart-january-update-new-features
+https://lovart.info/zh/blog-ui-ux-design-trends-2024
+https://lovart.info/zh/blog-ai-assisted-product-design-best-practices
+https://lovart.info/zh/help
+https://lovart.info/zh/lovart-pricing
+https://lovart.info/ja/help
+https://lovart.info/zh/blog-master-lovart-ai-design-in-5-minutes
+https://lovart.info/zh/lovart-support-contact
+https://lovart.info/zh/lovart-privacy-policy-guide
+https://lovart.info/ja/blog-ai-assisted-product-design-best-practices
+https://lovart.info/zh/lovart-ai-code
+https://lovart.info/ja/about
