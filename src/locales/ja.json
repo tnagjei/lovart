@@ -962,11 +962,43 @@
       "title": "公式利用規約",
       "desc": "このページは third-party 要約です。法的効力は公式規約本文を参照してください。",
       "cta": "公式規約を開く"
+    },
+    "pages": {
+      "customer_support": {
+        "seo": {
+          "title": "Lovart カスタマーサポートガイド | 公式窓口ナビ（第三者）"
+        }
+      },
+      "support_contact": {
+        "seo": {
+          "title": "Lovart サポート連絡先 | 公式メール・Discord案内"
+        }
+      },
+      "refund_guide": {
+        "seo": {
+          "title": "Lovart 返金ガイド | 公式請求・返金窓口ナビ"
+        }
+      },
+      "account_deletion_guide": {
+        "seo": {
+          "title": "Lovart アカウント削除ガイド | 公式申請ルート案内"
+        }
+      },
+      "privacy_policy_guide": {
+        "seo": {
+          "title": "Lovart プライバシーポリシーガイド | 第三者要約＋公式リンク"
+        }
+      },
+      "terms_of_use_guide": {
+        "seo": {
+          "title": "Lovart 利用規約ガイド | 第三者要約＋公式リンク"
+        }
+      }
     }
   },
   "help_page": {
     "seo": {
-      "title": "Help Center - Lovart AI Design Official Resources",
+      "title": "Lovart ヘルプセンター | 公式リソースとサポート案内",
       "description": "Access Lovart AI's official Help Center for credit usage rules, subscription guides, commercial license info, and troubleshooting. Get support via email or Discord.",
       "keywords": "Lovart Help, AI credits guide, Flux.1 commercial use, Lovart subscription support"
     },

@@ -962,11 +962,43 @@
       "title": "Conditions d'utilisation officielles",
       "desc": "Cette page est un résumé third-party. Référez-vous au texte officiel pour les clauses applicables.",
       "cta": "Ouvrir les conditions officielles"
+    },
+    "pages": {
+      "customer_support": {
+        "seo": {
+          "title": "Guide support client Lovart | Routage officiel tiers"
+        }
+      },
+      "support_contact": {
+        "seo": {
+          "title": "Contact support Lovart | Email officiel et Discord"
+        }
+      },
+      "refund_guide": {
+        "seo": {
+          "title": "Guide remboursement Lovart | Routage officiel facturation"
+        }
+      },
+      "account_deletion_guide": {
+        "seo": {
+          "title": "Guide suppression de compte Lovart | Demande officielle"
+        }
+      },
+      "privacy_policy_guide": {
+        "seo": {
+          "title": "Guide politique de confidentialite Lovart | Resume tiers + lien officiel"
+        }
+      },
+      "terms_of_use_guide": {
+        "seo": {
+          "title": "Guide conditions d'utilisation Lovart | Resume tiers + lien officiel"
+        }
+      }
     }
   },
   "help_page": {
     "seo": {
-      "title": "Help Center - Lovart AI Design Official Resources",
+      "title": "Centre d'aide Lovart | Ressources officielles et support",
       "description": "Access Lovart AI's official Help Center for credit usage rules, subscription guides, commercial license info, and troubleshooting. Get support via email or Discord.",
       "keywords": "Lovart Help, AI credits guide, Flux.1 commercial use, Lovart subscription support"
     },
