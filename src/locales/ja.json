@@ -966,32 +966,38 @@
     "pages": {
       "customer_support": {
         "seo": {
-          "title": "Lovart カスタマーサポートガイド | 公式窓口ナビ（第三者）"
+          "title": "Lovart カスタマーサポートガイド | 公式窓口ナビ（第三者）",
+          "description": "ログイン不具合、アカウントアクセス、一般的なトラブル対応を整理した第三者ガイドです。公式 Lovart サポート窓口へ最短で案内します。"
         }
       },
       "support_contact": {
         "seo": {
-          "title": "Lovart サポート連絡先 | 公式メール・Discord案内"
+          "title": "Lovart サポート連絡先 | 公式メール・Discord案内",
+          "description": "support@lovart.ai と公式 Discord を含む Lovart の公式問い合わせ先をまとめ、目的に合う連絡窓口へ素早く案内します。"
         }
       },
       "refund_guide": {
         "seo": {
-          "title": "Lovart 返金ガイド | 公式請求・返金窓口ナビ"
+          "title": "Lovart 返金ガイド | 公式請求・返金窓口ナビ",
+          "description": "返金・請求・サブスクリプション問題を整理した第三者ガイドです。必要情報の準備から公式窓口への申請までを案内します。"
         }
       },
       "account_deletion_guide": {
         "seo": {
-          "title": "Lovart アカウント削除ガイド | 公式申請ルート案内"
+          "title": "Lovart アカウント削除ガイド | 公式申請ルート案内",
+          "description": "Lovart アカウント削除の第三者ガイドです。申請前の確認事項、本人確認、データ影響を整理し、公式窓口へ案内します。"
         }
       },
       "privacy_policy_guide": {
         "seo": {
-          "title": "Lovart プライバシーポリシーガイド | 第三者要約＋公式リンク"
+          "title": "Lovart プライバシーポリシーガイド | 第三者要約＋公式リンク",
+          "description": "Lovart プライバシーポリシーの第三者解説ページです。要点を確認し、最新の公式本文へ移動できます。"
         }
       },
       "terms_of_use_guide": {
         "seo": {
-          "title": "Lovart 利用規約ガイド | 第三者要約＋公式リンク"
+          "title": "Lovart 利用規約ガイド | 第三者要約＋公式リンク",
+          "description": "Lovart 利用規約の第三者解説ページです。アカウント規則、請求条件、許容利用の要点を整理し、公式本文へ案内します。"
         }
       }
     }
@@ -999,7 +1005,7 @@
   "help_page": {
     "seo": {
       "title": "Lovart ヘルプセンター | 公式リソースとサポート案内",
-      "description": "Access Lovart AI's official Help Center for credit usage rules, subscription guides, commercial license info, and troubleshooting. Get support via email or Discord.",
+      "description": "Lovart AI 公式ヘルプセンターで、クレジット利用ルール、サブスクリプション、商用ライセンス、トラブル対応を確認できます。メールまたは Discord でサポートを受けられます。",
       "keywords": "Lovart Help, AI credits guide, Flux.1 commercial use, Lovart subscription support"
     },
     "hero": {
@@ -3588,6 +3594,13 @@
           "a": "全く必要ありません。how to use lovartは、絵を描く技術より、アイデアを言葉で説明するスキルが重要です。"
         }
       ]
+    }
+  },
+  "lovart_company_page": {
+    "seo": {
+      "title": "Lovart 会社・チーム情報：AIデザインプラットフォームの背景",
+      "description": "Lovart の会社概要、ミッション、チーム、プロダクト方針を確認し、料金・レビュー・機能比較ページへ効率よく進めます。",
+      "canonical_url": "https://lovart.info/ja/lovart-company"
     }
   },
   "lovarte_page": {

@@ -966,32 +966,38 @@
     "pages": {
       "customer_support": {
         "seo": {
-          "title": "Guide support client Lovart | Routage officiel tiers"
+          "title": "Guide support client Lovart | Routage officiel tiers",
+          "description": "Guide third-party pour les problèmes de connexion Lovart, l'accès au compte et le dépannage courant. Accédez rapidement aux canaux de support officiels Lovart."
         }
       },
       "support_contact": {
         "seo": {
-          "title": "Contact support Lovart | Email officiel et Discord"
+          "title": "Contact support Lovart | Email officiel et Discord",
+          "description": "Retrouvez les canaux de contact officiels Lovart, dont support@lovart.ai et le serveur Discord officiel, pour joindre rapidement la bonne équipe."
         }
       },
       "refund_guide": {
         "seo": {
-          "title": "Guide remboursement Lovart | Routage officiel facturation"
+          "title": "Guide remboursement Lovart | Routage officiel facturation",
+          "description": "Guide third-party Lovart sur les remboursements et la facturation, avec préparation des éléments utiles et redirection vers les canaux officiels de suivi."
         }
       },
       "account_deletion_guide": {
         "seo": {
-          "title": "Guide suppression de compte Lovart | Demande officielle"
+          "title": "Guide suppression de compte Lovart | Demande officielle",
+          "description": "Guide third-party pour la suppression de compte Lovart: vérification d'identité, précautions sur les données et redirection vers les canaux officiels."
         }
       },
       "privacy_policy_guide": {
         "seo": {
-          "title": "Guide politique de confidentialite Lovart | Resume tiers + lien officiel"
+          "title": "Guide politique de confidentialite Lovart | Resume tiers + lien officiel",
+          "description": "Guide third-party de la politique de confidentialité Lovart, avec résumé des points clés et lien direct vers le texte officiel le plus récent."
         }
       },
       "terms_of_use_guide": {
         "seo": {
-          "title": "Guide conditions d'utilisation Lovart | Resume tiers + lien officiel"
+          "title": "Guide conditions d'utilisation Lovart | Resume tiers + lien officiel",
+          "description": "Guide third-party des conditions d'utilisation Lovart, résumant règles de compte, paiement, usages autorisés et lien vers le texte officiel."
         }
       }
     }
@@ -999,7 +1005,7 @@
   "help_page": {
     "seo": {
       "title": "Centre d'aide Lovart | Ressources officielles et support",
-      "description": "Access Lovart AI's official Help Center for credit usage rules, subscription guides, commercial license info, and troubleshooting. Get support via email or Discord.",
+      "description": "Accédez au centre d'aide officiel Lovart AI pour les règles de crédits, les abonnements, les licences commerciales et le dépannage. Obtenez de l'aide par e-mail ou Discord.",
       "keywords": "Lovart Help, AI credits guide, Flux.1 commercial use, Lovart subscription support"
     },
     "hero": {
@@ -3588,6 +3594,13 @@
           "a": "Totalement illusoire, percevez the art of how to use lovart par la structuration cérébrale des idées en terminologie descriptive que par tout habileté ou dextérité propre au designer graphique en agence."
         }
       ]
+    }
+  },
+  "lovart_company_page": {
+    "seo": {
+      "title": "Entreprise Lovart et équipe : coulisses de la plateforme de design IA",
+      "description": "Découvrez le profil de l'entreprise Lovart, sa mission, son équipe et sa feuille de route produit, avec des liens vers tarifs, avis et fonctionnalités.",
+      "canonical_url": "https://lovart.info/fr/lovart-company"
     }
   },
   "lovarte_page": {
