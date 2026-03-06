@@ -6,6 +6,3 @@
 
 /login
   X-Robots-Tag: noindex, nofollow, noarchive
-
-/*.html
-  X-Robots-Tag: noindex

@@ -7,6 +7,10 @@ Disallow: /private/
 Disallow: /user-content/
 Disallow: /cdn-cgi/
 
+# AdSense crawlers
+User-agent: Mediapartners-Google
+Allow: /
+
 # Sitemap
 Sitemap: https://lovart.info/sitemap.xml
 
