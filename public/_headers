@@ -6,3 +6,8 @@
 
 /login
   X-Robots-Tag: noindex, nofollow, noarchive
+
+# Allow AdSense Preview and general indexing
+/*
+  Access-Control-Allow-Origin: *
+  Content-Security-Policy: frame-ancestors 'self' https://*.google.com https://*.googlesyndication.com
