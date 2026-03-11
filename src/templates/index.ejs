@@ -150,7 +150,15 @@
                         }
                     </style>
                     <%- include('partials/schema-organization') %>
-                        <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+                    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+                    <script type="application/ld+json">
+                    {
+                        "@context" : "https://schema.org",
+                        "@type" : "WebSite",
+                        "name" : "Lovart",
+                        "url" : "https://lovart.info/"
+                    }
+                    </script>
     </head>
 
     <body class="bg-neutral-light text-neutral-dark antialiased">
