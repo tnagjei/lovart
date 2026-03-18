@@ -232,6 +232,37 @@
     "contact_info": "Contact: tangjei414@gmail.com | Telegram: @tangjei",
     "tagline": "Lovart - The AI Design Platform for Creative Professionals.",
     "partner_site": "Partner Site",
+    "articles_title": "最新記事",
+    "articles": [
+        {
+            "path": "blog-how-ai-is-reshaping-modern-design-workflows",
+            "title": "AIが変えるデザインワークフロー"
+        },
+        {
+            "path": "blog-master-lovart-ai-design-in-5-minutes",
+            "title": "5分でLovart AIデザインをマスター"
+        },
+        {
+            "path": "blog-ai-assisted-product-design-best-practices",
+            "title": "AI支援プロダクトデザインのベストプラクティス"
+        },
+        {
+            "path": "blog-break-creative-block-with-ai-inspiration",
+            "title": "AIインスピレーションで創造性を解放"
+        },
+        {
+            "path": "blog-how-designers-boost-efficiency-with-lovart",
+            "title": "デザイナーがLovartで効率を上げる方法"
+        },
+        {
+            "path": "blog-ui-ux-design-trends-2024",
+            "title": "2024年UI/UXデザイントレンド"
+        },
+        {
+            "path": "blog-lovart-january-update-new-features",
+            "title": "Lovart 1月アップデート：新機能"
+        }
+    ],
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
     "contact_column": {

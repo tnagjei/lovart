@@ -173,6 +173,23 @@
                         </ul>
                     </div>
                     <% } %>
+                        <% if (t.footer.articles && t.footer.articles.length) { %>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                <%= t.footer.articles_title || 'Latest Articles' %>
+                            </h3>
+                            <ul class="space-y-2">
+                                <% t.footer.articles.forEach(function(article) { %>
+                                <li>
+                                    <a href="<%= link(article.path) %>"
+                                        class="text-neutral hover:text-primary transition-colors">
+                                        <%= article.title %>
+                                    </a>
+                                </li>
+                                <% }); %>
+                            </ul>
+                        </div>
+                        <% } %>
                         <div>
                             <h3 class="text-xl font-semibold text-white mb-3">
                                 <%= t.footer.contact_title %>

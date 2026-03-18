@@ -16,6 +16,37 @@
     "company_title": "Azienda",
     "contact_title": "Contatto Lovart",
     "partner_site": "Sito partner",
+    "articles_title": "Ultimi Articoli",
+    "articles": [
+        {
+            "path": "blog-how-ai-is-reshaping-modern-design-workflows",
+            "title": "Come l'IA sta trasformando i flussi di design"
+        },
+        {
+            "path": "blog-master-lovart-ai-design-in-5-minutes",
+            "title": "Padroneggia Lovart AI Design in 5 minuti"
+        },
+        {
+            "path": "blog-ai-assisted-product-design-best-practices",
+            "title": "Best practice del design prodotto con IA"
+        },
+        {
+            "path": "blog-break-creative-block-with-ai-inspiration",
+            "title": "Sblocca la creatività con l'ispirazione IA"
+        },
+        {
+            "path": "blog-how-designers-boost-efficiency-with-lovart",
+            "title": "Come i designer aumentano l'efficienza"
+        },
+        {
+            "path": "blog-ui-ux-design-trends-2024",
+            "title": "Tendenze UI/UX Design 2024"
+        },
+        {
+            "path": "blog-lovart-january-update-new-features",
+            "title": "Aggiornamento Lovart gennaio: nuove funzionalità"
+        }
+    ],
     "terms": "Termini di servizio",
     "privacy": "Informativa sulla privacy",
     "contact_column": {
