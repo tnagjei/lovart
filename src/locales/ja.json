@@ -263,6 +263,19 @@
             "title": "Lovart 1月アップデート：新機能"
         }
     ],
+    "popular_tools_title": "人気ツール",
+    "popular_tools": [
+        { "path": "lovart-ai-agent", "title": "Lovart AI Agent" },
+        { "path": "lovart-code", "title": "Lovart Code" },
+        { "path": "what-is-lovart", "title": "Lovartとは？" },
+        { "path": "lovart-brand-kit", "title": "Lovart ブランドキット" },
+        { "path": "lovart-logo", "title": "Lovart ロゴ" },
+        { "path": "lovart-apk", "title": "Lovart APK" },
+        { "path": "lovarte", "title": "Lovarte" },
+        { "path": "lovart-invitation-code", "title": "Lovart 招待コード" },
+        { "path": "lovart-china", "title": "Lovart 中国" },
+        { "path": "lovart-beta", "title": "Lovart Beta" }
+    ],
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
     "contact_column": {

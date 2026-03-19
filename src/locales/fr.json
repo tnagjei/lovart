@@ -263,6 +263,19 @@
             "title": "Mise à jour Lovart janvier : nouvelles fonctionnalités"
         }
     ],
+    "popular_tools_title": "Outils Populaires",
+    "popular_tools": [
+        { "path": "lovart-ai-agent", "title": "Lovart AI Agent" },
+        { "path": "lovart-code", "title": "Lovart Code" },
+        { "path": "what-is-lovart", "title": "Qu'est-ce que Lovart ?" },
+        { "path": "lovart-brand-kit", "title": "Kit de marque Lovart" },
+        { "path": "lovart-logo", "title": "Logo Lovart" },
+        { "path": "lovart-apk", "title": "Lovart APK" },
+        { "path": "lovarte", "title": "Lovarte" },
+        { "path": "lovart-invitation-code", "title": "Code d'invitation Lovart" },
+        { "path": "lovart-china", "title": "Lovart Chine" },
+        { "path": "lovart-beta", "title": "Lovart Beta" }
+    ],
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
     "contact_column": {

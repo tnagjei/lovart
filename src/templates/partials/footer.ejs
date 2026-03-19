@@ -190,6 +190,23 @@
                             </ul>
                         </div>
                         <% } %>
+                        <% if (t.footer.popular_tools && t.footer.popular_tools.length) { %>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                <%= t.footer.popular_tools_title || 'Popular Tools' %>
+                            </h3>
+                            <ul class="space-y-2">
+                                <% t.footer.popular_tools.forEach(function(tool) { %>
+                                <li>
+                                    <a href="<%= link(tool.path) %>"
+                                        class="text-neutral hover:text-primary transition-colors">
+                                        <%= tool.title %>
+                                    </a>
+                                </li>
+                                <% }); %>
+                            </ul>
+                        </div>
+                        <% } %>
                         <div>
                             <h3 class="text-xl font-semibold text-white mb-3">
                                 <%= t.footer.contact_title %>

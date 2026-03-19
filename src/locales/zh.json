@@ -263,6 +263,19 @@
             "title": "Lovart 一月更新：新功能发布"
         }
     ],
+    "popular_tools_title": "热门工具",
+    "popular_tools": [
+        { "path": "lovart-ai-agent", "title": "Lovart AI Agent" },
+        { "path": "lovart-code", "title": "Lovart Code" },
+        { "path": "what-is-lovart", "title": "什么是 Lovart？" },
+        { "path": "lovart-brand-kit", "title": "Lovart 品牌资源包" },
+        { "path": "lovart-logo", "title": "Lovart Logo" },
+        { "path": "lovart-apk", "title": "Lovart APK 下载" },
+        { "path": "lovarte", "title": "Lovarte 拼写纠错" },
+        { "path": "lovart-invitation-code", "title": "Lovart 邀请码" },
+        { "path": "lovart-china", "title": "Lovart 中国" },
+        { "path": "lovart-beta", "title": "Lovart Beta" }
+    ],
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
     "contact_column": {

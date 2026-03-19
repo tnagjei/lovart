@@ -263,6 +263,19 @@
                 "title": "Lovart January Update: New Features"
             }
         ],
+        "popular_tools_title": "Popular Tools",
+        "popular_tools": [
+            { "path": "lovart-ai-agent", "title": "Lovart AI Agent" },
+            { "path": "lovart-code", "title": "Lovart Code" },
+            { "path": "what-is-lovart", "title": "What is Lovart?" },
+            { "path": "lovart-brand-kit", "title": "Lovart Brand Kit" },
+            { "path": "lovart-logo", "title": "Lovart Logo" },
+            { "path": "lovart-apk", "title": "Lovart APK" },
+            { "path": "lovarte", "title": "Lovarte" },
+            { "path": "lovart-invitation-code", "title": "Lovart Invitation Code" },
+            { "path": "lovart-china", "title": "Lovart China" },
+            { "path": "lovart-beta", "title": "Lovart Beta" }
+        ],
         "terms": "Terms of Service",
         "privacy": "Privacy Policy",
         "contact_column": {
