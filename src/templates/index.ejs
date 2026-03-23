@@ -158,6 +158,27 @@
                         "url" : "https://lovart.info/"
                     }
                     </script>
+                    <script type="application/ld+json">
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "SoftwareApplication",
+                        "name": "Lovart",
+                        "applicationCategory": "DesignApplication",
+                        "operatingSystem": "Web",
+                        "url": "https://lovart.info/",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "0",
+                            "priceCurrency": "USD"
+                        },
+                        "description": "<%= t.seo ? t.seo.description : 'AI-powered design platform for creative professionals' %>",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Lovart",
+                            "url": "https://lovart.info"
+                        }
+                    }
+                    </script>
     </head>
 
     <body class="bg-neutral-light text-neutral-dark antialiased">
