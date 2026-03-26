@@ -31,14 +31,20 @@ const esItCorePages = [
     'lovart-promo-code',
     'lovarte',
     'lovart-code',
-    'lovart-ai-agent'
+    'lovart-ai-agent',
+    'lovart-ai-image-generator',
+    'lovart-ai-logo-design',
+    'lovart-gpt-4o-image',
+    'lovart-3d-image-generator'
 ];
 const noindexLangs = new Set(['es', 'it']);
 const noindexShellPages = new Set(esItCorePages);
 
-const pageLangMap = Object.fromEntries(
-    esItCorePages.map((pageName) => [pageName, [...extendedSupportedLangs]])
-);
+const pageLangMap = {
+    ...Object.fromEntries(
+        esItCorePages.map((pageName) => [pageName, [...extendedSupportedLangs]])
+    )
+};
 
 const config = {
     srcDir: path.join(__dirname, 'src'),

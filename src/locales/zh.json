@@ -234,47 +234,93 @@
     "partner_site": "Partner Site",
     "articles_title": "最新文章",
     "articles": [
-        {
-            "path": "blog-how-ai-is-reshaping-modern-design-workflows",
-            "title": "AI 如何重塑现代设计工作流"
-        },
-        {
-            "path": "blog-master-lovart-ai-design-in-5-minutes",
-            "title": "5 分钟掌握 Lovart AI 设计"
-        },
-        {
-            "path": "blog-ai-assisted-product-design-best-practices",
-            "title": "AI 辅助产品设计最佳实践"
-        },
-        {
-            "path": "blog-break-creative-block-with-ai-inspiration",
-            "title": "用 AI 灵感打破创意瓶颈"
-        },
-        {
-            "path": "blog-how-designers-boost-efficiency-with-lovart",
-            "title": "设计师如何用 Lovart 提升效率"
-        },
-        {
-            "path": "blog-ui-ux-design-trends-2024",
-            "title": "2024 UI/UX 设计趋势"
-        },
-        {
-            "path": "blog-lovart-january-update-new-features",
-            "title": "Lovart 一月更新：新功能发布"
-        }
+      {
+        "path": "blog-how-ai-is-reshaping-modern-design-workflows",
+        "title": "AI 如何重塑现代设计工作流"
+      },
+      {
+        "path": "blog-master-lovart-ai-design-in-5-minutes",
+        "title": "5 分钟掌握 Lovart AI 设计"
+      },
+      {
+        "path": "blog-ai-assisted-product-design-best-practices",
+        "title": "AI 辅助产品设计最佳实践"
+      },
+      {
+        "path": "blog-break-creative-block-with-ai-inspiration",
+        "title": "用 AI 灵感打破创意瓶颈"
+      },
+      {
+        "path": "blog-how-designers-boost-efficiency-with-lovart",
+        "title": "设计师如何用 Lovart 提升效率"
+      },
+      {
+        "path": "blog-ui-ux-design-trends-2024",
+        "title": "2024 UI/UX 设计趋势"
+      },
+      {
+        "path": "blog-lovart-january-update-new-features",
+        "title": "Lovart 一月更新：新功能发布"
+      }
     ],
     "popular_tools_title": "热门工具",
     "popular_tools": [
-        { "path": "lovart-ai-agent", "title": "Lovart AI Agent" },
-        { "path": "lovart-code", "title": "Lovart Code" },
-        { "path": "what-is-lovart", "title": "什么是 Lovart？" },
-        { "path": "lovart-brand-kit", "title": "Lovart 品牌资源包" },
-        { "path": "lovart-logo", "title": "Lovart Logo" },
-        { "path": "lovart-apk", "title": "Lovart APK 下载" },
-        { "path": "lovarte", "title": "Lovarte 拼写纠错" },
-        { "path": "lovart-invitation-code", "title": "Lovart 邀请码" },
-        { "path": "lovart-china", "title": "Lovart 中国" },
-        { "path": "lovart-beta", "title": "Lovart Beta" }
+      {
+        "path": "lovart-ai-agent",
+        "title": "Lovart AI Agent"
+      },
+      {
+        "path": "lovart-code",
+        "title": "Lovart Code"
+      },
+      {
+        "path": "what-is-lovart",
+        "title": "什么是 Lovart？"
+      },
+      {
+        "path": "lovart-brand-kit",
+        "title": "Lovart 品牌资源包"
+      },
+      {
+        "path": "lovart-logo",
+        "title": "Lovart Logo"
+      },
+      {
+        "path": "lovart-apk",
+        "title": "Lovart APK 下载"
+      },
+      {
+        "path": "lovarte",
+        "title": "Lovarte 拼写纠错"
+      },
+      {
+        "path": "lovart-invitation-code",
+        "title": "Lovart 邀请码"
+      },
+      {
+        "path": "lovart-china",
+        "title": "Lovart 中国"
+      },
+      {
+        "path": "lovart-beta",
+        "title": "Lovart Beta"
+      },
+      {
+        "path": "lovart-ai-image-generator",
+        "title": "AI 图片生成器"
+      },
+      {
+        "path": "lovart-ai-logo-design",
+        "title": "AI Logo 设计"
+      },
+      {
+        "path": "lovart-gpt-4o-image",
+        "title": "GPT-4o 图片"
+      },
+      {
+        "path": "lovart-3d-image-generator",
+        "title": "AI 3D 图片生成器"
+      }
     ],
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
@@ -4332,5 +4378,577 @@
         "url": "/lovart-ai-agent"
       }
     ]
+  },
+  "ai_image_generator_page": {
+    "seo": {
+      "title": "AI 图片生成器 | Lovart AI 设计平台",
+      "description": "了解 Lovart AI 图片生成器如何将文字描述转化为精美视觉作品。探索功能、使用场景及如何开始使用 AI 图片生成。",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "Lovart AI 图片生成器：用 AI 创作精美视觉作品",
+      "desc": "Lovart AI 图片生成器可在几秒内将文字描述转化为高质量图片。从概念艺术到产品样机，生成符合您创意构想的视觉内容。"
+    },
+    "overview": {
+      "title": "什么是 AI 图片生成器？",
+      "desc": "AI 图片生成器使用机器学习模型从文字描述创建图片。Lovart 基于先进的扩散模型，按需生成高分辨率的写实或艺术风格视觉内容。",
+      "cards": [
+        {
+          "title": "文字转图片",
+          "desc": "用日常语言描述所需内容，Lovart AI 即刻生成匹配的视觉作品。"
+        },
+        {
+          "title": "多种风格",
+          "desc": "可选写实、插画、3D 渲染或艺术风格，满足不同项目需求。"
+        },
+        {
+          "title": "高分辨率",
+          "desc": "最高生成 4K 分辨率图片，适用于印刷、网络和社交媒体。"
+        },
+        {
+          "title": "批量生成",
+          "desc": "针对同一提示词创建多个变体，快速找到最佳视觉效果。"
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Lovart AI 图片生成的工作原理",
+      "steps": [
+        {
+          "label": "第一步",
+          "title": "输入提示词",
+          "desc": "详细描述所需图片，包括风格、情绪、颜色和主题内容。"
+        },
+        {
+          "label": "第二步",
+          "title": "选择风格",
+          "desc": "从写实、插画、概念艺术等多种视觉风格中选择。"
+        },
+        {
+          "label": "第三步",
+          "title": "生成与调整",
+          "desc": "Lovart AI 生成图片后，可调整提示词或设置进行优化。"
+        },
+        {
+          "label": "第四步",
+          "title": "导出使用",
+          "desc": "以 PNG、JPG 或 WebP 格式下载图片，用于任何项目。"
+        }
+      ]
+    },
+    "use_cases": {
+      "title": "AI 图片生成器使用场景",
+      "items": [
+        {
+          "title": "社交媒体内容",
+          "desc": "即时为 Instagram、微博、小红书等平台创作吸引眼球的图片。"
+        },
+        {
+          "title": "营销素材",
+          "desc": "无需摄影师即可生成横幅、广告和活动视觉内容。"
+        },
+        {
+          "title": "产品样机",
+          "desc": "在投入实体原型或专业摄影之前，直观地展示产品概念。"
+        },
+        {
+          "title": "博客与编辑",
+          "desc": "为文章和博客帖子配上独特的 AI 生成图片，内容高度匹配。"
+        },
+        {
+          "title": "概念艺术",
+          "desc": "为游戏、影视和设计项目探索创意方向并生成概念艺术。"
+        },
+        {
+          "title": "品牌资产",
+          "desc": "通过风格统一的 AI 生成图片，构建一致的视觉品牌形象。"
+        }
+      ]
+    },
+    "faq": {
+      "title": "常见问题",
+      "items": [
+        {
+          "q": "什么是 AI 图片生成器？",
+          "a": "AI 图片生成器是一种利用人工智能（特别是扩散模型或类似架构）从文字描述创建图片的工具。Lovart 的 AI 图片生成器允许您描述所需内容，即刻生成匹配的视觉作品。"
+        },
+        {
+          "q": "Lovart AI 图片生成器免费吗？",
+          "a": "Lovart 提供免费额度以开始使用 AI 图片生成。如需无限次生成或更高分辨率输出，可使用付费套餐。请访问 Lovart 定价页面了解最新套餐详情。"
+        },
+        {
+          "q": "Lovart 支持哪些图片风格？",
+          "a": "Lovart 支持多种风格，包括写实、插画、概念艺术、3D 渲染、动漫等。您可以在提示词中直接指定风格，或使用预设风格。"
+        },
+        {
+          "q": "Lovart AI 生成的图片可以商用吗？",
+          "a": "Lovart 生成的图片通常可在 Lovart 服务条款下用于商业目的。商业使用前请查阅官方 Lovart 条款以确认当前许可规定。"
+        },
+        {
+          "q": "Lovart 与其他 AI 图片生成器有何不同？",
+          "a": "Lovart 将 AI 图片生成与完整设计平台相结合，让您能在同一工作空间中生成图片并立即用于设计项目、演示文稿和品牌素材。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "开始使用 Lovart 生成 AI 图片",
+      "desc": "加入数千名使用 Lovart AI 创作精美视觉作品的创作者。无需设计经验即可上手。",
+      "button": "试用 Lovart AI 图片生成器"
+    },
+    "related": {
+      "title": "探索更多 Lovart AI 工具",
+      "items": [
+        {
+          "title": "AI Logo 生成器",
+          "desc": "用 AI 创建专业 Logo",
+          "link_text": "试用 AI Logo 设计 →"
+        },
+        {
+          "title": "GPT-4o 图片生成",
+          "desc": "基于 GPT-4o 模型的高级图片生成",
+          "link_text": "了解更多 →"
+        },
+        {
+          "title": "AI 3D 图片生成器",
+          "desc": "用 AI 生成震撼的 3D 视觉效果",
+          "link_text": "试用 3D 生成器 →"
+        },
+        {
+          "title": "Lovart 设计功能",
+          "desc": "完整的 AI 设计工具套件",
+          "link_text": "探索功能 →"
+        }
+      ]
+    },
+    "disclaimer": "Lovart.info 是关于 Lovart 的独立信息资源网站，不是 Lovart 官方网站。如需了解官方产品和服务，请访问 lovart.ai。"
+  },
+  "ai_logo_design_page": {
+    "seo": {
+      "title": "AI Logo 生成器 | 用 Lovart AI 创建 Logo",
+      "description": "用 Lovart AI Logo 生成器即时创建专业 Logo。探索 AI Logo 设计、品牌工具，以及如何用人工智能生成独特的品牌形象。",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "Lovart AI Logo 设计：快速创建专业 Logo",
+      "desc": "Lovart AI Logo 生成器根据您的品牌描述创作独特的专业 Logo。无需设计技能，几分钟即可获得精致的品牌形象。"
+    },
+    "overview": {
+      "title": "什么是 AI Logo 设计？",
+      "desc": "AI Logo 设计利用机器学习从文字描述生成独特的 Logo 概念。Lovart AI 通过分析您的品牌名称、行业和风格偏好，即时生成专业 Logo 选项。",
+      "cards": [
+        {
+          "title": "品牌意识 AI",
+          "desc": "描述您的品牌，Lovart AI 生成与行业、调性和个性相匹配的 Logo。"
+        },
+        {
+          "title": "多种方案",
+          "desc": "生成大量 Logo 变体，为您的品牌找到最佳方向。"
+        },
+        {
+          "title": "矢量品质",
+          "desc": "生成可缩放格式的 Logo，适用于名片、网站和大型印刷。"
+        },
+        {
+          "title": "完整品牌套件",
+          "desc": "将 Logo 延伸为完整的品牌套件，包括色彩、字体和使用规范。"
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Lovart AI Logo 生成器的工作原理",
+      "steps": [
+        {
+          "label": "第一步",
+          "title": "描述您的品牌",
+          "desc": "输入公司名称、行业、品牌价值观及任何风格偏好。"
+        },
+        {
+          "label": "第二步",
+          "title": "选择风格方向",
+          "desc": "选择字母型、图形型、图文组合型或其他 Logo 风格。"
+        },
+        {
+          "label": "第三步",
+          "title": "生成方案",
+          "desc": "Lovart AI 根据您的输入生成多个 Logo 方案。"
+        },
+        {
+          "label": "第四步",
+          "title": "调整并下载",
+          "desc": "选择喜欢的设计，自定义颜色和字体，以 SVG 或 PNG 格式下载。"
+        }
+      ]
+    },
+    "use_cases": {
+      "title": "谁在使用 AI Logo 设计？",
+      "items": [
+        {
+          "title": "初创公司",
+          "desc": "无需聘请设计公司即可快速获得专业 Logo，从第一天起就建立品牌形象。"
+        },
+        {
+          "title": "自由职业者",
+          "desc": "快速创建 Logo 方案用于向客户展示，或打造自己的个人品牌。"
+        },
+        {
+          "title": "小型企业",
+          "desc": "无需大型设计预算或漫长的项目周期，即可焕新品牌形象。"
+        },
+        {
+          "title": "内容创作者",
+          "desc": "为 YouTube 频道、播客或网络形象设计独特的 Logo。"
+        },
+        {
+          "title": "应用开发者",
+          "desc": "生成与产品个性一致的应用图标和品牌标志。"
+        },
+        {
+          "title": "电商品牌",
+          "desc": "用可应用于店铺和包装的专业 Logo 赢得客户信任。"
+        }
+      ]
+    },
+    "faq": {
+      "title": "常见问题",
+      "items": [
+        {
+          "q": "AI 能设计出专业的 Logo 吗？",
+          "a": "能。像 Lovart 这样的现代 AI Logo 生成器通过分析品牌描述并应用设计原则，可以生成专业品质的 Logo，结果适合真实商业使用，并可进一步优化。"
+        },
+        {
+          "q": "Lovart AI Logo 设计免费吗？",
+          "a": "Lovart 提供免费额度以开始使用 AI Logo 生成。高分辨率或矢量格式的导出可能需要付费套餐。请查看 Lovart 定价页面了解最新详情。"
+        },
+        {
+          "q": "Lovart AI 可以生成哪些 Logo 风格？",
+          "a": "Lovart 支持字母型、图标型、图文组合型等多种 Logo 风格，视觉风格从极简到大胆均可选择。"
+        },
+        {
+          "q": "我是否拥有 Lovart AI 创建的 Logo 版权？",
+          "a": "根据 Lovart 的服务条款，用户通常对生成的内容保有使用权。请查阅 Lovart 官方条款了解当前所有权和许可政策。"
+        },
+        {
+          "q": "AI Logo 设计与人工设计师有何不同？",
+          "a": "AI Logo 设计在初期概念阶段速度更快、成本更低，但人工设计师能提供策略性的品牌思考和深度迭代优化。许多用户先通过 AI 探索方向，再由设计师进行精细化。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "用 Lovart 创建您的 AI 设计 Logo",
+      "desc": "几分钟内生成专业 Logo 方案。免费开始，打造脱颖而出的品牌形象。",
+      "button": "试用 Lovart AI Logo 生成器"
+    },
+    "related": {
+      "title": "探索更多 Lovart AI 工具",
+      "items": [
+        {
+          "title": "AI 图片生成器",
+          "desc": "从文字提示词创建任意视觉内容",
+          "link_text": "试用图片生成器 →"
+        },
+        {
+          "title": "GPT-4o 图片生成",
+          "desc": "高级 AI 图片模型",
+          "link_text": "了解更多 →"
+        },
+        {
+          "title": "Lovart 品牌套件",
+          "desc": "完整品牌形象资源",
+          "link_text": "查看品牌套件 →"
+        },
+        {
+          "title": "Lovart 设计功能",
+          "desc": "完整的 AI 设计工具套件",
+          "link_text": "探索功能 →"
+        }
+      ]
+    },
+    "disclaimer": "Lovart.info 是关于 Lovart 的独立信息资源网站，不是 Lovart 官方网站。如需了解官方产品和服务，请访问 lovart.ai。"
+  },
+  "gpt_4o_image_page": {
+    "seo": {
+      "title": "GPT-4o 图片生成 | Lovart AI 平台",
+      "description": "了解 Lovart 中的 GPT-4o 图片生成功能。理解 GPT-4o 为 AI 图片创作带来了什么，以及如何将其用于您的设计项目。",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "GPT-4o 图片生成：Lovart 如何应用先进 AI 模型",
+      "desc": "GPT-4o 代表着 AI 图片生成质量的重大飞跃。了解 Lovart 如何整合包括 GPT-4o 能力在内的先进 AI 模型，产出卓越的视觉作品。"
+    },
+    "overview": {
+      "title": "什么是 GPT-4o 图片生成？",
+      "desc": "GPT-4o 是 OpenAI 最先进的多模态模型，能以卓越的质量和连贯性理解并生成文字和图片。Lovart 利用最先进的 AI 模型（包括 GPT-4o 级能力）提供卓越的图片生成结果。",
+      "cards": [
+        {
+          "title": "多模态理解",
+          "desc": "GPT-4o 同时处理文字和图片输入，使图片生成更加符合语境。"
+        },
+        {
+          "title": "更高连贯性",
+          "desc": "GPT-4o 级模型生成的图片与提示词的契合度更高，视觉伪影更少。"
+        },
+        {
+          "title": "更快生成",
+          "desc": "GPT-4o 的架构在不牺牲质量的前提下实现更快的图片创作。"
+        },
+        {
+          "title": "复杂场景",
+          "desc": "处理旧模型难以应对的复杂多元素提示词和详细场景。"
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "GPT-4o 图片生成的工作原理",
+      "steps": [
+        {
+          "label": "第一步",
+          "title": "输入提示词",
+          "desc": "撰写结合风格、主题、光线、情绪和构图的详细描述。"
+        },
+        {
+          "label": "第二步",
+          "title": "模型处理",
+          "desc": "AI 模型在生成图片前通过先进的语言理解能力解读您的提示词。"
+        },
+        {
+          "label": "第三步",
+          "title": "图片合成",
+          "desc": "模型将所有视觉元素合成为连贯的高质量输出图片。"
+        },
+        {
+          "label": "第四步",
+          "title": "迭代优化",
+          "desc": "使用后续提示词调整特定元素，同时保持整体构图。"
+        }
+      ]
+    },
+    "use_cases": {
+      "title": "GPT-4o 图片生成使用场景",
+      "items": [
+        {
+          "title": "精细插画",
+          "desc": "生成具有精确角色刻画和环境细节的复杂插画场景。"
+        },
+        {
+          "title": "产品可视化",
+          "desc": "从文字描述创建写实的产品渲染效果，用于电商和营销。"
+        },
+        {
+          "title": "建筑渲染",
+          "desc": "从详细描述中直观呈现建筑概念和室内设计方案。"
+        },
+        {
+          "title": "角色设计",
+          "desc": "为游戏、故事和创意项目设计具有一致风格的虚拟角色。"
+        },
+        {
+          "title": "科学插图",
+          "desc": "为文章和演示文稿生成准确的科学和教育插图。"
+        },
+        {
+          "title": "品牌推广",
+          "desc": "创作符合精确品牌风格要求的高质量营销图片。"
+        }
+      ]
+    },
+    "faq": {
+      "title": "常见问题",
+      "items": [
+        {
+          "q": "什么是 GPT-4o 图片生成？",
+          "a": "GPT-4o 是 OpenAI 的先进多模态模型，既能理解图片又能生成图片。应用于图片生成时，它比前代模型产出质量更高、更连贯的图片，并能更好地理解复杂提示词。"
+        },
+        {
+          "q": "Lovart 具体使用了 GPT-4o 吗？",
+          "a": "Lovart 使用先进的 AI 模型进行图片生成。如需了解 Lovart 当前所使用的具体模型，请访问官方网站 lovart.ai。"
+        },
+        {
+          "q": "GPT-4o 与 DALL-E 3 在图片生成方面有何不同？",
+          "a": "GPT-4o 的图片生成能力建立在 OpenAI 的 DALL-E 3 技术之上，提升了提示词理解能力和输出连贯性。核心区别在于图片合成过程中应用的多模态推理能力。"
+        },
+        {
+          "q": "GPT-4o 图片生成能处理图片中的文字吗？",
+          "a": "GPT-4o 级模型通常比早期模型更好地处理图片中的文字渲染。但文字生成的准确性因复杂程度和字体风格而异。对于关键的文字排版，建议在设计工具中手动添加。"
+        },
+        {
+          "q": "GPT-4o 图片生成是否免费？",
+          "a": "访问 GPT-4o 等先进 AI 模型通常需要订阅或消耗额度。Lovart 提供免费入门额度，详情请查看 Lovart 定价页面。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "用 Lovart 体验先进 AI 图片生成",
+      "desc": "通过 Lovart 设计平台访问最先进的 AI 图片生成模型。立即开始创作。",
+      "button": "试用 Lovart AI 图片生成"
+    },
+    "related": {
+      "title": "探索更多 AI 图片工具",
+      "items": [
+        {
+          "title": "AI 图片生成器",
+          "desc": "从文字提示词生成任意视觉内容",
+          "link_text": "试用生成器 →"
+        },
+        {
+          "title": "AI Logo 生成器",
+          "desc": "用 AI 创建专业 Logo",
+          "link_text": "试用 AI Logo →"
+        },
+        {
+          "title": "AI 3D 图片生成器",
+          "desc": "用 AI 生成 3D 视觉效果",
+          "link_text": "试用 3D 生成器 →"
+        },
+        {
+          "title": "Lovart AI Code",
+          "desc": "探索 API 和开发者选项",
+          "link_text": "开发者指南 →"
+        }
+      ]
+    },
+    "disclaimer": "Lovart.info 是关于 Lovart 的独立信息资源网站，不是 Lovart 官方网站。如需了解官方产品和服务，请访问 lovart.ai。"
+  },
+  "image_3d_generator_page": {
+    "seo": {
+      "title": "AI 3D 图片生成器 | 用 Lovart 创建 3D 艺术",
+      "description": "了解 Lovart AI 3D 图片生成器如何从文字提示词创作震撼的三维视觉效果。探索 3D 艺术生成、使用场景及 AI 如何变革 3D 设计。",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "AI 3D 图片生成器：用 Lovart 创作 3D 视觉效果",
+      "desc": "Lovart AI 3D 图片生成器可从文字描述生成震撼的三维视觉效果。无需 3D 建模经验，即可生成 3D 艺术、产品渲染和环境场景。"
+    },
+    "overview": {
+      "title": "什么是 AI 3D 图片生成器？",
+      "desc": "AI 3D 图片生成器使用神经渲染和扩散技术，从文字提示词创建具有三维外观的图片。与传统 3D 软件不同，无需建模技能，只需描述所需内容，AI 即可生成高质量的 3D 视觉效果。",
+      "cards": [
+        {
+          "title": "无需 3D 技能",
+          "desc": "无需学习复杂的 3D 建模软件，直接从文字描述生成写实 3D 视觉效果。"
+        },
+        {
+          "title": "一致的光照",
+          "desc": "AI 生成的 3D 图片自动包含逼真的光照、阴影和反射效果。"
+        },
+        {
+          "title": "多视角",
+          "desc": "无需重新建模即可生成同一 3D 概念的不同视角效果。"
+        },
+        {
+          "title": "风格控制",
+          "desc": "可选择黏土渲染、写实、风格化或抽象 3D 视觉风格。"
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Lovart AI 3D 生成的工作原理",
+      "steps": [
+        {
+          "label": "第一步",
+          "title": "描述您的 3D 视觉",
+          "desc": "在提示词中包含物体类型、材质、光线方向、背景和相机角度。"
+        },
+        {
+          "label": "第二步",
+          "title": "选择 3D 风格",
+          "desc": "从写实渲染、黏土模型、等距视图等 3D 美学风格中选择。"
+        },
+        {
+          "label": "第三步",
+          "title": "AI 生成",
+          "desc": "Lovart AI 合成具有正确透视、光照和景深的 3D 质感图片。"
+        },
+        {
+          "label": "第四步",
+          "title": "下载使用",
+          "desc": "导出您的 3D 图片，用于演示文稿、网站、社交媒体或营销材料。"
+        }
+      ]
+    },
+    "use_cases": {
+      "title": "AI 3D 图片生成器使用场景",
+      "items": [
+        {
+          "title": "产品可视化",
+          "desc": "从任意角度展示产品的逼真 3D 渲染效果，非常适合电商和产品目录。"
+        },
+        {
+          "title": "游戏资产概念",
+          "desc": "为游戏开发项目快速构建 3D 角色、道具和环境概念。"
+        },
+        {
+          "title": "建筑概念",
+          "desc": "无需专业渲染师即可以 3D 方式呈现建筑外观、室内及景观设计。"
+        },
+        {
+          "title": "NFT 和数字艺术",
+          "desc": "为 NFT 系列和数字画廊创作独特的 3D 数字艺术作品。"
+        },
+        {
+          "title": "教学模型",
+          "desc": "生成 3D 科学模型、解剖插图和教育示意图。"
+        },
+        {
+          "title": "营销视觉",
+          "desc": "为广告活动制作高端 3D 产品图和品牌视觉内容。"
+        }
+      ]
+    },
+    "faq": {
+      "title": "常见问题",
+      "items": [
+        {
+          "q": "什么是 AI 3D 图片生成器？",
+          "a": "AI 3D 图片生成器使用先进的机器学习模型从文字描述创建具有三维外观的图片。这些工具生成带有真实 3D 属性（景深、光照、透视和材质）的 2D 图片，无需传统 3D 建模。"
+        },
+        {
+          "q": "Lovart 能生成真正的 3D 模型文件吗（而不仅仅是图片）？",
+          "a": "Lovart 的 AI 3D 生成主要产生高质量的 3D 风格图片（具有 3D 质感的 2D 渲染效果）。如需可导出的 3D 模型文件（.obj、.fbx），请访问官方 Lovart 网站了解当前功能，相关功能正在持续扩展中。"
+        },
+        {
+          "q": "AI 3D 提示词可以有多详细？",
+          "a": "提示词越具体（包括材质类型（金属、塑料、布料）、灯光设置（影棚、户外、霓虹灯）和相机角度），AI 生成的效果就越精准。引用特定渲染风格（Octane、Blender Cycles）的高级提示词通常能产出出色的效果。"
+        },
+        {
+          "q": "AI 3D 生成适合专业工作吗？",
+          "a": "是的，AI 3D 生成广泛用于概念可视化、营销材料和快速原型制作。对于需要精确几何体的最终制作资产，传统 3D 软件仍是标准，但 AI 非常适合早期创意探索阶段。"
+        },
+        {
+          "q": "Lovart 的 AI 3D 图片生成器免费吗？",
+          "a": "Lovart 提供包含 3D 风格的图片生成免费额度。更高分辨率输出和无限次生成需要付费套餐。请访问 Lovart 定价页面了解当前详情。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "开始使用 Lovart 创作 AI 3D 视觉效果",
+      "desc": "从文字描述生成专业品质的 3D 图片。无需 3D 建模技能。",
+      "button": "试用 Lovart AI 3D 生成器"
+    },
+    "related": {
+      "title": "探索更多 Lovart AI 工具",
+      "items": [
+        {
+          "title": "AI 图片生成器",
+          "desc": "从文字提示词生成任意视觉内容",
+          "link_text": "试用生成器 →"
+        },
+        {
+          "title": "AI Logo 生成器",
+          "desc": "用 AI 创建专业 Logo",
+          "link_text": "试用 AI Logo →"
+        },
+        {
+          "title": "GPT-4o 图片生成",
+          "desc": "先进 AI 图片模型解析",
+          "link_text": "了解更多 →"
+        },
+        {
+          "title": "Lovart 设计功能",
+          "desc": "完整的 AI 设计工具套件",
+          "link_text": "探索功能 →"
+        }
+      ]
+    },
+    "disclaimer": "Lovart.info 是关于 Lovart 的独立信息资源网站，不是 Lovart 官方网站。如需了解官方产品和服务，请访问 lovart.ai。"
   }
 }

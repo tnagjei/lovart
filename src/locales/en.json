@@ -265,16 +265,16 @@
         ],
         "popular_tools_title": "Popular Tools",
         "popular_tools": [
+            { "path": "lovart-ai-image-generator", "title": "AI Image Generator" },
+            { "path": "lovart-ai-logo-design", "title": "AI Logo Generator" },
+            { "path": "lovart-gpt-4o-image", "title": "GPT-4o Image" },
+            { "path": "lovart-3d-image-generator", "title": "AI 3D Image Generator" },
             { "path": "lovart-ai-agent", "title": "Lovart AI Agent" },
             { "path": "lovart-code", "title": "Lovart Code" },
             { "path": "what-is-lovart", "title": "What is Lovart?" },
             { "path": "lovart-brand-kit", "title": "Lovart Brand Kit" },
             { "path": "lovart-logo", "title": "Lovart Logo" },
-            { "path": "lovart-apk", "title": "Lovart APK" },
-            { "path": "lovarte", "title": "Lovarte" },
-            { "path": "lovart-invitation-code", "title": "Lovart Invitation Code" },
-            { "path": "lovart-china", "title": "Lovart China" },
-            { "path": "lovart-beta", "title": "Lovart Beta" }
+            { "path": "lovart-apk", "title": "Lovart APK" }
         ],
         "terms": "Terms of Service",
         "privacy": "Privacy Policy",
@@ -4253,5 +4253,269 @@
                 "url": "/lovart-ai-agent"
             }
         ]
+    },
+    "ai_image_generator_page": {
+        "seo": {
+            "title": "AI Image Generator | Lovart AI Design Platform",
+            "description": "Discover how Lovart AI image generator creates stunning visuals from text prompts. Explore features, use cases, and how to get started with AI image generation.",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "Lovart AI Image Generator: Create Stunning Visuals with AI",
+            "desc": "Lovart's AI image generator transforms text prompts into high-quality images in seconds. From concept art to product mockups, generate visuals that match your creative vision."
+        },
+        "overview": {
+            "title": "What Is an AI Image Generator?",
+            "desc": "An AI image generator uses machine learning models to create images from text descriptions. Lovart leverages advanced diffusion models to produce high-resolution, photorealistic, and artistic visuals on demand.",
+            "cards": [
+                { "title": "Text-to-Image", "desc": "Describe what you want in plain language and Lovart AI generates matching visuals instantly." },
+                { "title": "Multiple Styles", "desc": "Choose from photorealistic, illustration, 3D render, or artistic styles to match your project needs." },
+                { "title": "High Resolution", "desc": "Generate images up to 4K resolution suitable for print, web, and social media." },
+                { "title": "Batch Generation", "desc": "Create multiple variations of the same prompt to find the perfect visual quickly." }
+            ]
+        },
+        "how_it_works": {
+            "title": "How Lovart AI Image Generation Works",
+            "steps": [
+                { "label": "Step 1", "title": "Enter Your Prompt", "desc": "Type a detailed description of the image you want—include style, mood, colors, and subject matter." },
+                { "label": "Step 2", "title": "Choose Your Style", "desc": "Select from photorealistic, illustration, concept art, or other visual styles." },
+                { "label": "Step 3", "title": "Generate & Refine", "desc": "Lovart AI generates your image. Adjust the prompt or settings to refine until perfect." },
+                { "label": "Step 4", "title": "Export & Use", "desc": "Download your image in PNG, JPG, or WebP format for use in any project." }
+            ]
+        },
+        "use_cases": {
+            "title": "AI Image Generator Use Cases",
+            "items": [
+                { "title": "Social Media Content", "desc": "Create eye-catching images for Instagram, Twitter, LinkedIn, and other platforms instantly." },
+                { "title": "Marketing Materials", "desc": "Generate banners, ads, and campaign visuals without hiring a photographer." },
+                { "title": "Product Mockups", "desc": "Visualize product concepts before investing in physical prototypes or professional photography." },
+                { "title": "Blog & Editorial", "desc": "Illustrate articles and blog posts with unique AI-generated images that match your content." },
+                { "title": "Concept Art", "desc": "Explore creative directions and generate concept art for games, films, and design projects." },
+                { "title": "Brand Assets", "desc": "Build a consistent visual identity with AI-generated brand imagery and style-matched assets." }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": [
+                { "q": "What is an AI image generator?", "a": "An AI image generator is a tool that uses artificial intelligence—specifically diffusion models or similar architectures—to create images from text descriptions. Lovart's AI image generator allows you to describe what you want and instantly produces matching visuals." },
+                { "q": "Is Lovart's AI image generator free to use?", "a": "Lovart offers free credits to get started with AI image generation. For unlimited generation and higher resolution outputs, paid plans are available. Visit the Lovart pricing page for current plan details." },
+                { "q": "What image styles does Lovart support?", "a": "Lovart supports multiple styles including photorealistic, illustration, concept art, 3D render, anime, and more. You can specify your preferred style directly in the prompt or use style presets." },
+                { "q": "Can I use Lovart AI images commercially?", "a": "Images generated with Lovart can generally be used for commercial purposes under Lovart's terms of service. Always review the official Lovart terms to confirm current licensing terms before commercial use." },
+                { "q": "How is Lovart different from other AI image generators?", "a": "Lovart combines AI image generation with a full design platform, allowing you to generate images and immediately use them in design projects, presentations, and brand materials—all in one workspace." }
+            ]
+        },
+        "cta": {
+            "title": "Start Generating AI Images with Lovart",
+            "desc": "Join thousands of creators using Lovart AI to produce stunning visuals. No design experience required.",
+            "button": "Try Lovart AI Image Generator"
+        },
+        "related": {
+            "title": "Explore More Lovart AI Tools",
+            "items": [
+                { "title": "AI Logo Generator", "desc": "Create professional logos with AI", "link_text": "Try AI Logo Design →" },
+                { "title": "GPT-4o Image Generation", "desc": "Advanced image generation with GPT-4o models", "link_text": "Learn More →" },
+                { "title": "AI 3D Image Generator", "desc": "Generate stunning 3D visuals with AI", "link_text": "Try 3D Generator →" },
+                { "title": "Lovart Design Features", "desc": "Full suite of AI design tools", "link_text": "Explore Features →" }
+            ]
+        },
+        "disclaimer": "Lovart.info is an independent informational resource about Lovart. This is not the official Lovart website. For official products and services, visit lovart.ai."
+    },
+    "ai_logo_design_page": {
+        "seo": {
+            "title": "AI Logo Generator | Create Logos with Lovart AI",
+            "description": "Create professional logos instantly with Lovart AI logo generator. Explore AI logo design, branding tools, and how to generate unique brand identities using artificial intelligence.",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "AI Logo Design with Lovart: Create Professional Logos",
+            "desc": "Lovart's AI logo generator creates unique, professional logos from your brand description. No design skills needed—get a polished brand identity in minutes."
+        },
+        "overview": {
+            "title": "What Is AI Logo Design?",
+            "desc": "AI logo design uses machine learning to generate unique logo concepts from text descriptions. Lovart's AI analyzes your brand name, industry, and style preferences to produce professional logo options instantly.",
+            "cards": [
+                { "title": "Brand-Aware AI", "desc": "Describe your brand and Lovart AI generates logos that match your industry, tone, and personality." },
+                { "title": "Multiple Concepts", "desc": "Generate dozens of logo variations to find the perfect direction for your brand." },
+                { "title": "Vector Quality", "desc": "Logos are generated in scalable formats suitable for business cards, websites, and large-format printing." },
+                { "title": "Full Identity Kit", "desc": "Extend your logo into a complete brand kit including colors, fonts, and usage guidelines." }
+            ]
+        },
+        "how_it_works": {
+            "title": "How Lovart AI Logo Generator Works",
+            "steps": [
+                { "label": "Step 1", "title": "Describe Your Brand", "desc": "Enter your company name, industry, brand values, and any style preferences." },
+                { "label": "Step 2", "title": "Choose a Direction", "desc": "Select from wordmark, lettermark, icon-based, or combination logo styles." },
+                { "label": "Step 3", "title": "Generate Concepts", "desc": "Lovart AI generates multiple logo concepts based on your input." },
+                { "label": "Step 4", "title": "Refine & Download", "desc": "Select your preferred design, customize colors and fonts, then download in SVG or PNG." }
+            ]
+        },
+        "use_cases": {
+            "title": "Who Uses AI Logo Design?",
+            "items": [
+                { "title": "Startups", "desc": "Get a professional logo fast without the cost of a design agency. Launch your brand identity from day one." },
+                { "title": "Freelancers", "desc": "Create logo concepts quickly to present to clients or build your own personal brand." },
+                { "title": "Small Businesses", "desc": "Refresh your brand identity without a large design budget or long project timelines." },
+                { "title": "Content Creators", "desc": "Design a distinctive logo for your YouTube channel, podcast, or online presence." },
+                { "title": "App Developers", "desc": "Generate an app icon and brand mark that aligns with your product's personality." },
+                { "title": "E-commerce Brands", "desc": "Build trust with customers using a professional logo that works across your store and packaging." }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": [
+                { "q": "Can AI design a professional logo?", "a": "Yes. Modern AI logo generators like Lovart can produce professional-quality logos by analyzing your brand description and applying design principles. The results are suitable for real business use and can be refined further." },
+                { "q": "Is AI logo design free with Lovart?", "a": "Lovart provides free credits to get started with AI logo generation. Exporting in high resolution or vector format may require a paid plan. Check Lovart's pricing page for the latest details." },
+                { "q": "What logo styles can Lovart AI generate?", "a": "Lovart supports wordmarks, lettermarks, icon-based logos, and combination marks across a wide range of visual styles from minimalist to bold and expressive." },
+                { "q": "Do I own the logo Lovart AI creates?", "a": "Under Lovart's terms of service, users typically retain usage rights to generated content. Review Lovart's official terms for current ownership and licensing policies." },
+                { "q": "How is AI logo design different from a human designer?", "a": "AI logo design is faster and more affordable for initial concepts, but a human designer brings strategic brand thinking and iterative refinement. Many users use AI to explore directions before refining with a designer." }
+            ]
+        },
+        "cta": {
+            "title": "Create Your AI-Designed Logo with Lovart",
+            "desc": "Generate professional logo concepts in minutes. Start free and build a brand identity that stands out.",
+            "button": "Try Lovart AI Logo Generator"
+        },
+        "related": {
+            "title": "Explore More Lovart AI Tools",
+            "items": [
+                { "title": "AI Image Generator", "desc": "Create any visual from text prompts", "link_text": "Try Image Generator →" },
+                { "title": "GPT-4o Image Generation", "desc": "Advanced AI image models", "link_text": "Learn More →" },
+                { "title": "Lovart Brand Kit", "desc": "Full brand identity resources", "link_text": "View Brand Kit →" },
+                { "title": "Lovart Design Features", "desc": "Full suite of AI design tools", "link_text": "Explore Features →" }
+            ]
+        },
+        "disclaimer": "Lovart.info is an independent informational resource about Lovart. This is not the official Lovart website. For official products and services, visit lovart.ai."
+    },
+    "gpt_4o_image_page": {
+        "seo": {
+            "title": "GPT-4o Image Generation | Lovart AI Platform",
+            "description": "Learn how GPT-4o image generation works in Lovart. Understand what GPT-4o brings to AI image creation, its capabilities, and how to use it for your design projects.",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "GPT-4o Image Generation: How Lovart Uses Advanced AI Models",
+            "desc": "GPT-4o represents a major leap in AI image generation quality. Learn how Lovart integrates advanced AI models including GPT-4o capabilities to produce exceptional visuals."
+        },
+        "overview": {
+            "title": "What Is GPT-4o Image Generation?",
+            "desc": "GPT-4o is OpenAI's most advanced multimodal model, capable of understanding and generating both text and images with exceptional quality and coherence. Lovart leverages state-of-the-art AI models—including GPT-4o class capabilities—to deliver superior image generation results.",
+            "cards": [
+                { "title": "Multimodal Understanding", "desc": "GPT-4o processes both text and image inputs together, enabling more contextually accurate image generation." },
+                { "title": "Higher Coherence", "desc": "Images generated with GPT-4o-class models show better prompt adherence and fewer visual artifacts." },
+                { "title": "Faster Generation", "desc": "GPT-4o's architecture enables faster image creation without sacrificing quality." },
+                { "title": "Complex Scenes", "desc": "Handle complex multi-element prompts and detailed scenes that older models struggle with." }
+            ]
+        },
+        "how_it_works": {
+            "title": "How GPT-4o Image Generation Works",
+            "steps": [
+                { "label": "Step 1", "title": "Input Your Prompt", "desc": "Write a detailed description combining style, subject, lighting, mood, and composition elements." },
+                { "label": "Step 2", "title": "Model Processing", "desc": "The AI model interprets your prompt with advanced language understanding before generating the image." },
+                { "label": "Step 3", "title": "Image Synthesis", "desc": "The model synthesizes all visual elements into a cohesive, high-quality output image." },
+                { "label": "Step 4", "title": "Iterate & Refine", "desc": "Use follow-up prompts to adjust specific elements while maintaining the overall composition." }
+            ]
+        },
+        "use_cases": {
+            "title": "GPT-4o Image Generation Use Cases",
+            "items": [
+                { "title": "Detailed Illustrations", "desc": "Generate complex illustrated scenes with accurate character portrayal and environmental detail." },
+                { "title": "Product Visualization", "desc": "Create photorealistic product renders from text descriptions for e-commerce and marketing." },
+                { "title": "Architectural Renders", "desc": "Visualize architectural concepts and interior designs from detailed descriptions." },
+                { "title": "Character Design", "desc": "Design fictional characters for games, stories, and creative projects with consistent style." },
+                { "title": "Scientific Illustration", "desc": "Generate accurate scientific and educational illustrations for articles and presentations." },
+                { "title": "Brand Campaigns", "desc": "Create campaign-quality images with precise brand style adherence for marketing use." }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": [
+                { "q": "What is GPT-4o image generation?", "a": "GPT-4o is OpenAI's advanced multimodal model that can both understand and generate images. When applied to image generation, it produces higher quality, more coherent images than previous models, with better understanding of complex prompts." },
+                { "q": "Does Lovart use GPT-4o specifically?", "a": "Lovart uses advanced AI models for image generation. For the most current information on which specific models Lovart employs, visit the official Lovart website at lovart.ai." },
+                { "q": "How does GPT-4o compare to DALL-E 3 for images?", "a": "GPT-4o's image generation capabilities build on OpenAI's DALL-E 3 technology with improved prompt understanding and output coherence. The distinction lies primarily in the multimodal reasoning applied during image synthesis." },
+                { "q": "Can GPT-4o image generation handle text in images?", "a": "GPT-4o class models generally handle text rendering in images better than earlier models. However, text generation accuracy varies by complexity and font style. For critical text placement, manually adding text in a design tool is recommended." },
+                { "q": "Is GPT-4o image generation available for free?", "a": "Access to advanced AI models like GPT-4o typically requires a subscription or usage credits. Lovart offers free starter credits—check Lovart's pricing page for current access tiers and limits." }
+            ]
+        },
+        "cta": {
+            "title": "Experience Advanced AI Image Generation with Lovart",
+            "desc": "Access state-of-the-art AI image generation models through Lovart's design platform. Start creating today.",
+            "button": "Try Lovart AI Image Generation"
+        },
+        "related": {
+            "title": "Explore More AI Image Tools",
+            "items": [
+                { "title": "AI Image Generator", "desc": "Generate any visual from text prompts", "link_text": "Try Generator →" },
+                { "title": "AI Logo Generator", "desc": "Create professional logos with AI", "link_text": "Try AI Logo →" },
+                { "title": "AI 3D Image Generator", "desc": "Generate 3D visuals with AI", "link_text": "Try 3D Generator →" },
+                { "title": "Lovart AI Code", "desc": "Explore API and developer options", "link_text": "Developer Guide →" }
+            ]
+        },
+        "disclaimer": "Lovart.info is an independent informational resource about Lovart. This is not the official Lovart website. For official products and services, visit lovart.ai."
+    },
+    "image_3d_generator_page": {
+        "seo": {
+            "title": "AI 3D Image Generator | Create 3D Art with Lovart",
+            "description": "Learn how Lovart AI 3D image generator creates stunning three-dimensional visuals from text prompts. Explore 3D art generation, use cases, and how AI is transforming 3D design.",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "AI 3D Image Generator: Create 3D Visuals with Lovart",
+            "desc": "Lovart's AI 3D image generator produces stunning three-dimensional visuals from text descriptions. Generate 3D art, product renders, and environmental scenes without 3D modeling experience."
+        },
+        "overview": {
+            "title": "What Is an AI 3D Image Generator?",
+            "desc": "An AI 3D image generator creates three-dimensional looking images from text prompts using neural rendering and diffusion techniques. Unlike traditional 3D software, it requires no modeling skills—just describe what you want and the AI generates a high-quality 3D visual.",
+            "cards": [
+                { "title": "No 3D Skills Needed", "desc": "Generate photorealistic 3D visuals from text descriptions without learning complex 3D modeling software." },
+                { "title": "Consistent Lighting", "desc": "AI-generated 3D images include realistic lighting, shadows, and reflections automatically." },
+                { "title": "Multiple Perspectives", "desc": "Generate different viewing angles of the same 3D concept without re-modeling." },
+                { "title": "Style Control", "desc": "Choose from clay render, photorealistic, stylized, or abstract 3D visual styles." }
+            ]
+        },
+        "how_it_works": {
+            "title": "How Lovart AI 3D Generation Works",
+            "steps": [
+                { "label": "Step 1", "title": "Describe Your 3D Visual", "desc": "Include object type, materials, lighting direction, background, and camera angle in your prompt." },
+                { "label": "Step 2", "title": "Select 3D Style", "desc": "Choose from photorealistic render, clay model, isometric, or other 3D aesthetics." },
+                { "label": "Step 3", "title": "AI Generation", "desc": "Lovart AI synthesizes a 3D-quality image with proper perspective, lighting, and depth." },
+                { "label": "Step 4", "title": "Download & Use", "desc": "Export your 3D image for use in presentations, websites, social media, or marketing materials." }
+            ]
+        },
+        "use_cases": {
+            "title": "AI 3D Image Generator Use Cases",
+            "items": [
+                { "title": "Product Visualization", "desc": "Show products from any angle with realistic 3D renders—ideal for e-commerce and catalogs." },
+                { "title": "Game Asset Concepts", "desc": "Rapidly concept 3D characters, props, and environments for game development projects." },
+                { "title": "Architectural Concepts", "desc": "Visualize building exteriors, interiors, and landscape designs in 3D without hiring a renderer." },
+                { "title": "NFT and Digital Art", "desc": "Create unique 3D digital art pieces for NFT collections and digital galleries." },
+                { "title": "Educational Models", "desc": "Generate 3D scientific models, anatomical illustrations, and educational diagrams." },
+                { "title": "Marketing Visuals", "desc": "Produce premium 3D product shots and brand visuals for advertising campaigns." }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": [
+                { "q": "What is an AI 3D image generator?", "a": "An AI 3D image generator creates three-dimensional looking images from text descriptions using advanced machine learning models. These tools produce 2D images with realistic 3D properties—depth, lighting, perspective, and materials—without requiring traditional 3D modeling." },
+                { "q": "Can Lovart generate actual 3D models (not just images)?", "a": "Lovart's AI 3D generation primarily produces high-quality 3D-style images (2D renders with 3D qualities). For exportable 3D model files (.obj, .fbx), check the official Lovart website for current capabilities, as features are actively being expanded." },
+                { "q": "How detailed can AI 3D prompts be?", "a": "The more specific your prompt—including material type (metal, plastic, fabric), lighting setup (studio, outdoor, neon), and camera angle—the more precisely the AI generates your vision. Advanced prompts referencing specific render styles (Octane, Blender Cycles) often produce excellent results." },
+                { "q": "Is AI 3D generation useful for professional work?", "a": "Yes, AI 3D generation is widely used for concept visualization, marketing materials, and rapid prototyping. For final production assets requiring accurate geometry, traditional 3D software remains the standard, but AI is ideal for early-stage ideation." },
+                { "q": "Is the AI 3D image generator free on Lovart?", "a": "Lovart offers free starter credits for image generation including 3D styles. Higher resolution outputs and unlimited generations require a paid plan. Visit Lovart's pricing page for current details." }
+            ]
+        },
+        "cta": {
+            "title": "Start Creating AI 3D Visuals with Lovart",
+            "desc": "Generate professional-quality 3D images from text descriptions. No 3D modeling skills required.",
+            "button": "Try Lovart AI 3D Generator"
+        },
+        "related": {
+            "title": "Explore More Lovart AI Tools",
+            "items": [
+                { "title": "AI Image Generator", "desc": "Generate any visual from text prompts", "link_text": "Try Generator →" },
+                { "title": "AI Logo Generator", "desc": "Create professional logos with AI", "link_text": "Try AI Logo →" },
+                { "title": "GPT-4o Image Generation", "desc": "Advanced AI image models explained", "link_text": "Learn More →" },
+                { "title": "Lovart Design Features", "desc": "Full suite of AI design tools", "link_text": "Explore Features →" }
+            ]
+        },
+        "disclaimer": "Lovart.info is an independent informational resource about Lovart. This is not the official Lovart website. For official products and services, visit lovart.ai."
     }
 }

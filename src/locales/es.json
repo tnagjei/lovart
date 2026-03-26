@@ -18,47 +18,93 @@
     "partner_site": "Sitio asociado",
     "articles_title": "Últimos Artículos",
     "articles": [
-        {
-            "path": "blog-how-ai-is-reshaping-modern-design-workflows",
-            "title": "Cómo la IA transforma los flujos de diseño"
-        },
-        {
-            "path": "blog-master-lovart-ai-design-in-5-minutes",
-            "title": "Domina Lovart AI Design en 5 minutos"
-        },
-        {
-            "path": "blog-ai-assisted-product-design-best-practices",
-            "title": "Mejores prácticas de diseño con IA"
-        },
-        {
-            "path": "blog-break-creative-block-with-ai-inspiration",
-            "title": "Rompe el bloqueo creativo con IA"
-        },
-        {
-            "path": "blog-how-designers-boost-efficiency-with-lovart",
-            "title": "Cómo los diseñadores mejoran su eficiencia"
-        },
-        {
-            "path": "blog-ui-ux-design-trends-2024",
-            "title": "Tendencias UI/UX Design 2024"
-        },
-        {
-            "path": "blog-lovart-january-update-new-features",
-            "title": "Actualización de Lovart enero: nuevas funciones"
-        }
+      {
+        "path": "blog-how-ai-is-reshaping-modern-design-workflows",
+        "title": "Cómo la IA transforma los flujos de diseño"
+      },
+      {
+        "path": "blog-master-lovart-ai-design-in-5-minutes",
+        "title": "Domina Lovart AI Design en 5 minutos"
+      },
+      {
+        "path": "blog-ai-assisted-product-design-best-practices",
+        "title": "Mejores prácticas de diseño con IA"
+      },
+      {
+        "path": "blog-break-creative-block-with-ai-inspiration",
+        "title": "Rompe el bloqueo creativo con IA"
+      },
+      {
+        "path": "blog-how-designers-boost-efficiency-with-lovart",
+        "title": "Cómo los diseñadores mejoran su eficiencia"
+      },
+      {
+        "path": "blog-ui-ux-design-trends-2024",
+        "title": "Tendencias UI/UX Design 2024"
+      },
+      {
+        "path": "blog-lovart-january-update-new-features",
+        "title": "Actualización de Lovart enero: nuevas funciones"
+      }
     ],
     "popular_tools_title": "Herramientas Populares",
     "popular_tools": [
-        { "path": "lovart-ai-agent", "title": "Lovart AI Agent" },
-        { "path": "lovart-code", "title": "Lovart Code" },
-        { "path": "what-is-lovart", "title": "¿Qué es Lovart?" },
-        { "path": "lovart-brand-kit", "title": "Kit de marca Lovart" },
-        { "path": "lovart-logo", "title": "Logo de Lovart" },
-        { "path": "lovart-apk", "title": "Lovart APK" },
-        { "path": "lovarte", "title": "Lovarte" },
-        { "path": "lovart-invitation-code", "title": "Código de invitación Lovart" },
-        { "path": "lovart-china", "title": "Lovart China" },
-        { "path": "lovart-beta", "title": "Lovart Beta" }
+      {
+        "path": "lovart-ai-agent",
+        "title": "Lovart AI Agent"
+      },
+      {
+        "path": "lovart-code",
+        "title": "Lovart Code"
+      },
+      {
+        "path": "what-is-lovart",
+        "title": "¿Qué es Lovart?"
+      },
+      {
+        "path": "lovart-brand-kit",
+        "title": "Kit de marca Lovart"
+      },
+      {
+        "path": "lovart-logo",
+        "title": "Logo de Lovart"
+      },
+      {
+        "path": "lovart-apk",
+        "title": "Lovart APK"
+      },
+      {
+        "path": "lovarte",
+        "title": "Lovarte"
+      },
+      {
+        "path": "lovart-invitation-code",
+        "title": "Código de invitación Lovart"
+      },
+      {
+        "path": "lovart-china",
+        "title": "Lovart China"
+      },
+      {
+        "path": "lovart-beta",
+        "title": "Lovart Beta"
+      },
+      {
+        "path": "lovart-ai-image-generator",
+        "title": "Generador de Imágenes IA"
+      },
+      {
+        "path": "lovart-ai-logo-design",
+        "title": "Generador de Logos IA"
+      },
+      {
+        "path": "lovart-gpt-4o-image",
+        "title": "Imagen GPT-4o"
+      },
+      {
+        "path": "lovart-3d-image-generator",
+        "title": "Generador 3D IA"
+      }
     ],
     "terms": "Terminos del servicio",
     "privacy": "Politica de privacidad",
@@ -1953,5 +1999,577 @@
         "url": "/lovart-ai-agent"
       }
     ]
+  },
+  "ai_image_generator_page": {
+    "seo": {
+      "title": "Generador de Imágenes IA | Lovart AI Design Platform",
+      "description": "Descubre cómo el generador de imágenes IA de Lovart crea visuales impresionantes a partir de texto. Explora funcionalidades, casos de uso y cómo empezar con la generación de imágenes IA.",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "Generador de Imágenes IA de Lovart: Crea Visuales con IA",
+      "desc": "El generador de imágenes IA de Lovart transforma tus prompts en imágenes de alta calidad en segundos. Desde arte conceptual hasta maquetas de productos, genera los visuales que coinciden con tu visión creativa."
+    },
+    "overview": {
+      "title": "¿Qué es un Generador de Imágenes IA?",
+      "desc": "Un generador de imágenes IA usa modelos de aprendizaje automático para crear imágenes a partir de descripciones textuales. Lovart aprovecha modelos de difusión avanzados para producir visuales fotorrealistas o artísticos de alta resolución bajo demanda.",
+      "cards": [
+        {
+          "title": "Texto a imagen",
+          "desc": "Describe lo que quieres en lenguaje natural y Lovart AI genera instantáneamente los visuales correspondientes."
+        },
+        {
+          "title": "Estilos variados",
+          "desc": "Elige entre estilos fotorrealista, ilustración, renderizado 3D o artístico para diferentes necesidades del proyecto."
+        },
+        {
+          "title": "Alta resolución",
+          "desc": "Genera imágenes de hasta 4K de resolución, perfectas para impresión, web y redes sociales."
+        },
+        {
+          "title": "Generación por lotes",
+          "desc": "Crea múltiples variaciones del mismo prompt para encontrar rápidamente el mejor visual."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Cómo Funciona la Generación de Imágenes IA de Lovart",
+      "steps": [
+        {
+          "label": "Paso 1",
+          "title": "Escribe tu prompt",
+          "desc": "Describe la imagen que quieres con detalle incluyendo estilo, ambiente, colores y tema."
+        },
+        {
+          "label": "Paso 2",
+          "title": "Elige tu estilo",
+          "desc": "Selecciona entre estilos fotorrealista, ilustración, arte conceptual y otros estilos visuales."
+        },
+        {
+          "label": "Paso 3",
+          "title": "Genera y refina",
+          "desc": "Lovart AI genera tu imagen. Ajusta el prompt o los parámetros para perfeccionar el resultado."
+        },
+        {
+          "label": "Paso 4",
+          "title": "Exporta y usa",
+          "desc": "Descarga tu imagen en PNG, JPG o WebP y úsala en cualquier proyecto."
+        }
+      ]
+    },
+    "use_cases": {
+      "title": "Casos de Uso del Generador de Imágenes IA",
+      "items": [
+        {
+          "title": "Contenido en redes sociales",
+          "desc": "Crea instantáneamente imágenes llamativas para Instagram, Twitter, LinkedIn y más."
+        },
+        {
+          "title": "Materiales de marketing",
+          "desc": "Genera banners, anuncios y visuales de campaña sin necesidad de fotógrafo."
+        },
+        {
+          "title": "Maquetas de productos",
+          "desc": "Visualiza conceptos de productos antes de invertir en prototipos físicos o fotografía profesional."
+        },
+        {
+          "title": "Blog y editorial",
+          "desc": "Ilustra artículos y posts con imágenes IA únicas que se adaptan perfectamente al contenido."
+        },
+        {
+          "title": "Arte conceptual",
+          "desc": "Explora direcciones creativas y genera arte conceptual para proyectos de juegos, cine y diseño."
+        },
+        {
+          "title": "Activos de marca",
+          "desc": "Construye una identidad visual coherente con imágenes IA que coincidan con el estilo de tu marca."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "items": [
+        {
+          "q": "¿Qué es un generador de imágenes IA?",
+          "a": "Una herramienta que usa inteligencia artificial (especialmente modelos de difusión) para crear imágenes a partir de descripciones textuales. El generador de Lovart genera instantáneamente visuales que coinciden con tu descripción."
+        },
+        {
+          "q": "¿El generador de imágenes IA de Lovart es gratuito?",
+          "a": "Lovart ofrece créditos gratuitos para empezar. Para generaciones ilimitadas o en alta resolución, hay planes de pago disponibles. Consulta la página de precios para más detalles."
+        },
+        {
+          "q": "¿Qué estilos de imagen admite Lovart?",
+          "a": "Lovart admite múltiples estilos: fotorrealista, ilustración, arte conceptual, renderizado 3D, anime y más. Especifica el estilo en tu prompt o usa preajustes."
+        },
+        {
+          "q": "¿Puedo usar las imágenes IA de Lovart comercialmente?",
+          "a": "Las imágenes generadas con Lovart pueden usarse generalmente con fines comerciales según los términos de uso. Verifica siempre los términos oficiales antes del uso comercial."
+        },
+        {
+          "q": "¿En qué se diferencia Lovart de otros generadores IA?",
+          "a": "Lovart combina generación de imágenes IA con una plataforma de diseño completa, todo en un único espacio de trabajo."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Comienza a Generar Imágenes IA con Lovart",
+      "desc": "Únete a miles de creadores que usan Lovart AI para producir visuales impresionantes. No se requiere experiencia en diseño.",
+      "button": "Probar el Generador de Imágenes IA de Lovart"
+    },
+    "related": {
+      "title": "Explora Más Herramientas IA de Lovart",
+      "items": [
+        {
+          "title": "Generador de Logos IA",
+          "desc": "Crea logos profesionales con IA",
+          "link_text": "Probar →"
+        },
+        {
+          "title": "Generación de Imágenes GPT-4o",
+          "desc": "Generación avanzada con modelos GPT-4o",
+          "link_text": "Saber más →"
+        },
+        {
+          "title": "Generador de Imágenes 3D IA",
+          "desc": "Genera visuales 3D impresionantes con IA",
+          "link_text": "Probar →"
+        },
+        {
+          "title": "Funcionalidades de Lovart",
+          "desc": "Suite completa de herramientas de diseño IA",
+          "link_text": "Explorar →"
+        }
+      ]
+    },
+    "disclaimer": "Lovart.info es un recurso de información independiente sobre Lovart y no es el sitio oficial. Para productos y servicios oficiales, visita lovart.ai."
+  },
+  "ai_logo_design_page": {
+    "seo": {
+      "title": "Generador de Logos IA | Crear Logos con Lovart AI",
+      "description": "Crea logos profesionales al instante con el generador de logos IA de Lovart. Explora el diseño de logos IA, herramientas de branding y cómo generar identidades de marca únicas con IA.",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "Diseño de Logo IA con Lovart: Crea Logos Profesionales Rápidamente",
+      "desc": "El generador de logos IA de Lovart crea logos únicos y profesionales a partir de la descripción de tu marca. Sin habilidades de diseño requeridas, obtén una identidad de marca pulida en minutos."
+    },
+    "overview": {
+      "title": "¿Qué es el Diseño de Logo IA?",
+      "desc": "El diseño de logo IA usa aprendizaje automático para generar conceptos de logo únicos a partir de descripciones textuales. Lovart AI analiza el nombre de tu marca, industria y preferencias de estilo para generar instantáneamente opciones de logo profesionales.",
+      "cards": [
+        {
+          "title": "IA consciente de la marca",
+          "desc": "Describe tu marca y Lovart AI genera logos que se adaptan a tu industria, tono y personalidad."
+        },
+        {
+          "title": "Múltiples conceptos",
+          "desc": "Genera numerosas variaciones de logo para encontrar la mejor dirección para tu marca."
+        },
+        {
+          "title": "Calidad vectorial",
+          "desc": "Logos generados en formatos escalables perfectos para tarjetas de visita, sitios web e impresión en gran formato."
+        },
+        {
+          "title": "Kit de marca completo",
+          "desc": "Extiende tu logo a un kit de marca completo que incluye colores, fuentes y directrices de uso."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Cómo Funciona el Generador de Logos IA de Lovart",
+      "steps": [
+        {
+          "label": "Paso 1",
+          "title": "Describe tu marca",
+          "desc": "Ingresa el nombre de tu empresa, industria, valores de marca y preferencias de estilo."
+        },
+        {
+          "label": "Paso 2",
+          "title": "Elige la dirección de estilo",
+          "desc": "Selecciona entre estilos wordmark, lettermark, logo icono o combinado."
+        },
+        {
+          "label": "Paso 3",
+          "title": "Genera conceptos",
+          "desc": "Lovart AI genera múltiples conceptos de logo basados en tu información."
+        },
+        {
+          "label": "Paso 4",
+          "title": "Refina y descarga",
+          "desc": "Selecciona tu diseño favorito, personaliza colores y fuentes, y descarga en SVG o PNG."
+        }
+      ]
+    },
+    "use_cases": {
+      "title": "¿Quién usa el Diseño de Logo IA?",
+      "items": [
+        {
+          "title": "Startups",
+          "desc": "Obtén un logo profesional rápidamente sin los costos de una agencia de diseño."
+        },
+        {
+          "title": "Freelancers",
+          "desc": "Crea conceptos de logo rápidamente para presentar a clientes o construir tu marca personal."
+        },
+        {
+          "title": "Pequeñas empresas",
+          "desc": "Refresca la identidad de tu marca sin grandes presupuestos de diseño ni largos plazos."
+        },
+        {
+          "title": "Creadores de contenido",
+          "desc": "Diseña un logo distintivo para tu canal de YouTube, podcast o presencia en línea."
+        },
+        {
+          "title": "Desarrolladores de apps",
+          "desc": "Genera un ícono de app y logo que coincida con la personalidad de tu producto."
+        },
+        {
+          "title": "Marcas de e-commerce",
+          "desc": "Genera confianza con un logo profesional que funcione en tu tienda y packaging."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "items": [
+        {
+          "q": "¿Puede la IA crear un logo profesional?",
+          "a": "Sí. Los modernos generadores de logo IA como Lovart producen logos de calidad profesional analizando tu descripción de marca y aplicando principios de diseño."
+        },
+        {
+          "q": "¿El diseño de logo IA es gratuito con Lovart?",
+          "a": "Lovart ofrece créditos gratuitos para empezar. La exportación en alta resolución o formato vectorial puede requerir un plan de pago."
+        },
+        {
+          "q": "¿Qué estilos de logo puede generar Lovart AI?",
+          "a": "Lovart admite wordmarks, lettermarks, logos de icono y combinados, desde estilos minimalistas hasta diseños llamativos."
+        },
+        {
+          "q": "¿Soy dueño del logo creado por Lovart AI?",
+          "a": "Según los términos de Lovart, los usuarios generalmente conservan los derechos de uso del contenido generado. Consulta los términos oficiales para la política actual."
+        },
+        {
+          "q": "¿En qué se diferencia el diseño de logo IA de un diseñador humano?",
+          "a": "El diseño IA es más rápido y asequible para conceptos iniciales, mientras que un diseñador humano aporta reflexión estratégica de marca y refinamiento profundo."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Crea tu Logo de Diseño IA con Lovart",
+      "desc": "Genera conceptos de logo profesionales en minutos. Comienza gratis y construye una identidad de marca que destaque.",
+      "button": "Probar el Generador de Logos IA de Lovart"
+    },
+    "related": {
+      "title": "Explora Más Herramientas IA de Lovart",
+      "items": [
+        {
+          "title": "Generador de Imágenes IA",
+          "desc": "Crea cualquier visual a partir de prompts de texto",
+          "link_text": "Probar →"
+        },
+        {
+          "title": "Generación de Imágenes GPT-4o",
+          "desc": "Modelos IA avanzados",
+          "link_text": "Saber más →"
+        },
+        {
+          "title": "Kit de Marca Lovart",
+          "desc": "Recursos de identidad visual completos",
+          "link_text": "Ver →"
+        },
+        {
+          "title": "Funcionalidades de Lovart",
+          "desc": "Suite completa de herramientas de diseño IA",
+          "link_text": "Explorar →"
+        }
+      ]
+    },
+    "disclaimer": "Lovart.info es un recurso de información independiente sobre Lovart y no es el sitio oficial. Para productos y servicios oficiales, visita lovart.ai."
+  },
+  "gpt_4o_image_page": {
+    "seo": {
+      "title": "Generación de Imágenes GPT-4o | Lovart AI Platform",
+      "description": "Descubre cómo funciona la generación de imágenes GPT-4o en Lovart. Entiende qué aporta GPT-4o a la creación de imágenes IA y cómo usarlo para tus proyectos de diseño.",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "Generación de Imágenes GPT-4o: Cómo Lovart usa los Modelos IA Avanzados",
+      "desc": "GPT-4o representa un gran salto en la calidad de generación de imágenes IA. Descubre cómo Lovart integra modelos IA avanzados incluyendo capacidades GPT-4o para producir visuales excepcionales."
+    },
+    "overview": {
+      "title": "¿Qué es la Generación de Imágenes GPT-4o?",
+      "desc": "GPT-4o es el modelo multimodal más avanzado de OpenAI, capaz de entender y generar texto e imágenes con calidad y coherencia excepcionales. Lovart aprovecha modelos IA de vanguardia incluyendo capacidades de clase GPT-4o para ofrecer resultados superiores.",
+      "cards": [
+        {
+          "title": "Comprensión multimodal",
+          "desc": "GPT-4o procesa texto e imágenes juntos, permitiendo una generación de imágenes más precisa y contextual."
+        },
+        {
+          "title": "Mayor coherencia",
+          "desc": "Los modelos de clase GPT-4o muestran mejor adherencia al prompt y menos artefactos visuales."
+        },
+        {
+          "title": "Generación más rápida",
+          "desc": "La arquitectura GPT-4o permite una creación de imágenes más rápida sin sacrificar calidad."
+        },
+        {
+          "title": "Escenas complejas",
+          "desc": "Maneja prompts multi-elemento complejos y escenas detalladas que los modelos anteriores tienen dificultad para procesar."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Cómo Funciona la Generación de Imágenes GPT-4o",
+      "steps": [
+        {
+          "label": "Paso 1",
+          "title": "Escribe tu prompt",
+          "desc": "Redacta una descripción detallada que combine estilo, tema, iluminación, ambiente y composición."
+        },
+        {
+          "label": "Paso 2",
+          "title": "Procesamiento del modelo",
+          "desc": "El modelo IA interpreta tu prompt con comprensión lingüística avanzada antes de generar la imagen."
+        },
+        {
+          "label": "Paso 3",
+          "title": "Síntesis de imagen",
+          "desc": "El modelo sintetiza todos los elementos visuales en una imagen final coherente y de alta calidad."
+        },
+        {
+          "label": "Paso 4",
+          "title": "Itera y refina",
+          "desc": "Usa prompts de seguimiento para ajustar elementos específicos mientras mantienes la composición general."
+        }
+      ]
+    },
+    "use_cases": {
+      "title": "Casos de Uso de la Generación de Imágenes GPT-4o",
+      "items": [
+        {
+          "title": "Ilustraciones detalladas",
+          "desc": "Genera escenas ilustradas complejas con representación precisa de personajes y detalles ambientales."
+        },
+        {
+          "title": "Visualización de productos",
+          "desc": "Crea renders de productos fotorrealistas a partir de descripciones textuales para e-commerce y marketing."
+        },
+        {
+          "title": "Renders arquitectónicos",
+          "desc": "Visualiza conceptos arquitectónicos y diseños de interiores a partir de descripciones detalladas."
+        },
+        {
+          "title": "Diseño de personajes",
+          "desc": "Diseña personajes de ficción con estilo coherente para juegos, historias y proyectos creativos."
+        },
+        {
+          "title": "Ilustración científica",
+          "desc": "Genera ilustraciones científicas y educativas precisas para artículos y presentaciones."
+        },
+        {
+          "title": "Campañas de marca",
+          "desc": "Crea imágenes de calidad para campañas con adherencia precisa a los requisitos de estilo de marca."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "items": [
+        {
+          "q": "¿Qué es la generación de imágenes GPT-4o?",
+          "a": "GPT-4o es el modelo multimodal avanzado de OpenAI que puede entender y generar imágenes con mayor calidad y comprensión de prompts complejos."
+        },
+        {
+          "q": "¿Lovart usa específicamente GPT-4o?",
+          "a": "Lovart usa modelos IA avanzados para generación de imágenes. Para información sobre los modelos específicos actuales, visita lovart.ai."
+        },
+        {
+          "q": "¿Cómo se compara GPT-4o con DALL-E 3 para imágenes?",
+          "a": "Las capacidades de GPT-4o se construyen sobre la tecnología DALL-E 3 de OpenAI con mejor comprensión de prompts y mayor coherencia en los resultados."
+        },
+        {
+          "q": "¿Puede GPT-4o manejar texto en las imágenes?",
+          "a": "Los modelos de clase GPT-4o generalmente manejan mejor el renderizado de texto en imágenes. Para texto crítico, se recomienda añadirlo manualmente en herramientas de diseño."
+        },
+        {
+          "q": "¿La generación de imágenes GPT-4o es gratuita?",
+          "a": "El acceso a modelos IA avanzados como GPT-4o generalmente requiere suscripción o créditos. Lovart ofrece créditos iniciales gratuitos."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Descubre la Generación de Imágenes IA Avanzada con Lovart",
+      "desc": "Accede a modelos de generación de imágenes IA de vanguardia a través de la plataforma de diseño Lovart. Empieza a crear hoy.",
+      "button": "Probar la Generación de Imágenes IA de Lovart"
+    },
+    "related": {
+      "title": "Explora Más Herramientas IA de Imagen",
+      "items": [
+        {
+          "title": "Generador de Imágenes IA",
+          "desc": "Genera cualquier visual a partir de prompts de texto",
+          "link_text": "Probar →"
+        },
+        {
+          "title": "Generador de Logos IA",
+          "desc": "Crea logos profesionales con IA",
+          "link_text": "Probar →"
+        },
+        {
+          "title": "Generador de Imágenes 3D IA",
+          "desc": "Genera visuales 3D con IA",
+          "link_text": "Probar →"
+        },
+        {
+          "title": "Lovart AI Code",
+          "desc": "Explora las opciones de API y desarrollador",
+          "link_text": "Guía de desarrollador →"
+        }
+      ]
+    },
+    "disclaimer": "Lovart.info es un recurso de información independiente sobre Lovart y no es el sitio oficial. Para productos y servicios oficiales, visita lovart.ai."
+  },
+  "image_3d_generator_page": {
+    "seo": {
+      "title": "Generador de Imágenes 3D IA | Crear Arte 3D con Lovart",
+      "description": "Descubre cómo el generador de imágenes 3D IA de Lovart crea visuales tridimensionales impresionantes a partir de prompts. Explora la generación de arte 3D y sus casos de uso.",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "Generador de Imágenes 3D IA: Crea Visuales 3D con Lovart",
+      "desc": "El generador de imágenes 3D IA de Lovart produce visuales tridimensionales impresionantes a partir de descripciones textuales. Genera arte 3D, renders de productos y escenas de entorno sin experiencia en modelado 3D."
+    },
+    "overview": {
+      "title": "¿Qué es un Generador de Imágenes 3D IA?",
+      "desc": "Un generador de imágenes 3D IA crea imágenes de apariencia tridimensional a partir de prompts textuales mediante técnicas de renderizado neuronal y difusión. No se requieren habilidades de modelado 3D.",
+      "cards": [
+        {
+          "title": "Sin habilidades 3D",
+          "desc": "Genera visuales 3D fotorrealistas a partir de descripciones textuales sin aprender software de modelado 3D."
+        },
+        {
+          "title": "Iluminación coherente",
+          "desc": "Las imágenes 3D generadas incluyen automáticamente iluminación, sombras y reflejos realistas."
+        },
+        {
+          "title": "Múltiples perspectivas",
+          "desc": "Genera diferentes ángulos de vista del mismo concepto 3D sin necesidad de re-modelar."
+        },
+        {
+          "title": "Control de estilo",
+          "desc": "Elige entre estilos de renderizado en arcilla, fotorrealista, estilizado o 3D abstracto."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Cómo Funciona la Generación 3D IA de Lovart",
+      "steps": [
+        {
+          "label": "Paso 1",
+          "title": "Describe tu visual 3D",
+          "desc": "Incluye tipo de objeto, materiales, dirección de la luz, fondo y ángulo de cámara en tu prompt."
+        },
+        {
+          "label": "Paso 2",
+          "title": "Selecciona el estilo 3D",
+          "desc": "Elige entre renderizado fotorrealista, modelo de arcilla, vista isométrica u otras estéticas 3D."
+        },
+        {
+          "label": "Paso 3",
+          "title": "Generación IA",
+          "desc": "Lovart AI sintetiza una imagen de calidad 3D con perspectiva, iluminación y profundidad adecuadas."
+        },
+        {
+          "label": "Paso 4",
+          "title": "Descarga y usa",
+          "desc": "Exporta tu imagen 3D para presentaciones, sitios web, redes sociales o materiales de marketing."
+        }
+      ]
+    },
+    "use_cases": {
+      "title": "Casos de Uso del Generador de Imágenes 3D IA",
+      "items": [
+        {
+          "title": "Visualización de productos",
+          "desc": "Muestra productos desde cualquier ángulo con renders 3D realistas: perfecto para e-commerce y catálogos."
+        },
+        {
+          "title": "Conceptos de activos de juegos",
+          "desc": "Conceptualiza rápidamente personajes, props y entornos 3D para tus proyectos de videojuegos."
+        },
+        {
+          "title": "Conceptos arquitectónicos",
+          "desc": "Visualiza exteriores de edificios, interiores y diseños de paisajismo en 3D sin un artista de renderizado especializado."
+        },
+        {
+          "title": "NFT y arte digital",
+          "desc": "Crea obras de arte digital 3D únicas para colecciones NFT y galerías digitales."
+        },
+        {
+          "title": "Modelos educativos",
+          "desc": "Genera modelos científicos 3D, ilustraciones anatómicas y diagramas educativos."
+        },
+        {
+          "title": "Visuales de marketing",
+          "desc": "Produce fotos de productos 3D de alta gama y visuales de marca para tus campañas publicitarias."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "items": [
+        {
+          "q": "¿Qué es un generador de imágenes 3D IA?",
+          "a": "Un generador de imágenes 3D IA crea imágenes de apariencia tridimensional con profundidad, iluminación y perspectiva realistas sin necesitar modelado 3D tradicional."
+        },
+        {
+          "q": "¿Lovart puede generar modelos 3D reales (no solo imágenes)?",
+          "a": "Lovart genera principalmente imágenes de estilo 3D de alta calidad. Para archivos de modelos 3D exportables (.obj, .fbx), consulta el sitio oficial de Lovart para las capacidades actuales."
+        },
+        {
+          "q": "¿Cuánto detalle pueden tener los prompts 3D IA?",
+          "a": "Cuanto más específico sea tu prompt (incluyendo tipo de material, configuración de iluminación y ángulo de cámara), más precisamente el IA realiza tu visión."
+        },
+        {
+          "q": "¿Es útil la generación 3D IA para uso profesional?",
+          "a": "Sí, se usa ampliamente para visualización de conceptos, materiales de marketing y prototipado rápido."
+        },
+        {
+          "q": "¿El Generador de Imágenes 3D IA es gratuito en Lovart?",
+          "a": "Lovart ofrece créditos iniciales gratuitos para generación de imágenes incluyendo estilos 3D. Las salidas de alta resolución requieren un plan de pago."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Empieza a Crear Visuales 3D IA con Lovart",
+      "desc": "Genera imágenes 3D de calidad profesional a partir de descripciones de texto. No se requieren habilidades de modelado 3D.",
+      "button": "Probar el Generador 3D IA de Lovart"
+    },
+    "related": {
+      "title": "Explora Más Herramientas IA de Lovart",
+      "items": [
+        {
+          "title": "Generador de Imágenes IA",
+          "desc": "Genera cualquier visual a partir de prompts de texto",
+          "link_text": "Probar →"
+        },
+        {
+          "title": "Generador de Logos IA",
+          "desc": "Crea logos profesionales con IA",
+          "link_text": "Probar →"
+        },
+        {
+          "title": "Generación de Imágenes GPT-4o",
+          "desc": "Explicación de modelos IA de imagen avanzados",
+          "link_text": "Saber más →"
+        },
+        {
+          "title": "Funcionalidades de Lovart",
+          "desc": "Suite completa de herramientas de diseño IA",
+          "link_text": "Explorar →"
+        }
+      ]
+    },
+    "disclaimer": "Lovart.info es un recurso de información independiente sobre Lovart y no es el sitio oficial. Para productos y servicios oficiales, visita lovart.ai."
   }
 }
