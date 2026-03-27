@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Lovart Nano Banana' , href: canonicalUrl }];
-    %>
+<%
+const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Lovart Nano Banana' , href: canonicalUrl }];
+const relatedItems = [
+    { path: 'lovart-design-features' },
+    { path: 'lovart-ai-code' },
+    { path: 'lovart-free' }
+];
+%>
     <html lang="<%= lang %>" class="scroll-smooth">
 
     <head>
@@ -440,6 +446,8 @@
                                 <% }) %>
                         </div>
                     </section>
+
+                    <%- include('partials/related-resources', { relatedItems }) %>
 
                     <!-- AdSense 4 -->
                     <div class="container mx-auto px-4 max-w-4xl my-6">

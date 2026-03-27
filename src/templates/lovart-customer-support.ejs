@@ -11,7 +11,20 @@ const faqItems = Array.isArray(pageData.faq) ? pageData.faq : [];
 const helpLinks = Array.isArray(supportCluster.help_links) ? supportCluster.help_links : [];
 const verificationDate = supportCluster.last_verified || '2026-02-15';
 const currentPath = pageData.path || 'lovart-customer-support';
-const relatedLinks = helpLinks.filter((item) => item && item.path && item.path !== currentPath);
+const contextualRelatedPathsByPage = {
+    privacy_policy_guide: ['lovart-terms-of-use-guide', 'lovart-customer-support', 'lovart-refund-guide'],
+    terms_of_use_guide: ['lovart-privacy-policy-guide', 'lovart-customer-support', 'lovart-account-deletion-guide'],
+    account_deletion_guide: ['lovart-customer-support', 'lovart-support-contact', 'lovart-privacy-policy-guide'],
+    refund_guide: ['lovart-customer-support', 'lovart-support-contact', 'lovart-pricing']
+};
+const relatedItems = Array.isArray(contextualRelatedPathsByPage[currentSupportPageKey])
+    ? contextualRelatedPathsByPage[currentSupportPageKey].map((path) => {
+        const h = helpLinks.find(x => x.path === path);
+        return h ? { path, title: h.title, desc: h.desc } : { path };
+      })
+    : helpLinks
+        .filter((item) => item && item.path && item.path !== currentPath)
+        .map((item) => ({ path: item.path, title: item.title, desc: item.desc }));
 const breadcrumbItems = [
     { name: t.nav.home, href: link('/') },
     { name: t.nav.help, href: link('help') },
@@ -99,24 +112,11 @@ const breadcrumbItems = [
             </div>
         </section>
 
-        <section class="py-14 bg-neutral-light">
-            <div class="container mx-auto px-6">
-                <div class="max-w-5xl mx-auto">
-                    <h2 class="text-2xl font-bold text-neutral-dark mb-3">
-                        <%= supportCluster.related_title || 'Related support guides' %>
-                    </h2>
-                    <p class="text-neutral mb-8"><%= supportCluster.related_desc || '' %></p>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <% relatedLinks.forEach(function(item) { %>
-                        <a href="<%= link(item.path) %>" class="bg-white border border-gray-200 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all">
-                            <h3 class="font-semibold text-neutral-dark mb-1"><%= item.title %></h3>
-                            <p class="text-sm text-neutral"><%= item.desc %></p>
-                        </a>
-                        <% }); %>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <%- include('partials/related-resources', {
+            relatedItems,
+            relatedTitle: supportCluster.related_title || 'Related support guides',
+            relatedDescription: supportCluster.related_desc || ''
+        }) %>
     </main>
 
     <%- include('partials/footer') %>

@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Logo Maker' , href: canonicalUrl }]; %>
+<%
+const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Logo Maker' , href: canonicalUrl }];
+const relatedItems = [
+    { path: 'lovart-brand-kit' },
+    { path: 'lovart-design-features' },
+    { path: 'lovart-free' }
+];
+%>
     <html lang="<%= lang %>" class="scroll-smooth">
 
     <head>
@@ -301,6 +308,8 @@
                                 <% }) %>
                         </div>
                     </section>
+
+                    <%- include('partials/related-resources', { relatedItems }) %>
 
                     <!-- Final CTA -->
                     <section class="bg-gradient-to-r from-primary to-primary-light py-20 mt-4">

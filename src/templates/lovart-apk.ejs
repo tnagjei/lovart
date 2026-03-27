@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Lovart APK' , href: canonicalUrl }]; %>
+<%
+const breadcrumbItems=[{ name: t.nav.home, href: link('/') }, { name: 'Lovart APK' , href: canonicalUrl }];
+const relatedItems = [
+    { path: 'lovart-free' },
+    { path: 'lovart-pricing' },
+    { path: 'lovart-china', title: (t.seo && t.seo.lovart_china) ? t.seo.lovart_china.title : '', desc: (t.seo && t.seo.lovart_china) ? t.seo.lovart_china.description : '' }
+];
+%>
     <html lang="<%= lang %>" class="scroll-smooth">
 
     <head>
@@ -357,6 +364,8 @@
                                 <% }) %>
                         </div>
                     </section>
+
+                    <%- include('partials/related-resources', { relatedItems }) %>
 
                     <!-- Ad Slot 3 -->
                     <div class="container mx-auto px-4 max-w-4xl my-6">
