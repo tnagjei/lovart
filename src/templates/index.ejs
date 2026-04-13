@@ -875,6 +875,34 @@
 
 
 
+                <!-- Explore AI Tools Section (Phase D - internal link distribution) -->
+                <% if (t.explore_ai_tools && t.explore_ai_tools.tools) { %>
+                <section class="py-16 md:py-20 bg-white section-animate">
+                    <div class="container mx-auto px-6">
+                        <div class="text-center mb-10">
+                            <h2 class="text-3xl md:text-4xl font-bold text-neutral-dark mb-4">
+                                <%= t.explore_ai_tools.title %>
+                            </h2>
+                            <p class="text-lg text-neutral max-w-2xl mx-auto">
+                                <%= t.explore_ai_tools.subtitle %>
+                            </p>
+                        </div>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <% t.explore_ai_tools.tools.forEach(function(tool) { %>
+                            <a href="<%= link(tool.slug) %>"
+                                class="group flex flex-col p-6 bg-neutral-light rounded-2xl border border-transparent hover:border-primary/30 hover:shadow-lg transition-all duration-300">
+                                <h3 class="text-lg font-bold text-neutral-dark mb-2 group-hover:text-primary transition-colors">
+                                    <%= tool.title %>
+                                </h3>
+                                <p class="text-sm text-neutral flex-grow mb-4"><%= tool.desc %></p>
+                                <span class="text-sm font-semibold text-primary"><%= tool.link_text %></span>
+                            </a>
+                            <% }); %>
+                        </div>
+                    </div>
+                </section>
+                <% } %>
+
                 <!-- Resource Center Section -->
                 <section id="resources" class="py-16 md:py-24 bg-neutral-light section-animate">
                     <div class="container mx-auto px-6">

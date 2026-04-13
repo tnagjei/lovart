@@ -5271,5 +5271,47 @@
             ]
         },
         "disclaimer": "lovart.info is an independent informational resource. This is not the official Lovart website."
+    },
+    "explore_ai_tools": {
+        "title": "Explore Lovart AI Tools",
+        "subtitle": "Discover the full range of AI-powered features on Lovart — from image generation to logo design, video creation, and more.",
+        "tools": [
+            {
+                "title": "AI Image Generator",
+                "desc": "Create stunning visuals from text prompts instantly.",
+                "link_text": "Try Now →",
+                "slug": "lovart-ai-image-generator"
+            },
+            {
+                "title": "AI Logo Design",
+                "desc": "Generate professional logos with AI in seconds.",
+                "link_text": "Design Logo →",
+                "slug": "lovart-ai-logo-design"
+            },
+            {
+                "title": "GPT-4o Image",
+                "desc": "Powered by the latest GPT-4o model for advanced visual generation.",
+                "link_text": "Explore →",
+                "slug": "lovart-gpt-4o-image"
+            },
+            {
+                "title": "AI 3D Image Generator",
+                "desc": "Generate stunning 3D visuals and renders with AI.",
+                "link_text": "Try 3D →",
+                "slug": "lovart-3d-image-generator"
+            },
+            {
+                "title": "AI Video Generator",
+                "desc": "Turn images and text prompts into short animations.",
+                "link_text": "Make Video →",
+                "slug": "lovart-ai-video"
+            },
+            {
+                "title": "Background Remover",
+                "desc": "Remove backgrounds automatically with precision AI.",
+                "link_text": "Remove BG →",
+                "slug": "lovart-background-remover"
+            }
+        ]
     }
 }

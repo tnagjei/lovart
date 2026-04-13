@@ -5301,5 +5301,47 @@
             ]
         },
         "disclaimer": "Lovart.info 属于独立的第三方资讯导航站。具体的工具参数与限制请参阅官方网址。"
+    },
+    "explore_ai_tools": {
+        "title": "探索 Lovart AI 工具",
+        "subtitle": "发现 Lovart 的全系列 AI 创作功能——从图像生成到 Logo 设计、视频创作，尽在此处。",
+        "tools": [
+            {
+                "title": "AI 图片生成",
+                "desc": "一句话描述，秒出高质量图像。",
+                "link_text": "立即体验 →",
+                "slug": "lovart-ai-image-generator"
+            },
+            {
+                "title": "AI Logo 设计",
+                "desc": "几秒内用 AI 生成专业 Logo。",
+                "link_text": "开始设计 →",
+                "slug": "lovart-ai-logo-design"
+            },
+            {
+                "title": "GPT-4o 图像",
+                "desc": "基于最新 GPT-4o 模型的高级视觉生成。",
+                "link_text": "了解详情 →",
+                "slug": "lovart-gpt-4o-image"
+            },
+            {
+                "title": "AI 3D 图像生成",
+                "desc": "轻松生成高质量 3D 视觉和渲染图。",
+                "link_text": "体验 3D →",
+                "slug": "lovart-3d-image-generator"
+            },
+            {
+                "title": "AI 视频生成",
+                "desc": "将图片或文字提示转化为短视频动画。",
+                "link_text": "生成视频 →",
+                "slug": "lovart-ai-video"
+            },
+            {
+                "title": "一键抠图",
+                "desc": "AI 精准识别，一键去除复杂背景。",
+                "link_text": "立即抠图 →",
+                "slug": "lovart-background-remover"
+            }
+        ]
     }
 }

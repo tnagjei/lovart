@@ -4950,5 +4950,47 @@
             ]
         },
         "disclaimer": "lovart.info is an independent informational resource. This is not the official Lovart website."
+    },
+    "explore_ai_tools": {
+        "title": "Lovart AIツールを探索",
+        "subtitle": "画像生成からロゴデザイン、動画制作まで、LovartのフルラインナップのAI機能をご覧ください。",
+        "tools": [
+            {
+                "title": "AI画像ジェネレーター",
+                "desc": "テキストから高品質な画像を瞬時に生成。",
+                "link_text": "今すぐ試す →",
+                "slug": "lovart-ai-image-generator"
+            },
+            {
+                "title": "AIロゴデザイン",
+                "desc": "数秒でプロ品質のロゴをAIで生成。",
+                "link_text": "ロゴを作る →",
+                "slug": "lovart-ai-logo-design"
+            },
+            {
+                "title": "GPT-4o画像",
+                "desc": "最新のGPT-4oモデルによる高度な画像生成。",
+                "link_text": "詳細を見る →",
+                "slug": "lovart-gpt-4o-image"
+            },
+            {
+                "title": "AI 3D画像ジェネレーター",
+                "desc": "AIで迫力ある3Dビジュアルを生成。",
+                "link_text": "3Dを試す →",
+                "slug": "lovart-3d-image-generator"
+            },
+            {
+                "title": "AI動画ジェネレーター",
+                "desc": "画像やテキストをショートアニメに変換。",
+                "link_text": "動画を作る →",
+                "slug": "lovart-ai-video"
+            },
+            {
+                "title": "背景リムーバー",
+                "desc": "AIで背景を自動で高精度に除去。",
+                "link_text": "背景を除去 →",
+                "slug": "lovart-background-remover"
+            }
+        ]
     }
 }

@@ -2922,5 +2922,47 @@
             ]
         },
         "disclaimer": "lovart.info is an independent informational resource. This is not the official Lovart website."
+    },
+    "explore_ai_tools": {
+        "title": "Esplora gli strumenti IA di Lovart",
+        "subtitle": "Scopri la gamma completa di funzionalità IA di Lovart: generazione di immagini, design del logo, creazione di video e molto altro.",
+        "tools": [
+            {
+                "title": "Generatore di immagini IA",
+                "desc": "Crea immagini straordinarie dal testo in istanti.",
+                "link_text": "Prova ora →",
+                "slug": "lovart-ai-image-generator"
+            },
+            {
+                "title": "Design logo IA",
+                "desc": "Genera loghi professionali con IA in pochi secondi.",
+                "link_text": "Crea logo →",
+                "slug": "lovart-ai-logo-design"
+            },
+            {
+                "title": "Immagini GPT-4o",
+                "desc": "Generazione visiva avanzata con il modello GPT-4o.",
+                "link_text": "Esplora →",
+                "slug": "lovart-gpt-4o-image"
+            },
+            {
+                "title": "Generatore 3D IA",
+                "desc": "Crea straordinarie immagini 3D con l'IA.",
+                "link_text": "Prova il 3D →",
+                "slug": "lovart-3d-image-generator"
+            },
+            {
+                "title": "Generatore video IA",
+                "desc": "Trasforma immagini e testo in brevi animazioni.",
+                "link_text": "Crea video →",
+                "slug": "lovart-ai-video"
+            },
+            {
+                "title": "Rimozione sfondo",
+                "desc": "Rimuovi gli sfondi automaticamente con l'IA.",
+                "link_text": "Rimuovi sfondo →",
+                "slug": "lovart-background-remover"
+            }
+        ]
     }
 }
