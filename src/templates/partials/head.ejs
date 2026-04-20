@@ -88,6 +88,29 @@
     return (t.terms_page && t.terms_page.seo) || {};
     case 'index':
     return t.seo || {};
+    // Phase A3: Previously missing page mappings
+    case 'lovart-review':
+    return (t.lovart_review_page && t.lovart_review_page.seo) || {};
+    case 'lovart-alternative':
+    return (t.lovart_alternative_page && t.lovart_alternative_page.seo) || {};
+    case 'lovart-prompt-guide':
+    return (t.seo && t.seo.prompt_guide) || {};
+    case 'what-is-lovart':
+    return (t.what_is_lovart_page && t.what_is_lovart_page.seo) || {};
+    case 'lovart-tutorial':
+    return (t.lovart_tutorial_page && t.lovart_tutorial_page.seo) || {};
+    case 'lovart-code':
+    return (t.lovart_code_page && t.lovart_code_page.seo) || {};
+    case 'lovart-ai-agent':
+    return (t.lovart_ai_agent_page && t.lovart_ai_agent_page.seo) || {};
+    case 'lovart-promo-code':
+    return (t.lovart_promo_page && t.lovart_promo_page.seo) || {};
+    case 'lovart-login-guide':
+    return (t.lovart_login_page && t.lovart_login_page.seo) || {};
+    case 'lovart-company':
+    return (t.lovart_company_page && t.lovart_company_page.seo) || {};
+    case 'lovarte':
+    return (t.lovarte_page && t.lovarte_page.seo) || {};
     default:
     return t.seo || {};
     }
