@@ -43,6 +43,30 @@ const esItCorePages = [
 const noindexLangs = new Set(['es', 'it']);
 const noindexShellPages = new Set(esItCorePages);
 
+// Phase F: Pages with verified, real es/it translations — unlock from noindex
+// Criteria: seo.title is different from en, confirming a human/quality translation exists
+const esItIndexablePages = new Set([
+    'lovart-3d-image-generator',
+    'lovart-ai-agent',
+    'lovart-ai-image-generator',
+    'lovart-ai-logo-design',
+    'lovart-alternative',
+    'lovart-api',
+    'lovart-apk',
+    'lovart-brand-kit',
+    'lovart-code',
+    'lovart-gpt-4o-image',
+    'lovart-login-guide',
+    'lovart-logo',
+    'lovart-nano-banana',
+    'lovart-pricing',
+    'lovart-promo-code',
+    'lovart-review',
+    'lovart-tutorial',
+    'lovarte',
+    'what-is-lovart',
+]);
+
 const pageLangMap = {
     ...Object.fromEntries(
         esItCorePages.map((pageName) => [pageName, [...extendedSupportedLangs]])
@@ -88,6 +112,8 @@ function resolvePageSupportedLangs(pageName, cfg) {
 }
 
 function shouldNoindexPage(pageName, lang) {
+    // Pages with verified quality translations are indexable even in es/it
+    if (noindexLangs.has(lang) && esItIndexablePages.has(pageName)) return false;
     return noindexLangs.has(lang) && noindexShellPages.has(pageName);
 }
 
