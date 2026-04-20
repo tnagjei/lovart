@@ -62,7 +62,73 @@
         "get_started": "开始使用",
         "free": "免费试用",
         "api": "API",
-        "ai_code": "AI Code"
+        "ai_code": "AI Code",
+        "tools_label": "工具",
+        "learn_label": "了解",
+        "tools": [
+            {
+                "label": "AI 图片生成",
+                "slug": "lovart-ai-image-generator"
+            },
+            {
+                "label": "AI Logo 设计",
+                "slug": "lovart-ai-logo-design"
+            },
+            {
+                "label": "GPT-4o 图像",
+                "slug": "lovart-gpt-4o-image"
+            },
+            {
+                "label": "AI 3D 生成",
+                "slug": "lovart-3d-image-generator"
+            },
+            {
+                "label": "AI 视频",
+                "slug": "lovart-ai-video"
+            },
+            {
+                "label": "一键抠图",
+                "slug": "lovart-background-remover"
+            },
+            {
+                "label": "AI 代码",
+                "slug": "lovart-ai-code"
+            },
+            {
+                "label": "AI 智能体",
+                "slug": "lovart-ai-agent"
+            },
+            {
+                "label": "品牌套件",
+                "slug": "lovart-brand-kit"
+            },
+            {
+                "label": "Logo 生成",
+                "slug": "lovart-logo"
+            }
+        ],
+        "learn": [
+            {
+                "label": "使用教程",
+                "slug": "lovart-tutorial"
+            },
+            {
+                "label": "提示词指南",
+                "slug": "lovart-prompt-guide"
+            },
+            {
+                "label": "用户评价",
+                "slug": "lovart-review"
+            },
+            {
+                "label": "什么是 Lovart",
+                "slug": "what-is-lovart"
+            },
+            {
+                "label": "替代方案",
+                "slug": "lovart-alternative"
+            }
+        ]
     },
     "hero": {
         "title": "Lovart AI 设计平台：更快产出品牌级视觉内容",

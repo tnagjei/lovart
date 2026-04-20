@@ -9,7 +9,73 @@
         "get_started": "Inizia",
         "free": "Prova gratuita",
         "api": "API",
-        "ai_code": "Codice IA"
+        "ai_code": "Codice IA",
+        "tools_label": "Strumenti",
+        "learn_label": "Imparare",
+        "tools": [
+            {
+                "label": "Generatore immagini IA",
+                "slug": "lovart-ai-image-generator"
+            },
+            {
+                "label": "Design logo IA",
+                "slug": "lovart-ai-logo-design"
+            },
+            {
+                "label": "Immagine GPT-4o",
+                "slug": "lovart-gpt-4o-image"
+            },
+            {
+                "label": "Generatore 3D IA",
+                "slug": "lovart-3d-image-generator"
+            },
+            {
+                "label": "Video IA",
+                "slug": "lovart-ai-video"
+            },
+            {
+                "label": "Rimozione sfondo",
+                "slug": "lovart-background-remover"
+            },
+            {
+                "label": "AI Code",
+                "slug": "lovart-ai-code"
+            },
+            {
+                "label": "AI Agent",
+                "slug": "lovart-ai-agent"
+            },
+            {
+                "label": "Brand Kit",
+                "slug": "lovart-brand-kit"
+            },
+            {
+                "label": "Creatore di logo",
+                "slug": "lovart-logo"
+            }
+        ],
+        "learn": [
+            {
+                "label": "Tutorial",
+                "slug": "lovart-tutorial"
+            },
+            {
+                "label": "Guida ai prompt",
+                "slug": "lovart-prompt-guide"
+            },
+            {
+                "label": "Recensione",
+                "slug": "lovart-review"
+            },
+            {
+                "label": "Cos'è Lovart",
+                "slug": "what-is-lovart"
+            },
+            {
+                "label": "Alternative",
+                "slug": "lovart-alternative"
+            }
+        ]
     },
     "footer": {
         "products_title": "Prodotti",

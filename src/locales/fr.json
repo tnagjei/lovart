@@ -62,7 +62,73 @@
         "get_started": "Commencer",
         "free": "Essai gratuit",
         "api": "API",
-        "ai_code": "AI Code"
+        "ai_code": "AI Code",
+        "tools_label": "Outils",
+        "learn_label": "Apprendre",
+        "tools": [
+            {
+                "label": "Générateur d'images IA",
+                "slug": "lovart-ai-image-generator"
+            },
+            {
+                "label": "Design de logo IA",
+                "slug": "lovart-ai-logo-design"
+            },
+            {
+                "label": "Image GPT-4o",
+                "slug": "lovart-gpt-4o-image"
+            },
+            {
+                "label": "Génération 3D IA",
+                "slug": "lovart-3d-image-generator"
+            },
+            {
+                "label": "Vidéo IA",
+                "slug": "lovart-ai-video"
+            },
+            {
+                "label": "Supprimer l'arrière-plan",
+                "slug": "lovart-background-remover"
+            },
+            {
+                "label": "AI Code",
+                "slug": "lovart-ai-code"
+            },
+            {
+                "label": "AI Agent",
+                "slug": "lovart-ai-agent"
+            },
+            {
+                "label": "Kit de marque",
+                "slug": "lovart-brand-kit"
+            },
+            {
+                "label": "Créateur de logo",
+                "slug": "lovart-logo"
+            }
+        ],
+        "learn": [
+            {
+                "label": "Tutoriel",
+                "slug": "lovart-tutorial"
+            },
+            {
+                "label": "Guide de prompt",
+                "slug": "lovart-prompt-guide"
+            },
+            {
+                "label": "Avis",
+                "slug": "lovart-review"
+            },
+            {
+                "label": "Qu'est-ce que Lovart",
+                "slug": "what-is-lovart"
+            },
+            {
+                "label": "Alternatives",
+                "slug": "lovart-alternative"
+            }
+        ]
     },
     "hero": {
         "title": "Lovart : créez plus vite avec une plateforme design assistée par IA",

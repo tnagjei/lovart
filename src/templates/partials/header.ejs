@@ -2,37 +2,80 @@
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="<%= link('/') %>"
             class="text-3xl font-bold text-primary hover:text-primary-dark transition-colors">Lovart</a>
-        <nav class="hidden md:flex space-x-4 items-center">
-            <a href="<%= link('/') %>" class="text-neutral hover:text-primary transition-colors">
+
+        <%# Desktop Nav %>
+        <nav class="hidden md:flex space-x-1 items-center">
+            <a href="<%= link('/') %>" class="px-3 py-2 text-neutral hover:text-primary transition-colors text-sm">
                 <%= t.nav.home %>
             </a>
-            <a href="<%= link('lovart-design-features') %>"
-                class="text-neutral hover:text-primary transition-colors">
+            <a href="<%= link('lovart-design-features') %>" class="px-3 py-2 text-neutral hover:text-primary transition-colors text-sm">
                 <%= t.nav.features %>
             </a>
-            <a href="<%= link('lovart-free') %>" class="text-neutral hover:text-primary transition-colors">
+
+            <%# Tools dropdown %>
+            <% if (t.nav.tools && t.nav.tools.length) { %>
+            <div class="relative group" id="dd-tools">
+                <button id="dd-tools-btn"
+                    aria-haspopup="true" aria-expanded="false" aria-controls="dd-tools-panel"
+                    class="flex items-center gap-1 px-3 py-2 text-neutral hover:text-primary transition-colors text-sm cursor-pointer bg-transparent border-0 font-inherit">
+                    <%= t.nav.tools_label %>
+                    <svg class="w-3 h-3 mt-0.5 transition-transform" id="dd-tools-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div id="dd-tools-panel" role="menu" aria-labelledby="dd-tools-btn"
+                    class="absolute left-0 top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+                    <div class="bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[200px] grid grid-cols-2 gap-0">
+                        <% t.nav.tools.forEach(function(item) { %>
+                        <a href="<%= link(item.slug) %>" role="menuitem" class="block px-4 py-2.5 text-sm text-neutral hover:bg-primary/5 hover:text-primary transition-colors whitespace-nowrap">
+                            <%= item.label %>
+                        </a>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+
+            <%# Learn dropdown %>
+            <% if (t.nav.learn && t.nav.learn.length) { %>
+            <div class="relative group" id="dd-learn">
+                <button id="dd-learn-btn"
+                    aria-haspopup="true" aria-expanded="false" aria-controls="dd-learn-panel"
+                    class="flex items-center gap-1 px-3 py-2 text-neutral hover:text-primary transition-colors text-sm cursor-pointer bg-transparent border-0 font-inherit">
+                    <%= t.nav.learn_label %>
+                    <svg class="w-3 h-3 mt-0.5 transition-transform" id="dd-learn-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div id="dd-learn-panel" role="menu" aria-labelledby="dd-learn-btn"
+                    class="absolute left-0 top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+                    <div class="bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[180px]">
+                        <% t.nav.learn.forEach(function(item) { %>
+                        <a href="<%= link(item.slug) %>" role="menuitem" class="block px-4 py-2.5 text-sm text-neutral hover:bg-primary/5 hover:text-primary transition-colors whitespace-nowrap">
+                            <%= item.label %>
+                        </a>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+
+            <a href="<%= link('lovart-free') %>" class="px-3 py-2 text-neutral hover:text-primary transition-colors text-sm">
                 <%= t.nav.free %>
             </a>
-            <a href="<%= link('lovart-pricing') %>" class="text-neutral hover:text-primary transition-colors">
+            <a href="<%= link('lovart-pricing') %>" class="px-3 py-2 text-neutral hover:text-primary transition-colors text-sm">
                 <%= t.nav.pricing %>
             </a>
-            <a href="<%= link('lovart-api') %>" class="text-neutral hover:text-primary transition-colors">
-                <%= t.nav.api %>
-            </a>
-            <a href="<%= link('lovart-ai-code') %>" class="text-neutral hover:text-primary transition-colors">
-                <%= t.nav.ai_code %>
-            </a>
-            <a href="<%= link('blog') %>" class="text-neutral hover:text-primary transition-colors">
+            <a href="<%= link('blog') %>" class="px-3 py-2 text-neutral hover:text-primary transition-colors text-sm">
                 <%= t.nav.blog %>
             </a>
-            <a href="<%= link('about') %>" class="text-neutral hover:text-primary transition-colors">
-                <%= t.nav.about %>
-            </a>
             <a href="<%= link('lovart-pricing') %>"
-                class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">
+                class="ml-2 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors text-sm font-semibold">
                 <%= t.nav.get_started %>
             </a>
         </nav>
+
+        <%# Mobile hamburger %>
         <div class="md:hidden">
             <button id="mobile-menu-button" class="text-neutral-dark focus:outline-none"
                 aria-label="Toggle mobile menu">
@@ -43,8 +86,9 @@
             </button>
         </div>
     </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+
+    <%# Mobile Menu %>
+    <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg max-h-screen overflow-y-auto">
         <a href="<%= link('/') %>"
             class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
             <%= t.nav.home %>
@@ -53,6 +97,49 @@
             class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
             <%= t.nav.features %>
         </a>
+
+        <%# Mobile Tools section %>
+        <% if (t.nav.tools && t.nav.tools.length) { %>
+        <div>
+            <button id="mobile-tools-toggle"
+                class="w-full flex items-center justify-between px-6 py-3 text-neutral font-semibold hover:bg-gray-50 transition-colors text-left bg-transparent border-0">
+                <span><%= t.nav.tools_label %></span>
+                <svg id="mobile-tools-arrow" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+            <div id="mobile-tools-menu" class="hidden bg-gray-50 border-t border-gray-100">
+                <% t.nav.tools.forEach(function(item) { %>
+                <a href="<%= link(item.slug) %>"
+                    class="block px-10 py-2.5 text-sm text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                    <%= item.label %>
+                </a>
+                <% }); %>
+            </div>
+        </div>
+        <% } %>
+
+        <%# Mobile Learn section %>
+        <% if (t.nav.learn && t.nav.learn.length) { %>
+        <div>
+            <button id="mobile-learn-toggle"
+                class="w-full flex items-center justify-between px-6 py-3 text-neutral font-semibold hover:bg-gray-50 transition-colors text-left bg-transparent border-0">
+                <span><%= t.nav.learn_label %></span>
+                <svg id="mobile-learn-arrow" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+            <div id="mobile-learn-menu" class="hidden bg-gray-50 border-t border-gray-100">
+                <% t.nav.learn.forEach(function(item) { %>
+                <a href="<%= link(item.slug) %>"
+                    class="block px-10 py-2.5 text-sm text-neutral hover:bg-primary-light hover:text-white transition-colors">
+                    <%= item.label %>
+                </a>
+                <% }); %>
+            </div>
+        </div>
+        <% } %>
+
         <a href="<%= link('lovart-free') %>"
             class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
             <%= t.nav.free %>
@@ -61,25 +148,93 @@
             class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
             <%= t.nav.pricing %>
         </a>
-        <a href="<%= link('lovart-api') %>"
-            class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
-            <%= t.nav.api %>
-        </a>
-        <a href="<%= link('lovart-ai-code') %>"
-            class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
-            <%= t.nav.ai_code %>
-        </a>
         <a href="<%= link('blog') %>"
             class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
             <%= t.nav.blog %>
-        </a>
-        <a href="<%= link('about') %>"
-            class="block px-6 py-3 text-neutral hover:bg-primary-light hover:text-white transition-colors">
-            <%= t.nav.about %>
         </a>
         <a href="<%= link('lovart-pricing') %>"
             class="block px-6 py-3 bg-primary text-white text-center rounded-b-md hover:bg-primary-dark transition-colors">
             <%= t.nav.get_started %>
         </a>
     </div>
+
+    <%# Desktop dropdown + mobile sub-menu accessibility JS %>
+    <script>
+    (function() {
+        // ── Desktop dropdowns: click-toggle + keyboard + Escape + outside-click ──
+        var dropdowns = [
+            { wrap: document.getElementById('dd-tools'), btn: document.getElementById('dd-tools-btn'), panel: document.getElementById('dd-tools-panel'), arrow: document.getElementById('dd-tools-arrow') },
+            { wrap: document.getElementById('dd-learn'), btn: document.getElementById('dd-learn-btn'), panel: document.getElementById('dd-learn-panel'), arrow: document.getElementById('dd-learn-arrow') }
+        ].filter(function(d) { return d.wrap && d.btn && d.panel; });
+
+        function openDD(d) {
+            d.panel.classList.remove('opacity-0', 'invisible');
+            d.panel.classList.add('opacity-100', 'visible');
+            d.btn.setAttribute('aria-expanded', 'true');
+            if (d.arrow) d.arrow.classList.add('rotate-180');
+        }
+        function closeDD(d) {
+            d.panel.classList.add('opacity-0', 'invisible');
+            d.panel.classList.remove('opacity-100', 'visible');
+            d.btn.setAttribute('aria-expanded', 'false');
+            if (d.arrow) d.arrow.classList.remove('rotate-180');
+        }
+        function isOpen(d) { return d.btn.getAttribute('aria-expanded') === 'true'; }
+
+        dropdowns.forEach(function(d) {
+            // Click toggle
+            d.btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                var opening = !isOpen(d);
+                dropdowns.forEach(closeDD); // close siblings
+                if (opening) openDD(d);
+            });
+
+            // Keyboard: Enter/Space open, Escape close, Arrow keys navigate items
+            d.btn.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    var opening = !isOpen(d);
+                    dropdowns.forEach(closeDD);
+                    if (opening) { openDD(d); d.panel.querySelector('[role=menuitem]') && d.panel.querySelector('[role=menuitem]').focus(); }
+                } else if (e.key === 'Escape') {
+                    closeDD(d); d.btn.focus();
+                } else if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    if (!isOpen(d)) openDD(d);
+                    var first = d.panel.querySelector('[role=menuitem]');
+                    if (first) first.focus();
+                }
+            });
+
+            // Arrow key navigation within menu items
+            d.panel.addEventListener('keydown', function(e) {
+                var items = Array.from(d.panel.querySelectorAll('[role=menuitem]'));
+                var idx = items.indexOf(document.activeElement);
+                if (e.key === 'ArrowDown') { e.preventDefault(); if (idx < items.length - 1) items[idx + 1].focus(); }
+                else if (e.key === 'ArrowUp') { e.preventDefault(); if (idx > 0) items[idx - 1].focus(); else { closeDD(d); d.btn.focus(); } }
+                else if (e.key === 'Escape') { closeDD(d); d.btn.focus(); }
+                else if (e.key === 'Tab') { setTimeout(function() { if (!d.panel.contains(document.activeElement)) closeDD(d); }, 0); }
+            });
+        });
+
+        // Close on outside click
+        document.addEventListener('click', function(e) {
+            dropdowns.forEach(function(d) { if (!d.wrap.contains(e.target)) closeDD(d); });
+        });
+
+        // ── Mobile sub-accordion toggles for Tools / Learn ──
+        ['tools', 'learn'].forEach(function(key) {
+            var toggle = document.getElementById('mobile-' + key + '-toggle');
+            var submenu = document.getElementById('mobile-' + key + '-menu');
+            var arrow = document.getElementById('mobile-' + key + '-arrow');
+            if (toggle && submenu) {
+                toggle.addEventListener('click', function() {
+                    submenu.classList.toggle('hidden');
+                    if (arrow) arrow.classList.toggle('rotate-180');
+                });
+            }
+        });
+    })();
+    </script>
 </header>

@@ -62,7 +62,73 @@
         "get_started": "Get Started",
         "free": "Free Trial",
         "api": "API",
-        "ai_code": "AI Code"
+        "ai_code": "AI Code",
+        "tools_label": "Tools",
+        "learn_label": "Learn",
+        "tools": [
+            {
+                "label": "AI Image Generator",
+                "slug": "lovart-ai-image-generator"
+            },
+            {
+                "label": "AI Logo Design",
+                "slug": "lovart-ai-logo-design"
+            },
+            {
+                "label": "GPT-4o Image",
+                "slug": "lovart-gpt-4o-image"
+            },
+            {
+                "label": "AI 3D Generator",
+                "slug": "lovart-3d-image-generator"
+            },
+            {
+                "label": "AI Video",
+                "slug": "lovart-ai-video"
+            },
+            {
+                "label": "Background Remover",
+                "slug": "lovart-background-remover"
+            },
+            {
+                "label": "AI Code",
+                "slug": "lovart-ai-code"
+            },
+            {
+                "label": "AI Agent",
+                "slug": "lovart-ai-agent"
+            },
+            {
+                "label": "Brand Kit",
+                "slug": "lovart-brand-kit"
+            },
+            {
+                "label": "Logo Maker",
+                "slug": "lovart-logo"
+            }
+        ],
+        "learn": [
+            {
+                "label": "Tutorial",
+                "slug": "lovart-tutorial"
+            },
+            {
+                "label": "Prompt Guide",
+                "slug": "lovart-prompt-guide"
+            },
+            {
+                "label": "Review",
+                "slug": "lovart-review"
+            },
+            {
+                "label": "What is Lovart",
+                "slug": "what-is-lovart"
+            },
+            {
+                "label": "Alternatives",
+                "slug": "lovart-alternative"
+            }
+        ]
     },
     "hero": {
         "title": "Lovart: Unleash Your Creative Genius with AI-Powered Design",

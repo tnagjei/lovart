@@ -62,7 +62,73 @@
         "get_started": "始める",
         "free": "無料トライアル",
         "api": "API",
-        "ai_code": "AI Code"
+        "ai_code": "AI Code",
+        "tools_label": "ツール",
+        "learn_label": "学ぶ",
+        "tools": [
+            {
+                "label": "AI画像ジェネレーター",
+                "slug": "lovart-ai-image-generator"
+            },
+            {
+                "label": "AIロゴデザイン",
+                "slug": "lovart-ai-logo-design"
+            },
+            {
+                "label": "GPT-4o画像",
+                "slug": "lovart-gpt-4o-image"
+            },
+            {
+                "label": "AI 3Dジェネレーター",
+                "slug": "lovart-3d-image-generator"
+            },
+            {
+                "label": "AI動画",
+                "slug": "lovart-ai-video"
+            },
+            {
+                "label": "背景リムーバー",
+                "slug": "lovart-background-remover"
+            },
+            {
+                "label": "AIコード",
+                "slug": "lovart-ai-code"
+            },
+            {
+                "label": "AIエージェント",
+                "slug": "lovart-ai-agent"
+            },
+            {
+                "label": "ブランドキット",
+                "slug": "lovart-brand-kit"
+            },
+            {
+                "label": "ロゴメーカー",
+                "slug": "lovart-logo"
+            }
+        ],
+        "learn": [
+            {
+                "label": "チュートリアル",
+                "slug": "lovart-tutorial"
+            },
+            {
+                "label": "プロンプトガイド",
+                "slug": "lovart-prompt-guide"
+            },
+            {
+                "label": "レビュー",
+                "slug": "lovart-review"
+            },
+            {
+                "label": "Lovartとは",
+                "slug": "what-is-lovart"
+            },
+            {
+                "label": "代替ツール",
+                "slug": "lovart-alternative"
+            }
+        ]
     },
     "hero": {
         "title": "Lovart：AIでデザイン制作を高速化するプラットフォーム",
