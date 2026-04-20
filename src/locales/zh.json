@@ -398,6 +398,22 @@
             {
                 "path": "lovart-background-remover",
                 "title": "一键抠图"
+            },
+            {
+                "path": "lovart-poster-maker",
+                "title": "AI 海报生成器"
+            },
+            {
+                "path": "lovart-mockup-generator",
+                "title": "AI 样机生成器"
+            },
+            {
+                "path": "lovart-vs-midjourney",
+                "title": "Lovart vs Midjourney"
+            },
+            {
+                "path": "lovart-vs-adobe",
+                "title": "Lovart vs Adobe"
             }
         ],
         "terms": "Terms of Service",
@@ -5409,5 +5425,529 @@
                 "slug": "lovart-background-remover"
             }
         ]
+    },
+    "lovart_poster_maker_page": {
+        "seo": {
+            "title": "Lovart AI 海报生成器：几秒内创作专业海报",
+            "description": "使用 Lovart AI 海报生成器，通过文字描述快速生成营销海报、活动宣传海报和社媒图片，无需设计经验。",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "Lovart AI 海报生成器：轻松创作高质量海报",
+            "desc": "Lovart AI 海报生成器让你用一句话生成精美海报——活动推广、营销宣传、社媒配图，全部搞定。"
+        },
+        "overview": {
+            "title": "什么是 AI 海报生成器？",
+            "desc": "AI 海报生成器通过机器学习从文字描述中自动生成海报设计，Lovart 的 AI 能理解排版、配色和视觉层次，直接输出印刷或数字海报。",
+            "cards": [
+                {
+                    "title": "秒速成图",
+                    "desc": "输入一句描述，几秒内生成完整海报布局。"
+                },
+                {
+                    "title": "多种尺寸",
+                    "desc": "支持印刷和数字格式（A4/A3/社媒/横幅）。"
+                },
+                {
+                    "title": "品牌一致",
+                    "desc": "配合品牌套件，自动套用品牌色和 Logo。"
+                },
+                {
+                    "title": "持续优化",
+                    "desc": "通过追加提示词持续调整，直到满意为止。"
+                }
+            ]
+        },
+        "how_it_works": {
+            "title": "如何使用 Lovart AI 海报生成器",
+            "steps": [
+                {
+                    "label": "第1步",
+                    "title": "描述你的海报",
+                    "desc": "输入活动名称、风格、配色和关键文案等详细信息。"
+                },
+                {
+                    "label": "第2步",
+                    "title": "选择风格",
+                    "desc": "从极简、大胆、复古、现代等风格中选择。"
+                },
+                {
+                    "label": "第3步",
+                    "title": "生成预览",
+                    "desc": "AI 瞬间生成多个版本，对比选择最满意的。"
+                },
+                {
+                    "label": "第4步",
+                    "title": "下载使用",
+                    "desc": "导出 PNG、PDF 等格式，用于印刷或数字传播。"
+                }
+            ]
+        },
+        "use_cases": {
+            "title": "AI 海报生成的常见场景",
+            "items": [
+                {
+                    "title": "活动推广",
+                    "desc": "演唱会、会议、节日等活动海报快速生成。"
+                },
+                {
+                    "title": "营销推广",
+                    "desc": "产品发布和促销活动的宣传海报。"
+                },
+                {
+                    "title": "社媒内容",
+                    "desc": "快速生成适配各平台比例的社媒配图。"
+                },
+                {
+                    "title": "影音创作",
+                    "desc": "制作电影风格海报或专辑封面。"
+                }
+            ]
+        },
+        "faq": {
+            "title": "常见问题",
+            "items": [
+                {
+                    "q": "Lovart AI 海报生成器免费吗？",
+                    "a": "Lovart 提供免费额度，超出后可升级付费套餐获得无限生成和高分辨率导出。"
+                },
+                {
+                    "q": "支持哪些尺寸？",
+                    "a": "支持印刷（A4、A3）和数字格式（正方形、9:16竖屏、16:9横屏）。"
+                },
+                {
+                    "q": "可以添加自定义文字和 Logo 吗？",
+                    "a": "可以。你可以通过追加提示词修改文字，并上传 Logo 或应用品牌套件。"
+                },
+                {
+                    "q": "AI 海报和模板有什么区别？",
+                    "a": "AI 按需生成独一无二的设计，无需从大量模板中挑选——你的描述即是设计师的指令。"
+                }
+            ]
+        },
+        "cta": {
+            "title": "立即开始 AI 海报创作",
+            "desc": "加入数千名设计师，用 Lovart AI 轻松生成高质量海报，无需设计经验。",
+            "button": "免费体验 Lovart 海报生成器"
+        },
+        "related": {
+            "title": "探索更多 Lovart AI 设计工具",
+            "items": [
+                {
+                    "title": "AI Logo 设计",
+                    "desc": "用 AI 生成专业 Logo",
+                    "link_text": "立即设计 →"
+                },
+                {
+                    "title": "AI 图片生成",
+                    "desc": "从文字描述生成图像",
+                    "link_text": "生成图片 →"
+                },
+                {
+                    "title": "样机生成器",
+                    "desc": "用 AI 生成产品样机",
+                    "link_text": "体验样机 →"
+                },
+                {
+                    "title": "Lovart 定价",
+                    "desc": "查看所有套餐",
+                    "link_text": "查看定价 →"
+                }
+            ]
+        },
+        "disclaimer": "Lovart.info 属于独立的第三方资讯站，并非 Lovart 官方网站。官方产品请访问 lovart.ai。"
+    },
+    "lovart_mockup_generator_page": {
+        "seo": {
+            "title": "Lovart AI 样机生成器：快速制作产品样机效果图",
+            "description": "使用 Lovart AI 样机生成器，无需拍摄即可生成 T恤、包装、App 等专业产品展示图，免费体验。",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "Lovart AI 样机生成器：AI 快速生成产品展示图",
+            "desc": "Lovart AI 样机生成器让你一键将设计套用到真实产品模板上——从 App 界面到服装配件，无需摄影棚即可输出专业展示图。"
+        },
+        "overview": {
+            "title": "什么是 AI 样机生成器？",
+            "desc": "AI 样机生成器将你的设计叠加到真实产品照片或渲染图上，免去实体打样和摄影成本，即时生成专业的产品展示效果。",
+            "cards": [
+                {
+                    "title": "即时生成",
+                    "desc": "上传设计，几秒内看到产品效果。"
+                },
+                {
+                    "title": "多品类支持",
+                    "desc": "T恤、马克杯、包装、设备屏幕等多种品类。"
+                },
+                {
+                    "title": "真实感渲染",
+                    "desc": "AI 模拟自然光影和材质纹理，接近实拍效果。"
+                },
+                {
+                    "title": "商用品质",
+                    "desc": "高分辨率导出，直接用于电商和营销推广。"
+                }
+            ]
+        },
+        "how_it_works": {
+            "title": "如何使用 Lovart AI 样机生成器",
+            "steps": [
+                {
+                    "label": "第1步",
+                    "title": "上传设计",
+                    "desc": "上传你的 Logo、图案或设计文件。"
+                },
+                {
+                    "label": "第2步",
+                    "title": "选择产品类型",
+                    "desc": "选择目标产品：服装、包装、数字屏幕、印刷品等。"
+                },
+                {
+                    "label": "第3步",
+                    "title": "生成样机",
+                    "desc": "AI 自动将设计套用到产品上，还原真实光影和透视。"
+                },
+                {
+                    "label": "第4步",
+                    "title": "下载使用",
+                    "desc": "导出高分辨率样机图，直接用于电商上架或方案汇报。"
+                }
+            ]
+        },
+        "use_cases": {
+            "title": "AI 样机生成的常见场景",
+            "items": [
+                {
+                    "title": "电商上架",
+                    "desc": "无需实体库存，直接生成产品展示图。"
+                },
+                {
+                    "title": "品牌提案",
+                    "desc": "向客户展示品牌在各类产品上的实际效果。"
+                },
+                {
+                    "title": "按需印刷",
+                    "desc": "上线前预览 T恤、帽子、卫衣等产品的印刷效果。"
+                },
+                {
+                    "title": "App 展示",
+                    "desc": "将 App 界面套用到设备框架图，用于作品集或路演。"
+                }
+            ]
+        },
+        "faq": {
+            "title": "常见问题",
+            "items": [
+                {
+                    "q": "Lovart AI 样机生成器免费吗？",
+                    "a": "Lovart 提供免费额度体验，付费版可无限生成并导出商用图片。"
+                },
+                {
+                    "q": "样机可以用于商业用途吗？",
+                    "a": "付费套餐生成的样机包含商用授权，具体条款请以 Lovart 官方为准。"
+                },
+                {
+                    "q": "支持上传哪些文件格式？",
+                    "a": "支持 PNG、JPG、SVG、PDF 等格式。"
+                },
+                {
+                    "q": "AI 样机的真实感如何？",
+                    "a": "Lovart AI 使用先进渲染技术模拟真实光影和材质，效果接近实拍。"
+                }
+            ]
+        },
+        "cta": {
+            "title": "立即开始 AI 样机创作",
+            "desc": "无需摄影棚，轻松生成专业产品展示图。",
+            "button": "免费体验 Lovart 样机生成器"
+        },
+        "related": {
+            "title": "探索更多 Lovart AI 设计工具",
+            "items": [
+                {
+                    "title": "AI 海报生成",
+                    "desc": "用 AI 制作吸睛海报",
+                    "link_text": "制作海报 →"
+                },
+                {
+                    "title": "AI Logo 设计",
+                    "desc": "生成专业 Logo",
+                    "link_text": "设计 Logo →"
+                },
+                {
+                    "title": "品牌套件",
+                    "desc": "保持设计风格统一",
+                    "link_text": "使用品牌套件 →"
+                },
+                {
+                    "title": "Lovart 定价",
+                    "desc": "查看合适的套餐",
+                    "link_text": "查看定价 →"
+                }
+            ]
+        },
+        "disclaimer": "Lovart.info 属于独立的第三方资讯站，并非 Lovart 官方网站。"
+    },
+    "lovart_vs_midjourney_page": {
+        "seo": {
+            "title": "Lovart vs Midjourney 2026：哪个 AI 设计工具更适合你？",
+            "description": "Lovart 和 Midjourney 深度对比：功能、定价、易用性、输出质量全方位比较，帮你找到最适合的 AI 设计工具。",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "Lovart vs Midjourney：设计师的诚实横评",
+            "desc": "在 Lovart 和 Midjourney 之间纠结？这篇对比从功能、定价、输出质量和工作流多个维度全面分析，帮你做出最适合的选择。"
+        },
+        "overview": {
+            "title": "Lovart vs Midjourney：快速概览",
+            "desc": "Lovart 是一款 AI 优先的全功能设计平台，集图像生成、标志设计、品牌套件于一体。Midjourney 是纯粹的 AI 图像生成工具，以艺术感和写实质量著称。两者都很强——最佳选择取决于你的工作流。",
+            "cards": [
+                {
+                    "title": "Lovart 优势",
+                    "desc": "完整设计平台：Logo、品牌套件、多 AI 模型、协作工作流。"
+                },
+                {
+                    "title": "Midjourney 优势",
+                    "desc": "在纯图像生成领域，艺术感和写实质量无可超越。"
+                },
+                {
+                    "title": "定价差异",
+                    "desc": "Lovart 有免费版；Midjourney 从第一天起就需要付费订阅。"
+                },
+                {
+                    "title": "易用性",
+                    "desc": "Lovart 是网页应用；Midjourney 通过 Discord 操作，学习曲线更陡。"
+                }
+            ]
+        },
+        "how_it_works": {
+            "title": "功能对比：Lovart vs Midjourney",
+            "steps": [
+                {
+                    "label": "图像",
+                    "title": "图像生成质量",
+                    "desc": "Midjourney 在艺术图像质量上领先。Lovart 提供良好的 AI 图像生成，并与设计工具深度整合。"
+                },
+                {
+                    "label": "设计",
+                    "title": "完整设计工作流",
+                    "desc": "Lovart 胜出——提供 Logo 生成、品牌套件、海报设计等。Midjourney 仅限图像生成。"
+                },
+                {
+                    "label": "定价",
+                    "title": "价格与免费版",
+                    "desc": "Lovart 提供免费额度。Midjourney 起价约 $10/月，无免费版。"
+                },
+                {
+                    "label": "访问",
+                    "title": "使用门槛",
+                    "desc": "Lovart 在浏览器中使用，无需特殊账号。Midjourney 需要 Discord 账号和命令行操作。"
+                }
+            ]
+        },
+        "use_cases": {
+            "title": "什么时候选 Lovart vs Midjourney",
+            "items": [
+                {
+                    "title": "选 Lovart 的场景",
+                    "desc": "需要完整设计工作流（Logo、海报、品牌素材）并结合 AI 图像生成。"
+                },
+                {
+                    "title": "选 Midjourney 的场景",
+                    "desc": "需要极致艺术质量和写实效果，以纯图像创作为主。"
+                },
+                {
+                    "title": "预算有限的用户",
+                    "desc": "Lovart 的免费版让入门零成本。Midjourney 需要立即付费。"
+                },
+                {
+                    "title": "团队协作",
+                    "desc": "Lovart 支持设计协作功能。Midjourney 主要面向个人创作。"
+                }
+            ]
+        },
+        "faq": {
+            "title": "常见问题",
+            "items": [
+                {
+                    "q": "Lovart 比 Midjourney 好吗？",
+                    "a": "取决于你的需求。Lovart 作为全能 AI 设计平台更胜一筹；Midjourney 在纯图像创作的艺术质量上更出色。对于综合设计工作，Lovart 是更强的选择。"
+                },
+                {
+                    "q": "Lovart 能取代 Midjourney 吗？",
+                    "a": "对大多数设计工作流而言可以。Lovart 涵盖图像生成、Logo 设计、品牌设计等。如果专门追求 Midjourney 级别的极致艺术质量，可以两者并用。"
+                },
+                {
+                    "q": "Lovart 和 Midjourney 的价格差多少？",
+                    "a": "Lovart 有免费版，付费套餐价格不等。Midjourney 起价约 $10/月。建议查看各平台最新官方定价。"
+                },
+                {
+                    "q": "Lovart 不需要 Discord 吗？",
+                    "a": "对的。Lovart 是标准网页应用，无需任何 Discord 账号。这让入门门槛大幅降低。"
+                }
+            ]
+        },
+        "cta": {
+            "title": "免费试用 Lovart——无需 Discord",
+            "desc": "体验 Lovart 完整的 AI 设计平台，今天就免费开始。",
+            "button": "免费开始使用 Lovart"
+        },
+        "related": {
+            "title": "更多 Lovart 对比与指南",
+            "items": [
+                {
+                    "title": "Lovart vs Canva 等竞品",
+                    "desc": "完整替代品对比指南",
+                    "link_text": "查看替代品 →"
+                },
+                {
+                    "title": "Lovart vs Adobe",
+                    "desc": "Lovart 与 Adobe 工具对比",
+                    "link_text": "对比 Adobe →"
+                },
+                {
+                    "title": "Lovart 2026 评测",
+                    "desc": "完整平台评测报告",
+                    "link_text": "阅读评测 →"
+                },
+                {
+                    "title": "Lovart 定价",
+                    "desc": "所有套餐功能说明",
+                    "link_text": "查看定价 →"
+                }
+            ]
+        },
+        "disclaimer": "Lovart.info 属于独立的第三方资讯站，与 Lovart 和 Midjourney 均无关联。本对比基于公开信息撰写。"
+    },
+    "lovart_vs_adobe_page": {
+        "seo": {
+            "title": "Lovart vs Adobe 2026：AI 设计 vs 传统创意套件哪个好？",
+            "description": "Lovart 与 Adobe Photoshop、Illustrator 和 Adobe Express 对比——功能、价格、易用性全面评测，助你选择合适的设计工具。",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "Lovart vs Adobe：AI 设计平台 vs 创意设计套件",
+            "desc": "Lovart 的 AI 设计平台与 Adobe Photoshop、Illustrator 和 Adobe Express 相比如何？这篇对比帮你选出最适合自己工作流的创意工具。"
+        },
+        "overview": {
+            "title": "Lovart vs Adobe：快速概览",
+            "desc": "Lovart 是 AI 驱动的设计平台，专为快速、提示词驱动的创作优化。Adobe 是拥有数十年历史的行业标准创意套件。最佳选择取决于你的技能水平、预算和工作流。",
+            "cards": [
+                {
+                    "title": "Lovart 优势",
+                    "desc": "AI 驱动、易于上手、有免费版、非设计师友好。"
+                },
+                {
+                    "title": "Adobe 优势",
+                    "desc": "行业标准工具、功能深度无可替代、专业级输出控制。"
+                },
+                {
+                    "title": "费用对比",
+                    "desc": "Lovart 有免费版；Adobe Creative Cloud 约 $54.99/月起。"
+                },
+                {
+                    "title": "学习曲线",
+                    "desc": "Lovart 通过 AI 提示词生成设计；Adobe 需要大量学习投入。"
+                }
+            ]
+        },
+        "how_it_works": {
+            "title": "功能对比：Lovart vs Adobe",
+            "steps": [
+                {
+                    "label": "AI 能力",
+                    "title": "AI 驱动创作",
+                    "desc": "Lovart 用文字提示词生成完整设计。Adobe 虽加入了 Firefly AI 功能，但本质仍是手动设计工具。"
+                },
+                {
+                    "label": "价格",
+                    "title": "定价与可及性",
+                    "desc": "Lovart 有免费版。Adobe Creative Cloud 约 $54.99/月，是不小的开支。"
+                },
+                {
+                    "label": "技能要求",
+                    "title": "所需技能水平",
+                    "desc": "Lovart 对新手友好——无需设计技能。Adobe 需要大量学习和实践才能掌握。"
+                },
+                {
+                    "label": "输出品质",
+                    "title": "专业输出",
+                    "desc": "Adobe 在精度、印刷就绪和像素级专业工作上仍是黄金标准。Lovart 在快速 AI 辅助创作方面更出色。"
+                }
+            ]
+        },
+        "use_cases": {
+            "title": "什么时候选 Lovart vs Adobe",
+            "items": [
+                {
+                    "title": "选 Lovart 的场景",
+                    "desc": "非专业设计师，需要快速低成本地产出高质量视觉素材。"
+                },
+                {
+                    "title": "选 Adobe 的场景",
+                    "desc": "需要像素级精度、复杂矢量工作或行业级专业输出。"
+                },
+                {
+                    "title": "初创公司和中小企业",
+                    "desc": "Lovart 以极低成本覆盖了 Adobe 约 80% 的使用场景。"
+                },
+                {
+                    "title": "专业设计师",
+                    "desc": "Adobe 在精密专业设计上仍是王者。Lovart 可用于辅助灵感和初稿。"
+                }
+            ]
+        },
+        "faq": {
+            "title": "常见问题",
+            "items": [
+                {
+                    "q": "Lovart 能替代 Adobe 用于小型企业吗？",
+                    "a": "对于许多小企业的设计需求——Logo、社媒配图、海报、品牌素材——Lovart 完全可以胜任。复杂的专业印刷制作可能仍需 Adobe。"
+                },
+                {
+                    "q": "Lovart 比 Adobe 便宜多少？",
+                    "a": "差距显著。Lovart 有免费版和实惠的付费套餐；Adobe Creative Cloud 起价 $54.99/月，Lovart 在典型使用场景下性价比高出 5-10 倍。"
+                },
+                {
+                    "q": "Lovart 的功能和 Adobe Photoshop 一样吗？",
+                    "a": "不一样。Lovart 以 AI 驱动为核心，优化快速生成；Adobe Photoshop 有深度的手动编辑工具，两者服务不同工作流。"
+                },
+                {
+                    "q": "可以同时使用 Lovart 和 Adobe 吗？",
+                    "a": "可以。很多创作者用 Lovart 快速做 AI 初稿和灵感探索，再用 Adobe 进行最终专业修正和输出。"
+                }
+            ]
+        },
+        "cta": {
+            "title": "试试 Lovart——AI 驱动的 Adobe 替代品",
+            "desc": "别再为用不完的功能每月支付 $55。今天免费开始使用 Lovart AI 设计平台。",
+            "button": "免费开始使用 Lovart"
+        },
+        "related": {
+            "title": "更多 Lovart 对比指南",
+            "items": [
+                {
+                    "title": "Lovart vs Midjourney",
+                    "desc": "AI 图像生成对比",
+                    "link_text": "对比 Midjourney →"
+                },
+                {
+                    "title": "Lovart vs Canva 等竞品",
+                    "desc": "完整替代品指南",
+                    "link_text": "查看替代品 →"
+                },
+                {
+                    "title": "Lovart 设计功能",
+                    "desc": "完整功能概览",
+                    "link_text": "探索功能 →"
+                },
+                {
+                    "title": "Lovart 定价",
+                    "desc": "套餐与 Adobe 成本对比",
+                    "link_text": "查看套餐 →"
+                }
+            ]
+        },
+        "disclaimer": "Lovart.info 属于独立的第三方资讯站，与 Lovart 和 Adobe 均无关联。对比基于公开信息撰写。"
     }
 }

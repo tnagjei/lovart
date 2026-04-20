@@ -38,7 +38,12 @@ const esItCorePages = [
     'lovart-3d-image-generator',
     'lovart-ai-video',
     'lovart-image-to-image',
-    'lovart-background-remover'
+    'lovart-background-remover',
+    // P2 pages
+    'lovart-poster-maker',
+    'lovart-mockup-generator',
+    'lovart-vs-midjourney',
+    'lovart-vs-adobe'
 ];
 const noindexLangs = new Set(['es', 'it']);
 const noindexShellPages = new Set(esItCorePages);

@@ -382,6 +382,22 @@
             {
                 "path": "lovart-background-remover",
                 "title": "Background Remover"
+            },
+            {
+                "path": "lovart-poster-maker",
+                "title": "AI Poster Maker"
+            },
+            {
+                "path": "lovart-mockup-generator",
+                "title": "AI Mockup Generator"
+            },
+            {
+                "path": "lovart-vs-midjourney",
+                "title": "Lovart vs Midjourney"
+            },
+            {
+                "path": "lovart-vs-adobe",
+                "title": "Lovart vs Adobe"
             }
         ],
         "terms": "Terms of Service",
@@ -5379,5 +5395,529 @@
                 "slug": "lovart-background-remover"
             }
         ]
+    },
+    "lovart_poster_maker_page": {
+        "seo": {
+            "title": "Lovart AI Poster Maker: Create Stunning Posters with AI",
+            "description": "Use Lovart AI poster maker to design professional posters from text prompts. Generate eye-catching event, marketing, and social media posters in seconds.",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "Lovart AI Poster Maker: Design Professional Posters Instantly",
+            "desc": "Lovart's AI poster maker turns your ideas into stunning visual posters. From event announcements to marketing campaigns, generate high-quality poster designs in seconds."
+        },
+        "overview": {
+            "title": "What Is an AI Poster Maker?",
+            "desc": "An AI poster maker uses machine learning to generate poster designs from text descriptions. Lovart's AI understands layout, typography, and visual hierarchy to create print-ready and digital posters automatically.",
+            "cards": [
+                {
+                    "title": "Instant Design",
+                    "desc": "Generate complete poster layouts from a single text prompt in seconds."
+                },
+                {
+                    "title": "Multiple Formats",
+                    "desc": "Create posters for print (A4, A3) and digital (social media, web) in one click."
+                },
+                {
+                    "title": "Brand-Consistent",
+                    "desc": "Apply your brand colors, fonts, and logos using Lovart Brand Kit integration."
+                },
+                {
+                    "title": "Edit & Refine",
+                    "desc": "Iterate on designs with follow-up prompts until you get the perfect result."
+                }
+            ]
+        },
+        "how_it_works": {
+            "title": "How Lovart AI Poster Maker Works",
+            "steps": [
+                {
+                    "label": "Step 1",
+                    "title": "Describe Your Poster",
+                    "desc": "Enter a detailed description: event name, style, mood, colors, and any key text to include."
+                },
+                {
+                    "label": "Step 2",
+                    "title": "Choose a Style",
+                    "desc": "Select from minimalist, bold, retro, modern, or other visual styles."
+                },
+                {
+                    "label": "Step 3",
+                    "title": "Generate & Preview",
+                    "desc": "Lovart AI generates multiple poster variations instantly. Preview and compare options."
+                },
+                {
+                    "label": "Step 4",
+                    "title": "Download & Use",
+                    "desc": "Export as PNG, PDF, or WebP for print and digital distribution."
+                }
+            ]
+        },
+        "use_cases": {
+            "title": "AI Poster Maker Use Cases",
+            "items": [
+                {
+                    "title": "Event Promotion",
+                    "desc": "Create concert, conference, or festival posters with event details and professional layouts."
+                },
+                {
+                    "title": "Marketing Campaigns",
+                    "desc": "Design product launch and promotional posters for online and offline marketing."
+                },
+                {
+                    "title": "Social Media",
+                    "desc": "Generate Instagram stories, Facebook posts, and campaign graphics at scale."
+                },
+                {
+                    "title": "Movie & Music",
+                    "desc": "Produce cinematic-style movie posters or album artwork with AI."
+                }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": [
+                {
+                    "q": "Can I use the Lovart AI poster maker for free?",
+                    "a": "Lovart offers free credits for poster generation. For unlimited designs and higher resolution exports, paid plans are available."
+                },
+                {
+                    "q": "What sizes does Lovart support for posters?",
+                    "a": "Lovart supports standard print sizes (A4, A3, Letter) and digital formats (square, portrait 9:16, landscape 16:9) for social and web use."
+                },
+                {
+                    "q": "Can I add custom text and logos to AI-generated posters?",
+                    "a": "Yes. Lovart allows you to refine AI-generated designs by specifying text, uploading logos, and applying brand kit elements."
+                },
+                {
+                    "q": "Is AI poster design better than using traditional templates?",
+                    "a": "AI generates unique designs on demand — no need to search through templates. You describe your vision and Lovart creates a custom layout that matches it precisely."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Start Creating AI Posters with Lovart",
+            "desc": "Join thousands of designers using Lovart AI to produce stunning poster designs. No design experience required.",
+            "button": "Try Lovart Poster Maker"
+        },
+        "related": {
+            "title": "Explore More Lovart AI Design Tools",
+            "items": [
+                {
+                    "title": "AI Logo Design",
+                    "desc": "Create professional logos with AI",
+                    "link_text": "Try AI Logo →"
+                },
+                {
+                    "title": "AI Image Generator",
+                    "desc": "Generate visuals from text prompts",
+                    "link_text": "Generate Images →"
+                },
+                {
+                    "title": "Mockup Generator",
+                    "desc": "Visualize products with AI mockups",
+                    "link_text": "Try Mockups →"
+                },
+                {
+                    "title": "Lovart Pricing",
+                    "desc": "View all plans and features",
+                    "link_text": "See Plans →"
+                }
+            ]
+        },
+        "disclaimer": "lovart.info is an independent informational resource about Lovart. This is not the official Lovart website. For official products, visit lovart.ai."
+    },
+    "lovart_mockup_generator_page": {
+        "seo": {
+            "title": "Lovart AI Mockup Generator: Create Product Mockups Instantly",
+            "description": "Generate professional product mockups with Lovart AI. Visualize t-shirts, packaging, apps, and more without expensive photography. Free to try.",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "Lovart AI Mockup Generator: Visualize Your Products with AI",
+            "desc": "Lovart's AI mockup generator lets you place your designs on realistic product templates instantly. From app screens to apparel, create professional mockups without a photo studio."
+        },
+        "overview": {
+            "title": "What Is an AI Mockup Generator?",
+            "desc": "An AI mockup generator overlays your designs onto realistic product photos or renders, creating professional product presentations without physical prototypes or expensive photography.",
+            "cards": [
+                {
+                    "title": "Instant Mockups",
+                    "desc": "Upload your design and see it on products in seconds."
+                },
+                {
+                    "title": "Wide Product Range",
+                    "desc": "T-shirts, mugs, packaging, devices, and more product types."
+                },
+                {
+                    "title": "Realistic Preview",
+                    "desc": "AI renders natural lighting, shadows, and textures for photorealistic results."
+                },
+                {
+                    "title": "Commercial Ready",
+                    "desc": "Download high-resolution mockups ready for e-commerce and marketing."
+                }
+            ]
+        },
+        "how_it_works": {
+            "title": "How Lovart AI Mockup Generator Works",
+            "steps": [
+                {
+                    "label": "Step 1",
+                    "title": "Upload Your Design",
+                    "desc": "Upload your logo, artwork, or design file to Lovart."
+                },
+                {
+                    "label": "Step 2",
+                    "title": "Choose Product Type",
+                    "desc": "Select a product category: apparel, packaging, digital screens, print, etc."
+                },
+                {
+                    "label": "Step 3",
+                    "title": "Generate Mockup",
+                    "desc": "AI applies your design to the product with realistic lighting and perspective."
+                },
+                {
+                    "label": "Step 4",
+                    "title": "Download & Share",
+                    "desc": "Export high-resolution mockup images for immediate use in marketing or e-commerce."
+                }
+            ]
+        },
+        "use_cases": {
+            "title": "AI Mockup Generator Use Cases",
+            "items": [
+                {
+                    "title": "E-Commerce",
+                    "desc": "Create product listing images without physical inventory or studio shoots."
+                },
+                {
+                    "title": "Brand Presentations",
+                    "desc": "Show clients how their brand will look across different merchandise."
+                },
+                {
+                    "title": "Print-on-Demand",
+                    "desc": "Preview designs on t-shirts, hoodies, and accessories before selling."
+                },
+                {
+                    "title": "App Showcase",
+                    "desc": "Display app UI designs on device frames for portfolios and pitches."
+                }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": [
+                {
+                    "q": "Is Lovart's AI mockup generator free?",
+                    "a": "Lovart offers free credits for mockup generation. Unlimited mockups and commercial export are available on paid plans."
+                },
+                {
+                    "q": "Can I use mockups for commercial projects?",
+                    "a": "Yes, paid plan mockups include commercial usage rights. Review Lovart's terms for specific rights."
+                },
+                {
+                    "q": "What file formats can I upload for mockup generation?",
+                    "a": "Lovart supports PNG, JPG, SVG, and PDF uploads for use as mockup source designs."
+                },
+                {
+                    "q": "How realistic are Lovart AI mockups?",
+                    "a": "Lovart uses advanced AI rendering to simulate real lighting, shadows, and fabric textures, producing near-photorealistic results."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Start Creating AI Mockups with Lovart",
+            "desc": "Visualize your products and designs professionally without expensive photography.",
+            "button": "Try Lovart Mockup Generator"
+        },
+        "related": {
+            "title": "Explore More Lovart AI Tools",
+            "items": [
+                {
+                    "title": "AI Poster Maker",
+                    "desc": "Create eye-catching posters with AI",
+                    "link_text": "Make Posters →"
+                },
+                {
+                    "title": "AI Logo Design",
+                    "desc": "Generate professional logos",
+                    "link_text": "Design Logo →"
+                },
+                {
+                    "title": "Brand Kit",
+                    "desc": "Keep designs consistent with brand kit",
+                    "link_text": "Try Brand Kit →"
+                },
+                {
+                    "title": "Lovart Pricing",
+                    "desc": "Find the right plan",
+                    "link_text": "See Plans →"
+                }
+            ]
+        },
+        "disclaimer": "lovart.info is an independent informational resource about Lovart. This is not the official Lovart website."
+    },
+    "lovart_vs_midjourney_page": {
+        "seo": {
+            "title": "Lovart vs Midjourney 2026: Which AI Design Tool Is Better?",
+            "description": "Lovart vs Midjourney — in-depth comparison of features, pricing, ease of use, and output quality. Find the right AI design tool for your creative workflow.",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "Lovart vs Midjourney: Honest Comparison for Designers",
+            "desc": "Choosing between Lovart and Midjourney? This side-by-side comparison covers features, pricing, output quality, and which tool fits different creative needs in 2026."
+        },
+        "overview": {
+            "title": "Lovart vs Midjourney: Quick Overview",
+            "desc": "Lovart is an AI-first design platform combining image generation with design workflow tools. Midjourney is a pure AI image generator known for its artistic, photorealistic outputs. Both are powerful — the best choice depends on your workflow.",
+            "cards": [
+                {
+                    "title": "Lovart Strengths",
+                    "desc": "Full design platform: logo, brand kit, multiple AI models, collaborative workflows."
+                },
+                {
+                    "title": "Midjourney Strengths",
+                    "desc": "Unmatched artistic quality and photorealism for pure image generation."
+                },
+                {
+                    "title": "Pricing Difference",
+                    "desc": "Lovart offers a free tier; Midjourney requires a paid subscription from day one."
+                },
+                {
+                    "title": "Ease of Use",
+                    "desc": "Lovart uses a web app; Midjourney operates via Discord (steeper learning curve)."
+                }
+            ]
+        },
+        "how_it_works": {
+            "title": "Feature Comparison: Lovart vs Midjourney",
+            "steps": [
+                {
+                    "label": "Images",
+                    "title": "Image Generation Quality",
+                    "desc": "Midjourney leads in artistic image quality. Lovart offers solid AI image generation integrated with design tools."
+                },
+                {
+                    "label": "Design",
+                    "title": "Full Design Workflow",
+                    "desc": "Lovart wins here — it includes logo maker, brand kit, poster design, and more. Midjourney is images-only."
+                },
+                {
+                    "label": "Pricing",
+                    "title": "Cost & Free Tier",
+                    "desc": "Lovart offers free credits. Midjourney starts at $10/month with no free plan."
+                },
+                {
+                    "label": "Access",
+                    "title": "Ease of Access",
+                    "desc": "Lovart works in a standard web browser. Midjourney requires a Discord account and command-line usage."
+                }
+            ]
+        },
+        "use_cases": {
+            "title": "When to Choose Lovart vs Midjourney",
+            "items": [
+                {
+                    "title": "Choose Lovart If...",
+                    "desc": "You need a complete design workflow (logos, posters, brand assets) alongside AI image generation."
+                },
+                {
+                    "title": "Choose Midjourney If...",
+                    "desc": "You need maximum artistic image quality and photorealism for standalone AI art creation."
+                },
+                {
+                    "title": "Budget-Conscious Users",
+                    "desc": "Lovart's free tier makes it accessible. Midjourney requires immediate payment commitment."
+                },
+                {
+                    "title": "Teams & Collaboration",
+                    "desc": "Lovart supports design collaboration features. Midjourney is primarily a solo tool."
+                }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": [
+                {
+                    "q": "Is Lovart better than Midjourney?",
+                    "a": "It depends on your needs. Lovart excels as a full AI design platform. Midjourney produces superior standalone art. For comprehensive design work, Lovart is the stronger choice."
+                },
+                {
+                    "q": "Can Lovart replace Midjourney?",
+                    "a": "For most design workflows, yes. Lovart covers image generation, logo design, branding, and more. If you specifically need Midjourney's ultra-high artistic quality, you may use both."
+                },
+                {
+                    "q": "What is the price difference between Lovart and Midjourney?",
+                    "a": "Lovart has a free tier; paid plans vary. Midjourney starts at $10/month. Check each platform's current pricing for the most accurate comparison."
+                },
+                {
+                    "q": "Does Lovart work without Discord?",
+                    "a": "Yes. Lovart is a standard web application — no Discord required. Midjourney currently requires Discord for most features."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Try Lovart Free — No Discord Required",
+            "desc": "Experience Lovart's full AI design platform. Free to get started today.",
+            "button": "Start with Lovart for Free"
+        },
+        "related": {
+            "title": "More Lovart Comparisons & Guides",
+            "items": [
+                {
+                    "title": "Lovart vs Canva & Others",
+                    "desc": "Full alternatives comparison guide",
+                    "link_text": "Compare Alternatives →"
+                },
+                {
+                    "title": "Lovart vs Adobe",
+                    "desc": "Lovart vs Adobe design tools",
+                    "link_text": "Compare Adobe →"
+                },
+                {
+                    "title": "Lovart Review 2026",
+                    "desc": "Complete platform evaluation",
+                    "link_text": "Read Review →"
+                },
+                {
+                    "title": "Lovart Pricing",
+                    "desc": "All plans and features",
+                    "link_text": "See Plans →"
+                }
+            ]
+        },
+        "disclaimer": "lovart.info is an independent resource. We are not affiliated with Lovart or Midjourney. This comparison is based on publicly available information."
+    },
+    "lovart_vs_adobe_page": {
+        "seo": {
+            "title": "Lovart vs Adobe 2026: AI Design vs Traditional Creative Suite",
+            "description": "Lovart vs Adobe — compare AI-first design with Adobe Photoshop, Illustrator & Express. Find which design tool fits your budget and workflow in 2026.",
+            "keywords": ""
+        },
+        "hero": {
+            "title": "Lovart vs Adobe: AI Design vs the Creative Suite",
+            "desc": "How does Lovart's AI-first design platform stack up against Adobe Photoshop, Illustrator, and Adobe Express? This honest comparison helps you decide which creative tool fits your needs."
+        },
+        "overview": {
+            "title": "Lovart vs Adobe: Quick Overview",
+            "desc": "Lovart is an AI-driven design platform optimized for fast, prompt-based creation. Adobe is the industry-standard creative suite with decades of professional tools. The right choice depends on your skill level, budget, and workflow.",
+            "cards": [
+                {
+                    "title": "Lovart Strengths",
+                    "desc": "AI-powered, easy to use, free tier, fast onboarding for non-designers."
+                },
+                {
+                    "title": "Adobe Strengths",
+                    "desc": "Industry-standard tools, deep feature set, professional-grade control."
+                },
+                {
+                    "title": "Cost Comparison",
+                    "desc": "Lovart free tier vs Adobe Creative Cloud from $54.99/month."
+                },
+                {
+                    "title": "Learning Curve",
+                    "desc": "Lovart generates designs via AI prompts. Adobe requires significant learning investment."
+                }
+            ]
+        },
+        "how_it_works": {
+            "title": "Feature Comparison: Lovart vs Adobe",
+            "steps": [
+                {
+                    "label": "AI",
+                    "title": "AI-Powered Creation",
+                    "desc": "Lovart's AI generates complete designs from text. Adobe has added AI features (Firefly) but remains primarily a manual design tool."
+                },
+                {
+                    "label": "Price",
+                    "title": "Pricing & Accessibility",
+                    "desc": "Lovart has a free tier. Adobe Creative Cloud costs $54.99+/month, making it a significant investment."
+                },
+                {
+                    "label": "Skill",
+                    "title": "Required Skill Level",
+                    "desc": "Lovart is beginner-friendly — no design skills needed. Adobe requires extensive training to master."
+                },
+                {
+                    "label": "Output",
+                    "title": "Professional Output",
+                    "desc": "Adobe remains the gold standard for precision, print-ready, and pixel-perfect professional work. Lovart excels for fast, AI-assisted creative output."
+                }
+            ]
+        },
+        "use_cases": {
+            "title": "When to Choose Lovart vs Adobe",
+            "items": [
+                {
+                    "title": "Choose Lovart If...",
+                    "desc": "You are not a professional designer but need high-quality visual assets quickly and affordably."
+                },
+                {
+                    "title": "Choose Adobe If...",
+                    "desc": "You need pixel-level precision, complex vector work, or industry-standard professional output."
+                },
+                {
+                    "title": "Startups & SMBs",
+                    "desc": "Lovart delivers 80% of Adobe's capabilities at a fraction of the cost and time."
+                },
+                {
+                    "title": "Professional Designers",
+                    "desc": "Adobe remains king for full-precision professional design. Lovart can supplement ideation."
+                }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": [
+                {
+                    "q": "Can Lovart replace Adobe for small businesses?",
+                    "a": "For many small business design needs — logos, social media, posters, brand assets — yes. Lovart covers these efficiently with AI. Complex print production may still require Adobe."
+                },
+                {
+                    "q": "Is Lovart cheaper than Adobe?",
+                    "a": "Significantly. Lovart offers a free tier and affordable paid plans. Adobe Creative Cloud starts at $54.99/month, making Lovart 5-10x more cost-effective for typical needs."
+                },
+                {
+                    "q": "Does Lovart have the same features as Adobe Photoshop?",
+                    "a": "No — Lovart is AI-first and optimized for fast generation. Adobe Photoshop has deep manual editing tools that Lovart doesn't replicate. They serve different workflows."
+                },
+                {
+                    "q": "Can I use Lovart and Adobe together?",
+                    "a": "Yes. Many creatives use Lovart for rapid AI ideation and initial designs, then refine in Adobe for final professional production."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Try Lovart — The AI-Powered Adobe Alternative",
+            "desc": "Stop paying $55/month for features you don't need. Try Lovart's AI design platform free today.",
+            "button": "Start with Lovart for Free"
+        },
+        "related": {
+            "title": "More Lovart Comparisons",
+            "items": [
+                {
+                    "title": "Lovart vs Midjourney",
+                    "desc": "AI image generation comparison",
+                    "link_text": "Compare Midjourney →"
+                },
+                {
+                    "title": "Lovart vs Canva & Others",
+                    "desc": "Full alternatives guide",
+                    "link_text": "See All Alternatives →"
+                },
+                {
+                    "title": "Lovart Features",
+                    "desc": "Full Lovart feature overview",
+                    "link_text": "Explore Features →"
+                },
+                {
+                    "title": "Lovart Pricing",
+                    "desc": "Plans vs Adobe cost",
+                    "link_text": "See Lovart Plans →"
+                }
+            ]
+        },
+        "disclaimer": "lovart.info is an independent resource. We are not affiliated with Lovart or Adobe. Comparisons are based on publicly available information."
     }
 }

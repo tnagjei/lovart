@@ -111,6 +111,15 @@
     return (t.lovart_company_page && t.lovart_company_page.seo) || {};
     case 'lovarte':
     return (t.lovarte_page && t.lovarte_page.seo) || {};
+    // P2 pages
+    case 'lovart-poster-maker':
+    return (t.lovart_poster_maker_page && t.lovart_poster_maker_page.seo) || {};
+    case 'lovart-mockup-generator':
+    return (t.lovart_mockup_generator_page && t.lovart_mockup_generator_page.seo) || {};
+    case 'lovart-vs-midjourney':
+    return (t.lovart_vs_midjourney_page && t.lovart_vs_midjourney_page.seo) || {};
+    case 'lovart-vs-adobe':
+    return (t.lovart_vs_adobe_page && t.lovart_vs_adobe_page.seo) || {};
     default:
     return t.seo || {};
     }
