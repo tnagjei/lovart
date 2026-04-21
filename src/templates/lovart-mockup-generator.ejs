@@ -1,8 +1,22 @@
-<%
-const currentPageName = 'lovart-mockup-generator';
-const page = t.lovart_mockup_generator_page;
-%>
-<%- include('partials/head') %>
+<!DOCTYPE html>
+<% const page = t.lovart_mockup_generator_page; %>
+<html lang="<%= lang %>" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head') %>
+        <title><%= page.seo.title %></title>
+        <meta name="description" content="<%= page.seo.description %>">
+        <meta name="keywords" content="<%= page.seo.keywords %>">
+        <link rel="canonical" href="<%= canonicalUrl %>">
+        <%- include('partials/hreflang') %>
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963" crossorigin="anonymous"></script>
+    <%- include('partials/analytics') %>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
 <%- include('partials/header') %>
 
 <main>
@@ -10,14 +24,14 @@ const page = t.lovart_mockup_generator_page;
   <section class="bg-gradient-to-br from-indigo-900 via-purple-900 to-gray-900 text-white py-20 px-6">
     <div class="container mx-auto max-w-4xl text-center">
       <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-        <%%= page.hero.title %>
+        <%= page.hero.title %>
       </h1>
       <p class="text-xl text-indigo-200 mb-10 max-w-2xl mx-auto">
-        <%%= page.hero.desc %>
+        <%= page.hero.desc %>
       </p>
       <a href="https://lovart.ai" target="_blank" rel="noopener"
         class="inline-flex items-center bg-primary text-white px-8 py-4 rounded-xl font-semibold hover:bg-primary-dark transition-colors text-lg">
-        <%%= page.cta.button %> →
+        <%= page.cta.button %> →
       </a>
     </div>
   </section>
@@ -25,15 +39,15 @@ const page = t.lovart_mockup_generator_page;
   <!-- Overview -->
   <section class="py-16 px-6 bg-white">
     <div class="container mx-auto max-w-5xl">
-      <h2 class="text-3xl font-bold text-gray-900 text-center mb-4"><%%= page.overview.title %></h2>
-      <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12 text-lg"><%%= page.overview.desc %></p>
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-4"><%= page.overview.title %></h2>
+      <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12 text-lg"><%= page.overview.desc %></p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <%% page.overview.cards.forEach(function(card) { %>
+        <% page.overview.cards.forEach(function(card) { %>
         <div class="bg-indigo-50 rounded-xl p-6 border border-indigo-100">
-          <h3 class="font-bold text-indigo-900 mb-2"><%%= card.title %></h3>
-          <p class="text-gray-600 text-sm"><%%= card.desc %></p>
+          <h3 class="font-bold text-indigo-900 mb-2"><%= card.title %></h3>
+          <p class="text-gray-600 text-sm"><%= card.desc %></p>
         </div>
-        <%% }); %>
+        <% }); %>
       </div>
     </div>
   </section>
@@ -41,19 +55,19 @@ const page = t.lovart_mockup_generator_page;
   <!-- How it works -->
   <section class="py-16 px-6 bg-gray-50">
     <div class="container mx-auto max-w-4xl">
-      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12"><%%= page.how_it_works.title %></h2>
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12"><%= page.how_it_works.title %></h2>
       <div class="space-y-6">
-        <%% page.how_it_works.steps.forEach(function(step, i) { %>
+        <% page.how_it_works.steps.forEach(function(step, i) { %>
         <div class="flex gap-6 items-start bg-white rounded-xl p-6 shadow-sm border border-gray-100">
           <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
-            <%%= step.label %>
+            <%= step.label %>
           </div>
           <div>
-            <h3 class="font-bold text-gray-900 text-lg mb-1"><%%= step.title %></h3>
-            <p class="text-gray-600"><%%= step.desc %></p>
+            <h3 class="font-bold text-gray-900 text-lg mb-1"><%= step.title %></h3>
+            <p class="text-gray-600"><%= step.desc %></p>
           </div>
         </div>
-        <%% }); %>
+        <% }); %>
       </div>
     </div>
   </section>
@@ -61,14 +75,14 @@ const page = t.lovart_mockup_generator_page;
   <!-- Use Cases -->
   <section class="py-16 px-6 bg-white">
     <div class="container mx-auto max-w-5xl">
-      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12"><%%= page.use_cases.title %></h2>
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12"><%= page.use_cases.title %></h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <%% page.use_cases.items.forEach(function(item) { %>
+        <% page.use_cases.items.forEach(function(item) { %>
         <div class="bg-purple-50 rounded-xl p-6 border border-purple-100">
-          <h3 class="font-bold text-purple-900 text-lg mb-2"><%%= item.title %></h3>
-          <p class="text-gray-600"><%%= item.desc %></p>
+          <h3 class="font-bold text-purple-900 text-lg mb-2"><%= item.title %></h3>
+          <p class="text-gray-600"><%= item.desc %></p>
         </div>
-        <%% }); %>
+        <% }); %>
       </div>
     </div>
   </section>
@@ -76,19 +90,19 @@ const page = t.lovart_mockup_generator_page;
   <!-- FAQ -->
   <section class="py-16 px-6 bg-gray-50">
     <div class="container mx-auto max-w-3xl">
-      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12"><%%= page.faq.title %></h2>
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12"><%= page.faq.title %></h2>
       <div class="space-y-4">
-        <%% page.faq.items.forEach(function(item) { %>
+        <% page.faq.items.forEach(function(item) { %>
         <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
           <summary class="flex justify-between items-center px-6 py-4 cursor-pointer font-semibold text-gray-900 hover:bg-gray-50 transition-colors list-none">
-            <%%= item.q %>
+            <%= item.q %>
             <svg class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </summary>
-          <div class="px-6 pb-4 text-gray-600 border-t border-gray-100 pt-4"><%%= item.a %></div>
+          <div class="px-6 pb-4 text-gray-600 border-t border-gray-100 pt-4"><%= item.a %></div>
         </details>
-        <%% }); %>
+        <% }); %>
       </div>
     </div>
   </section>
@@ -96,11 +110,11 @@ const page = t.lovart_mockup_generator_page;
   <!-- CTA -->
   <section class="py-20 px-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center">
     <div class="container mx-auto max-w-2xl">
-      <h2 class="text-3xl font-bold mb-4"><%%= page.cta.title %></h2>
-      <p class="text-indigo-200 mb-8 text-lg"><%%= page.cta.desc %></p>
+      <h2 class="text-3xl font-bold mb-4"><%= page.cta.title %></h2>
+      <p class="text-indigo-200 mb-8 text-lg"><%= page.cta.desc %></p>
       <a href="https://lovart.ai" target="_blank" rel="noopener"
         class="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-xl font-bold hover:bg-indigo-50 transition-colors text-lg">
-        <%%= page.cta.button %> →
+        <%= page.cta.button %> →
       </a>
     </div>
   </section>
@@ -108,31 +122,31 @@ const page = t.lovart_mockup_generator_page;
   <!-- Related Resources -->
   <section class="py-16 px-6 bg-white">
     <div class="container mx-auto max-w-5xl">
-      <h2 class="text-2xl font-bold text-gray-900 text-center mb-8"><%%= page.related.title %></h2>
+      <h2 class="text-2xl font-bold text-gray-900 text-center mb-8"><%= page.related.title %></h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <%% page.related.items.forEach(function(item) { %>
+        <% page.related.items.forEach(function(item) { %>
         <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-primary transition-colors">
-          <h3 class="font-semibold text-gray-900 mb-1"><%%= item.title %></h3>
-          <p class="text-sm text-gray-500 mb-3"><%%= item.desc %></p>
-          <span class="text-sm text-primary font-medium"><%%= item.link_text %></span>
+          <h3 class="font-semibold text-gray-900 mb-1"><%= item.title %></h3>
+          <p class="text-sm text-gray-500 mb-3"><%= item.desc %></p>
+          <span class="text-sm text-primary font-medium"><%= item.link_text %></span>
         </div>
-        <%% }); %>
+        <% }); %>
       </div>
     </div>
   </section>
 
   <!-- Disclaimer -->
   <div class="container mx-auto max-w-4xl px-6 pb-12">
-    <p class="text-xs text-gray-400 text-center border-t pt-6"><%%= page.disclaimer %></p>
+    <p class="text-xs text-gray-400 text-center border-t pt-6"><%= page.disclaimer %></p>
   </div>
 </main>
-
 <%- include('partials/footer') %>
-
 <script>
-(function(){
-  var btn=document.getElementById('mobile-menu-button');
-  var menu=document.getElementById('mobile-menu');
-  if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');});}
+(function() {
+  var btn = document.getElementById('mobile-menu-button');
+  var menu = document.getElementById('mobile-menu');
+  if (btn && menu) { btn.addEventListener('click', function() { menu.classList.toggle('hidden'); }); }
 })();
 </script>
+</body>
+</html>

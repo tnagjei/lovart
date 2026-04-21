@@ -117,6 +117,10 @@ const breadcrumbItems = [
             relatedTitle: supportCluster.related_title || 'Related support guides',
             relatedDescription: supportCluster.related_desc || ''
         }) %>
+
+        <% if (currentSupportPageKey === 'customer_support' || currentSupportPageKey === 'support_contact') { %>
+            <%- include('partials/high-intent-router') %>
+        <% } %>
     </main>
 
     <%- include('partials/footer') %>

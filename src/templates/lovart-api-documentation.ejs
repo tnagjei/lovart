@@ -2,6 +2,8 @@
 <% const page = t.lovart_api_documentation_page; %>
 <html lang="<%= lang %>" class="scroll-smooth">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include('partials/head') %>
     <title><%= page.seo.title %></title>
     <meta name="description" content="<%= page.seo.description %>">
@@ -118,6 +120,8 @@
         <%  }); %>
       </ol>
     </section>
+
+    <%- include('partials/commercial-cta', { context: 'ai_code' }) %>
 
     <!-- FAQ -->
     <section>
