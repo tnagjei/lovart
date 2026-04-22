@@ -1,5 +1,88 @@
 <!DOCTYPE html>
-<% const breadcrumbItems=[{ name: t.nav.home, href: link('/') }]; %>
+<%
+const breadcrumbItems = [{ name: t.nav.home, href: link('/') }];
+const homeSafeLink = (slug, supportedLangs) => supportedLangs.includes(lang) ? link(slug) : `/${slug}`;
+const homeCopyByLang = {
+    zh: {
+        intentEyebrow: '常见入口',
+        intentTitle: '先找到你真正需要的 Lovart 页面',
+        intentDesc: '首页承担品牌词流量分发：如果你关心价格、API、开发者接入或登录帮助，直接进入对应页面会更快。',
+        intentAction: '进入页面',
+        devEyebrow: '开发者 / API',
+        devTitle: '把 Lovart API 搜索流量导向开发者主题页',
+        devDesc: '这些页面只做状态说明、官方入口导航和下一步建议，不伪装成官方 API 文档。',
+        devAction: '查看开发者总入口',
+        devReadMore: '查看详情'
+    },
+    fr: {
+        intentEyebrow: 'Acces rapide',
+        intentTitle: 'Trouvez la bonne page Lovart',
+        intentDesc: 'Cette page d accueil oriente les recherches de marque vers les pages utiles: prix, API, developpeurs ou aide.',
+        intentAction: 'Ouvrir',
+        devEyebrow: 'Developpeurs / API',
+        devTitle: 'Suivez le parcours API Lovart',
+        devDesc: 'Ces pages distinguent les informations confirmees des points non verifies, avec des liens officiels a consulter.',
+        devAction: 'Voir le hub developpeur',
+        devReadMore: 'Voir details'
+    },
+    ja: {
+        intentEyebrow: 'よく使う入口',
+        intentTitle: '目的に合う Lovart ページへ移動',
+        intentDesc: '価格、API、開発者向け情報、ヘルプを探している場合は、該当ページへ直接進めます。',
+        intentAction: 'ページを見る',
+        devEyebrow: '開発者 / API',
+        devTitle: 'Lovart API 関連の確認先',
+        devDesc: '確認済み情報と未確認情報を分け、公式ページで確認すべき内容を整理します。',
+        devAction: '開発者ハブを見る',
+        devReadMore: '詳細を見る'
+    },
+    en: {
+        intentEyebrow: 'Popular next steps',
+        intentTitle: 'Route your Lovart search to the right page',
+        intentDesc: 'Use the homepage as a fast router: pricing, API status, developer access, login help, and product-fit pages are one step away.',
+        intentAction: 'Open page',
+        devEyebrow: 'Developers / API',
+        devTitle: 'Follow the Lovart API research path',
+        devDesc: 'These pages separate confirmed facts from unverified claims, then point you to official pages and practical next steps.',
+        devAction: 'View developer hub',
+        devReadMore: 'Read more'
+    }
+};
+const homeCopy = homeCopyByLang[lang] || homeCopyByLang.en;
+const homeIntentCards = [
+    {
+        href: link('lovart-pricing'),
+        label: t.nav.pricing || 'Pricing',
+        title: lang === 'zh' ? '价格与套餐' : lang === 'fr' ? 'Prix et offres' : lang === 'ja' ? '料金プラン' : 'Pricing and plans',
+        desc: lang === 'zh' ? '确认免费版、Pro、团队或企业方案的升级路径。' : lang === 'fr' ? 'Comparez les offres et choisissez le bon niveau.' : lang === 'ja' ? '無料版と有料プランの違いを確認できます。' : 'Compare plan fit, upgrade paths, and pricing context.'
+    },
+    {
+        href: link('lovart-api'),
+        label: t.nav.api || 'API',
+        title: lang === 'zh' ? 'API 状态总览' : lang === 'fr' ? 'Statut API' : lang === 'ja' ? 'API 状況' : 'API status',
+        desc: lang === 'zh' ? '查看官方 API 入口、可确认信息和相关开发者页面。' : lang === 'fr' ? 'Verifiez les ressources officielles et les points a confirmer.' : lang === 'ja' ? '公式API入口と確認すべき情報を整理します。' : 'Check official API entry points and what can be verified.'
+    },
+    {
+        href: homeSafeLink('lovart-ai-code', ['en', 'zh', 'fr', 'ja']),
+        label: t.nav.ai_code || 'AI Code',
+        title: lang === 'zh' ? '开发者入口' : lang === 'fr' ? 'Hub developpeur' : lang === 'ja' ? '開発者向け入口' : 'Developer hub',
+        desc: lang === 'zh' ? '从 AI Code 总入口继续查看 API Key、文档、定价与替代方案。' : lang === 'fr' ? 'Accedez aux pages API key, documentation, prix et options.' : lang === 'ja' ? 'API Key、ドキュメント、料金、代替案へ進めます。' : 'Jump to API key, documentation, pricing, and developer options.'
+    },
+    {
+        href: link('help'),
+        label: t.nav.help || 'Help',
+        title: lang === 'zh' ? '帮助与登录' : lang === 'fr' ? 'Aide et connexion' : lang === 'ja' ? 'ヘルプとログイン' : 'Help and login',
+        desc: lang === 'zh' ? '解决登录、支持、退款、账号和使用问题。' : lang === 'fr' ? 'Trouvez les guides de connexion, support et compte.' : lang === 'ja' ? 'ログイン、サポート、アカウント関連を確認できます。' : 'Find support, login, billing, account, and troubleshooting guides.'
+    }
+];
+const homeDeveloperCards = [
+    { href: homeSafeLink('lovart-api-key', ['en', 'zh']), title: lang === 'zh' ? 'API Key' : 'API Key', desc: lang === 'zh' ? '是否有公开 API Key，以及如何核实申请路径。' : 'Whether a public API key exists and how to verify access.' },
+    { href: homeSafeLink('lovart-api-documentation', ['en', 'zh']), title: lang === 'zh' ? 'API 文档' : 'API Documentation', desc: lang === 'zh' ? '哪些官方开发者资源存在，哪些内容尚未核实。' : 'Which developer resources exist and what remains unverified.' },
+    { href: homeSafeLink('lovart-api-pricing', ['en', 'zh']), title: lang === 'zh' ? 'API 定价' : 'API Pricing', desc: lang === 'zh' ? 'API 是否有独立价格、套餐或企业入口。' : 'Whether API-specific pricing, plan access, or enterprise routes exist.' },
+    { href: homeSafeLink('lovart-developer-options', ['en', 'zh']), title: lang === 'zh' ? '开发者选项' : 'Developer Options', desc: lang === 'zh' ? '公开 API 不明确时，当前可用的集成替代方案。' : 'Practical alternatives when public API access is unclear.' }
+];
+const showHomeDeveloperCluster = lang === 'en' || lang === 'zh';
+%>
     <html lang="<%= lang %>" class="scroll-smooth">
 
     <head>
@@ -238,6 +321,46 @@
                     Your browser does not support the video tag.
                 </video>
                 -->
+                    </div>
+                </section>
+
+                <!-- High-Intent Router Section (Phase 6) -->
+                <section class="py-14 md:py-20 bg-white section-animate">
+                    <div class="container mx-auto px-6">
+                        <div class="max-w-6xl mx-auto">
+                            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-8">
+                                <div>
+                                    <p class="text-sm font-semibold text-primary mb-2">
+                                        <%= homeCopy.intentEyebrow %>
+                                    </p>
+                                    <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark">
+                                        <%= homeCopy.intentTitle %>
+                                    </h2>
+                                </div>
+                                <p class="text-neutral max-w-2xl">
+                                    <%= homeCopy.intentDesc %>
+                                </p>
+                            </div>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+                                <% homeIntentCards.forEach(function(card) { %>
+                                    <a href="<%= card.href %>"
+                                        class="group block rounded-lg border border-neutral-light bg-neutral-light/30 p-5 hover:border-primary/50 hover:bg-white hover:shadow-md transition-all">
+                                        <span class="inline-flex items-center rounded-md bg-white px-2.5 py-1 text-xs font-semibold text-primary border border-primary/10 mb-4">
+                                            <%= card.label %>
+                                        </span>
+                                        <h3 class="text-xl font-bold text-neutral-dark mb-2 group-hover:text-primary transition-colors">
+                                            <%= card.title %>
+                                        </h3>
+                                        <p class="text-sm text-neutral leading-relaxed mb-4">
+                                            <%= card.desc %>
+                                        </p>
+                                        <span class="text-sm font-semibold text-primary">
+                                            <%= homeCopy.intentAction %> →
+                                        </span>
+                                    </a>
+                                <% }); %>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -898,6 +1021,49 @@
                                 <span class="text-sm font-semibold text-primary"><%= tool.link_text %></span>
                             </a>
                             <% }); %>
+                        </div>
+                    </div>
+                </section>
+                <% } %>
+
+                <% if (showHomeDeveloperCluster) { %>
+                <!-- Developer/API Routing Section (Phase 6) -->
+                <section class="py-14 bg-neutral-dark text-white section-animate">
+                    <div class="container mx-auto px-6">
+                        <div class="max-w-6xl mx-auto">
+                            <div class="grid lg:grid-cols-[0.9fr_1.4fr] gap-8 items-start">
+                                <div>
+                                    <p class="text-sm font-semibold text-secondary-light mb-3">
+                                        <%= homeCopy.devEyebrow %>
+                                    </p>
+                                    <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">
+                                        <%= homeCopy.devTitle %>
+                                    </h2>
+                                    <p class="text-white/75 leading-relaxed mb-6">
+                                        <%= homeCopy.devDesc %>
+                                    </p>
+                                    <a href="<%= homeSafeLink('lovart-ai-code', ['en', 'zh', 'fr', 'ja']) %>"
+                                        class="inline-flex items-center justify-center rounded-md bg-secondary px-5 py-3 text-sm font-semibold text-white hover:bg-secondary-dark transition-colors">
+                                        <%= homeCopy.devAction %>
+                                    </a>
+                                </div>
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <% homeDeveloperCards.forEach(function(card) { %>
+                                        <a href="<%= card.href %>"
+                                            class="group block rounded-lg border border-white/10 bg-white/5 p-5 hover:border-secondary/70 hover:bg-white/10 transition-all">
+                                            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-secondary-light transition-colors">
+                                                <%= card.title %>
+                                            </h3>
+                                            <p class="text-sm text-white/65 leading-relaxed mb-4">
+                                                <%= card.desc %>
+                                            </p>
+                                            <span class="text-sm font-semibold text-secondary-light">
+                                                <%= homeCopy.devReadMore %> →
+                                            </span>
+                                        </a>
+                                    <% }); %>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
