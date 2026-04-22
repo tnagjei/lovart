@@ -2155,6 +2155,31 @@
                     "link_text": "免费开始 →"
                 }
             ]
+        },
+        "developer_topics": {
+            "tag": "开发者专题",
+            "title": "探索 Lovart 开发者资源",
+            "desc": "以下每个页面针对一个具体的开发者问题，清晰区分官方已确认内容与我们无法核实的内容。",
+            "disclaimer": "lovart.info 是独立的第三方资讯站，与 Lovart 无关。所有开发者信息均已明确区分已确认事实与未核实内容。",
+            "read_more": "查看详情 →",
+            "cards": [
+                {
+                    "title": "Lovart API Key",
+                    "desc": "是否有公开 API Key？如何申请以及注意事项。"
+                },
+                {
+                    "title": "API 文档",
+                    "desc": "现有哪些官方开发者资源，以及我们无法核实的内容。"
+                },
+                {
+                    "title": "API 定价",
+                    "desc": "API 是否有独立定价层级？哪些套餐包含 API 访问权限？"
+                },
+                {
+                    "title": "开发者选项",
+                    "desc": "如果公开 API 暂时不可用，现在有哪些集成替代方案？"
+                }
+            ]
         }
     },
     "lovart_api_page": {
@@ -5949,5 +5974,441 @@
             ]
         },
         "disclaimer": "Lovart.info 属于独立的第三方资讯站，与 Lovart 和 Adobe 均无关联。对比基于公开信息撰写。"
+    },
+    "lovart_api_key_page": {
+        "seo": {
+            "title": "Lovart API Key 2026：如何获取访问权限及注意事项",
+            "description": "寻找 Lovart API Key？本文梳理了目前可确认的信息、申请路径，以及如果暂无公开 API 时你可以怎么做。",
+            "keywords": "lovart api key, lovart api 密钥, lovart 开发者"
+        },
+        "hero": {
+            "title": "Lovart API Key：我们知道的和你该怎么做",
+            "desc": "在寻找 Lovart API Key？本页梳理了目前官方已确认的 API 访问信息、哪些内容尚未核实，以及你现在可以采取的具体步骤。"
+        },
+        "quick_answer": {
+            "title": "简明答案",
+            "content": "根据我们最近一次核查，Lovart 目前似乎没有通过标准开发者门户提供自助式公开 API Key。API 访问可能通过企业合作渠道获得。建议直接通过下方官方页面核实最新状态。"
+        },
+        "confirmed": {
+            "title": "我们能确认的信息",
+            "items": [
+                "Lovart 是一款 AI 设计平台，官网为 lovart.ai",
+                "Lovart 官网有 API 相关页面：lovart.ai/api",
+                "Lovart 提供包含 API 或团队访问权限的付费套餐",
+                "lovart.info 是独立的第三方资讯站，并非 Lovart 官方网站"
+            ]
+        },
+        "not_verified": {
+            "title": "我们无法核实的信息",
+            "items": [
+                "是否存在面向所有用户的自助式 API Key",
+                "具体的接口地址（Endpoint）或认证流程",
+                "API 使用的频率限制、配额或按 Token 计费方式",
+                "任何 SDK 名称、包管理工具或客户端库"
+            ]
+        },
+        "official_links": {
+            "title": "建议核查的官方页面",
+            "items": [
+                {
+                    "label": "Lovart API 页面",
+                    "url": "https://lovart.ai/api",
+                    "desc": "Lovart 官方 API 概览与访问信息。"
+                },
+                {
+                    "label": "Lovart 定价页",
+                    "url": "https://lovart.ai/pricing",
+                    "desc": "可能包含 API 或团队访问权限的付费套餐。"
+                },
+                {
+                    "label": "Lovart 官方网站",
+                    "url": "https://lovart.ai",
+                    "desc": "获取最新平台动态的官网首页。"
+                }
+            ]
+        },
+        "next_steps": {
+            "title": "下一步怎么做",
+            "items": [
+                "访问 lovart.ai/api 直接查看当前 API 访问状态。",
+                "注册 Lovart 付费套餐，并在账户后台查找 API 相关设置。",
+                "联系 Lovart 官方支持或销售团队，申请企业/团队 API 访问权限。",
+                "查看下方的 API 文档与定价页面，获取更多背景信息。"
+            ]
+        },
+        "faq": {
+            "title": "常见问题",
+            "items": [
+                {
+                    "q": "Lovart 有公开 API 吗？",
+                    "a": "根据公开信息，Lovart 官网有 API 板块（lovart.ai/api）。是否向所有用户开放自助式 API Key，目前尚未得到确认。请查看官方页面获取最新状态。"
+                },
+                {
+                    "q": "在哪里可以获取 Lovart API Key？",
+                    "a": "最可靠的方式是访问 lovart.ai/api 并登录付费账户查看。企业或合作渠道的 API 访问可能需要联系 Lovart 销售团队。"
+                },
+                {
+                    "q": "Lovart API 有免费版吗？",
+                    "a": "我们无法确认是否存在免费 API 层级。Lovart 提供有限额度的免费账户，但 API 访问可能需要付费套餐。"
+                },
+                {
+                    "q": "这是 Lovart 官方 API 文档吗？",
+                    "a": "不是。lovart.info 是独立的第三方资讯站。如需官方权威 API 文档，请访问 lovart.ai。"
+                }
+            ]
+        },
+        "related": {
+            "title": "其他开发者资源",
+            "items": [
+                {
+                    "slug": "lovart-api-documentation",
+                    "title": "API 文档",
+                    "desc": "Lovart 现有哪些官方开发者文档？"
+                },
+                {
+                    "slug": "lovart-api-pricing",
+                    "title": "API 定价",
+                    "desc": "API 使用是否有单独的定价层级？"
+                },
+                {
+                    "slug": "lovart-developer-options",
+                    "title": "开发者选项",
+                    "desc": "如果公开 API 不明确，还有哪些替代方案？"
+                },
+                {
+                    "slug": "lovart-ai-code",
+                    "title": "Lovart AI Code 总入口",
+                    "desc": "lovart.info 的开发者主入口页面。"
+                }
+            ]
+        },
+        "disclaimer": "lovart.info 属于独立的第三方资讯站，与 Lovart 官方无关。所有信息均基于截至本文更新日期的公开资料撰写。如需权威信息，请访问 lovart.ai。"
+    },
+    "lovart_api_documentation_page": {
+        "seo": {
+            "title": "Lovart API 文档 2026：官方开发者资源导览",
+            "description": "寻找 Lovart API 文档？本文梳理了目前公开可用的官方开发者资源，以及哪些内容尚未得到核实。",
+            "keywords": "lovart api 文档, lovart api docs, lovart 开发者文档"
+        },
+        "hero": {
+            "title": "Lovart API 文档：现有哪些资源，在哪里找到它们",
+            "desc": "在寻找 Lovart API 文档？本页梳理了目前公开已确认的官方开发者资源，以及哪些内容尚未核实。"
+        },
+        "quick_answer": {
+            "title": "简明答案",
+            "content": "Lovart 在 lovart.ai/api 有 API 相关页面。是否存在完整、结构化的公开 API 参考文档尚未经我们独立确认。建议直接访问下方官方资源获取最新信息。"
+        },
+        "confirmed": {
+            "title": "我们能确认的信息",
+            "items": [
+                "Lovart 官方 API 页面存在，地址为 lovart.ai/api",
+                "Lovart 通过官网提供与开发者相关的信息",
+                "Lovart 付费套餐可能包含 API 或程序化访问权限",
+                "lovart.info 是第三方资讯站，并非 Lovart 官方开发者门户"
+            ]
+        },
+        "not_verified": {
+            "title": "我们无法核实的信息",
+            "items": [
+                "是否存在可公开访问的 API 参考文档（OpenAPI/Swagger 规范）",
+                "具体的 API 端点、请求/响应格式或认证方式",
+                "任何官方 SDK、客户端库或代码示例的名称",
+                "文档是否可在无需付费账户的情况下公开访问"
+            ]
+        },
+        "official_links": {
+            "title": "建议核查的官方页面",
+            "items": [
+                {
+                    "label": "Lovart API 页面",
+                    "url": "https://lovart.ai/api",
+                    "desc": "所有官方 Lovart 开发者信息的起点。"
+                },
+                {
+                    "label": "Lovart 定价页",
+                    "url": "https://lovart.ai/pricing",
+                    "desc": "可能解锁 API 文档访问权限的付费套餐。"
+                },
+                {
+                    "label": "Lovart 官方网站",
+                    "url": "https://lovart.ai",
+                    "desc": "获取官方公告和新功能信息的 Lovart 首页。"
+                }
+            ]
+        },
+        "next_steps": {
+            "title": "下一步怎么做",
+            "items": [
+                "访问 lovart.ai/api 作为官方开发者文档的主要来源。",
+                "登录 Lovart 付费账户，在控制台中查找文档链接。",
+                "联系 Lovart 官方支持，询问可用的开发者文档情况。",
+                "参考下方的 API Key 和 API 定价页面，获取更多背景信息。"
+            ]
+        },
+        "faq": {
+            "title": "常见问题",
+            "items": [
+                {
+                    "q": "Lovart 有官方 API 文档吗？",
+                    "a": "Lovart 在 lovart.ai/api 有 API 页面。我们无法独立确认是否存在无需付费账户即可访问的完整公开 API 参考文档。"
+                },
+                {
+                    "q": "Lovart 有开发者门户（Developer Portal）吗？",
+                    "a": "我们无法确认是否存在独立的公开开发者门户。目前最接近的官方资源是 lovart.ai/api。"
+                },
+                {
+                    "q": "lovart.info 是 Lovart 官方文档站吗？",
+                    "a": "不是。lovart.info 是独立的第三方资讯站，与 Lovart 无关。如需官方文档，请访问 lovart.ai。"
+                },
+                {
+                    "q": "Lovart 有 OpenAPI 或 Swagger 规范吗？",
+                    "a": "我们未能找到或核实 Lovart 是否有可公开获取的 OpenAPI 或 Swagger 规范。请查看 lovart.ai/api 获取最新信息。"
+                }
+            ]
+        },
+        "related": {
+            "title": "其他开发者资源",
+            "items": [
+                {
+                    "slug": "lovart-api-key",
+                    "title": "API Key",
+                    "desc": "如何获取 Lovart API Key。"
+                },
+                {
+                    "slug": "lovart-api-pricing",
+                    "title": "API 定价",
+                    "desc": "Lovart API 访问的定价信息。"
+                },
+                {
+                    "slug": "lovart-developer-options",
+                    "title": "开发者选项",
+                    "desc": "如果公开 API 不可用，还有哪些替代方案。"
+                },
+                {
+                    "slug": "lovart-ai-code",
+                    "title": "Lovart AI Code 总入口",
+                    "desc": "lovart.info 的开发者主入口页面。"
+                }
+            ]
+        },
+        "disclaimer": "lovart.info 属于独立的第三方资讯站，与 Lovart 官方无关。所有信息均基于公开资料撰写。如需权威文档，请访问 lovart.ai。"
+    },
+    "lovart_api_pricing_page": {
+        "seo": {
+            "title": "Lovart API 定价 2026：API 访问费用是多少？",
+            "description": "寻找 Lovart API 定价信息？本文梳理官方已确认的 API 费用信息、哪些内容尚未核实，以及查找当前官方定价的正确渠道。",
+            "keywords": "lovart api 定价, lovart api 费用, lovart 开发者定价"
+        },
+        "hero": {
+            "title": "Lovart API 定价：已确认的信息与查询渠道",
+            "desc": "想了解 Lovart API 定价？本页梳理了官方已确认的 API 费用信息、哪些内容无法核实，以及你应该访问的正确官方页面。"
+        },
+        "quick_answer": {
+            "title": "简明答案",
+            "content": "Lovart 在 lovart.ai/pricing 提供付费套餐，这些套餐可能决定 API 访问权限。目前我们无法独立确认是否存在具体的、公开的按调用次数计费的 API 定价层级。如需最准确的当前定价，请直接访问 Lovart 官方定价页面。"
+        },
+        "confirmed": {
+            "title": "我们能确认的信息",
+            "items": [
+                "Lovart 在 lovart.ai/pricing 有包含多个订阅层级的定价页面",
+                "Lovart 在 lovart.ai/api 有 API 相关页面",
+                "Lovart 付费套餐可能包含 API 或团队访问功能",
+                "lovart.info 是第三方资讯站，并非 Lovart 官方网站"
+            ]
+        },
+        "not_verified": {
+            "title": "我们无法核实的信息",
+            "items": [
+                "是否存在公开列出的、按调用次数计费的 API 定价模式",
+                "API 操作的具体 Credit 消耗或频率限制",
+                "是否存在独立的企业级 API 定价层级",
+                "与主账号免费额度分开的 API 免费层级"
+            ]
+        },
+        "official_links": {
+            "title": "建议核查的官方页面",
+            "items": [
+                {
+                    "label": "Lovart 定价页",
+                    "url": "https://lovart.ai/pricing",
+                    "desc": "所有 Lovart 套餐费用和功能的官方来源。"
+                },
+                {
+                    "label": "Lovart API 页面",
+                    "url": "https://lovart.ai/api",
+                    "desc": "可能包含 API 定价详情的官方 API 概览。"
+                },
+                {
+                    "label": "Lovart 官方网站",
+                    "url": "https://lovart.ai",
+                    "desc": "获取最新官方公告的 Lovart 首页。"
+                }
+            ]
+        },
+        "next_steps": {
+            "title": "下一步怎么做",
+            "items": [
+                "访问 lovart.ai/pricing 查看当前所有订阅套餐及其包含的功能。",
+                "查看 lovart.ai/api 是否有 API 专属定价或额度信息。",
+                "联系 Lovart 销售团队，询问可能未公开列出的企业级 API 定价。",
+                "参考下方的 API Key 和 API 文档页面了解如何获取访问权限。"
+            ]
+        },
+        "faq": {
+            "title": "常见问题",
+            "items": [
+                {
+                    "q": "Lovart API 访问费用是多少？",
+                    "a": "我们无法独立确认具体的、公开列出的 API 定价层级。Lovart 在 lovart.ai/pricing 提供的付费套餐最有可能决定 API 访问权限。如需企业报价，请联系 Lovart 销售团队。"
+                },
+                {
+                    "q": "是否有按调用次数计费的 API 定价模式？",
+                    "a": "我们无法核实是否存在按次或按 Token 计费的公开 API 定价模式。请查看 lovart.ai/api 和 lovart.ai/pricing 获取当前状态。"
+                },
+                {
+                    "q": "Lovart 免费账户是否包含 API 访问权限？",
+                    "a": "Lovart 免费账户包含主平台的有限额度。我们无法确认这些额度是否适用于 API 调用。"
+                },
+                {
+                    "q": "这是 Lovart 官方定价页面吗？",
+                    "a": "不是。请访问 lovart.ai/pricing 查看官方且最新的 Lovart 定价信息。本站是独立资讯站。"
+                }
+            ]
+        },
+        "related": {
+            "title": "其他开发者资源",
+            "items": [
+                {
+                    "slug": "lovart-api-key",
+                    "title": "API Key",
+                    "desc": "如何获取 Lovart API 访问权限。"
+                },
+                {
+                    "slug": "lovart-api-documentation",
+                    "title": "API 文档",
+                    "desc": "现有哪些官方文档可供参考。"
+                },
+                {
+                    "slug": "lovart-developer-options",
+                    "title": "开发者选项",
+                    "desc": "如果 API 定价不明确，还有哪些替代方案。"
+                },
+                {
+                    "slug": "lovart-ai-code",
+                    "title": "Lovart AI Code 总入口",
+                    "desc": "lovart.info 的开发者主入口页面。"
+                }
+            ]
+        },
+        "disclaimer": "lovart.info 属于独立的第三方资讯站，与 Lovart 官方无关。定价信息可能随时变动，请以 lovart.ai/pricing 的当前信息为准。"
+    },
+    "lovart_developer_options_page": {
+        "seo": {
+            "title": "Lovart 开发者选项 2026：集成替代方案与下一步行动",
+            "description": "没有明确的 Lovart 公开 API？本指南梳理了现在可用的开发者选项和集成替代方案，包括官方渠道和变通方法。",
+            "keywords": "lovart 开发者选项, lovart 集成, lovart 开发者替代方案"
+        },
+        "hero": {
+            "title": "Lovart 开发者选项：你现在能做什么",
+            "desc": "如果 Lovart 公开 API 暂时不明确，你仍然有选择。本页梳理了作为开发者今天可以取得进展的集成路径、变通方法和官方渠道。"
+        },
+        "quick_answer": {
+            "title": "简明答案",
+            "content": "如果 Lovart 暂时没有清晰的公开 API，你的主要选项是：(1) 直接使用 Lovart 网页平台；(2) 联系 Lovart 申请企业/合作伙伴 API 访问；(3) 探索 Lovart 官方集成方式；(4) 在等待 Lovart 更新的同时，考虑使用其他 AI 图像 API。"
+        },
+        "confirmed": {
+            "title": "我们能确认的信息",
+            "items": [
+                "Lovart 在 lovart.ai/api 有包含部分开发者信息的 API 页面",
+                "Lovart 付费套餐可能解锁 API 或程序化访问权限",
+                "企业合作咨询可通过 Lovart 官方渠道提交",
+                "lovart.info 是第三方资讯站，并非 Lovart 官方开发者门户"
+            ]
+        },
+        "not_verified": {
+            "title": "我们无法核实的信息",
+            "items": [
+                "是否存在无需销售沟通即可使用的完全公开、自助式 API",
+                "是否存在官方的 Webhook、Zapier 集成或无代码连接器",
+                "Lovart 官方认可的第三方 SDK 封装库",
+                "非官方 API 封装库——使用此类工具可能违反 Lovart 服务条款"
+            ]
+        },
+        "official_links": {
+            "title": "建议核查的官方页面",
+            "items": [
+                {
+                    "label": "Lovart API 页面",
+                    "url": "https://lovart.ai/api",
+                    "desc": "Lovart 官方 API 入口——从这里开始。"
+                },
+                {
+                    "label": "Lovart 定价页",
+                    "url": "https://lovart.ai/pricing",
+                    "desc": "可能包含程序化或 API 访问权限的付费套餐。"
+                },
+                {
+                    "label": "Lovart 官方网站",
+                    "url": "https://lovart.ai",
+                    "desc": "持续关注新开发者功能的官方公告。"
+                }
+            ]
+        },
+        "next_steps": {
+            "title": "下一步怎么做",
+            "items": [
+                "首先查看 lovart.ai/api——Lovart 可能已更新公开 API 的可用性。",
+                "注册 Lovart 付费套餐，在账户后台探索 API 相关设置。",
+                "通过 Lovart 官方网站联系他们，洽谈企业集成或合作事宜。",
+                "如果公开 API 暂时不可用，持续关注 Lovart 公告以获取未来 API 发布消息。"
+            ]
+        },
+        "faq": {
+            "title": "常见问题",
+            "items": [
+                {
+                    "q": "没有官方 API 的情况下，我能把 Lovart 集成到我的应用里吗？",
+                    "a": "没有官方 API，可靠的程序化集成难以实现。我们建议联系 Lovart 申请企业访问权限，或关注其平台的新 API 发布。"
+                },
+                {
+                    "q": "有没有我可以使用的非官方 Lovart API 封装库？",
+                    "a": "社区中可能存在非官方封装库，但使用它们可能违反 Lovart 服务条款。我们建议只使用经官方认可的集成方式。"
+                },
+                {
+                    "q": "Lovart 有 Zapier 或 Make 集成吗？",
+                    "a": "我们无法确认 Lovart 是否与 Zapier、Make 或类似无代码平台有官方集成。请查看 Lovart 官网及这些平台的集成目录。"
+                },
+                {
+                    "q": "等待 Lovart 公开 API 期间我该怎么做？",
+                    "a": "你可以直接使用 Lovart 网页平台，联系其销售团队申请企业访问权限，或在监控 Lovart 更新的同时，暂时使用其他 AI 设计 API 作为替代方案。"
+                }
+            ]
+        },
+        "related": {
+            "title": "其他开发者资源",
+            "items": [
+                {
+                    "slug": "lovart-api-key",
+                    "title": "API Key",
+                    "desc": "如何获取 Lovart API 访问权限。"
+                },
+                {
+                    "slug": "lovart-api-documentation",
+                    "title": "API 文档",
+                    "desc": "现有哪些官方文档可供参考。"
+                },
+                {
+                    "slug": "lovart-api-pricing",
+                    "title": "API 定价",
+                    "desc": "API 访问的定价信息。"
+                },
+                {
+                    "slug": "lovart-ai-code",
+                    "title": "Lovart AI Code 总入口",
+                    "desc": "lovart.info 的开发者主入口页面。"
+                }
+            ]
+        },
+        "disclaimer": "lovart.info 属于独立的第三方资讯站，与 Lovart 官方无关。使用任何非官方 API 封装库前请仔细阅读 Lovart 服务条款。如需官方开发者信息，请访问 lovart.ai。"
     }
 }

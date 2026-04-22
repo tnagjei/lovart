@@ -1,0 +1,90 @@
+<%
+const commercialContext = typeof context === 'string' ? context : 'general';
+const commercialIsZh = lang === 'zh';
+const commercialEnabled = lang === 'en' || lang === 'zh';
+const commercialSafeLink = (slug, supportedLangs) => supportedLangs.includes(lang) ? link(slug) : `/${slug}`;
+const commercialAiCodeHref = commercialSafeLink('lovart-ai-code', ['en', 'zh', 'fr', 'ja']);
+const commercialApiPricingHref = commercialSafeLink('lovart-api-pricing', ['en', 'zh']);
+const commercialCopy = {
+    pricing: {
+        subject: 'Lovart pricing sponsorship or consulting request',
+        eyebrow: commercialIsZh ? '商务入口' : 'Direct business contact',
+        title: commercialIsZh ? '想买赞助位、咨询价格流量，或做商业合作？' : 'Need pricing traffic, sponsorship, or commercial consulting?',
+        desc: commercialIsZh
+            ? '如果你想购买页面赞助、承接 Lovart 价格意图流量、咨询合作方案，直接联系 sales@lovart.info。本站是独立资讯站，不代表 Lovart 官方客服。'
+            : 'For page sponsorship, buyer-intent traffic, consulting, or partnership requests, email sales@lovart.info. This independent site is not Lovart official support.',
+        secondaryHref: commercialAiCodeHref,
+        secondaryText: commercialIsZh ? '查看 API 流量页' : 'View API traffic page'
+    },
+    ai_code: {
+        subject: 'Lovart API traffic sponsorship or consulting request',
+        eyebrow: commercialIsZh ? 'API 商务入口' : 'API traffic contact',
+        title: commercialIsZh ? '想承接 Lovart API / 开发者高意图流量？' : 'Need Lovart API or developer-intent traffic?',
+        desc: commercialIsZh
+            ? '适合 API 集成、开发者工具、设计自动化、投放赞助或线索合作。直接发邮件到 sales@lovart.info 说明预算、目标页面和合作方式。'
+            : 'Useful for API integrations, developer tools, design automation offers, sponsorships, or lead-routing partnerships. Email sales@lovart.info with budget, target page, and proposed structure.',
+        secondaryHref: commercialApiPricingHref,
+        secondaryText: commercialIsZh ? '查看 API 定价意图页' : 'View API pricing intent'
+    },
+    review: {
+        subject: 'Lovart review sponsorship or consulting request',
+        eyebrow: commercialIsZh ? '评测页商务入口' : 'Review page contact',
+        title: commercialIsZh ? '想在评测页旁边放赞助或合作入口？' : 'Want sponsorship beside Lovart review research?',
+        desc: commercialIsZh
+            ? '这类页面承接评测、对比、是否值得用等决策型搜索。商务合作、广告位或线索合作请直接邮件联系 sales@lovart.info。'
+            : 'This page captures review, comparison, and purchase-decision searches. For sponsorship, ad placement, or lead partnerships, contact sales@lovart.info.',
+        secondaryHref: link('lovart-pricing'),
+        secondaryText: commercialIsZh ? '查看价格页' : 'View pricing page'
+    },
+    alternative: {
+        subject: 'Lovart alternatives sponsorship or consulting request',
+        eyebrow: commercialIsZh ? '竞品对比商务入口' : 'Alternative page contact',
+        title: commercialIsZh ? '想承接 Lovart 替代品和竞品对比流量？' : 'Want placement beside Lovart alternative searches?',
+        desc: commercialIsZh
+            ? '适合设计工具、AI 图片工具、团队软件和咨询服务。页面赞助、导流合作或商业咨询请联系 sales@lovart.info。'
+            : 'Relevant for design tools, AI image products, team software, and consulting offers. For page sponsorship, traffic routing, or commercial consulting, email sales@lovart.info.',
+        secondaryHref: link('lovart-review'),
+        secondaryText: commercialIsZh ? '查看完整评测' : 'View full review'
+    },
+    general: {
+        subject: 'Lovart info sponsorship or consulting request',
+        eyebrow: commercialIsZh ? '商务入口' : 'Business contact',
+        title: commercialIsZh ? '需要赞助、咨询或商业合作？' : 'Need sponsorship, consulting, or a commercial partnership?',
+        desc: commercialIsZh
+            ? '直接联系 sales@lovart.info，说明你的目标页面、预算和合作方式。'
+            : 'Email sales@lovart.info with the target page, budget, and proposed partnership structure.',
+        secondaryHref: link('lovart-pricing'),
+        secondaryText: commercialIsZh ? '查看价格页' : 'View pricing page'
+    }
+};
+const commercial = commercialCopy[commercialContext] || commercialCopy.general;
+const mailSubject = encodeURIComponent(commercial.subject);
+%>
+
+<% if (commercialEnabled) { %>
+<div class="my-10 rounded-lg border border-neutral-light/60 bg-neutral-dark text-white shadow-xl overflow-hidden">
+    <div class="grid md:grid-cols-[1fr_auto] gap-6 items-center p-6 md:p-8">
+        <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-secondary-light mb-3">
+                <%= commercial.eyebrow %>
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
+                <%= commercial.title %>
+            </h2>
+            <p class="text-white/75 leading-relaxed max-w-3xl">
+                <%= commercial.desc %>
+            </p>
+        </div>
+        <div class="flex flex-col sm:flex-row md:flex-col gap-3 md:min-w-[220px]">
+            <a href="mailto:sales@lovart.info?subject=<%= mailSubject %>"
+                class="inline-flex items-center justify-center rounded-md bg-secondary px-5 py-3 text-sm font-semibold text-white hover:bg-secondary-dark transition-colors">
+                <%= commercialIsZh ? '联系商务' : 'Email sales' %>
+            </a>
+            <a href="<%= commercial.secondaryHref %>"
+                class="inline-flex items-center justify-center rounded-md border border-white/20 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors">
+                <%= commercial.secondaryText %>
+            </a>
+        </div>
+    </div>
+</div>
+<% } %>

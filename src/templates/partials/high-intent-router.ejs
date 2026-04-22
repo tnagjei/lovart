@@ -1,0 +1,65 @@
+<%
+const routerIsZh = lang === 'zh';
+const routerEnabled = lang === 'en' || lang === 'zh';
+const routerSafeLink = (slug, supportedLangs) => supportedLangs.includes(lang) ? link(slug) : `/${slug}`;
+const routerCards = [
+    {
+        href: link('lovart-pricing'),
+        title: routerIsZh ? 'Pricing / 价格与套餐' : 'Pricing and plans',
+        desc: routerIsZh ? '对比免费版、Pro、团队或企业方案，判断是否值得升级。' : 'Compare plan fit, upgrade paths, and current pricing context.'
+    },
+    {
+        href: routerSafeLink('lovart-ai-code', ['en', 'zh', 'fr', 'ja']),
+        title: routerIsZh ? 'API / 开发者入口' : 'API and developer entry',
+        desc: routerIsZh ? '查看 Lovart API、API Key、开发者选项和可确认的信息。' : 'Review Lovart API, API key, developer options, and confirmed status notes.'
+    },
+    {
+        href: routerSafeLink('lovart-free', ['en', 'zh', 'fr', 'ja']),
+        title: routerIsZh ? 'Free / 免费版' : 'Free version',
+        desc: routerIsZh ? '先确认免费入口、免费能力和后续升级路径。' : 'Check free access, included capabilities, and likely upgrade paths.'
+    },
+    {
+        href: link('lovart-review'),
+        title: routerIsZh ? 'Review / 完整评测' : 'Full review',
+        desc: routerIsZh ? '在登录、教程或帮助之外，快速判断 Lovart 是否适合你。' : 'Move from help or tutorial intent into a product-fit decision.'
+    }
+];
+%>
+
+<% if (routerEnabled) { %>
+<section class="py-14 bg-white border-t border-neutral-light/70">
+    <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+                <div>
+                    <p class="text-sm font-semibold text-primary mb-2">
+                        <%= routerIsZh ? '热门入口 / High-intent pages' : 'Popular next steps' %>
+                    </p>
+                    <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark">
+                        <%= routerIsZh ? '登录、教程和帮助之外，继续看这些赚钱页' : 'Beyond help, continue to high-intent pages' %>
+                    </h2>
+                </div>
+                <p class="text-neutral max-w-2xl">
+                    <%= routerIsZh ? '如果你已经解决基础访问问题，下一步通常是确认价格、免费版、API 或产品是否值得用。' : 'Once the basic access question is solved, the next useful step is pricing, free access, API status, or product fit.' %>
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <% routerCards.forEach(function(card) { %>
+                    <a href="<%= card.href %>"
+                        class="block rounded-lg border border-neutral-light/70 bg-neutral-light/20 p-5 hover:border-primary/50 hover:bg-white hover:shadow-md transition-all">
+                        <h3 class="text-lg font-semibold text-neutral-dark mb-2">
+                            <%= card.title %>
+                        </h3>
+                        <p class="text-sm text-neutral leading-relaxed mb-4">
+                            <%= card.desc %>
+                        </p>
+                        <span class="text-sm font-semibold text-primary">
+                            <%= routerIsZh ? '继续查看' : 'Continue' %>
+                        </span>
+                    </a>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+</section>
+<% } %>

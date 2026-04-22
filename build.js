@@ -75,7 +75,13 @@ const esItIndexablePages = new Set([
 const pageLangMap = {
     ...Object.fromEntries(
         esItCorePages.map((pageName) => [pageName, [...extendedSupportedLangs]])
-    )
+    ),
+    // Developer sub-pages: en/zh only (Phase 1 Batch 1)
+    // These pages cover API/developer topics and are not yet translated to fr/ja/es/it
+    'lovart-api-key':           ['en', 'zh'],
+    'lovart-api-documentation': ['en', 'zh'],
+    'lovart-api-pricing':       ['en', 'zh'],
+    'lovart-developer-options': ['en', 'zh'],
 };
 
 const config = {
