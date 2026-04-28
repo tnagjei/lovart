@@ -1,10 +1,8 @@
-Official Website: [lovart.info](https://lovart.info)
-官方网站： [ lovart.info ] ( https://lovart.info )  
-官方网站： [ lovart.info ] ( https://lovart.info )    
-官方网站： [ lovart.info ] ( https://lovart.info )
+Official Website: [lovart.info](https://lovart.info)  
 # Lovart
 
-A modern, high-performance web project built for SEO excellence and superior user experience.
+A modern, high-performance web project built for SEO excellence and superior user experience.  
+一个现代化的、高性能的网站项目，旨在实现卓越的搜索引擎优化和优质的用户体验。
 
 ## 🌐 Official Website
 **Live Demo:** [https://lovart.info](https://lovart.info)
