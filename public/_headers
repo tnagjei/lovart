@@ -1,3 +1,9 @@
+/
+  Content-Security-Policy: script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://www.google.com https://www.gstatic.com
+
+/index.html
+  Content-Security-Policy: script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://www.google.com https://www.gstatic.com
+
 /404.html
   X-Robots-Tag: noindex, nofollow, noarchive
 
@@ -6,5 +12,4 @@
 
 /login
   X-Robots-Tag: noindex, nofollow, noarchive
-
 
