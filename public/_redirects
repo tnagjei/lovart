@@ -1,3 +1,34 @@
+# Legacy static pages from older site structure
+# These rules must appear before canonical host catch-all rules.
+https://www.lovart.info/blog https://lovart.info/lovart-tutorial 301
+https://www.lovart.info/blog.html https://lovart.info/lovart-tutorial 301
+https://www.lovart.info/help https://lovart.info/lovart-customer-support 301
+https://www.lovart.info/help.html https://lovart.info/lovart-customer-support 301
+https://www.lovart.info/about https://lovart.info/lovart-company 301
+https://www.lovart.info/about.html https://lovart.info/lovart-company 301
+https://www.lovart.info/privacy-policy https://lovart.info/lovart-privacy-policy-guide 301
+https://www.lovart.info/privacy-policy.html https://lovart.info/lovart-privacy-policy-guide 301
+https://www.lovart.info/terms-of-service https://lovart.info/lovart-terms-of-use-guide 301
+https://www.lovart.info/terms-of-service.html https://lovart.info/lovart-terms-of-use-guide 301
+https://www.lovart.info/lovart-design-features https://lovart.info/lovart-ai-agent 301
+https://www.lovart.info/lovart-design-features.html https://lovart.info/lovart-ai-agent 301
+/blog /lovart-tutorial 301
+/blog.html /lovart-tutorial 301
+/help /lovart-customer-support 301
+/help.html /lovart-customer-support 301
+/about /lovart-company 301
+/about.html /lovart-company 301
+/privacy-policy /lovart-privacy-policy-guide 301
+/privacy-policy.html /lovart-privacy-policy-guide 301
+/terms-of-service /lovart-terms-of-use-guide 301
+/terms-of-service.html /lovart-terms-of-use-guide 301
+/lovart-design-features /lovart-ai-agent 301
+/lovart-design-features.html /lovart-ai-agent 301
+/zh/help.html /zh/lovart-customer-support 301
+/zh/privacy-policy.html /zh/lovart-privacy-policy-guide 301
+/fr/privacy-policy.html /fr/lovart-privacy-policy-guide 301
+/ja/privacy-policy.html /ja/lovart-privacy-policy-guide 301
+
 # Canonical host and protocol
 http://www.lovart.info/* https://lovart.info/:splat 301
 http://lovart.info/* https://lovart.info/:splat 301
