@@ -49,7 +49,7 @@
                             </p>
                             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12 animate-fade-in-up"
                                 style="animation-delay: 0.3s;">
-                                <a href="https://lovart.info/login"
+                                <a href="https://www.lovart.ai/" target="_blank" rel="noopener noreferrer"
                                     class="px-8 py-4 bg-primary text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-primary-dark transition-all transform hover:-translate-y-1">
                                     <%= t.lovart_free_page.hero.cta_primary %>
                                 </a>
@@ -67,6 +67,14 @@
                                     </div>
                                     <% }) %>
                             </div>
+                        </div>
+                    </section>
+
+                    <section class="bg-amber-50 border-y border-amber-200 py-4">
+                        <div class="container mx-auto px-6 max-w-4xl text-center">
+                            <p class="text-sm text-amber-800">
+                                lovart.info is an independent guide site, not the official Lovart website. Use lovart.ai for current product access, signup, pricing, and free-limit verification.
+                            </p>
                         </div>
                     </section>
 
@@ -219,6 +227,54 @@
                             </div>
                         </section>
 
+                        <section id="free-vs-paid" class="py-20 bg-white border-y border-neutral-light/30">
+                            <div class="container mx-auto px-6 max-w-5xl">
+                                <div class="max-w-3xl mx-auto text-center mb-12">
+                                    <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Last reviewed: 2026-06-17</p>
+                                    <h2 class="text-3xl font-bold mb-4">Is Lovart AI Free?</h2>
+                                    <p class="text-neutral leading-relaxed">
+                                        Lovart has official access and pricing pages, but free limits can change. Treat free credits, trial duration, login requirements, export limits, and commercial rights as <strong>pending</strong> until you verify them on the official site.
+                                    </p>
+                                </div>
+                                <div class="overflow-x-auto bg-neutral-light/20 rounded-2xl border border-neutral-light/40">
+                                    <table class="w-full text-left">
+                                        <thead class="bg-white">
+                                            <tr>
+                                                <th class="p-4 font-semibold">Question</th>
+                                                <th class="p-4 font-semibold">Current safe answer</th>
+                                                <th class="p-4 font-semibold">Evidence label</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-neutral-light/50">
+                                            <tr><td class="p-4 font-medium">Can you start from the official site?</td><td class="p-4">Yes, use the official Lovart site or pricing page as the source of truth.</td><td class="p-4 text-green-700 font-semibold">verified</td></tr>
+                                            <tr><td class="p-4 font-medium">Is there a fixed free quota?</td><td class="p-4">Do not rely on old screenshots or videos. Check the current pricing page.</td><td class="p-4 text-amber-700 font-semibold">pending</td></tr>
+                                            <tr><td class="p-4 font-medium">Is a credit card required?</td><td class="p-4">Not stated here as fact. Confirm during the current official signup flow.</td><td class="p-4 text-amber-700 font-semibold">pending</td></tr>
+                                            <tr><td class="p-4 font-medium">Should you download an APK?</td><td class="p-4">Avoid unofficial APK and mod APK files. Use the official web product path.</td><td class="p-4 text-red-700 font-semibold">unsafe</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="how-to-try" class="grid md:grid-cols-3 gap-6 mt-10">
+                                    <div class="bg-neutral-light/30 rounded-xl p-6"><h3 class="font-bold mb-2">1. Open the official site</h3><p class="text-sm text-neutral">Start from <a class="text-primary font-semibold" href="https://www.lovart.ai/" target="_blank" rel="noopener noreferrer">lovart.ai</a>, not a download mirror.</p></div>
+                                    <div class="bg-neutral-light/30 rounded-xl p-6"><h3 class="font-bold mb-2">2. Check pricing and account prompts</h3><p class="text-sm text-neutral">Verify current credits, export rules, login, and payment requirements before you begin client work.</p></div>
+                                    <div class="bg-neutral-light/30 rounded-xl p-6"><h3 class="font-bold mb-2">3. Avoid unsafe downloads</h3><p class="text-sm text-neutral">If a page offers a Lovart mod APK or cracked mobile app, treat it as unsafe.</p></div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="py-20 bg-neutral-light/20">
+                            <div class="container mx-auto px-6 max-w-4xl">
+                                <h2 class="text-3xl font-bold text-center mb-6">Free Trial Walkthrough Videos</h2>
+                                <div class="aspect-video rounded-2xl overflow-hidden border border-neutral-light bg-white shadow-sm">
+                                    <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/JgD_qHI-4fY" title="Lovart free trial walkthrough video" loading="lazy" allowfullscreen></iframe>
+                                </div>
+                                <p class="text-sm text-neutral mt-4 text-center">
+                                    Fallback link:
+                                    <a href="https://www.youtube.com/watch?v=JgD_qHI-4fY" target="_blank" rel="noopener noreferrer" class="text-primary font-semibold">watch on YouTube</a>.
+                                    Video titles are visual references only and do not verify free quota, credit card, or pricing status.
+                                </p>
+                            </div>
+                        </section>
+
                         <!-- FAQ Section -->
                         <section class="py-20 bg-neutral-light/30">
                             <div class="container mx-auto px-6 max-w-3xl">
@@ -263,7 +319,7 @@
                                     <%= t.lovart_free_page.cta.desc %>
                                 </p>
                                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                                    <a href="https://lovart.info/signup"
+                                    <a href="https://www.lovart.ai/" target="_blank" rel="noopener noreferrer"
                                         class="px-8 py-4 bg-white text-primary text-lg font-bold rounded-lg shadow-xl hover:bg-gray-100 transition-transform transform hover:scale-105">
                                         <%= t.lovart_free_page.cta.btn_primary %>
                                     </a>

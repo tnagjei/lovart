@@ -9,3 +9,6 @@
 - `locales/`：多语言 JSON 文件 (en, zh, fr, ja, es, it)
 - `styles/`：Tailwind CSS 源文件
 - `assets/`：其他静态资源
+- `templates/lovart-prompt-library.ejs`：Lovart prompt 模板库英文页面
+- `templates/lovart-prompt-generator.ejs`：本地 Lovart prompt 生成器英文页面
+- `templates/lovart-vs-canva.ejs`：Lovart vs Canva 独立英文对比页

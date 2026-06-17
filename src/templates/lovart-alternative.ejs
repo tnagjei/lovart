@@ -295,6 +295,9 @@ const relatedLinks = relatedPaths
                                 <p class="lead"
                                     style="font-size: 1.15rem; color: #555; line-height: 1.8; margin-bottom: 0;"><%-
                                         t.lovart_alternative_page.hero.content %></p>
+                                <p style="color: #8a5a00; line-height: 1.7; background: #fffbeb; border: 1px solid #fde68a; border-radius: 12px; padding: 16px; margin-top: 18px;">
+                                    lovart.info is an independent guide site, not the official Lovart website. Comparisons on this page are editorial guidance and should be checked against current official product pages before purchase decisions.
+                                </p>
                             </div>
 
                             <div class="card">
@@ -382,6 +385,62 @@ const relatedLinks = relatedPaths
                                         <a href="<%- link('/lovart-pricing') %>"
                                             class="btn btn-outline-primary mt-3">View
                                             Lovart Plans →</a>
+                                    </div>
+
+                                    <div class="card" id="free-alternatives">
+                                        <h2>Free Lovart AI Alternatives</h2>
+                                        <p style="color: #555; line-height: 1.7;">
+                                            Free alternatives should be compared by workflow, not by the word free alone. Most free design tools trade something away: credits, watermarks, account requirements, export formats, speed, commercial rights, or template control.
+                                        </p>
+                                        <div style="overflow-x: auto; margin-top: 24px;">
+                                            <table class="compare-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Use case</th>
+                                                        <th>Possible alternatives</th>
+                                                        <th>What to verify first</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr><td>Image generation</td><td>Adobe Firefly, Leonardo, SeaArt, Stable Diffusion tools</td><td>Credits, commercial rights, output resolution</td></tr>
+                                                    <tr><td>Brand kit</td><td>Canva, Looka, Adobe Express, ImagineArt</td><td>Logo rights, exports, watermarks, template limits</td></tr>
+                                                    <tr><td>Logo drafts</td><td>Canva logo tools, Looka, Template.net, local vector tools</td><td>Trademark risk, editable files, registration requirements</td></tr>
+                                                    <tr><td>Video ads</td><td>Canva, CapCut, Adobe Express, AI video tools</td><td>Stock licenses, watermark, duration limits</td></tr>
+                                                    <tr><td>API workflow</td><td>Official API products from design or image vendors</td><td>Self-serve docs, pricing, rate limits, data policy</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="card" id="reddit">
+                                        <h2>How To Read Reddit Discussions</h2>
+                                        <p style="color: #555; line-height: 1.7;">
+                                            Reddit and community threads can surface useful complaints, but they are not verification by themselves. Check the post date, whether screenshots show the current product, whether the author has a conflict of interest, and whether another user can reproduce the same result.
+                                        </p>
+                                        <ul style="color: #555; line-height: 1.7; margin-top: 18px;">
+                                            <li>Use community posts as <strong>pending</strong> signals, not facts.</li>
+                                            <li>Do not treat a single viral complaint as product-wide evidence.</li>
+                                            <li>When pricing or free access is discussed, verify on the official site that same day.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card" id="open-source">
+                                        <h2>Open Source Lovart Alternatives</h2>
+                                        <p style="color: #555; line-height: 1.7;">
+                                            We could not verify a true open source Lovart equivalent that combines prompt-to-brand workflow, multi-asset design generation, editing, and production export in one maintained package. Local Stable Diffusion workflows can replace parts of image generation, but they do not automatically replace a full AI design agent.
+                                        </p>
+                                        <p style="color: #555; line-height: 1.7; margin-top: 14px;">
+                                            Evidence label: <strong>disputed/pending</strong>. Treat open source claims carefully and inspect license, maintenance activity, model license, and whether commercial use is allowed.
+                                        </p>
+                                    </div>
+
+                                    <div class="card">
+                                        <h2>Dedicated Lovart vs Canva Comparison</h2>
+                                        <p style="color: #555; line-height: 1.7;">
+                                            The Canva comparison now has a separate page because users searching for Lovart vs Canva usually need workflow, editing control, and pricing-risk guidance before choosing.
+                                        </p>
+                                        <a href="<%- link('/lovart-vs-canva') %>"
+                                            class="btn btn-outline-primary mt-3">Read Lovart vs Canva</a>
                                     </div>
 
                                     <%- include('partials/commercial-cta', { context: 'alternative' }) %>

@@ -1,0 +1,127 @@
+<%# input: static prompt-generator page data and build helpers from build.js %>
+<%# output: /lovart-prompt-generator local prompt assembly tool %>
+<%# pos: Prompts hub child page (update this comment and src/README.md when changing file role) %>
+<%
+const pageSeo = {
+    title: 'Lovart Prompt Generator for AI Design Briefs',
+    description: 'Build a Lovart prompt for logos, brand kits, campaign assets, mockups, and social posts without calling Lovart APIs or storing user input.',
+    keywords: ''
+};
+const breadcrumbItems = [
+    { name: t.nav.home, href: link('/') },
+    { name: 'Lovart Prompt Guide', href: link('/lovart-prompt-guide') },
+    { name: 'Lovart Prompt Generator', href: canonicalUrl }
+];
+%>
+<!DOCTYPE html>
+<html lang="<%= lang %>" class="scroll-smooth">
+<head>
+    <%- include('partials/head', { pageSeo }) %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageSeo.title %></title>
+    <meta name="description" content="<%= pageSeo.description %>">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <%- include('partials/hreflang') %>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <%- include('partials/analytics') %>
+    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+</head>
+<body class="bg-neutral-light text-neutral-dark antialiased">
+<%- include('partials/header') %>
+<%- include('partials/breadcrumb', { breadcrumbItems }) %>
+<main>
+    <section class="bg-white py-16 lg:py-24 border-b border-neutral/10">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <p class="text-sm uppercase tracking-wide text-primary font-semibold mb-4">Local prompt builder</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-neutral-dark mb-5">Lovart Prompt Generator for Logos, Brand Kits, and Campaign Assets</h1>
+            <p class="text-lg text-neutral leading-relaxed max-w-3xl">Build a prompt from your inputs, then copy it into Lovart manually. This tool runs in your browser, does not log in, does not call a Lovart API, and does not save your materials.</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid lg:grid-cols-[1fr_1fr] gap-8 items-start">
+                <form id="prompt-form" class="bg-white border border-neutral/10 rounded-lg p-6 space-y-5">
+                    <h2 class="text-2xl font-bold text-neutral-dark">Build Your Prompt</h2>
+                    <label class="block"><span class="text-sm font-semibold text-neutral-dark">Output type</span><select id="output-type" class="mt-2 w-full rounded border border-neutral/20 p-3"><option>logo design</option><option>brand kit</option><option>social post</option><option>product mockup</option><option>video ad storyboard</option><option>poster</option></select></label>
+                    <label class="block"><span class="text-sm font-semibold text-neutral-dark">Brand name</span><input id="brand-name" class="mt-2 w-full rounded border border-neutral/20 p-3" value="Northstar Studio"></label>
+                    <label class="block"><span class="text-sm font-semibold text-neutral-dark">Audience</span><input id="audience" class="mt-2 w-full rounded border border-neutral/20 p-3" value="independent founders and creative teams"></label>
+                    <label class="block"><span class="text-sm font-semibold text-neutral-dark">Style</span><input id="style" class="mt-2 w-full rounded border border-neutral/20 p-3" value="clean editorial, premium, modern, calm"></label>
+                    <label class="block"><span class="text-sm font-semibold text-neutral-dark">Colors</span><input id="colors" class="mt-2 w-full rounded border border-neutral/20 p-3" value="charcoal, warm white, cobalt accent"></label>
+                    <label class="block"><span class="text-sm font-semibold text-neutral-dark">Format</span><input id="format" class="mt-2 w-full rounded border border-neutral/20 p-3" value="web hero, square social crop, and transparent logo variant"></label>
+                    <label class="block"><span class="text-sm font-semibold text-neutral-dark">Avoid</span><input id="avoid" class="mt-2 w-full rounded border border-neutral/20 p-3" value="stock-photo look, tiny unreadable text, fake awards"></label>
+                    <button type="button" id="generate-prompt" class="w-full rounded-lg bg-primary text-white font-semibold py-3">Generate Prompt</button>
+                </form>
+
+                <section class="bg-white border border-neutral/10 rounded-lg p-6">
+                    <h2 class="text-2xl font-bold text-neutral-dark mb-4">Prompt Output</h2>
+                    <div id="prompt-output" class="min-h-[220px] font-mono text-sm leading-7 bg-neutral-light border border-neutral/10 rounded p-5 text-neutral-dark"></div>
+                    <button type="button" id="copy-output" class="mt-5 rounded-lg border border-primary text-primary font-semibold px-5 py-3 bg-white">Copy Prompt</button>
+                    <p class="mt-4 text-sm text-neutral">Evidence label: pending. Generated prompts are drafting aids, not proof that Lovart will produce a specific output.</p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">How To Use the Generated Prompt</h2>
+            <div class="grid md:grid-cols-4 gap-5">
+                <article class="bg-neutral-light rounded-lg p-5"><h3 class="font-bold mb-2">1. Copy</h3><p class="text-sm text-neutral">Copy the prompt after checking every variable.</p></article>
+                <article class="bg-neutral-light rounded-lg p-5"><h3 class="font-bold mb-2">2. Paste</h3><p class="text-sm text-neutral">Paste it into Lovart's official product interface manually.</p></article>
+                <article class="bg-neutral-light rounded-lg p-5"><h3 class="font-bold mb-2">3. Review</h3><p class="text-sm text-neutral">Check output, licensing, text accuracy, and brand fit.</p></article>
+                <article class="bg-neutral-light rounded-lg p-5"><h3 class="font-bold mb-2">4. Iterate</h3><p class="text-sm text-neutral">Tighten style, format, and avoid fields if the first result misses.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-amber-50 border-y border-amber-200">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-amber-950 mb-4">What This Tool Does Not Do</h2>
+            <ul class="space-y-3 text-amber-900">
+                <li>It does not log in to Lovart or submit jobs.</li>
+                <li>It does not call any Lovart API or imply API access.</li>
+                <li>It does not guarantee free usage, commercial rights, or exact visual output.</li>
+                <li>It does not provide hidden system prompts.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Prompt Generator FAQ</h2>
+            <div class="space-y-4">
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Is this an official Lovart tool?</summary><p class="mt-3 text-neutral">No. It is an independent prompt assembly tool maintained by lovart.info.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Does it call the Lovart API?</summary><p class="mt-3 text-neutral">No. It only formats text in the browser. API access should be checked on Lovart's official site.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Can I use it for logos?</summary><p class="mt-3 text-neutral">Yes, but verify commercial and trademark considerations before using AI-generated marks publicly.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Is it free?</summary><p class="mt-3 text-neutral">The generator page is free to use. Lovart product access, credits, and pricing can change, so check the official pricing page.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Where should I start if I need examples?</summary><p class="mt-3 text-neutral">Use the <a href="<%= link('/lovart-prompt-library') %>" class="text-primary font-semibold">Lovart Prompt Library</a> for examples and the <a href="<%= link('/lovart-prompt-guide') %>" class="text-primary font-semibold">Prompt Guide</a> for structure.</p></details>
+            </div>
+        </div>
+    </section>
+</main>
+<%- include('partials/footer') %>
+<script>
+(function() {
+    var output = document.getElementById('prompt-output');
+    function val(id) {
+        var node = document.getElementById(id);
+        return node ? node.value.trim() : '';
+    }
+    function buildPrompt() {
+        var text = 'Create a ' + val('output-type') + ' for ' + val('brand-name') + ', designed for ' + val('audience') + '. Use a ' + val('style') + ' style with ' + val('colors') + '. Prepare the result for ' + val('format') + '. Avoid ' + val('avoid') + '. Keep the design original, readable, and consistent across the full brand asset set.';
+        output.textContent = text;
+    }
+    document.getElementById('generate-prompt').addEventListener('click', buildPrompt);
+    document.getElementById('copy-output').addEventListener('click', function() {
+        if (!navigator.clipboard || !output.textContent) return;
+        navigator.clipboard.writeText(output.textContent);
+    });
+    buildPrompt();
+})();
+</script>
+</body>
+</html>

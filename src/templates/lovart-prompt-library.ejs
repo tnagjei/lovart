@@ -1,0 +1,200 @@
+<%# input: static prompt-library data plus build helpers from build.js %>
+<%# output: /lovart-prompt-library guide page with copy-ready prompt cards %>
+<%# pos: Prompts hub child page (update this comment and src/README.md when changing file role) %>
+<%
+const pageSeo = {
+    title: 'Lovart Prompt Library: 50 Copy-Ready Design Prompts',
+    description: 'Browse a Lovart prompt library for logos, brand kits, ads, product mockups, posters, and video concepts with safe copy-ready examples.',
+    keywords: ''
+};
+const breadcrumbItems = [
+    { name: t.nav.home, href: link('/') },
+    { name: 'Lovart Prompt Guide', href: link('/lovart-prompt-guide') },
+    { name: 'Lovart Prompt Library', href: canonicalUrl }
+];
+const categories = [
+    ['Logo', 'Marks, badges, monograms, icons'],
+    ['Brand Kit', 'Colors, typography, style systems'],
+    ['Social Post', 'Launch posts, carousels, ads'],
+    ['Product Mockup', 'Packaging, app screens, device scenes'],
+    ['Video Ad', 'Storyboards and motion-ready concepts'],
+    ['Poster', 'Event, editorial, and campaign posters']
+];
+const promptSeeds = [
+    ['Logo', 'AI startup', 'minimal geometric neural mark', 'cyan and violet gradient, clean vector style', 'no text, transparent background', 'busy gradients'],
+    ['Logo', 'artisan coffee shop', 'circular badge with cup and beans', 'warm sepia ink, hand drawn crest', 'print-ready badge', 'tiny unreadable text'],
+    ['Logo', 'wellness brand', 'leaf monogram with soft curves', 'sage green, ivory, calm spacing', 'flat vector icon', 'medical claims'],
+    ['Logo', 'gaming channel', 'shield icon with lightning shape', 'electric blue, charcoal, high contrast', 'mascot-ready mark', 'complex facial details'],
+    ['Logo', 'luxury skincare', 'thin-line interlocked monogram', 'champagne gold, white space, editorial', 'premium mark, no text', 'stock-looking crown'],
+    ['Logo', 'restaurant group', 'fork and flame symbol', 'terracotta, cream, modern bistro', 'square social avatar', 'photo textures'],
+    ['Logo', 'finance app', 'secure abstract vault mark', 'navy, mint accent, fintech minimalism', 'app icon safe', 'currency symbols'],
+    ['Logo', 'creative studio', 'abstract prism symbol', 'coral, cobalt, simple geometry', 'vector logo mark', 'too many shapes'],
+    ['Brand Kit', 'new SaaS product', 'brand identity board', 'clean tech typography, blue accent system', 'logo, palette, type scale', 'generic startup cliches'],
+    ['Brand Kit', 'local bakery', 'warm visual identity kit', 'cream paper, cocoa, hand-drawn packaging', 'labels, social tiles, menu card', 'overly ornate scripts'],
+    ['Brand Kit', 'fitness coach', 'energetic brand kit', 'black, lime, bold condensed typography', 'post templates and app badges', 'before-after claims'],
+    ['Brand Kit', 'eco marketplace', 'sustainable brand system', 'forest green, recycled paper texture, simple icons', 'web banner and packaging set', 'greenwashing copy'],
+    ['Brand Kit', 'B2B agency', 'premium service brand kit', 'charcoal, off-white, restrained accent color', 'proposal cover and social set', 'fake awards'],
+    ['Brand Kit', 'beauty launch', 'soft campaign identity', 'rose, pearl, editorial product styling', 'brand board and ad set', 'unverified ingredient claims'],
+    ['Brand Kit', 'mobile app', 'app launch identity', 'gradient icons, rounded UI cards, crisp typography', 'store graphics and splash screen', 'platform logos'],
+    ['Brand Kit', 'conference', 'event visual system', 'modular grid, bright accent palette, stage graphics', 'badge, poster, social pack', 'speaker names'],
+    ['Social Post', 'product launch', 'three-slide announcement carousel', 'bold headline system, product render focus', 'square and vertical crops', 'false urgency'],
+    ['Social Post', 'newsletter growth', 'LinkedIn carousel visual', 'clean editorial layout, data callouts', 'five cards with cover and CTA', 'invented numbers'],
+    ['Social Post', 'restaurant promo', 'limited menu post', 'warm food photography style, clear offer area', 'Instagram story format', 'fake discounts'],
+    ['Social Post', 'fitness program', 'challenge announcement', 'high-energy type, motion streaks, strong hierarchy', 'story and feed variants', 'body transformation guarantees'],
+    ['Social Post', 'SaaS feature', 'feature explanation carousel', 'UI screenshot placeholder, simple icons', 'six-step carousel', 'unsupported metrics'],
+    ['Social Post', 'podcast episode', 'guest quote card', 'studio portrait style, bold pull quote', 'square social card', 'fabricated quotes'],
+    ['Social Post', 'course launch', 'education promo carousel', 'calm academic palette, module cards', 'cover plus lesson cards', 'income guarantees'],
+    ['Social Post', 'nonprofit update', 'impact story visual', 'human-centered editorial layout', 'donor-safe post set', 'unverified impact stats'],
+    ['Product Mockup', 'coffee packaging', 'bag and label mockup', 'kraft paper, warm shadows, tabletop scene', 'front and side views', 'fake certification seals'],
+    ['Product Mockup', 'mobile app', 'phone screen mockup', 'clean iOS-style frame, soft gradient backdrop', 'three screen sequence', 'Apple branding'],
+    ['Product Mockup', 'skincare bottle', 'premium product render', 'matte glass, soft studio lighting', 'hero image and ad crop', 'medical promises'],
+    ['Product Mockup', 'book cover', 'launch mockup scene', 'hardcover, desk context, readable hierarchy', 'front cover and spread', 'bestseller labels'],
+    ['Product Mockup', 'SaaS dashboard', 'web dashboard preview', 'dark UI, chart placeholders, crisp cards', 'desktop and tablet mockups', 'real customer data'],
+    ['Product Mockup', 'event merch', 'shirt and tote mockup', 'minimal brand mark, natural fabric texture', 'front views and folded view', 'copyrighted slogans'],
+    ['Product Mockup', 'food delivery box', 'packaging system mockup', 'bold color blocks, clear logo zone', 'box, cup, sticker set', 'nutrition claims'],
+    ['Product Mockup', 'hardware gadget', 'product hero render', 'matte black device, clean reflections', 'landing page hero image', 'patent claims'],
+    ['Video Ad', 'app launch', '15-second storyboard', 'fast cuts, UI zooms, benefit-first captions', 'six frames, vertical format', 'guaranteed results'],
+    ['Video Ad', 'brand kit reveal', 'motion storyboard', 'logo to colors to social assets flow', 'nine storyboard panels', 'official endorsement claims'],
+    ['Video Ad', 'course promotion', 'short promo sequence', 'teacher intro, lesson preview, CTA frame', 'vertical ad storyboard', 'income claims'],
+    ['Video Ad', 'restaurant opening', 'local launch ad', 'food closeups, location card, warm lighting', 'story format storyboard', 'fake reviews'],
+    ['Video Ad', 'fitness app', 'feature demo ad', 'animated phone UI, progress visuals, clean captions', 'short-form storyboard', 'health guarantees'],
+    ['Video Ad', 'B2B webinar', 'professional teaser video', 'speaker card, agenda cards, registration CTA', 'LinkedIn ad storyboard', 'fake attendee count'],
+    ['Video Ad', 'fashion drop', 'campaign video storyboard', 'editorial cuts, product closeups, bold type', 'reel format', 'celebrity references'],
+    ['Video Ad', 'nonprofit campaign', 'awareness video concept', 'human story, donation CTA, respectful tone', '30-second storyboard', 'unverified claims'],
+    ['Poster', 'music event', 'gig poster layout', 'bold type, abstract sound waves, high contrast', 'print poster and square crop', 'artist names without permission'],
+    ['Poster', 'tech meetup', 'conference poster system', 'modular grid, speaker placeholder cards', 'A3 and social crop', 'fake sponsors'],
+    ['Poster', 'film screening', 'cinematic poster concept', 'moody lighting, single hero object', 'print-ready poster', 'movie studio marks'],
+    ['Poster', 'fitness challenge', 'event poster', 'bold athletic type, strong diagonal composition', 'gym wall and story crop', 'body claims'],
+    ['Poster', 'museum exhibit', 'editorial exhibition poster', 'large negative space, archival color palette', 'poster and invitation card', 'artist attribution claims'],
+    ['Poster', 'product sale', 'retail promo poster', 'clear offer block, product grid, bright accent', 'window poster and social crop', 'fake discounts'],
+    ['Poster', 'restaurant night', 'menu event poster', 'warm illustration, readable details, local feel', 'print poster', 'false awards'],
+    ['Poster', 'startup hiring', 'recruiting poster', 'clean office visual, role cards, bold CTA', 'poster and LinkedIn crop', 'salary promises'],
+    ['Poster', 'online workshop', 'education event poster', 'friendly illustration, module callouts, calm color', 'webinar cover', 'credential claims'],
+    ['Product Mockup', 'brand presentation', 'multi-asset mockup scene', 'logo, poster, phone, packaging on one board', 'portfolio hero image', 'client names']
+];
+const prompts = promptSeeds.map(function(seed, index) {
+    return {
+        id: index + 1,
+        category: seed[0],
+        bestFor: seed[1],
+        prompt: 'Create a ' + seed[2] + ' for ' + seed[1] + ', using ' + seed[3] + '. Output should be ' + seed[4] + '. Keep the composition original, polished, and consistent across brand assets.',
+        variables: 'brand name, audience, color palette, format, usage context',
+        avoid: seed[5]
+    };
+});
+%>
+<!DOCTYPE html>
+<html lang="<%= lang %>" class="scroll-smooth">
+<head>
+    <%- include('partials/head', { pageSeo }) %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageSeo.title %></title>
+    <meta name="description" content="<%= pageSeo.description %>">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <%- include('partials/hreflang') %>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <%- include('partials/analytics') %>
+    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+</head>
+<body class="bg-neutral-light text-neutral-dark antialiased">
+<%- include('partials/header') %>
+<%- include('partials/breadcrumb', { breadcrumbItems }) %>
+<main>
+    <section class="bg-white py-16 lg:py-24 border-b border-neutral/10">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-4">Independent prompt resource</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-neutral-dark mb-5">Lovart Prompt Library for Logos, Brand Kits, Ads, and Product Visuals</h1>
+            <p class="text-lg text-neutral leading-relaxed max-w-3xl">Copy and adapt 50 Lovart prompt examples built from public prompt-writing patterns. These are not official Lovart internal templates, and they do not include hidden system prompts.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+                <a href="<%= link('/lovart-prompt-guide') %>" class="px-5 py-3 rounded-lg bg-primary text-white font-semibold">Read prompt guide</a>
+                <a href="<%= link('/lovart-prompt-generator') %>" class="px-5 py-3 rounded-lg border border-primary text-primary font-semibold bg-white">Open generator</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-14 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-6">Prompt Categories</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <% categories.forEach(function(category) { %>
+                <a href="#<%= category[0].toLowerCase().replace(/\\s+/g, '-') %>" class="block bg-white border border-neutral/10 rounded-lg p-5 hover:border-primary/40 transition-colors">
+                    <h3 class="font-bold text-neutral-dark mb-2"><%= category[0] %></h3>
+                    <p class="text-sm text-neutral"><%= category[1] %></p>
+                </a>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="max-w-3xl mb-10">
+                <h2 class="text-3xl font-bold text-neutral-dark mb-4">Copy-Ready Prompts</h2>
+                <p class="text-neutral leading-relaxed">Each card includes a prompt, best-use context, editable variables, and what to avoid. Use the copy button, then replace placeholders with your own brand details before using Lovart.</p>
+            </div>
+            <% categories.forEach(function(category) { const categoryPrompts = prompts.filter(function(item) { return item.category === category[0]; }); %>
+            <div id="<%= category[0].toLowerCase().replace(/\\s+/g, '-') %>" class="mb-12">
+                <h3 class="text-2xl font-bold text-neutral-dark mb-5"><%= category[0] %> Prompts</h3>
+                <div class="grid md:grid-cols-2 gap-5">
+                    <% categoryPrompts.forEach(function(item) { %>
+                    <article class="bg-neutral-light border border-neutral/10 rounded-lg p-5">
+                        <div class="flex items-center justify-between gap-4 mb-3">
+                            <p class="text-xs uppercase tracking-wide text-primary font-semibold">Prompt <%= item.id %> · <%= item.bestFor %></p>
+                            <button type="button" class="copy-prompt text-xs font-semibold text-primary border border-primary/30 rounded px-3 py-1 bg-white" data-prompt="<%= item.prompt %>">Copy</button>
+                        </div>
+                        <p class="font-mono text-sm leading-6 text-neutral-dark bg-white border border-neutral/10 rounded p-4"><%= item.prompt %></p>
+                        <dl class="mt-4 grid sm:grid-cols-2 gap-3 text-sm">
+                            <div><dt class="font-semibold text-neutral-dark">Variables</dt><dd class="text-neutral"><%= item.variables %></dd></div>
+                            <div><dt class="font-semibold text-neutral-dark">Avoid</dt><dd class="text-neutral"><%= item.avoid %></dd></div>
+                        </dl>
+                    </article>
+                    <% }); %>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+    </section>
+
+    <section class="py-16 bg-amber-50 border-y border-amber-200">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-amber-950 mb-4">How These Prompts Were Built</h2>
+            <p class="text-amber-900 leading-relaxed mb-4">This library is editorially created by lovart.info from public prompt-writing patterns: subject, style, format, brand constraints, and negative constraints. It is not official Lovart documentation.</p>
+            <p class="text-amber-900 leading-relaxed">Evidence label: <strong>pending</strong> for prompt performance, because outputs can vary by model state, account settings, source image, and current Lovart product behavior.</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Prompt Library FAQ</h2>
+            <div class="space-y-4">
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Is this Lovart prompt library official?</summary><p class="mt-3 text-neutral">No. lovart.info is an independent guide site. These prompts are copy-ready examples, not official templates from Lovart.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Can I use these prompts commercially?</summary><p class="mt-3 text-neutral">The prompt text is free to adapt, but commercial rights for generated outputs depend on Lovart's current terms and your account plan. Verify on the official site before client use.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Does this include the Lovart system prompt?</summary><p class="mt-3 text-neutral">No. Requests for hidden system prompts are unsafe and not useful for normal design work. Use structured creative briefs instead.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">How should I edit a prompt before use?</summary><p class="mt-3 text-neutral">Replace brand, audience, palette, format, and avoid fields. Remove any claim you cannot verify, especially awards, prices, reviews, or official endorsements.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Should I use the generator or the library?</summary><p class="mt-3 text-neutral">Use the library when you want a proven starting point. Use the generator when you need a custom prompt assembled from brand inputs.</p></details>
+            </div>
+        </div>
+    </section>
+</main>
+<%- include('partials/footer') %>
+<script>
+(function() {
+    var buttons = document.querySelectorAll('.copy-prompt');
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var prompt = button.getAttribute('data-prompt') || '';
+            if (!prompt || !navigator.clipboard) return;
+            navigator.clipboard.writeText(prompt).then(function() {
+                var old = button.textContent;
+                button.textContent = 'Copied';
+                setTimeout(function() { button.textContent = old; }, 1600);
+            });
+        });
+    });
+})();
+</script>
+</body>
+</html>
