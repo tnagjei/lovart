@@ -2328,7 +2328,7 @@
                 "title": "Enterprise",
                 "price": "Custom",
                 "features": [
-                    "• Unlimited API calls",
+                    "• Contact sales calls",
                     "• Custom integrations",
                     "• Dedicated support"
                 ]
@@ -2485,12 +2485,12 @@
         },
         "hero": {
             "title": "Lovart Free Trial",
-            "description": "Yes, Lovart offers a free trial! Experience our powerful AI design features and get started without a credit card.",
+            "description": "Lovart may offer free or trial access, but limits, signup requirements, and available features can change. Check the official pricing page before relying on it.",
             "badges": [
-                "💳 No Credit Card Required",
-                "⏰ 14-Day Free Trial",
-                "🎨 Full Feature Experience",
-                "🚀 Start Immediately"
+                "💳 Check Signup Terms",
+                "⏰ Verify Current Trial",
+                "🎨 Feature Access May Vary",
+                "🚀 Use Official Site"
             ],
             "cta_primary": "Start Free Trial",
             "cta_secondary": "Learn About Free Features"
@@ -2501,7 +2501,7 @@
                 "title": "AI Design Generation",
                 "desc": "Generate professional designs with AI, including logos, posters, social media images, etc.",
                 "list": [
-                    "10 Free Generations/Month",
+                    "Check current free credits",
                     "Basic Design Templates"
                 ]
             },
@@ -2509,7 +2509,7 @@
                 "title": "Template Library",
                 "desc": "Access a rich library of design templates to quickly start your design project",
                 "list": [
-                    "100+ Free Templates",
+                    "Check current template access",
                     "Multiple Design Categories"
                 ]
             },
@@ -2600,8 +2600,8 @@
                 {
                     "name": "API Access",
                     "free": "❌",
-                    "pro": "1000 Calls/Month",
-                    "enterprise": "Unlimited API"
+                    "pro": "Check API terms",
+                    "enterprise": "Contact sales"
                 },
                 {
                     "name": "Priority Support",
@@ -2621,7 +2621,7 @@
             "title": "三步玩转 Lovart AI 免费设计",
             "step1": {
                 "title": "注册您的 Lovart 账号",
-                "desc": "通过电子邮件或社交媒体账号加入 Lovart 社区。无需信用卡即可开启创意之旅。注册后，Lovart 平台的全套工具触手可及，随时准备将您的灵感转化为惊艳的视觉作品。"
+                "desc": "通过电子邮件或社交媒体账号加入 Lovart 社区。请以官方注册页为准即可开启创意之旅。注册后，Lovart 平台的全套工具触手可及，随时准备将您的灵感转化为惊艳的视觉作品。"
             },
             "step2": {
                 "title": "激活 Lovart 免费试用",
@@ -2658,7 +2658,7 @@
             "items": [
                 {
                     "q": "Lovart 设计工具真的是免费使用的吗？",
-                    "a": "是的，Lovart 提供包含核心 AI 设计功能的永久免费版本。此外，新用户还可获得 Lovart Pro 的 14 天免费试用，让您无成本探索我们平台的极致创意潜力。"
+                    "a": "是的，Lovart 提供包含核心 AI 设计功能的免费或试用状态以官方页面为准版本。此外，新用户还可获得 Lovart Pro 的 当前试用状态以官方页面为准，让您无成本探索我们平台的极致创意潜力。"
                 },
                 {
                     "q": "Lovart 平台会在免费作品上加水印吗？",
@@ -2936,7 +2936,7 @@
         },
         "cta": {
             "title": "您的品牌值得拥有更好的 Logo",
-            "desc": "使用 Lovart Logo 生成器，完全免费，无需信用卡，无需设计技能，秒速生成专业级品牌标志。",
+            "desc": "使用 Lovart Logo 生成器，完全免费，请以官方注册页为准，无需设计技能，秒速生成专业级品牌标志。",
             "button": "免费创建我的 Lovart Logo"
         }
     },
@@ -2995,7 +2995,7 @@
         },
         "upsell": {
             "heading": "准备好建立你的品牌套件了吗？",
-            "desc": "Lovart 品牌套件属于 Pro 和团队计划专属功能。免费试用即可体验全部品牌套件功能，无需信用卡。",
+            "desc": "Lovart 品牌套件属于 Pro 和团队计划专属功能。免费试用即可体验全部品牌套件功能，请以官方注册页为准。",
             "cta_primary": "开始免费试用",
             "cta_secondary": "查看价格方案"
         },
@@ -3912,7 +3912,7 @@
             "heading": "30秒快速结论 (优缺点)",
             "desc": "我们在深度测试后得出的快速总结。",
             "pros": [
-                "免费使用，基础功能无需注册。",
+                "免费使用，基础功能请以当前注册要求为准。",
                 "极速生成（通常在15秒内出图）。",
                 "专业且尊重用户隐私的用户界面。"
             ],
@@ -4016,7 +4016,7 @@
                 },
                 {
                     "aspect": "易用性",
-                    "lovart": "无需注册账户，基础提示词零学习成本。",
+                    "lovart": "请以当前注册要求为准账户，基础提示词零学习成本。",
                     "canva": "必须注册，需要花费时间在庞大的模板库中筛选。"
                 },
                 {
@@ -4052,7 +4052,7 @@
                 },
                 {
                     "q": "什么是寻找优质 Lovart alternative 的标准？",
-                    "a": "一个好的 Lovart alternative 应当同样提供基于云的快速处理和高质量输出，但很少有其他工具能匹配它“无需注册即可体验”的政策。"
+                    "a": "一个好的 Lovart alternative 应当同样提供基于云的快速处理和高质量输出，但很少有其他工具能匹配它“请以当前注册要求为准即可体验”的政策。"
                 },
                 {
                     "q": "我可以同时使用两者吗？",
@@ -5993,7 +5993,7 @@
             "title": "我们能确认的信息",
             "items": [
                 "Lovart 是一款 AI 设计平台，官网为 lovart.ai",
-                "Lovart 官网有 API 相关页面：lovart.ai/api",
+                "Lovart 官网有 API 相关页面：lovart.ai/tools/ai-api-access",
                 "Lovart 提供包含 API 或团队访问权限的付费套餐",
                 "lovart.info 是独立的第三方资讯站，并非 Lovart 官方网站"
             ]
@@ -6012,7 +6012,7 @@
             "items": [
                 {
                     "label": "Lovart API 页面",
-                    "url": "https://lovart.ai/api",
+                    "url": "https://lovart.ai/tools/ai-api-access",
                     "desc": "Lovart 官方 API 概览与访问信息。"
                 },
                 {
@@ -6030,7 +6030,7 @@
         "next_steps": {
             "title": "下一步怎么做",
             "items": [
-                "访问 lovart.ai/api 直接查看当前 API 访问状态。",
+                "访问 lovart.ai/tools/ai-api-access 直接查看当前 API 访问状态。",
                 "注册 Lovart 付费套餐，并在账户后台查找 API 相关设置。",
                 "联系 Lovart 官方支持或销售团队，申请企业/团队 API 访问权限。",
                 "查看下方的 API 文档与定价页面，获取更多背景信息。"
@@ -6041,11 +6041,11 @@
             "items": [
                 {
                     "q": "Lovart 有公开 API 吗？",
-                    "a": "根据公开信息，Lovart 官网有 API 板块（lovart.ai/api）。是否向所有用户开放自助式 API Key，目前尚未得到确认。请查看官方页面获取最新状态。"
+                    "a": "根据公开信息，Lovart 官网有 API 板块（lovart.ai/tools/ai-api-access）。是否向所有用户开放自助式 API Key，目前尚未得到确认。请查看官方页面获取最新状态。"
                 },
                 {
                     "q": "在哪里可以获取 Lovart API Key？",
-                    "a": "最可靠的方式是访问 lovart.ai/api 并登录付费账户查看。企业或合作渠道的 API 访问可能需要联系 Lovart 销售团队。"
+                    "a": "最可靠的方式是访问 lovart.ai/tools/ai-api-access 并登录付费账户查看。企业或合作渠道的 API 访问可能需要联系 Lovart 销售团队。"
                 },
                 {
                     "q": "Lovart API 有免费版吗？",
@@ -6096,12 +6096,12 @@
         },
         "quick_answer": {
             "title": "简明答案",
-            "content": "Lovart 在 lovart.ai/api 有 API 相关页面。是否存在完整、结构化的公开 API 参考文档尚未经我们独立确认。建议直接访问下方官方资源获取最新信息。"
+            "content": "Lovart 在 lovart.ai/tools/ai-api-access 有 API 相关页面。是否存在完整、结构化的公开 API 参考文档尚未经我们独立确认。建议直接访问下方官方资源获取最新信息。"
         },
         "confirmed": {
             "title": "我们能确认的信息",
             "items": [
-                "Lovart 官方 API 页面存在，地址为 lovart.ai/api",
+                "Lovart 官方 API 页面存在，地址为 lovart.ai/tools/ai-api-access",
                 "Lovart 通过官网提供与开发者相关的信息",
                 "Lovart 付费套餐可能包含 API 或程序化访问权限",
                 "lovart.info 是第三方资讯站，并非 Lovart 官方开发者门户"
@@ -6121,7 +6121,7 @@
             "items": [
                 {
                     "label": "Lovart API 页面",
-                    "url": "https://lovart.ai/api",
+                    "url": "https://lovart.ai/tools/ai-api-access",
                     "desc": "所有官方 Lovart 开发者信息的起点。"
                 },
                 {
@@ -6139,7 +6139,7 @@
         "next_steps": {
             "title": "下一步怎么做",
             "items": [
-                "访问 lovart.ai/api 作为官方开发者文档的主要来源。",
+                "访问 lovart.ai/tools/ai-api-access 作为官方开发者文档的主要来源。",
                 "登录 Lovart 付费账户，在控制台中查找文档链接。",
                 "联系 Lovart 官方支持，询问可用的开发者文档情况。",
                 "参考下方的 API Key 和 API 定价页面，获取更多背景信息。"
@@ -6150,11 +6150,11 @@
             "items": [
                 {
                     "q": "Lovart 有官方 API 文档吗？",
-                    "a": "Lovart 在 lovart.ai/api 有 API 页面。我们无法独立确认是否存在无需付费账户即可访问的完整公开 API 参考文档。"
+                    "a": "Lovart 在 lovart.ai/tools/ai-api-access 有 API 页面。我们无法独立确认是否存在无需付费账户即可访问的完整公开 API 参考文档。"
                 },
                 {
                     "q": "Lovart 有开发者门户（Developer Portal）吗？",
-                    "a": "我们无法确认是否存在独立的公开开发者门户。目前最接近的官方资源是 lovart.ai/api。"
+                    "a": "我们无法确认是否存在独立的公开开发者门户。目前最接近的官方资源是 lovart.ai/tools/ai-api-access。"
                 },
                 {
                     "q": "lovart.info 是 Lovart 官方文档站吗？",
@@ -6162,7 +6162,7 @@
                 },
                 {
                     "q": "Lovart 有 OpenAPI 或 Swagger 规范吗？",
-                    "a": "我们未能找到或核实 Lovart 是否有可公开获取的 OpenAPI 或 Swagger 规范。请查看 lovart.ai/api 获取最新信息。"
+                    "a": "我们未能找到或核实 Lovart 是否有可公开获取的 OpenAPI 或 Swagger 规范。请查看 lovart.ai/tools/ai-api-access 获取最新信息。"
                 }
             ]
         },
@@ -6211,7 +6211,7 @@
             "title": "我们能确认的信息",
             "items": [
                 "Lovart 在 lovart.ai/pricing 有包含多个订阅层级的定价页面",
-                "Lovart 在 lovart.ai/api 有 API 相关页面",
+                "Lovart 在 lovart.ai/tools/ai-api-access 有 API 相关页面",
                 "Lovart 付费套餐可能包含 API 或团队访问功能",
                 "lovart.info 是第三方资讯站，并非 Lovart 官方网站"
             ]
@@ -6235,7 +6235,7 @@
                 },
                 {
                     "label": "Lovart API 页面",
-                    "url": "https://lovart.ai/api",
+                    "url": "https://lovart.ai/tools/ai-api-access",
                     "desc": "可能包含 API 定价详情的官方 API 概览。"
                 },
                 {
@@ -6249,7 +6249,7 @@
             "title": "下一步怎么做",
             "items": [
                 "访问 lovart.ai/pricing 查看当前所有订阅套餐及其包含的功能。",
-                "查看 lovart.ai/api 是否有 API 专属定价或额度信息。",
+                "查看 lovart.ai/tools/ai-api-access 是否有 API 专属定价或额度信息。",
                 "联系 Lovart 销售团队，询问可能未公开列出的企业级 API 定价。",
                 "参考下方的 API Key 和 API 文档页面了解如何获取访问权限。"
             ]
@@ -6263,7 +6263,7 @@
                 },
                 {
                     "q": "是否有按调用次数计费的 API 定价模式？",
-                    "a": "我们无法核实是否存在按次或按 Token 计费的公开 API 定价模式。请查看 lovart.ai/api 和 lovart.ai/pricing 获取当前状态。"
+                    "a": "我们无法核实是否存在按次或按 Token 计费的公开 API 定价模式。请查看 lovart.ai/tools/ai-api-access 和 lovart.ai/pricing 获取当前状态。"
                 },
                 {
                     "q": "Lovart 免费账户是否包含 API 访问权限？",
@@ -6319,7 +6319,7 @@
         "confirmed": {
             "title": "我们能确认的信息",
             "items": [
-                "Lovart 在 lovart.ai/api 有包含部分开发者信息的 API 页面",
+                "Lovart 在 lovart.ai/tools/ai-api-access 有包含部分开发者信息的 API 页面",
                 "Lovart 付费套餐可能解锁 API 或程序化访问权限",
                 "企业合作咨询可通过 Lovart 官方渠道提交",
                 "lovart.info 是第三方资讯站，并非 Lovart 官方开发者门户"
@@ -6339,7 +6339,7 @@
             "items": [
                 {
                     "label": "Lovart API 页面",
-                    "url": "https://lovart.ai/api",
+                    "url": "https://lovart.ai/tools/ai-api-access",
                     "desc": "Lovart 官方 API 入口——从这里开始。"
                 },
                 {
@@ -6357,7 +6357,7 @@
         "next_steps": {
             "title": "下一步怎么做",
             "items": [
-                "首先查看 lovart.ai/api——Lovart 可能已更新公开 API 的可用性。",
+                "首先查看 lovart.ai/tools/ai-api-access——Lovart 可能已更新公开 API 的可用性。",
                 "注册 Lovart 付费套餐，在账户后台探索 API 相关设置。",
                 "通过 Lovart 官方网站联系他们，洽谈企业集成或合作事宜。",
                 "如果公开 API 暂时不可用，持续关注 Lovart 公告以获取未来 API 发布消息。"

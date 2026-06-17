@@ -7,11 +7,14 @@ This website does not provide official account login or image generation. For of
 - [Lovart Tutorial](https://lovart.info/lovart-tutorial): Step-by-step usage guide for common Lovart workflows.
 - [Lovart Review](https://lovart.info/lovart-review): Evaluation page covering strengths, limitations, and suitable users.
 - [Lovart Alternative](https://lovart.info/lovart-alternative): Comparison page for users evaluating alternatives and trade-offs.
+- [Lovart vs Canva](https://lovart.info/lovart-vs-canva): Dedicated workflow comparison between Lovart and Canva.
 - [Lovarte Guide](https://lovart.info/lovarte): Handles spelling variants like lovarte/lovartal/lovarts and routes users correctly.
 
 ## Common Resources
 - [Lovart Code Guide](https://lovart.info/lovart-code): Navigation page for code-related Lovart intents and developer links.
 - [Lovart AI Agent](https://lovart.info/lovart-ai-agent): Explains Lovart AI Agent intent and where to continue next.
+- [Lovart Prompt Library](https://lovart.info/lovart-prompt-library): Copy-ready design prompt examples with evidence boundaries.
+- [Lovart Prompt Generator](https://lovart.info/lovart-prompt-generator): Local prompt assembly tool that does not call Lovart APIs.
 - [Pricing](https://lovart.info/lovart-pricing): Pricing and plan orientation page.
 - [API](https://lovart.info/lovart-api): API overview and developer entry point.
 - [Support Contact](https://lovart.info/lovart-support-contact): Contact and support escalation path.

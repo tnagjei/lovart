@@ -82,6 +82,10 @@ const pageLangMap = {
     'lovart-api-documentation': ['en', 'zh'],
     'lovart-api-pricing':       ['en', 'zh'],
     'lovart-developer-options': ['en', 'zh'],
+    // SERP blueprint pages: publish English first to avoid unreviewed translation shells
+    'lovart-prompt-library':    ['en'],
+    'lovart-prompt-generator':  ['en'],
+    'lovart-vs-canva':          ['en'],
 };
 
 const config = {

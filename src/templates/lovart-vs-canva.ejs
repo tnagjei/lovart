@@ -1,0 +1,137 @@
+<%# input: static comparison data plus build helpers from build.js %>
+<%# output: /lovart-vs-canva independent comparison page %>
+<%# pos: Comparisons child page under /lovart-alternative (update this comment and src/README.md when changing file role) %>
+<%
+const pageSeo = {
+    title: 'Lovart vs Canva: Which AI Design Workflow Fits You?',
+    description: 'Compare Lovart vs Canva by workflow, brand kits, templates, editing control, free access, and practical use cases without one-sided claims.',
+    keywords: ''
+};
+const breadcrumbItems = [
+    { name: t.nav.home, href: link('/') },
+    { name: 'Lovart Alternatives', href: link('/lovart-alternative') },
+    { name: 'Lovart vs Canva', href: canonicalUrl }
+];
+const comparisonRows = [
+    ['Primary workflow', 'Prompt-first AI design agent for generating multi-asset concepts.', 'Template and editor-first design platform with AI features.'],
+    ['Best fit', 'Brand concepts, campaign packs, product visuals, creative exploration.', 'Manual layout editing, templates, presentations, team asset editing.'],
+    ['User effort', 'Describe a brief, review generated directions, iterate.', 'Pick templates, edit layout elements, manage assets manually.'],
+    ['Brand consistency', 'Useful when the brief needs related assets in one creative direction.', 'Strong when teams already have templates and brand libraries.'],
+    ['Editing control', 'AI-led iteration with less manual object-level control.', 'Direct editor control over text boxes, layers, pages, and templates.'],
+    ['Evidence status', 'Official Lovart pages describe AI design agent workflows.', 'Canva official pages describe Magic Design and template-driven tools.']
+];
+%>
+<!DOCTYPE html>
+<html lang="<%= lang %>" class="scroll-smooth">
+<head>
+    <%- include('partials/head', { pageSeo }) %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageSeo.title %></title>
+    <meta name="description" content="<%= pageSeo.description %>">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <%- include('partials/hreflang') %>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <%- include('partials/analytics') %>
+    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+</head>
+<body class="bg-neutral-light text-neutral-dark antialiased">
+<%- include('partials/header') %>
+<%- include('partials/breadcrumb', { breadcrumbItems }) %>
+<main>
+    <section class="bg-white py-16 lg:py-24 border-b border-neutral/10">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <p class="text-sm uppercase tracking-wide text-primary font-semibold mb-4">Independent comparison</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-neutral-dark mb-5">Lovart vs Canva: AI Design Agent or Template-Based Design Tool?</h1>
+            <p class="text-lg text-neutral leading-relaxed max-w-3xl">The useful answer is not which product is universally better. Lovart fits prompt-led design workflows; Canva fits template editing and manual layout control. Pick by workflow, not by hype.</p>
+            <div class="mt-8 bg-amber-50 border border-amber-200 rounded-lg p-5 text-amber-900">
+                <strong>Evidence boundary:</strong> video opinions and third-party comparisons are not proof. Current prices, free limits, and commercial rights should be verified on the official product sites.
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Quick Verdict</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <article class="bg-white border border-neutral/10 rounded-lg p-6"><h3 class="text-xl font-bold mb-3">Choose Lovart if...</h3><p class="text-neutral leading-relaxed">You want to move from a plain-language brief into logos, brand assets, product visuals, social concepts, or campaign directions with less manual assembly.</p></article>
+                <article class="bg-white border border-neutral/10 rounded-lg p-6"><h3 class="text-xl font-bold mb-3">Choose Canva if...</h3><p class="text-neutral leading-relaxed">You need a mature editor, reusable templates, presentations, manual layout control, and team workflows around existing brand assets.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Workflow Differences</h2>
+            <div class="overflow-x-auto rounded-lg border border-neutral/10">
+                <table class="w-full bg-white text-left">
+                    <thead class="bg-neutral-light"><tr><th class="p-4">Dimension</th><th class="p-4 text-primary">Lovart</th><th class="p-4">Canva</th></tr></thead>
+                    <tbody class="divide-y divide-neutral/10">
+                        <% comparisonRows.forEach(function(row) { %>
+                        <tr><td class="p-4 font-semibold"><%= row[0] %></td><td class="p-4"><%= row[1] %></td><td class="p-4"><%= row[2] %></td></tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Brand Kit and Campaign Assets</h2>
+            <p class="text-neutral leading-relaxed mb-6">Lovart is stronger when the input is a creative brief and the desired output is a connected asset set. Canva is stronger when you already have a template direction and want precise editing, resizing, and collaboration around known layouts.</p>
+            <div class="grid md:grid-cols-3 gap-5">
+                <article class="bg-white rounded-lg p-5 border border-neutral/10"><h3 class="font-bold mb-2">Logo and identity</h3><p class="text-sm text-neutral">Use Lovart for concept exploration, then verify legal and trademark constraints before public use.</p></article>
+                <article class="bg-white rounded-lg p-5 border border-neutral/10"><h3 class="font-bold mb-2">Social media</h3><p class="text-sm text-neutral">Use Canva if you need repeatable manual template edits across many scheduled posts.</p></article>
+                <article class="bg-white rounded-lg p-5 border border-neutral/10"><h3 class="font-bold mb-2">Campaign packs</h3><p class="text-sm text-neutral">Use Lovart when one brief needs multiple related directions quickly.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-6">Templates and Editing Control</h2>
+            <p class="text-neutral leading-relaxed mb-4">Canva's advantage is editor maturity: templates, manual text editing, team assets, and predictable layout resizing. Lovart's advantage is generation: a user can describe the creative direction and ask the system to form a design direction.</p>
+            <p class="text-neutral leading-relaxed">That means Lovart vs Canva is a workflow decision: AI-first ideation and asset generation, or template-first editing and layout production.</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-6">Pricing and Free Access</h2>
+            <p class="text-neutral leading-relaxed">Do not choose based on old free-tier screenshots or video titles. Pricing, free credits, export limits, watermark rules, and commercial rights can change. Check the current Lovart and Canva official pricing pages before committing client work.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="<%= link('/lovart-free') %>" class="px-5 py-3 rounded-lg bg-primary text-white font-semibold">Lovart free guide</a>
+                <a href="<%= link('/lovart-pricing') %>" class="px-5 py-3 rounded-lg border border-primary text-primary bg-white font-semibold">Lovart pricing guide</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-6">Video Opinions Are Not Proof</h2>
+            <div class="aspect-video bg-neutral-light rounded-lg overflow-hidden border border-neutral/10">
+                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/MGat0jAwBDU" title="Lovart vs Canva video opinion" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <p class="mt-4 text-sm text-neutral">Fallback link: <a class="text-primary font-semibold" href="https://www.youtube.com/shorts/MGat0jAwBDU" target="_blank" rel="noopener noreferrer">watch on YouTube</a>. This video is a visual reference only and does not verify product superiority, pricing, or feature status.</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-t border-neutral/10">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Lovart vs Canva FAQ</h2>
+            <div class="space-y-4">
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Is Lovart better than Canva?</summary><p class="mt-3 text-neutral">Not universally. Lovart fits prompt-led asset generation. Canva fits manual template editing and team production.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Which is better for brand kits?</summary><p class="mt-3 text-neutral">Lovart can help explore brand directions. Canva can help maintain and edit established templates. The stronger choice depends on whether you are creating or managing assets.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Which is better for free use?</summary><p class="mt-3 text-neutral">Verify current limits on the official sites. Free plans, export rights, and watermarks can change.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Can I use both?</summary><p class="mt-3 text-neutral">Yes. A practical workflow is to ideate assets in an AI design agent, then refine layout and team templates in a manual editor.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Is this page official?</summary><p class="mt-3 text-neutral">No. lovart.info is an independent guide site and is not affiliated with Lovart or Canva.</p></details>
+            </div>
+        </div>
+    </section>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>

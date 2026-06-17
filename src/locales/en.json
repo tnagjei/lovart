@@ -4,20 +4,20 @@
         "description": "Unlock your creative potential with Lovart, the AI-powered design platform. Create stunning visuals, collaborate effectively, and streamline your workflow. Try Lovart now!",
         "keywords": "",
         "prompt_guide": {
-            "title": "Lovart AI Prompt Guide: Logo & Brand Design Tips",
-            "description": "Discover proven Lovart AI prompt formulas to create minimalist logos, vintage badges & cyberpunk mascots. Copy ready-to-use prompts and start designing free.",
+            "title": "Lovart Prompt Guide: Copy-Ready AI Design Prompts",
+            "description": "Use this Lovart prompt guide for logos, brand kits, social posts, product mockups, and videos with copy-ready examples.",
             "keywords": "",
             "canonical_url": "https://lovart.info/lovart-prompt-guide"
         },
         "lovart_logo": {
-            "title": "Lovart Logo Maker: Create AI Logos Free in Seconds",
-            "description": "Use Lovart logo maker to generate stunning AI logos for free. Browse 8 lovart logo styles, copy prompts, and download in seconds — no design skills needed.",
+            "title": "Lovart Logo Maker: AI Logo Prompts and Safety Checks",
+            "description": "Use Lovart logo prompts for brand marks while checking signup, download, commercial-use, watermark, and trademark risks before publishing.",
             "keywords": "",
             "canonical_url": "https://lovart.info/lovart-logo"
         },
         "lovart_brand_kit": {
-            "title": "Lovart Brand Kit: Keep Your Designs Consistent",
-            "description": "The Lovart brand kit stores your colors, fonts, and logos in one place — so every design stays on-brand. Explore brand kit features and keep your team aligned.",
+            "title": "AI Brand Kit Generator Free Guide for Lovart",
+            "description": "See how Lovart fits AI brand kit generator workflows, from logo prompts to brand assets, free-limit checks, and tool comparisons.",
             "keywords": "",
             "canonical_url": "https://lovart.info/lovart-brand-kit"
         },
@@ -2312,7 +2312,7 @@
                 "title": "Enterprise",
                 "price": "Custom",
                 "features": [
-                    "• Unlimited API calls",
+                    "• Contact sales calls",
                     "• Custom integrations",
                     "• Dedicated support"
                 ]
@@ -2463,18 +2463,18 @@
     },
     "lovart_free_page": {
         "seo": {
-            "title": "Free Trial - Lovart AI Design Platform",
-            "description": "Experience Lovart AI design platform's core features for free. Explore free version limits, feature introductions, trial period details, and feature comparison with paid versions. Learn how to start using Lovart for AI-assisted creative design.",
+            "title": "Lovart AI Free Trial Guide: What Is Confirmed",
+            "description": "Check Lovart AI free access safely, including official links, current trial verification, login requirements, pricing notes, and APK warnings.",
             "keywords": "Lovart free trial, AI design free, is lovart ai free, Lovart free policy, free design tool"
         },
         "hero": {
             "title": "Lovart Free Trial",
-            "description": "Yes, Lovart offers a free trial! Experience our powerful AI design features and get started without a credit card.",
+            "description": "Lovart may offer free or trial access, but limits, signup requirements, and available features can change. Check the official pricing page before relying on it.",
             "badges": [
-                "💳 No Credit Card Required",
-                "⏰ 14-Day Free Trial",
-                "🎨 Full Feature Experience",
-                "🚀 Start Immediately"
+                "💳 Check Signup Terms",
+                "⏰ Verify Current Trial",
+                "🎨 Feature Access May Vary",
+                "🚀 Use Official Site"
             ],
             "cta_primary": "Start Free Trial",
             "cta_secondary": "Learn About Free Features"
@@ -2485,7 +2485,7 @@
                 "title": "AI Design Generation",
                 "desc": "Generate professional designs with AI, including logos, posters, social media images, etc.",
                 "list": [
-                    "10 Free Generations/Month",
+                    "Check current free credits",
                     "Basic Design Templates"
                 ]
             },
@@ -2493,7 +2493,7 @@
                 "title": "Template Library",
                 "desc": "Access a rich library of design templates to quickly start your design project",
                 "list": [
-                    "100+ Free Templates",
+                    "Check current template access",
                     "Multiple Design Categories"
                 ]
             },
@@ -2584,8 +2584,8 @@
                 {
                     "name": "API Access",
                     "free": "❌",
-                    "pro": "1000 Calls/Month",
-                    "enterprise": "Unlimited API"
+                    "pro": "Check API terms",
+                    "enterprise": "Contact sales"
                 },
                 {
                     "name": "Priority Support",
@@ -2979,7 +2979,7 @@
         },
         "upsell": {
             "heading": "Ready to Build Your Brand Kit?",
-            "desc": "The Lovart brand kit is available on Pro and Team plans. Start with a free trial to explore all brand kit features — no credit card required.",
+            "desc": "The Lovart brand kit is available on Pro and Team plans. Start with a free trial to explore all brand kit features — check current signup terms.",
             "cta_primary": "Start Free Trial",
             "cta_secondary": "View Pricing Plans"
         },
@@ -3312,7 +3312,7 @@
                 },
                 {
                     "q": "Is Lovart free to use without an invitation code?",
-                    "a": "Yes. Lovart's free plan requires only an email address — no Lovart invitation code, no credit card, and no referral is needed. The free tier gives immediate access to AI design generation. Paid plans (Basic and Pro) unlock the Nano Banana model, unlimited generation credits, and priority rendering, all without any invitation code restriction."
+                    "a": "Lovart no longer appears to require a public invitation code, but signup steps, payment prompts, free credits, and paid-plan limits can change. Check the current official Lovart access and pricing pages before relying on any free-tier detail."
                 },
                 {
                     "q": "What happened to the Lovart beta program?",
@@ -3882,7 +3882,7 @@
             "heading": "The 30-Second Verdict (Pros & Cons)",
             "desc": "A quick summary of our findings after extensive testing.",
             "pros": [
-                "Free, No Registration Required for basic access.",
+                "Free, current signup requirements may apply for basic access.",
                 "Lightning-fast outputs (usually under 15 seconds).",
                 "Professional UI that respects user privacy."
             ],
@@ -3959,8 +3959,8 @@
     },
     "lovart_alternative_page": {
         "seo": {
-            "title": "Best Lovart Alternatives in 2026 (Lovart vs Canva)",
-            "description": "Looking for a Lovart alternative? See our deep dive into Lovart vs Canva, and discover how to choose the right AI design generator for your needs.",
+            "title": "Best Lovart Alternatives by Workflow in 2026",
+            "description": "Compare Lovart alternatives by workflow, free limits, Canva, Midjourney, open source risk, and practical AI design use cases.",
             "canonical_url": "https://lovart.info/lovart-alternative"
         },
         "hero": {
@@ -3986,7 +3986,7 @@
                 },
                 {
                     "aspect": "Ease of Use",
-                    "lovart": "No registration needed, zero learning curve for basic prompts.",
+                    "lovart": "Check current signup requirements, zero learning curve for basic prompts.",
                     "canva": "Requires account, huge template library to navigate."
                 },
                 {
@@ -4043,7 +4043,7 @@
             "subtitle": "A complete beginner tutorial. Go from zero to professional assets in just three simple steps.",
             "cta_external": "Launch the App",
             "cta_internal": "View Features",
-            "content": "Welcome to the official <strong>Lovart Tutorial</strong>. If you are wondering <strong>how to use Lovart</strong> to its fullest potential, you are in the right place. This guide is designed for complete beginners who want to leverage AI for rapid design. One of the platform's biggest advantages is that it is free to try with no registration required. In this Lovart tutorial, we will walk you through the interface and execute three practical workflows that will immediately upgrade your creative output."
+            "content": "Welcome to the official <strong>Lovart Tutorial</strong>. If you are wondering <strong>how to use Lovart</strong> to its fullest potential, you are in the right place. This guide is designed for complete beginners who want to leverage AI for rapid design. One of the platform's biggest advantages is that it is free to try with current signup requirements may apply. In this Lovart tutorial, we will walk you through the interface and execute three practical workflows that will immediately upgrade your creative output."
         },
         "getting_started": {
             "heading": "Getting Started Without Registration",
@@ -4309,8 +4309,8 @@
     },
     "lovart_ai_agent_page": {
         "seo": {
-            "title": "Lovart AI Agent Explained: Agent vs Image Generator",
-            "description": "What is a Lovart AI agent? Learn how agent workflows differ from basic image generators, with practical use cases, workflow examples, and tutorial links.",
+            "title": "What Is an AI Design Agent? Lovart Workflow Guide",
+            "description": "Learn what an AI design agent does, how Lovart differs from image generators, and where free access, videos, and workflow claims need verification.",
             "keywords": "",
             "canonical_url": "https://lovart.info/lovart-ai-agent"
         },
@@ -4470,8 +4470,8 @@
     },
     "ai_image_generator_page": {
         "seo": {
-            "title": "AI Image Generator | Lovart AI Design Platform",
-            "description": "Discover how Lovart AI image generator creates stunning visuals from text prompts. Explore features, use cases, and how to get started with AI image generation.",
+            "title": "Lovart AI Image Generator: Design Assets From Prompts",
+            "description": "Use Lovart AI image generator as part of a design agent workflow for brand assets, product visuals, campaign concepts, and prompt examples.",
             "keywords": ""
         },
         "hero": {
@@ -5963,7 +5963,7 @@
             "title": "What We Could Confirm",
             "items": [
                 "Lovart is an AI design platform available at lovart.ai",
-                "Lovart has a public API-related page at lovart.ai/api",
+                "Lovart has a public API-related page at lovart.ai/tools/ai-api-access",
                 "Lovart offers paid plans that may include API or team access",
                 "lovart.info is a third-party informational resource — not the official Lovart site"
             ]
@@ -5982,7 +5982,7 @@
             "items": [
                 {
                     "label": "Lovart API Page",
-                    "url": "https://lovart.ai/api",
+                    "url": "https://lovart.ai/tools/ai-api-access",
                     "desc": "The official Lovart API overview and access information."
                 },
                 {
@@ -6000,7 +6000,7 @@
         "next_steps": {
             "title": "What to Do Next",
             "items": [
-                "Visit lovart.ai/api to check the current API access status directly.",
+                "Visit lovart.ai/tools/ai-api-access to check the current API access status directly.",
                 "Sign up for a paid Lovart plan and look for API settings in your account dashboard.",
                 "Contact Lovart support or sales for enterprise / team API access requests.",
                 "Check the Lovart API Documentation and Pricing pages below for more context."
@@ -6011,11 +6011,11 @@
             "items": [
                 {
                     "q": "Does Lovart have a public API?",
-                    "a": "Based on publicly available information, Lovart has an API section on their site (lovart.ai/api). Whether a fully open, self-serve API key is available to all users has not been confirmed. Check the official page for the latest status."
+                    "a": "Based on publicly available information, Lovart has an API section on their site (lovart.ai/tools/ai-api-access). Whether a fully open, self-serve API key is available to all users has not been confirmed. Check the official page for the latest status."
                 },
                 {
                     "q": "Where can I get a Lovart API key?",
-                    "a": "The most reliable path is to visit lovart.ai/api and sign into your paid account. Enterprise or partnership API access may require contacting Lovart sales."
+                    "a": "The most reliable path is to visit lovart.ai/tools/ai-api-access and sign into your paid account. Enterprise or partnership API access may require contacting Lovart sales."
                 },
                 {
                     "q": "Is there a free Lovart API tier?",
@@ -6066,12 +6066,12 @@
         },
         "quick_answer": {
             "title": "Quick Answer",
-            "content": "Lovart has an API page at lovart.ai/api. Whether a full, structured API reference (endpoints, auth flows, SDKs) is publicly available has not been independently confirmed by us. We recommend going directly to the official resources listed below."
+            "content": "Lovart has an API page at lovart.ai/tools/ai-api-access. Whether a full, structured API reference (endpoints, auth flows, SDKs) is publicly available has not been independently confirmed by us. We recommend going directly to the official resources listed below."
         },
         "confirmed": {
             "title": "What We Could Confirm",
             "items": [
-                "Lovart's official API page exists at lovart.ai/api",
+                "Lovart's official API page exists at lovart.ai/tools/ai-api-access",
                 "Lovart offers developer-related information through its official website",
                 "Lovart has paid plans that may include API or programmatic access",
                 "lovart.info is a third-party resource, not the official Lovart developer portal"
@@ -6091,7 +6091,7 @@
             "items": [
                 {
                     "label": "Lovart API Page",
-                    "url": "https://lovart.ai/api",
+                    "url": "https://lovart.ai/tools/ai-api-access",
                     "desc": "The starting point for all official Lovart developer information."
                 },
                 {
@@ -6109,7 +6109,7 @@
         "next_steps": {
             "title": "What to Do Next",
             "items": [
-                "Go to lovart.ai/api as the primary official source for developer documentation.",
+                "Go to lovart.ai/tools/ai-api-access as the primary official source for developer documentation.",
                 "Log in to a paid Lovart account and explore the dashboard for documentation links.",
                 "Contact Lovart support to ask about available developer documentation.",
                 "Consider reviewing the Lovart API Key and API Pricing pages for additional context."
@@ -6120,11 +6120,11 @@
             "items": [
                 {
                     "q": "Is there official Lovart API documentation?",
-                    "a": "Lovart has an API page at lovart.ai/api. We could not independently confirm whether a full, public API reference document is available without a paid account."
+                    "a": "Lovart has an API page at lovart.ai/tools/ai-api-access. We could not independently confirm whether a full, public API reference document is available without a paid account."
                 },
                 {
                     "q": "Does Lovart have a developer portal?",
-                    "a": "We could not confirm the existence of a dedicated public developer portal. The closest official resource is lovart.ai/api."
+                    "a": "We could not confirm the existence of a dedicated public developer portal. The closest official resource is lovart.ai/tools/ai-api-access."
                 },
                 {
                     "q": "Is lovart.info the official Lovart documentation site?",
@@ -6132,7 +6132,7 @@
                 },
                 {
                     "q": "Does Lovart have an OpenAPI or Swagger spec?",
-                    "a": "We were unable to locate or verify a publicly available OpenAPI or Swagger specification for Lovart. Check lovart.ai/api for the latest."
+                    "a": "We were unable to locate or verify a publicly available OpenAPI or Swagger specification for Lovart. Check lovart.ai/tools/ai-api-access for the latest."
                 }
             ]
         },
@@ -6181,7 +6181,7 @@
             "title": "What We Could Confirm",
             "items": [
                 "Lovart has a pricing page at lovart.ai/pricing with subscription tiers",
-                "Lovart has an API page at lovart.ai/api",
+                "Lovart has an API page at lovart.ai/tools/ai-api-access",
                 "Paid Lovart plans may include API or team access features",
                 "lovart.info is a third-party informational resource, not the official Lovart site"
             ]
@@ -6205,7 +6205,7 @@
                 },
                 {
                     "label": "Lovart API Page",
-                    "url": "https://lovart.ai/api",
+                    "url": "https://lovart.ai/tools/ai-api-access",
                     "desc": "Official Lovart API overview, which may include pricing details."
                 },
                 {
@@ -6219,7 +6219,7 @@
             "title": "What to Do Next",
             "items": [
                 "Visit lovart.ai/pricing to see all current subscription plans and what they include.",
-                "Check lovart.ai/api for any API-specific pricing or credit information.",
+                "Check lovart.ai/tools/ai-api-access for any API-specific pricing or credit information.",
                 "Contact Lovart sales for enterprise API pricing that may not be publicly listed.",
                 "Review the Lovart API Key and Documentation pages for gaining access."
             ]
@@ -6233,7 +6233,7 @@
                 },
                 {
                     "q": "Is there a pay-per-call API pricing model?",
-                    "a": "We could not verify whether a per-call or per-token API pricing model is publicly available. Check lovart.ai/api and lovart.ai/pricing for the current state."
+                    "a": "We could not verify whether a per-call or per-token API pricing model is publicly available. Check lovart.ai/tools/ai-api-access and lovart.ai/pricing for the current state."
                 },
                 {
                     "q": "Does the free Lovart account include API access?",
@@ -6289,7 +6289,7 @@
         "confirmed": {
             "title": "What We Could Confirm",
             "items": [
-                "Lovart has an API page at lovart.ai/api with some developer information",
+                "Lovart has an API page at lovart.ai/tools/ai-api-access with some developer information",
                 "Lovart offers paid plans that may unlock API or programmatic access",
                 "Enterprise and partnership inquiries can be directed to Lovart's official channels",
                 "lovart.info is a third-party resource — not the official Lovart developer portal"
@@ -6309,7 +6309,7 @@
             "items": [
                 {
                     "label": "Lovart API Page",
-                    "url": "https://lovart.ai/api",
+                    "url": "https://lovart.ai/tools/ai-api-access",
                     "desc": "The official Lovart API entry point — start here."
                 },
                 {
@@ -6327,7 +6327,7 @@
         "next_steps": {
             "title": "What to Do Next",
             "items": [
-                "Check lovart.ai/api first — Lovart may have updated their public API availability.",
+                "Check lovart.ai/tools/ai-api-access first — Lovart may have updated their public API availability.",
                 "Sign up for a Lovart paid plan and explore API settings in your account dashboard.",
                 "Contact Lovart via their official site for enterprise integration or partnership discussions.",
                 "If a public API is not yet available, monitor Lovart's announcements for future releases."

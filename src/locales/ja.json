@@ -1969,7 +1969,7 @@
                 "title": "Enterprise",
                 "price": "Custom",
                 "features": [
-                    "• Unlimited API calls",
+                    "• Contact sales calls",
                     "• Custom integrations",
                     "• Dedicated support"
                 ]
@@ -2126,12 +2126,12 @@
         },
         "hero": {
             "title": "Lovart Free Trial",
-            "description": "Yes, Lovart offers a free trial! Experience our powerful AI design features and get started without a credit card.",
+            "description": "Lovart may offer free or trial access, but limits, signup requirements, and available features can change. Check the official pricing page before relying on it.",
             "badges": [
-                "💳 No Credit Card Required",
-                "⏰ 14-Day Free Trial",
-                "🎨 Full Feature Experience",
-                "🚀 Start Immediately"
+                "💳 Check Signup Terms",
+                "⏰ Verify Current Trial",
+                "🎨 Feature Access May Vary",
+                "🚀 Use Official Site"
             ],
             "cta_primary": "Start Free Trial",
             "cta_secondary": "Learn About Free Features"
@@ -2142,7 +2142,7 @@
                 "title": "AI Design Generation",
                 "desc": "Generate professional designs with AI, including logos, posters, social media images, etc.",
                 "list": [
-                    "10 Free Generations/Month",
+                    "Check current free credits",
                     "Basic Design Templates"
                 ]
             },
@@ -2150,7 +2150,7 @@
                 "title": "Template Library",
                 "desc": "Access a rich library of design templates to quickly start your design project",
                 "list": [
-                    "100+ Free Templates",
+                    "Check current template access",
                     "Multiple Design Categories"
                 ]
             },
@@ -2241,8 +2241,8 @@
                 {
                     "name": "API Access",
                     "free": "❌",
-                    "pro": "1000 Calls/Month",
-                    "enterprise": "Unlimited API"
+                    "pro": "Check API terms",
+                    "enterprise": "Contact sales"
                 },
                 {
                     "name": "Priority Support",
