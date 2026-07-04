@@ -110,6 +110,56 @@
       </div>
     </section>
 
+    <!-- API Status Table -->
+    <section id="api-status" class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Officially Confirmed, Pending, and Third-Party API Claims</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        This page separates API access from a full public API reference. An official Lovart site page can confirm that API access is a topic, but it does not by itself confirm public endpoints, SDKs, rate limits, or a self-serve dashboard.
+      </p>
+      <p class="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-4">Last checked: 2026-07-04. Unknown fields stay pending unless Lovart publishes them.</p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-gray-50 border-b border-gray-200">
+              <th class="p-3 font-semibold text-gray-900">Claim</th>
+              <th class="p-3 font-semibold text-gray-900">What to check</th>
+              <th class="p-3 font-semibold text-gray-900">Evidence label</th>
+              <th class="p-3 font-semibold text-gray-900">Safe action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr><td class="p-3 font-medium">Official API access page exists</td><td class="p-3 text-gray-700">Open the official Lovart site navigation or API access page.</td><td class="p-3 text-green-700 font-semibold">verified</td><td class="p-3 text-gray-700">Use official entry points only.</td></tr>
+            <tr><td class="p-3 font-medium">Public endpoint list exists</td><td class="p-3 text-gray-700">Look for documented base URL, auth, and endpoint examples.</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3 text-gray-700">Do not invent an endpoint.</td></tr>
+            <tr><td class="p-3 font-medium">Self-serve API key exists</td><td class="p-3 text-gray-700">Check account settings after login, then official support if absent.</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3 text-gray-700">Do not promise a visible key.</td></tr>
+            <tr><td class="p-3 font-medium">API pricing is separate</td><td class="p-3 text-gray-700">Check official pricing and any API-specific plan notes.</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3 text-gray-700">Avoid fixed numbers unless current.</td></tr>
+            <tr><td class="p-3 font-medium">SDK exists</td><td class="p-3 text-gray-700">Look for official npm, GitHub, or docs links from Lovart.</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3 text-gray-700">Do not install third-party wrappers blindly.</td></tr>
+            <tr><td class="p-3 font-medium">OpenAPI spec exists</td><td class="p-3 text-gray-700">Search only official docs or official repository links.</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3 text-gray-700">Do not publish fake schema.</td></tr>
+            <tr><td class="p-3 font-medium">Third-party API pages are accurate</td><td class="p-3 text-gray-700">Compare with official Lovart docs and support answers.</td><td class="p-3 text-orange-700 font-semibold">reported</td><td class="p-3 text-gray-700">Use as research leads only.</td></tr>
+            <tr><td class="p-3 font-medium">Hidden or private API routes are safe</td><td class="p-3 text-gray-700">Avoid scraping app traffic or private endpoints.</td><td class="p-3 text-red-700 font-semibold">unsafe</td><td class="p-3 text-gray-700">Use official access channels.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Chinese API FAQ -->
+    <section id="api-call" class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Chinese API FAQ</h2>
+      <div class="space-y-4">
+        <details id="api-faq" class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden group">
+          <summary class="flex justify-between items-center px-5 py-4 cursor-pointer font-semibold text-gray-900 list-none">Lovart 有 API 吗？</summary>
+          <div class="px-5 pb-4 text-gray-700 leading-relaxed">官方页面可以证明 API access 是一个可核验入口，但完整公开文档、endpoint（接口地址）、SDK（软件开发工具包）和 rate limit（速率限制）仍应标记为 pending（待验证）。</div>
+        </details>
+        <details class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden group">
+          <summary class="flex justify-between items-center px-5 py-4 cursor-pointer font-semibold text-gray-900 list-none">Lovart API 怎么调用？</summary>
+          <div class="px-5 pb-4 text-gray-700 leading-relaxed">先从官方 Lovart 入口或账号后台核验是否有 API access（接口接入）。在没有官方 endpoint、认证方式和示例前，不要复制第三方 wrapper（接口封装器）或伪造调用代码。</div>
+        </details>
+        <details class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden group">
+          <summary class="flex justify-between items-center px-5 py-4 cursor-pointer font-semibold text-gray-900 list-none">Lovart API key 在哪里？</summary>
+          <div class="px-5 pb-4 text-gray-700 leading-relaxed">检查账号设置、开发者页面、官方 pricing（价格）说明和官方 support（支持）渠道。如果账号里没有明确入口，就只能写 pending，不能承诺一定存在 self-serve API key（自助接口密钥）。</div>
+        </details>
+      </div>
+    </section>
+
     <!-- Official Links -->
     <section class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
       <h2 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">

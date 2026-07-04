@@ -8,6 +8,8 @@ This website does not provide official account login or image generation. For of
 - [Lovart Review](https://lovart.info/lovart-review): Evaluation page covering strengths, limitations, and suitable users.
 - [Lovart Alternative](https://lovart.info/lovart-alternative): Comparison page for users evaluating alternatives and trade-offs.
 - [Lovart vs Canva](https://lovart.info/lovart-vs-canva): Dedicated workflow comparison between Lovart and Canva.
+- [Lovart vs Nano Banana](https://lovart.info/lovart-vs-nano-banana): Evidence-bounded comparison between Lovart and Nano Banana workflows.
+- [Lovart vs Weavy](https://lovart.info/lovart-vs-weavy): Comparison between Lovart and Weavy, now Figma Weave.
 - [Lovarte Guide](https://lovart.info/lovarte): Handles spelling variants like lovarte/lovartal/lovarts and routes users correctly.
 
 ## Common Resources

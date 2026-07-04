@@ -145,6 +145,26 @@ const page = t.lovart_ai_code_page;
                                     </div>
 
                                     <div class="animate-fade-in-up" style="animation-delay: 0.8s;">
+                                        <h2 id="github" class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
+                                            Lovart GitHub and Open Source Status
+                                        </h2>
+                                        <p class="text-neutral mb-3">
+                                            Treat "Lovart GitHub" searches carefully. This page has not verified an official Lovart GitHub organization or official SDK from a primary Lovart source. Third-party repositories can be useful examples, but they should stay reported until Lovart links to them.
+                                        </p>
+                                        <div class="bg-white border border-neutral-light/50 rounded-lg p-5 mb-8">
+                                            <div class="overflow-x-auto">
+                                                <table class="w-full text-left text-sm">
+                                                    <thead class="bg-neutral-light"><tr><th class="p-3">Item</th><th class="p-3">Status</th><th class="p-3">Safe handling</th></tr></thead>
+                                                    <tbody class="divide-y divide-neutral-light/50">
+                                                        <tr><td class="p-3 font-semibold">Official Lovart GitHub</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3">Require an official Lovart link before treating it as authoritative.</td></tr>
+                                                        <tr><td class="p-3 font-semibold">SDK or API wrapper</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3">Do not paste secrets into unverified code or run unknown packages with account tokens.</td></tr>
+                                                        <tr><td class="p-3 font-semibold">Community demos</td><td class="p-3 text-orange-700 font-semibold">reported</td><td class="p-3">Use only as implementation inspiration after code review.</td></tr>
+                                                        <tr><td class="p-3 font-semibold">Hidden API scripts</td><td class="p-3 text-red-700 font-semibold">unsafe</td><td class="p-3">Avoid private endpoint scraping and credential collection.</td></tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
                                         <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4">
                                             <%= page.resources.title %>
                                         </h2>

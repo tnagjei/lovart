@@ -1,0 +1,136 @@
+<%# input: static comparison evidence and build helpers from build.js %>
+<%# output: /lovart-vs-weavy independent comparison page %>
+<%# pos: Comparisons child page under /lovart-alternative (update this comment and src/README.md when changing file role) %>
+<%
+const pageSeo = {
+    title: 'Lovart vs Weavy: AI Design Agent or Node Workflow?',
+    description: 'Compare Lovart and Weavy, now Figma Weave, by workflow, brand consistency, output control, pricing checks, and creative team fit.',
+    keywords: ''
+};
+const breadcrumbItems = [
+    { name: t.nav.home, href: link('/') },
+    { name: 'Lovart Alternatives', href: link('/lovart-alternative') },
+    { name: 'Lovart vs Weavy', href: canonicalUrl }
+];
+const comparisonRows = [
+    ['Product identity', 'Lovart presents itself as an AI design agent.', 'Weavy now points users to Figma Weave at weave.figma.com.'],
+    ['Workflow shape', 'Brief-first generation for connected creative assets.', 'Node-based creative workflows with multiple models and editing tools.'],
+    ['Best fit', 'Founders, marketers, and teams that want generated campaign assets.', 'Creative pros who want model mixing, compositing, and output control.'],
+    ['Brand consistency', 'Lovart official pages describe style consistency across iterations.', 'Figma Weave emphasizes workflow control and professional editing tools.'],
+    ['Output control', 'Natural-language iteration and generated asset sets.', 'Layer, type, blend, inpaint, outpaint, crop, upscale, and related controls.'],
+    ['Evidence status', 'Lovart claims are limited to official Lovart pages.', 'Weavy rename and workflow claims are limited to the official Figma Weave site.']
+];
+%>
+<!DOCTYPE html>
+<html lang="<%= lang %>" class="scroll-smooth">
+<head>
+    <%- include('partials/head', { pageSeo }) %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageSeo.title %></title>
+    <meta name="description" content="<%= pageSeo.description %>">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <%- include('partials/hreflang') %>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <%- include('partials/analytics') %>
+    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+</head>
+<body class="bg-neutral-light text-neutral-dark antialiased">
+<%- include('partials/header') %>
+<%- include('partials/breadcrumb', { breadcrumbItems }) %>
+<main>
+    <section class="bg-white py-16 lg:py-24 border-b border-neutral/10">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <p class="text-sm uppercase tracking-wide text-primary font-semibold mb-4">Independent comparison</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-neutral-dark mb-5">Lovart vs Weavy: AI Design Agent or Node-Based Creative Workflow?</h1>
+            <p class="text-lg text-neutral leading-relaxed max-w-3xl">The live Weavy destination states that Weavy is now Figma Weave. That changes the comparison: Lovart is easier to evaluate as a brief-first design agent, while Figma Weave is closer to a professional node workflow for controlling models, layers, and edits.</p>
+            <div class="mt-8 bg-amber-50 border border-amber-200 rounded-lg p-5 text-amber-900">
+                <strong>Evidence boundary:</strong> rename and workflow details are from the official Figma Weave site. Pricing, availability, and team terms still need a same-day check.
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Quick Verdict</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <article class="bg-white border border-neutral/10 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-3">Choose Lovart if...</h3>
+                    <p class="text-neutral leading-relaxed">You want a direct path from a plain-language creative brief to brand, product, social, and campaign assets.</p>
+                </article>
+                <article class="bg-white border border-neutral/10 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-3">Choose Figma Weave if...</h3>
+                    <p class="text-neutral leading-relaxed">You want node-based control, multiple AI models, compositing tools, and more professional editing decisions in the workflow.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">What Each Tool Is</h2>
+            <div class="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-8">
+                <h2 class="text-2xl font-bold text-amber-950 mb-3">What Weavy Refers To</h2>
+                <p class="text-amber-900 leading-relaxed">In this execution, Weavy refers to the current official Figma Weave destination at weave.figma.com. Old Weavy claims should be checked again before reuse.</p>
+            </div>
+            <div class="overflow-x-auto rounded-lg border border-neutral/10">
+                <table class="w-full bg-white text-left">
+                    <thead class="bg-neutral-light">
+                        <tr><th class="p-4">Dimension</th><th class="p-4 text-primary">Lovart</th><th class="p-4">Weavy / Figma Weave</th></tr>
+                    </thead>
+                    <tbody class="divide-y divide-neutral/10">
+                        <% comparisonRows.forEach(function(row) { %>
+                        <tr><td class="p-4 font-semibold"><%= row[0] %></td><td class="p-4"><%= row[1] %></td><td class="p-4"><%= row[2] %></td></tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-5xl space-y-12">
+            <div>
+                <h2 class="text-3xl font-bold text-neutral-dark mb-5">Workflow Comparison</h2>
+                <p class="text-neutral leading-relaxed">Lovart is the lower-friction route when the job starts as a brand or campaign brief. Figma Weave is better suited when the user expects model selection, node logic, masks, layers, inpainting, upscaling, and other explicit production controls.</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-neutral-dark mb-5">Brand Consistency</h2>
+                <p class="text-neutral leading-relaxed">Lovart official pages describe style consistency across iterations. Figma Weave emphasizes scalable workflows and professional editing tools, so consistency depends more on how the user builds and reuses the workflow.</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-neutral-dark mb-5">Output Control</h2>
+                <p class="text-neutral leading-relaxed">Choose Lovart when speed from brief to related assets matters most. Choose Figma Weave when detailed control over layers, type, blends, inpainting, cropping, and model combinations matters more than a simple prompt flow.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-5">Pricing Checks</h2>
+            <p class="text-neutral leading-relaxed mb-5">Before choosing either tool, check pricing, credits, export limits, team seats, commercial rights, and whether your account can access the exact models or workflows shown in demos.</p>
+            <div class="flex flex-wrap gap-3">
+                <a href="<%= link('/lovart-pricing') %>" class="px-5 py-3 rounded-lg bg-primary text-white font-semibold">Lovart pricing guide</a>
+                <a href="https://weave.figma.com/" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-lg border border-primary text-primary bg-white font-semibold">Open Figma Weave</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-t border-neutral/10">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Lovart vs Weavy FAQ</h2>
+            <div class="space-y-4">
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Is Weavy still called Weavy?</summary><p class="mt-3 text-neutral">The official destination says Weavy is now Figma Weave, so current comparisons should use the Figma Weave name and website.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Which is easier for non-designers?</summary><p class="mt-3 text-neutral">Lovart is likely easier if the user wants a brief-first design agent. Figma Weave is better for users who understand workflow nodes and editing controls.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Which gives more output control?</summary><p class="mt-3 text-neutral">Figma Weave is the safer answer for explicit editing controls. Lovart is stronger when generated asset direction and speed are more important.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Which is cheaper?</summary><p class="mt-3 text-neutral">Do not rely on old screenshots. Check both official pricing pages because model credits, seats, and export rules can change.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Is this page official?</summary><p class="mt-3 text-neutral">No. lovart.info is an independent guide site and is not affiliated with Lovart, Weavy, or Figma.</p></details>
+            </div>
+        </div>
+    </section>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>

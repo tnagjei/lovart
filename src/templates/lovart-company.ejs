@@ -126,6 +126,47 @@ const relatedLinks = relatedPaths
                         </div>
                     </section>
 
+                    <!-- Evidence-bounded company facts -->
+                    <section class="py-16 bg-white section-animate" id="company-facts">
+                        <div class="container mx-auto px-6 max-w-5xl">
+                            <div class="max-w-3xl mb-10">
+                                <p class="text-sm font-semibold text-primary uppercase tracking-wide mb-3">Evidence-bounded company notes</p>
+                                <h2 class="text-3xl font-bold text-neutral-dark mb-4">Lovart Founder, Funding, and Valuation Claims</h2>
+                                <p class="text-neutral leading-relaxed">Company facts require a higher evidence bar than product descriptions. This page separates official site signals from third-party profiles, media coverage, and directory entries.</p>
+                            </div>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <article id="founders" class="bg-neutral-light rounded-xl p-6 border border-neutral/10">
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Founders</h3>
+                                    <p class="text-neutral text-sm leading-relaxed mb-4">Current founder attribution should be treated as <strong>pending</strong> unless it comes from an official Lovart profile, official company announcement, or a directly controlled social profile.</p>
+                                    <p class="text-xs uppercase tracking-wide text-amber-700 font-semibold">Evidence label: pending</p>
+                                </article>
+                                <article id="funding" class="bg-neutral-light rounded-xl p-6 border border-neutral/10">
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Funding</h3>
+                                    <p class="text-neutral text-sm leading-relaxed mb-4">Funding amounts from business databases or sponsor articles should be labeled <strong>reported</strong> until confirmed by Lovart or a primary investor announcement.</p>
+                                    <p class="text-xs uppercase tracking-wide text-orange-700 font-semibold">Evidence label: reported</p>
+                                </article>
+                                <article id="valuation" class="bg-neutral-light rounded-xl p-6 border border-neutral/10">
+                                    <h3 class="text-xl font-bold text-neutral-dark mb-3">Valuation</h3>
+                                    <p class="text-neutral text-sm leading-relaxed mb-4">Valuation is not a safe fact when sources disagree or only repeat estimates. Do not use a single valuation number without current primary-source proof.</p>
+                                    <p class="text-xs uppercase tracking-wide text-red-700 font-semibold">Evidence label: disputed</p>
+                                </article>
+                            </div>
+                            <div class="mt-8 bg-amber-50 border border-amber-200 rounded-xl p-5 text-amber-900 text-sm leading-relaxed">
+                                What remains unverified: exact founder list, official corporate entity, current headcount, funding amount, investor list, and valuation. Keep those items out of definitive copy until a primary source confirms them.
+                            </div>
+                            <div class="mt-8 overflow-x-auto rounded-xl border border-neutral/10">
+                                <table class="w-full bg-white text-left text-sm">
+                                    <thead class="bg-neutral-light"><tr><th class="p-4">Claim</th><th class="p-4">Source type</th><th class="p-4">Label</th><th class="p-4">Last checked</th><th class="p-4">Conflict note</th></tr></thead>
+                                    <tbody class="divide-y divide-neutral/10">
+                                        <tr><td class="p-4 font-semibold">Founder names</td><td class="p-4">Third-party profiles or media</td><td class="p-4 text-amber-700 font-semibold">reported</td><td class="p-4">2026-07-04</td><td class="p-4">Not treated as official unless Lovart confirms.</td></tr>
+                                        <tr><td class="p-4 font-semibold">Funding amount</td><td class="p-4">Business databases and articles</td><td class="p-4 text-orange-700 font-semibold">disputed</td><td class="p-4">2026-07-04</td><td class="p-4">Do not publish a fixed round size from weak sources.</td></tr>
+                                        <tr><td class="p-4 font-semibold">Valuation</td><td class="p-4">Estimates or repeated claims</td><td class="p-4 text-red-700 font-semibold">not disclosed</td><td class="p-4">2026-07-04</td><td class="p-4">No single valuation number is safe here.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
                     <%- include('partials/adsense', { slot: '7744440876' , format: 'auto' , minHeight: '90px' }) %>
 
                         <!-- Contact Section -->

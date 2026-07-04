@@ -12,3 +12,5 @@
 - `templates/lovart-prompt-library.ejs`：Lovart prompt 模板库英文页面
 - `templates/lovart-prompt-generator.ejs`：本地 Lovart prompt 生成器英文页面
 - `templates/lovart-vs-canva.ejs`：Lovart vs Canva 独立英文对比页
+- `templates/lovart-vs-nano-banana.ejs`：Lovart vs Nano Banana 独立英文对比页
+- `templates/lovart-vs-weavy.ejs`：Lovart vs Weavy/Figma Weave 独立英文对比页

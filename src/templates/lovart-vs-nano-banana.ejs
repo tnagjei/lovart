@@ -1,0 +1,165 @@
+<%# input: static comparison evidence and build helpers from build.js %>
+<%# output: /lovart-vs-nano-banana independent comparison page %>
+<%# pos: Comparisons child page under /lovart-alternative (update this comment and src/README.md when changing file role) %>
+<%
+const pageSeo = {
+    title: 'Lovart vs Nano Banana: Which AI Design Workflow Fits?',
+    description: 'Compare Lovart and Nano Banana for brand kits, image editing, video assets, prompt control, pricing checks, and workflow fit.',
+    keywords: ''
+};
+const breadcrumbItems = [
+    { name: t.nav.home, href: link('/') },
+    { name: 'Lovart Alternatives', href: link('/lovart-alternative') },
+    { name: 'Lovart vs Nano Banana', href: canonicalUrl }
+];
+const comparisonRows = [
+    ['Primary role', 'AI design agent for multi-asset creative work.', 'Visual editing or image-model workflow, pending official product evidence.'],
+    ['Best use case', 'Brand kits, product visuals, campaign concepts, ad assets.', 'Image edits, visual variations, and reference-driven experiments.'],
+    ['Brand consistency', 'Official Lovart pages describe style consistency across iterations.', 'Treat consistency claims as pending unless verified from an official source.'],
+    ['Image editing', 'Lovart official pages describe targeted edits and text edits.', 'Useful if your source confirms editing behavior for your current tool access.'],
+    ['Video assets', 'Lovart has official video generator pages and campaign video examples.', 'Do not assume video generation unless the current Nano Banana source confirms it.'],
+    ['Pricing and access', 'Check Lovart official pricing and account state before client work.', 'Check the current access route, provider, and quota before use.']
+];
+%>
+<!DOCTYPE html>
+<html lang="<%= lang %>" class="scroll-smooth">
+<head>
+    <%- include('partials/head', { pageSeo }) %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageSeo.title %></title>
+    <meta name="description" content="<%= pageSeo.description %>">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <%- include('partials/hreflang') %>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <%- include('partials/analytics') %>
+    <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+</head>
+<body class="bg-neutral-light text-neutral-dark antialiased">
+<%- include('partials/header') %>
+<%- include('partials/breadcrumb', { breadcrumbItems }) %>
+<main>
+    <section class="bg-white py-16 lg:py-24 border-b border-neutral/10">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <p class="text-sm uppercase tracking-wide text-primary font-semibold mb-4">Independent comparison</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-neutral-dark mb-5">Lovart vs Nano Banana: AI Design Agent or Visual Editing Workflow?</h1>
+            <p class="text-lg text-neutral leading-relaxed max-w-3xl">Lovart is best evaluated as a multi-asset design agent. Nano Banana should be evaluated only from the current source you can verify, because social demos and video titles do not prove ownership, pricing, model version, or availability.</p>
+            <div class="mt-8 bg-amber-50 border border-amber-200 rounded-lg p-5 text-amber-900">
+                <strong>Evidence boundary:</strong> Lovart product claims here come from official Lovart pages. Nano Banana claims without an official source stay marked as pending.
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Quick Verdict</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <article class="bg-white border border-neutral/10 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-3">Choose Lovart if...</h3>
+                    <p class="text-neutral leading-relaxed">You need one brief to produce related visual assets: brand direction, product visuals, social concepts, and campaign-ready creative variations.</p>
+                </article>
+                <article class="bg-white border border-neutral/10 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-3">Choose Nano Banana if...</h3>
+                    <p class="text-neutral leading-relaxed">Your verified access path supports the specific image editing or visual variation task you need. Treat demos as inspiration, not proof.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">What Lovart Adds</h2>
+            <p class="text-neutral leading-relaxed mb-6">Lovart adds a broader creative workflow: prompt intake, brand direction, related asset generation, and campaign context. Treat these as verified only where official Lovart pages describe them.</p>
+            <div class="overflow-x-auto rounded-lg border border-neutral/10">
+                <table class="w-full bg-white text-left">
+                    <thead class="bg-neutral-light">
+                        <tr><th class="p-4">Dimension</th><th class="p-4 text-primary">Lovart</th><th class="p-4">Nano Banana</th></tr>
+                    </thead>
+                    <tbody class="divide-y divide-neutral/10">
+                        <% comparisonRows.forEach(function(row) { %>
+                        <tr><td class="p-4 font-semibold"><%= row[0] %></td><td class="p-4"><%= row[1] %></td><td class="p-4"><%= row[2] %></td></tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-10 bg-amber-50 border border-amber-200 rounded-lg p-5">
+                <h2 class="text-2xl font-bold text-amber-950 mb-3">What Nano Banana Does</h2>
+                <p class="text-amber-900 leading-relaxed">Nano Banana is handled here as a reported visual editing or image-model workflow. Without an official source in this execution, ownership, pricing, API access, and model version stay pending.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-5xl space-y-12">
+            <div>
+                <h2 class="text-3xl font-bold text-neutral-dark mb-5">Best Use Cases</h2>
+                <p class="text-neutral leading-relaxed">Use Lovart for connected design work: logos, brand kits, campaign assets, product shots, and video concepts. Use Nano Banana only where your current provider confirms the workflow you need, such as image editing, reference matching, or visual variation.</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-neutral-dark mb-5">Image Editing and Consistency</h2>
+                <p class="text-neutral leading-relaxed">Lovart official pages describe targeted editing, style consistency, and text edits. For Nano Banana, verify the specific interface, ownership, and model behavior before promising a consistent production workflow.</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-neutral-dark mb-5">Brand Kit Workflow</h2>
+                <p class="text-neutral leading-relaxed">Lovart is the safer first choice when the output must feel like a brand system rather than a single edited image. Continue to <a href="<%= link('/lovart-brand-kit') %>" class="text-primary font-semibold">Lovart Brand Kit</a> if your project needs colors, typography, logo direction, and related mockups.</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-neutral-dark mb-5">Video and Campaign Assets</h2>
+                <p class="text-neutral leading-relaxed">Lovart has official video generator pages. Still verify model access, export rights, credits, and account limits before selling video output to a client. Treat Nano Banana video claims as pending unless you have an official source.</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-neutral-dark mb-5">Limits and Evidence</h2>
+                <p class="text-neutral leading-relaxed">SERP snapshots, YouTube demos, Instagram reels, and third-party examples prove interest in the comparison, not feature truth. Any unverified Nano Banana capability remains reported or pending.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Video Examples</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <div class="aspect-video bg-neutral-light rounded-lg overflow-hidden border border-neutral/10">
+                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/0iQbGm1XWxI" title="Nano Banana visual workflow example" loading="lazy" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-sm text-neutral mt-3">Video embed for visual context only. It does not verify pricing, ownership, or current model status.</p>
+                </div>
+                <div>
+                    <div class="aspect-video bg-neutral-light rounded-lg overflow-hidden border border-neutral/10">
+                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/vXbFVvLgwEE" title="Lovart and Nano Banana workflow example" loading="lazy" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-sm text-neutral mt-3">Video embed for workflow context only. Check official sources before relying on any product claim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-5">Pricing and Access Checks</h2>
+            <p class="text-neutral leading-relaxed mb-5">Do not choose based on screenshots. Check whether your account can access the feature, what credits are consumed, whether exports include watermarking, and whether commercial use is allowed under the current terms.</p>
+            <div class="flex flex-wrap gap-3">
+                <a href="<%= link('/lovart-free') %>" class="px-5 py-3 rounded-lg bg-primary text-white font-semibold">Lovart free guide</a>
+                <a href="<%= link('/lovart-pricing') %>" class="px-5 py-3 rounded-lg border border-primary text-primary bg-white font-semibold">Lovart pricing guide</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-t border-neutral/10">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Lovart vs Nano Banana FAQ</h2>
+            <div class="space-y-4">
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Is Lovart better than Nano Banana?</summary><p class="mt-3 text-neutral">Only if you need a broader design-agent workflow. If your task is one specific image edit, verify the current Nano Banana tool before deciding.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Which is better for brand kits?</summary><p class="mt-3 text-neutral">Lovart is the safer comparison fit because official Lovart pages describe multi-asset design workflows and consistency features.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Which is better for video ads?</summary><p class="mt-3 text-neutral">Lovart has official video generator pages. Nano Banana video claims should stay pending without official confirmation.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Can I use the video examples as proof?</summary><p class="mt-3 text-neutral">No. Embedded videos are demand and workflow signals, not proof of product status, ownership, or pricing.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Is this page official?</summary><p class="mt-3 text-neutral">No. lovart.info is an independent guide site and is not affiliated with Lovart or Nano Banana.</p></details>
+            </div>
+        </div>
+    </section>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>

@@ -86,6 +86,8 @@ const pageLangMap = {
     'lovart-prompt-library':    ['en'],
     'lovart-prompt-generator':  ['en'],
     'lovart-vs-canva':          ['en'],
+    'lovart-vs-nano-banana':    ['en'],
+    'lovart-vs-weavy':          ['en'],
 };
 
 const config = {
