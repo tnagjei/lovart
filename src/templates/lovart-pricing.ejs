@@ -81,6 +81,7 @@
                     </style>
 
                     <%- include('partials/schema-breadcrumb', { breadcrumbItems }) %>
+                    <%- include('partials/schema-faq', { faqItems: faqItems }) %>
 
     </head>
 
@@ -197,15 +198,30 @@
 
                             <section id="pricing-evidence" class="bg-white border border-neutral-light rounded-lg p-6 mb-12 animate-fade-in-up" style="animation-delay: 0.82s;">
                                 <h2 class="text-2xl md:text-3xl font-semibold text-neutral-dark mb-4 text-center">Lovart Pricing Evidence Boundary</h2>
-                                <p class="text-neutral text-center max-w-3xl mx-auto mb-6">Last checked: 2026-07-04. Treat plan names and prices as pending unless they match the current official Lovart pricing page during the same buying session.</p>
+                                <p class="text-neutral text-center max-w-3xl mx-auto mb-6">Last checked: 2026-07-14. Treat plan names and prices as pending unless they match the current official Lovart pricing page during the same buying session.</p>
                                 <div class="overflow-x-auto">
                                     <table class="w-full text-left text-sm">
                                         <thead class="bg-neutral-light"><tr><th class="p-3">Field</th><th class="p-3">Status</th><th class="p-3">Safe handling</th></tr></thead>
                                         <tbody class="divide-y divide-neutral-light">
-                                            <tr><td class="p-3 font-semibold">Official pricing page exists</td><td class="p-3 text-green-700 font-semibold">verified</td><td class="p-3">Open official pricing before subscribing.</td></tr>
+                                            <tr><td class="p-3 font-semibold">Official pricing page exists</td><td class="p-3 text-green-700 font-semibold">verified</td><td class="p-3">Open the <a href="https://www.lovart.ai/pricing" target="_blank" rel="noopener noreferrer" class="text-primary font-semibold">official Lovart pricing page</a> before subscribing.</td></tr>
                                             <tr><td class="p-3 font-semibold">Exact plan limits</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3">Verify credits, seats, exports, and commercial rights at checkout.</td></tr>
                                             <tr><td class="p-3 font-semibold">API pricing</td><td class="p-3 text-amber-700 font-semibold">not disclosed</td><td class="p-3">Use <a href="<%= link('/lovart-api-pricing') %>" class="text-primary font-semibold">API pricing notes</a> for status, not guessed rates.</td></tr>
                                             <tr><td class="p-3 font-semibold">Discounts and refunds</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3">Use current billing screens and official terms only.</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+
+                            <section id="commercial-use" class="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-12 animate-fade-in-up" style="animation-delay: 0.83s;">
+                                <h2 class="text-2xl md:text-3xl font-semibold text-amber-950 mb-4 text-center">Commercial Use Verification</h2>
+                                <p class="text-amber-900 text-center max-w-3xl mx-auto mb-6">Commercial-use answers stay pending until they match the current official Lovart pricing page, terms, and checkout details for the account you will use.</p>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-left text-sm bg-white">
+                                        <thead class="bg-amber-100"><tr><th class="p-3">Question</th><th class="p-3">Evidence label</th><th class="p-3">Safe action</th></tr></thead>
+                                        <tbody class="divide-y divide-amber-100">
+                                            <tr><td class="p-3 font-semibold">Can outputs be used commercially?</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3">Check official terms, pricing, plan notes, and any account-specific restrictions before client use.</td></tr>
+                                            <tr><td class="p-3 font-semibold">Do paid plans include broader rights?</td><td class="p-3 text-amber-700 font-semibold">pending</td><td class="p-3">Treat plan comparisons as guidance until verified at checkout.</td></tr>
+                                            <tr><td class="p-3 font-semibold">Can this page provide legal advice?</td><td class="p-3 text-red-700 font-semibold">unsafe</td><td class="p-3">Use Lovart's official terms or legal review for client contracts, trademarks, resale, and regulated uses.</td></tr>
                                         </tbody>
                                     </table>
                                 </div>

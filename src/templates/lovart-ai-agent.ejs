@@ -139,6 +139,23 @@ const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: page.seo
             </div>
         </section>
 
+        <section id="skill-api" class="py-16 bg-white border-y border-neutral/10">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-3xl font-bold text-neutral-dark mb-4">Lovart Skill, Agent, and API Boundary</h2>
+                <p class="text-neutral leading-relaxed mb-6">A skill can describe a reusable workflow, while an agent describes a multi-step task pattern. Neither term proves a public Lovart API, SDK, or self-serve key.</p>
+                <div class="overflow-x-auto rounded-xl border border-neutral/10">
+                    <table class="min-w-full bg-white text-left text-sm">
+                        <thead class="bg-neutral-light"><tr><th class="px-6 py-4">Claim</th><th class="px-6 py-4">Evidence label</th><th class="px-6 py-4">Safe next step</th></tr></thead>
+                        <tbody class="divide-y divide-neutral/10">
+                            <tr><td class="px-6 py-4 font-medium">Lovart Skill API is publicly documented</td><td class="px-6 py-4 text-amber-700 font-semibold">pending</td><td class="px-6 py-4">Check the <a href="<%= link('/lovart-api-documentation#skill-api') %>" class="text-primary font-semibold">API documentation guide</a>; do not assume an endpoint exists.</td></tr>
+                            <tr><td class="px-6 py-4 font-medium">Skill or GitHub examples are official</td><td class="px-6 py-4 text-orange-700 font-semibold">reported</td><td class="px-6 py-4">Treat community examples as research leads until Lovart links them from an official source.</td></tr>
+                            <tr><td class="px-6 py-4 font-medium">Private endpoints or generated access codes</td><td class="px-6 py-4 text-red-700 font-semibold">unsafe</td><td class="px-6 py-4">Do not publish guessed URLs, headers, private routes, or generated codes.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
         <section id="free-options" class="py-16">
             <div class="container mx-auto px-6 max-w-5xl">
                 <h2 class="text-3xl font-bold text-neutral-dark mb-6">AI Design Agent vs Image Generator</h2>

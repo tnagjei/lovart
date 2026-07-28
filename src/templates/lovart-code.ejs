@@ -56,6 +56,32 @@ const breadcrumbItems = [{ name: t.nav.home, href: link('/') }, { name: page.seo
         </section>
 
         <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <p class="text-sm font-semibold uppercase tracking-wide text-primary mb-3">Evidence-bounded code hub</p>
+                <h2 class="text-3xl font-bold text-neutral-dark mb-5">What Users Mean by Lovart Code</h2>
+                <p class="text-neutral leading-relaxed mb-6">Lovart code searches mix four different intents: promo codes, invitation codes, beta access codes, and developer code. This hub keeps them separate so a discount search is not mistaken for an API or SDK claim.</p>
+                <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-6">
+                    <p class="text-amber-950 font-bold">0 verified codes</p>
+                    <p class="text-amber-900 mt-2">This page does not list a working Lovart promo code, invitation code, or beta code unless it can be verified from an official source during the current check.</p>
+                    <p class="text-sm text-amber-800 mt-3">Last checked: 2026-07-14. Evidence label: pending for community code claims, unsafe for code generator claims.</p>
+                </div>
+                <div class="overflow-x-auto rounded-xl border border-neutral/10">
+                    <table class="w-full bg-white text-left text-sm">
+                        <thead class="bg-neutral-light">
+                            <tr><th class="p-4">Intent</th><th class="p-4">Best page</th><th class="p-4">Evidence label</th><th class="p-4">Safe handling</th></tr>
+                        </thead>
+                        <tbody class="divide-y divide-neutral/10">
+                            <tr><td class="p-4 font-semibold">Promo code</td><td class="p-4"><a href="<%= link('/lovart-promo-code') %>" class="text-primary font-semibold">Promo guide</a></td><td class="p-4 text-amber-700 font-semibold">pending</td><td class="p-4">Check official billing or email campaigns before trusting a discount.</td></tr>
+                            <tr><td class="p-4 font-semibold">Invitation code</td><td class="p-4"><a href="<%= link('/lovart-invitation-code') %>" class="text-primary font-semibold">Invitation guide</a></td><td class="p-4 text-amber-700 font-semibold">pending</td><td class="p-4">Verify current signup access instead of using old community posts.</td></tr>
+                            <tr><td class="p-4 font-semibold">Developer code</td><td class="p-4"><a href="<%= link('/lovart-ai-code') %>" class="text-primary font-semibold">AI code guide</a></td><td class="p-4 text-orange-700 font-semibold">reported</td><td class="p-4">Use as planning content, not an official SDK guarantee.</td></tr>
+                            <tr><td class="p-4 font-semibold">Code generator</td><td class="p-4">Do not create</td><td class="p-4 text-red-700 font-semibold">unsafe</td><td class="p-4">Avoid tools that promise secret, unlimited, or generated access codes.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
             <div class="container mx-auto px-6 max-w-6xl">
                 <h2 class="text-3xl font-bold text-neutral-dark mb-4"><%= page.intents.heading %></h2>
                 <div class="grid md:grid-cols-3 gap-8 mt-8">

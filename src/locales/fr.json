@@ -1,7 +1,7 @@
 {
     "seo": {
-        "title": "Lovart | Plateforme de design IA pour créatifs",
-        "description": "Créez plus vite avec Lovart, la plateforme de design IA: visuels de qualité, collaboration fluide et workflow simplifié. Essayez gratuitement dès maintenant.",
+        "title": "Lovart Info : guides indépendants, prompts et notes API",
+        "description": "Lovart Info est un guide indépendant pour les tutoriels, prompts, notes API, vérifications de prix, accès, comparaisons et niveaux de preuve.",
         "keywords": "",
         "prompt_guide": {
             "title": "Guide Prompt Lovart AI : Créer des Logos & Kits Design",
@@ -131,10 +131,10 @@
         ]
     },
     "hero": {
-        "title": "Lovart : créez plus vite avec une plateforme design assistée par IA",
-        "subtitle": "Lovart aide les designers, marketeurs et équipes contenu à transformer une idée en livrable visuel dans un seul flux de travail. Suggestions IA, édition visuelle et collaboration y sont réunies.",
-        "cta_explore": "Voir les fonctionnalités",
-        "cta_pricing": "Voir les tarifs"
+        "title": "Lovart Info : guides indépendants pour les utilisateurs Lovart",
+        "subtitle": "Ce guide indépendant oriente les recherches Lovart vers les tutoriels, prompts, notes API, prix, accès et comparaisons. Utilisez le site officiel Lovart pour accéder au produit.",
+        "cta_explore": "Parcourir les guides",
+        "cta_pricing": "Voir le guide des prix"
     },
     "features": {
         "title": "Les capacités clés de Lovart pour les équipes créatives",
@@ -3326,11 +3326,11 @@
             "subtitle": "Évitez les faux sites de coupons. Découvrez de vraies façons d'économiser.",
             "cta_external": "Voir les Prix",
             "cta_internal": "Comment Économiser",
-            "content": "Chercher un <strong>lovart promo code</strong> est un réflexe normal pour économiser. Malheureusement, la majorité de ces codes en ligne sont expirés ou faux. Notre objectif est de vous orienter vers de véritables économies substantielles. Simply grab a valid lovart promo code and start creating. A good lovart promo code never expires too fast."
+            "content": "Cette page liste actuellement 0 verified codes. Les pages de coupons tierces doivent rester pending jusqu'a verification dans un ecran de facturation Lovart officiel, un email officiel ou la page de tarifs officielle. Ne saisissez pas de donnees de compte, de paiement ou de recuperation sur un site de coupons."
         },
         "status_box": {
             "heading": "Statut Actuel",
-            "status": "Aucun code public globalisé n'est actif aujourd'hui. L'offre annuelle reste notre meilleure remise garantie."
+            "status": "Statut actuel : 0 verified codes. Toute remise signalee reste pending tant qu'elle n'apparait pas dans un canal Lovart officiel. Les pages promettant une remise permanente ou une extension automatique sont unsafe."
         },
         "comparison": {
             "heading": "Vrai vs Faux",

@@ -52,6 +52,8 @@ https://www.lovart.info/* https://lovart.info/:splat 301
 /lovartal /lovarte 301
 /lovarts /lovarte 301
 /lovart_ai /lovarte 301
+/lovart-alternatives /lovart-alternative 301
+/lovart-alternatives.html /lovart-alternative 301
 /zh/lovartal /zh/lovarte 301
 /fr/lovartal /fr/lovarte 301
 /ja/lovartal /ja/lovarte 301

@@ -172,6 +172,29 @@
                         <%- include('partials/adsense', { format: 'horizontal', minHeight: '90px' }) %>
                     </section>
 
+
+                    <!-- Lovart Promo Code on Reddit -->
+                    <section class="py-16">
+                        <div class="container mx-auto px-6">
+                            <div class="max-w-4xl mx-auto">
+                                <h2 class="text-3xl font-bold text-neutral-dark mb-6">Lovart Promo Code on Reddit</h2>
+                                <p class="text-neutral leading-relaxed mb-6">Reddit threads and community posts may mention a Lovart promo code, invitation code, or discount link. These posts should be treated as <strong>reported</strong> (community mentions) or <strong>pending</strong> (single-source claims) unless the same code is confirmed in an official Lovart billing screen, official email, or official pricing page.</p>
+                                <div class="overflow-x-auto rounded-xl border border-neutral/10">
+                                    <table class="min-w-full bg-white text-left text-sm">
+                                        <thead class="bg-neutral-light"><tr><th class="p-4 font-semibold">Reddit Claim</th><th class="p-4 font-semibold">Evidence Label</th><th class="p-4 font-semibold">Safe Handling</th></tr></thead>
+                                        <tbody class="divide-y divide-neutral/10">
+                                            <tr><td class="p-4 font-medium">A Reddit user shares a working promo code</td><td class="p-4 text-amber-700 font-semibold">pending</td><td class="p-4">Keep the code pending until the official Lovart checkout accepts it. Do not share it as verified.</td></tr>
+                                            <tr><td class="p-4 font-medium">A thread discusses invitation code availability</td><td class="p-4 text-amber-700 font-semibold">pending</td><td class="p-4">Use the <a href="<%= link('/lovart-invitation-code') %>" class="text-primary font-semibold">invitation code status page</a> for the current state. Do not rely on Reddit posts.</td></tr>
+                                            <tr><td class="p-4 font-medium">Multiple Reddit posts mention the same discount source</td><td class="p-4 text-orange-700 font-semibold">reported</td><td class="p-4">Treat as a community signal, not a verified offer. Check the official checkout before trusting the discount.</td></tr>
+                                            <tr><td class="p-4 font-medium">A Reddit post links to a coupon aggregator or extension</td><td class="p-4 text-red-700 font-semibold">unsafe</td><td class="p-4">Do not install unknown extensions or paste account details into third-party coupon pages.</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="text-sm text-neutral/80 mt-4">For invitation and referral code details, see the <a href="<%= link('/lovart-invitation-code') %>" class="text-primary font-semibold">invitation code page</a>.</p>
+                            </div>
+                        </div>
+                    </section>
+
                     <!-- FAQ Section -->
                     <section class="py-16 bg-white">
                         <div class="container mx-auto px-6">

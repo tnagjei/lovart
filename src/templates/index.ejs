@@ -49,6 +49,29 @@ const homeCopyByLang = {
     }
 };
 const homeCopy = homeCopyByLang[lang] || homeCopyByLang.en;
+const homeEvidenceCopyByLang = {
+    zh: {
+        title: '本站能核验与不能核验的内容',
+        intro: 'Lovart Info 是独立指南站。产品访问、账号和付款请始终以 Lovart 官方网站为准。',
+        labels: [['verified', '本地路由与构建事实'], ['reported', '非官方来源线索'], ['pending', '需要当前官方页面复核'], ['disputed', '线上与本地证据冲突'], ['unsafe', '不收集账号、不生成兑换码或私有接口']]
+    },
+    fr: {
+        title: 'Ce que ce site peut et ne peut pas verifier',
+        intro: 'Lovart Info est un guide indépendant. Pour le produit, les comptes et les paiements, utilisez toujours le site officiel Lovart.',
+        labels: [['verified', 'faits locaux de route et de build'], ['reported', 'pistes de sources non officielles'], ['pending', 'a verifier sur les pages officielles actuelles'], ['disputed', 'conflit entre preuves en ligne et locales'], ['unsafe', 'pas de collecte de comptes, de codes ou d interfaces privees']]
+    },
+    ja: {
+        title: 'このサイトで確認できることとできないこと',
+        intro: 'Lovart Info は独立ガイドです。製品アクセス、アカウント、支払いは必ず Lovart 公式サイトで確認してください。',
+        labels: [['verified', 'ローカルのルートとビルド事実'], ['reported', '非公式ソースの手掛かり'], ['pending', '現在の公式ページで要確認'], ['disputed', 'オンラインとローカルの証拠が競合'], ['unsafe', 'アカウント、コード、非公開 API は扱わない']]
+    },
+    en: {
+        title: 'What this site can and cannot verify',
+        intro: 'Lovart Info is an independent guide. Use the official Lovart site for product access, accounts, and payments.',
+        labels: [['verified', 'local route and build facts'], ['reported', 'non-official source leads'], ['pending', 'requires a current official-page check'], ['disputed', 'live and local evidence conflict'], ['unsafe', 'no account collection, code generation, or private API claims']]
+    }
+};
+const homeEvidenceCopy = homeEvidenceCopyByLang[lang] || homeEvidenceCopyByLang.en;
 const homeIntentCards = [
     {
         href: link('lovart-pricing'),
@@ -237,28 +260,21 @@ const showHomeDeveloperCluster = lang === 'en' || lang === 'zh';
                     {
                         "@context" : "https://schema.org",
                         "@type" : "WebSite",
-                        "name" : "Lovart",
+                        "name" : "Lovart Info",
                         "url" : "https://lovart.info/"
                     }
                     </script>
                     <script type="application/ld+json">
                     {
                         "@context": "https://schema.org",
-                        "@type": "SoftwareApplication",
-                        "name": "Lovart",
-                        "applicationCategory": "DesignApplication",
-                        "operatingSystem": "Web",
+                        "@type": "WebPage",
+                        "name": "Lovart Info: Independent Lovart Guides",
                         "url": "https://lovart.info/",
-                        "offers": {
-                            "@type": "Offer",
-                            "price": "0",
-                            "priceCurrency": "USD"
-                        },
-                        "description": "<%= t.seo ? t.seo.description : 'AI-powered design platform for creative professionals' %>",
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "Lovart",
-                            "url": "https://lovart.info"
+                        "description": "<%= t.seo ? t.seo.description : 'Independent Lovart guides and evidence-aware navigation.' %>",
+                        "isPartOf": {
+                            "@type": "WebSite",
+                            "name": "Lovart Info",
+                            "url": "https://lovart.info/"
                         }
                     }
                     </script>
@@ -285,11 +301,11 @@ const showHomeDeveloperCluster = lang === 'en' || lang === 'zh';
                             <%= t.hero.subtitle %>
                         </p>
                         <div class="animate-fade-in-up" style="animation-delay: 0.6s;">
-                            <a href="#features"
+                            <a href="<%= link('/lovart-prompt-guide') %>"
                                 class="bg-white text-primary font-semibold px-8 py-3 rounded-md hover:bg-opacity-90 transition-all transform hover:scale-105 mr-2 mb-2 md:mr-4 inline-block">
                                 <%= t.hero.cta_explore %>
                             </a>
-                            <a href="#pricing"
+                            <a href="<%= link('/lovart-pricing') %>"
                                 class="bg-transparent border-2 border-white text-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-secondary transition-all transform hover:scale-105 inline-block">
                                 <%= t.hero.cta_pricing %>
                             </a>
@@ -321,6 +337,23 @@ const showHomeDeveloperCluster = lang === 'en' || lang === 'zh';
                     Your browser does not support the video tag.
                 </video>
                 -->
+                    </div>
+                </section>
+
+                <section class="py-12 bg-neutral-light border-y border-neutral/10">
+                    <div class="container mx-auto px-6 max-w-5xl">
+                        <h2 class="text-2xl md:text-3xl font-bold text-neutral-dark mb-4"><%= homeEvidenceCopy.title %></h2>
+                        <p class="text-neutral leading-relaxed mb-6"><%= homeEvidenceCopy.intro %></p>
+                        <div class="overflow-x-auto rounded-lg border border-neutral/10 bg-white">
+                            <table class="min-w-full text-left text-sm">
+                                <thead class="bg-neutral-light"><tr><th class="p-4 font-semibold">Evidence label</th><th class="p-4 font-semibold">Meaning</th></tr></thead>
+                                <tbody class="divide-y divide-neutral/10">
+                                    <% homeEvidenceCopy.labels.forEach(function(item) { %>
+                                        <tr><td class="p-4 font-semibold text-primary"><%= item[0] %></td><td class="p-4 text-neutral"><%= item[1] %></td></tr>
+                                    <% }); %>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </section>
 

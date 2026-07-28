@@ -1,7 +1,7 @@
 {
     "seo": {
-        "title": "Lovart | クリエイター向けAIデザインプラットフォーム",
-        "description": "LovartはAIデザインを高速化するプラットフォームです。高品質なビジュアル作成、共同編集、制作効率化を実現。今すぐ無料で試す。",
+        "title": "Lovart Info：独立ガイド、プロンプト、API 状態メモ",
+        "description": "Lovart Info はチュートリアル、プロンプト、API 状態、料金確認、ログイン案内、比較、証拠ラベルを扱う独立ガイドです。",
         "keywords": "",
         "prompt_guide": {
             "title": "Lovart AIプロンプトガイド：ロゴ＆ブランドデザイン",
@@ -131,10 +131,10 @@
         ]
     },
     "hero": {
-        "title": "Lovart：AIでデザイン制作を高速化するプラットフォーム",
-        "subtitle": "Lovart は、デザイナーやマーケターがアイデアから公開用クリエイティブまでを一気通貫で進めるためのワークスペースです。AI 提案、編集、レビューを一つにまとめます。",
-        "cta_explore": "主要機能を見る",
-        "cta_pricing": "料金を確認"
+        "title": "Lovart Info：Lovart ユーザー向けの独立ガイド",
+        "subtitle": "チュートリアル、プロンプト、API 状態、料金確認、ログイン安全性、比較に案内する独立ガイドです。製品へのアクセスは Lovart 公式サイトを利用してください。",
+        "cta_explore": "ガイドを見る",
+        "cta_pricing": "料金ガイドを見る"
     },
     "features": {
         "title": "Lovart が制作チームにもたらす価値",
@@ -3326,11 +3326,11 @@
             "subtitle": "無効なクーポンコードサイトで時間を無駄にしないでください。",
             "cta_external": "価格プランを見る",
             "cta_internal": "正当な節約ルート",
-            "content": "適切な <strong>lovart promo code</strong> を探すのは時間の無駄になることが多く、ほとんどのスパムサイトは無効な情報を配布しています。当社のプラットフォームは透明性の高い支払い割引システムを備えています。 Simply grab a valid lovart promo code and start creating. A good lovart promo code never expires too fast."
+            "content": "このページは現在 0 verified codes を掲載しています。第三者のクーポンページは、公式 Lovart の請求画面、公式メール、または公式価格ページで確認できるまで pending として扱ってください。クーポンサイトにアカウント情報、支払い情報、復旧コードを入力しないでください。"
         },
         "status_box": {
             "heading": "現在のプロモ状況",
-            "status": "今日配布されているグローバルプロモーションコードは存在しません。最良の価格ルートは年間プランによる自動 20％ オフです。"
+            "status": "現在の状態：0 verified codes。公開されている lovart promo code の主張は、公式チャネルで確認できるまで pending です。恒久的な大幅割引や拡張機能の導入を求めるページは unsafe として扱ってください。"
         },
         "comparison": {
             "heading": "真実 vs 偽物",

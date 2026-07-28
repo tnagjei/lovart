@@ -3,8 +3,8 @@
 <%# pos: Comparisons child page under /lovart-alternative (update this comment and src/README.md when changing file role) %>
 <%
 const pageSeo = {
-    title: 'Lovart vs Nano Banana: Which AI Design Workflow Fits?',
-    description: 'Compare Lovart and Nano Banana for brand kits, image editing, video assets, prompt control, pricing checks, and workflow fit.',
+    title: 'Lovart vs Nano Banana: Verified, Reported, and Unclear',
+    description: 'Compare Lovart and Nano Banana claims with conservative evidence labels, route status, and notes on what remains unverified.',
     keywords: ''
 };
 const breadcrumbItems = [
@@ -48,6 +48,26 @@ const comparisonRows = [
             <p class="text-lg text-neutral leading-relaxed max-w-3xl">Lovart is best evaluated as a multi-asset design agent. Nano Banana should be evaluated only from the current source you can verify, because social demos and video titles do not prove ownership, pricing, model version, or availability.</p>
             <div class="mt-8 bg-amber-50 border border-amber-200 rounded-lg p-5 text-amber-900">
                 <strong>Evidence boundary:</strong> Lovart product claims here come from official Lovart pages. Nano Banana claims without an official source stay marked as pending.
+                <span class="block mt-2 text-sm font-semibold">Last checked: 2026-07-14</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-neutral-light/40">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-neutral-dark mb-6">Route Status</h2>
+            <p class="text-neutral leading-relaxed mb-6">The 2026-07-14 report says the live route may return 404, while this local repository contains the template and build mapping for this page. Treat that as disputed until the deployed site is checked after build.</p>
+            <div class="overflow-x-auto rounded-lg border border-neutral/10 bg-white">
+                <table class="w-full text-left">
+                    <thead class="bg-neutral-light">
+                        <tr><th class="p-4">Surface</th><th class="p-4">Status</th><th class="p-4">Evidence label</th><th class="p-4">Safe next step</th></tr>
+                    </thead>
+                    <tbody class="divide-y divide-neutral/10">
+                        <tr><td class="p-4 font-semibold">Local template</td><td class="p-4">src/templates/lovart-vs-nano-banana.ejs exists</td><td class="p-4 font-semibold text-green-700">verified</td><td class="p-4">Build the static output.</td></tr>
+                        <tr><td class="p-4 font-semibold">Sitemap after build</td><td class="p-4">Must include /lovart-vs-nano-banana</td><td class="p-4 font-semibold text-green-700">verified after build</td><td class="p-4">Check dist/sitemap.xml.</td></tr>
+                        <tr><td class="p-4 font-semibold">Live route</td><td class="p-4">Report says 404, local code says route exists</td><td class="p-4 font-semibold text-red-700">disputed</td><td class="p-4">Use HTTP checks to confirm deployment.</td></tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
@@ -118,20 +138,10 @@ const comparisonRows = [
 
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6 max-w-5xl">
-            <h2 class="text-3xl font-bold text-neutral-dark mb-8">Video Examples</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                    <div class="aspect-video bg-neutral-light rounded-lg overflow-hidden border border-neutral/10">
-                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/0iQbGm1XWxI" title="Nano Banana visual workflow example" loading="lazy" allowfullscreen></iframe>
-                    </div>
-                    <p class="text-sm text-neutral mt-3">Video embed for visual context only. It does not verify pricing, ownership, or current model status.</p>
-                </div>
-                <div>
-                    <div class="aspect-video bg-neutral-light rounded-lg overflow-hidden border border-neutral/10">
-                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/vXbFVvLgwEE" title="Lovart and Nano Banana workflow example" loading="lazy" allowfullscreen></iframe>
-                    </div>
-                    <p class="text-sm text-neutral mt-3">Video embed for workflow context only. Check official sources before relying on any product claim.</p>
-                </div>
+            <h2 class="text-3xl font-bold text-neutral-dark mb-5">Video Evidence Status</h2>
+            <div class="bg-amber-50 border border-amber-200 rounded-lg p-5 text-amber-900">
+                <p class="leading-relaxed">The 2026-07-14 report notes YouTube-type results for this query but does not provide specific video URLs. No video is embedded on this execution because adding a guessed URL would upgrade weak evidence into fabricated evidence.</p>
+                <p class="mt-3 text-sm font-semibold">Evidence label: reported for video demand, pending for any specific video claim.</p>
             </div>
         </div>
     </section>
@@ -152,6 +162,7 @@ const comparisonRows = [
             <h2 class="text-3xl font-bold text-neutral-dark mb-8">Lovart vs Nano Banana FAQ</h2>
             <div class="space-y-4">
                 <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Is Lovart better than Nano Banana?</summary><p class="mt-3 text-neutral">Only if you need a broader design-agent workflow. If your task is one specific image edit, verify the current Nano Banana tool before deciding.</p></details>
+                <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Does Lovart use Nano Banana?</summary><p class="mt-3 text-neutral">This remains disputed and pending in this execution. Public search results can show association or comparison demand, but they do not prove an official model relationship.</p></details>
                 <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Which is better for brand kits?</summary><p class="mt-3 text-neutral">Lovart is the safer comparison fit because official Lovart pages describe multi-asset design workflows and consistency features.</p></details>
                 <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Which is better for video ads?</summary><p class="mt-3 text-neutral">Lovart has official video generator pages. Nano Banana video claims should stay pending without official confirmation.</p></details>
                 <details class="bg-neutral-light rounded-lg p-5"><summary class="font-semibold cursor-pointer">Can I use the video examples as proof?</summary><p class="mt-3 text-neutral">No. Embedded videos are demand and workflow signals, not proof of product status, ownership, or pricing.</p></details>

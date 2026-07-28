@@ -1,7 +1,7 @@
 {
     "seo": {
-        "title": "Lovart AI 设计平台 | 创意设计与协作工具",
-        "description": "使用 Lovart AI 设计平台快速生成高质量视觉内容，协作创作更高效，轻松完成从灵感到成稿。立即免费体验。",
+        "title": "Lovart Info：独立使用指南、提示词与 API 状态",
+        "description": "Lovart Info 是独立指南站，提供教程、提示词、API 状态、价格核验、登录导航、对比与证据标签说明。",
         "keywords": "",
         "prompt_guide": {
             "title": "Lovart AI Prompt 指南：Logo 与品牌设计技巧",
@@ -131,10 +131,10 @@
         ]
     },
     "hero": {
-        "title": "Lovart AI 设计平台：更快产出品牌级视觉内容",
-        "subtitle": "Lovart 帮助设计师、运营和内容团队把想法快速落地。通过 AI 灵感建议、可视化编辑与团队协作，你可以在一个工作流里完成从草图到交付的全过程。",
-        "cta_explore": "查看核心功能",
-        "cta_pricing": "查看价格方案"
+        "title": "Lovart Info：面向 Lovart 用户的独立指南",
+        "subtitle": "本站帮助你定位教程、提示词、API 状态、价格核验、登录安全和对比页面。产品访问请使用 Lovart 官方网站。",
+        "cta_explore": "浏览 Lovart 指南",
+        "cta_pricing": "查看价格指南"
     },
     "features": {
         "title": "用 Lovart 搭建高效率设计工作流",
@@ -3685,11 +3685,11 @@
             "subtitle": "不要把钱浪费在无效代码上。查明获取真实折扣与高级计划的官方途径。",
             "cta_external": "查看官方定价",
             "cta_internal": "了解如何省钱",
-            "content": "寻找 <strong>lovart promo code</strong> 是每位创作者在决定升级至高级层级时都会做的事情。然而，当前的折扣环境充满了虚假承诺和误导性网站。设计工具很少提供大幅的固定百分比 <strong>lovart promo code</strong>。相反，它们依赖于年付订阅或针对专业团队建立长期价值体系的方法来提供节省额度。当您在外部网站上搜索该条款时，大多数结果都会导致垃圾邮件弹出窗口或过期的代金券。我们的使命是澄清目前存在哪些有效的方案。 Simply grab a valid lovart promo code and start creating. A good lovart promo code never expires too fast."
+            "content": "本页当前列出 0 verified codes（零个已验证优惠码）。第三方优惠券站点只能作为 pending（待验证）线索，除非同一购买会话中的官方 Lovart billing screen（账单页面）、官方邮件或官方价格页确认。不要在优惠券站输入账户、付款或恢复信息。"
         },
         "status_box": {
             "heading": "当前折扣状态",
-            "status": "目前官方不提供面向公众的统一促销代码字串串。最大力度的合法优惠来自于选择年度账单方式，相比月付可以自动为您节省高达 20% 费用。"
+            "status": "当前状态：0 verified codes（零个已验证优惠码）。任何公开 lovart promo code 声称都应保持 pending（待验证），夸大永久大额折扣或要求安装扩展的页面标记为 unsafe（不安全）。"
         },
         "comparison": {
             "heading": "真实优惠 vs. 虚假代码",

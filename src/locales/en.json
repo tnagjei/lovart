@@ -1,7 +1,7 @@
 {
     "seo": {
-        "title": "Lovart: AI Design Platform for Creative Professionals",
-        "description": "Unlock your creative potential with Lovart, the AI-powered design platform. Create stunning visuals, collaborate effectively, and streamline your workflow. Try Lovart now!",
+        "title": "Lovart Info: Independent Lovart Guides, Prompts, API Notes",
+        "description": "Use Lovart Info as an independent guide for Lovart tutorials, prompts, API notes, pricing checks, login routing, comparisons, and evidence labels.",
         "keywords": "",
         "prompt_guide": {
             "title": "Lovart Prompt Guide: Copy-Ready AI Design Prompts",
@@ -131,10 +131,10 @@
         ]
     },
     "hero": {
-        "title": "Lovart: Unleash Your Creative Genius with AI-Powered Design",
-        "subtitle": "Lovart is the revolutionary design platform meticulously crafted for visionary creators like you. We empower you with a suite of intuitive tools, supercharged by cutting-edge AI-driven insights from Lovart, enabling you to effortlessly transform your most ambitious concepts into breathtaking realities. Say goodbye to cumbersome software and hello to a seamless, inspiring design journey with Lovart. Join our Lovart community today and redefine what's possible in digital creation.",
-        "cta_explore": "Explore Lovart Features",
-        "cta_pricing": "View Pricing"
+        "title": "Lovart Info: Independent Guides for Lovart Users",
+        "subtitle": "Use this independent guide to route Lovart searches to tutorials, prompts, API notes, pricing checks, login safety, comparisons, and evidence-aware next steps. For product access, use the official Lovart website.",
+        "cta_explore": "Browse Lovart Guides",
+        "cta_pricing": "Check Pricing Guide"
     },
     "features": {
         "title": "Explore Core Lovart Features for Unprecedented Creativity",
@@ -793,7 +793,7 @@
         },
         "deep_dive": {
             "title": "How to Choose the Right Lovart AI Plan",
-            "p1": "If your team ships occasional creative assets, Starter or Basic usually covers the full workflow with predictable monthly cost. Both plans include commercial-ready output, so freelance and in-house teams can publish safely.",
+            "p1": "If your team ships occasional creative assets, Starter or Basic usually covers the full workflow with predictable monthly cost. Commercial-use rights should still be checked against the current official Lovart terms, pricing page, and checkout details before client work.",
             "p2": "Pro is ideal when your pipeline depends on faster turns, multi-task rendering, and premium model access. It is designed for teams that manage multiple campaigns and need reliable throughput during deadline spikes.",
             "p3": "Ultimate is optimized for agencies and advanced operators who need maximum Fast Points, large concurrent capacity, and top-tier support. This plan keeps enterprise-scale production stable while controlling unit cost."
         },
@@ -810,15 +810,23 @@
                 },
                 {
                     "q": "Do all plans include commercial usage rights?",
-                    "a": "Yes. Every listed plan includes commercial usage rights for generated assets, with broader operational coverage in Pro and Ultimate."
+                    "a": "Commercial-use rights can depend on the current official terms, plan, account, and checkout details. Verify the official Lovart pricing page and terms before relying on generated assets for client or resale work."
                 },
                 {
                     "q": "Is there a discount for yearly billing?",
                     "a": "Yes. All four plans provide lower effective monthly pricing when billed yearly. This is the recommended option for long-term production teams."
                 },
                 {
-                    "q": "How should teams choose between Pro and Ultimate?",
-                    "a": "Choose Pro for high-volume marketing and product design teams. Choose Ultimate when you require higher concurrency, larger monthly quotas, and enterprise-level support windows."
+                   "q": "How should teams choose between Pro and Ultimate?",
+                   "a": "Choose Pro for high-volume marketing and product design teams. Choose Ultimate when you require higher concurrency, larger monthly quotas, and enterprise-level support windows."
+                },
+                {
+                    "q": "Is Lovart AI really free?",
+                    "a": "Lovart offers a free tier with limited Fast Points and basic generation features. Free access rules, credit amounts, and feature availability can change. Always verify the current official Lovart pricing page and signup flow before relying on free-tier claims. Evidence label: pending for free-credit amounts unless confirmed in the current checkout."
+                },
+                {
+                    "q": "Does Lovart offer a free trial?",
+                    "a": "Lovart may offer a free trial or limited free access period. Trial duration, credit limits, model access, and commercial-use restrictions can change. Check the official Lovart signup, pricing, and account pages for the current trial terms. Evidence label: pending unless confirmed by the current official checkout or billing screen."
                 }
             ]
         },
@@ -3241,15 +3249,15 @@
     },
     "lovart_invitation_code_page": {
         "hero": {
-            "badge": "✅ Open to All · No Invite Code Required",
-            "title": "Lovart Invitation Code? Great News — You Don't Need One Anymore!",
-            "subtitle": "Lovart has fully removed its invitation code requirement. The platform is now free and open to everyone, worldwide — no code, no waitlist.",
+            "badge": "Invitation Status Check",
+            "title": "Lovart Invitation Code Status",
+            "subtitle": "Check the current Lovart signup flow before trusting invitation code claims. Access rules, waitlists, free credits, and plan prompts can change.",
             "cta_internal": "Explore Lovart's Free Features",
             "cta_external": "Go to lovart.ai"
         },
         "history": {
             "heading": "The Story Behind Lovart's Invitation System",
-            "lead": "In its early days, Lovart operated an exclusive invite-only beta. Here's how the Lovart invitation code system evolved into today's open platform.",
+            "lead": "In its early days, Lovart appears to have used invite-style access signals. Treat historical invitation claims as context, not proof of the current signup flow.",
             "timeline": [
                 {
                     "phase": "Alpha (Invite Only)",
@@ -3269,13 +3277,13 @@
                 {
                     "phase": "Full Launch",
                     "date": "2025",
-                    "desc": "Lovart is now open to everyone — no invitation code, no waitlist"
+                    "desc": "Current access should be verified on the official Lovart signup flow"
                 }
             ]
         },
         "features": {
-            "heading": "Lovart Invitation Code Not Required — Explore Free Features",
-            "subheading": "Once you sign up on lovart.ai, you instantly unlock access to Lovart's core AI design suite — completely free.",
+            "heading": "Lovart Invitation Code Status and Free Access Checks",
+            "subheading": "Before relying on any no-code or free-access claim, verify the current official Lovart signup and pricing flow.",
             "items": [
                 {
                     "title": "AI Design Generation",
@@ -3304,7 +3312,7 @@
             "items": [
                 {
                     "q": "Does Lovart still require an invitation code?",
-                    "a": "No. Lovart no longer requires a Lovart invitation code of any kind. The Lovart invitation code system was retired when the platform moved to a full public launch in 2025. Any user can register at lovart.ai without a Lovart invitation code, a referral link, or a waitlist. Simply create a free account and start designing instantly."
+                    "a": "This guide lists 0 verified invitation codes. Lovart may not require a public invitation code in the current flow, but signup steps, waitlists, free credits, region rules, and payment prompts can change. Verify on the official Lovart site before relying on any access claim."
                 },
                 {
                     "q": "How did people get Lovart invitation codes in the past?",
@@ -3316,11 +3324,11 @@
                 },
                 {
                     "q": "What happened to the Lovart beta program?",
-                    "a": "Lovart's beta program evolved through three phases: a closed alpha, an invite-only beta where a Lovart invitation code was required, and an open beta with a waitlist. After the open beta proved stable and well-received, the team removed all entry barriers. Today Lovart operates as a fully launched product. The Lovart invitation code restriction was one of the last beta-era limitations to be lifted."
+                    "a": "Historical beta and invitation-code claims should be treated as reported context unless Lovart confirms them in current official materials. Use the official signup, pricing, and support pages for the current state."
                 },
                 {
                     "q": "Lovart 邀请码在哪里获取？",
-                    "a": "目前 Lovart 已完全开放，Lovart 邀请码机制已正式取消。你无需任何 Lovart 邀请码即可注册。早期封测阶段的 Lovart 邀请码由已注册用户分享或通过候补名单邮件发放，但这一制度已于 2025 年随正式版发布而终止。直接前往 lovart.ai 免费注册即可，无需等待邀请码。"
+                    "a": "本页当前列出 0 verified codes（零个已验证邀请码）。是否仍需要 Lovart 邀请码，应以官方 Lovart 注册流程、价格页和支持渠道为准；不要相信第三方页面出售或生成的邀请码。"
                 }
             ]
         }
@@ -3514,23 +3522,23 @@
             "items": [
                 {
                     "q": "Is Lovart AI still in beta?",
-                    "a": "No. The lovart beta officially concluded in 2025. If you are searching for 'lovart beta' access or a waitlist, the lovart beta phase is over — the full product is publicly available. No beta request, invitation code, or special access is needed to use Lovart AI today. The complete Lovart AI platform is free and open to everyone worldwide."
+                    "a": "Treat beta status as pending unless the current official Lovart site confirms it. This guide does not list a verified beta code, beta request path, or special access code."
                 },
                 {
                     "q": "How do I join Lovart's early access for new features?",
-                    "a": "The old lovart beta waitlist no longer exists. Instead, Lovart Pro subscribers receive priority access to upcoming models and features. Seedence 2.0 — the successor to the Nano Banana model — will roll out to Pro users first. If you previously missed the lovart beta, upgrading to Pro is now the best path to staying ahead of Lovart's latest AI releases."
+                    "a": "Check official Lovart account, pricing, and announcement pages. Do not trust third-party beta code, waitlist, or early-access claims without official confirmation."
                 },
                 {
                     "q": "What changed from Lovart beta to the full version?",
-                    "a": "The lovart beta established the core generation pipeline. The full Lovart release significantly raised the quality ceiling: Google's Nano Banana model replaced the Lovart beta's standard models, delivering photorealistic output across product shots, concept art, and architectural renders. Brand Kit and AI Logo Generator were added post-beta, and the Lovart AI platform now supports six languages with localized SEO."
+                    "a": "Older beta comparisons can help explain search intent, but model names, access rules, quality claims, and feature availability should stay pending unless confirmed by current official Lovart sources."
                 },
                 {
                     "q": "When will Seedence 2.0 be available on Lovart?",
-                    "a": "Seedence 2.0 is Lovart's next major AI model, designed to surpass the Nano Banana model introduced after the lovart beta. Unlike the Lovart beta era — which had long waitlists and limited slots — Seedence 2.0 will be available directly to Pro subscribers first. No separate lovart beta signup is required; your Pro subscription covers early access to new models."
+                    "a": "Do not treat Seedence 2.0, Nano Banana successor claims, or Pro early-access claims as verified from this guide alone. Check official Lovart announcements and your account plan."
                 },
                 {
                     "q": "Is Lovart's beta free to use?",
-                    "a": "Lovart's current full product, which replaced the lovart beta, includes a free tier with no restrictions on basic features. During the Lovart beta, access required an invitation code and was limited. Today, the free plan gives immediate AI design generation, while paid Basic and Pro plans unlock the Nano Banana model, unlimited credits, and all premium features — no Lovart beta signup required."
+                    "a": "Free access, paid model access, credits, and beta-code requirements can change. Verify the official Lovart signup and pricing flow before relying on any free-tier or beta-code claim."
                 }
             ]
         }
@@ -3538,17 +3546,17 @@
     "lovart_login_page": {
         "seo": {
             "title": "lovart login Guide: Safe Access & Account Security 2026",
-            "description": "Looking for the official lovart login page? Follow our comprehensive guide to secure your account, prevent phishing, and access your lovart login today.",
+            "description": "Looking for the official lovart login page? Use this independent guide to find the right domain, avoid fake login pages, and protect your account.",
             "keywords": "",
             "canonical_url": "https://lovart.info/lovart-login"
         },
         "hero": {
-            "badge": "🔒 Official Access Guide",
+            "badge": "🔒 Independent Access Guide",
             "title": "how to complete your lovart login safely",
-            "subtitle": "Complete your secure lovart login process. Learn the best practices for a safe lovart login experience, protect your digital assets, and avoid common phishing scams when passing the lovart login page.",
+            "subtitle": "Find the official Lovart login path, understand what lovart.info can and cannot do, and avoid fake login pages or account-collection traps.",
             "cta_external": "Go to Official Portal",
             "cta_internal": "See Features",
-            "content": "A successful lovart login is your first step towards unlocking the full power of our AI design agent. With a verified lovart login, you gain immediate access to industry-leading generative tools, high-resolution rendering, and comprehensive brand management features. Understanding the lovart login architecture is crucial for maintaining the security of your creative assets. This guide covers everything from initiating a standard lovart login to troubleshooting advanced lovart login errors. Whether you are performing a lovart login from a new device or recovering a lost session, following our recommended lovart login procedures ensures your data remains protected. We strongly advise users to bookmark the official lovart login directory to prevent accidental access to fraudulent domains. Your lovart login credentials are the keys to your creative kingdom, treat them with the highest level of security available in the modern digital landscape."
+            "content": "Lovart.info is an independent guide site, not the official Lovart login service. Use this page to find the official domain, compare support paths, and avoid phishing pages. Do not enter passwords, recovery codes, or payment details on third-party guide pages. If a search result, ad, or mirror page asks for credentials outside the official Lovart domain, treat it as unsafe."
         },
         "access_methods": {
             "heading": "Standard lovart login Methods",
@@ -3654,59 +3662,59 @@
     },
     "lovart_promo_page": {
         "seo": {
-            "title": "lovart promo code 2026: Official Discounts & Offers",
-            "description": "Looking for a valid lovart promo code? Read our official guide to find genuine offers, avoid fake coupons, and securely apply a lovart promo code.",
+            "title": "lovart promo code 2026: 0 Verified Codes Status",
+            "description": "Check the current Lovart promo code status, why this guide lists 0 verified codes, and how to avoid fake coupon claims.",
             "keywords": "",
             "canonical_url": "https://lovart.info/lovart-promo-code"
         },
         "hero": {
-            "badge": "💳 Official Offers & Discounts",
-            "title": "Finding a Valid lovart promo code",
-            "subtitle": "Discover the truth about finding a working lovart promo code. Learn how to secure official discounts, access early-bird pricing, and safely apply a lovart promo code without falling victim to fake coupon websites.",
+            "badge": "💳 0 Verified Codes",
+            "title": "Lovart promo code status",
+            "subtitle": "Check why this guide lists 0 verified codes, how fake coupon pages create risk, and where to verify any future offer before checkout.",
             "cta_external": "Check Official Pricing",
             "cta_internal": "See Plans",
-            "content": "A genuine lovart promo code can significantly reduce the cost of your professional AI design subscription. However, navigating the internet to find a valid lovart promo code can be frustrating and risky. Many third-party coupon aggregators advertise a fake lovart promo code just to drive traffic and collect clicks. In this comprehensive guide, we clarify the official stance on any active lovart promo code, how to identify legitimate offers, and the exact steps to redeem a verified lovart promo code on your account. Whether you are upgrading from a free tier or renewing your Pro subscription, ensuring you possess a secure lovart promo code is paramount. Do not compromise your account security by downloading suspicious extensions that claim to auto-apply a lovart promo code. The only approved method to redeem a lovart promo code is directly through the official lovart.ai billing portal. Read our detailed breakdown below to understand the current lovart promo code landscape. Simply grab a valid lovart promo code and start creating. A good lovart promo code never expires too fast."
+            "content": "This page currently lists 0 verified codes. Third-party coupon aggregators may advertise a Lovart promo code to drive traffic, collect clicks, or push risky extensions. Treat those claims as pending until they match a current official Lovart billing screen, official email, or official pricing page. Do not paste account details into coupon pages and do not install browser extensions that promise to auto-apply a Lovart promo code."
         },
         "status_box": {
             "heading": "Current lovart promo code Status",
-            "status": "Currently, there is no widely distributed public lovart promo code available. Lovart periodically releases a lovart promo code exclusively during major holiday sales (like Black Friday) or direct email campaigns to registered users. Any site guaranteeing a year-round 90% off lovart promo code is likely fraudulent."
+            "status": "Current status: 0 verified codes. Any public promo code claim should stay pending until it appears in an official Lovart billing screen, official email, or official pricing page. Any site guaranteeing a year-round 90% off Lovart promo code is unsafe."
         },
         "comparison": {
-            "heading": "Real vs. Fake lovart promo code Offers",
-            "desc": "Before attempting to use what you believe is a lovart promo code, compare it against these known patterns to avoid falling for a scam lovart promo code.",
+            "heading": "Reported vs. Unsafe lovart promo code Claims",
+            "desc": "Before attempting to use any reported Lovart promo code, compare it against these patterns and keep the claim pending until official checkout confirms it.",
             "rows": [
                 {
                     "aspect": "Source",
-                    "real": "Official lovart.ai email newsletter or verified partner.",
+                    "real": "Official Lovart billing screen, official email, or official pricing page.",
                     "fake": "Random blog post or shady aggregator site claiming a secret promo code."
                 },
                 {
                     "aspect": "Discount Size",
-                    "real": "Typically 10% - 30% off annual plans using a legitimate promo code.",
+                    "real": "Only the current checkout screen can verify a discount amount.",
                     "fake": "Unrealistic claims like 99% off lifetime access using a broken promo code."
                 },
                 {
                     "aspect": "Redemption",
-                    "real": "Entered securely on the official Stripe checkout for your promo code.",
+                    "real": "Entered only in an official Lovart checkout or billing screen.",
                     "fake": "Requires you to 'click to reveal' or download malware to get the promo code."
                 }
             ]
         },
         "saving_paths": {
-            "heading": "Legitimate Ways to Save (No promo code Needed)",
-            "intro": "If you cannot find an active promo code, there are still excellent ways to lower your subscription cost. You do not always need a promo code to get the best deal.",
+            "heading": "Ways to Check Price Without a promo code",
+            "intro": "If there is no verified promo code, use lower-risk pricing checks instead of trusting coupon pages.",
             "paths": [
                 {
                     "title": "1. Annual Billing Discount",
-                    "desc": "By switching from monthly to annual billing, you automatically save a significant percentage. This built-in discount often exceeds the value of an average promo code."
+                    "desc": "Check whether the current official checkout offers a yearly billing option and compare the displayed total before subscribing."
                 },
                 {
                     "title": "2. Educational Programs",
-                    "desc": "Students and educators can apply directly for academic pricing. Instead of searching for a standard promo code, verify your academic status for permanent savings."
+                    "desc": "If Lovart offers academic pricing in the current official flow, verify it from the official site rather than a coupon directory."
                 },
                 {
                     "title": "3. Upgrade During Events",
-                    "desc": "Check your email during Black Friday or Cyber Monday. This is the only reliable time an official promo code is distributed to the public."
+                    "desc": "Treat seasonal discount claims as pending until you see them in an official Lovart email or checkout screen."
                 }
             ]
         },
@@ -3715,15 +3723,15 @@
             "items": [
                 {
                     "q": "Where can I enter my promo code?",
-                    "a": "Navigate to the billing section inside your account dashboard. During the checkout process for the Basic or Pro tier, you will see a text field labeled 'Enter promo code'. Type your promo code there and click apply."
+                    "a": "Only enter a promo code inside an official Lovart checkout or billing screen. If you cannot verify the screen is official, do not enter the code or account details."
                 },
                 {
                     "q": "Why is my promo code showing as invalid?",
-                    "a": "A promo code usually has a strict expiration date. If your promo code was found on a third-party coupon site, it was likely scraped from an old holiday sale and is no longer an active promo code."
+                    "a": "A third-party coupon may be expired, copied from an old campaign, or invented. Keep it pending unless the official checkout accepts it."
                 },
                 {
                     "q": "Is it safe to use a browser extension to find a promo code?",
-                    "a": "We do not recommend installing unknown extensions to hunt for a promo code. The safest way to receive a working promo code is to register for free and opt into official marketing emails."
+                    "a": "No. Unknown extensions that hunt for a promo code can create account, privacy, or payment risk. Use official Lovart billing and official email only."
                 }
             ]
         },
@@ -4004,8 +4012,20 @@
                     "desc": "A powerful image generator, but it requires navigating Discord interfaces, whereas Lovart offers a dedicated, professional web UI."
                 },
                 {
-                    "title": "Figma",
-                    "desc": "The industry standard for UI/UX, but it focuses on manual vector design rather than instant AI asset creation."
+                   "title": "Figma",
+                   "desc": "The industry standard for UI/UX, but it focuses on manual vector design rather than instant AI asset creation."
+                },
+                {
+                    "title": "Freepik",
+                    "desc": "A large asset library with some AI generation features, but its AI tools are more recent additions rather than a native design-agent workflow."
+                },
+                {
+                    "title": "Higgsfield",
+                    "desc": "An AI video and image generation tool with a social sharing focus. It covers a narrower creative range than Lovart's full brand-to-asset pipeline."
+                },
+                {
+                    "title": "Recraft",
+                    "desc": "A vector-focused AI generation tool for icons, illustrations, and brand assets. It is strong in vector output but offers less depth in video, mockups, and product-shot generation."
                 }
             ]
         },
