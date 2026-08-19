@@ -14,3 +14,4 @@
 - `templates/lovart-vs-canva.ejs`：Lovart vs Canva 独立英文对比页
 - `templates/lovart-vs-nano-banana.ejs`：Lovart vs Nano Banana 独立英文对比页
 - `templates/lovart-vs-weavy.ejs`：Lovart vs Weavy/Figma Weave 独立英文对比页
+- `templates/lovart-prompt-guide.ejs`：Lovart prompt 指南长文页
