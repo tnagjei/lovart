@@ -19,10 +19,6 @@ const privacyBridge = supportCluster.privacy_bridge || {};
         <%- include('partials/hreflang') %>
             <link rel="stylesheet" href="/styles.css">
             <link rel="icon" href="/favicon.ico" type="image/x-icon">
-            <script async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
-                crossorigin="anonymous"></script>
-
             <%- include('partials/analytics') %>
 
                 <style>
@@ -71,6 +67,9 @@ const privacyBridge = supportCluster.privacy_bridge || {};
             <section class="py-8 bg-white">
                 <div class="container mx-auto px-6 max-w-4xl space-y-5">
                     <%- include('partials/official-disclaimer', { supportCluster, verificationDate: supportCluster.last_verified }) %>
+                    <div class="bg-amber-50 border border-amber-200 rounded-lg p-5 text-sm text-amber-900 leading-relaxed">
+                        <strong>Notice regarding Publisher vs. Official Product Policy:</strong> This document outlines the privacy and data collection practices of <strong>lovart.info</strong> (the informational independent publisher website). For policies governing the official Lovart software application, user accounts, and billing, please refer directly to the official Lovart privacy statement linked below.
+                    </div>
                     <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
                         <h2 class="text-xl font-semibold text-blue-900 mb-2">
                             <%= privacyBridge.title || 'Official Privacy Policy Link' %>
@@ -347,6 +346,24 @@ const privacyBridge = supportCluster.privacy_bridge || {};
                                 <p class="text-neutral">
                                     <%= t.privacy_page.sections[5].subsections[3].content %>
                                 </p>
+
+                                <h3 class="text-xl font-semibold text-neutral-dark mt-6 mb-4">
+                                    Third-Party Advertising & Analytics Disclosure (Google AdSense)
+                                </h3>
+                                <div class="text-neutral space-y-3 text-sm leading-relaxed bg-neutral-light p-4 rounded border border-neutral-200">
+                                    <p>
+                                        This website (<strong>lovart.info</strong>) uses <strong>Google AdSense</strong> to display advertisements. Google and its certified third-party ad vendors use cookies, web beacons, and unique identifiers to serve ads based on your prior visits to this website and other websites on the Internet.
+                                    </p>
+                                    <p>
+                                        Google's use of advertising cookies enables it and its partners to serve ads to users based on their visit to this site and/or other sites on the Internet.
+                                    </p>
+                                    <p>
+                                        <strong>Opt-Out Choices:</strong> You may opt out of personalized advertising by visiting Google's <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" class="text-primary underline">Ads Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" class="text-primary underline">aboutads.info</a>.
+                                    </p>
+                                    <p>
+                                        We also utilize <strong>Google Analytics</strong> and <strong>Microsoft Clarity</strong> to analyze website usage patterns and optimize user experience. These tools collect aggregated telemetry, anonymized IP data, and interaction events without collecting sensitive personal credentials.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 

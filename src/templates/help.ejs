@@ -34,10 +34,6 @@ const videoImageSet = [
         <%- include('partials/hreflang') %>
             <link rel="stylesheet" href="/styles.css">
             <link rel="icon" href="/favicon.ico" type="image/x-icon">
-            <script async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
-                crossorigin="anonymous"></script>
-
             <%- include('partials/analytics') %>
 
                 <style>
@@ -497,6 +493,9 @@ const videoImageSet = [
 
                         acceptBtn.addEventListener('click', () => {
                             localStorage.setItem('cookieConsent', 'accepted');
+                            if (typeof window.__loadSafeAds === 'function') {
+                                window.__loadSafeAds();
+                            }
                             cookieConsent.classList.add('translate-y-full');
                             setTimeout(() => {
                                 cookieConsent.style.display = 'none';
@@ -505,6 +504,8 @@ const videoImageSet = [
 
                         declineBtn.addEventListener('click', () => {
                             localStorage.setItem('cookieConsent', 'declined');
+                            var existingAdScript = document.querySelector('script[src*="pagead2.googlesyndication.com"]');
+                            if (existingAdScript) existingAdScript.remove();
                             cookieConsent.classList.add('translate-y-full');
                             setTimeout(() => {
                                 cookieConsent.style.display = 'none';

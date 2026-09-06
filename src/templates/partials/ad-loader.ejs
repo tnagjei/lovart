@@ -1,0 +1,62 @@
+<%# Centralized, privacy-safe & bot-protected AdSense loader %>
+<script>
+(function() {
+    // 1. Consent Gate: Do not load ads if user explicitly declined cookies
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('cookieConsent') === 'declined') {
+        return;
+    }
+
+    // 2. Client-side Hardware Lock against Interstitials & Anchors (Overlays)
+    window.adsbygoogle = window.adsbygoogle || [];
+    window.adsbygoogle.push({
+        google_ad_client: "ca-pub-3083296102953963",
+        enable_page_level_ads: true,
+        overlays: { bottom: false },
+        interstitials: false
+    });
+
+    // 3. Datacenter / Bot Heuristic Check
+    // Exclude WebViews, headless browsers, or known bot patterns
+    var isLikelyBotOrProxy = (function() {
+        var ua = navigator.userAgent || '';
+        // Common headless / automated runner tokens
+        if (/HeadlessChrome|PhantomJS|Lighthouse|curl|Wget|python|Bytespider|bot|crawler|spider/i.test(ua)) {
+            return true;
+        }
+        // In-App WebViews (Android WebView / WeChat embedded browser often trigger high invalid-click rates)
+        if (/(Version\/4\.0.*Chrome|wv.*Version\/4\.0)/i.test(ua)) {
+            return true;
+        }
+        // Zero screen size or headless navigator anomalies
+        if (window.outerWidth === 0 && window.outerHeight === 0) {
+            return true;
+        }
+        if (navigator.webdriver) {
+            return true;
+        }
+        return false;
+    })();
+
+    if (isLikelyBotOrProxy) {
+        return;
+    }
+
+    // 4. Safe dynamic script injection
+    function loadAds() {
+        if (window.__adsenseLoaded) return;
+        window.__adsenseLoaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.crossOrigin = 'anonymous';
+        script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963';
+        document.head.appendChild(script);
+    }
+    window.__loadSafeAds = loadAds;
+
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        loadAds();
+    } else {
+        window.addEventListener('DOMContentLoaded', loadAds);
+    }
+})();
+</script>
