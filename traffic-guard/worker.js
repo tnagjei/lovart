@@ -4,12 +4,6 @@ const CORS = {
   'access-control-allow-headers': 'content-type',
 };
 
-const ALLOWED_ORIGINS = new Set([
-  'lovart.info',
-  'www.lovart.info',
-  'lovart-2ix.pages.dev',
-]);
-
 const BOT_UA = /bot|crawler|spider|slurp|headless|phantom|selenium|lighthouse|pagespeed|pingdom|uptime|curl|wget|python|java|go-http|libwww|scrapy|bytespider|semrush|ahrefs|dataforseo|mj12|dotbot|petalbot|yandexbot|baiduspider|bingpreview|facebookexternalhit|meta-externalagent/i;
 const CRAWLER_UA = /googlebot|bingbot|duckduckbot|yandexbot|baiduspider|applebot|petalbot|gptbot|claudebot|perplexitybot|oai-searchbot/i;
 
@@ -34,6 +28,16 @@ function day(ts) {
 
 function cleanText(value, max = 512) {
   return typeof value === 'string' ? value.replace(/[\u0000-\u001f\u007f]/g, '').slice(0, max) : '';
+}
+
+function isAllowedOrigin(origin) {
+  try {
+    const host = new URL(origin).hostname.toLowerCase();
+    return host === 'lovart.info' || host.endsWith('.lovart.info') ||
+      host === 'lovart-2ix.pages.dev' || host.endsWith('.lovart-2ix.pages.dev');
+  } catch {
+    return false;
+  }
 }
 
 function cleanInt(value, fallback = 0) {
@@ -72,9 +76,7 @@ function scoreEvent(ev, request, country, asn) {
 
 async function ingest(request, env) {
   const origin = request.headers.get('origin') || request.headers.get('referer') || '';
-  const allowed = ALLOWED_ORIGINS.size === 0 || origins(origin).size === 0 ||
-    [...origins(origin)].some((host) => ALLOWED_ORIGINS.has(host));
-  if (!allowed) return new Response(null, { status: 204, headers: headers() });
+  if (!isAllowedOrigin(origin)) return new Response(null, { status: 204, headers: headers() });
 
   let payload;
   try { payload = await request.json(); } catch { return json({ error: 'bad json' }, 400); }
