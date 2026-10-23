@@ -7,10 +7,6 @@ const CORS = {
 const BOT_UA = /bot|crawler|spider|slurp|headless|phantom|selenium|lighthouse|pagespeed|pingdom|uptime|curl|wget|python|java|go-http|libwww|scrapy|bytespider|semrush|ahrefs|dataforseo|mj12|dotbot|petalbot|yandexbot|baiduspider|bingpreview|facebookexternalhit|meta-externalagent/i;
 const CRAWLER_UA = /googlebot|bingbot|duckduckbot|yandexbot|baiduspider|applebot|petalbot|gptbot|claudebot|perplexitybot|oai-searchbot/i;
 
-const origins = (origin) => {
-  try { return new Set([new URL(origin).hostname.toLowerCase()]); } catch { return new Set(); }
-};
-
 function headers(extra = {}) {
   return { ...CORS, 'cache-control': 'no-store', ...extra };
 }
