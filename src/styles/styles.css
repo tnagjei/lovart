@@ -172,6 +172,11 @@ footer a:hover {
     display: none;
 }
 
+.ad-slot-container[hidden],
+.ad-slot-container ins[hidden] {
+    display: none;
+}
+
 /* Restore hover opacity utility */
 .hover\:bg-opacity-90:hover {
     background-color: rgba(255, 255, 255, 0.9);

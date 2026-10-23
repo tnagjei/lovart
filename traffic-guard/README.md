@@ -21,6 +21,11 @@ The Worker exposes:
 
 Initial rollout is observation-only. The site keeps its current ad behavior.
 
+`data-ads-resume` in `src/templates/partials/head.ejs` is set to
+`2026-11-06T17:00:00+08:00`. During the 14-day test, AdSense slots are in the
+HTML but hidden. After that instant, the client reveals and fills manual slots.
+Auto, anchor, and interstitial ads remain disabled in the AdSense dashboard.
+
 ## Site integration
 
 The collector must run on every page. Paste the Worker URL into
