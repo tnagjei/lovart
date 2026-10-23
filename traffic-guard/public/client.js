@@ -65,24 +65,31 @@
 
   function enableAdsIfDue() {
     if (!Number.isFinite(adsResume) || Date.now() < adsResume || window.adsbygoogle) return;
-    var client = 'ca-pub-3083296102953963';
-    window.adsbygoogle = window.adsbygoogle || [];
-    window.adsbygoogle.push({ google_ad_client: client, enable_page_level_ads: false });
-    document.querySelectorAll('.ad-slot-container').forEach(function (slot) {
-      slot.hidden = false;
-      slot.removeAttribute('hidden');
-      var ins = slot.querySelector('ins.adsbygoogle');
-      if (ins) {
-        ins.hidden = false;
-        ins.removeAttribute('hidden');
-        window.adsbygoogle.push({});
-      }
-    });
-    var script = document.createElement('script');
-    script.async = true;
-    script.crossOrigin = 'anonymous';
-    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(client);
-    document.head.appendChild(script);
+    fetch(endpoint + '/v', {
+      method: 'POST',
+      headers: { 'content-type': 'text/plain' },
+      body: JSON.stringify(payload('verdict'))
+    }).then(function (response) { return response.json(); }).then(function (result) {
+      if (!result.ok) return;
+      var client = 'ca-pub-3083296102953963';
+      window.adsbygoogle = window.adsbygoogle || [];
+      window.adsbygoogle.push({ google_ad_client: client, enable_page_level_ads: false });
+      document.querySelectorAll('.ad-slot-container').forEach(function (slot) {
+        slot.hidden = false;
+        slot.removeAttribute('hidden');
+        var ins = slot.querySelector('ins.adsbygoogle');
+        if (ins) {
+          ins.hidden = false;
+          ins.removeAttribute('hidden');
+          window.adsbygoogle.push({});
+        }
+      });
+      var script = document.createElement('script');
+      script.async = true;
+      script.crossOrigin = 'anonymous';
+      script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(client);
+      document.head.appendChild(script);
+    }).catch(function () {});
   }
 
   if (Number.isFinite(adsResume) && Date.now() >= adsResume) enableAdsIfDue();

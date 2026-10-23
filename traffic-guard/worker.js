@@ -57,11 +57,13 @@ function scoreEvent(ev, request, country, asn) {
   if (ev.wd === 1) { score += 80; flags |= 1; }
   if (cleanInt(ev.screen?.[0]) === 0 && cleanInt(ev.screen?.[1]) === 0) score += 25;
   if (cleanInt(ev.st) > 0 && cleanInt(ev.st) < 1500) score += 20;
+  // No interaction is normal for search landings; it only becomes evidence
+  // after the dwell time has been collected.
   if (cleanInt(ev.i) === 0 && cleanInt(ev.st) > 0) score += 10;
   if (asn === 13335 || asn === 209242) score += 0; // Cloudflare requests are expected here.
   if (country && ['CN', 'US'].includes(country) && /bot/i.test(ua)) score += 10;
-  if (request.headers.get('accept-language') === null) score += 8;
-  if (request.headers.get('sec-ch-ua') === null && /chrome/i.test(ua)) score += 8;
+  if (request.headers.get('accept-language') === null) score += 2;
+  if (request.headers.get('sec-ch-ua') === null && /chrome/i.test(ua)) score += 2;
   score = Math.min(100, score);
   return {
     score,
@@ -105,6 +107,19 @@ async function ingest(request, env) {
   return json({ ok: true });
 }
 
+async function verdict(request) {
+  const origin = request.headers.get('origin') || request.headers.get('referer') || '';
+  if (!isAllowedOrigin(origin)) return json({ ok: false }, 403);
+
+  let ev;
+  try { ev = await request.json(); } catch { return json({ ok: false, error: 'bad json' }, 400); }
+  if (!ev || typeof ev !== 'object') return json({ ok: false, error: 'bad event' }, 400);
+
+  const cf = request.cf || {};
+  const scored = scoreEvent(ev, request, cleanText(cf.country, 8), cleanInt(cf.asn));
+  return json({ v: scored.verdict, ok: scored.verdict === 'clean', score: scored.score });
+}
+
 async function stats(request, env) {
   const url = new URL(request.url);
   const days = Math.max(1, Math.min(90, cleanInt(url.searchParams.get('days'), 7)));
@@ -127,6 +142,12 @@ export default {
       try { return await ingest(request, env); } catch (err) {
         console.error('ingest failed', err);
         return json({ error: 'ingest failed' }, 500);
+      }
+    }
+    if (url.pathname === '/v' && request.method === 'POST') {
+      try { return await verdict(request); } catch (err) {
+        console.error('verdict failed', err);
+        return json({ ok: false }, 500);
       }
     }
     if (url.pathname === '/stats' && request.method === 'GET') {
