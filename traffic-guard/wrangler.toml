@@ -1,0 +1,18 @@
+name = "lovart-traffic-guard"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lovart-traffic"
+database_id = "79d33226-5e05-4d7a-a77c-31069e58d98c"
+
+[assets]
+directory = "public"
+binding = "ASSETS"
+run_worker_first = ["/in", "/stats", "/health"]
+
+[observability]
+enabled = false
+

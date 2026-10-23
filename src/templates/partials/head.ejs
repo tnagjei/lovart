@@ -196,7 +196,8 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://www.googletagmanager.com">
             <link rel="preconnect" href="https://www.clarity.ms">
-            <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+            <link rel="preconnect" href="https://lovart-traffic-guard.tangjei.workers.dev">
 
-            <!-- Centralized Safe AdSense Loader -->
-            <%- include('ad-loader') %>
+            <!-- First-party traffic collection. Ads stay disabled while AdSense reviews the site. -->
+            <script defer src="https://lovart-traffic-guard.tangjei.workers.dev/client.js"
+                data-api="https://lovart-traffic-guard.tangjei.workers.dev"></script>
