@@ -15,6 +15,7 @@ Lovart is a dedicated web application focusing on digital aesthetics and interac
 - **Frontend:** HTML5, CSS3, EJS
 - **Build System:** Custom Node.js build scripts
 - **Optimization:** Advanced SEO-friendly structure
+- **Analytics:** PVUV.ai is loaded on every generated page through `src/templates/partials/analytics.ejs`.
 
 ## 📂 Project Structure
 - `src/`: Source code of the application.

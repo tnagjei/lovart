@@ -6,6 +6,7 @@
 
 ## Files
 - `templates/`：EJS 模板目录，包含各页面和 partials
+- `templates/partials/analytics.ejs`：全站共用的 Clarity、GA 与 PVUV 统计脚本（更新规则：新增页面必须继续引用该 partial 或其包装模板）
 - `locales/`：多语言 JSON 文件 (en, zh, fr, ja, es, it)
 - `styles/`：Tailwind CSS 源文件
 - `assets/`：其他静态资源

@@ -14,3 +14,4 @@
 - `indexnow.txt`：IndexNow 当前生效 key（纯文本）
 - `<INDEXNOW_KEY>.txt`：IndexNow 官方验证 key 文件（纯文本）
 - `images/`：网站图片资源目录
+- `404.html`：独立 404 页，head 单独加载 PVUV 统计脚本；新增独立静态页时需同步接入统计
