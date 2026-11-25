@@ -1,7 +1,7 @@
 {
     "seo": {
-        "title": "Lovart Info: Independent Lovart Guides, Prompts, API Notes",
-        "description": "Use Lovart Info as an independent guide for Lovart tutorials, prompts, API notes, pricing checks, login routing, comparisons, and evidence labels.",
+        "title": "Lovart AI Guide: Features, Pricing, Prompts & API Notes",
+        "description": "Independent Lovart AI guide covering features, pricing, prompt ideas, API notes, login help, alternatives and official links so you can verify what is available.",
         "keywords": "",
         "prompt_guide": {
             "title": "Lovart Prompt Guide: Copy-Ready AI Design Prompts",
@@ -131,8 +131,8 @@
         ]
     },
     "hero": {
-        "title": "Lovart Info: Independent Guides for Lovart Users",
-        "subtitle": "Use this independent guide to route Lovart searches to tutorials, prompts, API notes, pricing checks, login safety, comparisons, and evidence-aware next steps. For product access, use the official Lovart website.",
+        "title": "Lovart AI Guide: Features, Pricing, Prompts and API Notes",
+        "subtitle": "Compare Lovart features, pricing, prompts, API status and safer official access in one independent guide. Product claims are labeled, and current account access should be verified on Lovart's official site.",
         "cta_explore": "Browse Lovart Guides",
         "cta_pricing": "Check Pricing Guide"
     },
@@ -2003,73 +2003,73 @@
     },
     "lovart_ai_code_page": {
         "seo": {
-            "title": "Lovart for Developers | AI Design API & SDK Integration",
-            "description": "Integrate Lovart's powerful AI design capabilities into your applications, build custom solutions using Lovart API and SDKs. Explore infinite AI design possibilities, documentation tips, programming examples, authentication process detailed guidance, helping developers get started quickly.",
+            "title": "Lovart AI Code & API: What Developers Can Actually Use",
+            "description": "Independent Lovart AI code and API guide: what is publicly verifiable, what remains unconfirmed, developer routes, alternatives and source labels.",
             "keywords": "lovart for developers, lovart api, lovart sdk, ai design api, integrate lovart, lovart developer platform, lovart ai code"
         },
         "hero": {
-            "title": "Lovart AI Code Integration Guide for Developers",
-            "description": "This page helps developers plan practical Lovart AI code integration. Use this AI code guide for implementation strategy, then open the API reference page for endpoint-level details and request flow.",
+            "title": "Lovart AI Code and API: What Developers Can Actually Use",
+            "description": "This page separates confirmed Lovart developer resources from unverified API claims, then points to practical integration paths and official pages.",
             "badges": [
-                "AI code reference: Available",
-                "Selected capabilities: Preview",
-                "Advanced access: Private Beta"
+                "Developer access: verify officially",
+                "API details: evidence-labeled",
+                "Alternatives: reviewed"
             ]
         },
         "ai_core": {
             "title": "How Lovart AI code fits product workflows",
-            "p1": "Lovart combines generation, editing, and design assistance into one production workflow. Teams can use Lovart AI code to decide where automation fits in their existing product stack.",
-            "p2": "For endpoint names, request formats, and authentication headers, use the Lovart API documentation page as the source of truth. This page focuses on Lovart AI code integration decisions and rollout sequencing.",
-            "p3": "A practical approach is to begin with one focused use case, validate output quality, then expand Lovart AI code integration depth as your team gains confidence."
+            "p1": "Lovart combines generation, editing, and design assistance in its web workflow. Developers can evaluate where those capabilities might fit a product, but the product name alone does not confirm public API access.",
+            "p2": "Treat access, documentation, API keys, SDKs, rate limits, and pricing as separate questions. Use Lovart's official pages and your account settings as the primary evidence.",
+            "p3": "Begin with one narrowly defined workflow. Proceed only after an official access path, authentication method, supported endpoints, and production limits have all been confirmed."
         },
         "api_integration": {
-            "title": "AI code integration status and access path",
-            "p1": "Lovart API documentation is available for developer reference. Lovart AI code capability availability can differ by account tier and approval scope, so check status before production rollout.",
-            "p_endpoints": "Current Lovart AI code integration categories documented on the API page include:",
+            "title": "Developer access checklist before you build",
+            "p1": "An official Lovart API access page can be verified, while a full public endpoint reference, self-serve key, SDK, and OpenAPI specification are still separate claims. Do not treat one as proof of another.",
+            "p_endpoints": "Before relying on Lovart in production, confirm whether each of these exists in an official source:",
             "list": [
                 {
-                    "title": "Design Generation:",
-                    "desc": "Generate visual outputs from prompts and structured parameters for Lovart AI code workflow automation."
+                    "title": "Access path:",
+                    "desc": "Whether the capability is self-serve, plan-gated, sales-led, or unavailable for the intended account."
                 },
                 {
-                    "title": "Image Processing:",
-                    "desc": "Use processing routes to upload, enhance, or optimize assets in Lovart AI code backend pipelines."
+                    "title": "Authentication and keys:",
+                    "desc": "Where an official key is issued, how secrets are scoped, and whether account-level access is documented."
                 },
                 {
-                    "title": "Templates and Reuse:",
-                    "desc": "Read template data to standardize campaign output and keep brand consistency."
+                    "title": "Endpoints and schemas:",
+                    "desc": "Whether an official base URL, request format, response schema, and error model are published."
                 },
                 {
-                    "title": "User and Usage Context:",
-                    "desc": "Retrieve account and usage context to support quotas, monitoring, and operational governance."
+                    "title": "Limits and terms:",
+                    "desc": "Whether rate limits, credit use, commercial rights, retention, and support expectations are current."
                 }
             ],
-            "p_stay_tuned": "If your use case depends on restricted Lovart AI code capabilities, request access first and confirm environment readiness before launch.",
-            "status_title": "Current Availability Snapshot",
+            "p_stay_tuned": "If an official source does not confirm the capability, do not build against private routes, scraped calls, or unverified third-party wrappers.",
+            "status_title": "Evidence status checked November 25, 2026",
             "status_items": [
                 {
-                    "name": "API reference page",
-                    "status": "Available"
+                    "name": "Official API access page",
+                    "status": "documented"
                 },
                 {
-                    "name": "Core integration categories",
-                    "status": "Available"
+                    "name": "Public endpoint reference",
+                    "status": "pending"
                 },
                 {
-                    "name": "Selected advanced capabilities",
-                    "status": "Preview"
+                    "name": "Self-serve API key",
+                    "status": "pending"
                 },
                 {
-                    "name": "Enterprise-scoped features",
-                    "status": "Private Beta"
+                    "name": "Public SDK or OpenAPI",
+                    "status": "pending"
                 }
             ],
-            "docs_link_text": "View API Docs",
-            "access_link_text": "Request API Access"
+            "docs_link_text": "Read the evidence guide",
+            "access_link_text": "Compare developer options"
         },
         "use_cases": {
             "title": "Implementation scenarios for Lovart AI code",
-            "desc": "Most teams begin with one measurable Lovart AI code workflow and expand after proving quality and stability:",
+            "desc": "These are evaluation scenarios. Treat them as viable only when an official developer path supports the required step:",
             "list": [
                 {
                     "title": "Marketing asset automation:",
@@ -2092,48 +2092,48 @@
                     "desc": "Coordinate request, review, and export steps with clearer role ownership and delivery timing."
                 }
             ],
-            "conclusion": "Treat the API docs as reference and this page as Lovart AI code rollout guidance to reduce ambiguity during integration planning."
+            "conclusion": "The safe sequence is evidence first, a small proof of concept second, and production integration only after the official access and support boundary are clear."
         },
         "resources": {
             "title": "Developer resources and next steps",
-            "desc": "Use these resources to reduce integration risk and keep implementation aligned across product and engineering teams:",
+            "desc": "Use these checks to avoid turning a search result or an unofficial wrapper into an integration assumption:",
             "list": [
                 {
-                    "title": "API Reference Documentation:",
-                    "desc": "Review endpoint definitions, request fields, and response behavior on the Lovart API page for AI code integrations."
+                    "title": "Official API evidence:",
+                    "desc": "Record the exact Lovart page or account screen that confirms access, and keep missing fields marked as pending."
                 },
                 {
                     "title": "Authentication and Access Process:",
-                    "desc": "Align API key workflows, environment isolation, and access approvals before implementation starts."
+                    "desc": "Do not design key handling or approvals until an official authentication method has been published."
                 },
                 {
                     "title": "Rate and Usage Governance:",
-                    "desc": "Track usage behavior and define retry, timeout, and quota handling rules early."
+                    "desc": "Define retry, timeout, and budget safeguards after official quotas and billing rules are known."
                 },
                 {
                     "title": "Integration Playbooks:",
-                    "desc": "Document your chosen Lovart AI code architecture pattern so future teams can reuse proven integration paths."
+                    "desc": "Document the evidence date, owner, and fallback for every external claim used in the integration plan."
                 },
                 {
                     "title": "Release Validation Checklist:",
-                    "desc": "Validate status labels, fallback behavior, and monitoring before each production release."
+                    "desc": "Recheck status labels, access, fallback behavior, and monitoring before each production release."
                 }
             ],
-            "objective": "The goal is to help developers ship reliable Lovart AI code integrations with clear status expectations and low rollout risk."
+            "objective": "The goal is to prevent unverified API, SDK, endpoint, or pricing claims from becoming production dependencies."
         },
         "cta": {
-            "title": "Ready to move from evaluation to integration?",
-            "desc": "Start with the API reference for exact technical details, then request access for capabilities that are still limited by scope.",
-            "button": "Request API Access",
-            "primary_button": "View API Docs",
-            "secondary_button": "Request API Access"
+            "title": "Start with the evidence, then decide whether to build",
+            "desc": "Review what Lovart officially confirms, what remains pending, and which developer alternatives fit your workflow today.",
+            "button": "Read the evidence guide",
+            "primary_button": "Read API evidence guide",
+            "secondary_button": "Compare developer options"
         },
         "related": {
             "title": "Explore More Lovart Resources",
             "items": [
                 {
                     "title": "Lovart API Documentation",
-                    "desc": "Check endpoints, auth, and integration reference details",
+                    "desc": "See what is verified and what remains pending",
                     "link_text": "API Docs →"
                 },
                 {
@@ -4490,13 +4490,13 @@
     },
     "ai_image_generator_page": {
         "seo": {
-            "title": "Lovart AI Image Generator: Design Assets From Prompts",
-            "description": "Use Lovart AI image generator as part of a design agent workflow for brand assets, product visuals, campaign concepts, and prompt examples.",
+            "title": "Lovart AI Image Generator: Prompts, Features & Access",
+            "description": "Explore Lovart AI image generation for brand assets, product visuals and campaign concepts. See prompt examples, workflow limits and how to verify access.",
             "keywords": ""
         },
         "hero": {
-            "title": "Lovart AI Image Generator: Create Stunning Visuals with AI",
-            "desc": "Lovart's AI image generator transforms text prompts into high-quality images in seconds. From concept art to product mockups, generate visuals that match your creative vision."
+            "title": "Lovart AI Image Generator: Prompts, Features and Access",
+            "desc": "Explore what Lovart's image generation workflow can create, which prompts to test, and how to verify current account access before relying on the result."
         },
         "overview": {
             "title": "What Is an AI Image Generator?",
@@ -5062,13 +5062,13 @@
     },
     "lovart_ai_video_page": {
         "seo": {
-            "title": "AI Video | Lovart AI Design Platform",
-            "description": "Explore Lovart AI video generator. Turn static images or text prompts into stunning short animations instantly.",
+            "title": "Lovart AI Video Generator: What It Does & How to Try It",
+            "description": "Independent guide to Lovart AI video: what the generator can make, real use cases, prompt tips and how to verify current access before trying it.",
             "keywords": ""
         },
         "hero": {
-            "title": "Lovart AI Video Generator: Create Stunning Visuals",
-            "desc": "Explore Lovart AI video generator. Turn static images or text prompts into stunning short animations instantly."
+            "title": "Lovart AI Video Generator: What It Does and How to Try It",
+            "desc": "See what Lovart's official video pages describe, which creative workflows suit the generator, and how to verify current access and export limits before trying it."
         },
         "overview": {
             "title": "What Is AI Video Generator?",

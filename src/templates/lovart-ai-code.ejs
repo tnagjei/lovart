@@ -109,11 +109,11 @@ const page = t.lovart_ai_code_page;
                                             <% } %>
 
                                                 <div class="flex flex-wrap gap-3">
-                                                    <a href="<%= link('lovart-api') %>"
+                                                    <a href="<%= link('lovart-api-documentation') %>"
                                                         class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors text-sm font-medium">
                                                         <%= page.api_integration.docs_link_text %>
                                                     </a>
-                                                    <a href="mailto:sales@lovart.info?subject=Lovart%20API%20Access%20Request"
+                                                    <a href="<%= link('lovart-developer-options') %>"
                                                         class="bg-white border border-neutral-light text-neutral-dark px-6 py-3 rounded-md hover:bg-neutral-light transition-colors text-sm font-medium">
                                                         <%= page.api_integration.access_link_text %>
                                                     </a>
@@ -190,11 +190,11 @@ const page = t.lovart_ai_code_page;
                                             <%= page.cta.desc %>
                                         </p>
                                         <div class="flex flex-wrap justify-center gap-4">
-                                            <a href="<%= link('lovart-api') %>"
+                                            <a href="<%= link('lovart-api-documentation') %>"
                                                 class="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary-dark transition-colors text-lg font-medium">
                                                 <%= page.cta.primary_button %>
                                             </a>
-                                            <a href="mailto:sales@lovart.info?subject=Lovart%20API%20Access%20Request"
+                                            <a href="<%= link('lovart-developer-options') %>"
                                                 class="bg-white border border-neutral-light text-neutral-dark px-8 py-3 rounded-md hover:bg-neutral-light transition-colors text-lg font-medium">
                                                 <%= page.cta.secondary_button %>
                                             </a>

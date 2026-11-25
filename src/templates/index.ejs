@@ -261,18 +261,18 @@ const showHomeDeveloperCluster = lang === 'en' || lang === 'zh';
                     }
                     </script>
                     <script type="application/ld+json">
-                    {
+                    <%- JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "WebPage",
-                        "name": "Lovart Info: Independent Lovart Guides",
+                        "name": t.seo.title,
                         "url": "https://lovart.info/",
-                        "description": "<%= t.seo ? t.seo.description : 'Independent Lovart guides and evidence-aware navigation.' %>",
+                        "description": t.seo ? t.seo.description : 'Independent Lovart guides and evidence-aware navigation.',
                         "isPartOf": {
                             "@type": "WebSite",
                             "name": "Lovart Info",
                             "url": "https://lovart.info/"
                         }
-                    }
+                    }, null, 2).replace(/</g, '\\u003c') %>
                     </script>
     </head>
 
